@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Charlottesville Trails</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+      <meta charset='utf-8' />
+      <title>Charlottesville Trails</title>
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+      <style>
+          body { margin:0; padding:0; }
+          #map { position:absolute; top:0; bottom:0; width:100%; }
+      </style>
   </head>
   <body>
-    <iframe src="https://api.mapbox.com/styles/v1/meekohi/cjawpfhc18t6h2rnnzelk9vko.html?fresh=true&title=true&access_token=pk.eyJ1IjoibWVla29oaSIsImEiOiJjaXhrbDl2eWwwMDIyMnFtb2ZndjM0NW14In0.U639AnCqXT1BNOyQtFYXIQ#11.5/38.040000/-78.490000/0
-" frameBorder="0" scrolling="no" width="100%" style="position:absolute; width:100%; height:100%"></iframe>
+
+    <div id='map'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibWVla29oaSIsImEiOiJjaXhrbDl2eWwwMDIyMnFtb2ZndjM0NW14In0.U639AnCqXT1BNOyQtFYXIQ';
+      var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/meekohi/cjawpfhc18t6h2rnnzelk9vko',
+          center: [-78.482294, 38.031053],
+          zoom: 12
+      });
+
+      // Add geolocate control to the map.
+      map.addControl(new mapboxgl.GeolocateControl({
+          positionOptions: {
+              enableHighAccuracy: true
+          },
+          trackUserLocation: true
+      }));
+    </script>
+
   </body>
 </html>
