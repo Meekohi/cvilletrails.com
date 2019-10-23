@@ -13,6 +13,7 @@
           #menu {
             position:absolute; top:0; bottom:0; z-index:1; padding:1em;
             font-family: Verdana, Geneva, sans-serif;
+            line-height: 3em;
           }
           #menu a:link, #menu a:visited {
             text-decoration: none;
@@ -23,7 +24,10 @@
       </style>
   </head>
   <body>
-    <div id='menu'> <a href='https://calendar.cvilletrails.com'>🗓️ Calendar</a> </div>
+    <div id='menu'>
+      <a href='https://calendar.cvilletrails.com'>🗓️ Calendar</a> <br/>
+      <a href='mailto:meekohi+trails@gmail.com' id='report'>⚠️ Report an Issue</a>
+    </div>
     <div id='map'></div>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoibWVla29oaSIsImEiOiJjaXhrbDl2eWwwMDIyMnFtb2ZndjM0NW14In0.U639AnCqXT1BNOyQtFYXIQ';
@@ -41,6 +45,13 @@
           },
           trackUserLocation: true
       }));
+
+      document.getElementById('report').onclick = function(){
+        navigator.geolocation.getCurrentPosition(function(position) {
+          window.location = 'mailto:meekohi+trails@gmail.com?subject=Trail Issue at '+position.coords.latitude.toFixed(4)+','+position.coords.longitude.toFixed(4)
+        });
+        return false
+      }
     </script>
 
   </body>
