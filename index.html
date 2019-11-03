@@ -23,7 +23,7 @@
       </style>
   </head>
   <body>
-    <div id='menu'>
+    <div id='menu' style='display:none;'>
       <a href='https://calendar.cvilletrails.com'>🗓️ Calendar</a>
       <a href='mailto:meekohi+trails@gmail.com' id='report'>⚠️ Report a Trail Issue</a>
     </div>
@@ -44,6 +44,15 @@
           },
           trackUserLocation: true
       }));
+      
+      document.getElementById('report').onclick = function(){
+        navigator.geolocation.getCurrentPosition(function(position) {
+          window.location = 'mailto:meekohi+trails@gmail.com?subject=Trail Issue at '+position.coords.latitude.toFixed(5)+','+position.coords.longitude.toFixed(5)
+        }, function(err){
+          window.location = 'mailto:meekohi+trails@gmail.com?subject=Trail Issue'
+        });
+        return false
+      }
     </script>
 
   </body>
