@@ -36,6 +36,16 @@
         },
         {
           "if": {
+            "layer": "(?i)river north",
+            "stroke": "#795548"
+          },
+          "set": {
+            "category": "spur",
+            "Name": "River North Trail Spur"
+          }
+        },
+        {
+          "if": {
             "layer": "(?i)river north"
           },
           "set": {
@@ -61,7 +71,8 @@
         }
       ],
       "exclude_categories": [
-        "closed"
+        "closed",
+        "road-walk"
       ],
       "mapbox": {
         "dataset": "cjawyutol0r7d2wo1z7eb0wiy",

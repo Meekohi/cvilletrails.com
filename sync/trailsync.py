@@ -235,7 +235,9 @@ def apply_rules(feats, trail):
 def dataset_features(user, dataset, token):
     feats, start = [], None
     while True:
-        params = {"limit": 100}
+        # The features endpoint sits behind a CDN with max-age=300; bust it so a run
+        # right after --apply diffs against the real dataset, not a stale copy.
+        params = {"limit": 100, "nocache": int(time.time() * 1000)}
         if start:
             params["start"] = start
         page = http("GET", mb(f"/datasets/v1/{user}/{dataset}/features", token, **params))
