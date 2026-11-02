@@ -1,0 +1,20 @@
+{
+  "mapbox_user": "meekohi",
+  "trails": {
+    "rivanna-trail": {
+      "name": "Rivanna Trail",
+      "source": {
+        "type": "google_mymaps",
+        "mid": "",
+        "homepage": "https://www.rivannatrails.org/",
+        "notes": "Official Rivanna Trails Foundation Google My Map embedded on their website. Fill in `mid` from the map URL (…/maps/d/viewer?mid=XXXX)."
+      },
+      "geometry_types": ["LineString"],
+      "mapbox": {
+        "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+        "tileset": "meekohi.cjawyutol0r7d2wo1z7eb0wiy-3zlpw",
+        "tileset_name": "Rivanna_Trail"
+      }
+    }
+  }
+}

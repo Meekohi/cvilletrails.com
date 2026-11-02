@@ -1,0 +1,7584 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.451697,
+      38.071243,
+      0
+     ],
+     [
+      -78.451921,
+      38.073449,
+      0
+     ],
+     [
+      -78.452532,
+      38.07405,
+      0
+     ],
+     [
+      -78.453975,
+      38.07464,
+      0
+     ],
+     [
+      -78.453263,
+      38.075249,
+      0
+     ],
+     [
+      -78.452641,
+      38.076031,
+      0
+     ],
+     [
+      -78.453662,
+      38.076433,
+      0
+     ],
+     [
+      -78.45403,
+      38.076693,
+      0
+     ],
+     [
+      -78.453764,
+      38.076994,
+      0
+     ],
+     [
+      -78.45362,
+      38.077419,
+      0
+     ],
+     [
+      -78.453039,
+      38.078252,
+      0
+     ],
+     [
+      -78.45395,
+      38.078795,
+      0
+     ],
+     [
+      -78.453415,
+      38.079417,
+      0
+     ],
+     [
+      -78.452454,
+      38.080174,
+      0
+     ],
+     [
+      -78.451663,
+      38.080743,
+      0
+     ],
+     [
+      -78.45093,
+      38.080731,
+      0
+     ],
+     [
+      -78.450357,
+      38.08116,
+      0
+     ],
+     [
+      -78.449849,
+      38.081706,
+      0
+     ],
+     [
+      -78.449287,
+      38.081976,
+      0
+     ],
+     [
+      -78.448809,
+      38.082198,
+      0
+     ],
+     [
+      -78.448505,
+      38.082448,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "02a7aaf53a8243cfa3b1bb7cbdb87b2b"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.168638</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>266.661767</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.480066,
+      38.053285,
+      0
+     ],
+     [
+      -78.479131,
+      38.053469,
+      0
+     ],
+     [
+      -78.478907,
+      38.053412,
+      0
+     ],
+     [
+      -78.478835,
+      38.053547,
+      0
+     ],
+     [
+      -78.478637,
+      38.053441,
+      0
+     ],
+     [
+      -78.47853,
+      38.053511,
+      0
+     ],
+     [
+      -78.478592,
+      38.054006,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "0661b15a4f3229f7513361ce59a976d5"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.420512</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>664.914773</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.478008,
+      38.050682,
+      0
+     ],
+     [
+      -78.477964,
+      38.05088,
+      0
+     ],
+     [
+      -78.478485,
+      38.051318,
+      0
+     ],
+     [
+      -78.479086,
+      38.052365,
+      0
+     ],
+     [
+      -78.479832,
+      38.052988,
+      0
+     ],
+     [
+      -78.479895,
+      38.053193,
+      0
+     ],
+     [
+      -78.480766,
+      38.053745,
+      0
+     ],
+     [
+      -78.481737,
+      38.053999,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "08e843ce5b0b6bd88e72b95b3ca74743"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.442724,
+      38.087424
+     ],
+     [
+      -78.442929,
+      38.087979
+     ],
+     [
+      -78.443351,
+      38.088266
+     ],
+     [
+      -78.443587,
+      38.088479
+     ],
+     [
+      -78.443692,
+      38.088727
+     ],
+     [
+      -78.444335,
+      38.089138
+     ],
+     [
+      -78.444627,
+      38.089397
+     ],
+     [
+      -78.444476,
+      38.089652
+     ],
+     [
+      -78.444237,
+      38.089678
+     ],
+     [
+      -78.444023,
+      38.089507
+     ],
+     [
+      -78.443877,
+      38.089469
+     ],
+     [
+      -78.443801,
+      38.089667
+     ],
+     [
+      -78.443941,
+      38.09015
+     ],
+     [
+      -78.444112,
+      38.090743
+     ],
+     [
+      -78.444217,
+      38.091577
+     ],
+     [
+      -78.444122,
+      38.091903
+     ],
+     [
+      -78.443902,
+      38.092503
+     ],
+     [
+      -78.444019,
+      38.093071
+     ],
+     [
+      -78.444437,
+      38.093573
+     ],
+     [
+      -78.445109,
+      38.09433
+     ],
+     [
+      -78.445528,
+      38.095294
+     ],
+     [
+      -78.445408,
+      38.096319
+     ],
+     [
+      -78.445585,
+      38.097107
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "09f63ba23c09aafadc209b7f8c411689"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.286616</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>439.097322</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.505299,
+      38.054268,
+      0
+     ],
+     [
+      -78.505281,
+      38.054403,
+      0
+     ],
+     [
+      -78.505587,
+      38.054678,
+      0
+     ],
+     [
+      -78.505461,
+      38.054799,
+      0
+     ],
+     [
+      -78.505775,
+      38.055315,
+      0
+     ],
+     [
+      -78.506422,
+      38.055471,
+      0
+     ],
+     [
+      -78.507132,
+      38.055421,
+      0
+     ],
+     [
+      -78.507495,
+      38.055558,
+      0
+     ],
+     [
+      -78.507738,
+      38.055557,
+      0
+     ],
+     [
+      -78.508047,
+      38.055476,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "0abbe155b4e2923e290cccb97b85e21f"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.451697,
+      38.071243,
+      0
+     ],
+     [
+      -78.451859,
+      38.071271,
+      0
+     ],
+     [
+      -78.451975,
+      38.070875,
+      0
+     ],
+     [
+      -78.452263,
+      38.070889,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "0b9cbca53ed36a1b422401a90df155ae"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.453314,
+      38.053738,
+      0
+     ],
+     [
+      -78.453233,
+      38.054035,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "0ebc2d3ca7e68f0f415561df474f7e0d"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.035416</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>55.226805</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.459084,
+      38.0345
+     ],
+     [
+      -78.459662,
+      38.034798
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "10a7d43eba420b6a392310a882030772"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.441884</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>704.3661</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.488222,
+      38.05789,
+      0
+     ],
+     [
+      -78.488222,
+      38.056984,
+      0
+     ],
+     [
+      -78.488097,
+      38.056836,
+      0
+     ],
+     [
+      -78.485491,
+      38.056348,
+      0
+     ],
+     [
+      -78.483515,
+      38.055464,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "133bc1a6336533298a203ed9c45a01ce"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>1.2171</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>1906.255544</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.469897,
+      38.047173,
+      0
+     ],
+     [
+      -78.470993,
+      38.049408,
+      0
+     ],
+     [
+      -78.470157,
+      38.049713,
+      0
+     ],
+     [
+      -78.469582,
+      38.050463,
+      0
+     ],
+     [
+      -78.46951,
+      38.051297,
+      0
+     ],
+     [
+      -78.469214,
+      38.051594,
+      0
+     ],
+     [
+      -78.468891,
+      38.052387,
+      0
+     ],
+     [
+      -78.46872,
+      38.052394,
+      0
+     ],
+     [
+      -78.468666,
+      38.052846,
+      0
+     ],
+     [
+      -78.468118,
+      38.053716,
+      0
+     ],
+     [
+      -78.467426,
+      38.054304,
+      0
+     ],
+     [
+      -78.466744,
+      38.054523,
+      0
+     ],
+     [
+      -78.466259,
+      38.055053,
+      0
+     ],
+     [
+      -78.466312,
+      38.055209,
+      0
+     ],
+     [
+      -78.465908,
+      38.05598,
+      0
+     ],
+     [
+      -78.466106,
+      38.057034,
+      0
+     ],
+     [
+      -78.465989,
+      38.057953,
+      0
+     ],
+     [
+      -78.466869,
+      38.058463,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "13fd4dcda398739885788fa63903347b"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.451311,
+      38.055966,
+      0
+     ],
+     [
+      -78.451338,
+      38.056079,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "1435ed93259e1ba59897e571b8b55780"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.480423,
+      38.01115
+     ],
+     [
+      -78.480431,
+      38.011127
+     ],
+     [
+      -78.48046,
+      38.011119
+     ],
+     [
+      -78.480523,
+      38.011054
+     ],
+     [
+      -78.480554,
+      38.010992
+     ],
+     [
+      -78.480556,
+      38.01092
+     ],
+     [
+      -78.4806,
+      38.01086
+     ],
+     [
+      -78.480673,
+      38.010824
+     ],
+     [
+      -78.480743,
+      38.010813
+     ],
+     [
+      -78.480838,
+      38.010776
+     ],
+     [
+      -78.480964,
+      38.010807
+     ],
+     [
+      -78.480998,
+      38.010802
+     ],
+     [
+      -78.481048,
+      38.010762
+     ],
+     [
+      -78.481131,
+      38.010746
+     ],
+     [
+      -78.481196,
+      38.010748
+     ],
+     [
+      -78.481235,
+      38.010761
+     ],
+     [
+      -78.481239,
+      38.010829
+     ],
+     [
+      -78.481266,
+      38.010853
+     ],
+     [
+      -78.481298,
+      38.010857
+     ],
+     [
+      -78.48148,
+      38.010808
+     ],
+     [
+      -78.48162,
+      38.010716
+     ],
+     [
+      -78.481625,
+      38.010685
+     ],
+     [
+      -78.481673,
+      38.01063
+     ],
+     [
+      -78.481723,
+      38.010605
+     ],
+     [
+      -78.481882,
+      38.010557
+     ],
+     [
+      -78.481941,
+      38.010515
+     ],
+     [
+      -78.482039,
+      38.01047
+     ],
+     [
+      -78.482059,
+      38.010435
+     ],
+     [
+      -78.482206,
+      38.01034
+     ],
+     [
+      -78.482289,
+      38.010317
+     ],
+     [
+      -78.482349,
+      38.01026
+     ],
+     [
+      -78.482406,
+      38.010232
+     ],
+     [
+      -78.482452,
+      38.01023
+     ],
+     [
+      -78.482582,
+      38.010263
+     ],
+     [
+      -78.482663,
+      38.010249
+     ],
+     [
+      -78.482765,
+      38.01021
+     ],
+     [
+      -78.482819,
+      38.010212
+     ],
+     [
+      -78.482807,
+      38.010287
+     ],
+     [
+      -78.482839,
+      38.010457
+     ],
+     [
+      -78.482808,
+      38.01052
+     ],
+     [
+      -78.482816,
+      38.010554
+     ],
+     [
+      -78.482807,
+      38.010597
+     ],
+     [
+      -78.482767,
+      38.010669
+     ],
+     [
+      -78.482757,
+      38.010708
+     ],
+     [
+      -78.482776,
+      38.01074
+     ],
+     [
+      -78.482853,
+      38.010764
+     ],
+     [
+      -78.482888,
+      38.010758
+     ],
+     [
+      -78.48292,
+      38.010737
+     ],
+     [
+      -78.482992,
+      38.010659
+     ],
+     [
+      -78.483092,
+      38.010599
+     ],
+     [
+      -78.483168,
+      38.010592
+     ],
+     [
+      -78.483246,
+      38.01061
+     ],
+     [
+      -78.483306,
+      38.010605
+     ],
+     [
+      -78.483381,
+      38.010618
+     ],
+     [
+      -78.483576,
+      38.010613
+     ],
+     [
+      -78.483674,
+      38.010589
+     ],
+     [
+      -78.483747,
+      38.010597
+     ],
+     [
+      -78.483857,
+      38.010588
+     ],
+     [
+      -78.483925,
+      38.010556
+     ],
+     [
+      -78.48401,
+      38.010496
+     ],
+     [
+      -78.484061,
+      38.010405
+     ],
+     [
+      -78.484124,
+      38.010365
+     ],
+     [
+      -78.484192,
+      38.010344
+     ],
+     [
+      -78.484302,
+      38.010269
+     ],
+     [
+      -78.484428,
+      38.010228
+     ],
+     [
+      -78.484519,
+      38.010162
+     ],
+     [
+      -78.484586,
+      38.010138
+     ],
+     [
+      -78.484655,
+      38.010095
+     ],
+     [
+      -78.484682,
+      38.010037
+     ],
+     [
+      -78.484684,
+      38.009966
+     ],
+     [
+      -78.484704,
+      38.009908
+     ],
+     [
+      -78.484747,
+      38.009872
+     ],
+     [
+      -78.484786,
+      38.009866
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "18a0d95d562a7ff4606bf61d869b85fd"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.447789,
+      38.082536,
+      0
+     ],
+     [
+      -78.44743,
+      38.082387,
+      0
+     ],
+     [
+      -78.446244,
+      38.082338,
+      0
+     ],
+     [
+      -78.445507,
+      38.082889,
+      0
+     ],
+     [
+      -78.44531,
+      38.083434,
+      0
+     ],
+     [
+      -78.4454,
+      38.083999,
+      0
+     ],
+     [
+      -78.444699,
+      38.084784,
+      0
+     ],
+     [
+      -78.444645,
+      38.085202,
+      0
+     ],
+     [
+      -78.444358,
+      38.085308,
+      0
+     ],
+     [
+      -78.444178,
+      38.085237,
+      0
+     ],
+     [
+      -78.443199,
+      38.085845,
+      0
+     ],
+     [
+      -78.442444,
+      38.086029,
+      0
+     ],
+     [
+      -78.442247,
+      38.086191,
+      0
+     ],
+     [
+      -78.442238,
+      38.086976,
+      0
+     ],
+     [
+      -78.442723,
+      38.087429,
+      0
+     ],
+     [
+      -78.443351,
+      38.086905,
+      0
+     ],
+     [
+      -78.443396,
+      38.086538,
+      0
+     ],
+     [
+      -78.443873,
+      38.086163,
+      0
+     ],
+     [
+      -78.444205,
+      38.085541,
+      0
+     ],
+     [
+      -78.444663,
+      38.085442,
+      0
+     ],
+     [
+      -78.445876,
+      38.084268,
+      0
+     ],
+     [
+      -78.44628,
+      38.083561,
+      0
+     ],
+     [
+      -78.447789,
+      38.082536,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "1e1c3efa510d891dca83294d6243581d"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.09142</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>9600.810793</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.485067,
+      38.016273,
+      0
+     ],
+     [
+      -78.485462,
+      38.015758,
+      0
+     ],
+     [
+      -78.485411,
+      38.015733,
+      0
+     ],
+     [
+      -78.48534,
+      38.015745,
+      0
+     ],
+     [
+      -78.485366,
+      38.015774,
+      0
+     ],
+     [
+      -78.48525,
+      38.015794,
+      0
+     ],
+     [
+      -78.485059,
+      38.015735,
+      0
+     ],
+     [
+      -78.484875,
+      38.015665,
+      0
+     ],
+     [
+      -78.484593,
+      38.01552,
+      0
+     ],
+     [
+      -78.484019,
+      38.015242,
+      0
+     ],
+     [
+      -78.48378,
+      38.015075,
+      0
+     ],
+     [
+      -78.48364,
+      38.014903,
+      0
+     ],
+     [
+      -78.483458,
+      38.014633,
+      0
+     ],
+     [
+      -78.48337,
+      38.014117,
+      0
+     ],
+     [
+      -78.48331,
+      38.013275,
+      0
+     ],
+     [
+      -78.483252,
+      38.012945,
+      0
+     ],
+     [
+      -78.483227,
+      38.012571,
+      0
+     ],
+     [
+      -78.483221,
+      38.01241,
+      0
+     ],
+     [
+      -78.483192,
+      38.012274,
+      0
+     ],
+     [
+      -78.483196,
+      38.012102,
+      0
+     ],
+     [
+      -78.483256,
+      38.011942,
+      0
+     ],
+     [
+      -78.483623,
+      38.012041,
+      0
+     ],
+     [
+      -78.4839,
+      38.011883,
+      0
+     ],
+     [
+      -78.484108,
+      38.011637,
+      0
+     ],
+     [
+      -78.484035,
+      38.011583,
+      0
+     ],
+     [
+      -78.483922,
+      38.011607,
+      0
+     ],
+     [
+      -78.483525,
+      38.011756,
+      0
+     ],
+     [
+      -78.482925,
+      38.011524,
+      0
+     ],
+     [
+      -78.482311,
+      38.010993,
+      0
+     ],
+     [
+      -78.481977,
+      38.010998,
+      0
+     ],
+     [
+      -78.481291,
+      38.011127,
+      0
+     ],
+     [
+      -78.480922,
+      38.011284,
+      0
+     ],
+     [
+      -78.480757,
+      38.011234,
+      0
+     ],
+     [
+      -78.480429,
+      38.011151,
+      0
+     ],
+     [
+      -78.480044,
+      38.01118,
+      0
+     ],
+     [
+      -78.479763,
+      38.011464,
+      0
+     ],
+     [
+      -78.479266,
+      38.012359,
+      0
+     ],
+     [
+      -78.478512,
+      38.012586,
+      0
+     ],
+     [
+      -78.47817,
+      38.012508,
+      0
+     ],
+     [
+      -78.478,
+      38.012586,
+      0
+     ],
+     [
+      -78.477946,
+      38.012975,
+      0
+     ],
+     [
+      -78.478404,
+      38.013492,
+      0
+     ],
+     [
+      -78.478026,
+      38.013768,
+      0
+     ],
+     [
+      -78.477541,
+      38.013782,
+      0
+     ],
+     [
+      -78.477434,
+      38.014065,
+      0
+     ],
+     [
+      -78.47729,
+      38.014115,
+      0
+     ],
+     [
+      -78.476122,
+      38.013789,
+      0
+     ],
+     [
+      -78.475224,
+      38.01323,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "2a4517a735d493cc747bc6dbfe171919"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.512132,
+      38.054975
+     ],
+     [
+      -78.511452,
+      38.055427
+     ],
+     [
+      -78.50993,
+      38.055276
+     ],
+     [
+      -78.509176,
+      38.05539
+     ],
+     [
+      -78.508846,
+      38.055772
+     ],
+     [
+      -78.508117,
+      38.055857
+     ],
+     [
+      -78.508022,
+      38.055803
+     ],
+     [
+      -78.507912,
+      38.055885
+     ],
+     [
+      -78.506686,
+      38.055819
+     ],
+     [
+      -78.505952,
+      38.055947
+     ],
+     [
+      -78.505546,
+      38.05596
+     ],
+     [
+      -78.505097,
+      38.055563
+     ],
+     [
+      -78.505362,
+      38.055301
+     ],
+     [
+      -78.505227,
+      38.054882
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "2a75813fae9458a23c554d47974dc788"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.166787</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>265.496758</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.47402,
+      38.05083,
+      0
+     ],
+     [
+      -78.473167,
+      38.051891,
+      0
+     ],
+     [
+      -78.473122,
+      38.052196,
+      0
+     ],
+     [
+      -78.472789,
+      38.052372,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "2da74e959843fc7209e9266c66411c96"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.492293,
+      38.02559
+     ],
+     [
+      -78.492299,
+      38.02538
+     ],
+     [
+      -78.492409,
+      38.025073
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "36518801cec265eb8e819c3ecc78a01e"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>2.74034</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>4351.024993</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.485107,
+      38.01629,
+      0
+     ],
+     [
+      -78.485273,
+      38.016301,
+      0
+     ],
+     [
+      -78.485365,
+      38.016271,
+      0
+     ],
+     [
+      -78.485442,
+      38.016156,
+      0
+     ],
+     [
+      -78.4855,
+      38.016123,
+      0
+     ],
+     [
+      -78.485861,
+      38.016107,
+      0
+     ],
+     [
+      -78.486344,
+      38.016188,
+      0
+     ],
+     [
+      -78.486587,
+      38.01628,
+      0
+     ],
+     [
+      -78.486894,
+      38.016511,
+      0
+     ],
+     [
+      -78.487426,
+      38.016851,
+      0
+     ],
+     [
+      -78.487859,
+      38.017391,
+      0
+     ],
+     [
+      -78.488031,
+      38.017469,
+      0
+     ],
+     [
+      -78.488369,
+      38.017029,
+      0
+     ],
+     [
+      -78.488375,
+      38.016884,
+      0
+     ],
+     [
+      -78.488721,
+      38.016799,
+      0
+     ],
+     [
+      -78.488954,
+      38.016811,
+      0
+     ],
+     [
+      -78.48929,
+      38.016897,
+      0
+     ],
+     [
+      -78.48964,
+      38.017107,
+      0
+     ],
+     [
+      -78.489671,
+      38.017269,
+      0
+     ],
+     [
+      -78.489911,
+      38.017426,
+      0
+     ],
+     [
+      -78.490415,
+      38.017435,
+      0
+     ],
+     [
+      -78.491138,
+      38.017112,
+      0
+     ],
+     [
+      -78.491604,
+      38.016837,
+      0
+     ],
+     [
+      -78.491845,
+      38.016642,
+      0
+     ],
+     [
+      -78.492037,
+      38.016381,
+      0
+     ],
+     [
+      -78.492686,
+      38.015948,
+      0
+     ],
+     [
+      -78.492962,
+      38.015606,
+      0
+     ],
+     [
+      -78.493204,
+      38.015283,
+      0
+     ],
+     [
+      -78.493317,
+      38.015213,
+      0
+     ],
+     [
+      -78.493424,
+      38.015222,
+      0
+     ],
+     [
+      -78.493702,
+      38.015507,
+      0
+     ],
+     [
+      -78.493781,
+      38.015522,
+      0
+     ],
+     [
+      -78.494039,
+      38.015423,
+      0
+     ],
+     [
+      -78.494047,
+      38.015312,
+      0
+     ],
+     [
+      -78.493821,
+      38.015147,
+      0
+     ],
+     [
+      -78.493628,
+      38.015079,
+      0
+     ],
+     [
+      -78.493297,
+      38.014879,
+      0
+     ],
+     [
+      -78.493183,
+      38.014875,
+      0
+     ],
+     [
+      -78.49291,
+      38.014947,
+      0
+     ],
+     [
+      -78.492743,
+      38.015097,
+      0
+     ],
+     [
+      -78.492652,
+      38.015121,
+      0
+     ],
+     [
+      -78.492568,
+      38.015112,
+      0
+     ],
+     [
+      -78.492401,
+      38.014995,
+      0
+     ],
+     [
+      -78.491752,
+      38.014597,
+      0
+     ],
+     [
+      -78.491578,
+      38.014575,
+      0
+     ],
+     [
+      -78.49118,
+      38.014609,
+      0
+     ],
+     [
+      -78.490414,
+      38.01454,
+      0
+     ],
+     [
+      -78.490105,
+      38.014547,
+      0
+     ],
+     [
+      -78.489293,
+      38.014409,
+      0
+     ],
+     [
+      -78.488694,
+      38.014335,
+      0
+     ],
+     [
+      -78.488542,
+      38.014094,
+      0
+     ],
+     [
+      -78.488507,
+      38.013818,
+      0
+     ],
+     [
+      -78.48854,
+      38.01361,
+      0
+     ],
+     [
+      -78.488639,
+      38.013326,
+      0
+     ],
+     [
+      -78.489151,
+      38.012976,
+      0
+     ],
+     [
+      -78.489791,
+      38.012714,
+      0
+     ],
+     [
+      -78.490835,
+      38.011942,
+      0
+     ],
+     [
+      -78.491821,
+      38.011281,
+      0
+     ],
+     [
+      -78.492739,
+      38.010862,
+      0
+     ],
+     [
+      -78.493476,
+      38.009969,
+      0
+     ],
+     [
+      -78.494179,
+      38.009232,
+      0
+     ],
+     [
+      -78.494415,
+      38.009049,
+      0
+     ],
+     [
+      -78.495051,
+      38.009291,
+      0
+     ],
+     [
+      -78.495878,
+      38.009979,
+      0
+     ],
+     [
+      -78.496293,
+      38.010653,
+      0
+     ],
+     [
+      -78.497427,
+      38.011743,
+      0
+     ],
+     [
+      -78.498441,
+      38.012864,
+      0
+     ],
+     [
+      -78.499164,
+      38.013173,
+      0
+     ],
+     [
+      -78.50008,
+      38.013039,
+      0
+     ],
+     [
+      -78.500934,
+      38.012529,
+      0
+     ],
+     [
+      -78.501059,
+      38.01214,
+      0
+     ],
+     [
+      -78.501544,
+      38.011822,
+      0
+     ],
+     [
+      -78.501508,
+      38.011404,
+      0
+     ],
+     [
+      -78.503601,
+      38.010222,
+      0
+     ],
+     [
+      -78.504194,
+      38.01013,
+      0
+     ],
+     [
+      -78.504742,
+      38.010218,
+      0
+     ],
+     [
+      -78.504985,
+      38.010123,
+      0
+     ],
+     [
+      -78.505307,
+      38.010161,
+      0
+     ],
+     [
+      -78.50558,
+      38.01043,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "37b51a682344134db4fe744812dd9029"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.497633,
+      38.016677
+     ],
+     [
+      -78.497363,
+      38.016413
+     ],
+     [
+      -78.496837,
+      38.016309
+     ],
+     [
+      -78.496514,
+      38.016283
+     ],
+     [
+      -78.496113,
+      38.016314
+     ],
+     [
+      -78.495771,
+      38.016268
+     ],
+     [
+      -78.495422,
+      38.016071
+     ],
+     [
+      -78.495107,
+      38.015957
+     ],
+     [
+      -78.494745,
+      38.015718
+     ],
+     [
+      -78.494416,
+      38.015547
+     ],
+     [
+      -78.494047,
+      38.01535
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "388c44a3a43abf7db6147a6ad47e9f2a"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.451409,
+      38.057423,
+      0
+     ],
+     [
+      -78.450331,
+      38.058187,
+      0
+     ],
+     [
+      -78.449595,
+      38.058901,
+      0
+     ],
+     [
+      -78.450269,
+      38.059708,
+      0
+     ],
+     [
+      -78.451095,
+      38.060358,
+      0
+     ],
+     [
+      -78.451679,
+      38.060464,
+      0
+     ],
+     [
+      -78.452514,
+      38.060394,
+      0
+     ],
+     [
+      -78.452919,
+      38.0605,
+      0
+     ],
+     [
+      -78.452963,
+      38.060698,
+      0
+     ],
+     [
+      -78.452865,
+      38.060818,
+      0
+     ],
+     [
+      -78.452254,
+      38.060648,
+      0
+     ],
+     [
+      -78.452083,
+      38.060719,
+      0
+     ],
+     [
+      -78.452056,
+      38.061391,
+      0
+     ],
+     [
+      -78.451526,
+      38.062501,
+      0
+     ],
+     [
+      -78.450421,
+      38.063336,
+      0
+     ],
+     [
+      -78.448741,
+      38.065224,
+      0
+     ],
+     [
+      -78.449433,
+      38.066073,
+      0
+     ],
+     [
+      -78.449747,
+      38.066349,
+      0
+     ],
+     [
+      -78.44999,
+      38.066384,
+      0
+     ],
+     [
+      -78.450233,
+      38.06707,
+      0
+     ],
+     [
+      -78.450071,
+      38.067947,
+      0
+     ],
+     [
+      -78.450251,
+      38.068874,
+      0
+     ],
+     [
+      -78.451086,
+      38.070034,
+      0
+     ],
+     [
+      -78.45114,
+      38.07043,
+      0
+     ],
+     [
+      -78.451526,
+      38.070705,
+      0
+     ],
+     [
+      -78.451697,
+      38.071243,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "3b16d2fa6068b7934156e483e05f89db"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.451338,
+      38.056079,
+      0
+     ],
+     [
+      -78.453017,
+      38.056228,
+      0
+     ],
+     [
+      -78.451409,
+      38.057423,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "3f6ff99995b8129682b07026c51128d7"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.49296,
+      38.027366
+     ],
+     [
+      -78.492818,
+      38.027288
+     ],
+     [
+      -78.492642,
+      38.026945
+     ],
+     [
+      -78.492715,
+      38.026583
+     ],
+     [
+      -78.49264,
+      38.026225
+     ],
+     [
+      -78.492419,
+      38.025838
+     ],
+     [
+      -78.492285,
+      38.025575
+     ],
+     [
+      -78.492019,
+      38.025286
+     ],
+     [
+      -78.492099,
+      38.025053
+     ],
+     [
+      -78.491977,
+      38.024626
+     ],
+     [
+      -78.492022,
+      38.024357
+     ],
+     [
+      -78.492279,
+      38.024038
+     ],
+     [
+      -78.492483,
+      38.023788
+     ],
+     [
+      -78.492542,
+      38.02362
+     ],
+     [
+      -78.492571,
+      38.02334
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "441b849d022330f87eb76bdd03ac043f"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>3.3335</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>5150.55373</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.52287,
+      38.046883,
+      0
+     ],
+     [
+      -78.523562,
+      38.047208,
+      0
+     ],
+     [
+      -78.523706,
+      38.047109,
+      0
+     ],
+     [
+      -78.523625,
+      38.046268,
+      0
+     ],
+     [
+      -78.523939,
+      38.046112,
+      0
+     ],
+     [
+      -78.52411,
+      38.045758,
+      0
+     ],
+     [
+      -78.52491,
+      38.045426,
+      0
+     ],
+     [
+      -78.5242,
+      38.045171,
+      0
+     ],
+     [
+      -78.524487,
+      38.044895,
+      0
+     ],
+     [
+      -78.524523,
+      38.044506,
+      0
+     ],
+     [
+      -78.524155,
+      38.044188,
+      0
+     ],
+     [
+      -78.524092,
+      38.043827,
+      0
+     ],
+     [
+      -78.524667,
+      38.04331,
+      0
+     ],
+     [
+      -78.524748,
+      38.042624,
+      0
+     ],
+     [
+      -78.524487,
+      38.042228,
+      0
+     ],
+     [
+      -78.524272,
+      38.042136,
+      0
+     ],
+     [
+      -78.5242,
+      38.041853,
+      0
+     ],
+     [
+      -78.524658,
+      38.041513,
+      0
+     ],
+     [
+      -78.524963,
+      38.041528,
+      0
+     ],
+     [
+      -78.525134,
+      38.041372,
+      0
+     ],
+     [
+      -78.525125,
+      38.040778,
+      0
+     ],
+     [
+      -78.524972,
+      38.040544,
+      0
+     ],
+     [
+      -78.525116,
+      38.040162,
+      0
+     ],
+     [
+      -78.525511,
+      38.03978,
+      0
+     ],
+     [
+      -78.525529,
+      38.039568,
+      0
+     ],
+     [
+      -78.525314,
+      38.039398,
+      0
+     ],
+     [
+      -78.525583,
+      38.038903,
+      0
+     ],
+     [
+      -78.525296,
+      38.038726,
+      0
+     ],
+     [
+      -78.525233,
+      38.038273,
+      0
+     ],
+     [
+      -78.525323,
+      38.038117,
+      0
+     ],
+     [
+      -78.52579,
+      38.037933,
+      0
+     ],
+     [
+      -78.5257,
+      38.036992,
+      0
+     ],
+     [
+      -78.525988,
+      38.036893,
+      0
+     ],
+     [
+      -78.526293,
+      38.036306,
+      0
+     ],
+     [
+      -78.526068,
+      38.035231,
+      0
+     ],
+     [
+      -78.526437,
+      38.034169,
+      0
+     ],
+     [
+      -78.526032,
+      38.03412,
+      0
+     ],
+     [
+      -78.525988,
+      38.034,
+      0
+     ],
+     [
+      -78.526113,
+      38.03383,
+      0
+     ],
+     [
+      -78.526769,
+      38.03354,
+      0
+     ],
+     [
+      -78.526518,
+      38.033158,
+      0
+     ],
+     [
+      -78.527092,
+      38.031948,
+      0
+     ],
+     [
+      -78.527039,
+      38.031735,
+      0
+     ],
+     [
+      -78.526302,
+      38.031467,
+      0
+     ],
+     [
+      -78.526724,
+      38.031155,
+      0
+     ],
+     [
+      -78.526814,
+      38.030738,
+      0
+     ],
+     [
+      -78.5272,
+      38.030306,
+      0
+     ],
+     [
+      -78.526967,
+      38.029259,
+      0
+     ],
+     [
+      -78.526625,
+      38.02899,
+      0
+     ],
+     [
+      -78.526248,
+      38.029096,
+      0
+     ],
+     [
+      -78.526239,
+      38.028636,
+      0
+     ],
+     [
+      -78.52667,
+      38.027737,
+      0
+     ],
+     [
+      -78.527074,
+      38.027695,
+      0
+     ],
+     [
+      -78.527317,
+      38.027822,
+      0
+     ],
+     [
+      -78.527461,
+      38.027737,
+      0
+     ],
+     [
+      -78.526715,
+      38.027278,
+      0
+     ],
+     [
+      -78.52727,
+      38.027046,
+      0
+     ],
+     [
+      -78.527155,
+      38.026975,
+      0
+     ],
+     [
+      -78.526621,
+      38.026827,
+      0
+     ],
+     [
+      -78.526697,
+      38.026542,
+      0
+     ],
+     [
+      -78.527021,
+      38.026563,
+      0
+     ],
+     [
+      -78.527497,
+      38.026379,
+      0
+     ],
+     [
+      -78.527587,
+      38.025869,
+      0
+     ],
+     [
+      -78.527883,
+      38.025459,
+      0
+     ],
+     [
+      -78.528736,
+      38.024935,
+      0
+     ],
+     [
+      -78.529509,
+      38.024228,
+      0
+     ],
+     [
+      -78.529796,
+      38.024235,
+      0
+     ],
+     [
+      -78.529985,
+      38.024093,
+      0
+     ],
+     [
+      -78.530021,
+      38.023463,
+      0
+     ],
+     [
+      -78.529648,
+      38.023413,
+      0
+     ],
+     [
+      -78.529446,
+      38.023286,
+      0
+     ],
+     [
+      -78.528368,
+      38.022317,
+      0
+     ],
+     [
+      -78.528174,
+      38.021491,
+      0
+     ],
+     [
+      -78.528116,
+      38.02136,
+      0
+     ],
+     [
+      -78.528046,
+      38.021298,
+      0
+     ],
+     [
+      -78.527965,
+      38.021254,
+      0
+     ],
+     [
+      -78.527843,
+      38.021207,
+      0
+     ],
+     [
+      -78.527702,
+      38.021329,
+      0
+     ],
+     [
+      -78.527515,
+      38.021355,
+      0
+     ],
+     [
+      -78.527102,
+      38.021474,
+      0
+     ],
+     [
+      -78.526887,
+      38.021564,
+      0
+     ],
+     [
+      -78.52677,
+      38.021566,
+      0
+     ],
+     [
+      -78.526601,
+      38.021589,
+      0
+     ],
+     [
+      -78.526569,
+      38.021391,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "4850e2c1d58d55c5307875af8137575a"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.484787,
+      38.009866
+     ],
+     [
+      -78.484864,
+      38.009815
+     ],
+     [
+      -78.484809,
+      38.009731
+     ],
+     [
+      -78.484737,
+      38.009691
+     ],
+     [
+      -78.484665,
+      38.009614
+     ],
+     [
+      -78.484651,
+      38.009575
+     ],
+     [
+      -78.484653,
+      38.009502
+     ],
+     [
+      -78.48464,
+      38.009473
+     ],
+     [
+      -78.484575,
+      38.009427
+     ],
+     [
+      -78.484472,
+      38.009417
+     ],
+     [
+      -78.484446,
+      38.009383
+     ],
+     [
+      -78.484482,
+      38.009362
+     ],
+     [
+      -78.484638,
+      38.009353
+     ],
+     [
+      -78.48472,
+      38.00933
+     ],
+     [
+      -78.484768,
+      38.009304
+     ],
+     [
+      -78.484958,
+      38.009277
+     ],
+     [
+      -78.485029,
+      38.009252
+     ],
+     [
+      -78.485079,
+      38.009252
+     ],
+     [
+      -78.485185,
+      38.009275
+     ],
+     [
+      -78.485263,
+      38.009266
+     ],
+     [
+      -78.485364,
+      38.009219
+     ],
+     [
+      -78.485465,
+      38.009211
+     ],
+     [
+      -78.485719,
+      38.009096
+     ],
+     [
+      -78.485801,
+      38.009092
+     ],
+     [
+      -78.48589,
+      38.009069
+     ],
+     [
+      -78.486049,
+      38.008979
+     ],
+     [
+      -78.486118,
+      38.008919
+     ],
+     [
+      -78.486234,
+      38.008875
+     ],
+     [
+      -78.486261,
+      38.008874
+     ],
+     [
+      -78.486298,
+      38.008864
+     ],
+     [
+      -78.486344,
+      38.008865
+     ],
+     [
+      -78.486392,
+      38.008867
+     ],
+     [
+      -78.48662,
+      38.008858
+     ],
+     [
+      -78.486667,
+      38.008867
+     ],
+     [
+      -78.48673,
+      38.008852
+     ],
+     [
+      -78.486804,
+      38.008799
+     ],
+     [
+      -78.486834,
+      38.008788
+     ],
+     [
+      -78.486937,
+      38.008799
+     ],
+     [
+      -78.487002,
+      38.008802
+     ],
+     [
+      -78.487061,
+      38.008826
+     ],
+     [
+      -78.487145,
+      38.008864
+     ],
+     [
+      -78.487195,
+      38.008884
+     ],
+     [
+      -78.487211,
+      38.008911
+     ],
+     [
+      -78.487214,
+      38.008929
+     ],
+     [
+      -78.487095,
+      38.009077
+     ],
+     [
+      -78.486989,
+      38.009132
+     ],
+     [
+      -78.486924,
+      38.009214
+     ],
+     [
+      -78.486864,
+      38.009261
+     ],
+     [
+      -78.486796,
+      38.009293
+     ],
+     [
+      -78.4867,
+      38.009269
+     ],
+     [
+      -78.486665,
+      38.009272
+     ],
+     [
+      -78.486628,
+      38.009289
+     ],
+     [
+      -78.486571,
+      38.009435
+     ],
+     [
+      -78.486577,
+      38.009465
+     ],
+     [
+      -78.486605,
+      38.009489
+     ],
+     [
+      -78.486602,
+      38.009523
+     ],
+     [
+      -78.486549,
+      38.009612
+     ],
+     [
+      -78.48654,
+      38.009643
+     ],
+     [
+      -78.486482,
+      38.009692
+     ],
+     [
+      -78.486394,
+      38.009722
+     ],
+     [
+      -78.486323,
+      38.009715
+     ],
+     [
+      -78.486157,
+      38.0098
+     ],
+     [
+      -78.486088,
+      38.009804
+     ],
+     [
+      -78.485965,
+      38.009836
+     ],
+     [
+      -78.485777,
+      38.009956
+     ],
+     [
+      -78.485709,
+      38.009988
+     ],
+     [
+      -78.485654,
+      38.010036
+     ],
+     [
+      -78.485445,
+      38.010081
+     ],
+     [
+      -78.485343,
+      38.01007
+     ],
+     [
+      -78.485309,
+      38.01009
+     ],
+     [
+      -78.485258,
+      38.010139
+     ],
+     [
+      -78.485254,
+      38.010172
+     ],
+     [
+      -78.485263,
+      38.010207
+     ],
+     [
+      -78.485293,
+      38.010225
+     ],
+     [
+      -78.485325,
+      38.010215
+     ],
+     [
+      -78.485377,
+      38.010179
+     ],
+     [
+      -78.485453,
+      38.010173
+     ],
+     [
+      -78.4855,
+      38.010176
+     ],
+     [
+      -78.485621,
+      38.01021
+     ],
+     [
+      -78.485502,
+      38.010317
+     ],
+     [
+      -78.48537,
+      38.010373
+     ],
+     [
+      -78.485155,
+      38.010528
+     ],
+     [
+      -78.485142,
+      38.010566
+     ],
+     [
+      -78.485086,
+      38.010629
+     ],
+     [
+      -78.484836,
+      38.010814
+     ],
+     [
+      -78.484814,
+      38.010846
+     ],
+     [
+      -78.484808,
+      38.010906
+     ],
+     [
+      -78.484732,
+      38.011007
+     ],
+     [
+      -78.48468,
+      38.011055
+     ],
+     [
+      -78.484564,
+      38.011136
+     ],
+     [
+      -78.484527,
+      38.011129
+     ],
+     [
+      -78.484491,
+      38.011136
+     ],
+     [
+      -78.484445,
+      38.011148
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "4975eff1a7263b4b03415605bdf841de"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.09142</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>9600.810793</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.453673,
+      38.02911,
+      0
+     ],
+     [
+      -78.454248,
+      38.029436,
+      0
+     ],
+     [
+      -78.455317,
+      38.029542,
+      0
+     ],
+     [
+      -78.455937,
+      38.029443,
+      0
+     ],
+     [
+      -78.45715,
+      38.02894,
+      0
+     ],
+     [
+      -78.457743,
+      38.028544,
+      0
+     ],
+     [
+      -78.458659,
+      38.027419,
+      0
+     ],
+     [
+      -78.45953,
+      38.027214,
+      0
+     ],
+     [
+      -78.460123,
+      38.027186,
+      0
+     ],
+     [
+      -78.460758,
+      38.027632,
+      0
+     ],
+     [
+      -78.461321,
+      38.028126,
+      0
+     ],
+     [
+      -78.461138,
+      38.028403,
+      0
+     ],
+     [
+      -78.461201,
+      38.029294,
+      0
+     ],
+     [
+      -78.460599,
+      38.030483,
+      0
+     ],
+     [
+      -78.460698,
+      38.031693,
+      0
+     ],
+     [
+      -78.460384,
+      38.032719,
+      0
+     ],
+     [
+      -78.460055,
+      38.033344,
+      0
+     ],
+     [
+      -78.459998,
+      38.033547,
+      0
+     ],
+     [
+      -78.459685,
+      38.033712,
+      0
+     ],
+     [
+      -78.459261,
+      38.034042,
+      0
+     ],
+     [
+      -78.45911,
+      38.034313,
+      0
+     ],
+     [
+      -78.459083,
+      38.0345,
+      0
+     ],
+     [
+      -78.458964,
+      38.03461,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "4ceeee9aab619068607f722775f7338f"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>1.22545</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>1871.78505</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.532949,
+      38.021567,
+      0
+     ],
+     [
+      -78.533506,
+      38.021517,
+      0
+     ],
+     [
+      -78.533668,
+      38.021312,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "4f585e2f7bf5248b6799a29a31c40c48"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.514666,
+      38.010149
+     ],
+     [
+      -78.514755,
+      38.009978
+     ],
+     [
+      -78.514928,
+      38.009866
+     ],
+     [
+      -78.514972,
+      38.009747
+     ],
+     [
+      -78.514995,
+      38.009601
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "509dbd43ddef86dd6f8650cf38f0eb61"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.496633,
+      38.017931
+     ],
+     [
+      -78.496304,
+      38.017708
+     ],
+     [
+      -78.49612,
+      38.017325
+     ],
+     [
+      -78.495896,
+      38.017066
+     ],
+     [
+      -78.49535,
+      38.016781
+     ],
+     [
+      -78.494935,
+      38.016641
+     ],
+     [
+      -78.4946,
+      38.016589
+     ],
+     [
+      -78.494455,
+      38.016615
+     ],
+     [
+      -78.494363,
+      38.016589
+     ],
+     [
+      -78.494337,
+      38.01648
+     ],
+     [
+      -78.494363,
+      38.016345
+     ],
+     [
+      -78.494186,
+      38.016014
+     ],
+     [
+      -78.494113,
+      38.015786
+     ],
+     [
+      -78.493699,
+      38.015506
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "51648e193f0ff18af4749832b29e4ca1"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.456507,
+      38.047605
+     ],
+     [
+      -78.45619,
+      38.047504
+     ],
+     [
+      -78.455965,
+      38.047315
+     ],
+     [
+      -78.455567,
+      38.047107
+     ],
+     [
+      -78.455285,
+      38.046943
+     ],
+     [
+      -78.454989,
+      38.046804
+     ],
+     [
+      -78.454839,
+      38.046558
+     ],
+     [
+      -78.454626,
+      38.046295
+     ],
+     [
+      -78.454422,
+      38.046314
+     ],
+     [
+      -78.4543,
+      38.046295
+     ],
+     [
+      -78.454232,
+      38.046368
+     ],
+     [
+      -78.454078,
+      38.046438
+     ],
+     [
+      -78.453886,
+      38.046352
+     ],
+     [
+      -78.453737,
+      38.046394
+     ],
+     [
+      -78.453689,
+      38.046417
+     ],
+     [
+      -78.453669,
+      38.0466
+     ],
+     [
+      -78.453335,
+      38.046528
+     ],
+     [
+      -78.453068,
+      38.046577
+     ],
+     [
+      -78.452431,
+      38.046531
+     ],
+     [
+      -78.452212,
+      38.04648
+     ],
+     [
+      -78.452032,
+      38.046091
+     ],
+     [
+      -78.451925,
+      38.046033
+     ],
+     [
+      -78.451577,
+      38.04596
+     ],
+     [
+      -78.451409,
+      38.045974
+     ],
+     [
+      -78.451321,
+      38.046044
+     ],
+     [
+      -78.451101,
+      38.046102
+     ],
+     [
+      -78.450671,
+      38.045975
+     ],
+     [
+      -78.450237,
+      38.045926
+     ],
+     [
+      -78.449678,
+      38.045752
+     ],
+     [
+      -78.449374,
+      38.04572
+     ],
+     [
+      -78.449032,
+      38.045758
+     ],
+     [
+      -78.448748,
+      38.04582
+     ],
+     [
+      -78.448505,
+      38.045953
+     ],
+     [
+      -78.448271,
+      38.046211
+     ],
+     [
+      -78.448128,
+      38.046425
+     ],
+     [
+      -78.448026,
+      38.046469
+     ],
+     [
+      -78.447705,
+      38.046825
+     ],
+     [
+      -78.447374,
+      38.048323
+     ],
+     [
+      -78.447,
+      38.049192
+     ],
+     [
+      -78.447784,
+      38.051538
+     ],
+     [
+      -78.448113,
+      38.05348
+     ],
+     [
+      -78.447988,
+      38.053939
+     ],
+     [
+      -78.448129,
+      38.055109
+     ],
+     [
+      -78.448289,
+      38.055168
+     ],
+     [
+      -78.44827,
+      38.055367
+     ],
+     [
+      -78.448957,
+      38.057705
+     ],
+     [
+      -78.449042,
+      38.058003
+     ],
+     [
+      -78.449251,
+      38.058224
+     ],
+     [
+      -78.449523,
+      38.058772
+     ],
+     [
+      -78.449601,
+      38.058906
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "53a2b53efbd4d8988a394c592680741e"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.529501,
+      38.024232
+     ],
+     [
+      -78.52926,
+      38.023995
+     ],
+     [
+      -78.529046,
+      38.023783
+     ],
+     [
+      -78.528829,
+      38.023689
+     ],
+     [
+      -78.528648,
+      38.023644
+     ],
+     [
+      -78.528361,
+      38.023429
+     ],
+     [
+      -78.528415,
+      38.023227
+     ],
+     [
+      -78.528401,
+      38.022936
+     ],
+     [
+      -78.528401,
+      38.022683
+     ],
+     [
+      -78.528074,
+      38.022401
+     ],
+     [
+      -78.52789,
+      38.02207
+     ],
+     [
+      -78.527613,
+      38.021923
+     ],
+     [
+      -78.527494,
+      38.021727
+     ],
+     [
+      -78.527542,
+      38.021511
+     ],
+     [
+      -78.527571,
+      38.021343
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "56123c7ff0ae965d82213bf5989799c7"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.530025,
+      38.023468
+     ],
+     [
+      -78.530005,
+      38.023354
+     ],
+     [
+      -78.530102,
+      38.02325
+     ],
+     [
+      -78.530037,
+      38.023143
+     ],
+     [
+      -78.530062,
+      38.023105
+     ],
+     [
+      -78.52999,
+      38.022909
+     ],
+     [
+      -78.530177,
+      38.0229
+     ],
+     [
+      -78.530091,
+      38.022824
+     ],
+     [
+      -78.530142,
+      38.02278
+     ],
+     [
+      -78.530376,
+      38.022801
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "644b9d615eb10f88e493dde32c24bbd6"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>2.92439</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>4590.791157</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.458839,
+      38.034723,
+      0
+     ],
+     [
+      -78.458748,
+      38.034818,
+      0
+     ],
+     [
+      -78.458656,
+      38.034868,
+      0
+     ],
+     [
+      -78.45833,
+      38.034853,
+      0
+     ],
+     [
+      -78.458147,
+      38.034884,
+      0
+     ],
+     [
+      -78.45759,
+      38.035273,
+      0
+     ],
+     [
+      -78.455307,
+      38.037375,
+      0
+     ],
+     [
+      -78.455234,
+      38.037617,
+      0
+     ],
+     [
+      -78.454982,
+      38.03784,
+      0
+     ],
+     [
+      -78.454648,
+      38.038459,
+      0
+     ],
+     [
+      -78.454664,
+      38.038579,
+      0
+     ],
+     [
+      -78.454791,
+      38.038699,
+      0
+     ],
+     [
+      -78.454832,
+      38.038797,
+      0
+     ],
+     [
+      -78.454789,
+      38.038915,
+      0
+     ],
+     [
+      -78.45469,
+      38.039033,
+      0
+     ],
+     [
+      -78.454442,
+      38.039239,
+      0
+     ],
+     [
+      -78.454338,
+      38.039482,
+      0
+     ],
+     [
+      -78.454423,
+      38.040119,
+      0
+     ],
+     [
+      -78.454437,
+      38.040601,
+      0
+     ],
+     [
+      -78.454276,
+      38.040776,
+      0
+     ],
+     [
+      -78.454183,
+      38.041138,
+      0
+     ],
+     [
+      -78.454231,
+      38.041443,
+      0
+     ],
+     [
+      -78.454213,
+      38.041539,
+      0
+     ],
+     [
+      -78.454373,
+      38.042133,
+      0
+     ],
+     [
+      -78.454536,
+      38.042461,
+      0
+     ],
+     [
+      -78.4546,
+      38.042539,
+      0
+     ],
+     [
+      -78.454891,
+      38.042638,
+      0
+     ],
+     [
+      -78.455032,
+      38.042625,
+      0
+     ],
+     [
+      -78.455892,
+      38.042178,
+      0
+     ],
+     [
+      -78.455911,
+      38.042052,
+      0
+     ],
+     [
+      -78.456041,
+      38.041908,
+      0
+     ],
+     [
+      -78.456228,
+      38.041926,
+      0
+     ],
+     [
+      -78.458515,
+      38.044154,
+      0
+     ],
+     [
+      -78.457321,
+      38.044926,
+      0
+     ],
+     [
+      -78.457524,
+      38.045275,
+      0
+     ],
+     [
+      -78.457077,
+      38.045673,
+      0
+     ],
+     [
+      -78.456672,
+      38.04585,
+      0
+     ],
+     [
+      -78.456591,
+      38.046008,
+      0
+     ],
+     [
+      -78.45651,
+      38.046167,
+      0
+     ],
+     [
+      -78.456575,
+      38.046376,
+      0
+     ],
+     [
+      -78.456596,
+      38.046604,
+      0
+     ],
+     [
+      -78.456691,
+      38.046734,
+      0
+     ],
+     [
+      -78.456916,
+      38.046798,
+      0
+     ],
+     [
+      -78.457319,
+      38.046698,
+      0
+     ],
+     [
+      -78.457635,
+      38.046551,
+      0
+     ],
+     [
+      -78.457608,
+      38.046169,
+      0
+     ],
+     [
+      -78.457853,
+      38.045953,
+      0
+     ],
+     [
+      -78.458093,
+      38.045939,
+      0
+     ],
+     [
+      -78.458371,
+      38.045999,
+      0
+     ],
+     [
+      -78.458455,
+      38.046106,
+      0
+     ],
+     [
+      -78.458488,
+      38.046218,
+      0
+     ],
+     [
+      -78.459009,
+      38.046494,
+      0
+     ],
+     [
+      -78.459261,
+      38.046487,
+      0
+     ],
+     [
+      -78.460096,
+      38.045758,
+      0
+     ],
+     [
+      -78.460608,
+      38.044761,
+      0
+     ],
+     [
+      -78.461264,
+      38.044202,
+      0
+     ],
+     [
+      -78.461983,
+      38.044053,
+      0
+     ],
+     [
+      -78.462647,
+      38.044329,
+      0
+     ],
+     [
+      -78.462989,
+      38.044648,
+      0
+     ],
+     [
+      -78.463013,
+      38.044732,
+      0
+     ],
+     [
+      -78.462953,
+      38.044824,
+      0
+     ],
+     [
+      -78.46319,
+      38.04512,
+      0
+     ],
+     [
+      -78.463337,
+      38.045328,
+      0
+     ],
+     [
+      -78.463385,
+      38.045529,
+      0
+     ],
+     [
+      -78.463501,
+      38.045575,
+      0
+     ],
+     [
+      -78.463726,
+      38.045619,
+      0
+     ],
+     [
+      -78.464067,
+      38.045913,
+      0
+     ],
+     [
+      -78.464399,
+      38.046055,
+      0
+     ],
+     [
+      -78.464749,
+      38.046678,
+      0
+     ],
+     [
+      -78.465441,
+      38.047032,
+      0
+     ],
+     [
+      -78.467094,
+      38.04822,
+      0
+     ],
+     [
+      -78.467372,
+      38.048248,
+      0
+     ],
+     [
+      -78.467831,
+      38.047697,
+      0
+     ],
+     [
+      -78.469061,
+      38.046763,
+      0
+     ],
+     [
+      -78.469582,
+      38.046833,
+      0
+     ],
+     [
+      -78.469771,
+      38.047088,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "64f76990cfad9657c30695c01518e7ff"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>1.22545</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>1871.78505</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.533668,
+      38.021312,
+      0
+     ],
+     [
+      -78.532994,
+      38.020831,
+      0
+     ],
+     [
+      -78.532473,
+      38.02064,
+      0
+     ],
+     [
+      -78.532006,
+      38.020243,
+      0
+     ],
+     [
+      -78.531521,
+      38.020173,
+      0
+     ],
+     [
+      -78.531099,
+      38.020392,
+      0
+     ],
+     [
+      -78.530605,
+      38.020399,
+      0
+     ],
+     [
+      -78.529096,
+      38.021029,
+      0
+     ],
+     [
+      -78.528979,
+      38.021206,
+      0
+     ],
+     [
+      -78.529024,
+      38.021907,
+      0
+     ],
+     [
+      -78.528835,
+      38.022147,
+      0
+     ],
+     [
+      -78.528575,
+      38.021779,
+      0
+     ],
+     [
+      -78.528566,
+      38.021326,
+      0
+     ],
+     [
+      -78.528126,
+      38.021362,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "662968b8128083f318242f4a5dd2000e"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.452496,
+      38.05482,
+      0
+     ],
+     [
+      -78.451311,
+      38.055966,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "69f136c006c74e2a11786d74bd6777fb"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.506536,
+      38.010509
+     ],
+     [
+      -78.506531,
+      38.010225
+     ],
+     [
+      -78.506359,
+      38.010015
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "6cf39fce71d460201d62c13dcc493000"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.480915,
+      38.011281
+     ],
+     [
+      -78.48052,
+      38.01183
+     ],
+     [
+      -78.480093,
+      38.012044
+     ],
+     [
+      -78.479868,
+      38.012311
+     ],
+     [
+      -78.479549,
+      38.012469
+     ],
+     [
+      -78.479262,
+      38.012356
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "72fa6cb2b4a07e342f6c17dfc9a44f32"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.017961</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>28.861739</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.505238,
+      38.054877
+     ],
+     [
+      -78.505463,
+      38.054798
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "7304e99e61891197d8d8086648d6eab4"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.447583,
+      38.077268,
+      0
+     ],
+     [
+      -78.447933,
+      38.078505,
+      0
+     ],
+     [
+      -78.44822,
+      38.079007,
+      0
+     ],
+     [
+      -78.449209,
+      38.079608,
+      0
+     ],
+     [
+      -78.448777,
+      38.080118,
+      0
+     ],
+     [
+      -78.448148,
+      38.081468,
+      0
+     ],
+     [
+      -78.448517,
+      38.082458,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "78d36037a9d210107f69b049f14b4af3"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.09142</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>9600.810793</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.454715,
+      38.024079,
+      0
+     ],
+     [
+      -78.453781,
+      38.025523,
+      0
+     ],
+     [
+      -78.453332,
+      38.026605,
+      0
+     ],
+     [
+      -78.453377,
+      38.02732,
+      0
+     ],
+     [
+      -78.454023,
+      38.02778,
+      0
+     ],
+     [
+      -78.454185,
+      38.02819,
+      0
+     ],
+     [
+      -78.454131,
+      38.028495,
+      0
+     ],
+     [
+      -78.453673,
+      38.02911,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "7b9c1c68e8df325f65c8c5a1a06d385c"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.482706,
+      38.011328
+     ],
+     [
+      -78.482204,
+      38.011395
+     ],
+     [
+      -78.482084,
+      38.01151
+     ],
+     [
+      -78.481707,
+      38.011571
+     ],
+     [
+      -78.481544,
+      38.011677
+     ],
+     [
+      -78.481261,
+      38.011844
+     ],
+     [
+      -78.481047,
+      38.012014
+     ],
+     [
+      -78.48083,
+      38.012354
+     ],
+     [
+      -78.480518,
+      38.01268
+     ],
+     [
+      -78.480336,
+      38.012851
+     ],
+     [
+      -78.480171,
+      38.013057
+     ],
+     [
+      -78.479832,
+      38.013124
+     ],
+     [
+      -78.479548,
+      38.013135
+     ],
+     [
+      -78.479203,
+      38.013084
+     ],
+     [
+      -78.478842,
+      38.013283
+     ],
+     [
+      -78.478632,
+      38.013451
+     ],
+     [
+      -78.478407,
+      38.013489
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "7ee8a9e5adf6f490d223ed88a0ad06b8"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.297439</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>464.605535</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.508033,
+      38.055786,
+      0
+     ],
+     [
+      -78.508048,
+      38.055478,
+      0
+     ],
+     [
+      -78.508623,
+      38.055011,
+      0
+     ],
+     [
+      -78.509728,
+      38.054749,
+      0
+     ],
+     [
+      -78.51015,
+      38.05482,
+      0
+     ],
+     [
+      -78.510815,
+      38.054721,
+      0
+     ],
+     [
+      -78.511138,
+      38.054509,
+      0
+     ],
+     [
+      -78.511381,
+      38.054509,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "7f7566e81f368f866b746743a43771d8"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.762203</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>1195.437766</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.45891,
+      38.051007,
+      0
+     ],
+     [
+      -78.458434,
+      38.05189,
+      0
+     ],
+     [
+      -78.458321,
+      38.051957,
+      0
+     ],
+     [
+      -78.458246,
+      38.052033,
+      0
+     ],
+     [
+      -78.457983,
+      38.052285,
+      0
+     ],
+     [
+      -78.457838,
+      38.052518,
+      0
+     ],
+     [
+      -78.457527,
+      38.052684,
+      0
+     ],
+     [
+      -78.457168,
+      38.054021,
+      0
+     ],
+     [
+      -78.457248,
+      38.054502,
+      0
+     ],
+     [
+      -78.456763,
+      38.055343,
+      0
+     ],
+     [
+      -78.456251,
+      38.055308,
+      0
+     ],
+     [
+      -78.454598,
+      38.053738,
+      0
+     ],
+     [
+      -78.453574,
+      38.053398,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "83c7820c274019a9ef8e9c87975b9ffb"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.019535</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>31.016125</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.52729,
+      38.025961,
+      0
+     ],
+     [
+      -78.527569,
+      38.025968,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "89b00eb937320798f82115786ca01d13"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.45682,
+      38.046933
+     ],
+     [
+      -78.45704,
+      38.047102
+     ],
+     [
+      -78.45663,
+      38.047539
+     ],
+     [
+      -78.456501,
+      38.047609
+     ],
+     [
+      -78.456493,
+      38.047666
+     ],
+     [
+      -78.456663,
+      38.047688
+     ],
+     [
+      -78.456683,
+      38.047736
+     ],
+     [
+      -78.456581,
+      38.047756
+     ],
+     [
+      -78.456594,
+      38.047802
+     ],
+     [
+      -78.456784,
+      38.04783
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "8c677039b769f071a2239531920086f7"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.488077,
+      38.056824
+     ],
+     [
+      -78.488845,
+      38.056831
+     ],
+     [
+      -78.48907,
+      38.056935
+     ],
+     [
+      -78.488976,
+      38.057025
+     ],
+     [
+      -78.489531,
+      38.057075
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "8cf0f3c7d87899bfc9ad701463b96013"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.447583,
+      38.077268,
+      0
+     ],
+     [
+      -78.447169,
+      38.077565,
+      0
+     ],
+     [
+      -78.447071,
+      38.077933,
+      0
+     ],
+     [
+      -78.447358,
+      38.07847,
+      0
+     ],
+     [
+      -78.44761,
+      38.07963,
+      0
+     ],
+     [
+      -78.446388,
+      38.081694,
+      0
+     ],
+     [
+      -78.446792,
+      38.08202,
+      0
+     ],
+     [
+      -78.447708,
+      38.082112,
+      0
+     ],
+     [
+      -78.448517,
+      38.082458,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "91f0559a78c085b3edd8592b5ed90c30"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.199251</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>314.156255</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.481737,
+      38.053999,
+      0
+     ],
+     [
+      -78.482455,
+      38.05477,
+      0
+     ],
+     [
+      -78.483273,
+      38.055266,
+      0
+     ],
+     [
+      -78.482976,
+      38.055655,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "92fcce9ec167cc8982ac837ad134fda7"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>2.16948</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>3399.903576</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.467516,
+      38.059071,
+      0
+     ],
+     [
+      -78.467893,
+      38.059255,
+      0
+     ],
+     [
+      -78.467759,
+      38.05963,
+      0
+     ],
+     [
+      -78.468199,
+      38.059863,
+      0
+     ],
+     [
+      -78.46951,
+      38.059729,
+      0
+     ],
+     [
+      -78.471029,
+      38.060139,
+      0
+     ],
+     [
+      -78.471235,
+      38.060302,
+      0
+     ],
+     [
+      -78.471388,
+      38.060747,
+      0
+     ],
+     [
+      -78.471693,
+      38.060967,
+      0
+     ],
+     [
+      -78.471783,
+      38.061292,
+      0
+     ],
+     [
+      -78.472771,
+      38.062176,
+      0
+     ],
+     [
+      -78.474343,
+      38.063081,
+      0
+     ],
+     [
+      -78.474981,
+      38.063294,
+      0
+     ],
+     [
+      -78.47552,
+      38.063647,
+      0
+     ],
+     [
+      -78.475826,
+      38.064093,
+      0
+     ],
+     [
+      -78.477523,
+      38.065104,
+      0
+     ],
+     [
+      -78.478422,
+      38.064984,
+      0
+     ],
+     [
+      -78.480129,
+      38.065592,
+      0
+     ],
+     [
+      -78.480901,
+      38.065231,
+      0
+     ],
+     [
+      -78.482293,
+      38.064135,
+      0
+     ],
+     [
+      -78.482626,
+      38.063612,
+      0
+     ],
+     [
+      -78.483452,
+      38.063067,
+      0
+     ],
+     [
+      -78.483686,
+      38.062424,
+      0
+     ],
+     [
+      -78.484494,
+      38.061504,
+      0
+     ],
+     [
+      -78.4848,
+      38.060747,
+      0
+     ],
+     [
+      -78.485563,
+      38.060026,
+      0
+     ],
+     [
+      -78.485932,
+      38.059283,
+      0
+     ],
+     [
+      -78.486318,
+      38.058958,
+      0
+     ],
+     [
+      -78.48621,
+      38.058774,
+      0
+     ],
+     [
+      -78.486291,
+      38.058541,
+      0
+     ],
+     [
+      -78.487189,
+      38.05847,
+      0
+     ],
+     [
+      -78.487647,
+      38.058243,
+      0
+     ],
+     [
+      -78.487953,
+      38.058265,
+      0
+     ],
+     [
+      -78.488003,
+      38.058251,
+      0
+     ],
+     [
+      -78.48807,
+      38.058251,
+      0
+     ],
+     [
+      -78.488366,
+      38.058251,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "96329ddafccc1541272f69cc615cea2e"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.453233,
+      38.054035,
+      0
+     ],
+     [
+      -78.453233,
+      38.054042,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "9978630deaaeb799b20065b3937fa3da"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.490069,
+      38.056968
+     ],
+     [
+      -78.490512,
+      38.056691
+     ],
+     [
+      -78.490849,
+      38.056294
+     ],
+     [
+      -78.490906,
+      38.056131
+     ],
+     [
+      -78.491231,
+      38.055815
+     ],
+     [
+      -78.491554,
+      38.055789
+     ],
+     [
+      -78.491886,
+      38.055573
+     ],
+     [
+      -78.492225,
+      38.055516
+     ],
+     [
+      -78.492671,
+      38.055289
+     ],
+     [
+      -78.492934,
+      38.055317
+     ],
+     [
+      -78.493383,
+      38.0552
+     ],
+     [
+      -78.493526,
+      38.055078
+     ],
+     [
+      -78.494791,
+      38.055076
+     ],
+     [
+      -78.495127,
+      38.055225
+     ],
+     [
+      -78.495325,
+      38.055486
+     ],
+     [
+      -78.495512,
+      38.055767
+     ],
+     [
+      -78.496003,
+      38.055858
+     ],
+     [
+      -78.496256,
+      38.055931
+     ],
+     [
+      -78.496639,
+      38.056108
+     ],
+     [
+      -78.497839,
+      38.056655
+     ],
+     [
+      -78.498029,
+      38.056816
+     ],
+     [
+      -78.498144,
+      38.05666
+     ],
+     [
+      -78.498812,
+      38.056338
+     ],
+     [
+      -78.499116,
+      38.056488
+     ],
+     [
+      -78.499484,
+      38.056235
+     ],
+     [
+      -78.500578,
+      38.055922
+     ],
+     [
+      -78.500944,
+      38.056044
+     ],
+     [
+      -78.5014,
+      38.055371
+     ],
+     [
+      -78.501653,
+      38.055189
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "9d31b38ff2aa87d47d4abbfe667c8f40"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>1.22545</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>1871.78505</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.528352,
+      38.022255,
+      0
+     ],
+     [
+      -78.529805,
+      38.022487,
+      0
+     ],
+     [
+      -78.530012,
+      38.022352,
+      0
+     ],
+     [
+      -78.530111,
+      38.022727,
+      0
+     ],
+     [
+      -78.530641,
+      38.022876,
+      0
+     ],
+     [
+      -78.531117,
+      38.023386,
+      0
+     ],
+     [
+      -78.531767,
+      38.022928,
+      0
+     ],
+     [
+      -78.531951,
+      38.022865,
+      0
+     ],
+     [
+      -78.532374,
+      38.022515,
+      0
+     ],
+     [
+      -78.532613,
+      38.022421,
+      0
+     ],
+     [
+      -78.53303,
+      38.022027,
+      0
+     ],
+     [
+      -78.533659,
+      38.021758,
+      0
+     ],
+     [
+      -78.533767,
+      38.021468,
+      0
+     ],
+     [
+      -78.533668,
+      38.021312,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "a9fd07065973a2f8bfc5d91504309eef"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.058674</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>93.073752</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.473095,
+      38.062339,
+      0
+     ],
+     [
+      -78.473301,
+      38.062112,
+      0
+     ],
+     [
+      -78.473733,
+      38.061943,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "ac8a415ef4fd064cf36aed321bc3c77e"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.09142</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>9600.810793</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.454715,
+      38.024079,
+      0
+     ],
+     [
+      -78.454221,
+      38.023888,
+      0
+     ],
+     [
+      -78.453017,
+      38.02582,
+      0
+     ],
+     [
+      -78.452622,
+      38.027589,
+      0
+     ],
+     [
+      -78.45291,
+      38.028488,
+      0
+     ],
+     [
+      -78.453673,
+      38.02911,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "b4c04bc2d7b0a629575c8040ce779963"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.484047,
+      38.011579
+     ],
+     [
+      -78.484062,
+      38.011562
+     ],
+     [
+      -78.484062,
+      38.011523
+     ],
+     [
+      -78.484163,
+      38.011449
+     ],
+     [
+      -78.48421,
+      38.011391
+     ],
+     [
+      -78.484234,
+      38.011312
+     ],
+     [
+      -78.484256,
+      38.011281
+     ],
+     [
+      -78.484287,
+      38.011251
+     ],
+     [
+      -78.484417,
+      38.011176
+     ],
+     [
+      -78.484442,
+      38.011151
+     ],
+     [
+      -78.484517,
+      38.011029
+     ],
+     [
+      -78.48465,
+      38.010668
+     ],
+     [
+      -78.484658,
+      38.010598
+     ],
+     [
+      -78.484726,
+      38.010494
+     ],
+     [
+      -78.484819,
+      38.01025
+     ],
+     [
+      -78.484823,
+      38.010063
+     ],
+     [
+      -78.484794,
+      38.01001
+     ],
+     [
+      -78.484784,
+      38.009868
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "b5dcf20178a01d979e8a877408763175"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>1.32639</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>2046.274146</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.512135,
+      38.054968,
+      0
+     ],
+     [
+      -78.5126,
+      38.05487,
+      0
+     ],
+     [
+      -78.513065,
+      38.054772,
+      0
+     ],
+     [
+      -78.513634,
+      38.054718,
+      0
+     ],
+     [
+      -78.514649,
+      38.054597,
+      0
+     ],
+     [
+      -78.514805,
+      38.054555,
+      0
+     ],
+     [
+      -78.51489,
+      38.054467,
+      0
+     ],
+     [
+      -78.515001,
+      38.054292,
+      0
+     ],
+     [
+      -78.515294,
+      38.054075,
+      0
+     ],
+     [
+      -78.515539,
+      38.053803,
+      0
+     ],
+     [
+      -78.515798,
+      38.05361,
+      0
+     ],
+     [
+      -78.515885,
+      38.053541,
+      0
+     ],
+     [
+      -78.515996,
+      38.053486,
+      0
+     ],
+     [
+      -78.516173,
+      38.053405,
+      0
+     ],
+     [
+      -78.516242,
+      38.053378,
+      0
+     ],
+     [
+      -78.516317,
+      38.053339,
+      0
+     ],
+     [
+      -78.516455,
+      38.053266,
+      0
+     ],
+     [
+      -78.516708,
+      38.053172,
+      0
+     ],
+     [
+      -78.51677,
+      38.05313,
+      0
+     ],
+     [
+      -78.516793,
+      38.05303,
+      0
+     ],
+     [
+      -78.516798,
+      38.052839,
+      0
+     ],
+     [
+      -78.516866,
+      38.052803,
+      0
+     ],
+     [
+      -78.516924,
+      38.052796,
+      0
+     ],
+     [
+      -78.516675,
+      38.052385,
+      0
+     ],
+     [
+      -78.516292,
+      38.052011,
+      0
+     ],
+     [
+      -78.516114,
+      38.051594,
+      0
+     ],
+     [
+      -78.515912,
+      38.051132,
+      0
+     ],
+     [
+      -78.515588,
+      38.050666,
+      0
+     ],
+     [
+      -78.515253,
+      38.050463,
+      0
+     ],
+     [
+      -78.514379,
+      38.05022,
+      0
+     ],
+     [
+      -78.513737,
+      38.050089,
+      0
+     ],
+     [
+      -78.513154,
+      38.049945,
+      0
+     ],
+     [
+      -78.512912,
+      38.049733,
+      0
+     ],
+     [
+      -78.51327,
+      38.049438,
+      0
+     ],
+     [
+      -78.513534,
+      38.049101,
+      0
+     ],
+     [
+      -78.513732,
+      38.048819,
+      0
+     ],
+     [
+      -78.514091,
+      38.048303,
+      0
+     ],
+     [
+      -78.514361,
+      38.04788,
+      0
+     ],
+     [
+      -78.514644,
+      38.047355,
+      0
+     ],
+     [
+      -78.514827,
+      38.046815,
+      0
+     ],
+     [
+      -78.5148,
+      38.046473,
+      0
+     ],
+     [
+      -78.515149,
+      38.046255,
+      0
+     ],
+     [
+      -78.515514,
+      38.045773,
+      0
+     ],
+     [
+      -78.515739,
+      38.045704,
+      0
+     ],
+     [
+      -78.51617,
+      38.046066,
+      0
+     ],
+     [
+      -78.516602,
+      38.046314,
+      0
+     ],
+     [
+      -78.516987,
+      38.046569,
+      0
+     ],
+     [
+      -78.517349,
+      38.046667,
+      0
+     ],
+     [
+      -78.517653,
+      38.046732,
+      0
+     ],
+     [
+      -78.518326,
+      38.046745,
+      0
+     ],
+     [
+      -78.518827,
+      38.046828,
+      0
+     ],
+     [
+      -78.519223,
+      38.046946,
+      0
+     ],
+     [
+      -78.519679,
+      38.047251,
+      0
+     ],
+     [
+      -78.519908,
+      38.047433,
+      0
+     ],
+     [
+      -78.520232,
+      38.047665,
+      0
+     ],
+     [
+      -78.520472,
+      38.047857,
+      0
+     ],
+     [
+      -78.520696,
+      38.048046,
+      0
+     ],
+     [
+      -78.520983,
+      38.048249,
+      0
+     ],
+     [
+      -78.521392,
+      38.048525,
+      0
+     ],
+     [
+      -78.521663,
+      38.048692,
+      0
+     ],
+     [
+      -78.521879,
+      38.048788,
+      0
+     ],
+     [
+      -78.522663,
+      38.049093,
+      0
+     ],
+     [
+      -78.52277,
+      38.048575,
+      0
+     ],
+     [
+      -78.523376,
+      38.047849,
+      0
+     ],
+     [
+      -78.523402,
+      38.047541,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "b818913cde47b1f2786fc1bed62852e5"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.448517,
+      38.082458,
+      0
+     ],
+     [
+      -78.448364,
+      38.082635,
+      0
+     ],
+     [
+      -78.448077,
+      38.082493,
+      0
+     ],
+     [
+      -78.447789,
+      38.082536,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "baa7fa3d7a6aa9d8cce629c14dc058ad"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.499757,
+      38.014248
+     ],
+     [
+      -78.499658,
+      38.014116
+     ],
+     [
+      -78.499806,
+      38.014041
+     ],
+     [
+      -78.499939,
+      38.013899
+     ],
+     [
+      -78.500035,
+      38.013763
+     ],
+     [
+      -78.500036,
+      38.013597
+     ],
+     [
+      -78.499822,
+      38.013451
+     ],
+     [
+      -78.499672,
+      38.013338
+     ],
+     [
+      -78.499609,
+      38.013236
+     ],
+     [
+      -78.499574,
+      38.013118
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "be9e7b3e145d777a606baad215e93b45"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.488211,
+      38.057889
+     ],
+     [
+      -78.488274,
+      38.058074
+     ],
+     [
+      -78.488024,
+      38.058234
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "bff12dd9286f3bd0b73f6deb894bb6c6"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.491788,
+      38.025457
+     ],
+     [
+      -78.492248,
+      38.025121
+     ],
+     [
+      -78.492414,
+      38.025071
+     ],
+     [
+      -78.492648,
+      38.024745
+     ],
+     [
+      -78.492738,
+      38.024589
+     ],
+     [
+      -78.492909,
+      38.024597
+     ],
+     [
+      -78.492762,
+      38.02449
+     ],
+     [
+      -78.492783,
+      38.024443
+     ],
+     [
+      -78.492893,
+      38.024407
+     ],
+     [
+      -78.492999,
+      38.024269
+     ],
+     [
+      -78.493171,
+      38.024233
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "c40fafdef71bcbe962f739fdfd2670df"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.485067,
+      38.016275
+     ],
+     [
+      -78.485043,
+      38.016265
+     ],
+     [
+      -78.485064,
+      38.016127
+     ],
+     [
+      -78.485092,
+      38.016044
+     ],
+     [
+      -78.485141,
+      38.016009
+     ],
+     [
+      -78.485207,
+      38.015988
+     ],
+     [
+      -78.485391,
+      38.016082
+     ],
+     [
+      -78.485444,
+      38.016155
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "c430559eec9c4778bbc4b83290e0a688"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.451338,
+      38.056079,
+      0
+     ],
+     [
+      -78.451158,
+      38.056334,
+      0
+     ],
+     [
+      -78.451508,
+      38.057098,
+      0
+     ],
+     [
+      -78.451409,
+      38.057423,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "c6a2ea49af9dd20ff261f1c039876ca7"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.394558</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>622.789118</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.479266,
+      38.050151,
+      0
+     ],
+     [
+      -78.480802,
+      38.052033,
+      0
+     ],
+     [
+      -78.48109,
+      38.053052,
+      0
+     ],
+     [
+      -78.481656,
+      38.053292,
+      0
+     ],
+     [
+      -78.481737,
+      38.053907,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "d062d72e7b5cd989d8d1d3401cc1cfd6"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.475219,
+      38.013235
+     ],
+     [
+      -78.474572,
+      38.012849
+     ],
+     [
+      -78.47349,
+      38.01255
+     ],
+     [
+      -78.472326,
+      38.01263
+     ],
+     [
+      -78.470605,
+      38.013155
+     ],
+     [
+      -78.469271,
+      38.01349
+     ],
+     [
+      -78.468222,
+      38.013965
+     ],
+     [
+      -78.467902,
+      38.014646
+     ],
+     [
+      -78.467411,
+      38.015291
+     ],
+     [
+      -78.466793,
+      38.015693
+     ],
+     [
+      -78.466514,
+      38.016352
+     ],
+     [
+      -78.465828,
+      38.01665
+     ],
+     [
+      -78.465109,
+      38.016596
+     ],
+     [
+      -78.464484,
+      38.016675
+     ],
+     [
+      -78.463235,
+      38.017396
+     ],
+     [
+      -78.462805,
+      38.017995
+     ],
+     [
+      -78.462011,
+      38.018229
+     ],
+     [
+      -78.461745,
+      38.018331
+     ],
+     [
+      -78.461235,
+      38.018145
+     ],
+     [
+      -78.460672,
+      38.018175
+     ],
+     [
+      -78.459622,
+      38.01799
+     ],
+     [
+      -78.459394,
+      38.018045
+     ],
+     [
+      -78.458573,
+      38.017879
+     ],
+     [
+      -78.458292,
+      38.017676
+     ],
+     [
+      -78.457922,
+      38.017492
+     ],
+     [
+      -78.457281,
+      38.017494
+     ],
+     [
+      -78.456693,
+      38.017672
+     ],
+     [
+      -78.456554,
+      38.017789
+     ],
+     [
+      -78.456216,
+      38.018422
+     ],
+     [
+      -78.456693,
+      38.018685
+     ],
+     [
+      -78.456193,
+      38.019135
+     ],
+     [
+      -78.455942,
+      38.019372
+     ],
+     [
+      -78.455675,
+      38.019462
+     ],
+     [
+      -78.455413,
+      38.019496
+     ],
+     [
+      -78.455146,
+      38.019475
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "d2aa497c7d49ad3063542edd4c4f4261"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.479545,
+      38.012472
+     ],
+     [
+      -78.479707,
+      38.012565
+     ],
+     [
+      -78.480177,
+      38.012309
+     ],
+     [
+      -78.480494,
+      38.012003
+     ],
+     [
+      -78.480832,
+      38.01218
+     ],
+     [
+      -78.480815,
+      38.012378
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "d6dc98c32df6d4b12392f584227b4f1b"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.487553,
+      38.009041
+     ],
+     [
+      -78.487508,
+      38.009096
+     ],
+     [
+      -78.487442,
+      38.009187
+     ],
+     [
+      -78.487358,
+      38.009197
+     ],
+     [
+      -78.487269,
+      38.009356
+     ],
+     [
+      -78.4872,
+      38.009544
+     ],
+     [
+      -78.487178,
+      38.00971
+     ],
+     [
+      -78.487153,
+      38.009781
+     ],
+     [
+      -78.487086,
+      38.009875
+     ],
+     [
+      -78.486995,
+      38.009952
+     ],
+     [
+      -78.486821,
+      38.010045
+     ],
+     [
+      -78.486774,
+      38.010103
+     ],
+     [
+      -78.486714,
+      38.010151
+     ],
+     [
+      -78.486529,
+      38.010275
+     ],
+     [
+      -78.486285,
+      38.010369
+     ],
+     [
+      -78.486083,
+      38.01048
+     ],
+     [
+      -78.485939,
+      38.010516
+     ],
+     [
+      -78.485789,
+      38.010591
+     ],
+     [
+      -78.48571,
+      38.010586
+     ],
+     [
+      -78.485679,
+      38.010598
+     ],
+     [
+      -78.485626,
+      38.010646
+     ],
+     [
+      -78.485611,
+      38.010684
+     ],
+     [
+      -78.48553,
+      38.010734
+     ],
+     [
+      -78.485503,
+      38.010763
+     ],
+     [
+      -78.485424,
+      38.010806
+     ],
+     [
+      -78.485309,
+      38.010791
+     ],
+     [
+      -78.485206,
+      38.010822
+     ],
+     [
+      -78.485099,
+      38.010902
+     ],
+     [
+      -78.485028,
+      38.010983
+     ],
+     [
+      -78.484792,
+      38.011212
+     ],
+     [
+      -78.484768,
+      38.011285
+     ],
+     [
+      -78.484771,
+      38.011326
+     ],
+     [
+      -78.484787,
+      38.011357
+     ],
+     [
+      -78.484854,
+      38.011397
+     ],
+     [
+      -78.484923,
+      38.011421
+     ],
+     [
+      -78.484885,
+      38.011482
+     ],
+     [
+      -78.484637,
+      38.011705
+     ],
+     [
+      -78.484519,
+      38.011842
+     ],
+     [
+      -78.484375,
+      38.012045
+     ],
+     [
+      -78.484339,
+      38.01217
+     ],
+     [
+      -78.484356,
+      38.012223
+     ],
+     [
+      -78.484356,
+      38.012307
+     ],
+     [
+      -78.484326,
+      38.012411
+     ],
+     [
+      -78.484302,
+      38.012438
+     ],
+     [
+      -78.484277,
+      38.012488
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "d8bd0f75f038f479ec7c642110e5521b"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.452496,
+      38.05482,
+      0
+     ],
+     [
+      -78.453206,
+      38.054742,
+      0
+     ],
+     [
+      -78.453233,
+      38.054035,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "dd5624004a39cc14fec1673aff88dd2c"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.172498</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>262.621682</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.488618,
+      38.058052,
+      0
+     ],
+     [
+      -78.489058,
+      38.057331,
+      0
+     ],
+     [
+      -78.489534,
+      38.057083,
+      0
+     ],
+     [
+      -78.4901,
+      38.057133,
+      0
+     ],
+     [
+      -78.490055,
+      38.056977,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "deeaed851b48efe8396f1cdef9abf0d0"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.45352,
+      38.05349,
+      0
+     ],
+     [
+      -78.453314,
+      38.053738,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "dfa4bb9c7985df3570b919aa99ab26ec"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.098672</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>157.9177</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.478008,
+      38.050682,
+      0
+     ],
+     [
+      -78.479293,
+      38.050208,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "e3227787278313f5ac57849198971a0c"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>2.86791</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>4482.495768</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.526567,
+      38.021392,
+      0
+     ],
+     [
+      -78.526616,
+      38.021213,
+      0
+     ],
+     [
+      -78.527452,
+      38.020803,
+      0
+     ],
+     [
+      -78.527326,
+      38.020484,
+      0
+     ],
+     [
+      -78.527003,
+      38.020222,
+      0
+     ],
+     [
+      -78.527398,
+      38.019507,
+      0
+     ],
+     [
+      -78.526904,
+      38.019493,
+      0
+     ],
+     [
+      -78.526023,
+      38.01892,
+      0
+     ],
+     [
+      -78.525466,
+      38.018064,
+      0
+     ],
+     [
+      -78.525143,
+      38.017122,
+      0
+     ],
+     [
+      -78.524433,
+      38.016563,
+      0
+     ],
+     [
+      -78.523436,
+      38.017002,
+      0
+     ],
+     [
+      -78.521936,
+      38.018219,
+      0
+     ],
+     [
+      -78.521451,
+      38.018425,
+      0
+     ],
+     [
+      -78.520723,
+      38.01834,
+      0
+     ],
+     [
+      -78.520463,
+      38.018198,
+      0
+     ],
+     [
+      -78.520247,
+      38.017512,
+      0
+     ],
+     [
+      -78.519457,
+      38.016797,
+      0
+     ],
+     [
+      -78.51916,
+      38.015912,
+      0
+     ],
+     [
+      -78.519169,
+      38.014737,
+      0
+     ],
+     [
+      -78.518873,
+      38.013053,
+      0
+     ],
+     [
+      -78.518954,
+      38.011701,
+      0
+     ],
+     [
+      -78.519412,
+      38.011517,
+      0
+     ],
+     [
+      -78.5196,
+      38.011284,
+      0
+     ],
+     [
+      -78.519529,
+      38.010703,
+      0
+     ],
+     [
+      -78.519367,
+      38.010484,
+      0
+     ],
+     [
+      -78.518774,
+      38.010422,
+      0
+     ],
+     [
+      -78.518676,
+      38.010257,
+      0
+     ],
+     [
+      -78.51836,
+      38.010215,
+      0
+     ],
+     [
+      -78.518189,
+      38.010151,
+      0
+     ],
+     [
+      -78.518022,
+      38.00998,
+      0
+     ],
+     [
+      -78.517643,
+      38.009892,
+      0
+     ],
+     [
+      -78.517367,
+      38.00989,
+      0
+     ],
+     [
+      -78.517219,
+      38.010003,
+      0
+     ],
+     [
+      -78.517003,
+      38.010047,
+      0
+     ],
+     [
+      -78.516616,
+      38.009953,
+      0
+     ],
+     [
+      -78.516154,
+      38.009662,
+      0
+     ],
+     [
+      -78.515734,
+      38.009664,
+      0
+     ],
+     [
+      -78.515512,
+      38.009727,
+      0
+     ],
+     [
+      -78.515267,
+      38.009717,
+      0
+     ],
+     [
+      -78.514989,
+      38.009597,
+      0
+     ],
+     [
+      -78.514741,
+      38.009508,
+      0
+     ],
+     [
+      -78.514452,
+      38.009658,
+      0
+     ],
+     [
+      -78.513646,
+      38.009413,
+      0
+     ],
+     [
+      -78.513129,
+      38.009471,
+      0
+     ],
+     [
+      -78.512732,
+      38.009394,
+      0
+     ],
+     [
+      -78.511893,
+      38.009507,
+      0
+     ],
+     [
+      -78.511579,
+      38.009472,
+      0
+     ],
+     [
+      -78.511232,
+      38.009548,
+      0
+     ],
+     [
+      -78.51077,
+      38.009493,
+      0
+     ],
+     [
+      -78.510418,
+      38.009551,
+      0
+     ],
+     [
+      -78.510166,
+      38.009652,
+      0
+     ],
+     [
+      -78.50985,
+      38.009994,
+      0
+     ],
+     [
+      -78.50962,
+      38.010283,
+      0
+     ],
+     [
+      -78.509054,
+      38.011036,
+      0
+     ],
+     [
+      -78.508659,
+      38.011213,
+      0
+     ],
+     [
+      -78.508418,
+      38.011112,
+      0
+     ],
+     [
+      -78.508145,
+      38.010787,
+      0
+     ],
+     [
+      -78.507344,
+      38.010661,
+      0
+     ],
+     [
+      -78.506445,
+      38.010491,
+      0
+     ],
+     [
+      -78.505737,
+      38.010367,
+      0
+     ],
+     [
+      -78.505596,
+      38.010429,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "e5f1d70b897be4c22d017b346fb51294"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.452119,
+      38.054622,
+      0
+     ],
+     [
+      -78.452496,
+      38.05482,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "e9b17df20707f2ff4410b790dcd5469d"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.45471,
+      38.024077
+     ],
+     [
+      -78.455007,
+      38.023527
+     ],
+     [
+      -78.455207,
+      38.023088
+     ],
+     [
+      -78.455465,
+      38.022912
+     ],
+     [
+      -78.455639,
+      38.022896
+     ],
+     [
+      -78.456325,
+      38.021623
+     ],
+     [
+      -78.455928,
+      38.021015
+     ],
+     [
+      -78.455132,
+      38.02034
+     ],
+     [
+      -78.454618,
+      38.019816
+     ],
+     [
+      -78.454519,
+      38.019669
+     ],
+     [
+      -78.454549,
+      38.019509
+     ],
+     [
+      -78.455144,
+      38.019476
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "ebf70a0e934f36657cd14b9dd1cc736d"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.051324</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>79.65444</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.458745,
+      38.034817
+     ],
+     [
+      -78.459086,
+      38.034978
+     ],
+     [
+      -78.45913,
+      38.03509
+     ],
+     [
+      -78.45919,
+      38.035146
+     ],
+     [
+      -78.459283,
+      38.035193
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "ecc6376be0ecdf93d603834146131584"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.453314,
+      38.053738,
+      0
+     ],
+     [
+      -78.452119,
+      38.054452,
+      0
+     ],
+     [
+      -78.451427,
+      38.054459,
+      0
+     ],
+     [
+      -78.450933,
+      38.05494,
+      0
+     ],
+     [
+      -78.451221,
+      38.055053,
+      0
+     ],
+     [
+      -78.451616,
+      38.054693,
+      0
+     ],
+     [
+      -78.452119,
+      38.054622,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "ef7bc299ed1de31140ab52b90bd43ffe"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.505225,
+      38.054887
+     ],
+     [
+      -78.504442,
+      38.054632
+     ],
+     [
+      -78.503355,
+      38.054731
+     ],
+     [
+      -78.502969,
+      38.054953
+     ],
+     [
+      -78.502675,
+      38.055251
+     ],
+     [
+      -78.502572,
+      38.055179
+     ],
+     [
+      -78.502476,
+      38.055304
+     ],
+     [
+      -78.502292,
+      38.055451
+     ],
+     [
+      -78.502105,
+      38.055411
+     ],
+     [
+      -78.501627,
+      38.055206
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "f04646076dfa23b36925d55372b5a2b5"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.851762</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>1340.713527</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.467206,
+      38.058865,
+      0
+     ],
+     [
+      -78.466865,
+      38.058461,
+      0
+     ],
+     [
+      -78.467186,
+      38.058483,
+      0
+     ],
+     [
+      -78.467938,
+      38.057274,
+      0
+     ],
+     [
+      -78.469115,
+      38.055039,
+      0
+     ],
+     [
+      -78.470013,
+      38.053865,
+      0
+     ],
+     [
+      -78.470058,
+      38.053596,
+      0
+     ],
+     [
+      -78.469771,
+      38.053009,
+      0
+     ],
+     [
+      -78.469933,
+      38.052974,
+      0
+     ],
+     [
+      -78.470292,
+      38.053462,
+      0
+     ],
+     [
+      -78.470885,
+      38.053419,
+      0
+     ],
+     [
+      -78.472358,
+      38.051927,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "f8bcae534bc9f4e455d9a8b118ba11a7"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.451314,
+      38.083094
+     ],
+     [
+      -78.451071,
+      38.082935
+     ],
+     [
+      -78.450479,
+      38.082959
+     ],
+     [
+      -78.449907,
+      38.082965
+     ],
+     [
+      -78.449551,
+      38.08319
+     ],
+     [
+      -78.449227,
+      38.083402
+     ],
+     [
+      -78.448896,
+      38.083427
+     ],
+     [
+      -78.448364,
+      38.083031
+     ],
+     [
+      -78.448363,
+      38.082637
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "fa7facee91cc504378d08d6723dc4415"
+  },
+  {
+   "type": "Feature",
+   "properties": {},
+   "geometry": {
+    "coordinates": [
+     [
+      -78.488602,
+      38.058055
+     ],
+     [
+      -78.488344,
+      38.058248
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "fac41d26914c36fd9cf1fa55e9dfdcb8"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.453233,
+      38.054035,
+      0
+     ],
+     [
+      -78.452119,
+      38.054622,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "fb4605527e7716c380b2793f2ee7ff95"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>6.62846</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>10447.829016</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.452119,
+      38.054622,
+      0
+     ],
+     [
+      -78.451643,
+      38.054905,
+      0
+     ],
+     [
+      -78.451607,
+      38.055209,
+      0
+     ],
+     [
+      -78.451185,
+      38.05586,
+      0
+     ],
+     [
+      -78.451311,
+      38.055966,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "fef3cbab26a257dca6caa08801e72844"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "altitudeMode": "clampToGround",
+    "extrude": 0,
+    "begin": null,
+    "drawOrder": null,
+    "Name": "Rivanna Trail Spur",
+    "visibility": -1,
+    "timestamp": null,
+    "icon": null,
+    "end": null,
+    "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n<head>\n\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\">\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\">\n\n<tr style=\"text-align:center;font-weight:bold;background:#9CBCE2\">\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr>\n\n<td>\n\n<table style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\">\n\n<tr>\n\n<td>SHAPE</td>\n\n<td>Polyline</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Id</td>\n\n<td>0</td>\n\n</tr>\n\n<tr>\n\n<td>Trail</td>\n\n<td>Rivanna Trail Spur</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>Length</td>\n\n<td>0.322571</td>\n\n</tr>\n\n<tr>\n\n<td>Transparency</td>\n\n<td>&lt;Null&gt;</td>\n\n</tr>\n\n<tr bgcolor=\"#D4E4F3\">\n\n<td>SHAPE_Length</td>\n\n<td>498.592231</td>\n\n</tr>\n\n</table>\n\n</td>\n\n</tr>\n\n</table>\n\n</body>\n\n</html>\n\n",
+    "snippet": "",
+    "tessellate": 1
+   },
+   "geometry": {
+    "coordinates": [
+     [
+      -78.47402,
+      38.05083,
+      0
+     ],
+     [
+      -78.474864,
+      38.050845,
+      0
+     ],
+     [
+      -78.475853,
+      38.050307,
+      0
+     ],
+     [
+      -78.476131,
+      38.050547,
+      0
+     ],
+     [
+      -78.47667,
+      38.05042,
+      0
+     ],
+     [
+      -78.477523,
+      38.050463,
+      0
+     ],
+     [
+      -78.477739,
+      38.050661,
+      0
+     ],
+     [
+      -78.478008,
+      38.050682,
+      0
+     ]
+    ],
+    "type": "LineString"
+   },
+   "id": "ffc655c91e5c6c19f3e8141a94d7e21a"
+  }
+ ]
+}
