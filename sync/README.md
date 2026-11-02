@@ -22,6 +22,13 @@ Every run writes a backup of the current dataset and a preview of the converted 
 length unless `--force` is given. After `--apply`, commit `sync/data/<trail>.geojson` so git keeps a
 history of trail changes.
 
+## Classification rules
+
+Each trail can declare `exclude_layers` (regexes on the source folder name), `rules` (first match
+wins; match `section`/`layer`/`description` by regex or `stroke` by exact `#rrggbb` line color, then
+`set` properties such as `category` and the map label `Name`), and `exclude_categories`.
+Feature ids are hashes of geometry + properties, so a re-run only touches what changed.
+
 ## Adding a trail
 
 Add an entry to `sources.json` with the source and the Mapbox `dataset`, `tileset` and

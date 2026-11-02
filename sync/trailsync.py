@@ -138,12 +138,34 @@ def _geoms(el):
 
 
 def feature_id(geom, props):
-    key = json.dumps([geom, props.get("name", "")], sort_keys=True, separators=(",", ":"))
+    """Deterministic id: any change to geometry or properties yields a new id."""
+    key = json.dumps([geom, props], sort_keys=True, separators=(",", ":"))
     return hashlib.sha1(key.encode()).hexdigest()[:32]
+
+
+def _clean(s):
+    return re.sub(r"\s+", " ", (s or "").replace("\xa0", " ")).strip()
+
+
+def _line_colors(root):
+    """Map styleUrl -> '#rrggbb' line color (KML stores aabbggrr)."""
+    colors = {}
+    for st in root.iter(f"{KML_NS}Style"):
+        c = st.findtext(f"{KML_NS}LineStyle/{KML_NS}color")
+        if c and len(c) == 8:
+            colors["#" + st.get("id", "")] = "#" + c[6:8] + c[4:6] + c[2:4]
+    for sm in root.iter(f"{KML_NS}StyleMap"):
+        for pair in sm.findall(f"{KML_NS}Pair"):
+            if pair.findtext(f"{KML_NS}key") == "normal":
+                target = pair.findtext(f"{KML_NS}styleUrl")
+                if target in colors:
+                    colors["#" + sm.get("id", "")] = colors[target]
+    return colors
 
 
 def kml_to_features(blob, geometry_types, origin):
     root = ET.fromstring(blob)
+    colors = _line_colors(root)
     feats = []
 
     def walk(el, folder):
@@ -151,14 +173,16 @@ def kml_to_features(blob, geometry_types, origin):
             tag = child.tag.replace(KML_NS, "")
             if tag in ("Document", "Folder"):
                 name = child.findtext(f"{KML_NS}name") if tag == "Folder" else None
-                walk(child, name or folder)
+                walk(child, _clean(name) or folder)
             elif tag == "Placemark":
-                props = {"name": (child.findtext(f"{KML_NS}name") or "").strip()}
+                props = {"section": _clean(child.findtext(f"{KML_NS}name"))}
                 desc = _strip_html(child.findtext(f"{KML_NS}description"))
+                desc = re.sub(r"^description:\s*", "", desc)
                 if desc:
                     props["description"] = desc
                 if folder:
                     props["layer"] = folder
+                color = colors.get(child.findtext(f"{KML_NS}styleUrl") or "")
                 for d in child.findall(f"{KML_NS}ExtendedData/{KML_NS}Data"):
                     k = d.get("name")
                     v = (d.findtext(f"{KML_NS}value") or "").strip()
@@ -168,17 +192,42 @@ def kml_to_features(blob, geometry_types, origin):
                     if geometry_types and g["type"] not in geometry_types:
                         continue
                     p = dict(props, source=origin.split("&")[0])
-                    feats.append({"type": "Feature", "id": feature_id(g, props),
-                                  "geometry": g, "properties": p})
+                    if color and g["type"] != "Point":
+                        p["stroke"] = color
+                    feats.append({"type": "Feature", "geometry": g, "properties": p})
 
     walk(root, None)
-    # Drop exact duplicates (same id) that My Maps sometimes emits.
-    seen, out = set(), []
+    return feats
+
+
+def apply_rules(feats, trail):
+    """Drop excluded layers, classify with the first matching rule, drop excluded categories.
+
+    Rule: {"if": {"section"|"layer"|"description": regex, "stroke": "#rrggbb"}, "set": {...}}
+    """
+    skip_layers = [re.compile(r) for r in trail.get("exclude_layers", [])]
+    skip_cats = set(trail.get("exclude_categories", []))
+    out, seen, dropped = [], set(), {}
     for f in feats:
-        if f["id"] not in seen:
-            seen.add(f["id"])
-            out.append(f)
-    return out
+        p = f["properties"]
+        if any(r.search(p.get("layer", "")) for r in skip_layers):
+            dropped["layer: " + p.get("layer", "")] = dropped.get("layer: " + p.get("layer", ""), 0) + 1
+            continue
+        for rule in trail.get("rules", []):
+            cond = rule.get("if", {})
+            if all((p.get(k, "").lower() == v.lower()) if k == "stroke"
+                   else re.search(v, p.get(k, "")) for k, v in cond.items()):
+                p.update(rule.get("set", {}))
+                break
+        if p.get("category") in skip_cats:
+            dropped["category: " + p["category"]] = dropped.get("category: " + p["category"], 0) + 1
+            continue
+        f["id"] = feature_id(f["geometry"], p)
+        if f["id"] in seen:  # My Maps sometimes emits exact duplicates
+            continue
+        seen.add(f["id"])
+        out.append(f)
+    return out, dropped
 
 
 # ---------------------------------------------------------------- Mapbox dataset
@@ -264,6 +313,15 @@ def main():
 
     print("[2/5] converting KML")
     new = kml_to_features(blob, trail.get("geometry_types"), origin)
+    new, dropped = apply_rules(new, trail)
+    for why, n in sorted(dropped.items()):
+        print(f"      skipped {n} feature(s) by {why}")
+    cats = {}
+    for f in new:
+        c = f["properties"].get("category", "(none)")
+        cats.setdefault(c, []).append(f)
+    for c, fs in sorted(cats.items()):
+        print(f"      {c:12s} {len(fs):3d} features {line_km(fs):6.1f} km")
     if not new:
         raise SystemExit("Source produced no features; refusing to continue.")
 

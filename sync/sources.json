@@ -5,11 +5,64 @@
       "name": "Rivanna Trail",
       "source": {
         "type": "google_mymaps",
-        "mid": "",
-        "homepage": "https://www.rivannatrails.org/",
-        "notes": "Official Rivanna Trails Foundation Google My Map embedded on their website. Fill in `mid` from the map URL (…/maps/d/viewer?mid=XXXX)."
+        "mid": "1No2V69q9UmHLUaqGXqTG5HomnrYibaDL",
+        "homepage": "https://www.rivannatrails.org/Map",
+        "notes": "Rivanna Trails Foundation \"RTF trail system\" Google My Map embedded on rivannatrails.org/Map. Colors: main loop green, spurs brown, River North blue, road walks yellow."
       },
-      "geometry_types": ["LineString"],
+      "geometry_types": [
+        "LineString"
+      ],
+      "exclude_layers": [
+        "(?i)loop de ?'?ville"
+      ],
+      "rules": [
+        {
+          "if": {
+            "section": "(?i)closed"
+          },
+          "set": {
+            "category": "closed",
+            "Name": "Rivanna Trail (closed)"
+          }
+        },
+        {
+          "if": {
+            "section": "(?i)road ?walk"
+          },
+          "set": {
+            "category": "road-walk",
+            "Name": "Rivanna Trail (road walk)"
+          }
+        },
+        {
+          "if": {
+            "layer": "(?i)river north"
+          },
+          "set": {
+            "category": "river-north",
+            "Name": "River North Trail"
+          }
+        },
+        {
+          "if": {
+            "stroke": "#097138"
+          },
+          "set": {
+            "category": "main",
+            "Name": "Rivanna Trail"
+          }
+        },
+        {
+          "if": {},
+          "set": {
+            "category": "spur",
+            "Name": "Rivanna Trail Spur"
+          }
+        }
+      ],
+      "exclude_categories": [
+        "closed"
+      ],
       "mapbox": {
         "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
         "tileset": "meekohi.cjawyutol0r7d2wo1z7eb0wiy-3zlpw",
