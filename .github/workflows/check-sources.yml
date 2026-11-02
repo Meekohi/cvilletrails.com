@@ -1,0 +1,58 @@
+name: Check authoritative trail sources
+on:
+  schedule:
+    - cron: '23 11 * * *'
+  workflow_dispatch:
+    inputs:
+      pipeline:
+        description: 'Optional pipeline ID (empty checks all)'
+        type: string
+      llm:
+        description: 'Review changed documents with OpenAI'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: trail-source-check
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache/restore@v4
+        with:
+          path: .trail-state
+          key: trail-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: trail-state-
+      - name: Check sources and prepare reviews
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1' }}
+          PIPELINE: ${{ inputs.pipeline }}
+          USE_LLM: ${{ inputs.llm || false }}
+        run: |
+          args=()
+          if [ -n "$PIPELINE" ]; then args+=(--pipeline "$PIPELINE"); fi
+          if [ "$USE_LLM" = "true" ] && [ -n "$OPENAI_API_KEY" ]; then args+=(--llm); fi
+          python3 -m maintenance check "${args[@]}"
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .trail-state
+          key: trail-state-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: trail-source-reviews-${{ github.run_id }}
+          path: .trail-state/
+          include-hidden-files: true
+          retention-days: 90
+      - name: Review location
+        if: always()
+        run: echo 'Download the trail-source-reviews artifact to inspect report.json, source snapshots, candidate GeoJSON, and pending reviews. This job does not publish data.' >> "$GITHUB_STEP_SUMMARY"

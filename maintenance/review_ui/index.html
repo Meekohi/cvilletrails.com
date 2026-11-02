@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>City trail review · Cville Trails</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.css" rel="stylesheet">
+  <link href="review.css" rel="stylesheet">
+  <script defer src="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.js"></script>
+  <script defer src="review.js"></script>
+</head>
+<body>
+  <header><div><strong>Cville Trails / Review</strong><span id="summary">Loading saved proposal…</span></div><button id="export" disabled>Export decisions</button></header>
+  <main>
+    <aside>
+      <label for="filter">Review group</label><select id="filter"></select>
+      <input id="search" type="search" aria-label="Filter by trail name or ID" placeholder="Filter by name or ID">
+      <p id="progress" class="muted"></p>
+      <div id="list" aria-label="Proposed trail changes"></div>
+    </aside>
+    <section class="workspace">
+      <div class="map-wrap"><div id="map" aria-label="Before and proposed trail map"></div>
+        <div class="map-controls"><label for="view">Map view</label><select id="view"><option value="overlay">Before + proposed</option><option value="before">Before only</option><option value="after">Proposed only</option></select><button id="overview">All changes</button><button id="zoom">Selected trail</button></div>
+        <div class="legend"><span class="before">━ Before</span><span class="after">━ Proposed</span><span>Other networks remain visible for overlap checks</span></div>
+      </div>
+      <div id="detail">
+        <div class="detail-heading"><div><p id="kinds" class="muted"></p><h1 id="name">Choose a trail</h1><code id="feature-id"></code></div><div><button id="prev" aria-label="Previous trail">←</button><button id="next" aria-label="Next trail">→</button></div></div>
+        <div id="explanation"></div>
+        <div class="decisions" role="group" aria-label="Decision for selected trail"><button data-decision="accept">Accept proposal</button><button data-decision="defer">Keep current for now</button><button data-decision="discuss">Needs discussion</button></div>
+        <label for="note">Review notes</label><textarea id="note" rows="2" placeholder="What should we check or change?"></textarea>
+        <details><summary>Properties before / proposed</summary><div id="properties"></div></details>
+        <p class="muted">Decisions are saved in this browser for this exact plan. Export them to keep a file. This page cannot publish to Mapbox.</p>
+      </div>
+    </section>
+  </main>
+  <p id="status" role="status"></p>
+</body>
+</html>

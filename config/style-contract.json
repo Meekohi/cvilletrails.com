@@ -1,0 +1,1178 @@
+{
+  "captured_at": "2026-11-02",
+  "style_id": "ckkolybrr6tjx17mjqflqw16b",
+  "sources": {
+    "composite": {
+      "url": "mapbox://meekohi.ckuppnp9h534y23pyswjd7n1a-0cyhg,meekohi.cjawpwbc10plf2wo9wzo2o97d-84wj2,meekohi.cjcwe24s41blz2wnuwiu5nyxn-669zn,meekohi.ck51rmxqm6i332ip8gurz7h4l-6oz6h,mapbox.mapbox-streets-v8,meekohi.ck3yw9drj03ad2nrurh0ehyef-51271,meekohi.ckfh5qbi7380826oij568hhbg-3t3kp,meekohi.ckuzk86a07v6o23pymu3yppl6-1dqql,meekohi.8n5896es,meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg,meekohi.ck3nfaqiq4khu2nl9w4bwsldx-9hh36,meekohi.cjawyutol0r7d2wo1z7eb0wiy-3zlpw,mapbox.mapbox-terrain-v2,meekohi.cjcm3ne8w0os033rw0ceoi0ye-0bygj,meekohi.ck578grpj01232ipbxr2ampjj-7v6dv",
+      "type": "vector"
+    }
+  },
+  "trail_layers": [
+    {
+      "id": "shenandoah-np-trail",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "shen-08a9vs",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(211, 59%, 77%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      },
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      }
+    },
+    {
+      "id": "appalachian-trail fringe",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Appalachian_Trail",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 0%, 34%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          3,
+          18,
+          42
+        ]
+      },
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      }
+    },
+    {
+      "id": "appalachian-trail",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Appalachian_Trail",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(67, 0%, 100%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      },
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      }
+    },
+    {
+      "id": "city-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "City_Trails_2021-10-13",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "city-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "City_Trails_2021-10-13",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 29%, 87%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "meadow-creek-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "City_Trails_2021-10-13",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "meadow-creek-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "City_Trails_2021-10-13",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 29%, 87%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "ragged-mtn-trail-fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Ragged_Mountain_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "ragged-mtn-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Ragged_Mountain_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 29%, 87%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "wintergreen-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Wintergreen_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "wintergreen-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Wintergreen_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 29%, 87%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "montpelier-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Montpelier_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "montpelier-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Montpelier_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 29%, 87%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "uva-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "UVA_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "uva-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "UVA_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 29%, 87%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "strava-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Strava_Sidetrails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "strava-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Strava_Sidetrails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 29%, 87%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "monticello-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Monticello_Trail",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "monticello-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Monticello_Trail",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "color"
+          ],
+          [
+            "green"
+          ],
+          "hsl(131, 55%, 45%)",
+          [
+            "tan"
+          ],
+          "hsl(10, 22%, 63%)",
+          [
+            "dark purple"
+          ],
+          "hsl(276, 48%, 29%)",
+          [
+            "orange"
+          ],
+          "hsl(32, 93%, 54%)",
+          [
+            "red"
+          ],
+          "hsl(350, 85%, 41%)",
+          [
+            "peach"
+          ],
+          "hsl(14, 88%, 71%)",
+          [
+            "indigo"
+          ],
+          "hsl(242, 45%, 31%)",
+          [
+            "yellow"
+          ],
+          "hsl(51, 100%, 55%)",
+          [
+            "pink"
+          ],
+          "hsl(329, 63%, 92%)",
+          [
+            "light green"
+          ],
+          "hsl(91, 51%, 51%)",
+          [
+            "sky blue"
+          ],
+          "hsl(185, 51%, 69%)",
+          [
+            "teal"
+          ],
+          "hsl(196, 100%, 43%)",
+          [
+            "purple"
+          ],
+          "hsl(294, 42%, 42%)",
+          [
+            "black"
+          ],
+          "hsl(345, 6%, 13%)",
+          [
+            "brown"
+          ],
+          "hsl(25, 24%, 51%)",
+          "hsl(25, 29%, 87%)"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "pleasant-grove-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Pleasant_Grove_Park",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "pleasant-grove-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Pleasant_Grove_Park",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "color"
+          ],
+          [
+            "green"
+          ],
+          "hsl(131, 55%, 45%)",
+          [
+            "tan",
+            "brown"
+          ],
+          "hsl(10, 22%, 63%)",
+          [
+            "dark purple"
+          ],
+          "hsl(276, 48%, 29%)",
+          [
+            "orange"
+          ],
+          "hsl(32, 93%, 54%)",
+          [
+            "red"
+          ],
+          "hsl(350, 85%, 41%)",
+          [
+            "peach"
+          ],
+          "hsl(14, 88%, 71%)",
+          [
+            "indigo"
+          ],
+          "hsl(242, 45%, 31%)",
+          [
+            "yellow"
+          ],
+          "hsl(51, 100%, 55%)",
+          [
+            "pink"
+          ],
+          "hsl(329, 63%, 92%)",
+          [
+            "light green"
+          ],
+          "hsl(91, 51%, 51%)",
+          [
+            "sky blue",
+            "lightblue"
+          ],
+          "hsl(185, 51%, 69%)",
+          [
+            "teal",
+            "cyan"
+          ],
+          "hsl(196, 100%, 43%)",
+          [
+            "purple"
+          ],
+          "hsl(294, 42%, 42%)",
+          [
+            "black",
+            "darkgrey"
+          ],
+          "hsl(345, 6%, 13%)",
+          [
+            "blue"
+          ],
+          "#1369e1",
+          [
+            "darkbrown"
+          ],
+          "hsl(25, 37%, 41%)",
+          [
+            "limegreen"
+          ],
+          "#cef250",
+          [
+            "grey"
+          ],
+          "hsl(25, 0%, 84%)",
+          "hsl(25, 29%, 87%)"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "albemarle-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Albemarle_County_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(25, 47%, 27%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ]
+      }
+    },
+    {
+      "id": "albemarle-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Albemarle_County_Trails",
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "TrailName"
+          ],
+          [
+            "Red"
+          ],
+          "hsl(359, 82%, 56%)",
+          [
+            "Peninsula"
+          ],
+          "hsl(282, 59%, 40%)",
+          [
+            "Brown"
+          ],
+          "hsl(6, 53%, 30%)",
+          [
+            "Green"
+          ],
+          "hsl(108, 58%, 40%)",
+          [
+            "Yellow"
+          ],
+          "hsl(59, 97%, 64%)",
+          [
+            "Blue"
+          ],
+          "hsl(220, 70%, 50%)",
+          [
+            "Orange"
+          ],
+          "hsl(36, 91%, 60%)",
+          [
+            "School"
+          ],
+          "hsl(321, 85%, 87%)",
+          [
+            "Purple"
+          ],
+          "hsl(285, 83%, 72%)",
+          [
+            "Wilkins Way"
+          ],
+          "hsl(359, 82%, 56%)",
+          [
+            "Colleen's Corners"
+          ],
+          "hsl(283, 96%, 59%)",
+          [
+            "Chimney Trail"
+          ],
+          "hsl(59, 100%, 61%)",
+          [
+            "C'Ville Bike & Tri Just Climb It Trail"
+          ],
+          "hsl(37, 97%, 59%)",
+          [
+            "The Blue Wheel"
+          ],
+          "hsl(220, 70%, 50%)",
+          [
+            "Luke's Loop"
+          ],
+          "hsl(102, 71%, 38%)",
+          [
+            "Entrance/Jungle Trail"
+          ],
+          "hsl(59, 100%, 61%)",
+          [
+            "Fifth Pillar Trail"
+          ],
+          "hsl(37, 97%, 59%)",
+          [
+            "Wahoo Way"
+          ],
+          "hsl(25, 100%, 100%)",
+          [
+            "Bike Factory Trail"
+          ],
+          "hsl(220, 70%, 50%)",
+          "hsl(25, 29%, 87%)"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "rivanna-trail fringe",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Rivanna_Trail",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(120, 27%, 38%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          2,
+          18,
+          42
+        ],
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "rivanna-trail",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "f79211ce34170b10fa250ccb9cc08d1d"
+      },
+      "source": "composite",
+      "source-layer": "Rivanna_Trail",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "line-join": "round",
+        "line-round-limit": 0,
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "hsl(100, 43%, 84%)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.75,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "id": "city-trail-label",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "a6e587fb94f2178f2fd863fcf0ba3b94"
+      },
+      "source": "composite",
+      "source-layer": "City_Trails",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "text-field": [
+          "to-string",
+          [
+            "get",
+            "NAME"
+          ]
+        ],
+        "symbol-placement": "line",
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          10,
+          20,
+          16
+        ],
+        "symbol-avoid-edges": true,
+        "text-rotation-alignment": "map",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-letter-spacing": 0.01
+      },
+      "paint": {
+        "text-halo-color": "hsla(0, 0%, 100%, 0.95)",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "rivanna-trail-label",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "a6e587fb94f2178f2fd863fcf0ba3b94"
+      },
+      "source": "composite",
+      "source-layer": "Rivanna_Trail",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "text-field": [
+          "to-string",
+          [
+            "get",
+            "Name"
+          ]
+        ],
+        "text-rotation-alignment": "map",
+        "symbol-placement": "line",
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          10,
+          20,
+          16
+        ],
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-letter-spacing": 0.01,
+        "symbol-avoid-edges": true
+      },
+      "paint": {
+        "text-halo-color": "hsla(0, 0%, 100%, 0.95)",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "layout": {
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          10,
+          20,
+          16
+        ],
+        "symbol-placement": "line",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-letter-spacing": 0.01,
+        "text-rotation-alignment": "map",
+        "symbol-avoid-edges": true
+      },
+      "metadata": {
+        "mapbox:group": "a6e587fb94f2178f2fd863fcf0ba3b94"
+      },
+      "type": "symbol",
+      "source": "composite",
+      "id": "monticello-trail-label",
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "hsla(0, 0%, 100%, 0.95)",
+        "text-halo-blur": 1
+      },
+      "source-layer": "Monticello_Trail"
+    }
+  ]
+}

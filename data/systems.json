@@ -1,0 +1,94 @@
+[
+  {
+    "id": "rivanna",
+    "name": "Rivanna Trail",
+    "area": "Around Charlottesville",
+    "description": "Explore the Rivanna Trail and its connecting trails around Charlottesville. The Rivanna Trails Foundation maintains maps, trail guidance, and opportunities to help care for the network.",
+    "bounds": [
+      -78.54,
+      37.995,
+      -78.445,
+      38.08
+    ],
+    "source_layers": [
+      "Rivanna_Trail"
+    ],
+    "url": "https://www.rivannatrails.org/Map",
+    "source_label": "Rivanna Trails Foundation",
+    "context_mode": "trail",
+    "context_min_zoom": 14
+  },
+  {
+    "id": "ragged-mountain",
+    "name": "Ragged Mountain",
+    "area": "West of Charlottesville",
+    "description": "Wooded trails around Ragged Mountain Reservoir. Check the City’s current information and posted signs for trail access during reservoir work.",
+    "bounds": [
+      -78.603,
+      38.005,
+      -78.553,
+      38.047
+    ],
+    "source_layers": [
+      "Ragged_Mountain_Trails"
+    ],
+    "url": "https://charlottesville.gov/659/Trails",
+    "source_label": "Charlottesville Parks & Recreation",
+    "context_mode": "area",
+    "context_title": "Ragged Mountain Trails"
+  },
+  {
+    "id": "monticello",
+    "name": "Saunders–Monticello",
+    "area": "Thomas Jefferson Parkway",
+    "description": "A winding path and connecting woodland trails near Monticello. The trail manager’s guide includes parking, hours, trail maps, and access rules.",
+    "bounds": [
+      -78.487,
+      37.992,
+      -78.445,
+      38.018
+    ],
+    "source_layers": [
+      "Monticello_Trail"
+    ],
+    "url": "https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail",
+    "source_label": "Monticello trail guide",
+    "context_mode": "area",
+    "context_title": "Saunders–Monticello Trails"
+  },
+  {
+    "id": "city",
+    "name": "Charlottesville trails",
+    "area": "City parks & greenways",
+    "description": "Explore the City’s parks, greenways, and connecting trails. The City’s trail guide links to park information and official maps.",
+    "bounds": [
+      -78.565,
+      37.99,
+      -78.43,
+      38.09
+    ],
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails"
+    ],
+    "url": "https://charlottesville.gov/659/Trails",
+    "source_label": "Charlottesville trail guide"
+  },
+  {
+    "id": "albemarle",
+    "name": "Albemarle County trails",
+    "area": "County parks & greenways",
+    "description": "Discover trail networks throughout Albemarle County. The County’s trail directory provides official park maps and greenway information.",
+    "bounds": [
+      -78.85,
+      37.8,
+      -78.25,
+      38.35
+    ],
+    "source_layers": [
+      "Albemarle_County_Trails"
+    ],
+    "url": "https://www.albemarle.org/government/parks-recreation/trails",
+    "source_label": "Albemarle Parks & Recreation"
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "review": {
+    "schema_version": 1,
+    "plan_hash": "9bfdc857afc6f62feaa5bf8ecc78db75d7a36e2119a1ed0470626ca1095cf01d",
+    "exported_at": "2026-11-02T23:37:23.832Z",
+    "decisions": {
+      "4d64160c8071b6ece2036cec14366288": {
+        "decision": "accept",
+        "note": ""
+      },
+      "aa2e93d9ee266badaed57ee86e320360": {
+        "note": "Make sure this connects properly and doesn't leave a gap at the bridge.",
+        "decision": "accept"
+      },
+      "ac74dcb615e1e236391e4f0207f95a14": {
+        "decision": "accept",
+        "note": "looks identical to me"
+      },
+      "bd9124c583ffc2849a343698edff1aff": {
+        "decision": "accept",
+        "note": ""
+      },
+      "cea103d93abed56c9583495fd5bce4e9": {
+        "decision": "accept",
+        "note": ""
+      },
+      "cfc1310211ec87a1302f848c6a78b3bc": {
+        "decision": "accept",
+        "note": ""
+      },
+      "e6417635bb6e72b969f8dffb052c3e5f": {
+        "decision": "accept",
+        "note": ""
+      },
+      "e6f4815d9a0dc9b1e5db609a4ed21361": {
+        "decision": "accept",
+        "note": ""
+      },
+      "f0d077646a17bb1fbc6658ae42008560": {
+        "decision": "discuss",
+        "note": "We need to double check that this map isn't handled by a separate later before adding this big change."
+      },
+      "fbf83f355a3bad16369750f7ae245b3e": {
+        "decision": "accept",
+        "note": ""
+      }
+    }
+  },
+  "processed_at": "2026-11-02T23:42:06.608856Z",
+  "source_before_hash": "a194a219f81ee144118282f3ff7cc5c3e64de498ba45ec40985fcf4cb7b59d41",
+  "candidate_changes": {
+    "added": 0,
+    "deleted": 0,
+    "changed": 9,
+    "geometry_changed": 9,
+    "curation_changed": 0
+  },
+  "follow_up": {
+    "quarry_park": {
+      "source_feature_id": "718",
+      "target_source_feature_id": "3056",
+      "result": "The accepted Quarry Park endpoint is snapped to the accepted Avon Yard endpoint at the mapped bridge junction.",
+      "connections": [
+        {
+          "source_feature_id": "718",
+          "endpoint": "end",
+          "target_source_feature_id": "3056",
+          "target_endpoint": "end",
+          "max_distance_m": 1.0,
+          "reason": "Quarry Park internal must join Avon Yard at the mapped bridge junction. Requested in the user's City geometry review exported 2026-11-02. The reviewed upstream endpoints were approximately 0.26 m apart.",
+          "distance_m": 0.25627697164796287,
+          "before": [
+            -78.4777964203729,
+            38.013951604648696
+          ],
+          "after": [
+            -78.47779349832808,
+            38.01395160410499
+          ]
+        }
+      ]
+    },
+    "maintenance_road": {
+      "decision": "held_for_discussion",
+      "source_feature_id": "3133",
+      "result": "The proposed section is in Ragged Mountain Natural Area, which is already represented in the Albemarle County Trails and dedicated Ragged Mountain Trails datasets. The 149.4 m proposed section meets County Old Road Loop within approximately 0.47 m, but is not established as a full duplicate. A separate approximately 7 mm fragment around the previous degenerate feature creates a misleadingly large feature extent. Leave the current feature unchanged pending further review.",
+      "nearby_county_feature_ids": [
+        "b74a0f6ea5e1b5d5361db0485ed24d87",
+        "5e69484e67204914120009c15eac22f3"
+      ],
+      "source_geometry_checks": ".trail-state/assessments/city-connection-checks.json"
+    },
+    "riverview_south": {
+      "result": "The outline is mostly unchanged; the final endpoint moves approximately 5.19 m. The user accepted the edit."
+    }
+  },
+  "remaining": {
+    "unreviewed_items": 323,
+    "unreviewed_additions": 133
+  },
+  "publication_status": "not_published",
+  "prepared_plan": {
+    "path": ".trail-state/plans/city-accepted.json",
+    "approval_hash": "4c90d3d266abf547f66dc2c9e12e19ec676c06a251d20b033bfd79d2071f4d37",
+    "created_at": "2026-11-02T23:42:08.766200Z"
+  },
+  "verification": {
+    "fresh_mapbox_baseline_matches_review": true,
+    "bridge_connection_survives_full_ingest_and_reconciliation": true,
+    "unit_tests_passed": 25
+  }
+}

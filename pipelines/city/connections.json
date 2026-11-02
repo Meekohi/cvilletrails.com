@@ -1,0 +1,10 @@
+[
+  {
+    "source_feature_id": "718",
+    "endpoint": "end",
+    "target_source_feature_id": "3056",
+    "target_endpoint": "end",
+    "max_distance_m": 1.0,
+    "reason": "Quarry Park internal must join Avon Yard at the mapped bridge junction. Requested in the user's City geometry review exported 2026-11-02. The reviewed upstream endpoints were approximately 0.26 m apart."
+  }
+]

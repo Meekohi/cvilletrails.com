@@ -1,0 +1,8 @@
+{
+  "id":"rivanna","system_id":"rivanna","system_ids":["rivanna"],
+  "fields":{"id":null,"name":"Name","color":"color"},
+  "sources":[
+    {"id":"maps","kind":"html","label":"Rivanna Trails Foundation","url":"https://www.rivannatrails.org/Map"},
+    {"id":"news","kind":"html","label":"Rivanna Trails Foundation news","url":"https://www.rivannatrails.org/News"}
+  ]
+}

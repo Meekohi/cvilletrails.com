@@ -1,0 +1,5 @@
+{
+  "id":"albemarle","system_id":"albemarle","system_ids":["albemarle"],
+  "fields":{"id":null,"name":"TrailName","color":"color"},
+  "sources":[{"id":"trail-directory","kind":"html","label":"Albemarle Parks & Recreation","url":"https://www.albemarle.org/government/parks-recreation/trails"}]
+}

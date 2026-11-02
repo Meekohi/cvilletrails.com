@@ -1,62 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-      <meta charset='utf-8' />
-      <title>Cville Trails</title>
-      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-      <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
-      <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
-      <style>
-          body { margin:0; padding:0; }
-          #map { position:absolute; top:0; bottom:0; width:100%; }
-          #menu {
-            position: absolute; top:0; bottom:0;
-            z-index:1;
-            padding:1em;
-            height: 1em;
-            font-family: Verdana, Geneva, sans-serif;
-          }
-          #menu a:link, #menu a:visited {
-            text-decoration: none;
-            background-color: white;
-            border-radius: 0.5em;
-            padding: 0.5em 0.8em;
-          }
-      </style>
-  </head>
-  <body>
-    <div id='menu'>
-      <a href='https://calendar.cvilletrails.com'>🗓️ Calendar</a>
-      <a href='mailto:meekohi+trails@gmail.com' id='report'>⚠️ Trail Issue?</a>
-    </div>
-    <div id='map'></div>
-    <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoibWVla29oaSIsImEiOiJjaXhrbDl2eWwwMDIyMnFtb2ZndjM0NW14In0.U639AnCqXT1BNOyQtFYXIQ';
-      var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/meekohi/ckkolybrr6tjx17mjqflqw16b',
-          center: [-78.482294, 38.031053],
-          zoom: 12
-      });
-
-      // Add geolocate control to the map.
-      map.addControl(new mapboxgl.GeolocateControl({
-          positionOptions: {
-              enableHighAccuracy: true
-          },
-          trackUserLocation: true
-      }));
-
-      document.getElementById('report').onclick = function(){
-        navigator.geolocation.getCurrentPosition(function(position) {
-          window.location = 'mailto:meekohi+trails@gmail.com?subject=Trail Issue at '+position.coords.latitude.toFixed(5)+','+position.coords.longitude.toFixed(5)
-        }, function(err){
-          window.location = 'mailto:meekohi+trails@gmail.com?subject=Trail Issue'
-        });
-        return false
-      }
-    </script>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#234b3d">
+  <meta name="description" content="Find your way on Charlottesville and Albemarle trails. Explore the map, locate yourself, and check trail updates.">
+  <title>Cville Trails</title>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <main id="map" aria-label="Charlottesville and Albemarle trail map"></main>
+  <button id="map-title" class="brand" aria-controls="panel" aria-expanded="false" aria-label="About Cville Trails"><span class="brand-mark" aria-hidden="true">↟</span><span class="brand-copy"><strong id="map-title-text">Cville Trails</strong><span id="map-subtitle">Charlottesville &amp; Albemarle</span></span><span class="brand-info" aria-hidden="true">i</span></button>
+  <div id="status" class="status" role="status" hidden></div>
+  <section id="panel" class="panel" aria-labelledby="panel-title" hidden>
+    <div class="panel-heading"><div><p class="eyebrow" id="panel-kicker">OUT ON THE TRAILS</p><h1 id="panel-title">Explore trails</h1></div><button id="close-panel" class="icon-button" aria-label="Close panel">×</button></div>
+    <div id="panel-content" class="panel-content"></div>
+  </section>
+  <nav class="toolbar" aria-label="Map tools">
+    <button id="updates" aria-controls="panel" aria-expanded="false"><span class="update-dot" aria-hidden="true"></span> Updates <span id="update-count" class="badge" hidden></span></button>
+    <a id="report" href="mailto:meekohi+trails@gmail.com?subject=Trail%20issue"><span aria-hidden="true">⚑</span> Report<span class="wide-label"> an issue</span></a>
+  </nav>
+  <noscript><p class="status">Enable JavaScript to use the trail map.</p></noscript>
+</body>
 </html>

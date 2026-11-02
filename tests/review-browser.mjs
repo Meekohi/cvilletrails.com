@@ -1,0 +1,43 @@
+// Run after building review-map and serving .trail-state/review-city on port 8001.
+import assert from 'node:assert/strict';
+import { readFile, mkdir } from 'node:fs/promises';
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE, args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+try {
+  const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+  const page = await context.newPage();
+  const errors = []; page.on('pageerror', error => errors.push(error.message));
+  await page.goto('http://127.0.0.1:8001', { waitUntil: 'networkidle' });
+  await page.waitForFunction(() => typeof map !== 'undefined' && map?.getLayer('selected-after'));
+  assert.equal(await page.locator('#filter').inputValue(), 'geometry');
+  assert.equal(await page.locator('#list button').count(), 10);
+  await page.locator('#view').selectOption('before');
+  assert.equal(await page.evaluate(() => map.getLayoutProperty('after', 'visibility')), 'none');
+  await page.locator('#view').selectOption('after');
+  assert.equal(await page.evaluate(() => map.getLayoutProperty('before', 'visibility')), 'none');
+  await page.locator('#view').selectOption('overlay');
+  await mkdir('test-results', { recursive: true });
+  await page.screenshot({ path: 'test-results/city-review.png' });
+  const id = await page.locator('#feature-id').textContent();
+  await page.getByRole('button', { name: 'Accept proposal' }).click();
+  await page.locator('#note').fill('Browser test note; not a real approval.');
+  const downloadPromise = page.waitForEvent('download');
+  await page.locator('#export').click();
+  const download = await downloadPromise;
+  await download.saveAs('test-results/review-decisions-test.json');
+  const decisions = JSON.parse(await readFile('test-results/review-decisions-test.json', 'utf8'));
+  assert.equal(decisions.decisions[id].decision, 'accept');
+  assert.equal(decisions.decisions[id].note, 'Browser test note; not a real approval.');
+  await page.reload({ waitUntil: 'networkidle' });
+  assert.equal(await page.locator('[data-decision="accept"]').getAttribute('aria-pressed'), 'true');
+  await page.locator('#filter').selectOption('added');
+  assert.equal(await page.locator('#list button').count(), 133);
+  await page.locator('#search').fill('city:2210');
+  assert.equal(await page.locator('#list button').count(), 1);
+  await page.setViewportSize({ width: 390, height: 844 });
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  const secret = await context.request.get('http://127.0.0.1:8001/.env.local');
+  assert.equal(secret.status(), 404);
+  assert.deepEqual(errors, []);
+  console.log('Visual review checks passed: live before/after overlays, groups, decisions, notes, export, persistence, responsive layout, secret exclusion.');
+} finally { await browser.close(); }

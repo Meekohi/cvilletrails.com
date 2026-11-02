@@ -1,0 +1,1 @@
+Prioritize detours, new connections, closures, bridge work, and trail work events that affect access. Ignore fundraising and old blog posts unless they describe an unresolved current access issue. A change to an embedded map link should be flagged for map review. Do not treat Strava usage as permission to use a trail. Do not infer reopening from the removal of a notice.

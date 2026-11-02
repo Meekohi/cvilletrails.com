@@ -1,0 +1,36 @@
+{
+  "username": "meekohi",
+  "style_id": "ckkolybrr6tjx17mjqflqw16b",
+  "targets": [
+    {
+      "id": "rivanna",
+      "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+      "tileset": "meekohi.cjawyutol0r7d2wo1z7eb0wiy-3zlpw",
+      "source_layer": "Rivanna_Trail"
+    },
+    {
+      "id": "albemarle",
+      "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+      "tileset": "meekohi.cjcm3ne8w0os033rw0ceoi0ye-0bygj",
+      "source_layer": "Albemarle_County_Trails"
+    },
+    {
+      "id": "monticello",
+      "dataset": "ck3nfaqiq4khu2nl9w4bwsldx",
+      "tileset": "meekohi.ck3nfaqiq4khu2nl9w4bwsldx-9hh36",
+      "source_layer": "Monticello_Trail"
+    },
+    {
+      "id": "ragged-mountain",
+      "dataset": "ckfh5qbi7380826oij568hhbg",
+      "tileset": "meekohi.ckfh5qbi7380826oij568hhbg-3t3kp",
+      "source_layer": "Ragged_Mountain_Trails"
+    },
+    {
+      "id": "city",
+      "dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "tileset": "meekohi.ckuppnp9h534y23pyswjd7n1a-0cyhg",
+      "source_layer": "City_Trails_2021-10-13"
+    }
+  ]
+}
