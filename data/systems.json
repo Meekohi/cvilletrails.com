@@ -166,7 +166,7 @@
       },
       {
         "label": "Bikes",
-        "value": "No e-bikes. Other bicycles: 10 mph maximum and yield to pedestrians. Boardwalks close to bikes when wet.",
+        "value": "No e-bikes. Other bicycles: 10 mph maximum and yield to pedestrians. Boardwalks closed to bikes when wet.",
         "sources": [
           "monticello-rules"
         ]
