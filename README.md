@@ -273,6 +273,10 @@ The `visitor-info` pipeline monitors official hours, dog rules, trail uses and a
 
 With the built site served on port 8000, `node tests/system-info-browser.mjs` checks the 13 added contexts, official links, visitor facts, shared-layer selection and mobile layout. `node tests/context-panel-browser.mjs` checks synchronized title/panel fades.
 
+The regional-network expansion adds Preddy Creek, Walnut Creek, Mint Springs, Byrom, Chris Greene Lake, Totier Creek and Biscuit Run, prioritizing standalone destinations. These networks use context envelopes around existing curated trails, active public County trails and available park geometry, so a view across a lake or between trails retains the park title. Biscuit Run's panel explicitly notes incomplete map coverage and links to the current official guide. Mint Springs includes the dam-work access notice without promising a reopening date.
+
+`pipelines/visitor-info/reviews/2026-11-03-regional-networks.json` records official links, source-fetch results, extent evidence, the regional coverage audit and follow-up priorities. It also documents the newly found County Park Trails public GIS service: a complete 1,902-feature snapshot includes historical, private and planned routes, so it requires filtering and review before any map refresh. Only context bounds were derived from it; no Mapbox trail geometry was changed. Browser check: `node tests/system-info-browser.mjs pipelines/visitor-info/reviews/2026-11-03-regional-networks.json`.
+
 ## Automation and deployment
 
 - **Validate:** tests and an allowlisted website build on pushes and pull requests. Uploads a website preview artifact.

@@ -1,0 +1,1480 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-03T04:45:38.078274Z",
+  "reviewer": "Codex in chat",
+  "source_policy": "Official County park pages and current County GIS; indexed official page content where direct requests return HTTP 403. Prioritize standalone destination networks over small parks along the Rivanna Trail.",
+  "added_systems": [
+    "preddy-creek",
+    "walnut-creek",
+    "mint-springs",
+    "byrom",
+    "chris-greene",
+    "totier-creek",
+    "biscuit-run"
+  ],
+  "sources": [
+    {
+      "id": "county-dogs",
+      "label": "Albemarle dog leash guidance",
+      "url": "https://www.albemarle.org/government/police/faq",
+      "kind": "html"
+    },
+    {
+      "id": "county-biking",
+      "label": "County biking guide and trail maps",
+      "url": "https://www.albemarle.org/government/parks-recreation/trails/mountain-biking",
+      "kind": "html"
+    },
+    {
+      "id": "county-dog-parks",
+      "label": "County off-leash dog areas",
+      "url": "https://www.albemarle.org/government/parks-recreation/parks/dog-parks",
+      "kind": "html"
+    },
+    {
+      "id": "county-trail-maps",
+      "label": "County trail maps",
+      "url": "https://www.albemarle.org/government/parks-recreation/trails",
+      "kind": "html"
+    },
+    {
+      "id": "preddy-creek",
+      "label": "Preddy Creek official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/57/360",
+      "kind": "html"
+    },
+    {
+      "id": "preddy-map",
+      "label": "Preddy Creek trail map (PDF)",
+      "url": "https://www.albemarle.org/home/showpublisheddocument/21578/638471478459770000",
+      "kind": "pdf"
+    },
+    {
+      "id": "walnut-creek",
+      "label": "Walnut Creek official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/60/360?widgetId=139",
+      "kind": "html"
+    },
+    {
+      "id": "mint-springs",
+      "label": "Mint Springs official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/70/",
+      "kind": "html"
+    },
+    {
+      "id": "mint-dam",
+      "label": "Mint Springs construction updates",
+      "url": "https://www.albemarle.org/government/facilities-environmental-services/planning-construction/mint-springs-dam-improvements",
+      "kind": "html"
+    },
+    {
+      "id": "byrom",
+      "label": "Byrom official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/56/",
+      "kind": "html"
+    },
+    {
+      "id": "chris-greene",
+      "label": "Chris Greene Lake official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/52/33?widgetId=134",
+      "kind": "html"
+    },
+    {
+      "id": "totier-creek",
+      "label": "Totier Creek official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/59/",
+      "kind": "html"
+    },
+    {
+      "id": "biscuit-run-visitor",
+      "label": "Biscuit Run visitor information",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/36/360",
+      "kind": "html"
+    },
+    {
+      "id": "biscuit-run-projects",
+      "label": "Biscuit Run maps and access updates",
+      "url": "https://www.albemarle.org/government/parks-recreation/biscuit-run-park",
+      "kind": "html"
+    }
+  ],
+  "systems": [
+    {
+      "id": "preddy-creek",
+      "name": "Preddy Creek Trails",
+      "area": "Burnley Station Road",
+      "parent_ids": [
+        "albemarle"
+      ],
+      "description": "A 571-acre woodland and creek network with about 16 miles of trails, including shared-use loops and technical mountain-bike routes.",
+      "bounds": [
+        -78.381776,
+        38.169539,
+        -78.351995,
+        38.188011
+      ],
+      "context_mode": "area",
+      "context_min_zoom": 13,
+      "context_max_view_ratio": 6,
+      "source_layers": [
+        "Albemarle_County_Trails",
+        "Strava_Sidetrails"
+      ],
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/57/360",
+      "source_label": "Preddy Creek official park page",
+      "info_sources": [
+        {
+          "id": "preddy-creek",
+          "label": "Preddy Creek official park page",
+          "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/57/360"
+        },
+        {
+          "id": "preddy-map",
+          "label": "Preddy Creek trail map (PDF)",
+          "url": "https://www.albemarle.org/home/showpublisheddocument/21578/638471478459770000"
+        },
+        {
+          "id": "county-dogs",
+          "label": "Albemarle dog leash guidance",
+          "url": "https://www.albemarle.org/government/police/faq"
+        }
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 7 a.m. to dark.",
+          "sources": [
+            "preddy-creek"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs on a physical leash.",
+          "sources": [
+            "county-dogs"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking, running, mountain biking and horseback riding on shared-use routes.",
+          "sources": [
+            "preddy-creek"
+          ]
+        },
+        {
+          "label": "Technical routes",
+          "value": "The advanced mountain-bike trail requires technical skills and excludes horses. Follow the trail map and posted signs.",
+          "sources": [
+            "preddy-map"
+          ]
+        }
+      ],
+      "description_sources": [
+        "preddy-creek"
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds_source": {
+        "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+        "location_names": [
+          "Preddy Creek Trails Park"
+        ],
+        "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+        "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+      }
+    },
+    {
+      "id": "walnut-creek",
+      "name": "Walnut Creek Park",
+      "area": "North Garden",
+      "parent_ids": [
+        "albemarle"
+      ],
+      "description": "About 13 miles of trails in a 525-acre park around Walnut Creek Lake, with woodland loops, mountain biking and disc golf.",
+      "bounds": [
+        -78.60161,
+        37.914149,
+        -78.58129,
+        37.938955
+      ],
+      "context_mode": "area",
+      "context_min_zoom": 13,
+      "context_max_view_ratio": 6,
+      "source_layers": [
+        "Albemarle_County_Trails",
+        "Strava_Sidetrails"
+      ],
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/60/360?widgetId=139",
+      "source_label": "Walnut Creek official park page",
+      "info_sources": [
+        {
+          "id": "walnut-creek",
+          "label": "Walnut Creek official park page",
+          "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/60/360?widgetId=139"
+        },
+        {
+          "id": "county-biking",
+          "label": "County biking guide and trail maps",
+          "url": "https://www.albemarle.org/government/parks-recreation/trails/mountain-biking"
+        },
+        {
+          "id": "county-dogs",
+          "label": "Albemarle dog leash guidance",
+          "url": "https://www.albemarle.org/government/police/faq"
+        },
+        {
+          "id": "county-trail-maps",
+          "label": "County trail maps",
+          "url": "https://www.albemarle.org/government/parks-recreation/trails"
+        }
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 7 a.m. to dark.",
+          "sources": [
+            "walnut-creek"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs on a physical leash.",
+          "sources": [
+            "county-dogs"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking and mountain biking on designated trails; stay on the signed routes.",
+          "sources": [
+            "county-biking",
+            "county-trail-maps"
+          ]
+        }
+      ],
+      "description_sources": [
+        "walnut-creek"
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds_source": {
+        "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+        "location_names": [
+          "Walnut Creek Park"
+        ],
+        "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+        "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+      }
+    },
+    {
+      "id": "mint-springs",
+      "name": "Mint Springs Valley Park",
+      "area": "Crozet",
+      "parent_ids": [
+        "albemarle"
+      ],
+      "description": "Five miles of trails through a 520-acre park in the hills above Crozet, with lake paths and wooded climbs.",
+      "bounds": [
+        -78.746387,
+        38.076277,
+        -78.722845,
+        38.09438
+      ],
+      "context_mode": "area",
+      "context_min_zoom": 13,
+      "context_max_view_ratio": 6,
+      "source_layers": [
+        "Albemarle_County_Trails",
+        "Strava_Sidetrails"
+      ],
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/70/",
+      "source_label": "Mint Springs official park page",
+      "info_sources": [
+        {
+          "id": "mint-springs",
+          "label": "Mint Springs official park page",
+          "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/70/"
+        },
+        {
+          "id": "mint-dam",
+          "label": "Mint Springs construction updates",
+          "url": "https://www.albemarle.org/government/facilities-environmental-services/planning-construction/mint-springs-dam-improvements"
+        },
+        {
+          "id": "county-biking",
+          "label": "County biking guide and trail maps",
+          "url": "https://www.albemarle.org/government/parks-recreation/trails/mountain-biking"
+        },
+        {
+          "id": "county-dogs",
+          "label": "Albemarle dog leash guidance",
+          "url": "https://www.albemarle.org/government/police/faq"
+        }
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 7 a.m. to dark.",
+          "sources": [
+            "mint-springs"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs on a physical leash.",
+          "sources": [
+            "county-dogs"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking and mountain biking on designated trails.",
+          "sources": [
+            "mint-springs",
+            "county-biking"
+          ]
+        },
+        {
+          "label": "Construction",
+          "value": "Middle Lake is closed for dam work, and nearby trail sections may be closed. Follow posted detours and check the County’s construction update.",
+          "sources": [
+            "mint-springs",
+            "mint-dam"
+          ]
+        }
+      ],
+      "description_sources": [
+        "mint-springs"
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds_source": {
+        "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+        "location_names": [
+          "Mint Springs Valley Park"
+        ],
+        "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+        "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+      }
+    },
+    {
+      "id": "byrom",
+      "name": "Patricia Ann Byrom Forest Preserve",
+      "area": "Blackwells Hollow Road",
+      "parent_ids": [
+        "albemarle"
+      ],
+      "description": "A 600-acre forest preserve with mountain views and a substantial trail network. Many trails are steep and strenuous.",
+      "bounds": [
+        -78.673385,
+        38.215202,
+        -78.64189,
+        38.236769
+      ],
+      "context_mode": "area",
+      "context_min_zoom": 13,
+      "context_max_view_ratio": 6,
+      "source_layers": [
+        "Albemarle_County_Trails",
+        "Strava_Sidetrails"
+      ],
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/56/",
+      "source_label": "Byrom official park page",
+      "info_sources": [
+        {
+          "id": "byrom",
+          "label": "Byrom official park page",
+          "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/56/"
+        },
+        {
+          "id": "county-dogs",
+          "label": "Albemarle dog leash guidance",
+          "url": "https://www.albemarle.org/government/police/faq"
+        }
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 7 a.m. to dark.",
+          "sources": [
+            "byrom"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs on a physical leash.",
+          "sources": [
+            "county-dogs"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking, running, mountain biking and horseback riding on designated routes.",
+          "sources": [
+            "byrom"
+          ]
+        }
+      ],
+      "description_sources": [
+        "byrom"
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds_source": {
+        "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+        "location_names": [
+          "Patricia Ann Byrom Forest Preserve Park"
+        ],
+        "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+        "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+      }
+    },
+    {
+      "id": "chris-greene",
+      "name": "Chris Greene Lake Park",
+      "area": "North of Charlottesville Airport",
+      "parent_ids": [
+        "albemarle"
+      ],
+      "description": "Woodland trails and lakeside paths in a 239-acre park near the airport, with a fenced dog area and disc golf.",
+      "bounds": [
+        -78.450974,
+        38.157205,
+        -78.433923,
+        38.16937
+      ],
+      "context_mode": "area",
+      "context_min_zoom": 13,
+      "context_max_view_ratio": 6,
+      "source_layers": [
+        "Albemarle_County_Trails",
+        "Strava_Sidetrails"
+      ],
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/52/33?widgetId=134",
+      "source_label": "Chris Greene Lake official park page",
+      "info_sources": [
+        {
+          "id": "chris-greene",
+          "label": "Chris Greene Lake official park page",
+          "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/52/33?widgetId=134"
+        },
+        {
+          "id": "county-biking",
+          "label": "County biking guide and trail maps",
+          "url": "https://www.albemarle.org/government/parks-recreation/trails/mountain-biking"
+        },
+        {
+          "id": "county-dog-parks",
+          "label": "County off-leash dog areas",
+          "url": "https://www.albemarle.org/government/parks-recreation/parks/dog-parks"
+        },
+        {
+          "id": "county-dogs",
+          "label": "Albemarle dog leash guidance",
+          "url": "https://www.albemarle.org/government/police/faq"
+        }
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 7 a.m. to dark.",
+          "sources": [
+            "chris-greene"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Leashed on trails; off-leash only in the designated fenced dog area, which includes dog swimming access.",
+          "sources": [
+            "county-dogs",
+            "county-dog-parks"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking and mountain biking on designated trails; follow the County map and posted signs.",
+          "sources": [
+            "county-biking"
+          ]
+        }
+      ],
+      "description_sources": [
+        "chris-greene"
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds_source": {
+        "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+        "location_names": [
+          "Chris Greene Lake Park"
+        ],
+        "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+        "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+      }
+    },
+    {
+      "id": "totier-creek",
+      "name": "Totier Creek Park",
+      "area": "Scottsville",
+      "parent_ids": [
+        "albemarle"
+      ],
+      "description": "Woodland walks and reservoir views in a 209-acre park near Scottsville, with fishing access and picnic spots.",
+      "bounds": [
+        -78.521027,
+        37.774213,
+        -78.504144,
+        37.793071
+      ],
+      "context_mode": "area",
+      "context_min_zoom": 13,
+      "context_max_view_ratio": 6,
+      "source_layers": [
+        "Albemarle_County_Trails",
+        "Strava_Sidetrails"
+      ],
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/59/",
+      "source_label": "Totier Creek official park page",
+      "info_sources": [
+        {
+          "id": "totier-creek",
+          "label": "Totier Creek official park page",
+          "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/59/"
+        },
+        {
+          "id": "county-trail-maps",
+          "label": "County trail maps",
+          "url": "https://www.albemarle.org/government/parks-recreation/trails"
+        },
+        {
+          "id": "county-dogs",
+          "label": "Albemarle dog leash guidance",
+          "url": "https://www.albemarle.org/government/police/faq"
+        }
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 7 a.m. to dark.",
+          "sources": [
+            "totier-creek"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs on a physical leash.",
+          "sources": [
+            "county-dogs"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Walking and hiking trails.",
+          "sources": [
+            "totier-creek"
+          ]
+        },
+        {
+          "label": "Water access",
+          "value": "No swimming, including pets.",
+          "sources": [
+            "totier-creek"
+          ]
+        }
+      ],
+      "description_sources": [
+        "totier-creek"
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds_source": {
+        "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+        "location_names": [
+          "Totier Creek Park"
+        ],
+        "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+        "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+      }
+    },
+    {
+      "id": "biscuit-run",
+      "name": "Biscuit Run Park",
+      "area": "South of Charlottesville",
+      "parent_ids": [
+        "albemarle"
+      ],
+      "description": "Albemarle’s largest county park, with 1,190 acres of forest and signed multi-use trails. The eastern entrance is at 2020 Scottsville Road.",
+      "bounds": [
+        -78.524545,
+        37.977248,
+        -78.507119,
+        37.998402
+      ],
+      "context_mode": "area",
+      "context_min_zoom": 13,
+      "context_max_view_ratio": 6,
+      "source_layers": [
+        "Albemarle_County_Trails",
+        "Strava_Sidetrails"
+      ],
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/36/360",
+      "source_label": "Biscuit Run visitor information",
+      "info_sources": [
+        {
+          "id": "biscuit-run-visitor",
+          "label": "Biscuit Run visitor information",
+          "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/36/360"
+        },
+        {
+          "id": "biscuit-run-projects",
+          "label": "Biscuit Run maps and access updates",
+          "url": "https://www.albemarle.org/government/parks-recreation/biscuit-run-park"
+        },
+        {
+          "id": "county-dogs",
+          "label": "Albemarle dog leash guidance",
+          "url": "https://www.albemarle.org/government/police/faq"
+        }
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 7 a.m. to dark.",
+          "sources": [
+            "biscuit-run-visitor"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs on a physical leash.",
+          "sources": [
+            "county-dogs"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking and biking on signed open trails. The Biscuits + Gravity downhill area is bikes only.",
+          "sources": [
+            "biscuit-run-projects"
+          ]
+        },
+        {
+          "label": "Access",
+          "value": "Use the Route 20 entrance. Construction affects several trails and access points; obey closures and avoid private-property shortcuts.",
+          "sources": [
+            "biscuit-run-projects"
+          ]
+        }
+      ],
+      "description_sources": [
+        "biscuit-run-visitor"
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds_source": {
+        "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+        "location_names": [
+          "Biscuit Run Park",
+          "Biscuits & Gravity"
+        ],
+        "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+        "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+      },
+      "map_note": "Trail coverage here is incomplete and may be outdated. Use the County’s current trail map and posted signs for navigation."
+    }
+  ],
+  "preview_centers": {
+    "preddy-creek": [
+      -78.366885,
+      38.178775
+    ],
+    "walnut-creek": [
+      -78.59145,
+      37.926552
+    ],
+    "mint-springs": [
+      -78.734616,
+      38.085329
+    ],
+    "byrom": [
+      -78.657637,
+      38.225986
+    ],
+    "chris-greene": [
+      -78.442448,
+      38.163287
+    ],
+    "totier-creek": [
+      -78.512586,
+      37.783642
+    ],
+    "biscuit-run": [
+      -78.515832,
+      37.987825
+    ]
+  },
+  "inventory": [
+    {
+      "location": "Byrom Park",
+      "curated_features": 17,
+      "approximate_curated_miles": 6.02
+    },
+    {
+      "location": "Charlotte Humphris Park",
+      "curated_features": 8,
+      "approximate_curated_miles": 1.43
+    },
+    {
+      "location": "Chris Greene Lake Park",
+      "curated_features": 23,
+      "approximate_curated_miles": 3.71
+    },
+    {
+      "location": "Darden Towe Park",
+      "curated_features": 20,
+      "approximate_curated_miles": 2.15
+    },
+    {
+      "location": "Greenway",
+      "curated_features": 1,
+      "approximate_curated_miles": 0.19
+    },
+    {
+      "location": "Ivy Creek Natural Area",
+      "curated_features": 74,
+      "approximate_curated_miles": 6.56
+    },
+    {
+      "location": "Mint Springs Park",
+      "curated_features": 32,
+      "approximate_curated_miles": 5.45
+    },
+    {
+      "location": "Old Mills Trail",
+      "curated_features": 24,
+      "approximate_curated_miles": 2.4
+    },
+    {
+      "location": "Preddy Creek Park",
+      "curated_features": 73,
+      "approximate_curated_miles": 11.09
+    },
+    {
+      "location": "Ragged Mountain Natural Area",
+      "curated_features": 22,
+      "approximate_curated_miles": 11.7
+    },
+    {
+      "location": "Totier Creek Park",
+      "curated_features": 8,
+      "approximate_curated_miles": 2.4
+    },
+    {
+      "location": "Walnut Creek Park",
+      "curated_features": 48,
+      "approximate_curated_miles": 12.43
+    }
+  ],
+  "geometry_evidence": {
+    "preddy-creek": {
+      "current_public_active_feature_ids": [
+        1402,
+        1403,
+        1404,
+        1405,
+        1407,
+        1408,
+        1409,
+        1411,
+        1412,
+        1413,
+        1414,
+        1415,
+        1416,
+        1417,
+        1418,
+        1419,
+        1420,
+        1421,
+        1422,
+        1423,
+        1424,
+        1425,
+        1426,
+        1427,
+        1428,
+        1429,
+        1434,
+        1439,
+        1586,
+        1587,
+        1588,
+        1589,
+        1590,
+        1591,
+        1592,
+        1593,
+        1594,
+        1595,
+        1596,
+        1597,
+        1598,
+        1599,
+        1600,
+        1601,
+        1602,
+        1603,
+        1604,
+        1605,
+        1606,
+        1607,
+        1608,
+        1609,
+        1610,
+        1611,
+        1612,
+        1613,
+        1614,
+        1615,
+        1616,
+        1617,
+        1618,
+        1621,
+        1622,
+        1623,
+        1624,
+        1625,
+        1626,
+        1629,
+        1632,
+        1633,
+        1635,
+        1636,
+        1637,
+        1638,
+        1639,
+        1640,
+        1641,
+        1642,
+        1643,
+        1644,
+        1645,
+        1646,
+        1647,
+        1648,
+        1649,
+        1650,
+        1651,
+        1652,
+        1653,
+        1654,
+        1655,
+        1656
+      ],
+      "curated_feature_ids": [
+        "00f4a790090137071c56192368e915b4",
+        "01893a555f904f95e9a883fa32ab03e2",
+        "03e577380ef4ccef366211089953472f",
+        "050413ca34b472d233f47e8db87a4403",
+        "0aa58c5120f764e87498da2fa3893dbb",
+        "0b9565ddc2822ea130d281f64f24469f",
+        "0bcf52977e87ae4ce1cbb69829ce0091",
+        "0bdd1f1ce26c63e7127e890d256000f7",
+        "0d4e936eecf62e6112cb3bab6a0dd261",
+        "17582c108fab05ea9e5ad5b59288f9bf",
+        "2623ca7cadd16c32765238ee1733de06",
+        "3193c697c40b763b13266035091fd536",
+        "33686e7b2b2141adc0ddfaccef6e8f77",
+        "374f17e5c826c93cabb68ccdfd1ead34",
+        "3e8166569f79b333eb3800bd11dbdbc6",
+        "438bc487a26ad4ae32ec10e25ef3cb3a",
+        "441142afd765e7945ec0afe42ea6ed2d",
+        "4423b1bee77b24471d10ab10b20e5fe5",
+        "44b16961432823e768bf090f318bd9a7",
+        "44ecf507ce9784ac3b1a7f603e76a4b2",
+        "450f5459b2b2c853d3f56221a8944cff",
+        "463d02f536dede3a71e095d8bc8c560d",
+        "46b363d8bcf327d8d1af4eb65cb6f9c0",
+        "4c1704211d4e43a1191625e0390dc5ea",
+        "4d7963e758beda4c8febfa6ce6e603d1",
+        "4ea473857a4786f858170a14e27e7bff",
+        "4ec9d83b9fa77738a910a93b5b58fb13",
+        "52abe698f002ba625a60796b4625be5c",
+        "52d2328f19e74cc8ff07010968421a81",
+        "5655a59eef0d97f80bf5f22e499c842c",
+        "585eda30cc5410ad9a0619b3691df3ef",
+        "5b08cf599c2bc3054e557406b758c920",
+        "5b7d5e71707c535e09a4f0e6b00e3345",
+        "5ba74493e13a4d89f9d247efea69b746",
+        "5eaec76605188f32e018eb94d4923594",
+        "60fb359f71d77cf8e5befbe2a9ba188c",
+        "6ac12bb4a701e298bf92166428da1c9e",
+        "6c44568f23aff9507ac785538fe6b637",
+        "6ce8c76211f5fca1dcdf357961d726a2",
+        "7426875bfa41f9f4bb5db03a725a3806",
+        "76b59fcfa95780091a2e5800f3ca6762",
+        "7c785894e3fe9180a82a6e74fc3a4370",
+        "80146d51d5291e21d4d5ceff722a8c57",
+        "823ba9d91c70be39e88bd9432164e102",
+        "828d8422499f399ca54d7d6c3a28d627",
+        "8599b20d0a8698b2e871c31cc5ea6822",
+        "86dee9d51836f13d891a581884f1706f",
+        "8b81619b344dc3ecb5ed19f2f1201c2d",
+        "8fc97225b99f519d6e3034a44d6ae53f",
+        "9114fb456c6183fcd2413567414ebe51",
+        "9229bdc1fc4f643b632968786dc87efd",
+        "98e4e15effd91c7bdedd1f03d1f32276",
+        "9bcfde51c9be7f2193ee41867a2ca443",
+        "9c685ac4379667a482435dac3cc6a70d",
+        "9d84c0b3c4c988b87f4d51bd91c58a78",
+        "a225cd07b9a4c27ac2e2d998255bccb1",
+        "a8b8bdb2955a626f40144e29fb078139",
+        "a8c691bbf36aa285a3f040ebb9dd94a9",
+        "aad8a4fa4b8e480fa34740e95311f0e5",
+        "afee830e6e289f2378349eb33426049c",
+        "bcdeb936f16e5946d0896828c17220eb",
+        "bdbff1f5dadb36986a3bdd981b1b438a",
+        "bedd30832e1bf6d1cadd61619f0d3502",
+        "bedfe45a7a7b55d35a615078cf64702e",
+        "c418ca5a5abe72c66b4249301a895ede",
+        "c9f20b602786fc994cf6b04a1ffe9627",
+        "d1f287ff6646d8771006586a894cba7a",
+        "dc8baccea2151a4a646648de7dc84ed3",
+        "e484288c43326bf8e18e0016fde145e0",
+        "e4ce5a833f6d719fef98baf9c59c7150",
+        "e6edc6d7f41f044df27dd562f16855c0",
+        "eb13ac9b3461604a38a4b2ae9980549b",
+        "f5fb3491fbaf8a62fd108ddfba6b048b"
+      ],
+      "park_object_ids": [
+        8
+      ],
+      "bounds": [
+        -78.381776,
+        38.169539,
+        -78.351995,
+        38.188011
+      ],
+      "current_location_names": [
+        "Preddy Creek Trails Park"
+      ]
+    },
+    "walnut-creek": {
+      "current_public_active_feature_ids": [
+        2197,
+        2198,
+        2199,
+        2200,
+        2201,
+        2202,
+        2205,
+        2206,
+        2214,
+        2215,
+        2216,
+        2217,
+        2218,
+        2219,
+        2220,
+        2221,
+        2222,
+        2223,
+        2224,
+        2225,
+        2226,
+        2227,
+        2228,
+        2236,
+        2237,
+        2256,
+        2332,
+        2334,
+        2335,
+        2336,
+        2337,
+        2338,
+        2342,
+        2344,
+        2348,
+        2352,
+        2356,
+        2358,
+        2363,
+        2365,
+        2367,
+        2369,
+        2371,
+        2378,
+        2385
+      ],
+      "curated_feature_ids": [
+        "037bcc6b360ebffe26941a445098e35b",
+        "0b5e44ff0c24e3b8b2789265386f9fde",
+        "0ff65def30bcec2bacc209645da39308",
+        "12cb811ff5169c3cf159d735a4405e4e",
+        "17fef5b5720074f1bd8e3c873d53e809",
+        "27ebe0643bb8ed3b2cb3b6f8b384a8aa",
+        "297a3d3c9f1f98c76c84c2a0317fd7ff",
+        "2c6dcea40acf8a61356b781213fab189",
+        "2d1259b0a83c70d760fb192f14f6728b",
+        "2f4a3ca4593edb613b36fd0f6e227958",
+        "30f5586687cca613a03c5fc1336e9be2",
+        "32441ff96a8e143f85b5844fb7cec756",
+        "33be6e108f016c919018224c9ccc2f6c",
+        "41c570562fccbe2c953fd0e3b3ec4f2e",
+        "4c6f29672a41b23e84a776f63772eb56",
+        "638d9dbda87707247cdb3927fcb9b8ae",
+        "6778ec8b99cf336cd290a4eef645e838",
+        "6eba2c980b352e235aec59a5c8d32441",
+        "72c82bc48ceb12778e2d2f641a4d017b",
+        "7322603fa3bd07434d13c1877247c0ca",
+        "83ee88e2c593017cf028914290d21e10",
+        "843217e20e2a2acd7f263087ee5642b2",
+        "8527564e44fcc3819943feb8388a78a6",
+        "8fb32c8989dc988bc4abceb295a66633",
+        "90827621b6dc304ba006d0a1634347db",
+        "a3c387ce7064daf47ea09f83bc837a38",
+        "a5125b212cacc05a3f2bb7a2a0e6ab8b",
+        "a6a581bfaf2b36cef86b338cce34058c",
+        "a90ad697cc6f0343824fa8d0395f6a9c",
+        "b3599820c0111b8ac80a444afc10f74a",
+        "b927c2d01bac6522d7856898657f97f7",
+        "b9cdc71e899cec85595c7e2a930c9986",
+        "ba49d2efffc6774fd5a6095ade1fdd11",
+        "bcd245e0af41a2bf345ee4b3cca9abc6",
+        "c6ffbb59b1e1a19ae883682fbc58a35b",
+        "c7a8c6b8efb91d39a0a2b9a85f6eccd3",
+        "c9390fde8c57ed01e2449deaf25f0a3e",
+        "cc32fc2c9b2029d117cf602d9bc8b846",
+        "cc92ea3dae17d541a589eb5669a3816d",
+        "d6606a7b07fe38ad2d2486cc1e83567d",
+        "da0e25d88cce10455261995e64770881",
+        "dcb8e5814a9cd17a37f15131bc3e5346",
+        "df49a0d46ea2417ad49bbef699bab69e",
+        "dfc424ec5eb1379a08cf4f15e37593ff",
+        "e4a42ef5d85c4d62a02ee369ec09b82d",
+        "ebf0da5723631cc352680f6dbd5b25e9",
+        "f4d21a14de966105bcbd26a23e90b6b5",
+        "f81dc1b86f792a96c196090b7690aa4d"
+      ],
+      "park_object_ids": [
+        11
+      ],
+      "bounds": [
+        -78.60161,
+        37.914149,
+        -78.58129,
+        37.938955
+      ],
+      "current_location_names": [
+        "Walnut Creek Park"
+      ]
+    },
+    "mint-springs": {
+      "current_public_active_feature_ids": [
+        1732,
+        1733,
+        1887,
+        1888,
+        1889,
+        1890,
+        1891,
+        1892,
+        1893,
+        1895,
+        1919,
+        1921,
+        1922,
+        1923,
+        1924,
+        1996,
+        1999,
+        2082,
+        2085,
+        2090,
+        2107,
+        2108,
+        2110,
+        2112,
+        2113,
+        2213,
+        2640,
+        2642
+      ],
+      "curated_feature_ids": [
+        "0afd86713009699723ee7219120ff8d6",
+        "18d9e2db73f310a6f21719d2971db701",
+        "36012153e5d64b503d5dfb81785686e3",
+        "3fcba22faf4432853bec117fb0ace74c",
+        "50ceacaeb6a463ec0d2b671ff6fc386a",
+        "65aaa64c84bc9fe9cfd27b61494a58be",
+        "66ccb0c75406bf7080ba888a0306369e",
+        "67ebecdbb2edd2f9b76f5abd862eb0b8",
+        "6f3e9413f50cb3d588a71e2bc231038c",
+        "736de0aee74d57858fec0e07c6222a84",
+        "82fae9bf365292f0a4d94654b3bcc7c8",
+        "8a112d7559aab29a2b15c2b488872a68",
+        "9820e0c83ad1c0e4d0c02947faf99837",
+        "9d04e11677a4b7c3b45f8f8516925fca",
+        "a1422d54de2b21fbf82467b040fd44fe",
+        "a4417ae4e381298e52188be5cc84a53a",
+        "b1ca39714ba3db4f65dbee08bc48e67c",
+        "b315862680f0aafef546b54cbe110f4e",
+        "b6af5697b31b4405080d4aaa8afb5aaa",
+        "b6df452dc654d29f1b2601d8ee4eeeb7",
+        "bcb821b2a2ea32527fe4e55345b7e063",
+        "bf4a1f94c40cf46a44a3e6ab190339bb",
+        "c84f9ffd2c8043b2e7f70fff647ccbba",
+        "c9a836ee479f2cefc25034b72e5fc608",
+        "cba0a7d930bae12b0220f2cfc9b07916",
+        "cc5d185682ad8594cf31b86151081cd3",
+        "dbf2a49773fe37ec2cbb2914518dc77e",
+        "e0c401e1f0991e506c8a83fd679102ee",
+        "ea840062ac6a67dfe593f939a89f5a6b",
+        "edcbdf1fda20b4fdd63a5ffde2525152",
+        "f3dd90aaa2f2868159fdd7ff85f8a559",
+        "fe24b79c0bae0145d1ed6a78777ab4aa"
+      ],
+      "park_object_ids": [
+        6
+      ],
+      "bounds": [
+        -78.746387,
+        38.076277,
+        -78.722845,
+        38.09438
+      ],
+      "current_location_names": [
+        "Mint Springs Valley Park"
+      ]
+    },
+    "byrom": {
+      "current_public_active_feature_ids": [
+        1705,
+        1706,
+        1707,
+        1708,
+        1709,
+        1711,
+        1712,
+        1713,
+        1714,
+        1715,
+        1716,
+        1717,
+        1735,
+        1736,
+        1747
+      ],
+      "curated_feature_ids": [
+        "16421864aa39d7e7de1df2fbc21102c6",
+        "18224444f216cb9c2639878486542c96",
+        "2a8492afac94e3c6c75c9dfbc24dfb17",
+        "3a122710343abdfea8e57167bae71e7c",
+        "3abffc056dea07ffb834b3be7f099bd4",
+        "3c0442f3be76abb4af546a8524856974",
+        "3de18424412a2f8e2dd0505c4449f536",
+        "52542b498045e4b0e46bcbf17fda641b",
+        "55a6cf87f82098f4012c7cac75c1d087",
+        "6578cf89548ee1275cf14f8f712860ab",
+        "88d9865e1d88d7b0066a96264a26dad5",
+        "94e79268c97b2e96a9663136868bfe19",
+        "afdca9f24fc805ffa7d5856d24174f5a",
+        "beba7abc5293845a9c3b8b3bccbd615a",
+        "cc01b52a05961b1f00cb86b40f510557",
+        "e5a2f4c2cadcada802ca9315fd1e6f0c",
+        "f5f503a5800676aa8659a5453edccb43"
+      ],
+      "park_object_ids": [
+        7
+      ],
+      "bounds": [
+        -78.673385,
+        38.215202,
+        -78.64189,
+        38.236769
+      ],
+      "current_location_names": [
+        "Patricia Ann Byrom Forest Preserve Park"
+      ]
+    },
+    "chris-greene": {
+      "current_public_active_feature_ids": [
+        1003,
+        1058,
+        1065,
+        1091,
+        1092,
+        1093,
+        1109,
+        1110,
+        1113,
+        1332,
+        1333,
+        2183,
+        2185,
+        2187,
+        2188,
+        2189
+      ],
+      "curated_feature_ids": [
+        "0208e2f958d7545e073ff5e873912054",
+        "3086f71449a0b25691d0943b9d2bfacd",
+        "4638c250f936857c860142c7a9b62985",
+        "56e86508f4d2d7c91269fa518ae4d12a",
+        "67a322d4bf3a5d0d59bfd8aa6b0606fa",
+        "77fcd5d7e6794f89ea0975323256a848",
+        "7c1f1cb96599935da6a71733878f3cfc",
+        "7ce805be35a11ae3681edf6061b93167",
+        "807c2c69ff6a7cea8ddc764f5bf51e66",
+        "8399bf3f5b1b1f3461380e1c13a8ec35",
+        "8df379274cdea2ac816cefbad31fad81",
+        "924badfb0c60d81fa9f4e77d844add68",
+        "996242eae3e5dc7f57f7bbbb93ffdb28",
+        "9c4880ed0c064e8e55d4a903b3c2ea23",
+        "9e476ee1cd5f14bc6417d4408e01f33f",
+        "a46e81a4a2bfaf7cf9a41bf4d4f3f089",
+        "b4a4d19c3cd35cd4695280584bd10cfd",
+        "bacc17a00957ec56ed769fffef5182a2",
+        "c8ffdcaf21d76d623360eef12d089578",
+        "ccef65eedbbaa95835f871a49df44966",
+        "d79cf8a1da851735c556baee73d7a309",
+        "ec6865dfa1e8d1ae292ffb632d2b92df",
+        "fef59ef0c2a5efded1f50f161eb75024"
+      ],
+      "park_object_ids": [
+        3
+      ],
+      "bounds": [
+        -78.450974,
+        38.157205,
+        -78.433923,
+        38.16937
+      ],
+      "current_location_names": [
+        "Chris Greene Lake Park"
+      ]
+    },
+    "totier-creek": {
+      "current_public_active_feature_ids": [
+        1020,
+        1021,
+        1022,
+        1023,
+        2434,
+        2436,
+        2438
+      ],
+      "curated_feature_ids": [
+        "1fc72ddb868f3751b3543f72e4fbca18",
+        "6145960750f047db60fb5e7fe5688139",
+        "8baa6f85073a4ba1e52851aa849c587c",
+        "b400d1333077313a2c94698f1ad7e903",
+        "b63228717f2a50297b816e1cfa2d95c2",
+        "bdde1d8d14efd89771604caae5958e10",
+        "c980d143bb43b603a7706382fdf2ced0",
+        "db2436167df168b34438c15b7a7ef2f9"
+      ],
+      "park_object_ids": [
+        10
+      ],
+      "bounds": [
+        -78.521027,
+        37.774213,
+        -78.504144,
+        37.793071
+      ],
+      "current_location_names": [
+        "Totier Creek Park"
+      ]
+    },
+    "biscuit-run": {
+      "current_public_active_feature_ids": [
+        1001,
+        1002,
+        1004,
+        1007,
+        1008,
+        1010,
+        1027,
+        1029,
+        1032,
+        1033,
+        1034,
+        1035,
+        1036,
+        1037,
+        1038,
+        1308,
+        1396,
+        1538,
+        1539,
+        1542,
+        1544,
+        1547,
+        1552,
+        1554,
+        1555,
+        1556,
+        1561,
+        1562,
+        1565,
+        1571,
+        1572,
+        1574,
+        1577,
+        1578,
+        1796,
+        1797,
+        1838,
+        1845,
+        1846,
+        1918,
+        1970,
+        1972,
+        2174,
+        2175,
+        2176,
+        2181,
+        2182,
+        2190,
+        2191,
+        2192,
+        2193,
+        2194,
+        2209,
+        2210,
+        2211,
+        2252,
+        2330,
+        2414,
+        2415,
+        2418,
+        2420,
+        2422,
+        2423,
+        2429,
+        2439,
+        2445,
+        2491,
+        2494,
+        2514,
+        2516,
+        2517,
+        2518,
+        2519,
+        2521,
+        997
+      ],
+      "curated_feature_ids": [],
+      "park_object_ids": [],
+      "bounds": [
+        -78.524545,
+        37.977248,
+        -78.507119,
+        37.998402
+      ],
+      "current_location_names": [
+        "Biscuit Run Park",
+        "Biscuits & Gravity"
+      ]
+    }
+  },
+  "gis_discovery": {
+    "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+    "item_url": "https://www.arcgis.com/home/item.html?id=68ea9d11952a431c9eef119ec5caf79a",
+    "organization": "Albemarle County, VA",
+    "organization_id": "khVz7mitcPJHUnlM",
+    "feature_count": 1902,
+    "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+    "fetch_method": "maintenance.ingest.fetch_arcgis: complete object-ID batches and membership recheck",
+    "park_geometry_url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Parks/FeatureServer/0",
+    "park_geometry_sha256": "391b6ab948d1fad34c40e8bf3c9faa3af47b58ad1dd7486191a726aa49b7333a",
+    "curated_snapshot_sha256": "3b7defb0ce4a0c1e7f8d9b88a8066b88a92ef6c2065ef2fad92aff866d6c98fa",
+    "note": "Includes historical/inactive, future, pending and private records. Do not bulk-publish this service. Only active public records from named parks were used for title extents; no route geometry or Mapbox styling was changed."
+  },
+  "research_notes": {
+    "biscuit-run": "No named Biscuit Run features in the saved curated datasets. Unnamed Strava lines overlap the area, but are not a verified current route network. Added a prominent coverage note and official map/access link; route reconciliation remains separate.",
+    "mint-springs": "Official facility page says construction through December 2026, while the project page also lists February 2027 completion. Do not promise a reopening date; report the ongoing closures and link the project.",
+    "totier-creek": "Facility page lists 3 trail miles, recent recreation brochure 2.5. Omitted exact mileage. Active County GIS features mark Biking=No; the snippet promotes walking/hiking without inferring a blanket access rule from older shared-use descriptions.",
+    "chris-greene": "Current County mountain-biking guide explicitly links Chris Greene Lake. Older cycling-dispute articles and null GIS Biking fields are not treated as current prohibitions.",
+    "preddy-creek": "Current official guide lists 16 miles; old curated dataset totals roughly 11.1 miles. Extents include current active public trails, but route refresh still needs review.",
+    "walnut-creek": "Current facility page lists 13 miles; older brochure and curated lengths say 12.4. Description uses approximately 13.",
+    "additional_priorities": [
+      "Crozet greenways merit a dedicated follow-up: current County GIS includes public, private and future connections; old curated County layer has no named Crozet network.",
+      "The Appalachian Trail layer is a long regional corridor, not a single isolated park. Avoid assigning one set of park rules across it.",
+      "Private networks such as Miller School and Hedgerow require explicit public-access verification before a visitor infobox.",
+      "Darden Towe, Old Mills and Humphris were reviewed in the inventory but deferred behind the requested standalone destinations."
+    ]
+  },
+  "mobile_system": "mint-springs",
+  "source_fetch_check": {
+    "checked_at": "2026-11-03T04:46:52.047449Z",
+    "results": [
+      {
+        "source": "county-dogs",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "county-biking",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "county-dog-parks",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "county-trail-maps",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "preddy-creek",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "preddy-map",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "walnut-creek",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "mint-springs",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "mint-dam",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "byrom",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "chris-greene",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "totier-creek",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "biscuit-run-visitor",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      },
+      {
+        "source": "biscuit-run-projects",
+        "error": "HTTP 403 from remote service",
+        "fallback": "Official page content reviewed through web search; automatic monitor should report fetch failure, not unchanged."
+      }
+    ]
+  },
+  "preview_fit_bounds": true
+}

@@ -4749,5 +4749,581 @@
     ],
     "url": "https://tnfw.org/resources/hiking-and-walking-trails/",
     "source_label": "Nature Foundation hiking guide"
+  },
+  {
+    "id": "preddy-creek",
+    "name": "Preddy Creek Trails",
+    "area": "Burnley Station Road",
+    "parent_ids": [
+      "albemarle"
+    ],
+    "description": "A 571-acre woodland and creek network with about 16 miles of trails, including shared-use loops and technical mountain-bike routes.",
+    "bounds": [
+      -78.381776,
+      38.169539,
+      -78.351995,
+      38.188011
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "source_layers": [
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/57/360",
+    "source_label": "Preddy Creek official park page",
+    "info_sources": [
+      {
+        "id": "preddy-creek",
+        "label": "Preddy Creek official park page",
+        "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/57/360"
+      },
+      {
+        "id": "preddy-map",
+        "label": "Preddy Creek trail map (PDF)",
+        "url": "https://www.albemarle.org/home/showpublisheddocument/21578/638471478459770000"
+      },
+      {
+        "id": "county-dogs",
+        "label": "Albemarle dog leash guidance",
+        "url": "https://www.albemarle.org/government/police/faq"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 7 a.m. to dark.",
+        "sources": [
+          "preddy-creek"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs on a physical leash.",
+        "sources": [
+          "county-dogs"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking, running, mountain biking and horseback riding on shared-use routes.",
+        "sources": [
+          "preddy-creek"
+        ]
+      },
+      {
+        "label": "Technical routes",
+        "value": "The advanced mountain-bike trail requires technical skills and excludes horses. Follow the trail map and posted signs.",
+        "sources": [
+          "preddy-map"
+        ]
+      }
+    ],
+    "description_sources": [
+      "preddy-creek"
+    ],
+    "info_reviewed_on": "2026-11-03",
+    "bounds_source": {
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+      "location_names": [
+        "Preddy Creek Trails Park"
+      ],
+      "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+      "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+    }
+  },
+  {
+    "id": "walnut-creek",
+    "name": "Walnut Creek Park",
+    "area": "North Garden",
+    "parent_ids": [
+      "albemarle"
+    ],
+    "description": "About 13 miles of trails in a 525-acre park around Walnut Creek Lake, with woodland loops, mountain biking and disc golf.",
+    "bounds": [
+      -78.60161,
+      37.914149,
+      -78.58129,
+      37.938955
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "source_layers": [
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/60/360?widgetId=139",
+    "source_label": "Walnut Creek official park page",
+    "info_sources": [
+      {
+        "id": "walnut-creek",
+        "label": "Walnut Creek official park page",
+        "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/60/360?widgetId=139"
+      },
+      {
+        "id": "county-biking",
+        "label": "County biking guide and trail maps",
+        "url": "https://www.albemarle.org/government/parks-recreation/trails/mountain-biking"
+      },
+      {
+        "id": "county-dogs",
+        "label": "Albemarle dog leash guidance",
+        "url": "https://www.albemarle.org/government/police/faq"
+      },
+      {
+        "id": "county-trail-maps",
+        "label": "County trail maps",
+        "url": "https://www.albemarle.org/government/parks-recreation/trails"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 7 a.m. to dark.",
+        "sources": [
+          "walnut-creek"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs on a physical leash.",
+        "sources": [
+          "county-dogs"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking and mountain biking on designated trails; stay on the signed routes.",
+        "sources": [
+          "county-biking",
+          "county-trail-maps"
+        ]
+      }
+    ],
+    "description_sources": [
+      "walnut-creek"
+    ],
+    "info_reviewed_on": "2026-11-03",
+    "bounds_source": {
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+      "location_names": [
+        "Walnut Creek Park"
+      ],
+      "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+      "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+    }
+  },
+  {
+    "id": "mint-springs",
+    "name": "Mint Springs Valley Park",
+    "area": "Crozet",
+    "parent_ids": [
+      "albemarle"
+    ],
+    "description": "Five miles of trails through a 520-acre park in the hills above Crozet, with lake paths and wooded climbs.",
+    "bounds": [
+      -78.746387,
+      38.076277,
+      -78.722845,
+      38.09438
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "source_layers": [
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/70/",
+    "source_label": "Mint Springs official park page",
+    "info_sources": [
+      {
+        "id": "mint-springs",
+        "label": "Mint Springs official park page",
+        "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/70/"
+      },
+      {
+        "id": "mint-dam",
+        "label": "Mint Springs construction updates",
+        "url": "https://www.albemarle.org/government/facilities-environmental-services/planning-construction/mint-springs-dam-improvements"
+      },
+      {
+        "id": "county-biking",
+        "label": "County biking guide and trail maps",
+        "url": "https://www.albemarle.org/government/parks-recreation/trails/mountain-biking"
+      },
+      {
+        "id": "county-dogs",
+        "label": "Albemarle dog leash guidance",
+        "url": "https://www.albemarle.org/government/police/faq"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 7 a.m. to dark.",
+        "sources": [
+          "mint-springs"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs on a physical leash.",
+        "sources": [
+          "county-dogs"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking and mountain biking on designated trails.",
+        "sources": [
+          "mint-springs",
+          "county-biking"
+        ]
+      },
+      {
+        "label": "Construction",
+        "value": "Middle Lake is closed for dam work, and nearby trail sections may be closed. Follow posted detours and check the County’s construction update.",
+        "sources": [
+          "mint-springs",
+          "mint-dam"
+        ]
+      }
+    ],
+    "description_sources": [
+      "mint-springs"
+    ],
+    "info_reviewed_on": "2026-11-03",
+    "bounds_source": {
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+      "location_names": [
+        "Mint Springs Valley Park"
+      ],
+      "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+      "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+    }
+  },
+  {
+    "id": "byrom",
+    "name": "Patricia Ann Byrom Forest Preserve",
+    "area": "Blackwells Hollow Road",
+    "parent_ids": [
+      "albemarle"
+    ],
+    "description": "A 600-acre forest preserve with mountain views and a substantial trail network. Many trails are steep and strenuous.",
+    "bounds": [
+      -78.673385,
+      38.215202,
+      -78.64189,
+      38.236769
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "source_layers": [
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/56/",
+    "source_label": "Byrom official park page",
+    "info_sources": [
+      {
+        "id": "byrom",
+        "label": "Byrom official park page",
+        "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/56/"
+      },
+      {
+        "id": "county-dogs",
+        "label": "Albemarle dog leash guidance",
+        "url": "https://www.albemarle.org/government/police/faq"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 7 a.m. to dark.",
+        "sources": [
+          "byrom"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs on a physical leash.",
+        "sources": [
+          "county-dogs"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking, running, mountain biking and horseback riding on designated routes.",
+        "sources": [
+          "byrom"
+        ]
+      }
+    ],
+    "description_sources": [
+      "byrom"
+    ],
+    "info_reviewed_on": "2026-11-03",
+    "bounds_source": {
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+      "location_names": [
+        "Patricia Ann Byrom Forest Preserve Park"
+      ],
+      "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+      "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+    }
+  },
+  {
+    "id": "chris-greene",
+    "name": "Chris Greene Lake Park",
+    "area": "North of Charlottesville Airport",
+    "parent_ids": [
+      "albemarle"
+    ],
+    "description": "Woodland trails and lakeside paths in a 239-acre park near the airport, with a fenced dog area and disc golf.",
+    "bounds": [
+      -78.450974,
+      38.157205,
+      -78.433923,
+      38.16937
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "source_layers": [
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/52/33?widgetId=134",
+    "source_label": "Chris Greene Lake official park page",
+    "info_sources": [
+      {
+        "id": "chris-greene",
+        "label": "Chris Greene Lake official park page",
+        "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/52/33?widgetId=134"
+      },
+      {
+        "id": "county-biking",
+        "label": "County biking guide and trail maps",
+        "url": "https://www.albemarle.org/government/parks-recreation/trails/mountain-biking"
+      },
+      {
+        "id": "county-dog-parks",
+        "label": "County off-leash dog areas",
+        "url": "https://www.albemarle.org/government/parks-recreation/parks/dog-parks"
+      },
+      {
+        "id": "county-dogs",
+        "label": "Albemarle dog leash guidance",
+        "url": "https://www.albemarle.org/government/police/faq"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 7 a.m. to dark.",
+        "sources": [
+          "chris-greene"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Leashed on trails; off-leash only in the designated fenced dog area, which includes dog swimming access.",
+        "sources": [
+          "county-dogs",
+          "county-dog-parks"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking and mountain biking on designated trails; follow the County map and posted signs.",
+        "sources": [
+          "county-biking"
+        ]
+      }
+    ],
+    "description_sources": [
+      "chris-greene"
+    ],
+    "info_reviewed_on": "2026-11-03",
+    "bounds_source": {
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+      "location_names": [
+        "Chris Greene Lake Park"
+      ],
+      "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+      "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+    }
+  },
+  {
+    "id": "totier-creek",
+    "name": "Totier Creek Park",
+    "area": "Scottsville",
+    "parent_ids": [
+      "albemarle"
+    ],
+    "description": "Woodland walks and reservoir views in a 209-acre park near Scottsville, with fishing access and picnic spots.",
+    "bounds": [
+      -78.521027,
+      37.774213,
+      -78.504144,
+      37.793071
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "source_layers": [
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/59/",
+    "source_label": "Totier Creek official park page",
+    "info_sources": [
+      {
+        "id": "totier-creek",
+        "label": "Totier Creek official park page",
+        "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/59/"
+      },
+      {
+        "id": "county-trail-maps",
+        "label": "County trail maps",
+        "url": "https://www.albemarle.org/government/parks-recreation/trails"
+      },
+      {
+        "id": "county-dogs",
+        "label": "Albemarle dog leash guidance",
+        "url": "https://www.albemarle.org/government/police/faq"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 7 a.m. to dark.",
+        "sources": [
+          "totier-creek"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs on a physical leash.",
+        "sources": [
+          "county-dogs"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Walking and hiking trails.",
+        "sources": [
+          "totier-creek"
+        ]
+      },
+      {
+        "label": "Water access",
+        "value": "No swimming, including pets.",
+        "sources": [
+          "totier-creek"
+        ]
+      }
+    ],
+    "description_sources": [
+      "totier-creek"
+    ],
+    "info_reviewed_on": "2026-11-03",
+    "bounds_source": {
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+      "location_names": [
+        "Totier Creek Park"
+      ],
+      "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+      "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+    }
+  },
+  {
+    "id": "biscuit-run",
+    "name": "Biscuit Run Park",
+    "area": "South of Charlottesville",
+    "parent_ids": [
+      "albemarle"
+    ],
+    "description": "Albemarle’s largest county park, with 1,190 acres of forest and signed multi-use trails. The eastern entrance is at 2020 Scottsville Road.",
+    "bounds": [
+      -78.524545,
+      37.977248,
+      -78.507119,
+      37.998402
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "source_layers": [
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/36/360",
+    "source_label": "Biscuit Run visitor information",
+    "info_sources": [
+      {
+        "id": "biscuit-run-visitor",
+        "label": "Biscuit Run visitor information",
+        "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/36/360"
+      },
+      {
+        "id": "biscuit-run-projects",
+        "label": "Biscuit Run maps and access updates",
+        "url": "https://www.albemarle.org/government/parks-recreation/biscuit-run-park"
+      },
+      {
+        "id": "county-dogs",
+        "label": "Albemarle dog leash guidance",
+        "url": "https://www.albemarle.org/government/police/faq"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 7 a.m. to dark.",
+        "sources": [
+          "biscuit-run-visitor"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs on a physical leash.",
+        "sources": [
+          "county-dogs"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking and biking on signed open trails. The Biscuits + Gravity downhill area is bikes only.",
+        "sources": [
+          "biscuit-run-projects"
+        ]
+      },
+      {
+        "label": "Access",
+        "value": "Use the Route 20 entrance. Construction affects several trails and access points; obey closures and avoid private-property shortcuts.",
+        "sources": [
+          "biscuit-run-projects"
+        ]
+      }
+    ],
+    "description_sources": [
+      "biscuit-run-visitor"
+    ],
+    "info_reviewed_on": "2026-11-03",
+    "bounds_source": {
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+      "location_names": [
+        "Biscuit Run Park",
+        "Biscuits & Gravity"
+      ],
+      "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
+      "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
+    },
+    "map_note": "Trail coverage here is incomplete and may be outdated. Use the County’s current trail map and posted signs for navigation."
   }
 ]

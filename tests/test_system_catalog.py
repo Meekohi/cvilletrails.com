@@ -10,7 +10,8 @@ class SystemCatalogTests(unittest.TestCase):
     def test_official_catalog_and_facts_validate(self):
         validate_systems(self.systems)
         expected={'ivy-creek-natural-area','heyward-community-forest','mcintire-park','quarry-park','azalea-park','pen-park',
-                  'washington-park','jordan-park','meadow-creek','uva','pleasant-grove','montpelier','wintergreen'}
+                  'washington-park','jordan-park','meadow-creek','uva','pleasant-grove','montpelier','wintergreen',
+                  'preddy-creek','walnut-creek','mint-springs','byrom','chris-greene','totier-creek','biscuit-run'}
         self.assertTrue(expected.issubset({s['id'] for s in self.systems if s.get('info_sources') and s.get('context_mode')}))
 
     def test_unregistered_evidence_or_invalid_boundary_fails_the_build(self):

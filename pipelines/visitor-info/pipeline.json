@@ -16,7 +16,14 @@
     "uva",
     "pleasant-grove",
     "montpelier",
-    "wintergreen"
+    "wintergreen",
+    "preddy-creek",
+    "walnut-creek",
+    "mint-springs",
+    "byrom",
+    "chris-greene",
+    "totier-creek",
+    "biscuit-run"
   ],
   "sources": [
     {
@@ -218,6 +225,122 @@
       "kind": "html",
       "system_ids": [
         "ragged-mountain"
+      ]
+    },
+    {
+      "id": "county-dogs",
+      "label": "Albemarle dog leash guidance",
+      "url": "https://www.albemarle.org/government/police/faq",
+      "kind": "html",
+      "system_ids": [
+        "preddy-creek",
+        "walnut-creek",
+        "mint-springs",
+        "byrom",
+        "chris-greene",
+        "totier-creek",
+        "biscuit-run"
+      ]
+    },
+    {
+      "id": "county-biking",
+      "label": "County biking guide and trail maps",
+      "url": "https://www.albemarle.org/government/parks-recreation/trails/mountain-biking",
+      "kind": "html",
+      "system_ids": [
+        "walnut-creek",
+        "mint-springs",
+        "chris-greene"
+      ]
+    },
+    {
+      "id": "county-dog-parks",
+      "label": "County off-leash dog areas",
+      "url": "https://www.albemarle.org/government/parks-recreation/parks/dog-parks",
+      "kind": "html",
+      "system_ids": [
+        "chris-greene"
+      ]
+    },
+    {
+      "id": "preddy-creek",
+      "label": "Preddy Creek official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/57/360",
+      "kind": "html",
+      "system_ids": [
+        "preddy-creek"
+      ]
+    },
+    {
+      "id": "preddy-map",
+      "label": "Preddy Creek trail map (PDF)",
+      "url": "https://www.albemarle.org/home/showpublisheddocument/21578/638471478459770000",
+      "kind": "pdf",
+      "system_ids": [
+        "preddy-creek"
+      ]
+    },
+    {
+      "id": "walnut-creek",
+      "label": "Walnut Creek official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/60/360?widgetId=139",
+      "kind": "html",
+      "system_ids": [
+        "walnut-creek"
+      ]
+    },
+    {
+      "id": "mint-springs",
+      "label": "Mint Springs official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/70/",
+      "kind": "html",
+      "system_ids": [
+        "mint-springs"
+      ]
+    },
+    {
+      "id": "mint-dam",
+      "label": "Mint Springs construction updates",
+      "url": "https://www.albemarle.org/government/facilities-environmental-services/planning-construction/mint-springs-dam-improvements",
+      "kind": "html",
+      "system_ids": [
+        "mint-springs"
+      ]
+    },
+    {
+      "id": "byrom",
+      "label": "Byrom official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/56/",
+      "kind": "html",
+      "system_ids": [
+        "byrom"
+      ]
+    },
+    {
+      "id": "chris-greene",
+      "label": "Chris Greene Lake official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/52/33?widgetId=134",
+      "kind": "html",
+      "system_ids": [
+        "chris-greene"
+      ]
+    },
+    {
+      "id": "totier-creek",
+      "label": "Totier Creek official park page",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/59/",
+      "kind": "html",
+      "system_ids": [
+        "totier-creek"
+      ]
+    },
+    {
+      "id": "biscuit-run-visitor",
+      "label": "Biscuit Run visitor information",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/36/360",
+      "kind": "html",
+      "system_ids": [
+        "biscuit-run"
       ]
     }
   ]

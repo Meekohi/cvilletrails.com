@@ -109,6 +109,7 @@ function details(system, feature = null, focus = true) {
   const content = $('panel-content');
   if (feature && system) content.append(element('p', system.name, 'meta'));
   if (system) {
+    if (system.map_note) content.append(element('p', system.map_note, 'map-note'));
     content.append(element('p', system.description));
     if (system.visitor_info?.length) {
       const facts = element('dl', null, 'visitor-info');

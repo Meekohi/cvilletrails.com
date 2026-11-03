@@ -2,7 +2,9 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 const systems=JSON.parse(await readFile('data/systems.json','utf8'));
-const audit=JSON.parse(await readFile('pipelines/visitor-info/reviews/2026-11-03-catalog.json','utf8'));
+const originalAudit=JSON.parse(await readFile('pipelines/visitor-info/reviews/2026-11-03-catalog.json','utf8'));
+const audit=process.argv[2]?JSON.parse(await readFile(process.argv[2],'utf8')):originalAudit;
+const centers={...originalAudit.preview_centers,...audit.preview_centers};
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 try {
@@ -16,7 +18,11 @@ try {
   await page.waitForFunction(()=>window.__testMap?.loaded());
   for(const id of audit.added_systems){
     const system=systems.find(s=>s.id===id);
-    await page.evaluate(center=>window.__testMap.jumpTo({center,zoom:17}),audit.preview_centers[id]);
+    if(audit.preview_fit_bounds){
+      await page.evaluate(bounds=>window.__testMap.fitBounds(bounds,{padding:80,maxZoom:15,duration:0}),system.bounds);
+    }else{
+      await page.evaluate(view=>window.__testMap.jumpTo(view),{center:centers[id],zoom:audit.preview_zoom||17});
+    }
     await page.waitForFunction(name=>document.querySelector('#map-title-text').textContent===name,system.context_title||system.name);
     if(!await page.locator('#panel').isVisible())await page.locator('#map-title').click();
     assert.equal(await page.locator('#panel-title').textContent(),system.name);
@@ -24,17 +30,21 @@ try {
     assert.equal(await page.locator('.info-sources a').count(),system.info_sources.length);
     for(const fact of system.visitor_info)assert.ok((await page.locator('.visitor-info').textContent()).includes(fact.value));
     assert.equal(await page.locator('.info-sources a').first().getAttribute('href'),system.url);
+    if(system.map_note)assert.equal(await page.locator('.map-note').textContent(),system.map_note);
     console.log('Verified infobox:',id);
   }
   await page.setViewportSize({width:390,height:844});
-  await page.evaluate(center=>window.__testMap.jumpTo({center,zoom:17}),audit.preview_centers['ivy-creek-natural-area']);
-  await page.waitForFunction(()=>document.querySelector('#map-title-text').textContent==='Ivy Creek Natural Area');
-  assert.match(await page.locator('.visitor-info').textContent(),/No pets/);
+  const mobileId=audit.mobile_system||audit.added_systems[0],mobileSystem=systems.find(s=>s.id===mobileId);
+  await page.evaluate(center=>window.__testMap.jumpTo({center,zoom:17}),centers[mobileId]);
+  await page.waitForFunction(name=>document.querySelector('#map-title-text').textContent===name,mobileSystem.context_title||mobileSystem.name);
+  assert.equal(await page.locator('#panel-title').textContent(),mobileSystem.name);
+  for(const fact of mobileSystem.visitor_info)assert.ok((await page.locator('.visitor-info').textContent()).includes(fact.value));
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
-  await page.screenshot({path:'test-results/ivy-creek-info-mobile.png'});
+  await page.waitForFunction(()=>getComputedStyle(document.querySelector('.brand-copy')).opacity==='1'&&getComputedStyle(document.querySelector('#panel-content')).opacity==='1');
+  await page.screenshot({path:`test-results/${mobileId}-info-mobile.png`});
   // A shared-source trail tap inside McIntire must show McIntire's facts.
   await page.setViewportSize({width:1200,height:900});
-  await page.evaluate(center=>window.__testMap.jumpTo({center,zoom:17}),audit.preview_centers['mcintire-park']);
+  await page.evaluate(center=>window.__testMap.jumpTo({center,zoom:17}),centers['mcintire-park']);
   await page.waitForFunction(()=>window.__testMap.loaded()&&document.querySelector('#map-title-text').textContent==='McIntire Park');
   await page.locator('#close-panel').click();
   const point=await page.evaluate(async()=>{
@@ -55,5 +65,5 @@ try {
   assert.match(await page.locator('.visitor-info').textContent(),/10 p.m./);
   assert.match(await page.locator('.info-sources a').first().getAttribute('href'),/McIntire-Park/);
   assert.deepEqual(errors,[]);
-  console.log('All 13 new contexts, official links, visitor facts, shared-layer tap and mobile layout passed.');
+  console.log(`All ${audit.added_systems.length} contexts, official links, visitor facts, shared-layer tap and mobile layout passed.`);
 }finally{await browser.close();}
