@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "subject": "Rivanna update differs by zoom because cached composite tiles are stale",
+  "scope": "Read-only requests to the actual public style and Mapbox vector tiles; no local geometry substituted, no Mapbox writes.",
+  "ordinary": {
+    "checked_at": "2026-11-03T04:53:53.822Z",
+    "mode": "new browser context, normal public URLs, no cache-busting",
+    "center": [
+      -78.528914,
+      38.023292
+    ],
+    "results": [
+      {
+        "zoom": 10,
+        "closure_segments": 2,
+        "current_status_present": false,
+        "rendered_closure_segments": 1,
+        "new_roadwalk_segments": 0
+      },
+      {
+        "zoom": 12,
+        "closure_segments": 2,
+        "current_status_present": true,
+        "rendered_closure_segments": 1,
+        "new_roadwalk_segments": 14
+      },
+      {
+        "zoom": 14,
+        "closure_segments": 2,
+        "current_status_present": true,
+        "rendered_closure_segments": 1,
+        "new_roadwalk_segments": 4
+      },
+      {
+        "zoom": 16,
+        "closure_segments": 6,
+        "current_status_present": true,
+        "rendered_closure_segments": 3,
+        "new_roadwalk_segments": 2
+      }
+    ],
+    "page_errors": [],
+    "representative_tile_headers": {
+      "tile": "10/289/395.vector.pbf",
+      "status": 200,
+      "cache_control": "max-age=43200,s-maxage=7200,stale-while-revalidate=300,stale-if-error=600",
+      "age": "7044",
+      "cache": "Hit from cloudfront"
+    }
+  },
+  "fresh": {
+    "checked_at": "2026-11-03T04:54:30.600Z",
+    "mode": "new browser, unique tile query key, unchanged public style",
+    "center": [
+      -78.528914,
+      38.023292
+    ],
+    "results": [
+      {
+        "zoom": 10,
+        "closure_segments": 2,
+        "current_status_present": true,
+        "rendered_closure_segments": 1,
+        "new_roadwalk_segments": 14
+      },
+      {
+        "zoom": 11,
+        "closure_segments": 2,
+        "current_status_present": true,
+        "rendered_closure_segments": 1,
+        "new_roadwalk_segments": 14
+      }
+    ],
+    "page_errors": [],
+    "representative_tile_headers": {
+      "tile": "10/289/395.vector.pbf",
+      "status": 200,
+      "cache_control": "max-age=43200,s-maxage=7200,stale-while-revalidate=300,stale-if-error=600",
+      "cache": "Miss from cloudfront"
+    }
+  },
+  "interpretation": "Ordinary zoom 10 lacked the new closure property and road walks; ordinary 12/14/16 had them. A unique v4 tile query key with the same public style returned current data at zooms 10 and 11. This confirms a cache difference at the observed edge, not worldwide propagation.",
+  "cache_documentation": "https://docs.mapbox.com/help/dive-deeper/api-caching/"
+}

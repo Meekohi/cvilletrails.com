@@ -2,9 +2,59 @@
 
 A map for the moment you need to know which way to turn, plus a repeatable maintenance system for the curated Charlottesville / Albemarle trail network. Mapbox Studio remains responsible for the map design. The site remains a small static application on GitHub Pages.
 
+**Live site:** [cvilletrails.com](https://cvilletrails.com/) · **Deployment branch:** `master` · **Maintenance handoff:** November 2–3, 2026 (evening in Charlottesville; many receipts use the following UTC date).
+
+## Start here when returning
+
+Read the [session record and outstanding work](docs/session-2026-11-02.md), then follow the [maintenance workflow](docs/maintenance-workflow.md) for a new update. This README is the main command reference; the supporting guides explain the evidence, decisions and recovery procedures behind it.
+
+| What you need | Guide |
+| --- | --- |
+| Repeat a source check, visual review and publication | [Maintenance workflow](docs/maintenance-workflow.md) |
+| Find authoritative sources or add a different ingest pipeline | [Source research and ingestion](docs/source-research.md) |
+| Understand datasets, tilesets, style versions, caching and recovery | [Mapbox and deployment operations](docs/mapbox-operations.md) |
+| Add an infobox, change visitor facts or publish a notice | [Website content and interaction](docs/website-content.md) |
+| See what runs automatically and what to automate next | [Automation roadmap](docs/automation-roadmap.md) |
+| Recover the reasoning behind today's park choices and exceptions | [November session record](docs/session-2026-11-02.md) |
+
+The current system has five pipelines, 25 public catalog entries (23 specific networks plus the two City/County groupings), reviewed park ownership rules, and separate publication paths for map data and website content. The City dataset reached 225 features; Rivanna reached 72 while preserving all 65 pre-existing geometries. These are **dated publication checkpoints**, not permanent expected counts. Fetch a fresh inventory before the next geometry edit.
+
+The latest County research found a public **1,902-feature trail service** with active, inactive, private, pending and future records. It informed infobox extents, but has **not** been imported as new map geometry. Biscuit Run's infobox explicitly warns that our map coverage is incomplete. See [the County ingestion work still required](docs/source-research.md#albemarle-county-newly-discovered-gis).
+
+## The repeatable process
+
+1. Inspect the working tree, saved state and last publication receipts. Restore the necessary evidence before resuming an old review.
+2. Snapshot official sources and take a fresh Mapbox inventory. A first snapshot is a baseline; a failed fetch is an error, not “no change.”
+3. Review changed source evidence in chat. Separate visitor information, temporary notices and route geometry.
+4. Build a full candidate that preserves curation. Compare overlapping datasets by park before approving apparent additions.
+5. Review the exact candidate on a map, export decisions, and generate a fresh plan against current remote data.
+6. Apply the authorized plan, verify the dataset, wait for its tileset upload, and apply any separately reviewed style changes.
+7. Verify the public map at more than one zoom. Distinguish cached tiles from failed publication.
+8. Commit durable decisions and website content, push the intended website deployment, and archive local evidence needed for later recovery.
+
+For an infobox-only update, steps 4–6 become a catalog edit and local website preview; Mapbox data publication is unnecessary. A model's assessment, a browser decision export, a plan hash and a completed publication receipt are different artifacts. The [workflow guide](docs/maintenance-workflow.md#artifacts-and-approval-boundaries) explains each one.
+
+```mermaid
+flowchart LR
+    Sources[Official sources] --> Snapshots[Snapshots and differences]
+    Snapshots --> Review[Chat review or optional API assessment]
+    Review --> Facts[Visitor facts and dated notices]
+    Review --> Candidate[Reviewed GeoJSON candidate]
+    Candidate --> Plan[Plan against current Mapbox data]
+    Plan --> Dataset[Editable dataset]
+    Dataset --> Tiles[Named tileset upload]
+    Tiles --> Map[Studio style and public map]
+    Facts --> Git[Git review and master push]
+    Git --> Pages[Allowlisted dist build and GitHub Pages]
+```
+
+The scheduled checker currently stops at snapshots, candidates and review artifacts. It does not implement the whole diagram unattended.
+
+## Product behavior
+
 The map fills the screen. Location tracking, device heading where available, and compass/zoom controls stay accessible. As you focus on a configured trail network, the title changes to that network's name. Tap the title for details, or tap an individual trail. **Updates** filters reviewed notices by map area or trail system. Dates and expiry determine which notices appear. There is no invented sample news in the public feed.
 
-Context titles use `context_mode` and optional `context_title` / `context_min_zoom` in `data/systems.json`. Small parks use their bounds and zoom; the broader Rivanna network also needs a nearby rendered trail. County and city aggregate bounds do not activate titles. A small boundary/zoom tolerance reduces flickering, and zooming out restores Cville Trails. Details never open automatically, and an open description stays on the system the user selected.
+Context titles use `context_mode` and optional `context_title` / `context_min_zoom` in `data/systems.json`. Small City parks use polygon-aware location checks; isolated destination parks use area envelopes; trail-mode networks also need a nearby rendered trail. County and city aggregate bounds do not activate titles. Zoom/viewport hysteresis reduces flickering, and zooming out restores Cville Trails. Details never open automatically. If the information panel is already open, its heading and content follow the title in the same 160 ms fade. The Updates panel remains a separate explicit view. Reduced-motion preferences are respected.
 
 ## Run locally
 
@@ -31,6 +81,9 @@ Put credentials in the ignored `.env.local` file (see `.env.example`). The Pytho
 | `config/mapbox.json` | Existing dataset → tileset → source-layer publishing targets |
 | `config/style-contract.json` | Captured trail layers and curated color expressions from the live style |
 | `.trail-state/` (ignored) | Raw snapshots, reviews, candidates, Mapbox backups, plans, publish journals |
+| `docs/` | Operating guides, source research, dated session record and automation roadmap |
+
+The public build excludes this documentation, the maintenance code and local evidence. Git history preserves tracked decisions, but **a fresh clone does not restore `.trail-state/`, exported browser decisions, or a Studio backup**. Preserve the evidence bundles described in the [archive checklist](docs/maintenance-workflow.md#archive-a-completed-or-paused-update).
 
 ## Check sources and review here in Codex
 
@@ -67,7 +120,7 @@ Each folder contains:
 
 Adapters emit WGS84 GeoJSON with stable feature IDs and normalized `name`, `color`, `system_id`, `source_id`, `source_feature_id`, and `source_url` properties. Legacy properties are retained so the existing Studio expressions keep working. The normalized `color` is the official source's named color or null, not an invented display color; the Studio palette remains in the style. Missing IDs, duplicate IDs, invalid coordinates, and orphaned overrides stop ingestion.
 
-The City pipeline fetches its official ArcGIS layer using explicit object-ID batches and checks completeness. It includes only records marked `Existing`; proposed/unknown-status and empty-geometry records are listed in its ingest report. Other folders currently monitor official documents and accept reviewed GeoJSON through their adapters. They do not yet turn PDFs into geometry automatically.
+The City pipeline fetches its official ArcGIS layer using explicit object-ID batches and checks completeness. It includes only records marked `Existing`; proposed/unknown-status and empty-geometry records are listed in its ingest report. Albemarle, Monticello and Rivanna monitor official documents and can normalize reviewed GeoJSON; their generic adapters do not automatically interpret each source. `visitor-info` intentionally rejects geometry ingestion. PDFs and RTF KML require their own review workflows. The newly discovered County GIS schema still needs a dedicated adapter and reviewed ID crosswalk.
 
 City `connections.json` holds explicit reviewed endpoint joins. The Quarry Park / Avon Yard bridge junction uses one exact shared endpoint; the rule stops ingestion if either feature disappears or their endpoints drift more than one metre apart. This preserves the reviewed connection without silently stretching geometry to accommodate a changed source. Saved user review decisions and follow-up findings live in `pipelines/city/reviews/`.
 
@@ -110,7 +163,7 @@ python3 -m maintenance plan city .trail-state/candidates/city/reconciled.geojson
 
 Reconciliation matches unique upstream IDs, retains existing Mapbox feature IDs and curated name/color properties, and preserves unmatched old features. Conflicting properties and unmatched features are reported for review. It also preserves curated coordinates when topology is identical and every coordinate differs by at most 0.000001 degrees (roughly 0.11 m), avoiding changes caused only by projection roundoff. New fields and substantive geometry edits remain in the candidate. This is a conservative first-pass merge, not proof of correct correspondence: review additions, geometry, permissions, and possible overlap with other trail datasets before accepting.
 
-The first City comparison produced 133 additions, 10 substantive geometry edits, and retained 13 unmatched curated features. Nine reviewed geometry edits were published on November 2, 2026; the full import remains pending. The publication receipt is in `pipelines/city/reviews/2026-11-02-geometry.json`. Counts will change with upstream data. The existing City label layer uses the older `City_Trails` source layer while lines use `City_Trails_2021-10-13`; review that label migration and overlaps with dedicated park datasets before publishing the large import.
+The first City comparison produced 133 additions, 10 substantive geometry edits, and retained 13 unmatched curated features. Nine reviewed geometry edits were published during the November 2 session, followed by park consolidation and ten selected additions. The original full import was never accepted wholesale. Receipts and the latest checkpoint are indexed in the [session record](docs/session-2026-11-02.md). Counts will change with upstream data. The existing City label layer uses the older `City_Trails` source layer while lines use `City_Trails_2021-10-13`; that label migration remains a separate follow-up.
 
 A plan embeds the complete before/after datasets, evidence reference, target, ingest report, change lists, and an approval hash. For visual review:
 
@@ -134,13 +187,13 @@ Unreviewed, deferred, and discussion items preserve their current features; unac
 
 ```sh
 # Updates the editable dataset only:
-python3 -m maintenance apply .trail-state/plans/city.json --approve FULL_APPROVAL_HASH
+python3 -m maintenance apply .trail-state/plans/city-accepted.json --approve FULL_APPROVAL_HASH
 
 # Alternatively, update the dataset AND process its existing live tileset:
-python3 -m maintenance apply .trail-state/plans/city.json --approve FULL_APPROVAL_HASH --publish
+python3 -m maintenance apply .trail-state/plans/city-accepted.json --approve FULL_APPROVAL_HASH --publish
 ```
 
-Choose one apply command; a plan cannot be reused after application. `--publish` starts the Mapbox upload and polls processing status. Without it, use Studio's export/publish control afterwards. Existing IDs and source-layer names are retained; no new tileset is created and the style is not rewritten. The current style references 15 tilesets, so routine updates must reuse those targets. Consolidating several datasets into a new standardized tileset is a separate future style migration; the normalized schema makes that repeatable.
+Choose one apply command; a plan cannot be reused after application. `--publish` starts the Mapbox upload and polls processing status. Without it, use `resume-publish` after verifying the completed write journal, as described below. Existing IDs and source-layer names are retained; no new tileset is created and the style is not rewritten. The current style references 15 tilesets, so routine updates reuse those targets. That observed count is not a verified account quota. Consolidating several datasets into a new standardized tileset requires a separate reviewed identity/property mapping and style migration.
 
 Publishing requires **Tippecanoe** and the **AWS CLI** on PATH (`TIPPECANOE` may specify an alternate executable). These are not needed for source checks, review, or website builds. The publisher builds MBTiles with the configured source-layer name, validates the archive, stages it using short-lived credentials from Mapbox, and replaces the existing tileset. It uses zooms 0–16 (the account’s Uploads API limit) with no line simplification or feature dropping; higher map zooms overzoom those tiles. AWS account credentials are not required. Direct dataset export is deliberately avoided: the first live test produced an internal layer called `original`, incompatible with the existing style. Supplying an explicit MBTiles layer fixes this and keeps the style unchanged.
 
@@ -174,7 +227,7 @@ Choose a preferred geometry dataset per park and export `park-dataset-decisions.
 
 The initial comparison and proposed winners are recorded in `pipelines/city/reviews/2026-11-02-park-overlaps.json`. The other pipelines' `reviews/2026-11-02-source-audit.json` files record source discoveries, download failures and remaining checks. Linked official PDFs and the RTF public map export now have separate monitors. The KML remains evidence for manual review until stable feature identities and route-only selection are established.
 
-`config/park-ownership.json` records resolved source choices and exceptions. The **entire Rivanna dataset is protected** from park consolidation, including overlaps, and its trail lines render above the other networks. This preserves all 65 current features; a future authoritative RT update is a separate review. The current live style already has that order. The November 2 decision record preserves the user's original export and subsequent clarification: Quarry uses Rivanna plus City **Quarry Old Road (`city:3710`)**, while retaining existing trails; McIntire keeps City and Rivanna.
+`config/park-ownership.json` records resolved source choices and exceptions. The **entire Rivanna dataset is protected** from park consolidation, including overlaps, and its trail lines render above the other networks. The separately reviewed RT refresh preserved all 65 original geometries and added seven road walks, bringing the dated checkpoint to 72 features. Protection applies to the entire current network, not a frozen count of 65. The November 2 decision record preserves the user's original export and subsequent clarification: Quarry uses Rivanna plus City **Quarry Old Road (`city:3710`)**, while retaining existing trails; McIntire keeps City and Rivanna.
 
 Prepare the resolved choices without changing Mapbox:
 
@@ -252,6 +305,8 @@ python3 -m maintenance.rivanna_publish .trail-state/plans/rivanna-reviewed.json 
 ```
 
 The style publisher requires the completed dataset receipt and matching live data, verifies the reviewed style diff, backs up both style versions, and changes only the three Rivanna display layers. It preserves unrelated Studio draft edits. An interrupted or previously attempted style publication requires inspecting its journal rather than blindly replaying it. `node tests/rivanna-publication-browser.mjs` checks the public style and tiles; `--fresh` separately checks fresh vector tiles and the unoptimized public style URL to distinguish CDN propagation from a failed publication. Neither check replaces remote data with local candidate geometry.
+
+These historical browser checks require the corresponding local plans and preview files. They are not general checks for an arbitrary future release. The [Mapbox operations guide](docs/mapbox-operations.md#diagnose-old-data-at-one-zoom-and-new-data-at-another) records the later multi-zoom investigation: ordinary zoom-10 requests were stale while 12/14/16 were current, and fresh zoom-10/11 tile requests returned current data without changing the public style. Observed composite-tile headers allowed two hours of server caching and twelve hours of browser caching. Upload completion does not certify every cache has expired.
 
 ## Publish trail notices
 
