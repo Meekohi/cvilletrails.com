@@ -10,8 +10,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 #map { position: fixed; inset: 0; }
 .brand { position: fixed; top: max(16px, env(safe-area-inset-top)); left: max(16px, env(safe-area-inset-left)); display: flex; gap: 9px; align-items: center; max-width: calc(100vw - 90px); padding: 10px 12px 10px 10px; background: var(--paper); border: 1px solid #ffffffaa; border-radius: 14px; box-shadow: 0 2px 12px #203b3320; text-align: left; color: var(--green); }
 .brand-mark { font-size: 33px; width: 34px; height: 36px; line-height: 36px; text-align: center; color: var(--green); background: #e9eee5; border-radius: 9px; }
-.brand-copy { min-width: 0; transition: opacity 160ms ease-in-out; }
-.brand-copy.is-changing { opacity: 0; }
+.brand-copy { min-width: 0; }
+.brand-copy, .panel-heading > div, .panel-content { transition: opacity 160ms ease-in-out; }
+.brand-copy.is-changing, .panel.is-changing .panel-heading > div, .panel.is-changing .panel-content { opacity: 0; }
 .brand strong { display: block; font-size: 17px; letter-spacing: -.5px; line-height: 1.2; }
 .brand-copy > span { display: block; font-size: 10px; color: var(--muted); margin-top: 3px; }
 .brand-mark { flex-shrink: 0; }
@@ -58,4 +59,4 @@ label { display: block; font-size: 12px; font-weight: 650; margin-bottom: 8px; }
   .wide-label { display: none; }
 }
 @media (prefers-reduced-motion: no-preference) { .panel { animation: appear .16s ease-out; } @keyframes appear { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } } }
-@media (prefers-reduced-motion: reduce) { .brand-copy { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .brand-copy, .panel-heading > div, .panel-content { transition: none; } }

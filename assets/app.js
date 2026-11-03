@@ -23,20 +23,24 @@ function status(message, persistent = false) {
   if (!persistent) statusTimer = setTimeout(() => { $('status').hidden = true; }, 7000);
 }
 
-function openPanel(mode, title) {
+function openPanel(mode, title, focus = true) {
   if ($('panel').hidden) returnFocus = document.activeElement;
+  const replacingFocusedContent = $('panel-content').contains(document.activeElement);
   state.mode = mode;
   $('panel').hidden = false;
+  $('panel').classList.toggle('is-changing', mode !== 'updates' && document.querySelector('.brand-copy').classList.contains('is-changing'));
   $('panel-title').textContent = title;
   $('panel-kicker').textContent = mode === 'updates' ? 'BEFORE YOUR NEXT TURN' : 'OUT ON THE TRAILS';
   $('map-title').setAttribute('aria-expanded', String(mode !== 'updates'));
   $('updates').setAttribute('aria-expanded', String(mode === 'updates'));
   $('panel-content').replaceChildren();
-  $('close-panel').focus({ preventScroll: true });
+  $('panel-content').scrollTop = 0;
+  if (focus || replacingFocusedContent) $('close-panel').focus({ preventScroll: true });
 }
 
 function closePanel() {
   $('panel').hidden = true;
+  $('panel').classList.remove('is-changing');
   state.mode = null;
   $('map-title').setAttribute('aria-expanded', 'false');
   $('updates').setAttribute('aria-expanded', 'false');
@@ -67,18 +71,27 @@ function refreshContext() {
     $('map-subtitle').textContent = contextSystem ? 'Cville Trails · About these trails' : 'Charlottesville & Albemarle';
     $('map-title').setAttribute('aria-label', contextSystem ? `About ${title}` : 'About Cville Trails');
     displayedContextSystem = contextSystem;
+    // Commit both views in the same frame, without reopening a closed panel or
+    // replacing the user's Updates view. Automatic refreshes keep map focus.
+    if (!$('panel').hidden && ['about', 'details'].includes(state.mode)) {
+      if (displayedContextSystem) details(displayedContextSystem, null, false);
+      else aboutMap(false);
+    }
     copy.classList.remove('is-changing');
+    $('panel').classList.remove('is-changing');
   };
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
     update();
   } else {
     copy.classList.add('is-changing');
+    $('panel').classList.toggle('is-changing', !$('panel').hidden && ['about', 'details'].includes(state.mode));
     titleTimer = setTimeout(update, 160);
   }
 }
 
-function aboutMap() {
-  openPanel('about', 'Cville Trails');
+function aboutMap(focus = true) {
+  state.systemId = null;
+  openPanel('about', 'Cville Trails', focus);
   $('panel-content').append(element('p', 'Find your way around Charlottesville and Albemarle’s trail networks.'),
     element('p', 'Zoom into a trail system, then tap its name at the top of the map for details. You can also tap an individual trail. Use the location button to see where you are.'),
     element('p', 'Trail colors follow the curated map. Updates collect reviewed notices from trail managers.', 'hint'));
@@ -90,9 +103,9 @@ function zoomTo(system) {
   map.fitBounds(system.bounds, { padding: { top: 90, bottom: 110, left: 35, right: 60 }, maxZoom: 15, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 700 });
 }
 
-function details(system, feature = null) {
+function details(system, feature = null, focus = true) {
   state.systemId = system?.id;
-  openPanel('details', feature ? featureName(feature.properties) : system.name);
+  openPanel('details', feature ? featureName(feature.properties) : system.name, focus);
   const content = $('panel-content');
   if (feature && system) content.append(element('p', system.name, 'meta'));
   if (system) {
