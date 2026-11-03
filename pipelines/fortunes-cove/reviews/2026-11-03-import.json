@@ -1,0 +1,468 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-03T13:22:42.247972Z",
+  "reviewer": "Codex in chat",
+  "status": "published-map-data-and-style-cache-propagating",
+  "added_systems": [
+    "fortunes-cove"
+  ],
+  "preview_centers": {
+    "fortunes-cove": [
+      -78.89382,
+      37.79042
+    ]
+  },
+  "preview_fit_bounds": true,
+  "mobile_system": "fortunes-cove",
+  "source_policy": "Direct extraction of official georeferenced PDF vectors; current TNC page for visitor facts.",
+  "sources": [
+    {
+      "id": "fortunes-visit",
+      "label": "TNC preserve information and access updates",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fortunes-cove-preserve/"
+    },
+    {
+      "id": "fortunes-map",
+      "label": "Official Fortune’s Cove trail map (PDF)",
+      "url": "https://www.nature.org/content/dam/tnc/nature/en/documents/FortunesCove_TrailMap_June2020.pdf"
+    }
+  ],
+  "extraction": {
+    "pdf_sha256": "6186b952530940ca20b05961b31da13e2c3752de419950acd42fb4293cad41b7",
+    "manifest_hash": "8a3387b9b20b78ec897bd1cc7466fb88fddf6a18025528eb73a6179f6eab49c3",
+    "crs": "EPSG:26917",
+    "control_residual_m": [
+      0.01431165761870702,
+      0.014311653202940462,
+      0.014311657183430799,
+      0.014311652373751623
+    ],
+    "bounds": [
+      -78.90309368,
+      37.78015956,
+      -78.8845475,
+      37.80068267
+    ],
+    "lengths_m": {
+      "yellow-overlook-spur": 107.07,
+      "white-shortcut": 2725.12,
+      "yellow-west-north": 1515.58,
+      "yellow-west-south": 2020.06,
+      "yellow-ridge": 3412.21,
+      "yellow-east-middle": 338.51,
+      "yellow-east-south": 896.9
+    },
+    "nearest_vertex_to_operator_pin_m": 12.57,
+    "feature_count": 7,
+    "geometry_hash": "fa6a27640849fb6af3a3340dab0062184c5bcf082d3b170026fdd4de546568ac",
+    "limitations": [
+      "Cartographic 2020 linework, not surveyed GPS precision.",
+      "No roads, boundary dashes, legend/profile strokes or black casings imported.",
+      "Parking-area gaps in colored paths are retained; no private-road access inferred."
+    ]
+  },
+  "system": {
+    "id": "fortunes-cove",
+    "name": "Fortune’s Cove Preserve",
+    "area": "Nelson County, near Lovingston",
+    "description": "Steep woodland trails and rocky overlooks above Lovingston. The official map marks a 5.1-mile yellow loop and a shorter 3.7-mile white loop that avoids the highest climbs.",
+    "bounds": [
+      -78.904094,
+      37.77916,
+      -78.883547,
+      37.801683
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fortunes-cove-preserve/",
+    "source_label": "The Nature Conservancy visitor guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "fortunes-visit",
+        "label": "TNC preserve information and access updates",
+        "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fortunes-cove-preserve/"
+      },
+      {
+        "id": "fortunes-map",
+        "label": "Official Fortune’s Cove trail map (PDF)",
+        "url": "https://www.nature.org/content/dam/tnc/nature/en/documents/FortunesCove_TrailMap_June2020.pdf"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Open daily, dawn to dusk, year-round.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "No pets; service animals are welcome.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "No bikes, horses, camping or fires. Stay on designated trails and respect adjoining private property.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Difficulty",
+        "value": "The upper loop is strenuous, with about 1,500 feet of climbing; allow around four hours. The white shortcut reduces the distance and climbing.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Facilities",
+        "value": "Gravel parking and a map kiosk at the entrance; no restrooms. Bring water.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Road access",
+        "value": "TNC reports storm erosion on the entrance road; use caution, especially without a high-clearance vehicle. Check the official page before visiting.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      }
+    ],
+    "description_sources": [
+      "fortunes-map",
+      "fortunes-visit"
+    ],
+    "bounds_source": {
+      "description": "Extracted official GeoPDF trail extent, padded 0.001 degrees; context envelope, not a preserve boundary.",
+      "source_url": "https://www.nature.org/content/dam/tnc/nature/en/documents/FortunesCove_TrailMap_June2020.pdf",
+      "source_sha256": "6186b952530940ca20b05961b31da13e2c3752de419950acd42fb4293cad41b7",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  "decisions": [
+    "Reuse existing supplemental Strava_Sidetrails target to avoid adding a tileset; provenance identifies these as official TNC geometry, not Strava tracks.",
+    "Keep all unrelated supplemental features unchanged, including the accepted Heyward connector.",
+    "Only source-tagged Fortune’s Cove lines receive yellow/white colors; preserve prior styling for every other feature and all Rivanna layers.",
+    "Retain exact extracted joins and the parking-area separation visible in the source; no roads or private-property shortcuts inferred.",
+    "Map says 5.1/3.7-mile loops, while page also mentions 5.5 miles; use attributed map distances.",
+    "Road-erosion note is a reviewed static visitor fact requiring rechecking, not a scheduled closure or automatic reopening."
+  ],
+  "plan_summary": {
+    "added": [
+      "fortunes-cove:white-shortcut",
+      "fortunes-cove:yellow-east-middle",
+      "fortunes-cove:yellow-east-south",
+      "fortunes-cove:yellow-overlook-spur",
+      "fortunes-cove:yellow-ridge",
+      "fortunes-cove:yellow-west-north",
+      "fortunes-cove:yellow-west-south"
+    ],
+    "deleted": [],
+    "changed": [],
+    "geometry_changed": [],
+    "curation_changed": []
+  },
+  "prepared_plan": {
+    "path": ".trail-state/fortunes-cove/plan.json",
+    "approval_hash": "fbfa9491d244414bfb81cea59993b4c05933e9a700ca3998898324320a19b2b7",
+    "before_hash": "461536e2d83b31d06de1947eccdc263598c48b2ef224844ae817084e4228b639",
+    "after_hash": "6e34a8ef28f73426e5374a21c71f9c002e6c7d35eb2c712b0d4c2be63ee25e08",
+    "before_features": 55,
+    "after_features": 62
+  },
+  "style_proposal": {
+    "dataset_plan_hash": "fbfa9491d244414bfb81cea59993b4c05933e9a700ca3998898324320a19b2b7",
+    "before_hash": "461536e2d83b31d06de1947eccdc263598c48b2ef224844ae817084e4228b639",
+    "after_hash": "6e34a8ef28f73426e5374a21c71f9c002e6c7d35eb2c712b0d4c2be63ee25e08",
+    "style_before_hash": "baee46ed752af7cdb2f963876158b8e4ae24d66caf275e77f6e0fbea40dd249a",
+    "style_after_hash": "95fd20e178ba48edfdb4ec6bc898f00c6336d974b3d3c003d5b30d34c8935202",
+    "extraction_manifest_hash": "8a3387b9b20b78ec897bd1cc7466fb88fddf6a18025528eb73a6179f6eab49c3",
+    "proposal_hash": "efd8c550df73f0eb7505703309c87e7752c6b1c9a33d62fa25763b7e6d1e13b0"
+  },
+  "publication_authorization": {
+    "instruction": "User requested converting the official map into geographic trail data and adding it to the map, plus an infobox.",
+    "reviewed_at": "2026-11-03T13:24:55.150440Z",
+    "scope": "Seven official-map segments added to existing supplemental dataset; official yellow/white colors only for fortunes-cove; related catalog and monitoring.",
+    "approved_plan_hash": "fbfa9491d244414bfb81cea59993b4c05933e9a700ca3998898324320a19b2b7",
+    "approved_style_hash": "efd8c550df73f0eb7505703309c87e7752c6b1c9a33d62fa25763b7e6d1e13b0"
+  },
+  "source_check": {
+    "checked_at": "2026-11-03T13:22:44.277695Z",
+    "sources": [
+      {
+        "source": "fortunes-cove/trail-map",
+        "state": "changed",
+        "review": "reviews/fortunes-cove/trail-map-6186b952530940ca20b05961b31da13e2c3752de419950acd42fb4293cad41b7.json"
+      },
+      {
+        "source": "fortunes-cove/visitor-guide",
+        "state": "changed",
+        "review": "reviews/fortunes-cove/visitor-guide-1b030f38244ec8dedb7a1f80a294eee75cc8eedef5d7f05e52262f72295743af.json"
+      }
+    ],
+    "errors": []
+  },
+  "verification": {
+    "preview": "Seven source segments rendered with expected colors; operator entrance pin and terrain alignment inspected; toggle and mobile infobox checks passed.",
+    "python_tests": "76 passed with optional geo dependencies installed",
+    "javascript_tests": "8 passed; app and publication-check syntax validated",
+    "public_rendering": "Fresh real remote tiles and public style verified at zooms 10/12/14 and each segment at 16. Ordinary public requests still showed old zoom-14 tiles and old optimized styling at the recorded time; cache propagation pending.",
+    "ordinary_public_rendering": {
+      "checked_at": "2026-11-03T13:26:50.241Z",
+      "mode": "ordinary-public-style-and-tiles",
+      "zooms": [
+        {
+          "zoom": 10,
+          "feature_ids": [
+            "white-shortcut",
+            "yellow-east-middle",
+            "yellow-east-south",
+            "yellow-overlook-spur",
+            "yellow-ridge",
+            "yellow-west-north",
+            "yellow-west-south"
+          ],
+          "all_present": true
+        },
+        {
+          "zoom": 12,
+          "feature_ids": [
+            "white-shortcut",
+            "yellow-east-middle",
+            "yellow-east-south",
+            "yellow-overlook-spur",
+            "yellow-ridge",
+            "yellow-west-north",
+            "yellow-west-south"
+          ],
+          "all_present": true
+        },
+        {
+          "zoom": 14,
+          "feature_ids": [],
+          "all_present": false
+        }
+      ],
+      "junctions": [
+        {
+          "feature_id": "fortunes-cove:white-shortcut",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-east-middle",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-east-south",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-overlook-spur",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-ridge",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-west-north",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-west-south",
+          "zoom": 16,
+          "present": true
+        }
+      ],
+      "line_color": "hsl(25, 29%, 87%)",
+      "style_matches": false,
+      "page_errors": [],
+      "passed": false
+    },
+    "fresh_public_rendering": {
+      "checked_at": "2026-11-03T13:28:15.365Z",
+      "mode": "diagnostic-fresh-tiles-unoptimized-style",
+      "zooms": [
+        {
+          "zoom": 10,
+          "feature_ids": [
+            "white-shortcut",
+            "yellow-east-middle",
+            "yellow-east-south",
+            "yellow-overlook-spur",
+            "yellow-ridge",
+            "yellow-west-north",
+            "yellow-west-south"
+          ],
+          "all_present": true
+        },
+        {
+          "zoom": 12,
+          "feature_ids": [
+            "white-shortcut",
+            "yellow-east-middle",
+            "yellow-east-south",
+            "yellow-overlook-spur",
+            "yellow-ridge",
+            "yellow-west-north",
+            "yellow-west-south"
+          ],
+          "all_present": true
+        },
+        {
+          "zoom": 14,
+          "feature_ids": [
+            "white-shortcut",
+            "yellow-east-middle",
+            "yellow-east-south",
+            "yellow-overlook-spur",
+            "yellow-ridge",
+            "yellow-west-north",
+            "yellow-west-south"
+          ],
+          "all_present": true
+        }
+      ],
+      "junctions": [
+        {
+          "feature_id": "fortunes-cove:white-shortcut",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-east-middle",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-east-south",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-overlook-spur",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-ridge",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-west-north",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "fortunes-cove:yellow-west-south",
+          "zoom": 16,
+          "present": true
+        }
+      ],
+      "line_color": [
+        "case",
+        [
+          "==",
+          [
+            "get",
+            "system_id"
+          ],
+          "fortunes-cove"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "color"
+          ],
+          "yellow",
+          "#ffe14f",
+          "white",
+          "#ffffff",
+          "#ded0c5"
+        ],
+        "hsl(25, 29%, 87%)"
+      ],
+      "style_matches": true,
+      "page_errors": [],
+      "passed": true
+    }
+  },
+  "publication_receipt": {
+    "approval_hash": "fbfa9491d244414bfb81cea59993b4c05933e9a700ca3998898324320a19b2b7",
+    "started_at": "2026-11-03T13:24:56.943991Z",
+    "target": {
+      "id": "strava",
+      "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+      "tileset": "meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg",
+      "source_layer": "Strava_Sidetrails"
+    },
+    "state": "published",
+    "completed": [
+      {
+        "put": "fortunes-cove:white-shortcut"
+      },
+      {
+        "put": "fortunes-cove:yellow-east-middle"
+      },
+      {
+        "put": "fortunes-cove:yellow-east-south"
+      },
+      {
+        "put": "fortunes-cove:yellow-overlook-spur"
+      },
+      {
+        "put": "fortunes-cove:yellow-ridge"
+      },
+      {
+        "put": "fortunes-cove:yellow-west-north"
+      },
+      {
+        "put": "fortunes-cove:yellow-west-south"
+      }
+    ],
+    "verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "ca1c509bbf5224d77d88b8f616ccc12b566ffc74c5d634e5e938ef7d9031a0fc"
+    },
+    "upload_id": "cmw0q03wb008p1oo0cs1x5jn0",
+    "finished_at": "2026-11-03T13:25:35.309217Z"
+  },
+  "style_publication_receipt": {
+    "state": "published",
+    "started_at": "2026-11-03T13:26:03.473359Z",
+    "proposal_hash": "efd8c550df73f0eb7505703309c87e7752c6b1c9a33d62fa25763b7e6d1e13b0",
+    "dataset_plan_hash": "fbfa9491d244414bfb81cea59993b4c05933e9a700ca3998898324320a19b2b7",
+    "completed": [
+      {
+        "version": "draft",
+        "response_hash": "e44e564027d01a7a763ed74dde13de19ae0726af9751c55eaee7e279a03dcb9a"
+      },
+      {
+        "version": "published",
+        "response_hash": "a1b25e83ba30c2a3d56c8358c3c46b0acda8474742e654467e34ca326a5d90dc"
+      }
+    ],
+    "dataset_verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "ca1c509bbf5224d77d88b8f616ccc12b566ffc74c5d634e5e938ef7d9031a0fc"
+    },
+    "finished_at": "2026-11-03T13:26:04.227928Z"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fortunes-cove",
+  "system_id": "fortunes-cove",
+  "system_ids": ["fortunes-cove"],
+  "fields": {"id": null, "name": "name", "color": "color"},
+  "sources": [
+    {
+      "id": "trail-map",
+      "kind": "pdf",
+      "label": "TNC Fortune’s Cove official trail map (June 2020)",
+      "url": "https://www.nature.org/content/dam/tnc/nature/en/documents/FortunesCove_TrailMap_June2020.pdf"
+    },
+    {
+      "id": "visitor-guide",
+      "kind": "html",
+      "label": "The Nature Conservancy: Fortune’s Cove Preserve",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fortunes-cove-preserve/"
+    }
+  ]
+}

@@ -5419,5 +5419,92 @@
       ],
       "reviewed_on": "2026-11-03"
     }
+  },
+  {
+    "id": "fortunes-cove",
+    "name": "Fortune’s Cove Preserve",
+    "area": "Nelson County, near Lovingston",
+    "description": "Steep woodland trails and rocky overlooks above Lovingston. The official map marks a 5.1-mile yellow loop and a shorter 3.7-mile white loop that avoids the highest climbs.",
+    "bounds": [
+      -78.904094,
+      37.77916,
+      -78.883547,
+      37.801683
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fortunes-cove-preserve/",
+    "source_label": "The Nature Conservancy visitor guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "fortunes-visit",
+        "label": "TNC preserve information and access updates",
+        "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fortunes-cove-preserve/"
+      },
+      {
+        "id": "fortunes-map",
+        "label": "Official Fortune’s Cove trail map (PDF)",
+        "url": "https://www.nature.org/content/dam/tnc/nature/en/documents/FortunesCove_TrailMap_June2020.pdf"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Open daily, dawn to dusk, year-round.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "No pets; service animals are welcome.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "No bikes, horses, camping or fires. Stay on designated trails and respect adjoining private property.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Difficulty",
+        "value": "The upper loop is strenuous, with about 1,500 feet of climbing; allow around four hours. The white shortcut reduces the distance and climbing.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Facilities",
+        "value": "Gravel parking and a map kiosk at the entrance; no restrooms. Bring water.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      },
+      {
+        "label": "Road access",
+        "value": "TNC reports storm erosion on the entrance road; use caution, especially without a high-clearance vehicle. Check the official page before visiting.",
+        "sources": [
+          "fortunes-visit"
+        ]
+      }
+    ],
+    "description_sources": [
+      "fortunes-map",
+      "fortunes-visit"
+    ],
+    "bounds_source": {
+      "description": "Extracted official GeoPDF trail extent, padded 0.001 degrees; context envelope, not a preserve boundary.",
+      "source_url": "https://www.nature.org/content/dam/tnc/nature/en/documents/FortunesCove_TrailMap_June2020.pdf",
+      "source_sha256": "6186b952530940ca20b05961b31da13e2c3752de419950acd42fb4293cad41b7",
+      "reviewed_on": "2026-11-03"
+    }
   }
 ]

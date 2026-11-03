@@ -20,6 +20,7 @@ Record source date/version, URL, fetch/review time, evidence hash and the reason
 | `albemarle` | Official pages/PDFs monitored; generic reviewed-GeoJSON normalization | Newly discovered County service needs a dedicated adapter, filtering, stable-ID strategy and review |
 | `rivanna` | RTF pages, maps and KML monitored; separate KML comparison/candidate tools | KML identity crosswalk, route/event classification, closure wording and semantic additions |
 | `monticello` | Operator pages and PDF monitored; generic reviewed-GeoJSON normalization | Map geometry, changed rules, current-vs-old PDF differences |
+| `fortunes-cove` | Official TNC GeoPDF vectors with embedded UTM georeferencing; hash-bound extraction | Review changed PDF path identities, joins and current access; [pipeline guide](../pipelines/fortunes-cove/README.md) |
 | `visitor-info` | Official visitor pages/maps monitored, source-specific audiences | Chat review and manual catalog edits; its adapter rejects trail geometry |
 
 The monitor does not recursively follow new links. Register a new map/PDF as a source after discovering it. A page that merely links a new map is not equivalent to having fetched and reviewed that map.

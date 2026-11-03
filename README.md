@@ -17,7 +17,7 @@ Read the [session record and outstanding work](docs/session-2026-11-02.md), then
 | See what runs automatically and what to automate next | [Automation roadmap](docs/automation-roadmap.md) |
 | Recover the reasoning behind today's park choices and exceptions | [November session record](docs/session-2026-11-02.md) |
 
-The current system has five pipelines, 26 public catalog entries (24 specific networks plus the two City/County groupings), reviewed park ownership rules, and separate publication paths for map data and website content. The City dataset reached 225 features; Rivanna reached 72 while preserving all 65 pre-existing geometries. These are **dated publication checkpoints**, not permanent expected counts. Fetch a fresh inventory before the next geometry edit.
+The current system has six pipelines, 27 public catalog entries (25 specific networks plus the two City/County groupings), reviewed park ownership rules, and separate publication paths for map data and website content. The City dataset reached 225 features; Rivanna reached 72 while preserving all 65 pre-existing geometries. These are **dated publication checkpoints**, not permanent expected counts. Fetch a fresh inventory before the next geometry edit.
 
 The latest County research found a public **1,902-feature trail service** with active, inactive, private, pending and future records. It informed infobox extents, but has **not** been imported as new map geometry. Biscuit Run's infobox explicitly warns that our map coverage is incomplete. See [the County ingestion work still required](docs/source-research.md#albemarle-county-newly-discovered-gis).
 
@@ -307,6 +307,10 @@ python3 -m maintenance.rivanna_publish .trail-state/plans/rivanna-reviewed.json 
 The style publisher requires the completed dataset receipt and matching live data, verifies the reviewed style diff, backs up both style versions, and changes only the three Rivanna display layers. It preserves unrelated Studio draft edits. An interrupted or previously attempted style publication requires inspecting its journal rather than blindly replaying it. `node tests/rivanna-publication-browser.mjs` checks the public style and tiles; `--fresh` separately checks fresh vector tiles and the unoptimized public style URL to distinguish CDN propagation from a failed publication. Neither check replaces remote data with local candidate geometry.
 
 These historical browser checks require the corresponding local plans and preview files. They are not general checks for an arbitrary future release. The [Mapbox operations guide](docs/mapbox-operations.md#diagnose-old-data-at-one-zoom-and-new-data-at-another) records the later multi-zoom investigation: ordinary zoom-10 requests were stale while 12/14/16 were current, and fresh zoom-10/11 tile requests returned current data without changing the public style. Observed composite-tile headers allowed two hours of server caching and twelve hours of browser caching. Upload completion does not certify every cache has expired.
+
+## Extract trails from an official GeoPDF
+
+[Fortune’s Cove](pipelines/fortunes-cove/README.md) is the first repeatable PDF-vector ingest: seven georeferenced trail segments, official yellow/white colors, and an independent entrance-pin alignment check. Its dedicated pipeline monitors the TNC map and visitor page; extraction is bound to the reviewed PDF hash and requires review when that source changes. It reuses the supplemental tileset and preserves all other features. The guide includes extraction, preview, publication and future-update commands.
 
 ## Publish trail notices
 

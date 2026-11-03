@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "pdf_sha256": "6186b952530940ca20b05961b31da13e2c3752de419950acd42fb4293cad41b7",
+  "page": 0,
+  "viewport_name": "Layers",
+  "vector_layer": "trails",
+  "expected_crs_epsg": 26917,
+  "max_control_residual_m": 1.0,
+  "paths": [
+    {
+      "drawing": 28,
+      "id": "yellow-overlook-spur",
+      "name": "Yellow Trail \u2014 overlook spur",
+      "color": "yellow",
+      "segments": 16
+    },
+    {
+      "drawing": 30,
+      "id": "white-shortcut",
+      "name": "White Trail",
+      "color": "white",
+      "segments": 329
+    },
+    {
+      "drawing": 32,
+      "id": "yellow-west-north",
+      "name": "Yellow Trail",
+      "color": "yellow",
+      "segments": 172
+    },
+    {
+      "drawing": 34,
+      "id": "yellow-west-south",
+      "name": "Yellow Trail",
+      "color": "yellow",
+      "segments": 208
+    },
+    {
+      "drawing": 36,
+      "id": "yellow-ridge",
+      "name": "Yellow Trail",
+      "color": "yellow",
+      "segments": 359
+    },
+    {
+      "drawing": 38,
+      "id": "yellow-east-middle",
+      "name": "Yellow Trail",
+      "color": "yellow",
+      "segments": 17
+    },
+    {
+      "drawing": 40,
+      "id": "yellow-east-south",
+      "name": "Yellow Trail",
+      "color": "yellow",
+      "segments": 91
+    }
+  ],
+  "operator_map_pin": [
+    -78.891696,
+    37.780264
+  ],
+  "notes": "Drawing indices are selectors only for this exact PDF hash. Semantic IDs are reviewed route segments, not upstream GIS IDs. Do not reassign them by index after the source changes."
+}
