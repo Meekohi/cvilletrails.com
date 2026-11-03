@@ -269,9 +269,9 @@ This writes the local `data/updates.json` feed, ready for review in Git. It does
 
 - **Validate:** tests and an allowlisted website build on pushes and pull requests. Uploads a website preview artifact.
 - **Check authoritative trail sources:** daily snapshots and review artifacts, with no OpenAI API calls by default. Manual runs can opt into the API reviewer. The workflow has read-only repository permissions and no Mapbox editing token. It never publishes or messages anyone.
-- **Deploy website:** manual GitHub Pages deployment of the validated `dist/` artifact. Select **GitHub Actions** as the Pages source in repository settings before using this workflow. The prior branch-based deployment remains whatever is currently configured until that setting is changed.
+- **Deploy website:** pushes to `master` deploy the validated `dist/` artifact to GitHub Pages; manual dispatch is also available. Pages uses **GitHub Actions** as its source. Work on other branches does not replace the public website until merged to `master` or explicitly deployed.
 
-The source-check workflow retains snapshots/reviews in an Actions cache and a 90-day artifact. Cache eviction creates a fresh baseline, not a deletion. Archive important evidence and accepted review decisions outside that retention window. Workflows are supplied in the repository but do not run until pushed to GitHub. An optional future API reviewer requires a repository `OPENAI_API_KEY` secret; local `.env.local` is never uploaded. There is no scheduled production writer in this first version.
+The source-check workflow retains snapshots/reviews in an Actions cache and a 90-day artifact. Cache eviction creates a fresh baseline, not a deletion. Archive important evidence and accepted review decisions outside that retention window. An optional future API reviewer requires a repository `OPENAI_API_KEY` secret; local `.env.local` is never uploaded. There is no scheduled Mapbox writer in this first version.
 
 ## Verify
 
