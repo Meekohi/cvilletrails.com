@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-03T13:16:18.793327+00:00",
+  "reviewer": "Codex in chat",
+  "added_systems": [
+    "highland"
+  ],
+  "preview_centers": {
+    "highland": [
+      -78.4607,
+      37.98365
+    ]
+  },
+  "preview_fit_bounds": true,
+  "mobile_system": "highland",
+  "source_policy": "Current operator page for hours, check-in and Dog Days; visually inspected the map and rules images linked by that page.",
+  "sources": [
+    {
+      "id": "highland-trails",
+      "label": "Highland trail hours and visitor information",
+      "url": "https://highland.org/plan-your-visit/highland-trails/"
+    },
+    {
+      "id": "highland-map",
+      "label": "Official Highland trail map",
+      "url": "https://highland.org/wp-content/uploads/2023/05/Highland-Trails-Map-05082023.jpg"
+    },
+    {
+      "id": "highland-rules",
+      "label": "Highland trail rules",
+      "url": "https://highland.org/wp-content/uploads/2023/02/Rules-and-Regs-02142023-scaled.jpg"
+    }
+  ],
+  "evidence_files": [
+    {
+      "url": "https://highland.org/wp-content/uploads/2023/05/Highland-Trails-Map-05082023.jpg",
+      "local_path": ".trail-state/research/highland/map.jpg",
+      "sha256": "57e4dbbbf7f4d1f97975d6c53b69eafa47a11eba5ac4c46082a445d53569a740"
+    },
+    {
+      "url": "https://highland.org/wp-content/uploads/2023/02/Rules-and-Regs-02142023-scaled.jpg",
+      "local_path": ".trail-state/research/highland/rules.jpg",
+      "sha256": "4420e7442180fe788abc511516396466a43437373c02753745f83cbbada5eabb"
+    }
+  ],
+  "context_evidence": {
+    "inventory_file": ".trail-state/post-additions-inventory/datasets/cjd3c6ua70tt52wqjqzmjg4ls.geojson",
+    "inventory_sha256": "025a19816e9ec66972fe446fcafdb4c157bfda099669e616e6f7584b200836dc",
+    "feature_ids": [
+      "1398f3872184c886adf9fa4c818c126c",
+      "20e478f3f8fcdde649eaa3da1a74400d",
+      "422e727743aaaa1552dc3404471de7d8",
+      "5c8235a1e6034a536cd5c5caff3e7137",
+      "861d22ab10c12c4bfbc2025279f647ba",
+      "bb23e7f08d8d4061dd597465d62112fe",
+      "f5ce9f00af9d3969f6a8323c8b5868e9"
+    ],
+    "raw_bounds": [
+      -78.470019,
+      37.976858,
+      -78.45145,
+      37.990455
+    ],
+    "context_bounds": [
+      -78.471019,
+      37.975858,
+      -78.45045,
+      37.991455
+    ],
+    "padding_degrees": 0.001,
+    "source_layer": "Strava_Sidetrails",
+    "method": "Existing geometry envelope in Highland area, checked against the official map’s mountain/pasture layout; no new geometry or access boundary inferred."
+  },
+  "decisions": [
+    "The current operator page explicitly permits designated Dog Days, despite the older linked map/rules saying no pet dogs; retain the current exception.",
+    "Use current page hours and last-entry time rather than the rules image’s seasonal-hours placeholder.",
+    "Highland is independently operated; do not inherit County park notices merely because it lies in Albemarle.",
+    "Register the HTML page for monitoring. Linked JPEG map/rules were reviewed manually; image-byte changes at the same URL are not monitored by the current source checker.",
+    "No Mapbox geometry, style or dataset changes in this update."
+  ],
+  "system": {
+    "id": "highland",
+    "name": "James Monroe’s Highland",
+    "area": "James Monroe Parkway, southeast of Charlottesville",
+    "description": "Highland’s Rustic Trails cross woods and pastures beside James Monroe’s historic home. Choose gentle pasture loops or the steeper Mountain Trail; use the official map to plan your walk.",
+    "bounds": [
+      -78.471019,
+      37.975858,
+      -78.45045,
+      37.991455
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://highland.org/plan-your-visit/highland-trails/",
+    "source_label": "Highland Rustic Trails visitor guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "highland-trails",
+        "label": "Highland trail hours and visitor information",
+        "url": "https://highland.org/plan-your-visit/highland-trails/"
+      },
+      {
+        "id": "highland-map",
+        "label": "Official Highland trail map",
+        "url": "https://highland.org/wp-content/uploads/2023/05/Highland-Trails-Map-05082023.jpg"
+      },
+      {
+        "id": "highland-rules",
+        "label": "Highland trail rules",
+        "url": "https://highland.org/wp-content/uploads/2023/02/Rules-and-Regs-02142023-scaled.jpg"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 9:30 a.m.–4:30 p.m., weather permitting; no trail entry after 3:30 p.m. Closed Thanksgiving, Christmas Eve, Christmas Day and New Year’s Day.",
+        "sources": [
+          "highland-trails"
+        ]
+      },
+      {
+        "label": "Admission",
+        "value": "Trails are free; check in at the Museum Shop on arrival. Tickets are required for the historic core.",
+        "sources": [
+          "highland-trails",
+          "highland-map"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "No pets except on designated Dog Days; service animals are welcome. Check Highland’s events calendar for Dog Days.",
+        "sources": [
+          "highland-trails"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "No bicycles, horses or motorized vehicles. Stay on marked trails and respect private property.",
+        "sources": [
+          "highland-rules"
+        ]
+      },
+      {
+        "label": "Wet weather",
+        "value": "Highland asks visitors to wait 24 hours for each inch of rainfall before using the trails. Bring drinking water; none is available on the trails.",
+        "sources": [
+          "highland-rules"
+        ]
+      }
+    ],
+    "description_sources": [
+      "highland-trails",
+      "highland-map"
+    ],
+    "bounds_source": {
+      "description": "Envelope of seven existing Strava-derived Highland-area trail features, padded 0.001 degrees; compared visually with the official 2023 trail map. Context extent only, not an access boundary or a route refresh.",
+      "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+      "feature_ids": [
+        "1398f3872184c886adf9fa4c818c126c",
+        "20e478f3f8fcdde649eaa3da1a74400d",
+        "422e727743aaaa1552dc3404471de7d8",
+        "5c8235a1e6034a536cd5c5caff3e7137",
+        "861d22ab10c12c4bfbc2025279f647ba",
+        "bb23e7f08d8d4061dd597465d62112fe",
+        "f5ce9f00af9d3969f6a8323c8b5868e9"
+      ],
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  "source_check": {
+    "checked_at": "2026-11-03T13:16:18.857275Z",
+    "sources": [
+      {
+        "source": "visitor-info/highland-trails",
+        "state": "changed",
+        "review": "reviews/visitor-info/highland-trails-b8c1bdb41c5fb054ee89da248e29c0faa82765d8ddeb89f5a759b43c9746a258.json"
+      }
+    ],
+    "errors": []
+  },
+  "page_snapshot": {
+    "sha256": "b8c1bdb41c5fb054ee89da248e29c0faa82765d8ddeb89f5a759b43c9746a258",
+    "file": "snapshots/bb2bdb89e70991bf5042d03c53cf2e6f6c97e71f3a11fe02f8c17703868a41e6.txt",
+    "etag": null,
+    "last_modified": null
+  },
+  "verification": {
+    "catalog_validation": "passed",
+    "website_build": "passed",
+    "javascript_tests": "8 passed",
+    "javascript_syntax": "passed",
+    "browser": "Passed Highland overview context, synchronized open panel, all source links/facts, mobile layout and existing McIntire shared-layer regression check; no page errors.",
+    "mobile_screenshot": "test-results/highland-info-mobile.png"
+  }
+}

@@ -5325,5 +5325,99 @@
       "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
     },
     "map_note": "Trail coverage here is incomplete and may be outdated. Use the County’s current trail map and posted signs for navigation."
+  },
+  {
+    "id": "highland",
+    "name": "James Monroe’s Highland",
+    "area": "James Monroe Parkway, southeast of Charlottesville",
+    "description": "Highland’s Rustic Trails cross woods and pastures beside James Monroe’s historic home. Choose gentle pasture loops or the steeper Mountain Trail; use the official map to plan your walk.",
+    "bounds": [
+      -78.471019,
+      37.975858,
+      -78.45045,
+      37.991455
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://highland.org/plan-your-visit/highland-trails/",
+    "source_label": "Highland Rustic Trails visitor guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "highland-trails",
+        "label": "Highland trail hours and visitor information",
+        "url": "https://highland.org/plan-your-visit/highland-trails/"
+      },
+      {
+        "id": "highland-map",
+        "label": "Official Highland trail map",
+        "url": "https://highland.org/wp-content/uploads/2023/05/Highland-Trails-Map-05082023.jpg"
+      },
+      {
+        "id": "highland-rules",
+        "label": "Highland trail rules",
+        "url": "https://highland.org/wp-content/uploads/2023/02/Rules-and-Regs-02142023-scaled.jpg"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 9:30 a.m.–4:30 p.m., weather permitting; no trail entry after 3:30 p.m. Closed Thanksgiving, Christmas Eve, Christmas Day and New Year’s Day.",
+        "sources": [
+          "highland-trails"
+        ]
+      },
+      {
+        "label": "Admission",
+        "value": "Trails are free; check in at the Museum Shop on arrival. Tickets are required for the historic core.",
+        "sources": [
+          "highland-trails",
+          "highland-map"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "No pets except on designated Dog Days; service animals are welcome. Check Highland’s events calendar for Dog Days.",
+        "sources": [
+          "highland-trails"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "No bicycles, horses or motorized vehicles. Stay on marked trails and respect private property.",
+        "sources": [
+          "highland-rules"
+        ]
+      },
+      {
+        "label": "Wet weather",
+        "value": "Highland asks visitors to wait 24 hours for each inch of rainfall before using the trails. Bring drinking water; none is available on the trails.",
+        "sources": [
+          "highland-rules"
+        ]
+      }
+    ],
+    "description_sources": [
+      "highland-trails",
+      "highland-map"
+    ],
+    "bounds_source": {
+      "description": "Envelope of seven existing Strava-derived Highland-area trail features, padded 0.001 degrees; compared visually with the official 2023 trail map. Context extent only, not an access boundary or a route refresh.",
+      "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+      "feature_ids": [
+        "1398f3872184c886adf9fa4c818c126c",
+        "20e478f3f8fcdde649eaa3da1a74400d",
+        "422e727743aaaa1552dc3404471de7d8",
+        "5c8235a1e6034a536cd5c5caff3e7137",
+        "861d22ab10c12c4bfbc2025279f647ba",
+        "bb23e7f08d8d4061dd597465d62112fe",
+        "f5ce9f00af9d3969f6a8323c8b5868e9"
+      ],
+      "reviewed_on": "2026-11-03"
+    }
   }
 ]

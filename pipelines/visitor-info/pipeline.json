@@ -23,7 +23,8 @@
     "byrom",
     "chris-greene",
     "totier-creek",
-    "biscuit-run"
+    "biscuit-run",
+    "highland"
   ],
   "sources": [
     {
@@ -341,6 +342,15 @@
       "kind": "html",
       "system_ids": [
         "biscuit-run"
+      ]
+    },
+    {
+      "id": "highland-trails",
+      "label": "Highland Rustic Trails visitor guide",
+      "url": "https://highland.org/plan-your-visit/highland-trails/",
+      "kind": "html",
+      "system_ids": [
+        "highland"
       ]
     }
   ]

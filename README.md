@@ -17,7 +17,7 @@ Read the [session record and outstanding work](docs/session-2026-11-02.md), then
 | See what runs automatically and what to automate next | [Automation roadmap](docs/automation-roadmap.md) |
 | Recover the reasoning behind today's park choices and exceptions | [November session record](docs/session-2026-11-02.md) |
 
-The current system has five pipelines, 25 public catalog entries (23 specific networks plus the two City/County groupings), reviewed park ownership rules, and separate publication paths for map data and website content. The City dataset reached 225 features; Rivanna reached 72 while preserving all 65 pre-existing geometries. These are **dated publication checkpoints**, not permanent expected counts. Fetch a fresh inventory before the next geometry edit.
+The current system has five pipelines, 26 public catalog entries (24 specific networks plus the two City/County groupings), reviewed park ownership rules, and separate publication paths for map data and website content. The City dataset reached 225 features; Rivanna reached 72 while preserving all 65 pre-existing geometries. These are **dated publication checkpoints**, not permanent expected counts. Fetch a fresh inventory before the next geometry edit.
 
 The latest County research found a public **1,902-feature trail service** with active, inactive, private, pending and future records. It informed infobox extents, but has **not** been imported as new map geometry. Biscuit Run's infobox explicitly warns that our map coverage is incomplete. See [the County ingestion work still required](docs/source-research.md#albemarle-county-newly-discovered-gis).
 
