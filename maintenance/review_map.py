@@ -54,7 +54,46 @@ def verify_resolution_context(plan, context):
         raise ValueError('Resolution context references unknown review features')
 
 
-def build_resolution_context(plan, audit, park_report, policy, inventory_dir):
+def published_addition_history(target, before_hash, audits):
+    """Validate a chronological chain of later addition-only publications."""
+    from .mapbox import stored_coordinates
+    history, kept = [], set()
+    for audit in audits:
+        plan = read_json(audit['prepared_plan']['path'])
+        verify_plan(plan)
+        receipt = audit['publication_receipt']
+        approval = plan['approval_hash']
+        if (not audit.get('status', '').startswith('published') or receipt.get('state') != 'published'
+                or approval != receipt.get('approval_hash')
+                or approval != audit['publication_approval']['approved_plan_hash']
+                or approval != audit['prepared_plan']['approval_hash']):
+            raise ValueError('Additional publication is not backed by its approved plan and receipt')
+        if plan['target'] != target or receipt['target'] != target or plan['before_hash'] != before_hash:
+            raise ValueError('Additional publications do not form a continuous baseline history')
+        diff = changes(plan['before'], plan['after'])
+        report = plan.get('ingest_report', {})
+        if diff['changed'] or diff['deleted'] or set(report.get('included', [])) != set(diff['added']):
+            raise ValueError('Additional review history must contain explicit additions only')
+        if receipt['completed'] != [{'put': fid} for fid in diff['added']]:
+            raise ValueError('Additional publication has incomplete writes')
+        stored = copy.deepcopy(plan['after'])
+        for feature in stored['features']:
+            if feature['id'] in diff['added']:
+                feature['geometry']['coordinates'] = stored_coordinates(feature['geometry']['coordinates'])
+        actual_hash = receipt['verification']['stored_hash']
+        if actual_hash not in {plan['after_hash'], fingerprint(stored)}:
+            raise ValueError('Additional publication stored hash does not match its approved geometry')
+        excluded = set(report.get('kept_existing', []))
+        if excluded & {f['id'] for f in plan['after']['features']}:
+            raise ValueError('An excluded addition appears in the published dataset')
+        kept.update(excluded)
+        before_hash = actual_hash
+        history.append({'approval_hash': approval, 'stored_hash': actual_hash,
+                        'finished_at': receipt['finished_at'], 'included': diff['added'], 'kept_existing': sorted(excluded)})
+    return before_hash, kept, history
+
+
+def build_resolution_context(plan, audit, park_report, policy, inventory_dir, addition_audits=()):
     """Annotate an old review without changing its plan or saved decision history.
 
     Only an approved, published consolidation can resolve rows. Nearness to the
@@ -82,6 +121,9 @@ def build_resolution_context(plan, audit, park_report, policy, inventory_dir):
         raise ValueError('Current style differs from the verified published consolidation')
     current = {}
     published_hashes = {d['target']: d['stored_hash'] for d in receipt['datasets']}
+    target_id = plan['target']['id']
+    published_hashes[target_id], explicitly_kept, addition_history = published_addition_history(
+        plan['target'], published_hashes[target_id], addition_audits)
     changed = {d['dataset']: d for d in manifest['datasets']}
     for source in report['sources']:
         did = source['dataset']
@@ -125,6 +167,10 @@ def build_resolution_context(plan, audit, park_report, policy, inventory_dir):
                 continue
             remainder = geometry.difference(project(live['geometry']).buffer(.2))
         else:
+            if fid in explicitly_kept:
+                resolutions[fid] = {'status': 'kept-existing', 'needs_review': False, 'accept_allowed': False,
+                                    'explanation': 'You chose to keep the existing map in the completed addition review. This City addition was intentionally excluded.'}
+                continue
             remainder = geometry
         owned = union([])
         covered = union([])
@@ -158,7 +204,9 @@ def build_resolution_context(plan, audit, park_report, policy, inventory_dir):
     context = {'schema_version': 1, 'plan_hash': plan['approval_hash'], 'target': plan['target'],
                'manifest_hash': manifest_hash, 'policy_hash': digest(policy), 'park_review_hash': report['review_hash'],
                'current_style_hash': style_hash,
-               'published_at': receipt['finished_at'], 'current_baseline': current[city], 'current_hash': fingerprint(current[city]),
+               'addition_publications': addition_history,
+               'published_at': addition_history[-1]['finished_at'] if addition_history else receipt['finished_at'],
+               'current_baseline': current[city], 'current_hash': fingerprint(current[city]),
                'resolutions': resolutions,
                'method': 'Published additions and approved owner choices; exceptions remain if >2 m outside decided ownership, >20 m unmatched, or <95% within 10 m of the selected owner. No geometry is accepted automatically.'}
     context['context_hash'] = digest(context)

@@ -75,6 +75,7 @@ def main():
     resolutions.add_argument('--ownership-policy', type=Path, default=ROOT / 'config/park-ownership.json')
     resolutions.add_argument('--current-inventory', required=True, type=Path)
     resolutions.add_argument('--output', required=True, type=Path)
+    resolutions.add_argument('--published-additions', type=Path, action='append', default=[], help='Later published addition audit, in publication order; repeat for multiple batches')
     overlaps = commands.add_parser('compare-overlaps', help='Screen City additions and geometry changes against a saved Mapbox inventory')
     overlaps.add_argument('plan', type=Path)
     overlaps.add_argument('--inventory', required=True, type=Path)
@@ -164,7 +165,8 @@ def main():
         from .review_map import build_resolution_context
         park_review = read_json(args.park_review)
         result = build_resolution_context(read_json(args.plan), read_json(args.consolidation_audit),
-                                          park_review.get('report', park_review), read_json(args.ownership_policy), args.current_inventory)
+                                          park_review.get('report', park_review), read_json(args.ownership_policy), args.current_inventory,
+                                          addition_audits=[read_json(path) for path in args.published_additions])
         write_json(args.output, result)
         print(f'Saved decision-aware review context to {args.output}')
     elif args.command == 'compare-overlaps':

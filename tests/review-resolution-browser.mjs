@@ -20,7 +20,7 @@ try{
  assert.equal(await page.locator('#note').inputValue(),'Earlier Roundtop review note');
  assert.match(await page.locator('#resolution').textContent(),/retained as history/);
  assert.equal(await page.locator('[data-decision="accept"]').isDisabled(),true);
- assert.equal(await page.evaluate(()=>map.getSource('before').serialize().data.features.length),215);
+ assert.equal(await page.evaluate(()=>map.getSource('before').serialize().data.features.length),bundle.resolution_context.current_baseline.features.length);
  await page.locator('#note').fill('Keep this note while the whole proposal stays blocked.');
  await page.reload({waitUntil:'networkidle'});
  assert.equal(await page.locator('#note').inputValue(),'Keep this note while the whole proposal stays blocked.');

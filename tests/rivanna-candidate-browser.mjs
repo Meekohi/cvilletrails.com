@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+try {
+ const page=await browser.newPage({viewport:{width:1400,height:1000}}),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.route('**/preview.js',async route=>{const r=await route.fetch();await route.fulfill({response:r,body:(await r.text()).replace('const map = new mapboxgl.Map','const map = window.__testMap = new mapboxgl.Map')});});
+ await page.goto('http://127.0.0.1:8006/',{waitUntil:'networkidle'});
+ await page.waitForFunction(()=>window.__testMap?.isStyleLoaded());
+ await page.waitForFunction(()=>document.querySelector('#description').textContent.includes('Temporarily closed'));
+ assert.equal(await page.locator('#routes button').count(),9);
+ assert.equal(await page.evaluate(()=>window.__testMap.getSource('reviewed-rivanna').serialize().data.features.length),72);
+ assert.match(await page.locator('#status').textContent(),/72 features/);
+ await page.waitForFunction(()=>window.__testMap.loaded());
+ const closure=await page.evaluate(()=>window.__testMap.queryRenderedFeatures({layers:['rivanna-trail']}).filter(f=>f.properties.access_status==='temporarily-closed').length);
+ assert.ok(closure>0);
+ await page.screenshot({path:'test-results/rivanna-candidate-fontaine.png'});
+ await page.locator('[data-id="8801a8379c2f586c2213fa33dd8963dd"]').click();
+ assert.match(await page.locator('#description').textContent(),/active route/);
+ await page.locator('[data-id="rtf:roadwalk:ivy-railroad-detour"]').click();
+ await page.waitForFunction(()=>window.__testMap.loaded()&&!window.__testMap.isMoving());
+ assert.match(await page.locator('#description').textContent(),/Official road walk/);
+ assert.ok(await page.evaluate(()=>window.__testMap.queryRenderedFeatures({layers:['rivanna-trail']}).some(f=>f.properties.section==='Ivy Railroad Detour (road walk)')));
+ await page.screenshot({path:'test-results/rivanna-candidate-ivy.png'});
+ await page.setViewportSize({width:390,height:844});
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+ await page.screenshot({path:'test-results/rivanna-candidate-mobile.png'});
+ assert.deepEqual(errors,[]);
+ console.log('Rivanna proposal passed: 72 features, red closure, active detour, rendered official road walk, route selection, mobile layout.');
+} finally {await browser.close();}

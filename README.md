@@ -204,6 +204,8 @@ python3 -m maintenance review-candidate .trail-state/plans/city-remaining.json E
 
 Use the current published inventory, not the pre-consolidation snapshot. A context-bound export requires its matching context. Candidate generation starts from the verified current City dataset and applies only reviewed changes; it does not restore the old baseline. A new ordinary Mapbox plan must still verify the live dataset before anything can be published.
 
+After later addition batches are published, pass `--published-additions AUDIT_PATH` to `review-resolution-context` for each batch, in publication order, and supply an inventory containing the latest City dataset. It verifies the approved plans, completed write receipts, unchanged existing features, and continuous before/after hashes. Newly published additions and explicit “keep existing” choices then resolve in the original review without changing its plan hash or browser-note storage. Published plans are archived under `.trail-state/published-plans/` so later preparation does not overwrite the evidence.
+
 The next-area review is separate from the original park-source review. It asks whether to include each remaining City addition, retain the existing map, or discuss an exception. It does not replace another dataset or delete Rivanna. Its export has a different review kind and is not a park-consolidation approval.
 
 ```sh
@@ -226,6 +228,21 @@ python3 -m http.server 8005 --bind 127.0.0.1 --directory .trail-state/review-riv
 ```
 
 These commands prepare review artifacts only. Source wording such as “Existing,” “new,” or “closed” is evidence to investigate, not an automatic access determination or website notice.
+
+After the Rivanna source review, interpret its notes into an explicit action manifest (see `pipelines/rivanna/reviews/2026-11-03-decisions.json`). The candidate builder verifies the report, export, baseline, source geometry and existing feature identities. It preserves every existing geometry and curated name, uses assigned semantic IDs for new road walks, and combines overlapping closure references into a single status change. Snapshot keys remain evidence references, not permanent feature IDs. A future source change requires a new reviewed manifest; notes are never treated as executable instructions.
+
+```sh
+python3 -m maintenance.rivanna_candidate \
+  --current .trail-state/rivanna-refresh/current.geojson \
+  --review .trail-state/review-rivanna/report.json \
+  --decisions /path/to/rivanna-source-review.json \
+  --interpretation pipelines/rivanna/reviews/2026-11-03-decisions.json \
+  --style .trail-state/post-additions-inventory/style.json \
+  --output .trail-state/review-rivanna-candidate
+python3 -m http.server 8006 --bind 127.0.0.1 --directory .trail-state/review-rivanna-candidate
+```
+
+This separate preview leaves the original source review and browser notes intact. It uses the proposed production layers: closed routes are red and labeled temporarily closed, while active routes retain their existing colors and draw order. `candidate.geojson`, `style-proposal.json`, and `manifest.json` are local preparation artifacts; this command makes no Mapbox writes. Dataset publication and the corresponding reviewed live/draft style changes must be coordinated before calling a closure visible on the public map.
 
 ## Publish trail notices
 

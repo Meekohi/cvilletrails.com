@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "recorded_at": "2026-11-03T03:19:46.464890Z",
-  "status": "approved_for_publication",
+  "status": "published_tiles_verified_cache_propagating",
   "original_export": {
     "schema_version": 2,
     "review_kind": "remaining-additions",
@@ -195,7 +195,7 @@
   },
   "preservation": "All215 published City features remain exact; no other datasets or style layers are changed.",
   "prepared_plan": {
-    "path": ".trail-state/plans/city-remaining-selected.json",
+    "path": ".trail-state/published-plans/154934a6c42f08d608805cde4f38f28d067c11274684b642aa7ad11099528b69.json",
     "approval_hash": "154934a6c42f08d608805cde4f38f28d067c11274684b642aa7ad11099528b69",
     "live_baseline_verified_at": "2026-11-03T03:25:38.832920Z",
     "after_features": 225
@@ -639,5 +639,159 @@
     "user_instruction": "Go ahead and commit and get this pushed while I work on the Rivanna review",
     "approved_plan_hash": "154934a6c42f08d608805cde4f38f28d067c11274684b642aa7ad11099528b69",
     "scope": "10 selected City additions, including full709/710. Existing City features and Rivanna remain unchanged."
+  },
+  "publication_receipt": {
+    "approval_hash": "154934a6c42f08d608805cde4f38f28d067c11274684b642aa7ad11099528b69",
+    "started_at": "2026-11-03T03:30:07.114764Z",
+    "target": {
+      "id": "city",
+      "dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "tileset": "meekohi.ckuppnp9h534y23pyswjd7n1a-0cyhg",
+      "source_layer": "City_Trails_2021-10-13"
+    },
+    "state": "published",
+    "completed": [
+      {
+        "put": "city:2210"
+      },
+      {
+        "put": "city:3267"
+      },
+      {
+        "put": "city:3276"
+      },
+      {
+        "put": "city:3288"
+      },
+      {
+        "put": "city:3291"
+      },
+      {
+        "put": "city:4117"
+      },
+      {
+        "put": "city:4118"
+      },
+      {
+        "put": "city:4121"
+      },
+      {
+        "put": "city:709"
+      },
+      {
+        "put": "city:710"
+      }
+    ],
+    "verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "c81f0cb5adcff58602284baf22fd1bfdf501f1dda10f8bdd8d5356e9388d670b"
+    },
+    "upload_id": "cmw04rcvo1iap1mnm5q1kdaik",
+    "finished_at": "2026-11-03T03:31:02.471941Z"
+  },
+  "publication_verification": {
+    "checked_at": "2026-11-03T03:33:12.639474Z",
+    "mode": "mapbox-six-decimal-truncation",
+    "stored_hash": "c81f0cb5adcff58602284baf22fd1bfdf501f1dda10f8bdd8d5356e9388d670b",
+    "features": 225,
+    "rivanna_features": 65,
+    "rivanna_unchanged": true,
+    "render_status": "All 10 additions render with a fresh vector-tile query. Standard CDN requests still returned old tiles for three features at the recorded check.",
+    "fresh_tile_render": {
+      "checked_at": "2026-11-03T03:46:13.532Z",
+      "results": [
+        {
+          "source_feature_id": "2210",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "3267",
+          "rendered_segments": 16
+        },
+        {
+          "source_feature_id": "3276",
+          "rendered_segments": 8
+        },
+        {
+          "source_feature_id": "3288",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "3291",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "4117",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "4118",
+          "rendered_segments": 8
+        },
+        {
+          "source_feature_id": "4121",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "709",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "710",
+          "rendered_segments": 4
+        }
+      ]
+    },
+    "standard_tile_render": {
+      "checked_at": "2026-11-03T03:42:11.331Z",
+      "results": [
+        {
+          "source_feature_id": "2210",
+          "rendered_segments": 0
+        },
+        {
+          "source_feature_id": "3267",
+          "rendered_segments": 16
+        },
+        {
+          "source_feature_id": "3276",
+          "rendered_segments": 0
+        },
+        {
+          "source_feature_id": "3288",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "3291",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "4117",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "4118",
+          "rendered_segments": 0
+        },
+        {
+          "source_feature_id": "4121",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "709",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "710",
+          "rendered_segments": 4
+        }
+      ]
+    },
+    "cache_pending_feature_ids": [
+      "2210",
+      "3276",
+      "4118"
+    ],
+    "tile_verification_method": "Actual published Mapbox style in Chromium. Fresh check adds a query key only to v4 vector-tile requests; no local substitute data or style changes."
   }
 }

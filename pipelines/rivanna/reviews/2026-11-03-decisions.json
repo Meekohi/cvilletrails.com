@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_published",
+  "review_hash": "c5fb57c8951071ca75fdde574dce0890815f8d9f9da8c92bed16520f6be67735",
+  "current_hash": "83fcc380dd5e7a4859b05f4a9b0302663567116d675cc13b74625e0a8f1a9a81",
+  "source_export_sha256": "eee4418b6e1ce8b94ca24a16a9fc40ccad832e40681a10bb5a123da5afbf41ea",
+  "export_hash": "b9c30d15e01cd10fceca26432c69f43c0d8ae41c4e5cde13c9f2d4c6aedd8ea0",
+  "original_export": {
+    "schema_version": 1,
+    "review_hash": "c5fb57c8951071ca75fdde574dce0890815f8d9f9da8c92bed16520f6be67735",
+    "current_hash": "83fcc380dd5e7a4859b05f4a9b0302663567116d675cc13b74625e0a8f1a9a81",
+    "exported_at": "2026-11-03T03:34:48.289Z",
+    "decisions": {
+      "kml:7688dc1f4491fa17d7f3": {
+        "decision": "compare-geometry",
+        "note": "The road walk \"official line\" is correct, that is the way to go while the old section is under construction."
+      },
+      "kml:ddfa139f3c79edbb0499": {
+        "decision": "keep-current",
+        "note": "Correct, this route is closed, don't show it on the map for now."
+      },
+      "kml:ccaceef4e147ff9073c8": {
+        "decision": "keep-current",
+        "note": ""
+      },
+      "kml:88b89d7be0beed227225": {
+        "decision": "compare-geometry",
+        "note": "Yes this temporary closure is correct, let's show it as red on the final map"
+      },
+      "kml:765ac010cb22eae5a6e1": {
+        "decision": "compare-geometry",
+        "note": "Yes, temporarily closed show as closed."
+      },
+      "kml:6bff4ec85b2688ebdc3e": {
+        "decision": "compare-geometry",
+        "note": "This is part of the RT right now during the temporary closure it should be on the map"
+      },
+      "kml:2ca6b4f04ba0380d7425": {
+        "decision": "compare-geometry",
+        "note": "We can include this road walk as part of the \"official\" route even though everybody actually goes north and crosses the trail road."
+      },
+      "kml:4faa6572be3ab290f090": {
+        "decision": "compare-geometry",
+        "note": "Yes show this as the primary RT"
+      },
+      "kml:2d50ac26ccf7a05beae1": {
+        "decision": "compare-geometry",
+        "note": "Yes show this as the primary RT"
+      },
+      "kml:19ae17630036c3adfcf0": {
+        "decision": "compare-geometry",
+        "note": "Yes include it"
+      },
+      "kml:35ca686c4521ad6ce3bc": {
+        "decision": "compare-geometry",
+        "note": "Yes include it"
+      },
+      "kml:15f787d006de975b1a92": {
+        "decision": "compare-geometry",
+        "note": "Yes include it."
+      }
+    }
+  },
+  "actions": [
+    {
+      "source_snapshot_key": "kml:7688dc1f4491fa17d7f3",
+      "source_semantic_key": "section #4 - meadow creek gardens to old ivy rd / ivy railroad detour (road walk)",
+      "source_geometry_hash": "49202c55ecce6f383310291f11952b0f76f56c9e645257e6f8affc839dfda0a2",
+      "action": "add_official_road_walk",
+      "proposed_feature_id": "rtf:roadwalk:ivy-railroad-detour",
+      "proposed_properties": {
+        "Name": "Rivanna Trail",
+        "category": "main",
+        "section": "Ivy Railroad Detour (road walk)",
+        "layer": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+        "source": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+        "description": "description: Mile 10.20-11.55 While Old Ivy Residences are under construction please use this detour. Type: Road Walk sign content:",
+        "route_role": "primary",
+        "route_type": "road-walk",
+        "temporary_detour": true,
+        "reviewed_at": "2026-11-03T03:34:48.289Z"
+      },
+      "interpretation": "User note explicitly approves including this official connection. Dropdown compare-geometry is a review-only UI label, overridden by the note."
+    },
+    {
+      "source_snapshot_key": "kml:ddfa139f3c79edbb0499",
+      "source_semantic_key": "section #4 - meadow creek gardens to old ivy rd / section 4c: sandridge to old ivy (closed)",
+      "source_geometry_hash": "d3c17521e67bd3038015946aba87244aaf8180c4cc158b12bb3b02f48c274089",
+      "action": "omit_new_closed_route",
+      "proposed_feature_id": null,
+      "interpretation": "This source line is absent from the retained65. Explicit do-not-show note means leave it out of the candidate, not delete another current feature."
+    },
+    {
+      "source_snapshot_key": "kml:ccaceef4e147ff9073c8",
+      "source_semantic_key": "rtf river north trail / trail closed for construction",
+      "source_geometry_hash": "2f14cdae2b501d11500fe59343d326a909a538395a0f63b6f6d06469070574d9",
+      "action": "keep_current_omit_new_route",
+      "proposed_feature_id": null,
+      "interpretation": "Keep-current with no note leaves the new closed source record unimported. The nearby River North South Loop only has3% reciprocal coverage, so it is not an identity match and remains unchanged."
+    },
+    {
+      "source_snapshot_key": "kml:88b89d7be0beed227225",
+      "source_semantic_key": "section #6 - fontaine to azalea park / section 6a: fontaine ave to moore's creek",
+      "source_geometry_hash": "e81147415dee577660dacdf468bf2dc3d8ae47a3511f237835b7825677c38fac",
+      "action": "mark_existing_route_temporarily_closed",
+      "current_feature_id": "979e29e234bf508b2d9b8f6808757de0",
+      "current_feature_before_hash": "5b1487ab00411fefb0ecfb7c84ffa2da3f100d98a7e6f2c62b0e3dfc571c014b",
+      "proposed_property_additions": {
+        "access_status": "temporarily-closed",
+        "status_reviewed_at": "2026-11-03T03:34:48.289Z",
+        "status_review_source": "user review of official RTF source"
+      },
+      "interpretation": "User explicitly requested red for the displayed whole Fontaine-to-Moores-Creek record. Scope is the existing1300.1m route feature; the separate819.1m TEMP CLOSED source is contained within it and is coalesced below."
+    },
+    {
+      "source_snapshot_key": "kml:765ac010cb22eae5a6e1",
+      "source_semantic_key": "section #6 - fontaine to azalea park / section 6a: temp closed for construction",
+      "source_geometry_hash": "de808f3cc76f407dc0619e743893148b7501fc3827a8ed0716504846beb4c918",
+      "action": "coalesce_closed_subset_annotation",
+      "current_feature_id": "979e29e234bf508b2d9b8f6808757de0",
+      "current_feature_before_hash": "5b1487ab00411fefb0ecfb7c84ffa2da3f100d98a7e6f2c62b0e3dfc571c014b",
+      "coalesces_into_source_snapshot_key": "kml:88b89d7be0beed227225",
+      "interpretation": "This819.1m source line follows a subset of the same existing Fontaine main route. Its closed rendering is satisfied by the full route being marked red/closed per the other explicit decision."
+    },
+    {
+      "source_snapshot_key": "kml:6bff4ec85b2688ebdc3e",
+      "source_semantic_key": "section #6 - fontaine to azalea park / section 6a: detour",
+      "source_geometry_hash": "5d5686867b1dd20ffb1ffcc5223cf79bd3c38b37a7f58cfeac65e2ab2d1afc32",
+      "action": "retain_existing_primary_detour",
+      "current_feature_id": "8801a8379c2f586c2213fa33dd8963dd",
+      "current_feature_before_hash": "91f8a1c1a6e41535e0073065ada4770237339fa1b3806a9ea747890387bc89fc",
+      "interpretation": "Already present as category main and Name Rivanna Trail. No duplicate addition or geometry change is needed; optional temporary_detour metadata may document the reviewed role."
+    },
+    {
+      "source_snapshot_key": "kml:2ca6b4f04ba0380d7425",
+      "source_semantic_key": "section #3 - greenbrier rr to meadow creek gardens / melbourne to kenwood ln (road walk)",
+      "source_geometry_hash": "69c1d7907359f39b8b4e8c1479c7a8efba47ba213bd456902844ed6ef9ac05ce",
+      "action": "add_official_road_walk",
+      "proposed_feature_id": "rtf:roadwalk:melbourne-kenwood",
+      "proposed_properties": {
+        "Name": "Rivanna Trail",
+        "category": "main",
+        "section": "Melbourne to Kenwood Ln (road walk)",
+        "layer": "Section #3 - Greenbrier RR to Meadow Creek Gardens",
+        "source": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+        "description": "description: Mile 5.35-6.0 With the CHS football stadium behind you, turn right and follow Melbourne Rd past the high school main campus on your left until it ends at Kenwood Ln. Turn right on Kenwood till it dead-ends at the cul-de-sac and follow the RTF trailhead sign back into the woods. Type: Road Walk sign content:",
+        "route_role": "primary",
+        "route_type": "road-walk",
+        "temporary_detour": false,
+        "reviewed_at": "2026-11-03T03:34:48.289Z"
+      },
+      "interpretation": "User note explicitly approves including this official connection. Dropdown compare-geometry is a review-only UI label, overridden by the note."
+    },
+    {
+      "source_snapshot_key": "kml:4faa6572be3ab290f090",
+      "source_semantic_key": "section #1 - riverview park to the vfw (river road) / section 1d: vfw to megan crt (road walk)",
+      "source_geometry_hash": "249b16dab2250105927c4e278e1dda6fedabcd50a16bc5479526192b422e15e2",
+      "action": "add_official_road_walk",
+      "proposed_feature_id": "rtf:roadwalk:vfw-megan-court",
+      "proposed_properties": {
+        "Name": "Rivanna Trail",
+        "category": "main",
+        "section": "Section 1D: VFW to Megan Crt (road walk)",
+        "layer": "Section #1 - RiverView Park to the VFW (River Road)",
+        "source": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+        "description": "description: Mile 2.1 - 2.5 Easy Turn right onto River Road, right on Locust Avenue; at the end, turn left on Locust Lane and then take an immediate right onto Megan Court. Look for the RTF trailhead sign on the right as you enter Megan Court, and head into the woods. Type: Road sign content:",
+        "route_role": "primary",
+        "route_type": "road-walk",
+        "temporary_detour": false,
+        "reviewed_at": "2026-11-03T03:34:48.289Z"
+      },
+      "interpretation": "User note explicitly approves including this official connection. Dropdown compare-geometry is a review-only UI label, overridden by the note."
+    },
+    {
+      "source_snapshot_key": "kml:2d50ac26ccf7a05beae1",
+      "source_semantic_key": "section #1 - riverview park to the vfw (river road) / section 1c: woolen mills bridge to riverview park (road walk)",
+      "source_geometry_hash": "e2606d87d3a3876e5ae5c2a951704cbda8366755b78a16a95a1a2054bd0ba420",
+      "action": "add_official_road_walk",
+      "proposed_feature_id": "rtf:roadwalk:woolen-mills-riverview",
+      "proposed_properties": {
+        "Name": "Rivanna Trail",
+        "category": "main",
+        "section": "Section 1C: Woolen Mills bridge to Riverview Park (ROAD WALK)",
+        "layer": "Section #1 - RiverView Park to the VFW (River Road)",
+        "source": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+        "description": "description: Mile 21.55 - 22.0 Cross the pedestrian bridge over Moore’s Creek, turn right through the Woolen Mills property to East Market Street. Make a right at Riverside Ave, the trail quickly heads back into the woods before ending at Riverview park. Type: ROAD WALK sign content:",
+        "route_role": "primary",
+        "route_type": "road-walk",
+        "temporary_detour": false,
+        "reviewed_at": "2026-11-03T03:34:48.289Z"
+      },
+      "interpretation": "User note explicitly approves including this official connection. Dropdown compare-geometry is a review-only UI label, overridden by the note."
+    },
+    {
+      "source_snapshot_key": "kml:19ae17630036c3adfcf0",
+      "source_semantic_key": "section #2 - megan court to melbourne rd / section 2b: park street to jw pkwy (road walk)",
+      "source_geometry_hash": "a8af7987b0f24b938ae5fd0fff729bb1e63a1797ccc60b6b05658bd37d97637a",
+      "action": "add_official_road_walk",
+      "proposed_feature_id": "rtf:roadwalk:park-street-jw-parkway",
+      "proposed_properties": {
+        "Name": "Rivanna Trail",
+        "category": "main",
+        "section": "Section 2B: Park Street to JW Pkwy (ROAD WALK)",
+        "layer": "Section #2 - Megan Court to Melbourne Rd",
+        "source": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+        "description": "description: Mile 3.7-3.9 Easy After crossing under the Park Street bridge, turn right and walk along Melbourne. At the intersection turn onto the Butterfly Greenway (along the John Warner Parkway) or continue straight to connect in with the McIntire Park trail network. Type: ROAD WALK sign content:",
+        "route_role": "primary",
+        "route_type": "road-walk",
+        "temporary_detour": false,
+        "reviewed_at": "2026-11-03T03:34:48.289Z"
+      },
+      "interpretation": "User note explicitly approves including this official connection. Dropdown compare-geometry is a review-only UI label, overridden by the note."
+    },
+    {
+      "source_snapshot_key": "kml:35ca686c4521ad6ce3bc",
+      "source_semantic_key": "rtf river north trail / rtf river north tr #1 (road walk)",
+      "source_geometry_hash": "b5d68c394d3e374ad41010b177425e4978acbb22596992e81c00b73231881d3b",
+      "action": "add_official_road_walk",
+      "proposed_feature_id": "rtf:roadwalk:river-north-section-1",
+      "proposed_properties": {
+        "Name": "River North Trail",
+        "category": "river-north",
+        "section": "RTF River North TR #1 (road walk)",
+        "layer": "RTF River North Trail",
+        "source": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+        "description": "description: RTF-RiverNorth #1 FID 8 StrechName RTF-RiverNorth #1 Length 2088.04 Type RTF Main Trail sign content:",
+        "route_role": "primary",
+        "route_type": "road-walk",
+        "temporary_detour": false,
+        "reviewed_at": "2026-11-03T03:34:48.289Z"
+      },
+      "interpretation": "User note explicitly approves including this official connection. Dropdown compare-geometry is a review-only UI label, overridden by the note."
+    },
+    {
+      "source_snapshot_key": "kml:15f787d006de975b1a92",
+      "source_semantic_key": "section #6 - fontaine to azalea park / section 6c: sunset ave (road walk)",
+      "source_geometry_hash": "d233c922316870bedf93cd858321a6b5382b98d610c18ba595b77f753dff3cd1",
+      "action": "add_official_road_walk",
+      "proposed_feature_id": "rtf:roadwalk:sunset-avenue",
+      "proposed_properties": {
+        "Name": "Rivanna Trail",
+        "category": "main",
+        "section": "Section 6C: Sunset Ave (road walk)",
+        "layer": "Section #6 - Fontaine to Azalea Park",
+        "source": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+        "description": "description: Mile 14.55-14.83 After crossing the small creek the trail pops out onto Sunset Avenue Extended. Turn left and follow the road till it dead-ends at the pedestrian bridge. Type Road Walk sign content:",
+        "route_role": "primary",
+        "route_type": "road-walk",
+        "temporary_detour": false,
+        "reviewed_at": "2026-11-03T03:34:48.289Z"
+      },
+      "interpretation": "User note explicitly approves including this official connection. Dropdown compare-geometry is a review-only UI label, overridden by the note."
+    }
+  ],
+  "scope_note": "Preserve all 65 existing geometries. Apply closure status to the complete existing Fontaine route per its review note; coalesce the overlapping closure subset. Keep the already-present detour unchanged. Source dates do not automatically reopen a user-confirmed closure."
+}

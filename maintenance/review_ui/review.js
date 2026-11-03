@@ -1,6 +1,6 @@
 const $ = id => document.getElementById(id);
 const labels = { geometry: 'Geometry changes', added: 'Additions', retained: 'Retained unmatched trails', conflict: 'Name / curation conflicts', attributes: 'Existing attribute changes', metadata: 'New metadata only', deleted: 'Deletions' };
-const resolutionLabels = {'published':'Already published','split-published':'Published park portion; remainder excluded','excluded-by-owner':'Resolved: keep chosen park source','split-published-exception':'Published portion; boundary / gap exception','excluded-by-owner-exception':'Chosen park source; unmatched exception'};
+const resolutionLabels = {'published':'Already published','kept-existing':'Resolved: keep existing map','split-published':'Published park portion; remainder excluded','excluded-by-owner':'Resolved: keep chosen park source','split-published-exception':'Published portion; boundary / gap exception','excluded-by-owner-exception':'Chosen park source; unmatched exception'};
 let data, map, selected, rows = [], decisions = {}, storageKey;
 const old = new Map(), proposed = new Map();
 function el(tag, text) { const node = document.createElement(tag); if (text !== undefined) node.textContent = text; return node; }
@@ -19,7 +19,7 @@ function renderList() {
   }));
   const resolved=rows.filter(r=>r.resolution?.needs_review===false).length;
   const count = rows.filter(r=>r.resolution?.needs_review!==false&&decisions[r.id]?.decision&&!(r.resolution?.accept_allowed===false&&decisions[r.id]?.decision==='accept')).length;
-  $('progress').textContent = `${visible().length} shown · ${resolved} resolved by park decisions · ${count} remaining decisions recorded`;
+  $('progress').textContent = `${visible().length} shown · ${resolved} resolved by recorded decisions · ${count} remaining decisions recorded`;
   const current=visible().find(r=>r.id===selected);document.querySelectorAll('[data-decision]').forEach(button=>{button.disabled=!current||(button.dataset.decision==='accept'&&current.resolution?.accept_allowed===false);});
   paintSelection();
 }
@@ -95,7 +95,7 @@ async function init() {
     const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
     for (const row of rows) if (saved[row.id] && ['accept', 'defer', 'discuss', undefined].includes(saved[row.id].decision)) decisions[row.id] = saved[row.id];
   } catch { $('status').textContent = 'Previous browser notes could not be loaded. You can still review and export.'; }
-  $('summary').textContent = data.resolution_context?`${data.plan.target.id} · original proposal reconciled with published park decisions · notes retained`:`${data.plan.target.id} · ${data.plan.changes.added.length} additions · ${data.plan.changes.geometry_changed.length} geometry edits · Saved ${new Date(data.plan.created_at).toLocaleDateString()}`;
+  $('summary').textContent = data.resolution_context?`${data.plan.target.id} · original proposal reconciled with published decisions · notes retained`:`${data.plan.target.id} · ${data.plan.changes.added.length} additions · ${data.plan.changes.geometry_changed.length} geometry edits · Saved ${new Date(data.plan.created_at).toLocaleDateString()}`;
   if(data.resolution_context){$('review-help').textContent='Your original notes and plan history are preserved. Published and source-resolved items do not need another acceptance. Exports keep historical choices separately and require this resolution context to build a candidate against the published baseline.';$('view').options[0].textContent='Published + original proposal';$('view').options[1].textContent='Published snapshot only';$('view').options[2].textContent='Original proposal only';document.querySelector('.legend .before').textContent='━ Published snapshot';document.querySelector('.legend .after').textContent='━ Original proposal';}
   else {$('queue').value='all';$('queue').disabled=true;}
   const filter = $('filter');

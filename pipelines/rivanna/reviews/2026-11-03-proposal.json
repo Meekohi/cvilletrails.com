@@ -1,0 +1,62 @@
+{
+  "status": "prepared_not_published",
+  "prepared_at": "2026-11-03T03:45:54.388303Z",
+  "decisions_path": "pipelines/rivanna/reviews/2026-11-03-decisions.json",
+  "manifest": {
+    "status": "prepared_not_published",
+    "interpretation_hash": "00f02752f8a8a8a6cd30d657e3e1371fee701771e8e1cd237fac42009bd9c492",
+    "before_hash": "83fcc380dd5e7a4859b05f4a9b0302663567116d675cc13b74625e0a8f1a9a81",
+    "after_hash": "81048ae5a53bda380a3e10934318380a56c8a8a18d6a6b50f26356cda6826be1",
+    "changes": {
+      "added": [
+        "rtf:roadwalk:ivy-railroad-detour",
+        "rtf:roadwalk:melbourne-kenwood",
+        "rtf:roadwalk:park-street-jw-parkway",
+        "rtf:roadwalk:river-north-section-1",
+        "rtf:roadwalk:sunset-avenue",
+        "rtf:roadwalk:vfw-megan-court",
+        "rtf:roadwalk:woolen-mills-riverview"
+      ],
+      "deleted": [],
+      "changed": [
+        "979e29e234bf508b2d9b8f6808757de0"
+      ],
+      "geometry_changed": [],
+      "curation_changed": []
+    },
+    "style_before_hash": "c15d191f2a4c2470e6c0456b79033e15546f1cfb95707048c46621587efd83ab",
+    "style_after_hash": "be7d76f70455d97d415cbbcc70bd13e5ee37d69cb568af31880e9c4bd751e64a",
+    "proposal_hash": "deaba03ad506c5d1d872283df9ebdd381bc964aeee276520291c5dc1036b0894"
+  },
+  "mapbox_plan": {
+    "path": ".trail-state/plans/rivanna-reviewed.json",
+    "approval_hash": "eea5dff270ad36d32e240c691a0dc5667d2569dc8ca04a1625f67a2e7074d73c",
+    "dataset_modified": "2026-11-02T21:55:38.018Z",
+    "before_hash": "83fcc380dd5e7a4859b05f4a9b0302663567116d675cc13b74625e0a8f1a9a81",
+    "after_hash": "81048ae5a53bda380a3e10934318380a56c8a8a18d6a6b50f26356cda6826be1",
+    "changes": {
+      "added": [
+        "rtf:roadwalk:ivy-railroad-detour",
+        "rtf:roadwalk:melbourne-kenwood",
+        "rtf:roadwalk:park-street-jw-parkway",
+        "rtf:roadwalk:river-north-section-1",
+        "rtf:roadwalk:sunset-avenue",
+        "rtf:roadwalk:vfw-megan-court",
+        "rtf:roadwalk:woolen-mills-riverview"
+      ],
+      "deleted": [],
+      "changed": [
+        "979e29e234bf508b2d9b8f6808757de0"
+      ],
+      "geometry_changed": [],
+      "curation_changed": []
+    }
+  },
+  "preview": "http://localhost:8006/",
+  "validation": {
+    "python_tests": 66,
+    "browser": "72 features; rendered closure, active detour and official road walk; route selection; mobile layout",
+    "all_existing_feature_ids_and_geometries_retained": true,
+    "mapbox_writes_performed": false
+  }
+}

@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 from maintenance.common import ROOT, digest, read_json, write_json
 from maintenance.geo import fingerprint, changes
-from maintenance.review_map import build_resolution_context, reviewed_candidate, verify_resolution_context
+from maintenance.review_map import build_resolution_context, reviewed_candidate, verify_resolution_context, published_addition_history
 
 
 def feature(fid, x1=-78.5, x2=-78.48, y=38.03, **properties):
@@ -25,6 +25,28 @@ def decisions(p,c,items):return {'plan_hash':p['approval_hash'],'resolution_cont
 
 
 class ResolutionCandidateTests(unittest.TestCase):
+    def test_later_publications_advance_baseline_and_preserve_explicit_exclusions(self):
+        p=plan(fc(feature('original')),fc(feature('original'),feature('new')))
+        p['ingest_report']={'included':['new'],'kept_existing':['excluded']}
+        p['approval_hash']=digest({k:v for k,v in p.items() if k!='approval_hash'})
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'published.json';write_json(path,p)
+            audit={'status':'published_dataset_verified','prepared_plan':{'path':str(path),'approval_hash':p['approval_hash']},
+                   'publication_approval':{'approved_plan_hash':p['approval_hash']},
+                   'publication_receipt':{'state':'published','approval_hash':p['approval_hash'],'target':p['target'],
+                                          'completed':[{'put':'new'}],'verification':{'stored_hash':p['after_hash']},'finished_at':'now'}}
+            after,kept,history=published_addition_history(p['target'],p['before_hash'],[audit])
+            self.assertEqual(after,p['after_hash']);self.assertEqual(kept,{'excluded'})
+            self.assertEqual(history[0]['included'],['new'])
+            with self.assertRaisesRegex(ValueError,'continuous baseline'):
+                published_addition_history(p['target'],p['before_hash'],[audit,audit])
+            stale=copy.deepcopy(audit);stale['publication_receipt']['verification']['stored_hash']='unexpected'
+            with self.assertRaisesRegex(ValueError,'stored hash'):
+                published_addition_history(p['target'],p['before_hash'],[stale])
+            stale=copy.deepcopy(audit);stale['publication_receipt']['completed']=[]
+            with self.assertRaisesRegex(ValueError,'incomplete writes'):
+                published_addition_history(p['target'],p['before_hash'],[stale])
+
     def test_old_accepts_cannot_restore_split_or_excluded_city_lines(self):
         p=plan(fc(),fc(feature('city:3076'),feature('ivy')))
         baseline=fc(feature('city:3076',-78.49,-78.48))
