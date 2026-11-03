@@ -1,0 +1,48 @@
+// Serve .trail-state/review-city with its resolution context on port 8001.
+import assert from 'node:assert/strict';
+import {readFile,mkdir} from 'node:fs/promises';
+const bundle=JSON.parse(await readFile('.trail-state/review-city/review.json','utf8'));
+const metadata=bundle.rows.find(r=>r.kinds.includes('metadata')&&!r.resolution);
+assert.ok(bundle.resolution_context&&metadata);
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript(({hash})=>{const key=`cville-trails-review:${hash}`;if(!localStorage.getItem(key))localStorage.setItem(key,JSON.stringify({'city:3076':{decision:'accept',note:'Earlier Roundtop review note'},'city:3134':{decision:'accept',note:'Earlier Ivy duplicate acceptance'}}));},{hash:bundle.plan.approval_hash});
+ await page.goto('http://127.0.0.1:8001/',{waitUntil:'networkidle'});
+ await page.waitForFunction(()=>typeof map!=='undefined'&&map?.getLayer('selected-after'));
+ assert.equal(await page.locator('#queue').inputValue(),'pending');
+ assert.equal(await page.evaluate(()=>visible().some(r=>r.id==='city:3076')),false);
+ assert.equal(await page.evaluate(()=>visible().some(r=>r.id==='city:3134')),false);
+ await page.goto('http://127.0.0.1:8001/?feature=city:3076',{waitUntil:'networkidle'});
+ await page.waitForFunction(()=>typeof map!=='undefined'&&map?.getLayer('selected-after'));
+ assert.equal(await page.locator('#note').inputValue(),'Earlier Roundtop review note');
+ assert.match(await page.locator('#resolution').textContent(),/retained as history/);
+ assert.equal(await page.locator('[data-decision="accept"]').isDisabled(),true);
+ assert.equal(await page.evaluate(()=>map.getSource('before').serialize().data.features.length),215);
+ await page.locator('#note').fill('Keep this note while the whole proposal stays blocked.');
+ await page.reload({waitUntil:'networkidle'});
+ assert.equal(await page.locator('#note').inputValue(),'Keep this note while the whole proposal stays blocked.');
+ await page.goto(`http://127.0.0.1:8001/?feature=${encodeURIComponent(metadata.id)}`,{waitUntil:'networkidle'});
+ assert.equal(await page.locator('[data-decision="accept"]').isDisabled(),false);
+ await page.locator('[data-decision="accept"]').click();
+ const downloaded=page.waitForEvent('download');await page.locator('#export').click();
+ await mkdir('test-results',{recursive:true});await(await downloaded).saveAs('test-results/city-resolution-decisions.json');
+ const exported=JSON.parse(await readFile('test-results/city-resolution-decisions.json','utf8'));
+ assert.equal(exported.plan_hash,bundle.plan.approval_hash);
+ assert.equal(exported.resolution_context_hash,bundle.resolution_context.context_hash);
+ assert.equal(exported.decisions['city:3076'],undefined);
+ assert.equal(exported.decisions['city:3134'],undefined);
+ assert.equal(exported.historical_decisions['city:3076'].decision,'accept');
+ assert.equal(exported.historical_decisions['city:3076'].note,'Keep this note while the whole proposal stays blocked.');
+ assert.equal(exported.decisions[metadata.id].decision,'accept');
+ await page.locator('#queue').selectOption('exceptions');
+ assert.equal(await page.evaluate(()=>visible().some(r=>r.id==='city:3077')),true);
+ assert.equal(await page.locator('[data-decision="accept"]').isDisabled(),true);
+ await page.waitForFunction(()=>map.loaded());
+ await page.screenshot({path:'test-results/city-resolution-exceptions.png'});
+ await page.setViewportSize({width:390,height:844});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+ assert.deepEqual(errors,[]);
+ console.log('Decision-aware City review passed: resolved defaults, original notes/hash, historical accepts blocked, published baseline, metadata choices, export, exceptions, mobile layout.');
+}finally{await browser.close();}

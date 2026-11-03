@@ -1,0 +1,42 @@
+// Serve .trail-state/review-next-areas on port8004; original review remains separate.
+import assert from 'node:assert/strict';
+import {readFile,mkdir} from 'node:fs/promises';
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:8004/',{waitUntil:'networkidle'});
+ await page.waitForFunction(()=>typeof ready!=='undefined'&&ready&&map.getLayer('proposed-addition'));
+ assert.match(await page.locator('#name').textContent(),/Hydraulic/);
+ assert.match(await page.locator('#access-evidence').textContent(),/In discussion/);
+ assert.equal(await page.locator('#winner').inputValue(),'');
+ assert.equal(await page.locator('#recommend').isVisible(),false);
+ await page.locator('#winner').selectOption('keep-existing');
+ await page.locator('#notes').fill('Browser test only, not a real approval.');
+ const download=page.waitForEvent('download');await page.locator('#export').click();
+ await mkdir('test-results',{recursive:true});await(await download).saveAs('test-results/next-areas-decisions-test.json');
+ const saved=JSON.parse(await readFile('test-results/next-areas-decisions-test.json','utf8'));
+ assert.equal(saved.schema_version,2);assert.equal(saved.review_kind,'remaining-additions');
+ assert.equal(saved.decisions['corridor-hydraulic-road-city-4521'].decision,'keep-existing');
+ assert.deepEqual(saved.decisions['corridor-hydraulic-road-city-4521'].feature_ids,['city:4521']);
+ await page.reload({waitUntil:'networkidle'});await page.waitForFunction(()=>typeof ready!=='undefined'&&ready);
+ assert.equal(await page.locator('#winner').inputValue(),'keep-existing');
+ assert.equal(await page.locator('#notes').inputValue(),'Browser test only, not a real approval.');
+ await page.screenshot({path:'test-results/next-areas-hydraulic.png'});
+ await page.locator('#queue-filter').selectOption('Check parallel paths');
+ assert.equal(await page.locator('#parks button').count(),2);
+ assert.match(await page.locator('#question').textContent(),/3284|4524/);
+ await page.getByRole('checkbox',{name:'Show City_Trails 2021-10-13 (reviewed + proposed)',exact:true}).uncheck();
+ assert.equal(await page.evaluate(()=>map.getLayoutProperty('proposed-addition','visibility')),'none');
+ await page.getByRole('checkbox',{name:'Show City_Trails 2021-10-13 (reviewed + proposed)',exact:true}).check();
+ assert.equal(await page.evaluate(()=>map.getLayoutProperty('proposed-addition','visibility')),'visible');
+ await page.locator('#queue-filter').selectOption('Possible duplicate');
+ assert.equal(await page.locator('#parks button').count(),6);
+ assert.equal(await page.evaluate(()=>{const layers=map.getStyle().layers;return layers.findIndex(l=>l.id==='compare-cjawyutol0r7d2wo1z7eb0wiy')>layers.findIndex(l=>l.id==='proposed-addition');}),true);
+ await page.setViewportSize({width:390,height:844});
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+ assert.equal((await page.request.get('http://127.0.0.1:8004/.env.local')).status(),404);
+ assert.deepEqual(errors,[]);
+ console.log('Next-area review passed: access flag, no automatic choices, typed exports, persistence, priority filters, proposal toggles, protected RT order, mobile layout.');
+}finally{await browser.close();}

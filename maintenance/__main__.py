@@ -67,6 +67,14 @@ def main():
     visual = commands.add_parser('review-map', help='Build a local visual comparison and decision recorder')
     visual.add_argument('plan', type=Path)
     visual.add_argument('--overlaps', type=Path)
+    visual.add_argument('--resolution-context', type=Path)
+    resolutions = commands.add_parser('review-resolution-context', help='Bind historical feature review to published park decisions and current datasets')
+    resolutions.add_argument('plan', type=Path)
+    resolutions.add_argument('--consolidation-audit', required=True, type=Path)
+    resolutions.add_argument('--park-review', required=True, type=Path)
+    resolutions.add_argument('--ownership-policy', type=Path, default=ROOT / 'config/park-ownership.json')
+    resolutions.add_argument('--current-inventory', required=True, type=Path)
+    resolutions.add_argument('--output', required=True, type=Path)
     overlaps = commands.add_parser('compare-overlaps', help='Screen City additions and geometry changes against a saved Mapbox inventory')
     overlaps.add_argument('plan', type=Path)
     overlaps.add_argument('--inventory', required=True, type=Path)
@@ -77,6 +85,18 @@ def main():
     parks.add_argument('--boundaries', required=True, type=Path)
     parks.add_argument('--overlaps', required=True, type=Path)
     parks.add_argument('--output', type=Path, default=STATE / 'review-parks')
+    next_areas = commands.add_parser('review-next-areas', help='Prepare a separate review of remaining additions against current published datasets')
+    next_areas.add_argument('plan', type=Path)
+    next_areas.add_argument('--inventory', required=True, type=Path)
+    next_areas.add_argument('--boundaries', required=True, type=Path)
+    next_areas.add_argument('--overlaps', required=True, type=Path)
+    next_areas.add_argument('--assessment', required=True, type=Path)
+    next_areas.add_argument('--output', type=Path, default=STATE / 'review-next-areas')
+    next_candidate = commands.add_parser('remaining-addition-candidate', help='Prepare only explicitly included additions from a remaining-area decision export')
+    next_candidate.add_argument('plan', type=Path)
+    next_candidate.add_argument('decisions', type=Path)
+    next_candidate.add_argument('--review', required=True, type=Path)
+    next_candidate.add_argument('--output', required=True, type=Path)
     consolidation = commands.add_parser('prepare-consolidation', help='Prepare park ownership candidates without publishing; protected networks are retained in full')
     consolidation.add_argument('plan', type=Path)
     consolidation.add_argument('--review', required=True, type=Path)
@@ -97,6 +117,7 @@ def main():
     selection.add_argument('plan', type=Path)
     selection.add_argument('decisions', type=Path)
     selection.add_argument('--output', required=True, type=Path)
+    selection.add_argument('--resolution-context', type=Path)
     commands.add_parser('build-site')
     commands.add_parser('validate')
     args = parser.parse_args()
@@ -138,7 +159,14 @@ def main():
     elif args.command == 'review-packet':
         print(json.dumps(review_packet(args.review), indent=2))
     elif args.command == 'review-map':
-        print(f'Review files: {build_review(args.plan, overlaps_path=args.overlaps)}')
+        print(f'Review files: {build_review(args.plan, overlaps_path=args.overlaps, resolution_context_path=args.resolution_context)}')
+    elif args.command == 'review-resolution-context':
+        from .review_map import build_resolution_context
+        park_review = read_json(args.park_review)
+        result = build_resolution_context(read_json(args.plan), read_json(args.consolidation_audit),
+                                          park_review.get('report', park_review), read_json(args.ownership_policy), args.current_inventory)
+        write_json(args.output, result)
+        print(f'Saved decision-aware review context to {args.output}')
     elif args.command == 'compare-overlaps':
         from .overlaps import compare_overlaps
         result = compare_overlaps(read_json(args.plan), args.inventory)
@@ -147,6 +175,15 @@ def main():
     elif args.command == 'review-parks':
         from .park_review import build_park_review
         print(f'Review files: {build_park_review(args.plan, args.inventory, args.boundaries, args.overlaps, args.output)}')
+    elif args.command == 'review-next-areas':
+        from .park_review import build_next_area_review
+        print(f'Review files: {build_next_area_review(args.plan, args.inventory, args.boundaries, args.overlaps, args.assessment, args.output)}')
+    elif args.command == 'remaining-addition-candidate':
+        from .park_review import remaining_addition_candidate
+        bundle = read_json(args.review)
+        candidate = remaining_addition_candidate(read_json(args.plan), bundle.get('report', bundle), read_json(args.decisions))
+        write_json(args.output, candidate)
+        print(json.dumps({key: candidate['ingest_report'][key] for key in ('included', 'kept_existing', 'held_for_discussion', 'unreviewed')}, indent=2))
     elif args.command == 'prepare-consolidation':
         from .consolidation import prepare_consolidation
         result = prepare_consolidation(read_json(args.plan), read_json(args.review)['report'], read_json(args.decisions), read_json(args.policy), args.inventory, args.output)
@@ -158,7 +195,8 @@ def main():
         from .styles import retire_style_layers
         print(json.dumps(retire_style_layers(Mapbox(), args.manifest, args.approve), indent=2))
     elif args.command == 'review-candidate':
-        candidate = reviewed_candidate(read_json(args.plan), read_json(args.decisions))
+        candidate = reviewed_candidate(read_json(args.plan), read_json(args.decisions),
+                                       resolution_context=read_json(args.resolution_context) if args.resolution_context else None)
         write_json(args.output, candidate)
         print(f'Wrote {args.output}. Generate a fresh plan before publishing.')
     elif args.command == 'record-review':

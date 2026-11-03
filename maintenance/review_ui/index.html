@@ -12,6 +12,7 @@
   <header><div><strong>Cville Trails / Review</strong><span id="summary">Loading saved proposal…</span></div><button id="export" disabled>Export decisions</button></header>
   <main>
     <aside>
+      <label for="queue">Decision status</label><select id="queue"><option value="pending">Needs review</option><option value="exceptions">Ownership / boundary exceptions</option><option value="resolved">Resolved by park decisions</option><option value="all">All items / history</option></select>
       <label for="filter">Review group</label><select id="filter"></select>
       <input id="search" type="search" aria-label="Filter by trail name or ID" placeholder="Filter by name or ID">
       <p id="progress" class="muted"></p>
@@ -25,10 +26,11 @@
       <div id="detail">
         <div class="detail-heading"><div><p id="kinds" class="muted"></p><h1 id="name">Choose a trail</h1><code id="feature-id"></code></div><div><button id="prev" aria-label="Previous trail">←</button><button id="next" aria-label="Next trail">→</button></div></div>
         <div id="explanation"></div>
+        <div id="resolution" role="status"></div>
         <div class="decisions" role="group" aria-label="Decision for selected trail"><button data-decision="accept">Accept proposal</button><button data-decision="defer">Keep current for now</button><button data-decision="discuss">Needs discussion</button></div>
         <label for="note">Review notes</label><textarea id="note" rows="2" placeholder="What should we check or change?"></textarea>
         <details><summary>Properties before / proposed</summary><div id="properties"></div></details>
-        <p class="muted">Decisions are saved in this browser for this exact plan. Export them to keep a file. This page cannot publish to Mapbox.</p>
+        <p id="review-help" class="muted">Decisions are saved in this browser for this exact plan. Export them to keep a file. This page cannot publish to Mapbox.</p>
       </div>
     </section>
   </main>

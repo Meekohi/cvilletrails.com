@@ -1,0 +1,40 @@
+// Serve .trail-state/review-rivanna on port 8005.
+import assert from 'node:assert/strict';
+import {mkdir,readFile} from 'node:fs/promises';
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+try{
+ const page=await browser.newPage({viewport:{width:1400,height:1000}}),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:8005/',{waitUntil:'networkidle'});
+ await page.waitForFunction(()=>typeof ready!=='undefined'&&ready);
+ assert.equal(await page.locator('#count').textContent(),'65');
+ assert.equal(await page.locator('#list button').count(),12);
+ assert.equal(await page.evaluate(()=>data.current.features.length),65);
+ await page.locator('#decision').selectOption('investigate');
+ await page.locator('#note').fill('Browser test note; not a route approval.');
+ await mkdir('test-results',{recursive:true});
+ const download=page.waitForEvent('download');await page.locator('#export').click();
+ await(await download).saveAs('test-results/rivanna-review-test.json');
+ const exported=JSON.parse(await readFile('test-results/rivanna-review-test.json','utf8'));
+ assert.equal(Object.values(exported.decisions)[0].decision,'investigate');
+ await page.reload({waitUntil:'networkidle'});
+ await page.waitForFunction(()=>typeof ready!=='undefined'&&ready);
+ assert.equal(await page.locator('#note').inputValue(),'Browser test note; not a route approval.');
+ await page.locator('#filter').selectOption('all');
+ assert.equal(await page.locator('#list button').count(),74);
+ await page.locator('#search').fill('TEMP CLOSED');
+ await page.locator('#list button').first().click();
+ assert.match(await page.locator('#name').textContent(),/TEMP CLOSED/);
+ assert.equal(await page.evaluate(()=>map.getSource('official').serialize().data.properties.closed),true);
+ await page.locator('#official').uncheck();
+ assert.equal(await page.evaluate(()=>map.getLayoutProperty('official','visibility')),'none');
+ await page.locator('#official').check();
+ await page.waitForFunction(()=>map.loaded()&&map.queryRenderedFeatures({layers:['official']}).length>0);
+ await page.screenshot({path:'test-results/rivanna-source-review.png'});
+ await page.setViewportSize({width:390,height:844});
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+ assert.equal((await page.request.get('http://127.0.0.1:8005/.env.local')).status(),404);
+ assert.deepEqual(errors,[]);
+ console.log('Rivanna review passed: protected baseline,12 priorities,74 route records,notes/export/persistence,closure styling,toggles,mobile,secret exclusion.');
+}finally{await browser.close();}

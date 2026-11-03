@@ -192,6 +192,41 @@ The manifest lists each dataset change and any style retirement. An emptied disp
 
 After approval, publish each nonempty candidate using its exact plan hash and wait for every upload to complete. Then run `python3 -m maintenance retire-style-layers MANIFEST_PATH --approve MANIFEST_HASH`. This verifies the replacement publications and protected datasets, checks that the style proposal only hides the reviewed obsolete layers, archives the untouched retired dataset, and backs up both live and draft styles. It applies the same visibility changes to the live style and Studio draft while preserving unrelated draft edits. The [Styles API](https://docs.mapbox.com/api/maps/styles/) treats those as separate versions, so updating only the live version would leave the obsolete layers enabled in Studio. Retirement has a durable write journal and refuses blind replay after an attempted update; inspect the saved responses and remote state if interrupted.
 
+## Review the next round after publication
+
+The original City review can retain its plan hash and browser notes while a separate resolution context accounts for published park choices. The context checks the approval, publication receipt, policy and current inventory hashes. Published additions and overlapping exclusions are hidden from the default queue; partial lines with unresolved boundary or coverage differences remain visible. Whole-proposal acceptance is blocked for features governed by the park decision, including lines whose approved portion was clipped. Exported historical decisions remain available without being applied again.
+
+```sh
+uv run --with-requirements maintenance/requirements-geo.txt python -m maintenance review-resolution-context .trail-state/plans/city-remaining.json --consolidation-audit pipelines/city/reviews/2026-11-02-park-decisions.json --park-review .trail-state/review-parks/review.json --current-inventory .trail-state/next-round-inventory --output .trail-state/review-city-resolution.json
+python3 -m maintenance review-map .trail-state/plans/city-remaining.json --resolution-context .trail-state/review-city-resolution.json
+python3 -m maintenance review-candidate .trail-state/plans/city-remaining.json EXPORTED_DECISIONS.json --resolution-context .trail-state/review-city-resolution.json --output .trail-state/candidates/city-next-reviewed.geojson
+```
+
+Use the current published inventory, not the pre-consolidation snapshot. A context-bound export requires its matching context. Candidate generation starts from the verified current City dataset and applies only reviewed changes; it does not restore the old baseline. A new ordinary Mapbox plan must still verify the live dataset before anything can be published.
+
+The next-area review is separate from the original park-source review. It asks whether to include each remaining City addition, retain the existing map, or discuss an exception. It does not replace another dataset or delete Rivanna. Its export has a different review kind and is not a park-consolidation approval.
+
+```sh
+uv run --with-requirements maintenance/requirements-geo.txt python -m maintenance review-next-areas .trail-state/plans/city-next-areas.json --inventory .trail-state/next-round-inventory --boundaries .trail-state/research/city-park-areas.geojson --overlaps .trail-state/next-area-analysis/overlaps.json --assessment pipelines/city/reviews/2026-11-03-next-areas.json --output .trail-state/review-next-areas
+python3 -m http.server 8004 --bind 127.0.0.1 --directory .trail-state/review-next-areas
+```
+
+Import an exported addition review with `remaining-addition-candidate`. It validates the report/plan hashes and exact feature IDs, copies the reviewed baseline unchanged, and adds only explicit `include` choices. `keep-existing`, `discuss`, and unanswered rows add nothing. The candidate's audit retains all decisions and notes. Generate an ordinary fresh Mapbox plan afterward to detect any intervening Studio edits; this command does not publish.
+
+```sh
+python3 -m maintenance remaining-addition-candidate .trail-state/plans/city-next-areas.json remaining-addition-decisions.json --review .trail-state/review-next-areas/review.json --output .trail-state/candidates/city-remaining-selected.geojson
+python3 -m maintenance plan city .trail-state/candidates/city-remaining-selected.geojson --evidence pipelines/city/reviews/2026-11-03-remaining-decisions.json --output .trail-state/plans/city-remaining-selected.json
+```
+
+Rivanna has a separate read-only official-source comparison. It retains all current features, excludes event-only KML layers and reference markers from route comparisons, and reports closures/detours as source flags requiring verification. Name/folder and geometry keys are snapshot identities, not dependable upstream feature IDs; a crosswalk needs review before any future import.
+
+```sh
+uv run --with-requirements maintenance/requirements-geo.txt python -m maintenance.rivanna_compare --kml .trail-state/rivanna-refresh/official.kml --current .trail-state/rivanna-refresh/current.geojson --sources .trail-state/rivanna-refresh/sources.json --inventory .trail-state/next-round-inventory --output .trail-state/review-rivanna
+python3 -m http.server 8005 --bind 127.0.0.1 --directory .trail-state/review-rivanna
+```
+
+These commands prepare review artifacts only. Source wording such as “Existing,” “new,” or “closed” is evidence to investigate, not an automatic access determination or website notice.
+
 ## Publish trail notices
 
 Review each proposed notice's source, affected systems, wording, and dates. Narrow `system_ids` in the review record if its pipeline covers several systems. Missing end dates require an explicit review expiry; expiry means “stop displaying this notice,” not “the trail reopened.” Closures need rechecking before expiry.

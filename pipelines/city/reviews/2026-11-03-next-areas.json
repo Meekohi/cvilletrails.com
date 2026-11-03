@@ -1,0 +1,719 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-03T03:04:26.171659Z",
+  "status": "investigation_ready_not_approved",
+  "plan_hash": "74cd4e58d4fb68cf54c9bb4c416b985248354ff83a0edcc21a1559c13df40bc6",
+  "prior_review_hash": "31714a56fbadb80ef0bdd178de252304e87d5aec0aa1c557a6dacec9e7793cb3",
+  "published_decisions": "pipelines/city/reviews/2026-11-02-park-decisions.json",
+  "scope": "18 unresolved City additions: four parks and fourteen connecting corridors. Previously published park choices remain in force. This review cannot remove or replace any existing network, including Rivanna.",
+  "source_verification": {
+    "checked_at": "2026-11-03T02:58:42.909212Z",
+    "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/177",
+    "raw_hash": "29277e6e7eb7917b55174dba2a1ef595e803c4d5c915a4d027ac46f2814f373b",
+    "normalized_hash": "1de897e3fc6ea8bdec3d7b794d8c8717fb6471dad6235e1f34f5c9978d5e0406",
+    "features": 320,
+    "all_18_unchanged_from_previous_source_snapshot": true
+  },
+  "baseline": {
+    "city_before_hash": "930e8e3af1efed8ceedace8baed955701ef3a17f9fe60b13e6f8aa8233128b36",
+    "features": 215,
+    "inventory": ".trail-state/next-round-inventory",
+    "style_hash": "c15d191f2a4c2470e6c0456b79033e15546f1cfb95707048c46621587efd83ab"
+  },
+  "summary": {
+    "areas": 18,
+    "parks": 4,
+    "corridors": 14,
+    "addition_candidates": 18,
+    "changes": 0,
+    "deletions": 0,
+    "overlap_counts": {
+      "no-substantial-overlap": 6,
+      "partial-overlap": 5,
+      "strong-overlap": 6,
+      "close-match": 1
+    }
+  },
+  "links": {
+    "city_gis": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/177",
+    "rtf_map": "https://www.rivannatrails.org/Map"
+  },
+  "areas": [
+    {
+      "area_id": "corridor-hydraulic-road-city-4521",
+      "name": "Corridor: Hydraulic Road (city:4521)",
+      "feature_ids": [
+        "city:4521"
+      ],
+      "priority": 1,
+      "group": "Access check",
+      "recommendation": "Hold the City addition until access is confirmed; retain the existing RT and City routes.",
+      "question": "Has the Hydraulic Road easement been completed, or should this addition remain on hold?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=In discussion; owner=not supplied; TYPE=Shared Use Path.",
+      "evidence": [
+        "110.4 m; 14.4% within 3 m and 85.1% within 10 m of existing visible trail geometry.",
+        "City GIS says Existing but EASEMENT is In discussion. Those fields conflict as evidence of settled access."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "In discussion",
+        "PROPERTY_OWNER": null,
+        "TYPE": "Shared Use Path",
+        "NAME": "Hydraulic Road",
+        "last_edited_date": 1728942104000
+      },
+      "overlap": {
+        "classification": "strong-overlap",
+        "length_m": 110.4,
+        "visible_city_coverage": {
+          "1": 0.0473,
+          "3": 0.144,
+          "10": 0.8513,
+          "20": 1
+        }
+      }
+    },
+    {
+      "area_id": "corridor-unnamed-trail-city-3284",
+      "name": "Corridor: Unnamed trail (city:3284)",
+      "feature_ids": [
+        "city:3284"
+      ],
+      "priority": 2,
+      "group": "Check parallel paths",
+      "recommendation": "Compare this unnamed path with the newer Washington Park Ramp before deciding whether either or both belong.",
+      "question": "Are city:3284 and city:4524 separate parallel paths, or two versions of one ramp?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=Shared Use Path.",
+      "evidence": [
+        "92.7 m; 0% within 3 m and 0% within 10 m of existing visible trail geometry.",
+        "The two proposed lines are at least 8.55 m apart; each is entirely within 20 m of the other. Neither appears in the current trail datasets.",
+        "The unnamed record was edited in 2023; the named ramp record in 2025. A newer edit date does not prove replacement."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "Shared Use Path",
+        "NAME": null,
+        "last_edited_date": 1683924091000
+      },
+      "overlap": {
+        "classification": "no-substantial-overlap",
+        "length_m": 92.7,
+        "visible_city_coverage": {
+          "1": 0,
+          "3": 0,
+          "10": 0,
+          "20": 0
+        }
+      }
+    },
+    {
+      "area_id": "corridor-washington-park-ramp-city-4524",
+      "name": "Corridor: Washington Park Ramp (city:4524)",
+      "feature_ids": [
+        "city:4524"
+      ],
+      "priority": 2,
+      "group": "Check parallel paths",
+      "recommendation": "Compare this named ramp with city:3284; avoid accepting both solely because each is absent from the current dataset.",
+      "question": "Should Washington Park Ramp replace the unnamed proposal, or are both paths physically distinct?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=City; owner=not supplied; TYPE=Shared Use Path.",
+      "evidence": [
+        "80.9 m; 0% within 3 m and 0% within 10 m of existing visible trail geometry.",
+        "This 81 m line and the 93 m unnamed city:3284 line are parallel and each entirely within 20 m of the other.",
+        "GIS EASEMENT is City, while PROPERTY_OWNER is blank."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "City",
+        "PROPERTY_OWNER": null,
+        "TYPE": "Shared Use Path",
+        "NAME": "Washington Park Ramp",
+        "last_edited_date": 1748458231000
+      },
+      "overlap": {
+        "classification": "no-substantial-overlap",
+        "length_m": 80.9,
+        "visible_city_coverage": {
+          "1": 0,
+          "3": 0,
+          "10": 0,
+          "20": 0
+        }
+      }
+    },
+    {
+      "area_id": "corridor-meadowcreek-city-709",
+      "name": "Corridor: Meadowcreek (city:709)",
+      "feature_ids": [
+        "city:709"
+      ],
+      "priority": 3,
+      "group": "New coverage",
+      "recommendation": "Consider adding after checking the joins and public access; it supplies geometry absent from the current trail layers.",
+      "question": "Is this Meadowcreek shared-use path correctly aligned and open, including its connection to city:710?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=Locust Meadows HOA; TYPE=Shared Use Path.",
+      "evidence": [
+        "512.6 m; 0% within 3 m and 0% within 10 m of existing visible trail geometry.",
+        "The City proposal meets city:710 within about 1.2 m. Review them together as one continuous corridor.",
+        "GIS owner is Locust Meadows HOA with EASEMENT Complete."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "Locust Meadows HOA",
+        "TYPE": "Shared Use Path",
+        "NAME": "Meadowcreek",
+        "last_edited_date": 1716926125000
+      },
+      "overlap": {
+        "classification": "no-substantial-overlap",
+        "length_m": 512.6,
+        "visible_city_coverage": {
+          "1": 0,
+          "3": 0,
+          "10": 0,
+          "20": 0
+        }
+      }
+    },
+    {
+      "area_id": "corridor-rugby-avenue-city-2210",
+      "name": "Corridor: Rugby Avenue (city:2210)",
+      "feature_ids": [
+        "city:2210"
+      ],
+      "priority": 3,
+      "group": "New coverage",
+      "recommendation": "Consider adding this City shared-use path after a junction check.",
+      "question": "Does the Rugby Avenue path align with the visible path and connect at both ends?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=Shared Use Path.",
+      "evidence": [
+        "242.3 m; 0% within 3 m and 0% within 10 m of existing visible trail geometry.",
+        "No existing editable trail layer follows this 242 m proposal within 20 m; basemap paths and roads are not part of that comparison."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "Shared Use Path",
+        "NAME": "Rugby Avenue",
+        "last_edited_date": 1748466517000
+      },
+      "overlap": {
+        "classification": "no-substantial-overlap",
+        "length_m": 242.3,
+        "visible_city_coverage": {
+          "1": 0,
+          "3": 0,
+          "10": 0,
+          "20": 0
+        }
+      }
+    },
+    {
+      "area_id": "washington-park",
+      "name": "Washington Park",
+      "feature_ids": [
+        "city:4117"
+      ],
+      "priority": 3,
+      "group": "New coverage",
+      "recommendation": "Consider adding the Washington Bog path after checking that its small loop is a usable public trail.",
+      "question": "Is this small Washington Park loop a trail we should display?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=Soft Surface.",
+      "evidence": [
+        "92.7 m; 0% within 3 m and 0% within 10 m of existing visible trail geometry.",
+        "About 80 m of this 93 m feature lies inside the official park polygon. The full feature is the proposed addition."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "Soft Surface",
+        "NAME": "Washington Bog",
+        "last_edited_date": 1724197097000
+      },
+      "overlap": {
+        "classification": "no-substantial-overlap",
+        "length_m": 92.7,
+        "visible_city_coverage": {
+          "1": 0,
+          "3": 0,
+          "10": 0,
+          "20": 0
+        }
+      }
+    },
+    {
+      "area_id": "azalea-park-west",
+      "name": "Azalea Park West",
+      "feature_ids": [
+        "city:3267"
+      ],
+      "priority": 4,
+      "group": "Connections and alignment",
+      "recommendation": "Keep the existing Azalea trail until the positional difference is resolved; add only if this is a distinct path.",
+      "question": "Is Azalea West a second path, or a shifted trace of the existing City trail?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=Soft Surface.",
+      "evidence": [
+        "137.7 m; 9.0% within 3 m and 29.2% within 10 m of existing visible trail geometry.",
+        "Only 29% is within 10 m of the existing line, but about 92% is within 20 m: this could be an alignment discrepancy."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "Soft Surface",
+        "NAME": "Azalea West",
+        "last_edited_date": 1683923735000
+      },
+      "overlap": {
+        "classification": "partial-overlap",
+        "length_m": 137.7,
+        "visible_city_coverage": {
+          "1": 0.0232,
+          "3": 0.0902,
+          "10": 0.2921,
+          "20": 0.9171
+        }
+      }
+    },
+    {
+      "area_id": "corridor-meadowcreek-city-710",
+      "name": "Corridor: Meadowcreek (city:710)",
+      "feature_ids": [
+        "city:710"
+      ],
+      "priority": 4,
+      "group": "Connections and alignment",
+      "recommendation": "Review together with Meadowcreek city:709; retain the full RT if adding the distinct shared-use path.",
+      "question": "Which portions of this Meadowcreek continuation are a separate path, and do the junctions line up?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=Lochlyn Hill LLC; TYPE=Shared Use Path.",
+      "evidence": [
+        "415.5 m; 15.2% within 3 m and 33.7% within 10 m of existing visible trail geometry.",
+        "About a third follows RT within 10 m; most of this proposal is not represented closely by current RT geometry.",
+        "GIS owner is Lochlyn Hill LLC with EASEMENT Complete."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "Lochlyn Hill LLC",
+        "TYPE": "Shared Use Path",
+        "NAME": "Meadowcreek",
+        "last_edited_date": 1716926167000
+      },
+      "overlap": {
+        "classification": "partial-overlap",
+        "length_m": 415.5,
+        "visible_city_coverage": {
+          "1": 0.0606,
+          "3": 0.1517,
+          "10": 0.337,
+          "20": 0.4502
+        }
+      }
+    },
+    {
+      "area_id": "corridor-quarry-city-3277",
+      "name": "Corridor: Quarry (city:3277)",
+      "feature_ids": [
+        "city:3277"
+      ],
+      "priority": 4,
+      "group": "Connections and alignment",
+      "recommendation": "Keep Rivanna and inspect the unmatched Quarry corridor before considering another City line.",
+      "question": "Does this Quarry corridor contain a useful separate connection that the retained RT misses?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=Soft Surface.",
+      "evidence": [
+        "533.5 m; 15.1% within 3 m and 50.1% within 10 m of existing visible trail geometry.",
+        "About half follows RT within 10 m. It was classified as a corridor rather than inside the official Quarry polygon."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "Soft Surface",
+        "NAME": "Quarry",
+        "last_edited_date": 1636757990000
+      },
+      "overlap": {
+        "classification": "partial-overlap",
+        "length_m": 533.5,
+        "visible_city_coverage": {
+          "1": 0.0709,
+          "3": 0.151,
+          "10": 0.5013,
+          "20": 0.724
+        }
+      }
+    },
+    {
+      "area_id": "corridor-quarry-public-works-city-3276",
+      "name": "Corridor: Quarry - Public Works (city:3276)",
+      "feature_ids": [
+        "city:3276"
+      ],
+      "priority": 4,
+      "group": "Connections and alignment",
+      "recommendation": "Hold until the scope of the Quarry Old Road-only choice is clarified for these outside-park corridors.",
+      "question": "Should this Quarry–Public Works corridor be added separately, or remain covered by the RT choice?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=Soft Surface.",
+      "evidence": [
+        "935.3 m; 10.4% within 3 m and 34.2% within 10 m of existing visible trail geometry.",
+        "Only about 34% follows existing RT within 10 m, so a blanket duplicate decision could discard distinct links.",
+        "Most of the feature lies outside the official Quarry park polygon; the earlier park choice did not resolve it."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "Soft Surface",
+        "NAME": "Quarry - Public Works",
+        "last_edited_date": 1715029100000
+      },
+      "overlap": {
+        "classification": "partial-overlap",
+        "length_m": 935.3,
+        "visible_city_coverage": {
+          "1": 0.0355,
+          "3": 0.1043,
+          "10": 0.3425,
+          "20": 0.534
+        }
+      }
+    },
+    {
+      "area_id": "corridor-quarry-mid-ridge-city-3715",
+      "name": "Corridor: Quarry Mid Ridge (city:3715)",
+      "feature_ids": [
+        "city:3715"
+      ],
+      "priority": 4,
+      "group": "Connections and alignment",
+      "recommendation": "Treat this as a specific Quarry exception question; do not infer approval from the Old Road decision.",
+      "question": "Should Quarry Mid Ridge be included as another exception, or was Old Road the only extra trail intended?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=Soft Surface.",
+      "evidence": [
+        "174.3 m; 4.1% within 3 m and 10.1% within 10 m of existing visible trail geometry.",
+        "Only about 10% follows RT within 10 m; this is a 174 m potential separate route.",
+        "It lies mostly outside the official park boundary, unlike the reviewed Old Road supplement."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "Soft Surface",
+        "NAME": "Quarry Mid Ridge",
+        "last_edited_date": 1715028715000
+      },
+      "overlap": {
+        "classification": "no-substantial-overlap",
+        "length_m": 174.3,
+        "visible_city_coverage": {
+          "1": 0.0139,
+          "3": 0.0413,
+          "10": 0.1007,
+          "20": 0.1585
+        }
+      }
+    },
+    {
+      "area_id": "jordan-park",
+      "name": "Jordan Park",
+      "feature_ids": [
+        "city:4121"
+      ],
+      "priority": 4,
+      "group": "Connections and alignment",
+      "recommendation": "Retain Rivanna and inspect whether the City shared-use path is distinct, especially near its ends.",
+      "question": "Does Jordan Park need a separate shared-use path, or is this another trace of Rivanna?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=Shared Use Path.",
+      "evidence": [
+        "322.7 m; 33.1% within 3 m and 62.0% within 10 m of existing visible trail geometry.",
+        "About 62% follows RT within 10 m and all of it is within 20 m. Width/surface and route identity matter more than proximity alone."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "Shared Use Path",
+        "NAME": "Jordan Park",
+        "last_edited_date": 1734574343000
+      },
+      "overlap": {
+        "classification": "partial-overlap",
+        "length_m": 322.7,
+        "visible_city_coverage": {
+          "1": 0.0287,
+          "3": 0.3307,
+          "10": 0.6201,
+          "20": 1
+        }
+      }
+    },
+    {
+      "area_id": "corridor-lochlyn-lane-link-city-3291",
+      "name": "Corridor: Lochlyn Lane Link (city:3291)",
+      "feature_ids": [
+        "city:3291"
+      ],
+      "priority": 5,
+      "group": "Possible duplicate",
+      "recommendation": "Prefer keeping the existing RT geometry unless a separate route or useful attribute difference is demonstrated.",
+      "question": "Can we leave out the City Lochlyn Lane Link duplicate and retain RT?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=Lochlyn Hill HOA; TYPE=Soft Surface.",
+      "evidence": [
+        "84.0 m; 95.5% within 3 m and 100% within 10 m of existing visible trail geometry.",
+        "About 96% is within 3 m of RT and all is within 10 m.",
+        "GIS owner is Lochlyn Hill HOA with EASEMENT Complete."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "Lochlyn Hill HOA",
+        "TYPE": "Soft Surface",
+        "NAME": "Lochlyn Lane Link",
+        "last_edited_date": 1684450133000
+      },
+      "overlap": {
+        "classification": "close-match",
+        "length_m": 84.0,
+        "visible_city_coverage": {
+          "1": 0.6042,
+          "3": 0.9552,
+          "10": 1,
+          "20": 1
+        }
+      }
+    },
+    {
+      "area_id": "corridor-quarry-public-works-city-4118",
+      "name": "Corridor: Quarry Public Works (city:4118)",
+      "feature_ids": [
+        "city:4118"
+      ],
+      "priority": 5,
+      "group": "Possible duplicate",
+      "recommendation": "Prefer retaining current RT and City geometry; inspect the small unmatched remainder before excluding this whole proposal.",
+      "question": "Is any unmatched Quarry Public Works portion a distinct connection we need?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=RTF.",
+      "evidence": [
+        "1216.8 m; 85.8% within 3 m and 93.8% within 10 m of existing visible trail geometry.",
+        "About 94% follows RT within 10 m, and about 84% follows existing City geometry.",
+        "GIS TYPE is RTF. A blanket Quarry-area decision is inappropriate for this long cross-boundary feature."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "RTF",
+        "NAME": "Quarry Public Works",
+        "last_edited_date": 1725651063000
+      },
+      "overlap": {
+        "classification": "strong-overlap",
+        "length_m": 1216.8,
+        "visible_city_coverage": {
+          "1": 0.5007,
+          "3": 0.8578,
+          "10": 0.938,
+          "20": 0.9816
+        }
+      }
+    },
+    {
+      "area_id": "corridor-rock-creek-city-3711",
+      "name": "Corridor: Rock Creek (city:3711)",
+      "feature_ids": [
+        "city:3711"
+      ],
+      "priority": 5,
+      "group": "Possible duplicate",
+      "recommendation": "Prefer retaining RT without another overlapping City line.",
+      "question": "Can we leave Rock Creek represented by the existing RT layer?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=RTF; owner=Willoughby HOA; TYPE=Soft Surface.",
+      "evidence": [
+        "232.4 m; 34.5% within 3 m and 100% within 10 m of existing visible trail geometry.",
+        "All 232 m lies within 10 m of RT, although only about 35% lies within 3 m.",
+        "GIS owner is Willoughby HOA; the easement is specifically RTF."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "RTF",
+        "PROPERTY_OWNER": "Willoughby HOA",
+        "TYPE": "Soft Surface",
+        "NAME": "Rock Creek",
+        "last_edited_date": 1712261161000
+      },
+      "overlap": {
+        "classification": "strong-overlap",
+        "length_m": 232.4,
+        "visible_city_coverage": {
+          "1": 0.0859,
+          "3": 0.3451,
+          "10": 1,
+          "20": 1
+        }
+      }
+    },
+    {
+      "area_id": "corridor-route-20-interstate-city-4119",
+      "name": "Corridor: Route 20 Interstate (city:4119)",
+      "feature_ids": [
+        "city:4119"
+      ],
+      "priority": 5,
+      "group": "Possible duplicate",
+      "recommendation": "Keep the existing City and RT lines; a third coincident line is not justified by the current comparison.",
+      "question": "Can the Route 20 Interstate addition be omitted while retaining the current routes?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=VDOT; TYPE=RTF.",
+      "evidence": [
+        "710.2 m; 42.1% within 3 m and 100% within 10 m of existing visible trail geometry.",
+        "All 710 m follows existing City geometry within 10 m; about 96% also follows RT.",
+        "GIS TYPE is RTF and owner is VDOT."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "VDOT",
+        "TYPE": "RTF",
+        "NAME": "Route 20 Interstate",
+        "last_edited_date": 1725651120000
+      },
+      "overlap": {
+        "classification": "strong-overlap",
+        "length_m": 710.2,
+        "visible_city_coverage": {
+          "1": 0.161,
+          "3": 0.4211,
+          "10": 1,
+          "20": 1
+        }
+      }
+    },
+    {
+      "area_id": "corridor-unnamed-trail-city-3713",
+      "name": "Corridor: Unnamed trail (city:3713)",
+      "feature_ids": [
+        "city:3713"
+      ],
+      "priority": 5,
+      "group": "Possible duplicate",
+      "recommendation": "Prefer RT ownership and hold the unnamed City duplicate pending the authoritative RT review.",
+      "question": "Can this unnamed RTF segment stay solely in the Rivanna layer?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=RTF; owner=Self Storage; TYPE=RTF.",
+      "evidence": [
+        "539.3 m; 31.0% within 3 m and 95.2% within 10 m of existing visible trail geometry.",
+        "GIS TYPE and EASEMENT both identify RTF; about 95% follows the current RT within 10 m."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "RTF",
+        "PROPERTY_OWNER": "Self Storage",
+        "TYPE": "RTF",
+        "NAME": null,
+        "last_edited_date": 1715026507000
+      },
+      "overlap": {
+        "classification": "strong-overlap",
+        "length_m": 539.3,
+        "visible_city_coverage": {
+          "1": 0.1036,
+          "3": 0.3097,
+          "10": 0.9515,
+          "20": 1
+        }
+      }
+    },
+    {
+      "area_id": "pen-park",
+      "name": "Pen Park",
+      "feature_ids": [
+        "city:3288"
+      ],
+      "priority": 5,
+      "group": "Possible duplicate",
+      "recommendation": "Retain the entire RT; defer another Lower Meadow Creek line unless the remaining differences are useful.",
+      "question": "Can Pen Park keep the current RT without the overlapping City addition?",
+      "access_summary": "City GIS: STATUS=Existing; EASEMENT=Complete; owner=City; TYPE=Soft Surface.",
+      "evidence": [
+        "825.5 m; 68.3% within 3 m and 98.2% within 10 m of existing visible trail geometry.",
+        "About 98% follows RT within 10 m. The existing RT extends beyond the proposed feature and must stay intact."
+      ],
+      "cautions": [
+        "No choice is preselected. Confirm the actual path and connection before including an addition."
+      ],
+      "source_properties": {
+        "STATUS": "Existing",
+        "EASEMENT": "Complete",
+        "PROPERTY_OWNER": "City",
+        "TYPE": "Soft Surface",
+        "NAME": "Lower Meadow Creek",
+        "last_edited_date": 1684449006000
+      },
+      "overlap": {
+        "classification": "strong-overlap",
+        "length_m": 825.5,
+        "visible_city_coverage": {
+          "1": 0.3039,
+          "3": 0.6828,
+          "10": 0.9815,
+          "20": 1
+        }
+      }
+    }
+  ]
+}

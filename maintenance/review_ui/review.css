@@ -27,6 +27,7 @@ aside input { margin-top: 10px; width: 100%; }
 .map-controls button, .map-controls select { box-shadow: 0 1px 8px #234b3d20; font-size: 12px; }
 .legend { position: absolute; bottom: 30px; left: 12px; background: #fffef8ee; padding: 8px 12px; border-radius: 8px; display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; max-width: calc(100% - 24px); }
 .before { color: #bf501a; font-weight: 700; }.after { color: #1164c1; font-weight: 700; }
+#resolution:not(:empty){background:#e7efdf;border:1px solid #c9d8c0;border-radius:8px;padding:12px;font-size:13px;line-height:1.5}#resolution p{margin:8px 0}#resolution a{color:#245b43}.decisions button:disabled{opacity:.5;cursor:not-allowed}#queue{margin-bottom:12px}
 #detail { overflow: auto; padding: 18px 24px 24px; border-top: 1px solid #dce3d7; }
 .detail-heading { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
 h1 { font-size: 22px; margin: 4px 0; }#kinds { margin: 0; }code { font-size: 11px; color: #68766a; word-break: break-all; }

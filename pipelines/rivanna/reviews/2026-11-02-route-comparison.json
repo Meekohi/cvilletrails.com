@@ -1,0 +1,2471 @@
+{
+  "reviewed_at": "2026-11-03T03:07:17.846207Z",
+  "status": "ready_for_joint_review_not_published",
+  "review_hash": "c5fb57c8951071ca75fdde574dce0890815f8d9f9da8c92bed16520f6be67735",
+  "sources": {
+    "fetched_at": "2026-11-03T02:56:54.556530Z",
+    "url": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+    "sha256": "eee4418b6e1ce8b94ca24a16a9fc40ccad832e40681a10bb5a123da5afbf41ea",
+    "bytes": 596430,
+    "official_page": "https://www.rivannatrails.org/Map"
+  },
+  "source_freshness": "Freshly retrieved export; individual notices may be undated or old. Retrieval is not a closure confirmation.",
+  "current_hash": "83fcc380dd5e7a4859b05f4a9b0302663567116d675cc13b74625e0a8f1a9a81",
+  "current_feature_count": 65,
+  "entire_current_network_retained": true,
+  "summary": {
+    "official_route_records": 74,
+    "priorities": {
+      "access-status": 6,
+      "geometry": 6,
+      "identity-and-curation": 62
+    },
+    "classes": {
+      "substantial-route-difference": 9,
+      "close-existing-route": 65
+    },
+    "official_unique_line_m": 65197.6,
+    "current_unique_line_m": 56574.7,
+    "official_unique_unmatched_10m_m": 7474.4,
+    "current_unique_unmatched_10m_m": 0.0
+  },
+  "placemark_count": 198,
+  "excluded_count": 124,
+  "stable_placemark_ids": 0,
+  "crosswalk_summary": {
+    "strong_reciprocal_99pct_at3m": 61,
+    "approved_links": 0,
+    "approach": "Keep current Mapbox IDs and properties. Proposed one-to-one links require >=99% reciprocal line coverage within3m. Treat subsets, splits, and new records separately. Folder/name keys and ordinal snapshot keys are not stable upstream IDs. Freeze reviewed geometry fingerprints and explicit lineage in a future maintained crosswalk; do not infer deletion from missing names."
+  },
+  "decisions_to_resolve": [
+    {
+      "id": "road-walks",
+      "question": "Should the seven largely missing official road-walk records be added as distinctly styled route connections, preserving all existing off-road RT?",
+      "status": "proposal_needed_after_user_direction",
+      "note": "Includes the Ivy construction detour; adding geometry should not imply permanent status or ordinary off-road trail access."
+    },
+    {
+      "id": "closed-lines",
+      "question": "Keep the two source-labeled closed lines excluded from navigable additions, and investigate status before any closure annotation?",
+      "status": "verify_access",
+      "note": "Sandridge–Old Ivy description says until2027; RiverNorth closure has no dated description. Existing65features are retained."
+    },
+    {
+      "id": "fontaine-status",
+      "question": "Reconcile December2025 closure/temporary detour metadata with the September2026 work-party reference before changing navigation status.",
+      "status": "conflicting_dates_need_review",
+      "note": "The three Fontaine geometries are already fully covered by current RT; this is an access/route-role question, not a missing-geometry task."
+    }
+  ],
+  "independent_official_sources": [
+    {
+      "url": "https://www.rivannatrails.org/Map",
+      "finding": "RTF identifies its Google map as official and warns the printable PDF may lag it."
+    },
+    {
+      "url": "https://www.rivannatrails.org/event-6827115",
+      "source_event_date": "2026-09-06",
+      "finding": "RTF work-party event describes maintenance of a new Fontaine–Stribling segment and Forestry loop. This is newer than the KML December2025 closure text, but does not prove every construction area is reopened."
+    },
+    {
+      "url": "https://rivannatrails.org/News",
+      "source_post_date": "2022-12-21",
+      "finding": "Belvedere Neighborhood Update describes a construction reroute and closed older segment. This supports historical route context; the old date cannot confirm November2026 access status."
+    },
+    {
+      "url": "https://www.albemarle.org/home/showpublisheddocument/13819/637902863064830000",
+      "source_document_date": "2022-06-14",
+      "finding": "Old Ivy Residences planning report discusses retaining/rerouting Rivanna access and uncertainty about construction closure phasing. It does not independently confirm the KML until2027 closure."
+    }
+  ],
+  "rows": [
+    {
+      "snapshot_key": "kml:7688dc1f4491fa17d7f3",
+      "semantic_key": "section #4 - meadow creek gardens to old ivy rd / ivy railroad detour (road walk)",
+      "name": "Ivy Railroad Detour (road walk)",
+      "folder": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+      "flags": [
+        "detour",
+        "road-walk"
+      ],
+      "embedded_date_text": [],
+      "length_m": 2400.4,
+      "coverage_of_source": {
+        "3": 0.0022,
+        "10": 0.0085,
+        "20": 0.017
+      },
+      "unmatched_10m_m": 2379.9,
+      "classification": "substantial-route-difference",
+      "review_priority": "access-status",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:ddfa139f3c79edbb0499",
+      "semantic_key": "section #4 - meadow creek gardens to old ivy rd / section 4c: sandridge to old ivy (closed)",
+      "name": "Section 4C: Sandridge to Old Ivy (CLOSED)",
+      "folder": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+      "flags": [
+        "closure",
+        "detour"
+      ],
+      "embedded_date_text": [
+        "2027"
+      ],
+      "length_m": 999.8,
+      "coverage_of_source": {
+        "3": 0.0,
+        "10": 0.0,
+        "20": 0.0348
+      },
+      "unmatched_10m_m": 999.8,
+      "classification": "substantial-route-difference",
+      "review_priority": "access-status",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:ccaceef4e147ff9073c8",
+      "semantic_key": "rtf river north trail / trail closed for construction",
+      "name": "Trail CLOSED for Construction",
+      "folder": "RTF River North Trail",
+      "flags": [
+        "closure"
+      ],
+      "embedded_date_text": [],
+      "length_m": 620.6,
+      "coverage_of_source": {
+        "3": 0.0085,
+        "10": 0.0362,
+        "20": 0.0823
+      },
+      "unmatched_10m_m": 598.1,
+      "classification": "substantial-route-difference",
+      "review_priority": "access-status",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:88b89d7be0beed227225",
+      "semantic_key": "section #6 - fontaine to azalea park / section 6a: fontaine ave to moore's creek",
+      "name": "Section 6A: Fontaine Ave to Moore's Creek",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [
+        "closure",
+        "source-describes-new-route"
+      ],
+      "embedded_date_text": [
+        "12.09.2025",
+        "mid January"
+      ],
+      "length_m": 1300.1,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "access-status",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "979e29e234bf508b2d9b8f6808757de0"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "UVA Trails",
+          "dataset": "cjcwe24s41blz2wnuwiu5nyxn",
+          "coverage": {
+            "10": 0.0083
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:765ac010cb22eae5a6e1",
+      "semantic_key": "section #6 - fontaine to azalea park / section 6a: temp closed for construction",
+      "name": "Section 6A: TEMP CLOSED for Construction",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [
+        "closure"
+      ],
+      "embedded_date_text": [],
+      "length_m": 819.1,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "access-status",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:6bff4ec85b2688ebdc3e",
+      "semantic_key": "section #6 - fontaine to azalea park / section 6a: detour",
+      "name": "Section 6A: Detour",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [
+        "detour",
+        "source-describes-new-route"
+      ],
+      "embedded_date_text": [],
+      "length_m": 974.4,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "access-status",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "8801a8379c2f586c2213fa33dd8963dd"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:2ca6b4f04ba0380d7425",
+      "semantic_key": "section #3 - greenbrier rr to meadow creek gardens / melbourne to kenwood ln (road walk)",
+      "name": "Melbourne to Kenwood Ln (road walk)",
+      "folder": "Section #3 - Greenbrier RR to Meadow Creek Gardens",
+      "flags": [
+        "road-walk"
+      ],
+      "embedded_date_text": [],
+      "length_m": 974.0,
+      "coverage_of_source": {
+        "3": 0.0098,
+        "10": 0.0837,
+        "20": 0.1065
+      },
+      "unmatched_10m_m": 892.5,
+      "classification": "substantial-route-difference",
+      "review_priority": "geometry",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0066
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:4faa6572be3ab290f090",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / section 1d: vfw to megan crt (road walk)",
+      "name": "Section 1D: VFW to Megan Crt (road walk)",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [
+        "road-walk"
+      ],
+      "embedded_date_text": [],
+      "length_m": 707.3,
+      "coverage_of_source": {
+        "3": 0.01,
+        "10": 0.0336,
+        "20": 0.062
+      },
+      "unmatched_10m_m": 683.5,
+      "classification": "substantial-route-difference",
+      "review_priority": "geometry",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0042
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:2d50ac26ccf7a05beae1",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / section 1c: woolen mills bridge to riverview park (road walk)",
+      "name": "Section 1C: Woolen Mills bridge to Riverview Park (ROAD WALK)",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [
+        "road-walk"
+      ],
+      "embedded_date_text": [],
+      "length_m": 591.3,
+      "coverage_of_source": {
+        "3": 0.0101,
+        "10": 0.0338,
+        "20": 0.0678
+      },
+      "unmatched_10m_m": 571.4,
+      "classification": "substantial-route-difference",
+      "review_priority": "geometry",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.017
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:19ae17630036c3adfcf0",
+      "semantic_key": "section #2 - megan court to melbourne rd / section 2b: park street to jw pkwy (road walk)",
+      "name": "Section 2B: Park Street to JW Pkwy (ROAD WALK)",
+      "folder": "Section #2 - Megan Court to Melbourne Rd",
+      "flags": [
+        "road-walk"
+      ],
+      "embedded_date_text": [],
+      "length_m": 565.5,
+      "coverage_of_source": {
+        "3": 0.016,
+        "10": 0.0665,
+        "20": 0.1402
+      },
+      "unmatched_10m_m": 527.9,
+      "classification": "substantial-route-difference",
+      "review_priority": "geometry",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0344
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:35ca686c4521ad6ce3bc",
+      "semantic_key": "rtf river north trail / rtf river north tr #1 (road walk)",
+      "name": "RTF River North TR #1 (road walk)",
+      "folder": "RTF River North Trail",
+      "flags": [
+        "road-walk"
+      ],
+      "embedded_date_text": [
+        "2088"
+      ],
+      "length_m": 454.0,
+      "coverage_of_source": {
+        "3": 0.0133,
+        "10": 0.0575,
+        "20": 0.1105
+      },
+      "unmatched_10m_m": 427.9,
+      "classification": "substantial-route-difference",
+      "review_priority": "geometry",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.027
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:15f787d006de975b1a92",
+      "semantic_key": "section #6 - fontaine to azalea park / section 6c: sunset ave (road walk)",
+      "name": "Section 6C: Sunset Ave (road walk)",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [
+        "road-walk"
+      ],
+      "embedded_date_text": [],
+      "length_m": 416.0,
+      "coverage_of_source": {
+        "3": 0.0144,
+        "10": 0.0545,
+        "20": 0.103
+      },
+      "unmatched_10m_m": 393.4,
+      "classification": "substantial-route-difference",
+      "review_priority": "geometry",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0296
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:199834f680c7442f09c1",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / section 1a: riverview park to free bridge",
+      "name": "Section 1A: Riverview Park to Free Bridge",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [
+        "source-describes-new-route"
+      ],
+      "embedded_date_text": [
+        "2024"
+      ],
+      "length_m": 2409.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "9020be14807636b939013128ecebaad9"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.5261
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:5678b98bd5f373defc23",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / riverview park paved loop",
+      "name": "Riverview Park Paved Loop",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 1408.4,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "bc183f9ca5cbfa65ba0142db54e412c1"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.9965
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:e56455ab384c353444e1",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / rtf spur: caroline & fairway",
+      "name": "RTF Spur: Caroline & Fairway",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 230.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "ce1d1dc5a21dc2558c254dbfe591b64f"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:2036b1a699dae98f6d50",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / section 1a: free bridge spur (a)",
+      "name": "Section 1A: Free Bridge Spur (A)",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 47.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "81bbccc179de8474165aed8aa353c854"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 1
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:89aa566c455d5331a73a",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / section 1a: free bridge spur (b)",
+      "name": "Section 1A: Free Bridge Spur (B)",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 55.1,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "2d3159bcb8f5bec411db8dd43f4a45d1"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 1
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:f220104525fe8f50843c",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / section 1a spur: shared use path",
+      "name": "Section 1A spur: Shared Use Path",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 502.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "a3bfb6d17978af631be926fad5b8dd8b"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 1
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:4da297bacdd33176e7f0",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / section 1b: free bridge to vfw (river rd)",
+      "name": "Section 1B: Free Bridge to VFW (River Rd)",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 981.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "9a0bfaa0cddfd0190059719337983316"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.9458
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:37925231f40d212d6166",
+      "semantic_key": "section #1 - riverview park to the vfw (river road) / section 1c: riverside ave to riverview park",
+      "name": "Section 1C: Riverside Ave to Riverview Park",
+      "folder": "Section #1 - RiverView Park to the VFW (River Road)",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 257.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "a0debe52051c78b270503aff0df6dcc6"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.5516
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:016190e572c23347e09a",
+      "semantic_key": "section #2 - megan court to melbourne rd / section 2a: megan court to holmes ave",
+      "name": "Section 2A: Megan Court to Holmes Ave",
+      "folder": "Section #2 - Megan Court to Melbourne Rd",
+      "flags": [
+        "source-describes-new-route"
+      ],
+      "embedded_date_text": [],
+      "length_m": 1289.9,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "50d9d9245e7253b9d4d2eb9147d5d528"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.8083
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:6ffcb5fb40c9eda086d6",
+      "semantic_key": "section #2 - megan court to melbourne rd / section 2c: john warner pkwy trails",
+      "name": "Section 2C: John Warner PKWY trails",
+      "folder": "Section #2 - Megan Court to Melbourne Rd",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 2317.0,
+      "coverage_of_source": {
+        "3": 0.9991,
+        "10": 0.9991,
+        "20": 0.9991
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "a6d318f8e0b8333d63931ddde7c0d05d"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.2055
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:3c56585715a20a8d4ff3",
+      "semantic_key": "section #2 - megan court to melbourne rd / section 2d: stonehenge spur trail",
+      "name": "Section 2D: Stonehenge Spur Trail",
+      "folder": "Section #2 - Megan Court to Melbourne Rd",
+      "flags": [
+        "source-describes-new-route"
+      ],
+      "embedded_date_text": [
+        "2023"
+      ],
+      "length_m": 1249.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "fd500441b69522e98fbb5428ad547686"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0027
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:2aadbe2a3cb83d0e0212",
+      "semantic_key": "section #2 - megan court to melbourne rd / section 2b: holmes ave to park street (rio road)",
+      "name": "Section 2B: Holmes Ave to Park Street (Rio Road)",
+      "folder": "Section #2 - Megan Court to Melbourne Rd",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 910.4,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "98e0a4410a5abd3d34cb468888f1a741"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.5376
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:72128b16e906cd76d45d",
+      "semantic_key": "section #3 - greenbrier rr to meadow creek gardens / section 3a: chs/mcintire park spur",
+      "name": "Section 3A: CHS/McIntire Park Spur",
+      "folder": "Section #3 - Greenbrier RR to Meadow Creek Gardens",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 2115.8,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "34c764c4ddcd594be0073d5a85f97b7d"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.7007
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:643d96375a76435cce9f",
+      "semantic_key": "section #3 - greenbrier rr to meadow creek gardens / section 3b: greenbrier park",
+      "name": "Section 3B: Greenbrier Park",
+      "folder": "Section #3 - Greenbrier RR to Meadow Creek Gardens",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 1032.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "93169645c0d96c047b4770e36a043546"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.8531
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:7e4adeb4838b29b4c197",
+      "semantic_key": "section #3 - greenbrier rr to meadow creek gardens / section 3b: greenbrier park spur",
+      "name": "Section 3B: Greenbrier Park Spur",
+      "folder": "Section #3 - Greenbrier RR to Meadow Creek Gardens",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 619.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "92a009c1cdbb0f1bec3728203d848de0"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.9296
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:f8992976b7c8426e27d6",
+      "semantic_key": "section #3 - greenbrier rr to meadow creek gardens / section 3c: meadow creek valley",
+      "name": "Section 3C: Meadow Creek Valley",
+      "folder": "Section #3 - Greenbrier RR to Meadow Creek Gardens",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 1633.8,
+      "coverage_of_source": {
+        "3": 0.9999,
+        "10": 0.9999,
+        "20": 0.9999
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "58ef1f6238deb788c1073289fa910df6"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.7667
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:6defc2630eb6c809eb7a",
+      "semantic_key": "section #3 - greenbrier rr to meadow creek gardens / section 3d: hydraulic road to earhart street",
+      "name": "Section 3D: Hydraulic Road to Earhart Street",
+      "folder": "Section #3 - Greenbrier RR to Meadow Creek Gardens",
+      "flags": [
+        "road-walk"
+      ],
+      "embedded_date_text": [],
+      "length_m": 1129.9,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "69834216380ab02b301212a1de452c8c"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.4055
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:bc247c69a7024ef780bb",
+      "semantic_key": "section #3 - greenbrier rr to meadow creek gardens / section 3d: meadow creek gardens spur",
+      "name": "Section 3D: Meadow Creek Gardens Spur",
+      "folder": "Section #3 - Greenbrier RR to Meadow Creek Gardens",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 495.3,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "3feb20e1474593f98e13480c315ee74e"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.4171
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:11bf1aa853fe55bae239",
+      "semantic_key": "section #4 - meadow creek gardens to old ivy rd / road walk",
+      "name": "ROAD WALK",
+      "folder": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+      "flags": [
+        "road-walk"
+      ],
+      "embedded_date_text": [],
+      "length_m": 347.6,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0071
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:11ba6c8da7c4e42f5186",
+      "semantic_key": "section #4 - meadow creek gardens to old ivy rd / section 4a: earhart st to barracks rd",
+      "name": "Section 4A: Earhart St to Barracks Rd",
+      "folder": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 434.7,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "5ef0b6604c8a99b5d0801c7f5cb732a1"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:e26e818064252645b2ee",
+      "semantic_key": "section #4 - meadow creek gardens to old ivy rd / section 4b: north field spur loop",
+      "name": "Section 4B: North Field spur loop",
+      "folder": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 841.3,
+      "coverage_of_source": {
+        "3": 0.973,
+        "10": 0.973,
+        "20": 0.973
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:feee0fec953ccf9360a4",
+      "semantic_key": "section #4 - meadow creek gardens to old ivy rd / section 4b: uva law school spur",
+      "name": "Section 4B: UVA Law School Spur",
+      "folder": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 138.7,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "893ae00b00fb2832584557f93dfa04e8"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:46a932af04cb730d575d",
+      "semantic_key": "section #4 - meadow creek gardens to old ivy rd / section 4b: barracks road to leonard sandridge dr",
+      "name": "Section 4B: Barracks Road to Leonard Sandridge Dr",
+      "folder": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 1771.8,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "c0d3be12f0b4ad14ca25363c36ac7f79"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:e341d3f06074d95f42a6",
+      "semantic_key": "section #4 - meadow creek gardens to old ivy rd / section 4e:",
+      "name": "Section 4e:",
+      "folder": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 129.3,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "26a86a90c20fa47d7191adbf993ba515"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:d596ba65e9adce7cfb43",
+      "semantic_key": "section #4 - meadow creek gardens to old ivy rd / section 4b: forestry spur to redfields",
+      "name": "Section 4B: Forestry Spur to Redfields",
+      "folder": "Section #4 - Meadow Creek Gardens to Old Ivy Rd",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 815.8,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "127012f13907c4cc602619367c1eccc7"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:223612af87c251711915",
+      "semantic_key": "section #5 - ohill / section 5: ivy road to fontaine (o-hill)",
+      "name": "Section 5: Ivy Road to Fontaine (O-Hill)",
+      "folder": "Section #5 - Ohill",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 3024.8,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "e278e4800e7f4a6d4d9e08046afb7f35"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "UVA Trails",
+          "dataset": "cjcwe24s41blz2wnuwiu5nyxn",
+          "coverage": {
+            "10": 0.0666
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:840808a027b85d484121",
+      "semantic_key": "section #5 - ohill / section 5: fontaine spur",
+      "name": "Section 5: Fontaine Spur",
+      "folder": "Section #5 - Ohill",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 350.9,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "20056f4538688654a2eed20a4cd39a06"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "UVA Trails",
+          "dataset": "cjcwe24s41blz2wnuwiu5nyxn",
+          "coverage": {
+            "10": 0.7869
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:b4a75d5ad6bf5040b88a",
+      "semantic_key": "section #6 - fontaine to azalea park / section 6b: va forestry spur loop",
+      "name": "Section 6B: VA Forestry Spur loop",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 1575.0,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "8a70bfbde86fa8df2a2a1b0a01fdaef0"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:78f432f40116b5eee19b",
+      "semantic_key": "section #6 - fontaine to azalea park / section 6b: forestry loop rock hop",
+      "name": "Section 6B: Forestry Loop Rock Hop",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 57.8,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "1d9d63d564d50f6f7e606d75701d0f96"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:59f6b600318fbb409d6e",
+      "semantic_key": "section #6 - fontaine to azalea park / section 6b: rtf forestry spur",
+      "name": "Section 6B: RTF Forestry Spur",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 153.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "408eefed1ec53763dd70433efd0ae9f7"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:48ae204141bdbe927e3e",
+      "semantic_key": "section #6 - fontaine to azalea park / section 6c: moore's creek to sunset",
+      "name": "Section 6C: Moore's Creek to Sunset",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 419.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "7b67e0c406e2fe9cee0c2c6620a2ea7f"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:dca1fbf00b9ec3904418",
+      "semantic_key": "section #6 - fontaine to azalea park / section 6c: sunset ave to azalea park",
+      "name": "Section 6C: Sunset Ave to Azalea Park",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 1004.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "b4dc1804d1d73e5bcec3447431f4525c"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.9295
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:9c6df21c99d03dd2a9d4",
+      "semantic_key": "section #6 - fontaine to azalea park / rtf section #6c spur - sunset to mcelroy",
+      "name": "RTF Section #6c SPUR - Sunset to McElroy",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 500.6,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "99d1a9887d005c56baeb7f72fdd3606c"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.9767
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:482ea4c8c52b402a376d",
+      "semantic_key": "section #6 - fontaine to azalea park / section #6 - azalea park spur",
+      "name": "Section #6 - Azalea Park Spur",
+      "folder": "Section #6 - Fontaine to Azalea Park",
+      "flags": [
+        "former-main-route"
+      ],
+      "embedded_date_text": [],
+      "length_m": 617.0,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "352bd11749804d3be5d304abd2d9066d"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.2032
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:9752cd3f3a9fc41ce8e6",
+      "semantic_key": "section #7 azalea park to jordan park / section 7a: old lynchburg rd to azalea park creek crossing",
+      "name": "Section 7A: Old Lynchburg Rd to Azalea Park creek crossing",
+      "folder": "Section #7 Azalea Park to Jordan Park",
+      "flags": [
+        "source-describes-new-route"
+      ],
+      "embedded_date_text": [
+        "2024"
+      ],
+      "length_m": 1412.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "3aa9f3a5b3d8cd6cf6e1dbe8384c1226"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:bad7cf053a1569c1afc6",
+      "semantic_key": "section #7 azalea park to jordan park / section 7b: azalea park to bent creek bridge (5th st station pkwy)",
+      "name": "Section 7B: Azalea Park to Bent Creek Bridge (5th St Station PKWY)",
+      "folder": "Section #7 Azalea Park to Jordan Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 428.4,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "4e6415595472d2d3450b3120b3819c3b"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "strava",
+          "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+          "coverage": {
+            "10": 0.0619
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:07d5ca520178501b496b",
+      "semantic_key": "section #7 azalea park to jordan park / section 7c: willoughby spur (1)",
+      "name": "Section 7C: Willoughby Spur (1)",
+      "folder": "Section #7 Azalea Park to Jordan Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 151.8,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "1c13588619ab21e0a7a1f2c930f1be6f"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:e55da6f670050a4fd429",
+      "semantic_key": "section #7 azalea park to jordan park / section 7c: bent creek bridge (5th st station pkwy) to rock creek (willoughby)",
+      "name": "Section 7C: Bent Creek Bridge (5th St Station PKWY) to Rock Creek (Willoughby)",
+      "folder": "Section #7 Azalea Park to Jordan Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 2381.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "8f8d9a68adfc9b73fba4a9570052d0cd"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:fa79ee895673908489ac",
+      "semantic_key": "section #7 azalea park to jordan park / section 7d: rock creek to avon st",
+      "name": "Section 7D: Rock Creek to Avon St",
+      "folder": "Section #7 Azalea Park to Jordan Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 1105.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "9a12a17426ca668142b37264bba818d9"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.5692
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:e63c4cbaf7ea981c91d8",
+      "semantic_key": "section #7 azalea park to jordan park / section 7d: jordan park access trail",
+      "name": "Section 7D: Jordan Park Access Trail",
+      "folder": "Section #7 Azalea Park to Jordan Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 59.0,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "f11c37b6884bac4f714886df06f91352"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 1
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:540ac118c3d9f57cbf48",
+      "semantic_key": "section #7 azalea park to jordan park / section 7d: willoughby spur (2)",
+      "name": "Section 7D: Willoughby Spur (2)",
+      "folder": "Section #7 Azalea Park to Jordan Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 419.0,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "9c3aac02e7f17b29d565917a484f3796"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.4208
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:71e44d1b600fea3d1bd1",
+      "semantic_key": "section #7 azalea park to jordan park / section 7d: jordan park spur",
+      "name": "Section 7D: Jordan Park Spur",
+      "folder": "Section #7 Azalea Park to Jordan Park",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 126.6,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "6e012e1306b68def6764cd18f0cceb3e"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "strava",
+          "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+          "coverage": {
+            "10": 0.1541
+          }
+        },
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:9f526ffcacb39aaf5f17",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8a: avon st. to monticello ave",
+      "name": "Section 8A: Avon St. to Monticello Ave",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 1817.7,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "manual-identity-review",
+        "current_feature_ids": [],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.5936
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:a02150b79c47f718fdaa",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8a: avon park & ride",
+      "name": "Section 8A: Avon Park & Ride",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 242.8,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "0e0bc84fad867711640c2bbd2dd5010c"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 1
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:6361f6e6573644cd5124",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8b: quarry cliff spur",
+      "name": "Section 8B: Quarry Cliff Spur",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 260.6,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "804dedb545d949f36656ce80a10a00ea"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.4036
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:a25ebbf01214feec9f97",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8b: west loop a",
+      "name": "Section 8B: West Loop A",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [
+        "source-describes-new-route"
+      ],
+      "embedded_date_text": [
+        "2021"
+      ],
+      "length_m": 759.6,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "886c6dfbc116fd37b8d252c7e4c6b2ad"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0282
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:dc727ece0b2eb81b6230",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8b: west loop b",
+      "name": "Section 8B: West Loop B",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 740.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "d72d56e10bbb6c8c84c903fedcf3fbe8"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:710649b8bb3e8558d31e",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8b: west loop c",
+      "name": "Section 8B: West Loop C",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 167.4,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "ccd06244c9dd7763db0dc45e4fb1eb78"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:c42832e82c215be9bbc5",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8b: meadow trail",
+      "name": "Section 8B: Meadow Trail",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 508.8,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "378cea69a39a79b255b002d46f879442"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0289
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:00f673d7e0c077afbe9e",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8b: quarry park spur",
+      "name": "Section 8B: Quarry Park Spur",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 170.9,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "9b30a6bf8f23aca3c3abd14ca97f5947"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 1
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:b1c56313608729b47aea",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8c: monticello ave spur",
+      "name": "Section 8C: Monticello Ave Spur",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 32.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "c49835b4a281c3b27c7ef5ad3ef57b86"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:4246d41fde407419411b",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8c: monticello ave to woolen mills",
+      "name": "Section 8C: Monticello Ave to Woolen Mills",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 2337.1,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "daf5695a1ed2bfa8ae4bcd154ac2b4ac"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.3109
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:16e464c875b4fe51575d",
+      "semantic_key": "section #8 - jordan park to the wool factory / section 8b: creek side spur trail",
+      "name": "Section 8B: Creek Side SPUR Trail",
+      "folder": "Section #8 - Jordan Park to the Wool Factory",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 531.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "9dd0f82f60396a1f8b05e4b99e95cc15"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0795
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:09f45c19c82b4afd049c",
+      "semantic_key": "rtf river north trail / river north trail - section 1a",
+      "name": "River North Trail - Section 1A",
+      "folder": "RTF River North Trail",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 187.3,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "0c6be5ccde92ea34e627f596564cc7ee"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0655
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:e6e3d02bb8e1520433a1",
+      "semantic_key": "rtf river north trail / rtf river north tr - spur",
+      "name": "RTF River North TR - Spur",
+      "folder": "RTF River North Trail",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 926.7,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "4dfc5782983af650b8fd8fac54dc6aaf"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 1
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:5cee1224130324e382ae",
+      "semantic_key": "rtf river north trail / rtf river north tr - spur (fitness trail)",
+      "name": "RTF River North TR - Spur (fitness trail)",
+      "folder": "RTF River North Trail",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 790.1,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "5b4ceab39bee91d8e55eea5e1ed6f636"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "albemarle",
+          "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+          "coverage": {
+            "10": 0.0
+          }
+        },
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.9179
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:78316b9f4e986313084d",
+      "semantic_key": "rtf river north trail / rtf river north tr - section 2a",
+      "name": "RTF River North TR - Section 2A",
+      "folder": "RTF River North Trail",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 2072.9,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "7d71652e57d39da01ce15ae72a6f8855"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "albemarle",
+          "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+          "coverage": {
+            "10": 0.1098
+          }
+        },
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.0043
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:edbe496c0d67de2d31de",
+      "semantic_key": "rtf river north trail / rtf river north trail - section 1a",
+      "name": "RTF River North Trail - Section 1A",
+      "folder": "RTF River North Trail",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 2364.9,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "faeb225f490c12b1b09fc82126bcb69e"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": [
+        {
+          "target": "albemarle",
+          "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+          "coverage": {
+            "10": 0.0101
+          }
+        },
+        {
+          "target": "city",
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "coverage": {
+            "10": 0.641
+          }
+        }
+      ]
+    },
+    {
+      "snapshot_key": "kml:1de8308c764e8955f4d4",
+      "semantic_key": "rtf river north trail / rtf river north tr - section 3b (south loop)",
+      "name": "RTF River North TR - Section 3B (South Loop)",
+      "folder": "RTF River North Trail",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 747.4,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "e97d54323baf214b6177dc8c167b3fba"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:7ab75cb49da18d58514f",
+      "semantic_key": "rtf river north trail / rtf river north tr- section 3c (north loop)",
+      "name": "RTF River North TR- Section 3C (North Loop)",
+      "folder": "RTF River North Trail",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 1769.2,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "03a1adf32e15f49ae6251e95d80c7321"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:0fe6105cd9ac5ceea52c",
+      "semantic_key": "rtf river north trail / rtf river north tr - section 3a",
+      "name": "RTF River North TR - Section 3A",
+      "folder": "RTF River North Trail",
+      "flags": [
+        "source-describes-new-route"
+      ],
+      "embedded_date_text": [],
+      "length_m": 1143.5,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "8961bd30140dafc9c964e3e0ccb62a45"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    },
+    {
+      "snapshot_key": "kml:ceef5596170db081c660",
+      "semantic_key": "rtf river north trail / spur trail",
+      "name": "Spur Trail",
+      "folder": "RTF River North Trail",
+      "flags": [],
+      "embedded_date_text": [],
+      "length_m": 220.6,
+      "coverage_of_source": {
+        "3": 1,
+        "10": 1,
+        "20": 1
+      },
+      "unmatched_10m_m": 0.0,
+      "classification": "close-existing-route",
+      "review_priority": "identity-and-curation",
+      "crosswalk_proposal": {
+        "status": "strong-geometric-correspondence",
+        "current_feature_ids": [
+          "b7a2e78f36df0261e4399a7712860b92"
+        ],
+        "approved": false,
+        "preserve_current_id_and_properties": true
+      },
+      "other_network_coverage": []
+    }
+  ],
+  "limitations": [
+    "Distance screening does not establish identity, access, or superior accuracy.",
+    "Snapshot keys and name/folder semantic keys are not persistent upstream IDs.",
+    "Descriptions and style colors are evidence, not approved changes to curated route classes.",
+    "Closed and detour lines remain in this comparison but are not proposed as open trails.",
+    "All current Rivanna features are retained; unmatched current geometry is not a deletion proposal.",
+    "Other-network coverage includes active editable datasets near these routes; basemap roads and uneditable external tilesets are excluded.",
+    "No publishable replacement candidate or Mapbox writes are produced."
+  ]
+}

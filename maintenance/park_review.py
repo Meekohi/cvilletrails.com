@@ -1,10 +1,11 @@
 """Prepare park-level geometry ownership decisions; never edits Mapbox."""
+import copy
 import re
 import shutil
 from collections import Counter
 from pathlib import Path
 from .common import ROOT, STATE, digest, now, read_json, write_json
-from .geo import fingerprint
+from .geo import canonical, changes, fingerprint
 from .overlaps import geometry_tools, coverage
 from .review_map import verify_plan
 
@@ -113,3 +114,107 @@ def build_park_review(plan_path, inventory_dir, boundaries_path, overlaps_path, 
     for filename in ('index.html', 'review.js', 'review.css'):
         shutil.copyfile(ROOT / 'maintenance/park_review_ui' / filename, output / filename)
     return output
+
+
+def annotate_next_area_review(report, assessment):
+    """Attach human-readable investigation notes without approving any additions."""
+    import copy
+    if digest({k: v for k, v in report.items() if k != 'review_hash'}) != report['review_hash']:
+        raise ValueError('Park report contents do not match their hash')
+    if assessment.get('plan_hash') != report['plan_hash']:
+        raise ValueError('Next-area assessment belongs to another plan')
+    notes = {item['area_id']: item for item in assessment['areas']}
+    if len(notes) != len(assessment['areas']) or set(notes) != {p['id'] for p in report['parks']}:
+        raise ValueError('Next-area assessment must cover exactly the reviewed areas')
+    result = copy.deepcopy(report)
+    for park in result['parks']:
+        note = notes[park['id']]
+        if set(note['feature_ids']) != set(park['review_feature_ids']):
+            raise ValueError('Next-area assessment feature IDs differ from the park review')
+        park['assessment'] = copy.deepcopy(note)
+        # Source selection is not the decision in this round. Every feature is a
+        # proposed addition; existing networks are retained regardless of choice.
+        park['recommended_dataset'] = None
+        park['reason'] = note['recommendation']
+        park['cautions'] = [
+            'This round proposes additions only. Keeping or including a City feature never removes Rivanna or other existing trails.',
+            'Distances screen for possible duplicates; they do not establish trail identity or public access.',
+            *note.get('cautions', []),
+        ]
+    result['parks'].sort(key=lambda p: (p['assessment']['priority'], p['name']))
+    result['review_kind'] = 'remaining-additions'
+    result['assessment_hash'] = digest(assessment)
+    result['source_verification'] = assessment['source_verification']
+    result['review_scope'] = assessment['scope']
+    result['review_hash'] = digest({k: v for k, v in result.items() if k != 'review_hash'})
+    return result
+
+
+def build_next_area_review(plan_path, inventory_dir, boundaries_path, overlaps_path, assessment_path,
+                           output=STATE / 'review-next-areas'):
+    output = Path(output)
+    # Never replace the first-round bundle: its hash keys existing browser notes.
+    if output.resolve() == (STATE / 'review-parks').resolve():
+        raise ValueError('Next-area review requires a separate output directory')
+    assessment = read_json(assessment_path)
+    plan = read_json(plan_path)
+    if assessment.get('plan_hash') != plan.get('approval_hash'):
+        raise ValueError('Next-area assessment belongs to another plan')
+    if any(plan['changes'][k] for k in ('changed', 'deleted')):
+        raise ValueError('Next-area review supports additions only')
+    build_park_review(plan_path, inventory_dir, boundaries_path, overlaps_path, output)
+    bundle = read_json(output / 'review.json')
+    bundle['report'] = annotate_next_area_review(bundle['report'], assessment)
+    bundle['assessment'] = assessment
+    write_json(output / 'review.json', bundle)
+    return output
+
+
+def remaining_addition_candidate(plan, report, decisions):
+    """Apply explicit inclusion choices to the exact reviewed current baseline."""
+    verify_plan(plan)
+    if digest({k: v for k, v in report.items() if k != 'review_hash'}) != report.get('review_hash'):
+        raise ValueError('Remaining-addition report contents do not match their hash')
+    if report.get('review_kind') != 'remaining-additions' or decisions.get('review_kind') != 'remaining-additions' or decisions.get('schema_version') != 2:
+        raise ValueError('Expected a remaining-additions export, not park ownership decisions')
+    if decisions.get('review_hash') != report['review_hash'] or decisions.get('plan_hash') != plan['approval_hash'] or report['plan_hash'] != plan['approval_hash']:
+        raise ValueError('Addition decisions belong to another review or plan')
+    diff = changes(plan['before'], plan['after'])
+    if diff['changed'] or diff['deleted']:
+        raise ValueError('Remaining-addition decisions cannot edit or delete existing features')
+    areas = {area['id']: area for area in report['parks']}
+    ids = [fid for area in report['parks'] for fid in area['review_feature_ids']]
+    if len(areas) != len(report['parks']) or len(ids) != len(set(ids)) or set(ids) != set(diff['added']):
+        raise ValueError('Reviewed areas do not cover exactly the proposed additions')
+    selected = decisions.get('decisions')
+    if not isinstance(selected, dict):
+        raise ValueError('Expected an addition decisions object')
+    included, held, kept, unreviewed = [], [], [], []
+    for area_id, area in areas.items():
+        choice = selected.get(area_id)
+        if choice is None:
+            unreviewed.extend(area['review_feature_ids']); continue
+        if not isinstance(choice, dict) or choice.get('decision') not in {'include', 'keep-existing', 'discuss', 'unreviewed'}:
+            raise ValueError('Invalid addition review decision')
+        feature_ids = choice.get('feature_ids')
+        if not isinstance(feature_ids, list) or not all(isinstance(fid, str) for fid in feature_ids) or len(feature_ids) != len(set(feature_ids)) or set(feature_ids) != set(area['review_feature_ids']):
+            raise ValueError('Exported feature IDs differ from the reviewed area')
+        if choice.get('dataset') is not None or not isinstance(choice.get('note', ''), str):
+            raise ValueError('Addition decisions must not select replacement datasets and notes must be text')
+        destination = {'include': included, 'keep-existing': kept, 'discuss': held, 'unreviewed': unreviewed}[choice['decision']]
+        destination.extend(feature_ids)
+    if set(selected) - set(areas):
+        raise ValueError('Addition export contains an unknown area')
+    proposed = {feature['id']: feature for feature in plan['after']['features']}
+    candidate = canonical(copy.deepcopy(plan['before']))
+    candidate['features'].extend(copy.deepcopy(proposed[fid]) for fid in sorted(included))
+    candidate = canonical(candidate)
+    candidate['ingest_report'] = {
+        'reviewed_before_hash': plan['before_hash'], 'reviewed_target': plan['target'],
+        'reviewed_plan_hash': plan['approval_hash'], 'remaining_additions_review_hash': report['review_hash'],
+        'decision_export_hash': digest(decisions), 'decisions': copy.deepcopy(selected),
+        'included': sorted(included), 'kept_existing': sorted(kept),
+        'held_for_discussion': sorted(held), 'unreviewed': sorted(unreviewed),
+        'requires_review': True,
+    }
+    return candidate

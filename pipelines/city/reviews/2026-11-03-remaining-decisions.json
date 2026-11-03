@@ -1,0 +1,643 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-03T03:19:46.464890Z",
+  "status": "approved_for_publication",
+  "original_export": {
+    "schema_version": 2,
+    "review_kind": "remaining-additions",
+    "review_hash": "21c2ca9f3721675424f2c05d1cb0e3b8cc00865d01e6de0ada67345796fba9e9",
+    "plan_hash": "74cd4e58d4fb68cf54c9bb4c416b985248354ff83a0edcc21a1559c13df40bc6",
+    "exported_at": "2026-11-03T03:16:45.277Z",
+    "decisions": {
+      "corridor-hydraulic-road-city-4521": {
+        "decision": "keep-existing",
+        "dataset": null,
+        "feature_ids": [
+          "city:4521"
+        ],
+        "note": ""
+      },
+      "corridor-unnamed-trail-city-3284": {
+        "decision": "keep-existing",
+        "dataset": null,
+        "feature_ids": [
+          "city:3284"
+        ],
+        "note": ""
+      },
+      "corridor-washington-park-ramp-city-4524": {
+        "decision": "keep-existing",
+        "dataset": null,
+        "feature_ids": [
+          "city:4524"
+        ],
+        "note": ""
+      },
+      "corridor-meadowcreek-city-709": {
+        "decision": "discuss",
+        "dataset": null,
+        "feature_ids": [
+          "city:709"
+        ],
+        "note": "This isn't just redundant with the Rivanna Trail layer is it?"
+      },
+      "corridor-rugby-avenue-city-2210": {
+        "decision": "include",
+        "dataset": null,
+        "feature_ids": [
+          "city:2210"
+        ],
+        "note": ""
+      },
+      "washington-park": {
+        "decision": "include",
+        "dataset": null,
+        "feature_ids": [
+          "city:4117"
+        ],
+        "note": ""
+      },
+      "azalea-park-west": {
+        "decision": "include",
+        "dataset": null,
+        "feature_ids": [
+          "city:3267"
+        ],
+        "note": ""
+      },
+      "corridor-meadowcreek-city-710": {
+        "decision": "discuss",
+        "dataset": null,
+        "feature_ids": [
+          "city:710"
+        ],
+        "note": "Looks redundant with Rivanna Trail layer?"
+      },
+      "corridor-quarry-city-3277": {
+        "decision": "keep-existing",
+        "dataset": null,
+        "feature_ids": [
+          "city:3277"
+        ],
+        "note": ""
+      },
+      "corridor-quarry-public-works-city-3276": {
+        "decision": "include",
+        "dataset": null,
+        "feature_ids": [
+          "city:3276"
+        ],
+        "note": ""
+      },
+      "corridor-quarry-mid-ridge-city-3715": {
+        "decision": "keep-existing",
+        "dataset": null,
+        "feature_ids": [
+          "city:3715"
+        ],
+        "note": ""
+      },
+      "jordan-park": {
+        "decision": "include",
+        "dataset": null,
+        "feature_ids": [
+          "city:4121"
+        ],
+        "note": ""
+      },
+      "corridor-lochlyn-lane-link-city-3291": {
+        "decision": "include",
+        "dataset": null,
+        "feature_ids": [
+          "city:3291"
+        ],
+        "note": ""
+      },
+      "corridor-quarry-public-works-city-4118": {
+        "decision": "include",
+        "dataset": null,
+        "feature_ids": [
+          "city:4118"
+        ],
+        "note": ""
+      },
+      "corridor-rock-creek-city-3711": {
+        "decision": "keep-existing",
+        "dataset": null,
+        "feature_ids": [
+          "city:3711"
+        ],
+        "note": "Looks redundant with RTF"
+      },
+      "corridor-route-20-interstate-city-4119": {
+        "decision": "keep-existing",
+        "dataset": null,
+        "feature_ids": [
+          "city:4119"
+        ],
+        "note": ""
+      },
+      "corridor-unnamed-trail-city-3713": {
+        "decision": "keep-existing",
+        "dataset": null,
+        "feature_ids": [
+          "city:3713"
+        ],
+        "note": ""
+      },
+      "pen-park": {
+        "decision": "include",
+        "dataset": null,
+        "feature_ids": [
+          "city:3288"
+        ],
+        "note": ""
+      }
+    }
+  },
+  "export_hash": "8097da952dcb65e680a8ae46377bbc30fb078faf4a1bf305259bde8807e50ca1",
+  "review_report_hash": "21c2ca9f3721675424f2c05d1cb0e3b8cc00865d01e6de0ada67345796fba9e9",
+  "baseline_hash": "930e8e3af1efed8ceedace8baed955701ef3a17f9fe60b13e6f8aa8233128b36",
+  "candidate_hash": "f89f85b911b466a3d9c95d8ce7378b24a48fd14ed1e3bc2e008e7d683cf39806",
+  "candidate_path": ".trail-state/candidates/city-remaining-selected.geojson",
+  "summary": {
+    "included": [
+      "city:2210",
+      "city:3267",
+      "city:3276",
+      "city:3288",
+      "city:3291",
+      "city:4117",
+      "city:4118",
+      "city:4121",
+      "city:709",
+      "city:710"
+    ],
+    "kept_existing": [
+      "city:3277",
+      "city:3284",
+      "city:3711",
+      "city:3713",
+      "city:3715",
+      "city:4119",
+      "city:4521",
+      "city:4524"
+    ],
+    "held_for_discussion": [],
+    "unreviewed": []
+  },
+  "changes": {
+    "added": 10,
+    "deleted": 0,
+    "changed": 0,
+    "geometry_changed": 0,
+    "curation_changed": 0
+  },
+  "preservation": "All215 published City features remain exact; no other datasets or style layers are changed.",
+  "prepared_plan": {
+    "path": ".trail-state/plans/city-remaining-selected.json",
+    "approval_hash": "154934a6c42f08d608805cde4f38f28d067c11274684b642aa7ad11099528b69",
+    "live_baseline_verified_at": "2026-11-03T03:25:38.832920Z",
+    "after_features": 225
+  },
+  "discussion_followup": {
+    "checked_at": "2026-11-03T03:21:52.637681Z",
+    "map": "http://localhost:8004/meadowcreek.html",
+    "evidence": ".trail-state/next-area-analysis/meadowcreek-followup.json",
+    "official_context": {
+      "name": "Section 2A: Megan Court to Holmes Ave",
+      "folder": "Section #2 - Megan Court to Melbourne Rd",
+      "snapshot_key": "kml:016190e572c23347e09a",
+      "excerpt": "a new City trail that parallels on the opposite side of the creek",
+      "url": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+      "official_map_page": "https://www.rivannatrails.org/Map",
+      "interpretation": "The source explicitly describes a parallel City trail and a bridge connection. Associating that description with these nearby City GIS features is a geographic inference; it does not independently verify current access."
+    },
+    "segments": [
+      {
+        "feature_id": "city:709",
+        "length_m": 512.61,
+        "comparison": {
+          "current_rt": {
+            "coverage": {
+              "1": 0.0,
+              "3": 0.0,
+              "5": 0.0,
+              "10": 0.0,
+              "20": 0.0,
+              "30": 0.0,
+              "50": 0.6651,
+              "100": 1
+            },
+            "minimum_distance_m": 35.63,
+            "sampled_distances_m": {
+              "interval": 1,
+              "median": 46.8,
+              "p90": 61.24,
+              "maximum": 74.7
+            },
+            "start_distance_m": 65.02,
+            "end_distance_m": 61.1,
+            "matches": [
+              {
+                "id": "50d9d9245e7253b9d4d2eb9147d5d528",
+                "name": "Rivanna Trail",
+                "section": "Section 2A: Megan Court to Holmes Ave",
+                "category": "main",
+                "folder": "Section #2 - Megan Court to Melbourne Rd",
+                "minimum_distance_m": 35.63,
+                "coverage": {
+                  "3": 0.0,
+                  "10": 0.0,
+                  "20": 0.0
+                }
+              },
+              {
+                "id": "98e0a4410a5abd3d34cb468888f1a741",
+                "name": "Rivanna Trail",
+                "section": "Section 2B: Holmes Ave to Park Street (Rio Road)",
+                "category": "main",
+                "folder": "Section #2 - Megan Court to Melbourne Rd",
+                "minimum_distance_m": 55.2,
+                "coverage": {
+                  "3": 0.0,
+                  "10": 0.0,
+                  "20": 0.0
+                }
+              }
+            ]
+          },
+          "official_rt": {
+            "coverage": {
+              "1": 0.0,
+              "3": 0.0,
+              "5": 0.0,
+              "10": 0.0,
+              "20": 0.0,
+              "30": 0.0,
+              "50": 0.6651,
+              "100": 1
+            },
+            "minimum_distance_m": 35.63,
+            "sampled_distances_m": {
+              "interval": 1,
+              "median": 46.8,
+              "p90": 61.24,
+              "maximum": 74.7
+            },
+            "start_distance_m": 65.02,
+            "end_distance_m": 61.1,
+            "matches": [
+              {
+                "id": "kml:016190e572c23347e09a",
+                "name": "Section 2A: Megan Court to Holmes Ave",
+                "section": "Section 2A: Megan Court to Holmes Ave",
+                "category": null,
+                "folder": "Section #2 - Megan Court to Melbourne Rd",
+                "minimum_distance_m": 35.63,
+                "coverage": {
+                  "3": 0.0,
+                  "10": 0.0,
+                  "20": 0.0
+                }
+              },
+              {
+                "id": "kml:2aadbe2a3cb83d0e0212",
+                "name": "Section 2B: Holmes Ave to Park Street (Rio Road)",
+                "section": "Section 2B: Holmes Ave to Park Street (Rio Road)",
+                "category": null,
+                "folder": "Section #2 - Megan Court to Melbourne Rd",
+                "minimum_distance_m": 55.2,
+                "coverage": {
+                  "3": 0.0,
+                  "10": 0.0,
+                  "20": 0.0
+                }
+              }
+            ]
+          }
+        },
+        "recommendation": "Include as distinct City corridor if the source/access interpretation is accepted; keep RT intact. No geometric redundancy with either current or official RT."
+      },
+      {
+        "feature_id": "city:710",
+        "length_m": 415.5,
+        "comparison": {
+          "current_rt": {
+            "coverage": {
+              "1": 0.0606,
+              "3": 0.1517,
+              "5": 0.206,
+              "10": 0.337,
+              "20": 0.4529,
+              "30": 0.5654,
+              "50": 0.9446,
+              "100": 1
+            },
+            "minimum_distance_m": 0.0,
+            "sampled_distances_m": {
+              "interval": 1,
+              "median": 27.96,
+              "p90": 41.24,
+              "maximum": 60.78
+            },
+            "start_distance_m": 60.78,
+            "end_distance_m": 5.88,
+            "matches": [
+              {
+                "id": "0c6be5ccde92ea34e627f596564cc7ee",
+                "name": "River North Trail",
+                "section": "River North Trail - Section 1A",
+                "category": "river-north",
+                "folder": "RTF River North Trail",
+                "minimum_distance_m": 0.0,
+                "coverage": {
+                  "3": 0.1245,
+                  "10": 0.2044,
+                  "20": 0.335
+                }
+              },
+              {
+                "id": "faeb225f490c12b1b09fc82126bcb69e",
+                "name": "River North Trail",
+                "section": "RTF River North Trail - Section 1A",
+                "category": "river-north",
+                "folder": "RTF River North Trail",
+                "minimum_distance_m": 0.0,
+                "coverage": {
+                  "3": 0.0272,
+                  "10": 0.1326,
+                  "20": 0.1597
+                }
+              },
+              {
+                "id": "50d9d9245e7253b9d4d2eb9147d5d528",
+                "name": "Rivanna Trail",
+                "section": "Section 2A: Megan Court to Holmes Ave",
+                "category": "main",
+                "folder": "Section #2 - Megan Court to Melbourne Rd",
+                "minimum_distance_m": 13.87,
+                "coverage": {
+                  "3": 0.0,
+                  "10": 0.0,
+                  "20": 0.0706
+                }
+              }
+            ]
+          },
+          "official_rt": {
+            "coverage": {
+              "1": 0.0608,
+              "3": 0.1517,
+              "5": 0.206,
+              "10": 0.337,
+              "20": 0.4529,
+              "30": 0.5654,
+              "50": 0.9446,
+              "100": 1
+            },
+            "minimum_distance_m": 0.0,
+            "sampled_distances_m": {
+              "interval": 1,
+              "median": 27.96,
+              "p90": 41.24,
+              "maximum": 60.78
+            },
+            "start_distance_m": 60.78,
+            "end_distance_m": 5.88,
+            "matches": [
+              {
+                "id": "kml:09f45c19c82b4afd049c",
+                "name": "River North Trail - Section 1A",
+                "section": "River North Trail - Section 1A",
+                "category": null,
+                "folder": "RTF River North Trail",
+                "minimum_distance_m": 0.0,
+                "coverage": {
+                  "3": 0.1245,
+                  "10": 0.2044,
+                  "20": 0.335
+                }
+              },
+              {
+                "id": "kml:edbe496c0d67de2d31de",
+                "name": "RTF River North Trail - Section 1A",
+                "section": "RTF River North Trail - Section 1A",
+                "category": null,
+                "folder": "RTF River North Trail",
+                "minimum_distance_m": 0.0,
+                "coverage": {
+                  "3": 0.0272,
+                  "10": 0.1326,
+                  "20": 0.1597
+                }
+              },
+              {
+                "id": "kml:016190e572c23347e09a",
+                "name": "Section 2A: Megan Court to Holmes Ave",
+                "section": "Section 2A: Megan Court to Holmes Ave",
+                "category": null,
+                "folder": "Section #2 - Megan Court to Melbourne Rd",
+                "minimum_distance_m": 13.87,
+                "coverage": {
+                  "3": 0.0,
+                  "10": 0.0,
+                  "20": 0.0706
+                }
+              },
+              {
+                "id": "kml:35ca686c4521ad6ce3bc",
+                "name": "RTF River North TR #1 (road walk)",
+                "section": "RTF River North TR #1 (road walk)",
+                "category": null,
+                "folder": "RTF River North Trail",
+                "minimum_distance_m": 50.88,
+                "coverage": {
+                  "3": 0.0,
+                  "10": 0.0,
+                  "20": 0.0
+                }
+              }
+            ]
+          }
+        },
+        "recommendation": "Do not treat the whole feature as redundant. Consider its western portion through the first River North junction as a separate addition; review the eastern overlapping portion separately. No automatic trim or approval."
+      }
+    ],
+    "possible_710_split": {
+      "at_m": 247.55,
+      "coordinate": {
+        "lat": 38.04713983,
+        "lng": -78.45709817
+      },
+      "matched_route": "River North Trail - Section 1A",
+      "remaining_feature_m": 167.94,
+      "status": "possible review split point only; no trim has been made"
+    },
+    "status": "Resolved: user approved both full City709 and710 geometries; defer overlap cleanup. Earlier partial-trim recommendation is superseded."
+  },
+  "clarifications": [
+    {
+      "recorded_at": "2026-11-03T03:25:37.026530Z",
+      "user_instruction": "Ah ok yes, include City 709 and 710 it's a separate trail I missed, we can clean up the overlap another time.",
+      "feature_ids": [
+        "city:709",
+        "city:710"
+      ],
+      "scope": "Include both full geometries; no overlap trimming or changes to Rivanna."
+    }
+  ],
+  "effective_export_hash": "16fb73bbd5e53d10845d1cc1d569eaa36981587415aa55bfe81a937f8ca629b4",
+  "effective_decisions": {
+    "corridor-hydraulic-road-city-4521": {
+      "decision": "keep-existing",
+      "dataset": null,
+      "feature_ids": [
+        "city:4521"
+      ],
+      "note": ""
+    },
+    "corridor-unnamed-trail-city-3284": {
+      "decision": "keep-existing",
+      "dataset": null,
+      "feature_ids": [
+        "city:3284"
+      ],
+      "note": ""
+    },
+    "corridor-washington-park-ramp-city-4524": {
+      "decision": "keep-existing",
+      "dataset": null,
+      "feature_ids": [
+        "city:4524"
+      ],
+      "note": ""
+    },
+    "corridor-meadowcreek-city-709": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:709"
+      ],
+      "note": "This isn't just redundant with the Rivanna Trail layer is it?\nResolved in chat: include the entire City trail; defer overlap cleanup."
+    },
+    "corridor-rugby-avenue-city-2210": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:2210"
+      ],
+      "note": ""
+    },
+    "washington-park": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:4117"
+      ],
+      "note": ""
+    },
+    "azalea-park-west": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:3267"
+      ],
+      "note": ""
+    },
+    "corridor-meadowcreek-city-710": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:710"
+      ],
+      "note": "Looks redundant with Rivanna Trail layer?\nResolved in chat: include the entire City trail; defer overlap cleanup."
+    },
+    "corridor-quarry-city-3277": {
+      "decision": "keep-existing",
+      "dataset": null,
+      "feature_ids": [
+        "city:3277"
+      ],
+      "note": ""
+    },
+    "corridor-quarry-public-works-city-3276": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:3276"
+      ],
+      "note": ""
+    },
+    "corridor-quarry-mid-ridge-city-3715": {
+      "decision": "keep-existing",
+      "dataset": null,
+      "feature_ids": [
+        "city:3715"
+      ],
+      "note": ""
+    },
+    "jordan-park": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:4121"
+      ],
+      "note": ""
+    },
+    "corridor-lochlyn-lane-link-city-3291": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:3291"
+      ],
+      "note": ""
+    },
+    "corridor-quarry-public-works-city-4118": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:4118"
+      ],
+      "note": ""
+    },
+    "corridor-rock-creek-city-3711": {
+      "decision": "keep-existing",
+      "dataset": null,
+      "feature_ids": [
+        "city:3711"
+      ],
+      "note": "Looks redundant with RTF"
+    },
+    "corridor-route-20-interstate-city-4119": {
+      "decision": "keep-existing",
+      "dataset": null,
+      "feature_ids": [
+        "city:4119"
+      ],
+      "note": ""
+    },
+    "corridor-unnamed-trail-city-3713": {
+      "decision": "keep-existing",
+      "dataset": null,
+      "feature_ids": [
+        "city:3713"
+      ],
+      "note": ""
+    },
+    "pen-park": {
+      "decision": "include",
+      "dataset": null,
+      "feature_ids": [
+        "city:3288"
+      ],
+      "note": ""
+    }
+  },
+  "publication_approval": {
+    "recorded_at": "2026-11-03T03:29:46.833520Z",
+    "user_instruction": "Go ahead and commit and get this pushed while I work on the Rivanna review",
+    "approved_plan_hash": "154934a6c42f08d608805cde4f38f28d067c11274684b642aa7ad11099528b69",
+    "scope": "10 selected City additions, including full709/710. Existing City features and Rivanna remain unchanged."
+  }
+}
