@@ -40,7 +40,7 @@
     "heyward_saddle_connector": "User supplied three northern junction points and explicitly excluded the leg descending toward Round Top. Join nearby existing endpoints and retain the original continuation northeast of the third point."
   },
   "policy_hash": "5d0170242935ef205ae603191ca6a780a56b624be5af4659b8c548429cfd5da8",
-  "publication_status": "publishing",
+  "publication_status": "published_and_verified",
   "style_verification": {
     "checked_at": "2026-11-03T00:40:33.797535Z",
     "last_trail_line_layers": [
@@ -646,5 +646,186 @@
     "user_instruction": "Ok everything in the consolidation looks good. Go ahead and commit to that.",
     "manifest_hash": "680b63bedc33243e52c1d63d4b8640e515d3277a568d0328b11e3de84ccfe36d",
     "scope": "Reviewed City/County/Strava consolidation and retirement of superseded Ragged display layers, with full Rivanna retained and the corrected northern connector."
+  },
+  "publication_receipt": {
+    "manifest_hash": "680b63bedc33243e52c1d63d4b8640e515d3277a568d0328b11e3de84ccfe36d",
+    "status": "published",
+    "finished_at": "2026-11-03T02:47:09.650348Z",
+    "datasets": [
+      {
+        "target": "city",
+        "upload_id": "cmw03429900ew1pjtkbdi0cwm",
+        "approval_hash": "82acc14970dea4a376434c6237c616b52c9603042bd1fc1e187db839eed4284f",
+        "stored_hash": "930e8e3af1efed8ceedace8baed955701ef3a17f9fe60b13e6f8aa8233128b36",
+        "finished_at": "2026-11-03T02:44:55.448177Z"
+      },
+      {
+        "target": "albemarle",
+        "upload_id": "cmw03570p037d1oms38jrd5nj",
+        "approval_hash": "d05d8bdda664fc60d1bab46897ee83d4848bdf41ba6e1caa8e2379fa9796c41e",
+        "stored_hash": "5b6dd79ce80d0aa357a75ac4f746dcf3fa30af4af9abd6015a33312746210f7f",
+        "finished_at": "2026-11-03T02:45:48.954670Z"
+      },
+      {
+        "target": "strava",
+        "upload_id": "cmw0369392p4h1mnthsb3uv43",
+        "approval_hash": "95e4d1a35da467604f489686b31d48fe6965a8a1bb3d119192a1480cad027b65",
+        "stored_hash": "461536e2d83b31d06de1947eccdc263598c48b2ef224844ae817084e4228b639",
+        "finished_at": "2026-11-03T02:46:37.322862Z"
+      }
+    ],
+    "style": {
+      "approval_hash": "680b63bedc33243e52c1d63d4b8640e515d3277a568d0328b11e3de84ccfe36d",
+      "started_at": "2026-11-03T02:47:08.451615Z",
+      "state": "published",
+      "hide_layers": [
+        "ragged-mtn-trail-fringe",
+        "ragged-mtn-trail"
+      ],
+      "archived_datasets": [
+        "ckfh5qbi7380826oij568hhbg"
+      ],
+      "protected_networks_unchanged": true,
+      "completed": [
+        {
+          "version": "draft",
+          "response_hash": "0e134f4f6c4773ae048155e7ac7ce561229546d55cb15100261fa545f759ca4c"
+        },
+        {
+          "version": "published",
+          "response_hash": "c15d191f2a4c2470e6c0456b79033e15546f1cfb95707048c46621587efd83ab"
+        }
+      ],
+      "finished_at": "2026-11-03T02:47:09.650348Z"
+    },
+    "render_verification": {
+      "checked_at": "2026-11-03T02:49:10.894Z",
+      "style": {
+        "hidden": true,
+        "rivannaOnTop": true,
+        "checked_at": "2026-11-03T02:50:49.092Z",
+        "style_request": "optimize=false",
+        "ordinary_style_url_cache_pending": true
+      },
+      "city": [
+        {
+          "id": "city:3076",
+          "rendered": 4
+        },
+        {
+          "id": "city:3077",
+          "rendered": 8
+        },
+        {
+          "id": "city:3132",
+          "rendered": 4
+        },
+        {
+          "id": "city:3266",
+          "rendered": 4
+        },
+        {
+          "id": "city:3270",
+          "rendered": 8
+        },
+        {
+          "id": "city:3271",
+          "rendered": 8
+        },
+        {
+          "id": "city:3272",
+          "rendered": 8
+        },
+        {
+          "id": "city:3273",
+          "rendered": 12
+        },
+        {
+          "id": "city:3274",
+          "rendered": 12
+        },
+        {
+          "id": "city:3275",
+          "rendered": 4
+        },
+        {
+          "id": "city:3282",
+          "rendered": 8
+        },
+        {
+          "id": "city:3306",
+          "rendered": 8
+        },
+        {
+          "id": "city:3307",
+          "rendered": 8
+        },
+        {
+          "id": "city:3710",
+          "rendered": 4
+        },
+        {
+          "id": "city:4120",
+          "rendered": 4
+        }
+      ],
+      "connector": [
+        {
+          "name": "western connector",
+          "point": [
+            -78.55152616462672,
+            38.0323538769
+          ],
+          "expected": true,
+          "rendered": true
+        },
+        {
+          "name": "eastern connector",
+          "point": [
+            -78.54957814774819,
+            38.03245662623232
+          ],
+          "expected": true,
+          "rendered": true
+        },
+        {
+          "name": "removed Round Top descent",
+          "point": [
+            -78.5540525,
+            38.0311965
+          ],
+          "expected": false,
+          "rendered": false
+        }
+      ]
+    },
+    "preserved_datasets": {
+      "checked_at": "2026-11-03T02:50:47.212552Z",
+      "results": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "features": 65,
+          "hash": "83fcc380dd5e7a4859b05f4a9b0302663567116d675cc13b74625e0a8f1a9a81",
+          "unchanged": true
+        },
+        {
+          "dataset": "ckfh5qbi7380826oij568hhbg",
+          "features": 4,
+          "hash": "82c9930c9c2adaf70b1b80b295ccfb9314aa4f491ce987587bf5495b93e6410b",
+          "unchanged": true
+        }
+      ]
+    },
+    "style_readback": {
+      "published": {
+        "hash": "c15d191f2a4c2470e6c0456b79033e15546f1cfb95707048c46621587efd83ab",
+        "request": "optimize=false"
+      },
+      "draft": {
+        "hash": "0e134f4f6c4773ae048155e7ac7ce561229546d55cb15100261fa545f759ca4c",
+        "request": "optimize=false"
+      }
+    },
+    "verified_at": "2026-11-03T02:51:29.924930Z"
   }
 }

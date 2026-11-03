@@ -212,6 +212,11 @@ def build_consolidation_review(manifest_path, review_path, policy_path, inventor
     selected = {p['id'] for p in policy['parks']}
     payload = {'manifest': manifest, 'policy': policy, 'datasets': datasets, 'parks': [p for p in report['parks'] if p['id'] in selected],
                'public_token': token, 'style': f"mapbox://styles/{settings['username']}/{settings['style_id']}"}
+    receipt_path = Path(manifest_path).parent / 'publication-receipt.json'
+    if receipt_path.exists():
+        receipt = read_json(receipt_path)
+        if receipt.get('manifest_hash') == digest(manifest):
+            payload['publication'] = receipt
     output = Path(output); output.mkdir(parents=True, exist_ok=True)
     write_json(output / 'review.json', payload)
     for filename in ('index.html', 'review.js', 'review.css'):

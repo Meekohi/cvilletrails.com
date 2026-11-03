@@ -31,6 +31,7 @@ function updateView(){if(!ready)return;for(const d of data.datasets)map.getSourc
 async function init(){
  setupPointPicker();
  const response=await fetch('review.json');if(!response.ok)throw Error('Could not load prepared preview');data=await response.json();
+ if(data.publication?.status==='published'){$('publication-status').textContent='Published to Mapbox';$('view').options[0].textContent='Published consolidation';}
  $('park').replaceChildren(...data.parks.map(p=>new Option(p.name,p.id)));const requested=new URLSearchParams(location.search).get('park');$('park').value=data.parks.some(p=>p.id===requested)?requested:'quarry-park';$('park').onchange=selectPark;$('view').onchange=updateView;
  $('boundaries').onchange=()=>{if(ready)map.setLayoutProperty('boundary-line','visibility',$('boundaries').checked?'visible':'none');};
  $('changes').replaceChildren(...data.datasets.map(d=>{const p=document.createElement('p');p.textContent=`${d.target}: ${d.changes.added} added, ${d.changes.changed} changed, ${d.changes.deleted} removed from display${d.publication_method==='retire-style-layers-keep-dataset'?' (dataset archived)':''}`;return p;}));
@@ -41,6 +42,9 @@ async function init(){
    const source=`preview-${d.dataset}`;map.addSource(source,{type:'geojson',data:d[$('view').value]});
    for(const layer of original.filter(l=>l['source-layer']===d.source_layer)){
     const clone=structuredClone(layer);clone.id=`preview-${layer.id}`;clone.source=source;delete clone['source-layer'];
+    // The saved "before" dataset must remain inspectable after its live layers
+    // are retired. The empty "after" source hides those tracks in the new view.
+    if(data.manifest.style_proposal?.hide_layers.includes(layer.id))clone.layout={...clone.layout,visibility:'visible'};
     map.addLayer(clone,layer.id);map.setLayoutProperty(layer.id,'visibility','none');
    }
   }
