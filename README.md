@@ -8,7 +8,7 @@ Context titles use `context_mode` and optional `context_title` / `context_min_zo
 
 ## Run locally
 
-Python 3.12+ and Node 22+ are sufficient; the app and maintenance tools have no runtime package dependencies.
+Python 3.12+ and Node 22+ are sufficient for local development, source checks and review. Live tileset publication additionally requires Tippecanoe and the AWS CLI (see below).
 
 ```sh
 npm run build
@@ -110,7 +110,7 @@ python3 -m maintenance plan city .trail-state/candidates/city/reconciled.geojson
 
 Reconciliation matches unique upstream IDs, retains existing Mapbox feature IDs and curated name/color properties, and preserves unmatched old features. Conflicting properties and unmatched features are reported for review. It also preserves curated coordinates when topology is identical and every coordinate differs by at most 0.000001 degrees (roughly 0.11 m), avoiding changes caused only by projection roundoff. New fields and substantive geometry edits remain in the candidate. This is a conservative first-pass merge, not proof of correct correspondence: review additions, geometry, permissions, and possible overlap with other trail datasets before accepting.
 
-The first City comparison produced 133 additions, 10 substantive geometry edits, and retained 13 unmatched curated features. It is a pending proposal, not a published update. Counts will change with upstream data. The existing City label layer uses the older `City_Trails` source layer while lines use `City_Trails_2021-10-13`; review that label migration and overlaps with dedicated park datasets before publishing the large import.
+The first City comparison produced 133 additions, 10 substantive geometry edits, and retained 13 unmatched curated features. Nine reviewed geometry edits were published on November 2, 2026; the full import remains pending. The publication receipt is in `pipelines/city/reviews/2026-11-02-geometry.json`. Counts will change with upstream data. The existing City label layer uses the older `City_Trails` source layer while lines use `City_Trails_2021-10-13`; review that label migration and overlaps with dedicated park datasets before publishing the large import.
 
 A plan embeds the complete before/after datasets, evidence reference, target, ingest report, change lists, and an approval hash. For visual review:
 
@@ -142,7 +142,15 @@ python3 -m maintenance apply .trail-state/plans/city.json --approve FULL_APPROVA
 
 Choose one apply command; a plan cannot be reused after application. `--publish` starts the Mapbox upload and polls processing status. Without it, use Studio's export/publish control afterwards. Existing IDs and source-layer names are retained; no new tileset is created and the style is not rewritten. The current style references 15 tilesets, so routine updates must reuse those targets. Consolidating several datasets into a new standardized tileset is a separate future style migration; the normalized schema makes that repeatable.
 
+Publishing requires **Tippecanoe** and the **AWS CLI** on PATH (`TIPPECANOE` may specify an alternate executable). These are not needed for source checks, review, or website builds. The publisher builds MBTiles with the configured source-layer name, validates the archive, stages it using short-lived credentials from Mapbox, and replaces the existing tileset. It uses zooms 0–16 (the account’s Uploads API limit) with no line simplification or feature dropping; higher map zooms overzoom those tiles. AWS account credentials are not required. Direct dataset export is deliberately avoided: the first live test produced an internal layer called `original`, incompatible with the existing style. Supplying an explicit MBTiles layer fixes this and keeps the style unchanged.
+
 The publisher verifies the target layer, validates geometry, checks the approval hash, and refuses a dataset changed since review. It saves a complete backup and a per-write journal, paces writes below the API limit, and verifies the resulting dataset before starting tileset processing. Mapbox feature edits are not transactional: avoid simultaneous Studio editing during application. A network failure can leave a partially edited dataset; inspect `.trail-state/publishes/`. Do not blindly retry an attempted plan. Create a new plan against the current remote state, using the saved backup as the candidate to restore it. If an upload is still processing, use `python3 -m maintenance upload-status UPLOAD_ID`; an upload timeout does not mean Mapbox cancelled it.
+
+Dataset reads use unique cache keys because the first live test returned cached data despite `Cache-Control: no-cache`. That test also established that Mapbox truncates written coordinates toward zero to six decimal places. Verification accepts the exact proposal or that specific storage conversion for written features only; all properties, feature IDs, topology and untouched features must still match. The journal records the actual stored hash.
+
+If all feature writes completed but publication stopped, use `python3 -m maintenance resume-publish PLAN_PATH --approve FULL_APPROVAL_HASH`. This checks the original plan, backup, complete write journal and current dataset before uploading, without rewriting features. An existing upload ID is polled instead of submitting another upload. If the upload POST's outcome is unknown, it stops for inspection of recent Mapbox uploads rather than risking a duplicate submission. Partial feature writes still require reconciliation.
+
+For a completed or failed upload whose internal layer does not match the configured layer, `resume-publish ... --repair-layer` verifies the reviewed dataset again, records the prior upload, and builds a replacement with the explicit layer name. It refuses this repair while an upload is still processing or when the expected layer is already present. Successful publication requires both upload completion and a matching layer referenced by the current style.
 
 Tileset publication changes the map used by the existing website after Mapbox cache propagation; it does not require a website deploy. Website code and notice changes use GitHub Pages separately.
 
@@ -179,4 +187,4 @@ Optional browser smoke test: install Playwright/Chromium in your development env
 
 ## API references
 
-[Mapbox legacy datasets](https://docs.mapbox.com/help/glossary/dataset/) remain accessible via the [Datasets API](https://docs.mapbox.com/api/maps/datasets/). The publisher uses the [Uploads API's dataset export](https://docs.mapbox.com/api/maps/uploads/); new tiling architecture should consider MTS separately. [Geolocation controls](https://docs.mapbox.com/mapbox-gl-js/api/markers/) document tracking and heading behavior. Optional API reviews use [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses) and [PDF file inputs](https://developers.openai.com/api/docs/guides/file-inputs).
+[Mapbox legacy datasets](https://docs.mapbox.com/help/glossary/dataset/) remain accessible via the [Datasets API](https://docs.mapbox.com/api/maps/datasets/). The publisher uses the [Uploads API's staged-file upload](https://docs.mapbox.com/api/maps/uploads/); new tiling architecture should consider MTS separately. [Geolocation controls](https://docs.mapbox.com/mapbox-gl-js/api/markers/) document tracking and heading behavior. Optional API reviews use [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses) and [PDF file inputs](https://developers.openai.com/api/docs/guides/file-inputs).

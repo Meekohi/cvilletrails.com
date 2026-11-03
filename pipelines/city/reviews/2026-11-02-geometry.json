@@ -98,7 +98,7 @@
     "unreviewed_items": 323,
     "unreviewed_additions": 133
   },
-  "publication_status": "not_published",
+  "publication_status": "published",
   "prepared_plan": {
     "path": ".trail-state/plans/city-accepted.json",
     "approval_hash": "4c90d3d266abf547f66dc2c9e12e19ec676c06a251d20b033bfd79d2071f4d37",
@@ -107,6 +107,90 @@
   "verification": {
     "fresh_mapbox_baseline_matches_review": true,
     "bridge_connection_survives_full_ingest_and_reconciliation": true,
-    "unit_tests_passed": 25
+    "unit_tests_passed": 35,
+    "checked_at": "2026-11-03T00:08:42.422727Z",
+    "mode": "mapbox-six-decimal-truncation",
+    "stored_hash": "1b74d37efb349af752ee78fd406a4db84a556d44623be3e232565bbde4e8236a",
+    "feature_count": 200,
+    "unchanged_features": 191,
+    "bridge_join_exact": true,
+    "maintenance_road_unchanged": true,
+    "style_unchanged": true,
+    "upload_complete": true,
+    "source_layers": [
+      "City_Trails_2021-10-13"
+    ],
+    "rendered_features": {
+      "checked_at": "2026-11-03T00:08:50.022Z",
+      "results": [
+        {
+          "source_feature_id": "13",
+          "rendered_segments": 12
+        },
+        {
+          "source_feature_id": "718",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "597",
+          "rendered_segments": 8
+        },
+        {
+          "source_feature_id": "727",
+          "rendered_segments": 8
+        },
+        {
+          "source_feature_id": "633",
+          "rendered_segments": 4
+        },
+        {
+          "source_feature_id": "3056",
+          "rendered_segments": 12
+        },
+        {
+          "source_feature_id": "261",
+          "rendered_segments": 8
+        },
+        {
+          "source_feature_id": "19",
+          "rendered_segments": 8
+        },
+        {
+          "source_feature_id": "591",
+          "rendered_segments": 8
+        }
+      ]
+    }
+  },
+  "publication": {
+    "published_at": "2026-11-03T00:07:05.113357Z",
+    "target": {
+      "id": "city",
+      "dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "tileset": "meekohi.ckuppnp9h534y23pyswjd7n1a-0cyhg",
+      "source_layer": "City_Trails_2021-10-13"
+    },
+    "upload_id": "cmvzxh23c1fyj1pnmqgvuozki",
+    "stored_hash": "1b74d37efb349af752ee78fd406a4db84a556d44623be3e232565bbde4e8236a",
+    "storage_conversion": "mapbox-six-decimal-truncation",
+    "method": "Explicitly named MBTiles via Uploads API",
+    "maximum_tile_zoom": 16,
+    "previous_uploads": [
+      {
+        "upload_id": "cmvzx9zkm2n521pnt6x0yzmtv",
+        "layers": [
+          "original"
+        ],
+        "reason": "source-layer mismatch"
+      },
+      {
+        "upload_id": "cmvzxez3z07mt1no3f0aj86f1",
+        "layers": [
+          "original"
+        ],
+        "reason": "source-layer mismatch",
+        "error": "Maxzoom exceeded for mbtiles file. There is a max zoom limit of 16 but tiles up to zoom level 18 were found. If you need support for 1cm tilesets please reach out to support."
+      }
+    ]
   }
 }

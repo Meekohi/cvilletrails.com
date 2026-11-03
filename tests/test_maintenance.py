@@ -7,7 +7,7 @@ from unittest.mock import patch
 from maintenance.common import digest, read_json, write_json, configs
 from maintenance.geo import validate_collection, canonical, changes, normalize, fingerprint
 from maintenance.ingest import fetch_arcgis, run_adapter
-from maintenance.mapbox import make_plan, apply_plan
+from maintenance.mapbox import Mapbox, make_plan, apply_plan, resume_publish, verify_written, stored_coordinates
 from maintenance.monitor import check, extract
 from maintenance.reconcile import reconcile
 from maintenance.review import record_review
@@ -135,11 +135,12 @@ class FakeMapbox:
     def style(self): return {'sources': {'composite': {'url': 'mapbox://owner.existing'}}, 'layers': [{'source-layer': 'Trails'}]}
     def write_feature(self, dataset, f):
         self.writes.append(f['id'])
-        self.data['features'] = [old for old in self.data['features'] if old['id'] != f['id']] + [f]
+        self.data['features'] = [old for old in self.data['features'] if old['id'] != f['id']] + [copy.deepcopy(f)]
     def delete_feature(self, dataset, fid):
         self.writes.append(fid)
         self.data['features'] = [f for f in self.data['features'] if f['id'] != fid]
-    def upload(self, dataset, tileset):
+    def check_publish_tools(self): pass
+    def upload(self, dataset, tileset, source_layer, stored_hash):
         self.uploads.append(tileset)
         return {'id': 'upload', 'complete': True, 'error': None}
 
@@ -187,6 +188,123 @@ class PublishingTests(unittest.TestCase):
     def test_retired_style_target_cannot_be_published(self):
         with patch.object(self.client, 'style', return_value={'sources': {}, 'layers': []}):
             with self.assertRaisesRegex(ValueError, 'no longer uses'): make_plan(self.client, self.target, self.after, 'evidence')
+
+    def test_reads_use_unique_cache_keys(self):
+        client = Mapbox.__new__(Mapbox)
+        client.token = 'test'
+        with patch('maintenance.mapbox.request', return_value=(b'{}', {}, 200)) as request:
+            client.call('datasets/v1/test/data/features')
+            client.call('datasets/v1/test/data/features')
+            client.call('styles/v1/test/style')
+        urls = [call.args[0] for call in request.call_args_list]
+        self.assertNotEqual(urls[0], urls[1])
+        self.assertTrue(all('fresh=' in url for url in urls[:2]))
+        self.assertNotIn('fresh=', urls[2])
+
+    def test_storage_truncation_is_allowed_only_for_written_geometry(self):
+        self.client.data['features'].append(feature('untouched'))
+        self.after['features'].append(feature('untouched'))
+        self.after['features'][0]['geometry']['coordinates'][0] = [-78.12345699, 38.12345699]
+        plan = make_plan(self.client, self.target, self.after, 'precision test')
+        stored = copy.deepcopy(self.after)
+        stored['features'][0]['geometry']['coordinates'] = stored_coordinates(stored['features'][0]['geometry']['coordinates'])
+        self.assertEqual(stored['features'][0]['geometry']['coordinates'][0], [-78.123456, 38.123456])
+        self.assertEqual(verify_written(plan, stored)['mode'], 'mapbox-six-decimal-truncation')
+        for kind in ('property', 'vertex', 'untouched', 'missing'):
+            bad = copy.deepcopy(stored)
+            if kind == 'property': bad['features'][0]['properties']['color'] = 'blue'
+            elif kind == 'vertex': bad['features'][0]['geometry']['coordinates'][0][0] += .000001
+            elif kind == 'untouched': bad['features'][1]['geometry']['coordinates'][0][0] += .0000001
+            else: bad['features'].pop()
+            with self.assertRaisesRegex(ValueError, 'Post-write verification failed'): verify_written(plan, bad)
+
+    def test_resume_verifies_writes_without_repeating_them(self):
+        with tempfile.TemporaryDirectory() as tmp, patch('maintenance.mapbox.target_by_id', return_value=self.target), patch('maintenance.mapbox.time.sleep'):
+            state = Path(tmp)
+            apply_plan(self.client, self.plan, self.plan['approval_hash'], state_dir=state)
+            writes = self.client.writes[:]
+            result = resume_publish(self.client, self.plan, self.plan['approval_hash'], state)
+            self.assertEqual(result['state'], 'published')
+            self.assertEqual(self.client.writes, writes)
+            resume_publish(self.client, self.plan, self.plan['approval_hash'], state)
+            self.assertEqual(len(self.client.uploads), 1)
+
+    def test_resume_rejects_partial_writes_and_intervening_edits(self):
+        with tempfile.TemporaryDirectory() as tmp, patch('maintenance.mapbox.target_by_id', return_value=self.target), patch('maintenance.mapbox.time.sleep'):
+            state = Path(tmp)
+            result = apply_plan(self.client, self.plan, self.plan['approval_hash'], state_dir=state)
+            path = state / 'publishes' / f"{self.plan['approval_hash']}.json"
+            partial = {**result, 'completed': []}
+            write_json(path, partial)
+            with self.assertRaisesRegex(ValueError, 'incomplete'): resume_publish(self.client, self.plan, self.plan['approval_hash'], state)
+            write_json(path, result)
+            self.client.data['features'][0]['properties']['name'] = 'Studio edit'
+            with self.assertRaisesRegex(ValueError, 'Post-write verification failed'): resume_publish(self.client, self.plan, self.plan['approval_hash'], state)
+            self.assertFalse(self.client.uploads)
+
+    def test_uncertain_upload_submission_cannot_be_repeated(self):
+        with tempfile.TemporaryDirectory() as tmp, patch('maintenance.mapbox.target_by_id', return_value=self.target), patch('maintenance.mapbox.time.sleep'):
+            state = Path(tmp)
+            with patch.object(self.client, 'upload', side_effect=RuntimeError('connection lost')):
+                with self.assertRaises(RuntimeError): apply_plan(self.client, self.plan, self.plan['approval_hash'], publish=True, state_dir=state)
+            with self.assertRaisesRegex(ValueError, 'outcome is unknown'): resume_publish(self.client, self.plan, self.plan['approval_hash'], state)
+            self.assertFalse(self.client.uploads)
+
+    def test_resume_polls_existing_upload(self):
+        with tempfile.TemporaryDirectory() as tmp, patch('maintenance.mapbox.target_by_id', return_value=self.target), patch('maintenance.mapbox.time.sleep'):
+            state = Path(tmp)
+            result = apply_plan(self.client, self.plan, self.plan['approval_hash'], state_dir=state)
+            result.update(upload_id='existing', state='tileset-processing')
+            write_json(state / 'publishes' / f"{self.plan['approval_hash']}.json", result)
+            self.client.upload_status = lambda uid: {'id': uid, 'complete': True, 'error': None}
+            self.assertEqual(resume_publish(self.client, self.plan, self.plan['approval_hash'], state)['state'], 'published')
+            self.assertFalse(self.client.uploads)
+
+    def test_layer_repair_preserves_style_and_records_prior_upload(self):
+        with tempfile.TemporaryDirectory() as tmp, patch('maintenance.mapbox.target_by_id', return_value=self.target), patch('maintenance.mapbox.time.sleep'):
+            state = Path(tmp)
+            result = apply_plan(self.client, self.plan, self.plan['approval_hash'], state_dir=state)
+            result.update(upload_id='incompatible', state='tileset-processing')
+            write_json(state / 'publishes' / f"{self.plan['approval_hash']}.json", result)
+            self.client.upload_status = lambda uid: {'id': uid, 'complete': True, 'error': None}
+            with patch.object(self.client, 'tileset', side_effect=[{'vector_layers': [{'id': 'original'}]}, {'vector_layers': [{'id': 'Trails'}]}]):
+                repaired = resume_publish(self.client, self.plan, self.plan['approval_hash'], state, repair_layer=True)
+            self.assertEqual(repaired['state'], 'published')
+            self.assertEqual(repaired['previous_uploads'][0]['upload_id'], 'incompatible')
+            self.assertEqual(self.client.writes, ['a'])
+            self.assertEqual(self.client.uploads, ['owner.existing'])
+
+    def test_missing_publish_tools_stop_before_dataset_writes(self):
+        with patch('maintenance.mapbox.target_by_id', return_value=self.target), patch.object(self.client, 'check_publish_tools', side_effect=ValueError('missing tools')):
+            with self.assertRaisesRegex(ValueError, 'missing tools'): apply_plan(self.client, self.plan, self.plan['approval_hash'], publish=True)
+            self.assertFalse(self.client.writes)
+
+    def test_completed_upload_with_wrong_layer_is_not_success(self):
+        with tempfile.TemporaryDirectory() as tmp, patch('maintenance.mapbox.target_by_id', return_value=self.target), patch('maintenance.mapbox.time.sleep'):
+            state = Path(tmp)
+            with patch.object(self.client, 'tileset', side_effect=[{'vector_layers': [{'id': 'Trails'}]}, {'vector_layers': [{'id': 'original'}]}]):
+                with self.assertRaisesRegex(ValueError, 'source layer is absent'):
+                    apply_plan(self.client, self.plan, self.plan['approval_hash'], publish=True, state_dir=state)
+            journal = read_json(state / 'publishes' / f"{self.plan['approval_hash']}.json")
+            self.assertEqual(journal['state'], 'tileset-processing')
+            self.assertEqual(journal['upload_id'], 'upload')
+
+    def test_layer_repair_waits_for_processing_but_can_replace_failed_upload(self):
+        with tempfile.TemporaryDirectory() as tmp, patch('maintenance.mapbox.target_by_id', return_value=self.target), patch('maintenance.mapbox.time.sleep'):
+            state = Path(tmp)
+            result = apply_plan(self.client, self.plan, self.plan['approval_hash'], state_dir=state)
+            result.update(upload_id='failed-repair', state='tileset-processing')
+            write_json(state / 'publishes' / f"{self.plan['approval_hash']}.json", result)
+            self.client.upload_status = lambda uid: {'id': uid, 'complete': False, 'error': None}
+            with patch.object(self.client, 'tileset', return_value={'vector_layers': [{'id': 'original'}]}):
+                with self.assertRaisesRegex(ValueError, 'finished or failed'):
+                    resume_publish(self.client, self.plan, self.plan['approval_hash'], state, repair_layer=True)
+            self.assertFalse(self.client.uploads)
+            self.client.upload_status = lambda uid: {'id': uid, 'complete': False, 'error': 'Maxzoom exceeded'}
+            with patch.object(self.client, 'tileset', side_effect=[{'vector_layers': [{'id': 'original'}]}, {'vector_layers': [{'id': 'Trails'}]}]):
+                repaired = resume_publish(self.client, self.plan, self.plan['approval_hash'], state, repair_layer=True)
+            self.assertEqual(repaired['state'], 'published')
+            self.assertEqual(repaired['previous_uploads'][0]['error'], 'Maxzoom exceeded')
 
 
 class ConnectionTests(unittest.TestCase):

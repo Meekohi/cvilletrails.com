@@ -5,7 +5,7 @@ from pathlib import Path
 from .common import ROOT, STATE, configs, load_env, read_json, write_json
 from .ingest import run_adapter
 from .monitor import check
-from .mapbox import Mapbox, inventory, make_plan, apply_plan, target_by_id
+from .mapbox import Mapbox, inventory, make_plan, apply_plan, resume_publish, target_by_id
 from .site import approve_notice, build_site, validate_updates
 from .review import review_packet, record_review
 from .reconcile import reconcile
@@ -43,6 +43,10 @@ def main():
     apply.add_argument('plan', type=Path)
     apply.add_argument('--approve', required=True, help='Full approval_hash from the reviewed plan')
     apply.add_argument('--publish', action='store_true')
+    resume = commands.add_parser('resume-publish', help='Verify completed writes and resume tileset publication without rewriting features')
+    resume.add_argument('plan', type=Path)
+    resume.add_argument('--approve', required=True)
+    resume.add_argument('--repair-layer', action='store_true', help='Replace a completed incompatible upload with the explicitly named source layer')
     upload = commands.add_parser('upload-status')
     upload.add_argument('upload_id')
     notice = commands.add_parser('approve-notice', help='Add a reviewed LLM draft to the local website feed')
@@ -86,6 +90,8 @@ def main():
         print(json.dumps({'changes': {key: len(ids) for key, ids in plan['changes'].items()}, 'plan': str(args.output), 'approval_hash': plan['approval_hash']}, indent=2))
     elif args.command == 'apply':
         print(json.dumps(apply_plan(Mapbox(), read_json(args.plan), args.approve, args.publish), indent=2))
+    elif args.command == 'resume-publish':
+        print(json.dumps(resume_publish(Mapbox(), read_json(args.plan), args.approve, repair_layer=args.repair_layer), indent=2))
     elif args.command == 'upload-status':
         print(json.dumps(Mapbox().upload_status(args.upload_id), indent=2))
     elif args.command == 'approve-notice':
