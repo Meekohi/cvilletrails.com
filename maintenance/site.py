@@ -11,6 +11,34 @@ def timestamp(value):
     return date
 
 
+def validate_systems(systems):
+    from .geo import validate_collection
+    ids = {system['id'] for system in systems}
+    if len(ids) != len(systems): raise ValueError('Duplicate trail-system ID')
+    for system in systems:
+        b = system['bounds']
+        if len(b) != 4 or not (-180 <= b[0] < b[2] <= 180 and -90 <= b[1] < b[3] <= 90):
+            raise ValueError('Invalid trail-system bounds')
+        if not set(system.get('parent_ids', [])).issubset(ids) or system['id'] in system.get('parent_ids', []):
+            raise ValueError('Unknown or self-referencing parent system')
+        if system.get('boundary'):
+            if system['boundary']['type'] not in {'Polygon', 'MultiPolygon'}: raise ValueError('Context boundary must be a polygon')
+            validate_collection({'type':'FeatureCollection','features':[{'type':'Feature','id':system['id'],'properties':{},'geometry':system['boundary']}]})
+        if not system.get('visitor_info'): continue
+        sources = system['info_sources']
+        source_ids = {source['id'] for source in sources}
+        if len(source_ids) != len(sources): raise ValueError('Duplicate visitor-information source')
+        for source in sources:
+            url = urlparse(source['url'])
+            if url.scheme != 'https' or not url.netloc: raise ValueError('Visitor-information source must use HTTPS')
+        datetime.strptime(system['info_reviewed_on'], '%Y-%m-%d')
+        if not system.get('description_sources') or not set(system['description_sources']).issubset(source_ids):
+            raise ValueError('Description needs registered evidence sources')
+        for fact in system['visitor_info']:
+            if not fact.get('label') or not fact.get('value') or not fact.get('sources') or not set(fact['sources']).issubset(source_ids):
+                raise ValueError('Visitor fact needs text and registered evidence sources')
+
+
 def validate_updates(feed, systems):
     valid_systems = {system['id'] for system in systems}
     seen = set()
@@ -52,7 +80,9 @@ def build_site(output=ROOT / 'dist'):
     # Build from an allowlist: never serve the repo root or copy .env/state/backups.
     output = Path(output)
     if output.resolve() != (ROOT / 'dist').resolve(): raise ValueError('Build output must be the project dist directory')
-    validate_updates(read_json(ROOT / 'data/updates.json'), read_json(ROOT / 'data/systems.json'))
+    systems = read_json(ROOT / 'data/systems.json')
+    validate_systems(systems)
+    validate_updates(read_json(ROOT / 'data/updates.json'), systems)
     if output.exists(): shutil.rmtree(output)
     output.mkdir()
     for filename in ('index.html', 'CNAME'):

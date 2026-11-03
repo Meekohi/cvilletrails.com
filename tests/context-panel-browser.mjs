@@ -36,7 +36,7 @@ try {
   await move(monticello);await title('Saunders–Monticello Trails');await settled();
   assert.equal(await page.locator('#panel-title').textContent(),'Saunders–Monticello');
   assert.match(await page.locator('#panel-content').textContent(),/winding path/);
-  assert.match(await page.locator('#panel-content > .source-link').getAttribute('href'),/monticello.org/);
+  assert.match(await page.locator('.info-sources > .source-link').first().getAttribute('href'),/monticello.org/);
   assert.equal(await page.evaluate(()=>document.activeElement===window.__testMap.getCanvas()),true,'automatic refresh keeps map focus');
 
   // A second context arrives before the first fade-out finishes.

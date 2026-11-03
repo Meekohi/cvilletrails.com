@@ -1,4 +1,4 @@
-import { activeUpdates, visibleUpdates, featureName, safeLink, contextualSystem } from './data.js';
+import { activeUpdates, visibleUpdates, featureName, safeLink, contextualSystem, systemForFeature } from './data.js';
 
 const $ = id => document.getElementById(id);
 const state = { systems: [], updates: [], mode: null, systemId: null, scope: 'map', loaded: false, updatesLoaded: false, position: null };
@@ -110,12 +110,22 @@ function details(system, feature = null, focus = true) {
   if (feature && system) content.append(element('p', system.name, 'meta'));
   if (system) {
     content.append(element('p', system.description));
-    content.append(sourceLink(system.url, `${system.source_label} ↗`));
+    if (system.visitor_info?.length) {
+      const facts = element('dl', null, 'visitor-info');
+      for (const fact of system.visitor_info) facts.append(element('dt', fact.label), element('dd', fact.value));
+      content.append(facts);
+    }
+    const sources = element('div', null, 'info-sources');
+    for (const source of system.info_sources || [{url: system.url, label: system.source_label}]) {
+      sources.append(sourceLink(source.url, `${source.label} ↗`));
+    }
+    content.append(sources);
+    if (system.info_reviewed_on) content.append(element('p', `Official information checked ${new Date(system.info_reviewed_on + 'T12:00:00').toLocaleDateString(undefined, {month: 'short', day: 'numeric', year: 'numeric'})}.`, 'meta'));
     const actions = element('div', null, 'actions');
     const show = element('button', 'Show on map', 'action'); show.onclick = () => zoomTo(system);
     const news = element('button', 'Trail updates', 'action'); news.onclick = () => showUpdates(system.id);
     actions.append(show, news); content.append(actions);
-    const notices = activeUpdates(state.updates).filter(item => item.system_ids.includes(system.id));
+    const notices = visibleUpdates(activeUpdates(state.updates), state.systems, null, 'map', system.id);
     notices.forEach(item => content.append(notice(item)));
   } else {
     content.append(element('p', 'This trail is part of the curated map. More trail-system information is being added.'));
@@ -198,7 +208,7 @@ function initMap() {
     const features = map.queryRenderedFeatures([[event.point.x - pad, event.point.y - pad], [event.point.x + pad, event.point.y + pad]], { layers });
     const feature = features[0];
     if (!feature) return;
-    const system = state.systems.find(s => s.id === feature.properties.system_id) || state.systems.find(s => s.source_layers.includes(feature.sourceLayer));
+    const system = systemForFeature(state.systems, feature, [event.lngLat.lng, event.lngLat.lat]);
     details(system, feature);
   });
 }

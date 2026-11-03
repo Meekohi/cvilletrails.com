@@ -147,7 +147,7 @@ def check(pipeline=None, use_llm=False, state_dir=STATE, source_id=None):
                     after_text = extract((state_dir / snap['file']).read_bytes(), source['kind'])
                     record = {
                         'schema_version': 1, 'status': 'pending', 'pipeline_id': config['id'],
-                        'source': source, 'system_ids': config['system_ids'], 'checked_at': now(),
+                        'source': source, 'system_ids': source.get('system_ids', config['system_ids']), 'checked_at': now(),
                         'change_type': 'changed' if old else 'baseline', 'before': old, 'after': snap,
                         'diff': '\n'.join(difflib.unified_diff(before_text.splitlines(), after_text.splitlines(), fromfile='previous', tofile='current'))[:60_000],
                     }

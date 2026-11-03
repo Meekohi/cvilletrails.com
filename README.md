@@ -265,6 +265,14 @@ python3 -m maintenance approve-notice .trail-state/reviews/PIPELINE/REVIEW.json 
 
 This writes the local `data/updates.json` feed, ready for review in Git. It does not deploy. Notices are rendered as text, linked to their official source, and filtered by date and trail-system bounds. The first version uses system-level map relevance rather than distance from an individual trail segment. GPS is used locally; the report link includes coordinates in an email draft only after the user has enabled location tracking.
 
+## Trail-system information
+
+`data/systems.json` contains the location-aware infoboxes, concise visitor facts, official links, review dates, and a source ID for each fact. Small City parks use simplified official park polygons so shared trail layers resolve to the local park. Other networks use their curated trail extents and nearby rendered trails. These interface boundaries do not establish property access.
+
+The `visitor-info` pipeline monitors official hours, dog rules, trail uses and admission pages. Each source identifies its affected systems; it supplies review evidence, never trail geometry or automatic publication. Run `python3 -m maintenance check --pipeline visitor-info` for snapshots and review artifacts. The November 2026 catalog audit is in `pipelines/visitor-info/reviews/2026-11-03-catalog.json`. Its first fetch established 20 source baselines; UVA Hereford's page returned HTTP 403 and requires browser review. Unverified rules are omitted, and the conflicting Washington Park closing times are explicitly noted.
+
+With the built site served on port 8000, `node tests/system-info-browser.mjs` checks the 13 added contexts, official links, visitor facts, shared-layer selection and mobile layout. `node tests/context-panel-browser.mjs` checks synchronized title/panel fades.
+
 ## Automation and deployment
 
 - **Validate:** tests and an allowlisted website build on pushes and pull requests. Uploads a website preview artifact.

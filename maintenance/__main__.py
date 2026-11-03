@@ -6,7 +6,7 @@ from .common import ROOT, STATE, configs, load_env, read_json, write_json
 from .ingest import run_adapter, fetch_arcgis
 from .monitor import check
 from .mapbox import Mapbox, inventory, make_plan, apply_plan, resume_publish, target_by_id
-from .site import approve_notice, build_site, validate_updates
+from .site import approve_notice, build_site, validate_updates, validate_systems
 from .review import review_packet, record_review
 from .reconcile import reconcile
 from .review_map import build_review, reviewed_candidate
@@ -205,6 +205,7 @@ def main():
         record_review(args.review, args.assessment, args.reviewer)
         print('Saved chat review. Notices and map changes still require a separate publishing step.')
     elif args.command == 'validate':
+        validate_systems(read_json(ROOT / 'data/systems.json'))
         validate_updates(read_json(ROOT / 'data/updates.json'), read_json(ROOT / 'data/systems.json'))
         configs()
         print('Content and pipeline configuration loaded successfully')

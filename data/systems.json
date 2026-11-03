@@ -14,15 +14,47 @@
       "Rivanna_Trail"
     ],
     "url": "https://www.rivannatrails.org/Map",
-    "source_label": "Rivanna Trails Foundation",
+    "source_label": "Rivanna Trails Foundation maps",
     "context_mode": "trail",
-    "context_min_zoom": 14
+    "context_min_zoom": 14,
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "rtf-map",
+        "label": "Rivanna Trails Foundation maps",
+        "url": "https://www.rivannatrails.org/Map"
+      },
+      {
+        "id": "rtf-rules",
+        "label": "Rivanna Trail rules",
+        "url": "https://www.rivannatrails.org/Rules"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Dogs",
+        "value": "Dogs must be leashed.",
+        "sources": [
+          "rtf-rules"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Stay on the trail and respect adjacent private property. No motorized vehicles, camping or loitering.",
+        "sources": [
+          "rtf-rules"
+        ]
+      }
+    ],
+    "description_sources": [
+      "rtf-map"
+    ]
   },
   {
     "id": "ragged-mountain",
     "name": "Ragged Mountain",
     "area": "West of Charlottesville",
-    "description": "Wooded trails around Ragged Mountain Reservoir. Check the City’s current information and posted signs for trail access during reservoir work.",
+    "description": "Wooded walking trails around Ragged Mountain Reservoir. Check the City’s current construction information before heading toward the shoreline or dam.",
     "bounds": [
       -78.603,
       38.005,
@@ -30,12 +62,61 @@
       38.047
     ],
     "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail",
       "Ragged_Mountain_Trails"
     ],
-    "url": "https://charlottesville.gov/659/Trails",
-    "source_label": "Charlottesville Parks & Recreation",
+    "url": "https://www.charlottesville.gov/671/Visiting-the-Natural-Area",
+    "source_label": "Ragged Mountain visitor information",
     "context_mode": "area",
-    "context_title": "Ragged Mountain Trails"
+    "context_title": "Ragged Mountain Trails",
+    "parent_ids": [
+      "city"
+    ],
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "ragged-visit",
+        "label": "Ragged Mountain visitor information",
+        "url": "https://www.charlottesville.gov/671/Visiting-the-Natural-Area"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 7 a.m. to sunset.",
+        "sources": [
+          "ragged-visit"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "No pets; service dogs are welcome.",
+        "sources": [
+          "ragged-visit"
+        ]
+      },
+      {
+        "label": "Water access",
+        "value": "No swimming.",
+        "sources": [
+          "ragged-visit"
+        ]
+      },
+      {
+        "label": "Construction",
+        "value": "The City reports shoreline closures in sections and closure of the upper parking lot; use the lower Heyward lot and follow posted detours.",
+        "sources": [
+          "ragged-visit"
+        ]
+      }
+    ],
+    "description_sources": [
+      "ragged-visit"
+    ]
   },
   {
     "id": "monticello",
@@ -54,7 +135,46 @@
     "url": "https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail",
     "source_label": "Monticello trail guide",
     "context_mode": "area",
-    "context_title": "Saunders–Monticello Trails"
+    "context_title": "Saunders–Monticello Trails",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "monticello-guide",
+        "label": "Monticello trail guide",
+        "url": "https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail"
+      },
+      {
+        "id": "monticello-rules",
+        "label": "Monticello hours and trail rules",
+        "url": "https://www.monticello.org/visit/hiking-trails/trail-hours-faqs"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Sunrise to sunset; closed Thanksgiving, Christmas and during unsafe weather. Winter ice can delay opening.",
+        "sources": [
+          "monticello-rules"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Leashed dogs are welcome on trails and boardwalks.",
+        "sources": [
+          "monticello-rules"
+        ]
+      },
+      {
+        "label": "Bikes",
+        "value": "No e-bikes. Other bicycles: 10 mph maximum and yield to pedestrians. Boardwalks close to bikes when wet.",
+        "sources": [
+          "monticello-rules"
+        ]
+      }
+    ],
+    "description_sources": [
+      "monticello-guide"
+    ]
   },
   {
     "id": "city",
@@ -90,5 +210,4544 @@
     ],
     "url": "https://www.albemarle.org/government/parks-recreation/trails",
     "source_label": "Albemarle Parks & Recreation"
+  },
+  {
+    "id": "ivy-creek-natural-area",
+    "name": "Ivy Creek Natural Area",
+    "area": "Earlysville Road",
+    "parent_ids": [
+      "city",
+      "albemarle"
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.489053,
+            38.096649
+          ],
+          [
+            -78.48923,
+            38.097083
+          ],
+          [
+            -78.489692,
+            38.097282
+          ],
+          [
+            -78.490515,
+            38.097379
+          ],
+          [
+            -78.49087,
+            38.097298
+          ],
+          [
+            -78.491589,
+            38.09701
+          ],
+          [
+            -78.491895,
+            38.09709
+          ],
+          [
+            -78.492159,
+            38.097563
+          ],
+          [
+            -78.492545,
+            38.097924
+          ],
+          [
+            -78.492461,
+            38.098286
+          ],
+          [
+            -78.493042,
+            38.098229
+          ],
+          [
+            -78.493806,
+            38.098533
+          ],
+          [
+            -78.494584,
+            38.098919
+          ],
+          [
+            -78.494543,
+            38.099248
+          ],
+          [
+            -78.494108,
+            38.099681
+          ],
+          [
+            -78.494684,
+            38.100329
+          ],
+          [
+            -78.494758,
+            38.100461
+          ],
+          [
+            -78.495124,
+            38.100201
+          ],
+          [
+            -78.496683,
+            38.099876
+          ],
+          [
+            -78.497087,
+            38.099687
+          ],
+          [
+            -78.497481,
+            38.099344
+          ],
+          [
+            -78.498289,
+            38.099535
+          ],
+          [
+            -78.498188,
+            38.099376
+          ],
+          [
+            -78.497433,
+            38.098991
+          ],
+          [
+            -78.497377,
+            38.098329
+          ],
+          [
+            -78.497047,
+            38.097479
+          ],
+          [
+            -78.496896,
+            38.097399
+          ],
+          [
+            -78.497097,
+            38.09728
+          ],
+          [
+            -78.49771,
+            38.097194
+          ],
+          [
+            -78.498692,
+            38.097227
+          ],
+          [
+            -78.49948,
+            38.097134
+          ],
+          [
+            -78.500034,
+            38.095683
+          ],
+          [
+            -78.499005,
+            38.094024
+          ],
+          [
+            -78.499153,
+            38.093949
+          ],
+          [
+            -78.498906,
+            38.093766
+          ],
+          [
+            -78.501291,
+            38.089671
+          ],
+          [
+            -78.501777,
+            38.089809
+          ],
+          [
+            -78.502247,
+            38.089172
+          ],
+          [
+            -78.498168,
+            38.087664
+          ],
+          [
+            -78.501296,
+            38.087512
+          ],
+          [
+            -78.50056,
+            38.086939
+          ],
+          [
+            -78.497316,
+            38.087089
+          ],
+          [
+            -78.497167,
+            38.087139
+          ],
+          [
+            -78.496875,
+            38.087599
+          ],
+          [
+            -78.496913,
+            38.088113
+          ],
+          [
+            -78.496954,
+            38.088218
+          ],
+          [
+            -78.49704,
+            38.088304
+          ],
+          [
+            -78.496985,
+            38.088411
+          ],
+          [
+            -78.497052,
+            38.088466
+          ],
+          [
+            -78.497202,
+            38.088437
+          ],
+          [
+            -78.49725,
+            38.088564
+          ],
+          [
+            -78.497458,
+            38.088667
+          ],
+          [
+            -78.497573,
+            38.088825
+          ],
+          [
+            -78.49759,
+            38.088943
+          ],
+          [
+            -78.497013,
+            38.089373
+          ],
+          [
+            -78.492049,
+            38.086704
+          ],
+          [
+            -78.491165,
+            38.087277
+          ],
+          [
+            -78.490542,
+            38.087321
+          ],
+          [
+            -78.490777,
+            38.087685
+          ],
+          [
+            -78.491375,
+            38.088017
+          ],
+          [
+            -78.490836,
+            38.088284
+          ],
+          [
+            -78.490975,
+            38.08892
+          ],
+          [
+            -78.491492,
+            38.089888
+          ],
+          [
+            -78.491618,
+            38.090226
+          ],
+          [
+            -78.491559,
+            38.091134
+          ],
+          [
+            -78.491225,
+            38.09176
+          ],
+          [
+            -78.490579,
+            38.092338
+          ],
+          [
+            -78.490002,
+            38.092651
+          ],
+          [
+            -78.48971,
+            38.093333
+          ],
+          [
+            -78.489341,
+            38.093868
+          ],
+          [
+            -78.489074,
+            38.094444
+          ],
+          [
+            -78.488952,
+            38.094821
+          ],
+          [
+            -78.488865,
+            38.095327
+          ],
+          [
+            -78.4889,
+            38.096019
+          ],
+          [
+            -78.489053,
+            38.096649
+          ]
+        ]
+      ]
+    },
+    "bounds": [
+      -78.502247,
+      38.086704,
+      -78.488865,
+      38.100461
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 14,
+    "context_max_view_ratio": 16,
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail"
+    ],
+    "boundary_source": {
+      "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+      "park_names": [
+        "Ivy Creek Natural Area"
+      ],
+      "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+      "note": "Simplified park geometry for interface context; not a survey or access determination."
+    },
+    "description": "Woodland, meadow and shoreline walks at Ivy Creek Natural Area and Historic River View Farm. The central red trail connects the walking loops.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "ivy-overview",
+        "label": "Ivy Creek visitor guide",
+        "url": "https://ivycreekfoundation.org/overview"
+      },
+      {
+        "id": "ivy-rules",
+        "label": "Ivy Creek rules",
+        "url": "https://ivycreekfoundation.org/rules"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "7 a.m. to dark.",
+        "sources": [
+          "ivy-overview"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "No pets; service dogs are welcome.",
+        "sources": [
+          "ivy-rules"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Walking and wheelchair use. No bicycles, horses or jogging; stay on the trails.",
+        "sources": [
+          "ivy-rules"
+        ]
+      }
+    ],
+    "description_sources": [
+      "ivy-overview"
+    ],
+    "url": "https://ivycreekfoundation.org/overview",
+    "source_label": "Ivy Creek visitor guide"
+  },
+  {
+    "id": "heyward-community-forest",
+    "name": "Heyward Community Forest",
+    "area": "Reservoir Road",
+    "parent_ids": [
+      "city"
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.549609,
+            38.026789
+          ],
+          [
+            -78.549609,
+            38.026594
+          ],
+          [
+            -78.549754,
+            38.026344
+          ],
+          [
+            -78.549713,
+            38.026172
+          ],
+          [
+            -78.549143,
+            38.026036
+          ],
+          [
+            -78.549001,
+            38.025949
+          ],
+          [
+            -78.548949,
+            38.02584
+          ],
+          [
+            -78.548966,
+            38.025722
+          ],
+          [
+            -78.54934,
+            38.025092
+          ],
+          [
+            -78.549299,
+            38.024876
+          ],
+          [
+            -78.549087,
+            38.024721
+          ],
+          [
+            -78.548736,
+            38.024675
+          ],
+          [
+            -78.54841,
+            38.024756
+          ],
+          [
+            -78.548108,
+            38.024889
+          ],
+          [
+            -78.547955,
+            38.024901
+          ],
+          [
+            -78.547639,
+            38.024807
+          ],
+          [
+            -78.547195,
+            38.02448
+          ],
+          [
+            -78.547296,
+            38.024207
+          ],
+          [
+            -78.547953,
+            38.024211
+          ],
+          [
+            -78.550561,
+            38.022881
+          ],
+          [
+            -78.552993,
+            38.023259
+          ],
+          [
+            -78.554645,
+            38.022944
+          ],
+          [
+            -78.554937,
+            38.022973
+          ],
+          [
+            -78.554745,
+            38.026404
+          ],
+          [
+            -78.553521,
+            38.026861
+          ],
+          [
+            -78.554754,
+            38.026451
+          ],
+          [
+            -78.555582,
+            38.026371
+          ],
+          [
+            -78.556015,
+            38.026276
+          ],
+          [
+            -78.556568,
+            38.026094
+          ],
+          [
+            -78.557623,
+            38.026066
+          ],
+          [
+            -78.558921,
+            38.026526
+          ],
+          [
+            -78.558541,
+            38.026993
+          ],
+          [
+            -78.557445,
+            38.027893
+          ],
+          [
+            -78.554454,
+            38.029102
+          ],
+          [
+            -78.554889,
+            38.030598
+          ],
+          [
+            -78.555165,
+            38.030999
+          ],
+          [
+            -78.554527,
+            38.031511
+          ],
+          [
+            -78.553569,
+            38.031487
+          ],
+          [
+            -78.552332,
+            38.032664
+          ],
+          [
+            -78.550654,
+            38.032686
+          ],
+          [
+            -78.550114,
+            38.03251
+          ],
+          [
+            -78.548008,
+            38.031651
+          ],
+          [
+            -78.547265,
+            38.031866
+          ],
+          [
+            -78.547329,
+            38.031424
+          ],
+          [
+            -78.547507,
+            38.031063
+          ],
+          [
+            -78.547815,
+            38.030667
+          ],
+          [
+            -78.547963,
+            38.029364
+          ],
+          [
+            -78.548293,
+            38.028698
+          ],
+          [
+            -78.548468,
+            38.028446
+          ],
+          [
+            -78.54868,
+            38.028233
+          ],
+          [
+            -78.548746,
+            38.027841
+          ],
+          [
+            -78.54885,
+            38.027488
+          ],
+          [
+            -78.548994,
+            38.027251
+          ],
+          [
+            -78.549179,
+            38.027031
+          ],
+          [
+            -78.549609,
+            38.026789
+          ]
+        ],
+        [
+          [
+            -78.549697,
+            38.026983
+          ],
+          [
+            -78.549738,
+            38.027073
+          ],
+          [
+            -78.549932,
+            38.027305
+          ],
+          [
+            -78.549697,
+            38.026983
+          ]
+        ],
+        [
+          [
+            -78.550224,
+            38.027611
+          ],
+          [
+            -78.550119,
+            38.027501
+          ],
+          [
+            -78.550248,
+            38.027639
+          ],
+          [
+            -78.550224,
+            38.027611
+          ]
+        ],
+        [
+          [
+            -78.550349,
+            38.027758
+          ],
+          [
+            -78.550315,
+            38.027718
+          ],
+          [
+            -78.550356,
+            38.0278
+          ],
+          [
+            -78.550349,
+            38.027758
+          ]
+        ],
+        [
+          [
+            -78.550373,
+            38.027906
+          ],
+          [
+            -78.550363,
+            38.027843
+          ],
+          [
+            -78.550331,
+            38.028046
+          ],
+          [
+            -78.550373,
+            38.027906
+          ]
+        ],
+        [
+          [
+            -78.550286,
+            38.0282
+          ],
+          [
+            -78.550252,
+            38.028293
+          ],
+          [
+            -78.550256,
+            38.028332
+          ],
+          [
+            -78.550286,
+            38.0282
+          ]
+        ],
+        [
+          [
+            -78.550259,
+            38.028359
+          ],
+          [
+            -78.550263,
+            38.028393
+          ],
+          [
+            -78.550348,
+            38.028486
+          ],
+          [
+            -78.550259,
+            38.028359
+          ]
+        ],
+        [
+          [
+            -78.550396,
+            38.028538
+          ],
+          [
+            -78.550436,
+            38.028582
+          ],
+          [
+            -78.550565,
+            38.028656
+          ],
+          [
+            -78.550396,
+            38.028538
+          ]
+        ],
+        [
+          [
+            -78.551422,
+            38.028423
+          ],
+          [
+            -78.551311,
+            38.028485
+          ],
+          [
+            -78.551663,
+            38.028297
+          ],
+          [
+            -78.551422,
+            38.028423
+          ]
+        ],
+        [
+          [
+            -78.55172,
+            38.028223
+          ],
+          [
+            -78.551755,
+            38.028176
+          ],
+          [
+            -78.551734,
+            38.02798
+          ],
+          [
+            -78.55172,
+            38.028223
+          ]
+        ],
+        [
+          [
+            -78.551949,
+            38.027523
+          ],
+          [
+            -78.551859,
+            38.02761
+          ],
+          [
+            -78.551724,
+            38.0279
+          ],
+          [
+            -78.551734,
+            38.02798
+          ],
+          [
+            -78.551949,
+            38.027523
+          ]
+        ],
+        [
+          [
+            -78.552581,
+            38.027244
+          ],
+          [
+            -78.552345,
+            38.027319
+          ],
+          [
+            -78.55297,
+            38.027143
+          ],
+          [
+            -78.552581,
+            38.027244
+          ]
+        ]
+      ]
+    },
+    "bounds": [
+      -78.558921,
+      38.022881,
+      -78.547195,
+      38.032686
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 14,
+    "context_max_view_ratio": 16,
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail"
+    ],
+    "boundary_source": {
+      "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+      "park_names": [
+        "Heyward Community Forest"
+      ],
+      "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+      "note": "Simplified park geometry for interface context; not a survey or access determination."
+    },
+    "description": "Forested hills, rock outcrops and trails near Ragged Mountain. Use the lower parking lot on Reservoir Road for access.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "heyward",
+        "label": "Heyward official park page",
+        "url": "https://www.charlottesville.gov/facilities/facility/details/Heyward-Community-Forest-66"
+      },
+      {
+        "id": "city-rules",
+        "label": "City park rules",
+        "url": "https://www.charlottesville.gov/655/Park-Regulations"
+      },
+      {
+        "id": "city-trails",
+        "label": "City trail guide",
+        "url": "https://www.charlottesville.gov/659/Trails"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 7 a.m. to sunset.",
+        "sources": [
+          "heyward"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs leashed and clean up after them.",
+        "sources": [
+          "city-rules"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking, running and biking on City trails. Neighboring Ragged Mountain has different rules.",
+        "sources": [
+          "city-trails"
+        ]
+      }
+    ],
+    "description_sources": [
+      "heyward"
+    ],
+    "url": "https://www.charlottesville.gov/facilities/facility/details/Heyward-Community-Forest-66",
+    "source_label": "Heyward official park page"
+  },
+  {
+    "id": "mcintire-park",
+    "name": "McIntire Park",
+    "area": "Route 250 and Melbourne Road",
+    "parent_ids": [
+      "city"
+    ],
+    "boundary": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -78.478196,
+              38.045138
+            ],
+            [
+              -78.477509,
+              38.046048
+            ],
+            [
+              -78.472422,
+              38.051731
+            ],
+            [
+              -78.470818,
+              38.048689
+            ],
+            [
+              -78.471182,
+              38.048778
+            ],
+            [
+              -78.47147,
+              38.04875
+            ],
+            [
+              -78.472029,
+              38.048097
+            ],
+            [
+              -78.472029,
+              38.04777
+            ],
+            [
+              -78.471864,
+              38.04768
+            ],
+            [
+              -78.471801,
+              38.047509
+            ],
+            [
+              -78.471851,
+              38.047338
+            ],
+            [
+              -78.471632,
+              38.046818
+            ],
+            [
+              -78.471649,
+              38.046867
+            ],
+            [
+              -78.471604,
+              38.046873
+            ],
+            [
+              -78.471785,
+              38.046039
+            ],
+            [
+              -78.471938,
+              38.045562
+            ],
+            [
+              -78.471959,
+              38.045207
+            ],
+            [
+              -78.471931,
+              38.045036
+            ],
+            [
+              -78.472213,
+              38.044074
+            ],
+            [
+              -78.472929,
+              38.04314
+            ],
+            [
+              -78.473318,
+              38.042863
+            ],
+            [
+              -78.473446,
+              38.042819
+            ],
+            [
+              -78.474151,
+              38.042215
+            ],
+            [
+              -78.47472,
+              38.042818
+            ],
+            [
+              -78.475217,
+              38.043243
+            ],
+            [
+              -78.475578,
+              38.043487
+            ],
+            [
+              -78.476501,
+              38.043963
+            ],
+            [
+              -78.477393,
+              38.044477
+            ],
+            [
+              -78.477886,
+              38.044847
+            ],
+            [
+              -78.478196,
+              38.045138
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -78.479601,
+              38.053737
+            ],
+            [
+              -78.478064,
+              38.050828
+            ],
+            [
+              -78.474312,
+              38.050546
+            ],
+            [
+              -78.477317,
+              38.047163
+            ],
+            [
+              -78.477774,
+              38.04658
+            ],
+            [
+              -78.479089,
+              38.047096
+            ],
+            [
+              -78.47932,
+              38.047311
+            ],
+            [
+              -78.479233,
+              38.047415
+            ],
+            [
+              -78.479271,
+              38.047521
+            ],
+            [
+              -78.479465,
+              38.047621
+            ],
+            [
+              -78.479579,
+              38.048165
+            ],
+            [
+              -78.479962,
+              38.049079
+            ],
+            [
+              -78.479946,
+              38.049725
+            ],
+            [
+              -78.480381,
+              38.050272
+            ],
+            [
+              -78.480288,
+              38.050363
+            ],
+            [
+              -78.479923,
+              38.050451
+            ],
+            [
+              -78.479976,
+              38.05059
+            ],
+            [
+              -78.480358,
+              38.050544
+            ],
+            [
+              -78.480507,
+              38.050602
+            ],
+            [
+              -78.48186,
+              38.053669
+            ],
+            [
+              -78.481968,
+              38.053949
+            ],
+            [
+              -78.481922,
+              38.054203
+            ],
+            [
+              -78.482008,
+              38.054306
+            ],
+            [
+              -78.481773,
+              38.05463
+            ],
+            [
+              -78.479898,
+              38.053823
+            ],
+            [
+              -78.479601,
+              38.053737
+            ]
+          ]
+        ]
+      ]
+    },
+    "bounds": [
+      -78.482008,
+      38.042215,
+      -78.470818,
+      38.05463
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 14,
+    "context_max_view_ratio": 16,
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail"
+    ],
+    "boundary_source": {
+      "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+      "park_names": [
+        "McIntire Park"
+      ],
+      "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+      "note": "Simplified park geometry for interface context; not a survey or access determination."
+    },
+    "description": "Wooded trails and winding streams around McIntire Park, with connections across the park and to the surrounding greenway network.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "mcintire",
+        "label": "McIntire official park page",
+        "url": "https://charlottesville.gov/Facilities/Facility/Details/McIntire-Park-25"
+      },
+      {
+        "id": "city-rules",
+        "label": "City park rules",
+        "url": "https://www.charlottesville.gov/655/Park-Regulations"
+      },
+      {
+        "id": "city-trails",
+        "label": "City trail guide",
+        "url": "https://www.charlottesville.gov/659/Trails"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 6 a.m.–10 p.m.",
+        "sources": [
+          "mcintire"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs leashed and clean up after them.",
+        "sources": [
+          "city-rules"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking, running and biking; share the trails.",
+        "sources": [
+          "city-trails"
+        ]
+      }
+    ],
+    "description_sources": [
+      "mcintire"
+    ],
+    "url": "https://charlottesville.gov/Facilities/Facility/Details/McIntire-Park-25",
+    "source_label": "McIntire official park page"
+  },
+  {
+    "id": "quarry-park",
+    "name": "Quarry Park",
+    "area": "Quarry Road and Moore’s Creek",
+    "parent_ids": [
+      "city"
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.475088,
+            38.0143
+          ],
+          [
+            -78.475951,
+            38.015128
+          ],
+          [
+            -78.476653,
+            38.015214
+          ],
+          [
+            -78.476656,
+            38.015245
+          ],
+          [
+            -78.478169,
+            38.015347
+          ],
+          [
+            -78.478336,
+            38.015306
+          ],
+          [
+            -78.478391,
+            38.015231
+          ],
+          [
+            -78.478517,
+            38.014678
+          ],
+          [
+            -78.478583,
+            38.014707
+          ],
+          [
+            -78.478621,
+            38.014332
+          ],
+          [
+            -78.478656,
+            38.014347
+          ],
+          [
+            -78.478718,
+            38.014077
+          ],
+          [
+            -78.478777,
+            38.013996
+          ],
+          [
+            -78.479274,
+            38.01404
+          ],
+          [
+            -78.479925,
+            38.013807
+          ],
+          [
+            -78.480257,
+            38.014013
+          ],
+          [
+            -78.482355,
+            38.011668
+          ],
+          [
+            -78.480055,
+            38.011435
+          ],
+          [
+            -78.478614,
+            38.013755
+          ],
+          [
+            -78.477816,
+            38.014103
+          ],
+          [
+            -78.477206,
+            38.014284
+          ],
+          [
+            -78.476952,
+            38.014267
+          ],
+          [
+            -78.475971,
+            38.013965
+          ],
+          [
+            -78.475427,
+            38.013663
+          ],
+          [
+            -78.475088,
+            38.0143
+          ]
+        ]
+      ]
+    },
+    "bounds": [
+      -78.482355,
+      38.011435,
+      -78.475088,
+      38.015347
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 14,
+    "context_max_view_ratio": 16,
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail"
+    ],
+    "boundary_source": {
+      "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+      "park_names": [
+        "Quarry Park"
+      ],
+      "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+      "note": "Simplified park geometry for interface context; not a survey or access determination."
+    },
+    "description": "Trails by Moore’s Creek and the old quarry bluffs, with nearby Rivanna Trail connections. Parking is available by the ballfields and restrooms.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "quarry",
+        "label": "Quarry official park page",
+        "url": "https://www.charlottesville.gov/facilities/facility/details/Quarry-Park-60"
+      },
+      {
+        "id": "city-rules",
+        "label": "City park rules",
+        "url": "https://www.charlottesville.gov/655/Park-Regulations"
+      },
+      {
+        "id": "city-trails",
+        "label": "City trail guide",
+        "url": "https://www.charlottesville.gov/659/Trails"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 6 a.m.–9 p.m.",
+        "sources": [
+          "quarry"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs leashed and clean up after them.",
+        "sources": [
+          "city-rules"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking, running and biking on City trails.",
+        "sources": [
+          "city-trails"
+        ]
+      }
+    ],
+    "description_sources": [
+      "quarry"
+    ],
+    "url": "https://www.charlottesville.gov/facilities/facility/details/Quarry-Park-60",
+    "source_label": "Quarry official park page"
+  },
+  {
+    "id": "azalea-park",
+    "name": "Azalea Park",
+    "area": "Old Lynchburg Road and Moore’s Creek",
+    "parent_ids": [
+      "city"
+    ],
+    "boundary": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -78.518529,
+              38.010644
+            ],
+            [
+              -78.518365,
+              38.011681
+            ],
+            [
+              -78.518296,
+              38.011962
+            ],
+            [
+              -78.51822,
+              38.012092
+            ],
+            [
+              -78.517925,
+              38.012325
+            ],
+            [
+              -78.517966,
+              38.011831
+            ],
+            [
+              -78.517682,
+              38.011424
+            ],
+            [
+              -78.517223,
+              38.011329
+            ],
+            [
+              -78.516352,
+              38.011532
+            ],
+            [
+              -78.516134,
+              38.011614
+            ],
+            [
+              -78.515929,
+              38.011758
+            ],
+            [
+              -78.515724,
+              38.011961
+            ],
+            [
+              -78.515526,
+              38.012348
+            ],
+            [
+              -78.51546,
+              38.012364
+            ],
+            [
+              -78.515774,
+              38.012727
+            ],
+            [
+              -78.515745,
+              38.012756
+            ],
+            [
+              -78.515408,
+              38.012373
+            ],
+            [
+              -78.51536,
+              38.012237
+            ],
+            [
+              -78.515558,
+              38.011874
+            ],
+            [
+              -78.51537,
+              38.011546
+            ],
+            [
+              -78.51538,
+              38.01136
+            ],
+            [
+              -78.515339,
+              38.011227
+            ],
+            [
+              -78.515252,
+              38.011116
+            ],
+            [
+              -78.515061,
+              38.011003
+            ],
+            [
+              -78.51479,
+              38.010949
+            ],
+            [
+              -78.514624,
+              38.010965
+            ],
+            [
+              -78.514391,
+              38.011068
+            ],
+            [
+              -78.514266,
+              38.011184
+            ],
+            [
+              -78.51418,
+              38.011389
+            ],
+            [
+              -78.51435,
+              38.011419
+            ],
+            [
+              -78.513985,
+              38.011806
+            ],
+            [
+              -78.51369,
+              38.011639
+            ],
+            [
+              -78.513451,
+              38.011559
+            ],
+            [
+              -78.513413,
+              38.011302
+            ],
+            [
+              -78.512982,
+              38.011307
+            ],
+            [
+              -78.512996,
+              38.011193
+            ],
+            [
+              -78.513093,
+              38.011106
+            ],
+            [
+              -78.513131,
+              38.011026
+            ],
+            [
+              -78.5131,
+              38.010948
+            ],
+            [
+              -78.513038,
+              38.010903
+            ],
+            [
+              -78.51294,
+              38.010886
+            ],
+            [
+              -78.512323,
+              38.010934
+            ],
+            [
+              -78.512326,
+              38.010815
+            ],
+            [
+              -78.51252,
+              38.010434
+            ],
+            [
+              -78.511751,
+              38.009656
+            ],
+            [
+              -78.512208,
+              38.009613
+            ],
+            [
+              -78.512628,
+              38.009705
+            ],
+            [
+              -78.513123,
+              38.009694
+            ],
+            [
+              -78.513465,
+              38.009738
+            ],
+            [
+              -78.513723,
+              38.009676
+            ],
+            [
+              -78.513923,
+              38.00975
+            ],
+            [
+              -78.514106,
+              38.00997
+            ],
+            [
+              -78.514257,
+              38.010038
+            ],
+            [
+              -78.514393,
+              38.010038
+            ],
+            [
+              -78.514716,
+              38.009864
+            ],
+            [
+              -78.514859,
+              38.009835
+            ],
+            [
+              -78.51498,
+              38.009853
+            ],
+            [
+              -78.515305,
+              38.010056
+            ],
+            [
+              -78.515481,
+              38.010103
+            ],
+            [
+              -78.515619,
+              38.010056
+            ],
+            [
+              -78.515823,
+              38.009873
+            ],
+            [
+              -78.515962,
+              38.009836
+            ],
+            [
+              -78.516106,
+              38.009856
+            ],
+            [
+              -78.516566,
+              38.010155
+            ],
+            [
+              -78.51696,
+              38.010176
+            ],
+            [
+              -78.517355,
+              38.010303
+            ],
+            [
+              -78.51762,
+              38.010319
+            ],
+            [
+              -78.518245,
+              38.010517
+            ],
+            [
+              -78.518529,
+              38.010644
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -78.518945,
+              38.01562
+            ],
+            [
+              -78.518703,
+              38.015757
+            ],
+            [
+              -78.518426,
+              38.015006
+            ],
+            [
+              -78.51871,
+              38.014937
+            ],
+            [
+              -78.518568,
+              38.014406
+            ],
+            [
+              -78.518643,
+              38.014317
+            ],
+            [
+              -78.518977,
+              38.014272
+            ],
+            [
+              -78.518935,
+              38.014041
+            ],
+            [
+              -78.51872,
+              38.013681
+            ],
+            [
+              -78.518703,
+              38.013531
+            ],
+            [
+              -78.518761,
+              38.012816
+            ],
+            [
+              -78.517387,
+              38.012634
+            ],
+            [
+              -78.517349,
+              38.012509
+            ],
+            [
+              -78.517671,
+              38.012501
+            ],
+            [
+              -78.517956,
+              38.01243
+            ],
+            [
+              -78.518258,
+              38.012221
+            ],
+            [
+              -78.518456,
+              38.01192
+            ],
+            [
+              -78.518546,
+              38.011929
+            ],
+            [
+              -78.518653,
+              38.011131
+            ],
+            [
+              -78.518757,
+              38.010668
+            ],
+            [
+              -78.519014,
+              38.010186
+            ],
+            [
+              -78.520481,
+              38.010832
+            ],
+            [
+              -78.521229,
+              38.011083
+            ],
+            [
+              -78.522105,
+              38.011239
+            ],
+            [
+              -78.52345,
+              38.012127
+            ],
+            [
+              -78.522704,
+              38.012854
+            ],
+            [
+              -78.521731,
+              38.01326
+            ],
+            [
+              -78.520084,
+              38.013101
+            ],
+            [
+              -78.519955,
+              38.014071
+            ],
+            [
+              -78.519649,
+              38.014487
+            ],
+            [
+              -78.519188,
+              38.01476
+            ],
+            [
+              -78.51895,
+              38.015242
+            ],
+            [
+              -78.518945,
+              38.01562
+            ]
+          ]
+        ]
+      ]
+    },
+    "bounds": [
+      -78.52345,
+      38.009613,
+      -78.511751,
+      38.015757
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 14,
+    "context_max_view_ratio": 16,
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail"
+    ],
+    "boundary_source": {
+      "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+      "park_names": [
+        "Azalea Park",
+        "Azalea Park West"
+      ],
+      "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+      "note": "Simplified park geometry for interface context; not a survey or access determination."
+    },
+    "description": "Creekside paths, western woodland trails and Rivanna Trail connections near Old Lynchburg Road. The main park also has a playground and fenced dog area.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "azalea",
+        "label": "Azalea official park page",
+        "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Azalea-Park-5"
+      },
+      {
+        "id": "city-trails",
+        "label": "City trail guide",
+        "url": "https://www.charlottesville.gov/659/Trails"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 6 a.m.–9 p.m.",
+        "sources": [
+          "azalea"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Leashed in the park; off-leash only inside the fenced dog area. Clean up pet waste.",
+        "sources": [
+          "azalea"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking, running and biking on City trails.",
+        "sources": [
+          "city-trails"
+        ]
+      }
+    ],
+    "description_sources": [
+      "azalea"
+    ],
+    "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Azalea-Park-5",
+    "source_label": "Azalea official park page"
+  },
+  {
+    "id": "pen-park",
+    "name": "Pen Park",
+    "area": "East Rio Road",
+    "parent_ids": [
+      "city"
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.457059,
+            38.045466
+          ],
+          [
+            -78.454764,
+            38.045376
+          ],
+          [
+            -78.453914,
+            38.045843
+          ],
+          [
+            -78.451313,
+            38.045809
+          ],
+          [
+            -78.449623,
+            38.045404
+          ],
+          [
+            -78.449064,
+            38.045355
+          ],
+          [
+            -78.448433,
+            38.045433
+          ],
+          [
+            -78.447975,
+            38.045628
+          ],
+          [
+            -78.4476,
+            38.045894
+          ],
+          [
+            -78.44744,
+            38.046134
+          ],
+          [
+            -78.446795,
+            38.048031
+          ],
+          [
+            -78.446592,
+            38.048842
+          ],
+          [
+            -78.446513,
+            38.049558
+          ],
+          [
+            -78.447178,
+            38.050568
+          ],
+          [
+            -78.447296,
+            38.050826
+          ],
+          [
+            -78.447576,
+            38.052836
+          ],
+          [
+            -78.447731,
+            38.053534
+          ],
+          [
+            -78.447795,
+            38.054328
+          ],
+          [
+            -78.44771,
+            38.055142
+          ],
+          [
+            -78.447886,
+            38.056646
+          ],
+          [
+            -78.448167,
+            38.057387
+          ],
+          [
+            -78.44899,
+            38.058401
+          ],
+          [
+            -78.449397,
+            38.058835
+          ],
+          [
+            -78.454821,
+            38.055062
+          ],
+          [
+            -78.454148,
+            38.054404
+          ],
+          [
+            -78.454675,
+            38.054061
+          ],
+          [
+            -78.454412,
+            38.053814
+          ],
+          [
+            -78.454161,
+            38.053664
+          ],
+          [
+            -78.454264,
+            38.053521
+          ],
+          [
+            -78.454642,
+            38.053741
+          ],
+          [
+            -78.454799,
+            38.05388
+          ],
+          [
+            -78.455926,
+            38.055032
+          ],
+          [
+            -78.456096,
+            38.055164
+          ],
+          [
+            -78.456553,
+            38.055363
+          ],
+          [
+            -78.457021,
+            38.055458
+          ],
+          [
+            -78.458924,
+            38.051075
+          ],
+          [
+            -78.457313,
+            38.050395
+          ],
+          [
+            -78.457172,
+            38.049338
+          ],
+          [
+            -78.456041,
+            38.047157
+          ],
+          [
+            -78.456237,
+            38.047223
+          ],
+          [
+            -78.457092,
+            38.046841
+          ],
+          [
+            -78.457108,
+            38.046019
+          ],
+          [
+            -78.457059,
+            38.045466
+          ]
+        ]
+      ]
+    },
+    "bounds": [
+      -78.458924,
+      38.045355,
+      -78.446513,
+      38.058835
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 14,
+    "context_max_view_ratio": 16,
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail"
+    ],
+    "boundary_source": {
+      "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+      "park_names": [
+        "Pen Park"
+      ],
+      "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+      "note": "Simplified park geometry for interface context; not a survey or access determination."
+    },
+    "description": "A fitness trail and a 1½-mile riverside nature trail lead toward the Rivanna River from Pen Park’s recreation areas.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "pen",
+        "label": "Pen Park official page",
+        "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Pen-Park-26"
+      },
+      {
+        "id": "city-trails",
+        "label": "City trail guide",
+        "url": "https://www.charlottesville.gov/659/Trails"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 6 a.m.–10 p.m.",
+        "sources": [
+          "pen"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Leashed dogs are allowed in the park, but not on the golf course. Pick up pet waste.",
+        "sources": [
+          "pen"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking, running and biking on City trails; the golf course is separate.",
+        "sources": [
+          "city-trails"
+        ]
+      }
+    ],
+    "description_sources": [
+      "pen"
+    ],
+    "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Pen-Park-26",
+    "source_label": "Pen Park official page"
+  },
+  {
+    "id": "washington-park",
+    "name": "Booker T. Washington Park",
+    "area": "Preston Avenue",
+    "parent_ids": [
+      "city"
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.490036,
+            38.041757
+          ],
+          [
+            -78.492082,
+            38.041758
+          ],
+          [
+            -78.49205,
+            38.041521
+          ],
+          [
+            -78.492054,
+            38.040922
+          ],
+          [
+            -78.491964,
+            38.04058
+          ],
+          [
+            -78.491856,
+            38.040297
+          ],
+          [
+            -78.491616,
+            38.039858
+          ],
+          [
+            -78.49121,
+            38.039375
+          ],
+          [
+            -78.48971,
+            38.040457
+          ],
+          [
+            -78.489811,
+            38.040856
+          ],
+          [
+            -78.489408,
+            38.040783
+          ],
+          [
+            -78.489137,
+            38.041853
+          ],
+          [
+            -78.490091,
+            38.041964
+          ],
+          [
+            -78.490036,
+            38.041757
+          ]
+        ]
+      ]
+    },
+    "bounds": [
+      -78.492082,
+      38.039375,
+      -78.489137,
+      38.041964
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 14,
+    "context_max_view_ratio": 16,
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail"
+    ],
+    "boundary_source": {
+      "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+      "park_names": [
+        "Washington Park"
+      ],
+      "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+      "note": "Simplified park geometry for interface context; not a survey or access determination."
+    },
+    "description": "A hillside park with paths between the upper recreation area and lower fields, picnic areas and playground.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "washington",
+        "label": "Washington official park page",
+        "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Booker-T-Washington-Park-56"
+      },
+      {
+        "id": "city-rules",
+        "label": "City park rules",
+        "url": "https://www.charlottesville.gov/655/Park-Regulations"
+      },
+      {
+        "id": "city-trails",
+        "label": "City trail guide",
+        "url": "https://www.charlottesville.gov/659/Trails"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Opens at 6 a.m. City pages list different closing times (9 or 10 p.m.); check posted hours.",
+        "sources": [
+          "washington",
+          "city-rules"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs leashed and clean up after them.",
+        "sources": [
+          "city-rules"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking, running and biking on City trails.",
+        "sources": [
+          "city-trails"
+        ]
+      }
+    ],
+    "description_sources": [
+      "washington"
+    ],
+    "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Booker-T-Washington-Park-56",
+    "source_label": "Washington official park page"
+  },
+  {
+    "id": "jordan-park",
+    "name": "Jordan Park",
+    "area": "6th Street SE and Moore’s Creek",
+    "parent_ids": [
+      "city"
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.488106,
+            38.017666
+          ],
+          [
+            -78.488592,
+            38.01773
+          ],
+          [
+            -78.48861,
+            38.017655
+          ],
+          [
+            -78.488155,
+            38.016601
+          ],
+          [
+            -78.487714,
+            38.016639
+          ],
+          [
+            -78.487162,
+            38.016509
+          ],
+          [
+            -78.48693,
+            38.016696
+          ],
+          [
+            -78.486763,
+            38.016897
+          ],
+          [
+            -78.487843,
+            38.017544
+          ],
+          [
+            -78.487672,
+            38.017912
+          ],
+          [
+            -78.488019,
+            38.017999
+          ],
+          [
+            -78.488106,
+            38.017666
+          ]
+        ]
+      ]
+    },
+    "bounds": [
+      -78.48861,
+      38.016509,
+      -78.486763,
+      38.017999
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 14,
+    "context_max_view_ratio": 16,
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail"
+    ],
+    "boundary_source": {
+      "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+      "park_names": [
+        "Jordan Park"
+      ],
+      "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+      "note": "Simplified park geometry for interface context; not a survey or access determination."
+    },
+    "description": "A small creekside neighborhood park with a playground and picnic tables. The Rivanna Trail passes through the park.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "jordan",
+        "label": "Jordan official park page",
+        "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Jordan-Park-11"
+      },
+      {
+        "id": "city-rules",
+        "label": "City park rules",
+        "url": "https://www.charlottesville.gov/655/Park-Regulations"
+      },
+      {
+        "id": "city-trails",
+        "label": "City trail guide",
+        "url": "https://www.charlottesville.gov/659/Trails"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daily, 6 a.m.–9 p.m.",
+        "sources": [
+          "jordan"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs leashed and clean up after them.",
+        "sources": [
+          "city-rules"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking, running and biking on City trails.",
+        "sources": [
+          "city-trails"
+        ]
+      }
+    ],
+    "description_sources": [
+      "jordan"
+    ],
+    "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Jordan-Park-11",
+    "source_label": "Jordan official park page"
+  },
+  {
+    "id": "meadow-creek",
+    "name": "Meadow Creek Trails",
+    "area": "Meadow Creek Gardens, Greenbrier and lower creek",
+    "parent_ids": [
+      "city"
+    ],
+    "boundary": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -78.490242,
+              38.056021
+            ],
+            [
+              -78.490329,
+              38.055842
+            ],
+            [
+              -78.490753,
+              38.055408
+            ],
+            [
+              -78.49083,
+              38.055287
+            ],
+            [
+              -78.490826,
+              38.055119
+            ],
+            [
+              -78.491476,
+              38.055095
+            ],
+            [
+              -78.491855,
+              38.054911
+            ],
+            [
+              -78.492231,
+              38.05483
+            ],
+            [
+              -78.492325,
+              38.054557
+            ],
+            [
+              -78.492425,
+              38.054401
+            ],
+            [
+              -78.492537,
+              38.054292
+            ],
+            [
+              -78.492643,
+              38.054244
+            ],
+            [
+              -78.492876,
+              38.054247
+            ],
+            [
+              -78.493012,
+              38.054323
+            ],
+            [
+              -78.493098,
+              38.054424
+            ],
+            [
+              -78.493415,
+              38.054464
+            ],
+            [
+              -78.494479,
+              38.0544
+            ],
+            [
+              -78.495041,
+              38.054417
+            ],
+            [
+              -78.495215,
+              38.054503
+            ],
+            [
+              -78.495341,
+              38.054699
+            ],
+            [
+              -78.495343,
+              38.054908
+            ],
+            [
+              -78.495408,
+              38.055058
+            ],
+            [
+              -78.495409,
+              38.055214
+            ],
+            [
+              -78.495326,
+              38.05539
+            ],
+            [
+              -78.495206,
+              38.05549
+            ],
+            [
+              -78.495057,
+              38.055536
+            ],
+            [
+              -78.494312,
+              38.055611
+            ],
+            [
+              -78.493891,
+              38.055499
+            ],
+            [
+              -78.493669,
+              38.055555
+            ],
+            [
+              -78.49466,
+              38.056238
+            ],
+            [
+              -78.493736,
+              38.056859
+            ],
+            [
+              -78.493556,
+              38.056947
+            ],
+            [
+              -78.493195,
+              38.057002
+            ],
+            [
+              -78.491358,
+              38.05684
+            ],
+            [
+              -78.491226,
+              38.056625
+            ],
+            [
+              -78.49108,
+              38.056622
+            ],
+            [
+              -78.49088,
+              38.056918
+            ],
+            [
+              -78.490741,
+              38.056989
+            ],
+            [
+              -78.490585,
+              38.057001
+            ],
+            [
+              -78.490372,
+              38.056908
+            ],
+            [
+              -78.490295,
+              38.05682
+            ],
+            [
+              -78.490238,
+              38.056675
+            ],
+            [
+              -78.490076,
+              38.056702
+            ],
+            [
+              -78.489663,
+              38.056639
+            ],
+            [
+              -78.4895,
+              38.056511
+            ],
+            [
+              -78.490121,
+              38.056117
+            ],
+            [
+              -78.490242,
+              38.056021
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -78.487993,
+              38.057596
+            ],
+            [
+              -78.488145,
+              38.057582
+            ],
+            [
+              -78.488257,
+              38.057609
+            ],
+            [
+              -78.488576,
+              38.057853
+            ],
+            [
+              -78.488651,
+              38.05799
+            ],
+            [
+              -78.48867,
+              38.058106
+            ],
+            [
+              -78.488605,
+              38.058329
+            ],
+            [
+              -78.488528,
+              38.058417
+            ],
+            [
+              -78.488391,
+              38.058492
+            ],
+            [
+              -78.487984,
+              38.058495
+            ],
+            [
+              -78.487391,
+              38.058857
+            ],
+            [
+              -78.487436,
+              38.058926
+            ],
+            [
+              -78.486981,
+              38.059329
+            ],
+            [
+              -78.487185,
+              38.0595
+            ],
+            [
+              -78.486186,
+              38.060112
+            ],
+            [
+              -78.485887,
+              38.060211
+            ],
+            [
+              -78.485848,
+              38.060292
+            ],
+            [
+              -78.485877,
+              38.060322
+            ],
+            [
+              -78.485853,
+              38.060393
+            ],
+            [
+              -78.485667,
+              38.060794
+            ],
+            [
+              -78.485363,
+              38.061173
+            ],
+            [
+              -78.485357,
+              38.061289
+            ],
+            [
+              -78.485434,
+              38.061328
+            ],
+            [
+              -78.485419,
+              38.061442
+            ],
+            [
+              -78.48481,
+              38.062219
+            ],
+            [
+              -78.485135,
+              38.062384
+            ],
+            [
+              -78.485377,
+              38.062412
+            ],
+            [
+              -78.4843,
+              38.063675
+            ],
+            [
+              -78.483263,
+              38.064967
+            ],
+            [
+              -78.483023,
+              38.064878
+            ],
+            [
+              -78.480973,
+              38.066776
+            ],
+            [
+              -78.480754,
+              38.067691
+            ],
+            [
+              -78.480619,
+              38.067696
+            ],
+            [
+              -78.480705,
+              38.066565
+            ],
+            [
+              -78.480522,
+              38.066026
+            ],
+            [
+              -78.480448,
+              38.065944
+            ],
+            [
+              -78.480288,
+              38.065984
+            ],
+            [
+              -78.480173,
+              38.065978
+            ],
+            [
+              -78.478683,
+              38.065666
+            ],
+            [
+              -78.478394,
+              38.06621
+            ],
+            [
+              -78.47812,
+              38.065947
+            ],
+            [
+              -78.477588,
+              38.06571
+            ],
+            [
+              -78.477237,
+              38.065677
+            ],
+            [
+              -78.476793,
+              38.065763
+            ],
+            [
+              -78.477233,
+              38.065127
+            ],
+            [
+              -78.477126,
+              38.065065
+            ],
+            [
+              -78.476928,
+              38.065111
+            ],
+            [
+              -78.476773,
+              38.065088
+            ],
+            [
+              -78.475715,
+              38.064529
+            ],
+            [
+              -78.475514,
+              38.064362
+            ],
+            [
+              -78.475428,
+              38.06422
+            ],
+            [
+              -78.475168,
+              38.063939
+            ],
+            [
+              -78.4749,
+              38.063755
+            ],
+            [
+              -78.474498,
+              38.063643
+            ],
+            [
+              -78.473733,
+              38.063252
+            ],
+            [
+              -78.473263,
+              38.062966
+            ],
+            [
+              -78.472769,
+              38.062868
+            ],
+            [
+              -78.472549,
+              38.063208
+            ],
+            [
+              -78.472581,
+              38.063285
+            ],
+            [
+              -78.472289,
+              38.063184
+            ],
+            [
+              -78.472386,
+              38.063164
+            ],
+            [
+              -78.472623,
+              38.062794
+            ],
+            [
+              -78.471241,
+              38.061751
+            ],
+            [
+              -78.471325,
+              38.061259
+            ],
+            [
+              -78.471116,
+              38.061123
+            ],
+            [
+              -78.470954,
+              38.060939
+            ],
+            [
+              -78.470901,
+              38.06083
+            ],
+            [
+              -78.470876,
+              38.060652
+            ],
+            [
+              -78.469496,
+              38.060172
+            ],
+            [
+              -78.467967,
+              38.060333
+            ],
+            [
+              -78.467784,
+              38.060271
+            ],
+            [
+              -78.467583,
+              38.060091
+            ],
+            [
+              -78.467192,
+              38.060079
+            ],
+            [
+              -78.467324,
+              38.059815
+            ],
+            [
+              -78.467288,
+              38.05967
+            ],
+            [
+              -78.467297,
+              38.059559
+            ],
+            [
+              -78.467163,
+              38.05939
+            ],
+            [
+              -78.467134,
+              38.059198
+            ],
+            [
+              -78.467198,
+              38.059015
+            ],
+            [
+              -78.467341,
+              38.058883
+            ],
+            [
+              -78.467491,
+              38.058837
+            ],
+            [
+              -78.467608,
+              38.058842
+            ],
+            [
+              -78.467752,
+              38.058901
+            ],
+            [
+              -78.467901,
+              38.059019
+            ],
+            [
+              -78.468862,
+              38.058439
+            ],
+            [
+              -78.468885,
+              38.058461
+            ],
+            [
+              -78.468447,
+              38.05871
+            ],
+            [
+              -78.469166,
+              38.058863
+            ],
+            [
+              -78.469259,
+              38.059261
+            ],
+            [
+              -78.469596,
+              38.059233
+            ],
+            [
+              -78.470134,
+              38.058609
+            ],
+            [
+              -78.471322,
+              38.059259
+            ],
+            [
+              -78.471686,
+              38.059511
+            ],
+            [
+              -78.472346,
+              38.05975
+            ],
+            [
+              -78.472884,
+              38.05999
+            ],
+            [
+              -78.473314,
+              38.061576
+            ],
+            [
+              -78.473807,
+              38.061993
+            ],
+            [
+              -78.473577,
+              38.062223
+            ],
+            [
+              -78.473706,
+              38.062299
+            ],
+            [
+              -78.474029,
+              38.062402
+            ],
+            [
+              -78.474356,
+              38.062275
+            ],
+            [
+              -78.474418,
+              38.062661
+            ],
+            [
+              -78.474492,
+              38.062733
+            ],
+            [
+              -78.474808,
+              38.062885
+            ],
+            [
+              -78.475272,
+              38.063042
+            ],
+            [
+              -78.475705,
+              38.06334
+            ],
+            [
+              -78.475798,
+              38.063446
+            ],
+            [
+              -78.475929,
+              38.063326
+            ],
+            [
+              -78.476159,
+              38.06385
+            ],
+            [
+              -78.47697,
+              38.064278
+            ],
+            [
+              -78.477276,
+              38.0642
+            ],
+            [
+              -78.47744,
+              38.064208
+            ],
+            [
+              -78.478286,
+              38.064716
+            ],
+            [
+              -78.479014,
+              38.064929
+            ],
+            [
+              -78.480046,
+              38.065136
+            ],
+            [
+              -78.479982,
+              38.064989
+            ],
+            [
+              -78.480673,
+              38.064268
+            ],
+            [
+              -78.481757,
+              38.063294
+            ],
+            [
+              -78.483077,
+              38.062035
+            ],
+            [
+              -78.484164,
+              38.061177
+            ],
+            [
+              -78.484357,
+              38.060804
+            ],
+            [
+              -78.48462,
+              38.060439
+            ],
+            [
+              -78.484647,
+              38.060271
+            ],
+            [
+              -78.484754,
+              38.060117
+            ],
+            [
+              -78.485176,
+              38.059851
+            ],
+            [
+              -78.485356,
+              38.05969
+            ],
+            [
+              -78.485508,
+              38.059655
+            ],
+            [
+              -78.485704,
+              38.059694
+            ],
+            [
+              -78.486051,
+              38.058929
+            ],
+            [
+              -78.486093,
+              38.058593
+            ],
+            [
+              -78.486278,
+              38.058378
+            ],
+            [
+              -78.486312,
+              38.058205
+            ],
+            [
+              -78.486402,
+              38.058077
+            ],
+            [
+              -78.486534,
+              38.057994
+            ],
+            [
+              -78.486679,
+              38.057963
+            ],
+            [
+              -78.48723,
+              38.058002
+            ],
+            [
+              -78.487538,
+              38.057742
+            ],
+            [
+              -78.487993,
+              38.057596
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -78.456666,
+              38.046689
+            ],
+            [
+              -78.456709,
+              38.046538
+            ],
+            [
+              -78.456836,
+              38.046392
+            ],
+            [
+              -78.456941,
+              38.04634
+            ],
+            [
+              -78.457267,
+              38.046266
+            ],
+            [
+              -78.457285,
+              38.045994
+            ],
+            [
+              -78.45739,
+              38.045825
+            ],
+            [
+              -78.457898,
+              38.045515
+            ],
+            [
+              -78.458098,
+              38.045513
+            ],
+            [
+              -78.458722,
+              38.045737
+            ],
+            [
+              -78.459058,
+              38.045976
+            ],
+            [
+              -78.45934,
+              38.045895
+            ],
+            [
+              -78.459684,
+              38.045633
+            ],
+            [
+              -78.459841,
+              38.045413
+            ],
+            [
+              -78.460113,
+              38.04479
+            ],
+            [
+              -78.460382,
+              38.044428
+            ],
+            [
+              -78.460836,
+              38.044093
+            ],
+            [
+              -78.461467,
+              38.043772
+            ],
+            [
+              -78.461623,
+              38.043744
+            ],
+            [
+              -78.462174,
+              38.043758
+            ],
+            [
+              -78.462327,
+              38.043793
+            ],
+            [
+              -78.463061,
+              38.044305
+            ],
+            [
+              -78.463172,
+              38.044464
+            ],
+            [
+              -78.463196,
+              38.044657
+            ],
+            [
+              -78.463101,
+              38.044869
+            ],
+            [
+              -78.462905,
+              38.044993
+            ],
+            [
+              -78.462665,
+              38.044984
+            ],
+            [
+              -78.462505,
+              38.04523
+            ],
+            [
+              -78.462342,
+              38.045336
+            ],
+            [
+              -78.462227,
+              38.045357
+            ],
+            [
+              -78.462073,
+              38.045332
+            ],
+            [
+              -78.461771,
+              38.045122
+            ],
+            [
+              -78.461665,
+              38.044972
+            ],
+            [
+              -78.461566,
+              38.045021
+            ],
+            [
+              -78.461492,
+              38.04509
+            ],
+            [
+              -78.461299,
+              38.045413
+            ],
+            [
+              -78.461195,
+              38.045744
+            ],
+            [
+              -78.460646,
+              38.046465
+            ],
+            [
+              -78.460324,
+              38.046802
+            ],
+            [
+              -78.460014,
+              38.046901
+            ],
+            [
+              -78.459584,
+              38.047253
+            ],
+            [
+              -78.459068,
+              38.047365
+            ],
+            [
+              -78.458786,
+              38.047303
+            ],
+            [
+              -78.458564,
+              38.047319
+            ],
+            [
+              -78.458388,
+              38.047234
+            ],
+            [
+              -78.45822,
+              38.047022
+            ],
+            [
+              -78.457978,
+              38.047203
+            ],
+            [
+              -78.457284,
+              38.047495
+            ],
+            [
+              -78.45697,
+              38.047739
+            ],
+            [
+              -78.456628,
+              38.047793
+            ],
+            [
+              -78.45645,
+              38.04786
+            ],
+            [
+              -78.456294,
+              38.047848
+            ],
+            [
+              -78.456072,
+              38.047727
+            ],
+            [
+              -78.455708,
+              38.047616
+            ],
+            [
+              -78.454976,
+              38.047219
+            ],
+            [
+              -78.454481,
+              38.046697
+            ],
+            [
+              -78.454217,
+              38.046872
+            ],
+            [
+              -78.454071,
+              38.046894
+            ],
+            [
+              -78.453903,
+              38.046862
+            ],
+            [
+              -78.453787,
+              38.046939
+            ],
+            [
+              -78.453607,
+              38.046978
+            ],
+            [
+              -78.453276,
+              38.046954
+            ],
+            [
+              -78.45309,
+              38.046981
+            ],
+            [
+              -78.452322,
+              38.046934
+            ],
+            [
+              -78.452084,
+              38.046856
+            ],
+            [
+              -78.451932,
+              38.046737
+            ],
+            [
+              -78.451718,
+              38.046403
+            ],
+            [
+              -78.451595,
+              38.046384
+            ],
+            [
+              -78.451419,
+              38.046551
+            ],
+            [
+              -78.451203,
+              38.046603
+            ],
+            [
+              -78.450903,
+              38.046553
+            ],
+            [
+              -78.450598,
+              38.046357
+            ],
+            [
+              -78.44909,
+              38.04615
+            ],
+            [
+              -78.448844,
+              38.046317
+            ],
+            [
+              -78.448651,
+              38.04634
+            ],
+            [
+              -78.448503,
+              38.04629
+            ],
+            [
+              -78.448386,
+              38.046187
+            ],
+            [
+              -78.448317,
+              38.046047
+            ],
+            [
+              -78.448306,
+              38.045891
+            ],
+            [
+              -78.448356,
+              38.045743
+            ],
+            [
+              -78.448459,
+              38.045626
+            ],
+            [
+              -78.448802,
+              38.045372
+            ],
+            [
+              -78.448994,
+              38.045331
+            ],
+            [
+              -78.450794,
+              38.045577
+            ],
+            [
+              -78.451073,
+              38.045712
+            ],
+            [
+              -78.451197,
+              38.045633
+            ],
+            [
+              -78.4514,
+              38.04557
+            ],
+            [
+              -78.451998,
+              38.04564
+            ],
+            [
+              -78.452274,
+              38.045798
+            ],
+            [
+              -78.452489,
+              38.046145
+            ],
+            [
+              -78.453076,
+              38.046179
+            ],
+            [
+              -78.453421,
+              38.046153
+            ],
+            [
+              -78.453629,
+              38.046022
+            ],
+            [
+              -78.453795,
+              38.046002
+            ],
+            [
+              -78.453949,
+              38.04604
+            ],
+            [
+              -78.454103,
+              38.045946
+            ],
+            [
+              -78.454527,
+              38.045837
+            ],
+            [
+              -78.454675,
+              38.045876
+            ],
+            [
+              -78.454972,
+              38.046057
+            ],
+            [
+              -78.455421,
+              38.046551
+            ],
+            [
+              -78.455878,
+              38.046802
+            ],
+            [
+              -78.456334,
+              38.04695
+            ],
+            [
+              -78.456493,
+              38.046823
+            ],
+            [
+              -78.456672,
+              38.04679
+            ],
+            [
+              -78.456666,
+              38.046689
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -78.474594,
+              38.043317
+            ],
+            [
+              -78.474157,
+              38.04352
+            ],
+            [
+              -78.473781,
+              38.043538
+            ],
+            [
+              -78.473551,
+              38.043508
+            ],
+            [
+              -78.47328,
+              38.04377
+            ],
+            [
+              -78.473174,
+              38.043919
+            ],
+            [
+              -78.47316,
+              38.043984
+            ],
+            [
+              -78.473228,
+              38.044366
+            ],
+            [
+              -78.4732,
+              38.044815
+            ],
+            [
+              -78.473129,
+              38.045151
+            ],
+            [
+              -78.472644,
+              38.045954
+            ],
+            [
+              -78.47242,
+              38.046478
+            ],
+            [
+              -78.472334,
+              38.046795
+            ],
+            [
+              -78.472414,
+              38.04708
+            ],
+            [
+              -78.47282,
+              38.048139
+            ],
+            [
+              -78.472817,
+              38.048293
+            ],
+            [
+              -78.472735,
+              38.048591
+            ],
+            [
+              -78.472466,
+              38.049035
+            ],
+            [
+              -78.471801,
+              38.049506
+            ],
+            [
+              -78.471306,
+              38.049731
+            ],
+            [
+              -78.47115,
+              38.049737
+            ],
+            [
+              -78.471004,
+              38.049684
+            ],
+            [
+              -78.470888,
+              38.049579
+            ],
+            [
+              -78.470822,
+              38.049437
+            ],
+            [
+              -78.470816,
+              38.049281
+            ],
+            [
+              -78.470891,
+              38.049102
+            ],
+            [
+              -78.471007,
+              38.048998
+            ],
+            [
+              -78.4714,
+              38.048812
+            ],
+            [
+              -78.471879,
+              38.048477
+            ],
+            [
+              -78.472009,
+              38.048249
+            ],
+            [
+              -78.471649,
+              38.047315
+            ],
+            [
+              -78.471532,
+              38.046891
+            ],
+            [
+              -78.47153,
+              38.046769
+            ],
+            [
+              -78.471565,
+              38.046521
+            ],
+            [
+              -78.471666,
+              38.04621
+            ],
+            [
+              -78.471915,
+              38.045624
+            ],
+            [
+              -78.472102,
+              38.045275
+            ],
+            [
+              -78.472372,
+              38.044872
+            ],
+            [
+              -78.472426,
+              38.044373
+            ],
+            [
+              -78.472353,
+              38.043944
+            ],
+            [
+              -78.472452,
+              38.043558
+            ],
+            [
+              -78.472671,
+              38.043247
+            ],
+            [
+              -78.473154,
+              38.042803
+            ],
+            [
+              -78.47347,
+              38.042698
+            ],
+            [
+              -78.474004,
+              38.042728
+            ],
+            [
+              -78.474112,
+              38.042614
+            ],
+            [
+              -78.474475,
+              38.04241
+            ],
+            [
+              -78.474703,
+              38.042366
+            ],
+            [
+              -78.474852,
+              38.042412
+            ],
+            [
+              -78.474972,
+              38.042511
+            ],
+            [
+              -78.475045,
+              38.042649
+            ],
+            [
+              -78.47506,
+              38.042805
+            ],
+            [
+              -78.47497,
+              38.043019
+            ],
+            [
+              -78.474678,
+              38.043209
+            ],
+            [
+              -78.474594,
+              38.043317
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -78.467422,
+              38.048624
+            ],
+            [
+              -78.467199,
+              38.048689
+            ],
+            [
+              -78.466978,
+              38.048619
+            ],
+            [
+              -78.465312,
+              38.047266
+            ],
+            [
+              -78.465221,
+              38.047139
+            ],
+            [
+              -78.465184,
+              38.046988
+            ],
+            [
+              -78.465209,
+              38.046833
+            ],
+            [
+              -78.46529,
+              38.0467
+            ],
+            [
+              -78.465382,
+              38.046627
+            ],
+            [
+              -78.465529,
+              38.046576
+            ],
+            [
+              -78.465647,
+              38.046577
+            ],
+            [
+              -78.465793,
+              38.046631
+            ],
+            [
+              -78.467189,
+              38.047744
+            ],
+            [
+              -78.4676,
+              38.047353
+            ],
+            [
+              -78.469387,
+              38.046415
+            ],
+            [
+              -78.469499,
+              38.046398
+            ],
+            [
+              -78.469647,
+              38.046424
+            ],
+            [
+              -78.470075,
+              38.046637
+            ],
+            [
+              -78.470189,
+              38.046744
+            ],
+            [
+              -78.470253,
+              38.046886
+            ],
+            [
+              -78.470258,
+              38.047042
+            ],
+            [
+              -78.470202,
+              38.047188
+            ],
+            [
+              -78.470095,
+              38.047302
+            ],
+            [
+              -78.469991,
+              38.047355
+            ],
+            [
+              -78.469836,
+              38.047375
+            ],
+            [
+              -78.46951,
+              38.047247
+            ],
+            [
+              -78.468058,
+              38.048014
+            ],
+            [
+              -78.467422,
+              38.048624
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -78.458885,
+              38.051908
+            ],
+            [
+              -78.458856,
+              38.052058
+            ],
+            [
+              -78.458761,
+              38.052206
+            ],
+            [
+              -78.458383,
+              38.052422
+            ],
+            [
+              -78.458376,
+              38.05264
+            ],
+            [
+              -78.458262,
+              38.05282
+            ],
+            [
+              -78.458129,
+              38.052906
+            ],
+            [
+              -78.457896,
+              38.052952
+            ],
+            [
+              -78.45784,
+              38.052987
+            ],
+            [
+              -78.457811,
+              38.053053
+            ],
+            [
+              -78.457761,
+              38.053202
+            ],
+            [
+              -78.457807,
+              38.053382
+            ],
+            [
+              -78.457799,
+              38.053547
+            ],
+            [
+              -78.457712,
+              38.053744
+            ],
+            [
+              -78.457649,
+              38.054034
+            ],
+            [
+              -78.457575,
+              38.054172
+            ],
+            [
+              -78.457653,
+              38.054492
+            ],
+            [
+              -78.457563,
+              38.054969
+            ],
+            [
+              -78.457498,
+              38.055108
+            ],
+            [
+              -78.457387,
+              38.055213
+            ],
+            [
+              -78.45721,
+              38.055274
+            ],
+            [
+              -78.457107,
+              38.055561
+            ],
+            [
+              -78.457001,
+              38.055671
+            ],
+            [
+              -78.456899,
+              38.055722
+            ],
+            [
+              -78.456705,
+              38.05574
+            ],
+            [
+              -78.456559,
+              38.055822
+            ],
+            [
+              -78.456398,
+              38.055838
+            ],
+            [
+              -78.455963,
+              38.055649
+            ],
+            [
+              -78.455867,
+              38.055526
+            ],
+            [
+              -78.455829,
+              38.055415
+            ],
+            [
+              -78.455832,
+              38.055259
+            ],
+            [
+              -78.455895,
+              38.055116
+            ],
+            [
+              -78.456007,
+              38.055008
+            ],
+            [
+              -78.456115,
+              38.05496
+            ],
+            [
+              -78.456231,
+              38.054945
+            ],
+            [
+              -78.456366,
+              38.054972
+            ],
+            [
+              -78.456476,
+              38.054936
+            ],
+            [
+              -78.456549,
+              38.054787
+            ],
+            [
+              -78.456776,
+              38.054565
+            ],
+            [
+              -78.456799,
+              38.054467
+            ],
+            [
+              -78.456758,
+              38.054311
+            ],
+            [
+              -78.456762,
+              38.053983
+            ],
+            [
+              -78.456814,
+              38.053838
+            ],
+            [
+              -78.456894,
+              38.053742
+            ],
+            [
+              -78.456986,
+              38.0534
+            ],
+            [
+              -78.456958,
+              38.053261
+            ],
+            [
+              -78.456975,
+              38.053044
+            ],
+            [
+              -78.457178,
+              38.052488
+            ],
+            [
+              -78.457277,
+              38.052373
+            ],
+            [
+              -78.457489,
+              38.052251
+            ],
+            [
+              -78.457559,
+              38.052034
+            ],
+            [
+              -78.457764,
+              38.051845
+            ],
+            [
+              -78.457877,
+              38.05163
+            ],
+            [
+              -78.457971,
+              38.051561
+            ],
+            [
+              -78.458106,
+              38.051517
+            ],
+            [
+              -78.458245,
+              38.051395
+            ],
+            [
+              -78.458489,
+              38.050909
+            ],
+            [
+              -78.458592,
+              38.050787
+            ],
+            [
+              -78.458718,
+              38.050695
+            ],
+            [
+              -78.458869,
+              38.050658
+            ],
+            [
+              -78.459024,
+              38.050682
+            ],
+            [
+              -78.459157,
+              38.050764
+            ],
+            [
+              -78.459249,
+              38.05089
+            ],
+            [
+              -78.459286,
+              38.051041
+            ],
+            [
+              -78.459246,
+              38.051232
+            ],
+            [
+              -78.458885,
+              38.051908
+            ]
+          ]
+        ]
+      ]
+    },
+    "bounds": [
+      -78.495409,
+      38.042366,
+      -78.448306,
+      38.067696
+    ],
+    "context_mode": "area",
+    "context_min_zoom": 14,
+    "context_max_view_ratio": 16,
+    "source_layers": [
+      "City_Trails_2021-10-13",
+      "City_Trails",
+      "Albemarle_County_Trails",
+      "Strava_Sidetrails",
+      "Rivanna_Trail"
+    ],
+    "boundary_source": {
+      "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+      "park_names": [
+        "Greenbrier Park",
+        "Meadow Creek Valley",
+        "Meadowcreek Gardens & Disc Golf"
+      ],
+      "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+      "note": "Simplified park geometry for interface context; not a survey or access determination. Meadow Creek corridor also includes a roughly 35–45 m buffer around named City trail lines.",
+      "city_trail_ids": [
+        "111a21f0e18803da3cb0c41be6592baa",
+        "267a585db7b1b05a3b018c9ecdacf000",
+        "3e8abf3ea1d01e493bc93ecffd95dc54",
+        "5ea97cd3ddf12eab67bbf7deaa61875f",
+        "62e34dd2bd675826e56f493f38285c58",
+        "91022d46e15a597fdbd1798eb0667834",
+        "9908b977cf371f5e6e043363fdc9f0fa",
+        "a602608b88fbc5c9e5533271253baa0a",
+        "a6345b678364b7f6ec431f53749ec6a7",
+        "c6ed322e9fda389a2df10a81d3302a47",
+        "c788e6e044f2c026c83d97fc858a164b",
+        "city:3288",
+        "city:709",
+        "city:710",
+        "e6f4815d9a0dc9b1e5db609a4ed21361",
+        "eefb6348cfdf28e2890c4b56901d9cfe",
+        "f217e1530e6545d345d89de587c6e563",
+        "fcc2616a8aee4afe16306bfbda3abc74"
+      ]
+    },
+    "description": "Creekside paths through Meadow Creek Gardens, the valley and Greenbrier Park, with connections toward the lower creek. Greenbrier includes a stone-dust path, wetlands and a creek footbridge.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "city-trails",
+        "label": "City trail guide",
+        "url": "https://www.charlottesville.gov/659/Trails"
+      },
+      {
+        "id": "greenbrier",
+        "label": "Greenbrier official park page",
+        "url": "https://www.charlottesville.gov/facilities/facility/details/greenbrierpark-10"
+      },
+      {
+        "id": "city-rules",
+        "label": "City park rules",
+        "url": "https://www.charlottesville.gov/655/Park-Regulations"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Greenbrier Park and Meadow Creek Gardens: 6 a.m.–9 p.m. Other sections follow posted access rules.",
+        "sources": [
+          "greenbrier",
+          "city-rules"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs leashed in City parks and on City greenways.",
+        "sources": [
+          "city-rules"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Walking and biking on City trails; follow signs at construction areas and private-property connections.",
+        "sources": [
+          "city-trails"
+        ]
+      }
+    ],
+    "description_sources": [
+      "city-trails"
+    ],
+    "url": "https://www.charlottesville.gov/659/Trails",
+    "source_label": "City trail guide"
+  },
+  {
+    "id": "uva",
+    "name": "UVA / Observatory Hill Trails",
+    "area": "Observatory Hill",
+    "bounds": [
+      -78.52747,
+      38.026491,
+      -78.519258,
+      38.038126
+    ],
+    "source_layers": [
+      "UVA_Trails"
+    ],
+    "context_mode": "trail",
+    "context_min_zoom": 13,
+    "boundary_source": {
+      "dataset": "cjcwe24s41blz2wnuwiu5nyxn",
+      "snapshot_hash": "5c65942798553d78b8f92ba13cf1fae174d7cc71b9c06966195dd9dd2e2803e1",
+      "note": "Bounds of the existing curated trails; title also requires that network near the map center."
+    },
+    "description": "Wooded trails around Observatory Hill and McCormick Observatory. UVA’s map identifies trail difficulty, named loops and connections to the Rivanna Trail.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "uva-map",
+        "label": "UVA O-Hill trail map",
+        "url": "https://www.fm.virginia.edu/resources/ohill-trails.html"
+      },
+      {
+        "id": "uva-use",
+        "label": "UVA’s Observatory Hill guide",
+        "url": "https://hereford.virginia.edu/living"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Trail use",
+        "value": "Hiking, running and mountain biking.",
+        "sources": [
+          "uva-use"
+        ]
+      }
+    ],
+    "description_sources": [
+      "uva-map",
+      "uva-use"
+    ],
+    "url": "https://www.fm.virginia.edu/resources/ohill-trails.html",
+    "source_label": "UVA O-Hill trail map"
+  },
+  {
+    "id": "pleasant-grove",
+    "name": "Pleasant Grove Park",
+    "area": "Palmyra, Fluvanna County",
+    "bounds": [
+      -78.296294,
+      37.857799,
+      -78.266875,
+      37.883061
+    ],
+    "source_layers": [
+      "Pleasant_Grove_Park"
+    ],
+    "context_mode": "trail",
+    "context_min_zoom": 13,
+    "boundary_source": {
+      "dataset": "ckuzk86a07v6o23pymu3yppl6",
+      "snapshot_hash": "88e0f21a40533c5f3c6e622cd99ddc023144e6d790b935c8ab473808eb506aa4",
+      "note": "Bounds of the existing curated trails; title also requires that network near the map center."
+    },
+    "description": "A multi-use trail network through fields, woods and along the Rivanna River. Use the County’s map for trail names and designated equestrian routes.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "pleasant-grove",
+        "label": "Fluvanna County trail guide",
+        "url": "https://www.fluvanna.gov/parksrec/page/trails-pleasant-grove"
+      },
+      {
+        "id": "pleasant-rules",
+        "label": "Pleasant Grove map and rules (PDF)",
+        "url": "https://www.fluvannacounty.org/sites/default/files/fileattachments/parks_and_recreation/page/2191/the_pleasant_grove_park_trail_guide.pdf"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Daylight hours only.",
+        "sources": [
+          "pleasant-rules"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Leashed except in designated off-leash areas.",
+        "sources": [
+          "pleasant-rules"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking and biking; horses on designated equestrian trails. Avoid muddy trails: the County asks for 24 hours of drying per inch of rain.",
+        "sources": [
+          "pleasant-rules"
+        ]
+      }
+    ],
+    "description_sources": [
+      "pleasant-grove"
+    ],
+    "url": "https://www.fluvanna.gov/parksrec/page/trails-pleasant-grove",
+    "source_label": "Fluvanna County trail guide"
+  },
+  {
+    "id": "montpelier",
+    "name": "Montpelier Trails",
+    "area": "Orange County",
+    "bounds": [
+      -78.199725,
+      38.192182,
+      -78.160554,
+      38.226394
+    ],
+    "source_layers": [
+      "Montpelier_Trails"
+    ],
+    "context_mode": "trail",
+    "context_min_zoom": 13,
+    "boundary_source": {
+      "dataset": "ck3yw9drj03ad2nrurh0ehyef",
+      "snapshot_hash": "770a1beed1ba3e605ce220b7bd4c20f22a6d68f2cf5c4212ee42bd9c6d7cbe4a",
+      "note": "Bounds of the existing curated trails; title also requires that network near the map center."
+    },
+    "description": "Walking routes through Montpelier’s forests, meadows and historic landscape, including the Landmark Forest and a connection toward Grelen.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "montpelier",
+        "label": "Montpelier trails and visitor rules",
+        "url": "https://www.montpelier.org/visit/trails/"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Tuesday–Sunday, 9 a.m.–4 p.m.; trails follow business hours.",
+        "sources": [
+          "montpelier"
+        ]
+      },
+      {
+        "label": "Admission",
+        "value": "A tour ticket, property pass or membership is required. The Grelen connector follows both properties’ business hours.",
+        "sources": [
+          "montpelier"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep dogs leashed and remove pet waste.",
+        "sources": [
+          "montpelier"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Pedestrians only. No bicycles or horses.",
+        "sources": [
+          "montpelier"
+        ]
+      }
+    ],
+    "description_sources": [
+      "montpelier"
+    ],
+    "url": "https://www.montpelier.org/visit/trails/",
+    "source_label": "Montpelier trails and visitor rules"
+  },
+  {
+    "id": "wintergreen",
+    "name": "Wintergreen Trails",
+    "area": "Blue Ridge and Rockfish Valley",
+    "bounds": [
+      -78.965726,
+      37.893457,
+      -78.864774,
+      37.940758
+    ],
+    "source_layers": [
+      "Wintergreen_Trails"
+    ],
+    "context_mode": "trail",
+    "context_min_zoom": 13,
+    "boundary_source": {
+      "dataset": "ck51rmxqm6i332ip8gurz7h4l",
+      "snapshot_hash": "38ee7cf537dc86316710993a737410ca2cb82c209a3abcd07cda263fadce89d2",
+      "note": "Bounds of the existing curated trails; title also requires that network near the map center."
+    },
+    "description": "Mountain and valley walks ranging from gentle paths to steep, rocky routes. The Nature Foundation’s guide labels hikes by difficulty and describes waterfalls and overlooks.",
+    "info_reviewed_on": "2026-11-03",
+    "info_sources": [
+      {
+        "id": "wintergreen",
+        "label": "Nature Foundation hiking guide",
+        "url": "https://tnfw.org/resources/hiking-and-walking-trails/"
+      },
+      {
+        "id": "wintergreen-dogs",
+        "label": "Wintergreen dog guidance",
+        "url": "https://www.wtgpoa.org/news-updates/leashes-on-wintergreen-dogs"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Dogs",
+        "value": "Keep dogs leashed on hiking trails and pack out pet waste, following WPOA guidance and posted signs.",
+        "sources": [
+          "wintergreen-dogs"
+        ]
+      },
+      {
+        "label": "Winter access",
+        "value": "Loggers Alley closes where it crosses ski slopes during ski season. Other steep trails can be hazardous with ice and snow; check the current guide.",
+        "sources": [
+          "wintergreen"
+        ]
+      }
+    ],
+    "description_sources": [
+      "wintergreen"
+    ],
+    "url": "https://tnfw.org/resources/hiking-and-walking-trails/",
+    "source_label": "Nature Foundation hiking guide"
   }
 ]

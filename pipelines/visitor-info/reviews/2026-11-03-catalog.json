@@ -1,0 +1,1283 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-03T04:28:27.271853Z",
+  "source_policy": "Official operators and municipal sources; no inference of pet or cycling permission from missing rules. Dates describe this review, not guaranteed ongoing access.",
+  "added_systems": [
+    "ivy-creek-natural-area",
+    "heyward-community-forest",
+    "mcintire-park",
+    "quarry-park",
+    "azalea-park",
+    "pen-park",
+    "washington-park",
+    "jordan-park",
+    "meadow-creek",
+    "uva",
+    "pleasant-grove",
+    "montpelier",
+    "wintergreen"
+  ],
+  "research_notes": {
+    "washington-park": [
+      "Facility page says 6 a.m.–9 p.m.; City park-regulations page says 6 a.m.–10 p.m. Conflict is shown rather than silently resolved."
+    ],
+    "uva": [
+      "No trail-specific operating hours or sufficiently clear current pet policy found on the reviewed UVA pages or O-Hill map. Those fields are omitted; campus recreation-field rules are not generalized to woodland trails."
+    ],
+    "montpelier": [
+      "Older third-party and local-government guides describe free access. The current operator page explicitly requires tickets or membership; current operator policy takes precedence."
+    ],
+    "wintergreen": [
+      "The Nature Foundation page footer lists office/visitor-center hours, not trail hours; omitted. No current explicit trail cycling policy found; omitted. WPOA distinguishes general community dog control from trail leash guidance. Resort ski-slope pet policies are not applied to all hiking trails."
+    ],
+    "ragged-mountain": [
+      "The visiting page does not state a current cycling/running rule; do not turn the general City guide’s exception wording into a specific ban without further evidence. Construction status is attributed to the City and should be rechecked.",
+      "Retained the existing reservoir-wide context bounds: municipal park polygons exclude part of the lake view. The smaller Heyward area takes priority where they overlap."
+    ],
+    "monticello": [
+      "Older trail PDFs excluded dogs from boardwalks. Current operator website explicitly permits leashed dogs on boardwalks and supersedes that older wording."
+    ]
+  },
+  "sources": [
+    {
+      "id": "city-rules",
+      "label": "City park rules",
+      "url": "https://www.charlottesville.gov/655/Park-Regulations"
+    },
+    {
+      "id": "city-trails",
+      "label": "City trail guide",
+      "url": "https://www.charlottesville.gov/659/Trails"
+    },
+    {
+      "id": "ivy-overview",
+      "label": "Ivy Creek visitor guide",
+      "url": "https://ivycreekfoundation.org/overview"
+    },
+    {
+      "id": "ivy-rules",
+      "label": "Ivy Creek rules",
+      "url": "https://ivycreekfoundation.org/rules"
+    },
+    {
+      "id": "heyward",
+      "label": "Heyward official park page",
+      "url": "https://www.charlottesville.gov/facilities/facility/details/Heyward-Community-Forest-66"
+    },
+    {
+      "id": "mcintire",
+      "label": "McIntire official park page",
+      "url": "https://charlottesville.gov/Facilities/Facility/Details/McIntire-Park-25"
+    },
+    {
+      "id": "quarry",
+      "label": "Quarry official park page",
+      "url": "https://www.charlottesville.gov/facilities/facility/details/Quarry-Park-60"
+    },
+    {
+      "id": "azalea",
+      "label": "Azalea official park page",
+      "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Azalea-Park-5"
+    },
+    {
+      "id": "pen",
+      "label": "Pen Park official page",
+      "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Pen-Park-26"
+    },
+    {
+      "id": "washington",
+      "label": "Washington official park page",
+      "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Booker-T-Washington-Park-56"
+    },
+    {
+      "id": "jordan",
+      "label": "Jordan official park page",
+      "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Jordan-Park-11"
+    },
+    {
+      "id": "greenbrier",
+      "label": "Greenbrier official park page",
+      "url": "https://www.charlottesville.gov/facilities/facility/details/greenbrierpark-10"
+    },
+    {
+      "id": "uva-map",
+      "label": "UVA O-Hill trail map",
+      "url": "https://www.fm.virginia.edu/resources/ohill-trails.html"
+    },
+    {
+      "id": "uva-use",
+      "label": "UVA’s Observatory Hill guide",
+      "url": "https://hereford.virginia.edu/living"
+    },
+    {
+      "id": "pleasant-grove",
+      "label": "Fluvanna County trail guide",
+      "url": "https://www.fluvanna.gov/parksrec/page/trails-pleasant-grove"
+    },
+    {
+      "id": "pleasant-rules",
+      "label": "Pleasant Grove map and rules (PDF)",
+      "url": "https://www.fluvannacounty.org/sites/default/files/fileattachments/parks_and_recreation/page/2191/the_pleasant_grove_park_trail_guide.pdf"
+    },
+    {
+      "id": "montpelier",
+      "label": "Montpelier trails and visitor rules",
+      "url": "https://www.montpelier.org/visit/trails/"
+    },
+    {
+      "id": "wintergreen",
+      "label": "Nature Foundation hiking guide",
+      "url": "https://tnfw.org/resources/hiking-and-walking-trails/"
+    },
+    {
+      "id": "wintergreen-dogs",
+      "label": "Wintergreen dog guidance",
+      "url": "https://www.wtgpoa.org/news-updates/leashes-on-wintergreen-dogs"
+    },
+    {
+      "id": "rtf-rules",
+      "label": "Rivanna Trail rules",
+      "url": "https://www.rivannatrails.org/Rules"
+    },
+    {
+      "id": "rtf-map",
+      "label": "Rivanna Trails Foundation maps",
+      "url": "https://www.rivannatrails.org/Map"
+    },
+    {
+      "id": "ragged-visit",
+      "label": "Ragged Mountain visitor information",
+      "url": "https://www.charlottesville.gov/671/Visiting-the-Natural-Area"
+    },
+    {
+      "id": "monticello-guide",
+      "label": "Monticello trail guide",
+      "url": "https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail"
+    },
+    {
+      "id": "monticello-rules",
+      "label": "Monticello hours and trail rules",
+      "url": "https://www.monticello.org/visit/hiking-trails/trail-hours-faqs"
+    }
+  ],
+  "systems": [
+    {
+      "id": "rivanna",
+      "description": "Explore the Rivanna Trail and its connecting trails around Charlottesville. The Rivanna Trails Foundation maintains maps, trail guidance, and opportunities to help care for the network.",
+      "description_sources": [
+        "rtf-map"
+      ],
+      "visitor_info": [
+        {
+          "label": "Dogs",
+          "value": "Dogs must be leashed.",
+          "sources": [
+            "rtf-rules"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Stay on the trail and respect adjacent private property. No motorized vehicles, camping or loitering.",
+          "sources": [
+            "rtf-rules"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "rtf-map",
+          "label": "Rivanna Trails Foundation maps",
+          "url": "https://www.rivannatrails.org/Map"
+        },
+        {
+          "id": "rtf-rules",
+          "label": "Rivanna Trail rules",
+          "url": "https://www.rivannatrails.org/Rules"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.54,
+        37.995,
+        -78.445,
+        38.08
+      ]
+    },
+    {
+      "id": "ragged-mountain",
+      "description": "Wooded walking trails around Ragged Mountain Reservoir. Check the City’s current construction information before heading toward the shoreline or dam.",
+      "description_sources": [
+        "ragged-visit"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 7 a.m. to sunset.",
+          "sources": [
+            "ragged-visit"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "No pets; service dogs are welcome.",
+          "sources": [
+            "ragged-visit"
+          ]
+        },
+        {
+          "label": "Water access",
+          "value": "No swimming.",
+          "sources": [
+            "ragged-visit"
+          ]
+        },
+        {
+          "label": "Construction",
+          "value": "The City reports shoreline closures in sections and closure of the upper parking lot; use the lower Heyward lot and follow posted detours.",
+          "sources": [
+            "ragged-visit"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "ragged-visit",
+          "label": "Ragged Mountain visitor information",
+          "url": "https://www.charlottesville.gov/671/Visiting-the-Natural-Area"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.603,
+        38.005,
+        -78.553,
+        38.047
+      ]
+    },
+    {
+      "id": "monticello",
+      "description": "A winding path and connecting woodland trails near Monticello. The trail manager’s guide includes parking, hours, trail maps, and access rules.",
+      "description_sources": [
+        "monticello-guide"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Sunrise to sunset; closed Thanksgiving, Christmas and during unsafe weather. Winter ice can delay opening.",
+          "sources": [
+            "monticello-rules"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Leashed dogs are welcome on trails and boardwalks.",
+          "sources": [
+            "monticello-rules"
+          ]
+        },
+        {
+          "label": "Bikes",
+          "value": "No e-bikes. Other bicycles: 10 mph maximum and yield to pedestrians. Boardwalks close to bikes when wet.",
+          "sources": [
+            "monticello-rules"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "monticello-guide",
+          "label": "Monticello trail guide",
+          "url": "https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail"
+        },
+        {
+          "id": "monticello-rules",
+          "label": "Monticello hours and trail rules",
+          "url": "https://www.monticello.org/visit/hiking-trails/trail-hours-faqs"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.487,
+        37.992,
+        -78.445,
+        38.018
+      ]
+    },
+    {
+      "id": "ivy-creek-natural-area",
+      "description": "Woodland, meadow and shoreline walks at Ivy Creek Natural Area and Historic River View Farm. The central red trail connects the walking loops.",
+      "description_sources": [
+        "ivy-overview"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "7 a.m. to dark.",
+          "sources": [
+            "ivy-overview"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "No pets; service dogs are welcome.",
+          "sources": [
+            "ivy-rules"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Walking and wheelchair use. No bicycles, horses or jogging; stay on the trails.",
+          "sources": [
+            "ivy-rules"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "ivy-overview",
+          "label": "Ivy Creek visitor guide",
+          "url": "https://ivycreekfoundation.org/overview"
+        },
+        {
+          "id": "ivy-rules",
+          "label": "Ivy Creek rules",
+          "url": "https://ivycreekfoundation.org/rules"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.502247,
+        38.086704,
+        -78.488865,
+        38.100461
+      ],
+      "boundary_source": {
+        "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+        "park_names": [
+          "Ivy Creek Natural Area"
+        ],
+        "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+        "note": "Simplified park geometry for interface context; not a survey or access determination."
+      }
+    },
+    {
+      "id": "heyward-community-forest",
+      "description": "Forested hills, rock outcrops and trails near Ragged Mountain. Use the lower parking lot on Reservoir Road for access.",
+      "description_sources": [
+        "heyward"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 7 a.m. to sunset.",
+          "sources": [
+            "heyward"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs leashed and clean up after them.",
+          "sources": [
+            "city-rules"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking, running and biking on City trails. Neighboring Ragged Mountain has different rules.",
+          "sources": [
+            "city-trails"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "heyward",
+          "label": "Heyward official park page",
+          "url": "https://www.charlottesville.gov/facilities/facility/details/Heyward-Community-Forest-66"
+        },
+        {
+          "id": "city-rules",
+          "label": "City park rules",
+          "url": "https://www.charlottesville.gov/655/Park-Regulations"
+        },
+        {
+          "id": "city-trails",
+          "label": "City trail guide",
+          "url": "https://www.charlottesville.gov/659/Trails"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.558921,
+        38.022881,
+        -78.547195,
+        38.032686
+      ],
+      "boundary_source": {
+        "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+        "park_names": [
+          "Heyward Community Forest"
+        ],
+        "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+        "note": "Simplified park geometry for interface context; not a survey or access determination."
+      }
+    },
+    {
+      "id": "mcintire-park",
+      "description": "Wooded trails and winding streams around McIntire Park, with connections across the park and to the surrounding greenway network.",
+      "description_sources": [
+        "mcintire"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 6 a.m.–10 p.m.",
+          "sources": [
+            "mcintire"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs leashed and clean up after them.",
+          "sources": [
+            "city-rules"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking, running and biking; share the trails.",
+          "sources": [
+            "city-trails"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "mcintire",
+          "label": "McIntire official park page",
+          "url": "https://charlottesville.gov/Facilities/Facility/Details/McIntire-Park-25"
+        },
+        {
+          "id": "city-rules",
+          "label": "City park rules",
+          "url": "https://www.charlottesville.gov/655/Park-Regulations"
+        },
+        {
+          "id": "city-trails",
+          "label": "City trail guide",
+          "url": "https://www.charlottesville.gov/659/Trails"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.482008,
+        38.042215,
+        -78.470818,
+        38.05463
+      ],
+      "boundary_source": {
+        "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+        "park_names": [
+          "McIntire Park"
+        ],
+        "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+        "note": "Simplified park geometry for interface context; not a survey or access determination."
+      }
+    },
+    {
+      "id": "quarry-park",
+      "description": "Trails by Moore’s Creek and the old quarry bluffs, with nearby Rivanna Trail connections. Parking is available by the ballfields and restrooms.",
+      "description_sources": [
+        "quarry"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 6 a.m.–9 p.m.",
+          "sources": [
+            "quarry"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs leashed and clean up after them.",
+          "sources": [
+            "city-rules"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking, running and biking on City trails.",
+          "sources": [
+            "city-trails"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "quarry",
+          "label": "Quarry official park page",
+          "url": "https://www.charlottesville.gov/facilities/facility/details/Quarry-Park-60"
+        },
+        {
+          "id": "city-rules",
+          "label": "City park rules",
+          "url": "https://www.charlottesville.gov/655/Park-Regulations"
+        },
+        {
+          "id": "city-trails",
+          "label": "City trail guide",
+          "url": "https://www.charlottesville.gov/659/Trails"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.482355,
+        38.011435,
+        -78.475088,
+        38.015347
+      ],
+      "boundary_source": {
+        "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+        "park_names": [
+          "Quarry Park"
+        ],
+        "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+        "note": "Simplified park geometry for interface context; not a survey or access determination."
+      }
+    },
+    {
+      "id": "azalea-park",
+      "description": "Creekside paths, western woodland trails and Rivanna Trail connections near Old Lynchburg Road. The main park also has a playground and fenced dog area.",
+      "description_sources": [
+        "azalea"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 6 a.m.–9 p.m.",
+          "sources": [
+            "azalea"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Leashed in the park; off-leash only inside the fenced dog area. Clean up pet waste.",
+          "sources": [
+            "azalea"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking, running and biking on City trails.",
+          "sources": [
+            "city-trails"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "azalea",
+          "label": "Azalea official park page",
+          "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Azalea-Park-5"
+        },
+        {
+          "id": "city-trails",
+          "label": "City trail guide",
+          "url": "https://www.charlottesville.gov/659/Trails"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.52345,
+        38.009613,
+        -78.511751,
+        38.015757
+      ],
+      "boundary_source": {
+        "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+        "park_names": [
+          "Azalea Park",
+          "Azalea Park West"
+        ],
+        "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+        "note": "Simplified park geometry for interface context; not a survey or access determination."
+      }
+    },
+    {
+      "id": "pen-park",
+      "description": "A fitness trail and a 1½-mile riverside nature trail lead toward the Rivanna River from Pen Park’s recreation areas.",
+      "description_sources": [
+        "pen"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 6 a.m.–10 p.m.",
+          "sources": [
+            "pen"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Leashed dogs are allowed in the park, but not on the golf course. Pick up pet waste.",
+          "sources": [
+            "pen"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking, running and biking on City trails; the golf course is separate.",
+          "sources": [
+            "city-trails"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "pen",
+          "label": "Pen Park official page",
+          "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Pen-Park-26"
+        },
+        {
+          "id": "city-trails",
+          "label": "City trail guide",
+          "url": "https://www.charlottesville.gov/659/Trails"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.458924,
+        38.045355,
+        -78.446513,
+        38.058835
+      ],
+      "boundary_source": {
+        "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+        "park_names": [
+          "Pen Park"
+        ],
+        "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+        "note": "Simplified park geometry for interface context; not a survey or access determination."
+      }
+    },
+    {
+      "id": "washington-park",
+      "description": "A hillside park with paths between the upper recreation area and lower fields, picnic areas and playground.",
+      "description_sources": [
+        "washington"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Opens at 6 a.m. City pages list different closing times (9 or 10 p.m.); check posted hours.",
+          "sources": [
+            "washington",
+            "city-rules"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs leashed and clean up after them.",
+          "sources": [
+            "city-rules"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking, running and biking on City trails.",
+          "sources": [
+            "city-trails"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "washington",
+          "label": "Washington official park page",
+          "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Booker-T-Washington-Park-56"
+        },
+        {
+          "id": "city-rules",
+          "label": "City park rules",
+          "url": "https://www.charlottesville.gov/655/Park-Regulations"
+        },
+        {
+          "id": "city-trails",
+          "label": "City trail guide",
+          "url": "https://www.charlottesville.gov/659/Trails"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.492082,
+        38.039375,
+        -78.489137,
+        38.041964
+      ],
+      "boundary_source": {
+        "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+        "park_names": [
+          "Washington Park"
+        ],
+        "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+        "note": "Simplified park geometry for interface context; not a survey or access determination."
+      }
+    },
+    {
+      "id": "jordan-park",
+      "description": "A small creekside neighborhood park with a playground and picnic tables. The Rivanna Trail passes through the park.",
+      "description_sources": [
+        "jordan"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daily, 6 a.m.–9 p.m.",
+          "sources": [
+            "jordan"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs leashed and clean up after them.",
+          "sources": [
+            "city-rules"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking, running and biking on City trails.",
+          "sources": [
+            "city-trails"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "jordan",
+          "label": "Jordan official park page",
+          "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Jordan-Park-11"
+        },
+        {
+          "id": "city-rules",
+          "label": "City park rules",
+          "url": "https://www.charlottesville.gov/655/Park-Regulations"
+        },
+        {
+          "id": "city-trails",
+          "label": "City trail guide",
+          "url": "https://www.charlottesville.gov/659/Trails"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.48861,
+        38.016509,
+        -78.486763,
+        38.017999
+      ],
+      "boundary_source": {
+        "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+        "park_names": [
+          "Jordan Park"
+        ],
+        "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+        "note": "Simplified park geometry for interface context; not a survey or access determination."
+      }
+    },
+    {
+      "id": "meadow-creek",
+      "description": "Creekside paths through Meadow Creek Gardens, the valley and Greenbrier Park, with connections toward the lower creek. Greenbrier includes a stone-dust path, wetlands and a creek footbridge.",
+      "description_sources": [
+        "city-trails"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Greenbrier Park and Meadow Creek Gardens: 6 a.m.–9 p.m. Other sections follow posted access rules.",
+          "sources": [
+            "greenbrier",
+            "city-rules"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs leashed in City parks and on City greenways.",
+          "sources": [
+            "city-rules"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Walking and biking on City trails; follow signs at construction areas and private-property connections.",
+          "sources": [
+            "city-trails"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "city-trails",
+          "label": "City trail guide",
+          "url": "https://www.charlottesville.gov/659/Trails"
+        },
+        {
+          "id": "greenbrier",
+          "label": "Greenbrier official park page",
+          "url": "https://www.charlottesville.gov/facilities/facility/details/greenbrierpark-10"
+        },
+        {
+          "id": "city-rules",
+          "label": "City park rules",
+          "url": "https://www.charlottesville.gov/655/Park-Regulations"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.495409,
+        38.042366,
+        -78.448306,
+        38.067696
+      ],
+      "boundary_source": {
+        "url": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+        "park_names": [
+          "Greenbrier Park",
+          "Meadow Creek Valley",
+          "Meadowcreek Gardens & Disc Golf"
+        ],
+        "snapshot_hash": "9c7407e7033b0ecf139bef9105a597d15fe6e53cf795986722763698dbdde01f",
+        "note": "Simplified park geometry for interface context; not a survey or access determination. Meadow Creek corridor also includes a roughly 35–45 m buffer around named City trail lines.",
+        "city_trail_ids": [
+          "111a21f0e18803da3cb0c41be6592baa",
+          "267a585db7b1b05a3b018c9ecdacf000",
+          "3e8abf3ea1d01e493bc93ecffd95dc54",
+          "5ea97cd3ddf12eab67bbf7deaa61875f",
+          "62e34dd2bd675826e56f493f38285c58",
+          "91022d46e15a597fdbd1798eb0667834",
+          "9908b977cf371f5e6e043363fdc9f0fa",
+          "a602608b88fbc5c9e5533271253baa0a",
+          "a6345b678364b7f6ec431f53749ec6a7",
+          "c6ed322e9fda389a2df10a81d3302a47",
+          "c788e6e044f2c026c83d97fc858a164b",
+          "city:3288",
+          "city:709",
+          "city:710",
+          "e6f4815d9a0dc9b1e5db609a4ed21361",
+          "eefb6348cfdf28e2890c4b56901d9cfe",
+          "f217e1530e6545d345d89de587c6e563",
+          "fcc2616a8aee4afe16306bfbda3abc74"
+        ]
+      }
+    },
+    {
+      "id": "uva",
+      "description": "Wooded trails around Observatory Hill and McCormick Observatory. UVA’s map identifies trail difficulty, named loops and connections to the Rivanna Trail.",
+      "description_sources": [
+        "uva-map",
+        "uva-use"
+      ],
+      "visitor_info": [
+        {
+          "label": "Trail use",
+          "value": "Hiking, running and mountain biking.",
+          "sources": [
+            "uva-use"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "uva-map",
+          "label": "UVA O-Hill trail map",
+          "url": "https://www.fm.virginia.edu/resources/ohill-trails.html"
+        },
+        {
+          "id": "uva-use",
+          "label": "UVA’s Observatory Hill guide",
+          "url": "https://hereford.virginia.edu/living"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.52747,
+        38.026491,
+        -78.519258,
+        38.038126
+      ],
+      "boundary_source": {
+        "dataset": "cjcwe24s41blz2wnuwiu5nyxn",
+        "snapshot_hash": "5c65942798553d78b8f92ba13cf1fae174d7cc71b9c06966195dd9dd2e2803e1",
+        "note": "Bounds of the existing curated trails; title also requires that network near the map center."
+      }
+    },
+    {
+      "id": "pleasant-grove",
+      "description": "A multi-use trail network through fields, woods and along the Rivanna River. Use the County’s map for trail names and designated equestrian routes.",
+      "description_sources": [
+        "pleasant-grove"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Daylight hours only.",
+          "sources": [
+            "pleasant-rules"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Leashed except in designated off-leash areas.",
+          "sources": [
+            "pleasant-rules"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Hiking and biking; horses on designated equestrian trails. Avoid muddy trails: the County asks for 24 hours of drying per inch of rain.",
+          "sources": [
+            "pleasant-rules"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "pleasant-grove",
+          "label": "Fluvanna County trail guide",
+          "url": "https://www.fluvanna.gov/parksrec/page/trails-pleasant-grove"
+        },
+        {
+          "id": "pleasant-rules",
+          "label": "Pleasant Grove map and rules (PDF)",
+          "url": "https://www.fluvannacounty.org/sites/default/files/fileattachments/parks_and_recreation/page/2191/the_pleasant_grove_park_trail_guide.pdf"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.296294,
+        37.857799,
+        -78.266875,
+        37.883061
+      ],
+      "boundary_source": {
+        "dataset": "ckuzk86a07v6o23pymu3yppl6",
+        "snapshot_hash": "88e0f21a40533c5f3c6e622cd99ddc023144e6d790b935c8ab473808eb506aa4",
+        "note": "Bounds of the existing curated trails; title also requires that network near the map center."
+      }
+    },
+    {
+      "id": "montpelier",
+      "description": "Walking routes through Montpelier’s forests, meadows and historic landscape, including the Landmark Forest and a connection toward Grelen.",
+      "description_sources": [
+        "montpelier"
+      ],
+      "visitor_info": [
+        {
+          "label": "Hours",
+          "value": "Tuesday–Sunday, 9 a.m.–4 p.m.; trails follow business hours.",
+          "sources": [
+            "montpelier"
+          ]
+        },
+        {
+          "label": "Admission",
+          "value": "A tour ticket, property pass or membership is required. The Grelen connector follows both properties’ business hours.",
+          "sources": [
+            "montpelier"
+          ]
+        },
+        {
+          "label": "Dogs",
+          "value": "Keep dogs leashed and remove pet waste.",
+          "sources": [
+            "montpelier"
+          ]
+        },
+        {
+          "label": "Trail use",
+          "value": "Pedestrians only. No bicycles or horses.",
+          "sources": [
+            "montpelier"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "montpelier",
+          "label": "Montpelier trails and visitor rules",
+          "url": "https://www.montpelier.org/visit/trails/"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.199725,
+        38.192182,
+        -78.160554,
+        38.226394
+      ],
+      "boundary_source": {
+        "dataset": "ck3yw9drj03ad2nrurh0ehyef",
+        "snapshot_hash": "770a1beed1ba3e605ce220b7bd4c20f22a6d68f2cf5c4212ee42bd9c6d7cbe4a",
+        "note": "Bounds of the existing curated trails; title also requires that network near the map center."
+      }
+    },
+    {
+      "id": "wintergreen",
+      "description": "Mountain and valley walks ranging from gentle paths to steep, rocky routes. The Nature Foundation’s guide labels hikes by difficulty and describes waterfalls and overlooks.",
+      "description_sources": [
+        "wintergreen"
+      ],
+      "visitor_info": [
+        {
+          "label": "Dogs",
+          "value": "Keep dogs leashed on hiking trails and pack out pet waste, following WPOA guidance and posted signs.",
+          "sources": [
+            "wintergreen-dogs"
+          ]
+        },
+        {
+          "label": "Winter access",
+          "value": "Loggers Alley closes where it crosses ski slopes during ski season. Other steep trails can be hazardous with ice and snow; check the current guide.",
+          "sources": [
+            "wintergreen"
+          ]
+        }
+      ],
+      "info_sources": [
+        {
+          "id": "wintergreen",
+          "label": "Nature Foundation hiking guide",
+          "url": "https://tnfw.org/resources/hiking-and-walking-trails/"
+        },
+        {
+          "id": "wintergreen-dogs",
+          "label": "Wintergreen dog guidance",
+          "url": "https://www.wtgpoa.org/news-updates/leashes-on-wintergreen-dogs"
+        }
+      ],
+      "info_reviewed_on": "2026-11-03",
+      "bounds": [
+        -78.965726,
+        37.893457,
+        -78.864774,
+        37.940758
+      ],
+      "boundary_source": {
+        "dataset": "ck51rmxqm6i332ip8gurz7h4l",
+        "snapshot_hash": "38ee7cf537dc86316710993a737410ca2cb82c209a3abcd07cda263fadce89d2",
+        "note": "Bounds of the existing curated trails; title also requires that network near the map center."
+      }
+    }
+  ],
+  "preview_centers": {
+    "ragged-mountain": [
+      -78.58028649308476,
+      38.01666172259242
+    ],
+    "ivy-creek-natural-area": [
+      -78.49429620007618,
+      38.093549368998254
+    ],
+    "heyward-community-forest": [
+      -78.5547066669838,
+      38.02777897703007
+    ],
+    "mcintire-park": [
+      -78.47415777882571,
+      38.047105903369996
+    ],
+    "quarry-park": [
+      -78.4803767901304,
+      38.01266556009024
+    ],
+    "azalea-park": [
+      -78.52057804806687,
+      38.01297743246272
+    ],
+    "pen-park": [
+      -78.45299752903838,
+      38.05195518501435
+    ],
+    "washington-park": [
+      -78.4908786223562,
+      38.04068154993727
+    ],
+    "jordan-park": [
+      -78.48786262305072,
+      38.017220237422194
+    ],
+    "meadow-creek": [
+      -78.47227211102185,
+      38.06119899330518
+    ],
+    "uva": [
+      -78.52347624971786,
+      38.03801259632959
+    ],
+    "pleasant-grove": [
+      -78.27978304404655,
+      37.875946055229214
+    ],
+    "montpelier": [
+      -78.16170362243845,
+      38.21401043063421
+    ],
+    "wintergreen": [
+      -78.95874154592684,
+      37.92628603576681
+    ]
+  },
+  "monitor_baseline": {
+    "note": "First successful fetches establish baselines; they do not indicate newly changed visitor rules.",
+    "sources": {
+      "visitor-info/city-rules": {
+        "sha256": "22270934e89add711af334090fe1157d960a5840511c2560105f004ba5381261",
+        "file": "snapshots/0f6e1bc2c8ac6dd549fe9ff92e1cbac85bb358ece8c3ae860337425c34aac242.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:21.304079Z"
+      },
+      "visitor-info/city-trails": {
+        "sha256": "9af4f9e2bfbfd701b0c355ebfa1c13938eff7017ffd0eed5ebc7686b04ddfc72",
+        "file": "snapshots/eda4bf2a2b573693c0db4693d93f34832b83d7216db85c1ef7cfb4c149138b3d.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:21.959032Z"
+      },
+      "visitor-info/ivy-overview": {
+        "sha256": "d9d2cd3d4a4f22d4573f292127f02ee0d14e6ece508e3ec244a6c09b3a805cfb",
+        "file": "snapshots/0fa3c63b911c082a05c2ac6a528499baf716cb8ac1b2e0b389a3eb62abab1b09.txt",
+        "etag": null,
+        "last_modified": "Tue, 03 Nov 2026 04:30:22 GMT",
+        "checked_at": "2026-11-03T04:30:22.312920Z"
+      },
+      "visitor-info/ivy-rules": {
+        "sha256": "f6e6f3ba978e2b0d6e7a2cb1681aa202119abe07873212fa7b2fab3c1212efec",
+        "file": "snapshots/0834f6d9ed842f85b3dd13b4f0c558527e638963bc19183740709ed514657f9f.txt",
+        "etag": null,
+        "last_modified": "Tue, 03 Nov 2026 04:30:22 GMT",
+        "checked_at": "2026-11-03T04:30:22.513068Z"
+      },
+      "visitor-info/heyward": {
+        "sha256": "136946dd94590f5055063a997a670d5244d499e0568fa8a0a02202f823b11c29",
+        "file": "snapshots/371d383f060d26318e844caf2078e50a8867d78ebdacb46e5bc35e86383dce4f.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:23.412933Z"
+      },
+      "visitor-info/mcintire": {
+        "sha256": "8319fe5a8b521e017afc462d37491727106aaaf69def4b7bda0b085db590c570",
+        "file": "snapshots/f511c82d269632cef284dcda58b670e161d43be0f23e6c16e1b3fdcee3876740.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:24.386109Z"
+      },
+      "visitor-info/quarry": {
+        "sha256": "ac1144c52a9cabaab2e0543ef250545b893a03ed9d41017d63658ad928d95cea",
+        "file": "snapshots/51b65e16cf82dbed290e9426cee75ab34600806826a450eb1474ecb27d8e5281.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:25.316264Z"
+      },
+      "visitor-info/azalea": {
+        "sha256": "93e3c5d8879e08bd5f69161fbe3ff08f1c6ae7642c259b6cbd21f4aca50056eb",
+        "file": "snapshots/aa7819e2e0a1867550244d368d7dea4e890777abb65c9c094e4f20a954bf802f.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:26.195978Z"
+      },
+      "visitor-info/pen": {
+        "sha256": "fafe595ae697becf76008fcf9a5826317a35c117963b535dc8155ac0da360f75",
+        "file": "snapshots/1a9868cf28189aa477862a5b027610b798f135ae7fc8c2970957a2765a428004.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:27.141448Z"
+      },
+      "visitor-info/washington": {
+        "sha256": "7df1bcad21b5bc3954b572906a0b38da0cf4944893a51abb4c23730359a7fceb",
+        "file": "snapshots/8f3391f965c5f8820c72010a926b4e4cadb08c4332a49dd4de1641de201d32d9.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:27.977406Z"
+      },
+      "visitor-info/jordan": {
+        "sha256": "97240f4eb510346b7e9d8fd5fa527a88510e5af518a11bbf7f54001d331a6363",
+        "file": "snapshots/5e723fede58a39f848f6657c29e784ae7ccc4e4dae7369c3bed89d7d918118b6.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:28.875720Z"
+      },
+      "visitor-info/greenbrier": {
+        "sha256": "9e678baa4baba32951b76149ead2090d91729d9b9f533c1cb0b8b7bc2c0d576b",
+        "file": "snapshots/7f124665dff35b98ac4e4639d346664f7f853c0979457774b4bfbcabe07107c5.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:29.715360Z"
+      },
+      "visitor-info/uva-map": {
+        "sha256": "0dd9124073e14ad60b6bbaa908629b7d82348fcc1254668c7bc8b767c1366cfa",
+        "file": "snapshots/c6930bb5d4c8b2dc17c69da0e6699496d32ecc11b060741585575238b5ae975f.txt",
+        "etag": "\"db53bb8f4b36dd1:0\"",
+        "last_modified": "Thu, 27 Aug 2026 17:43:25 GMT",
+        "checked_at": "2026-11-03T04:30:29.817393Z"
+      },
+      "visitor-info/pleasant-grove": {
+        "sha256": "ef74d0030608efae6699c052d26df20dd2d4bb06fca8bcc419e9f9adabac4575",
+        "file": "snapshots/5476114bcd22d81daa79a9ceaa48bedeec3c55522cf8655ab640a7958f87a609.txt",
+        "etag": "W/\"1793641528-1\"",
+        "last_modified": "Mon, 02 Nov 2026 17:45:28 GMT",
+        "checked_at": "2026-11-03T04:30:30.074404Z"
+      },
+      "visitor-info/pleasant-rules": {
+        "sha256": "5525618ceaca33e9c18e755088b490b9277a6c5617afeaa743e25bb3abaa59f7",
+        "file": "snapshots/5525618ceaca33e9c18e755088b490b9277a6c5617afeaa743e25bb3abaa59f7.pdf",
+        "etag": "\"1f7980-5494f7ef4b99a\"",
+        "last_modified": "Fri, 24 Feb 2017 23:57:44 GMT",
+        "checked_at": "2026-11-03T04:30:30.408775Z"
+      },
+      "visitor-info/montpelier": {
+        "sha256": "efc12fd4fcedfb1592cbc73a94ef21bc943457917487024f26e475dfb1593250",
+        "file": "snapshots/52e008356f5af4ebf687652d776815863f0d6fe7e7baebe19b3ca916e8678163.txt",
+        "etag": null,
+        "last_modified": "Tue, 03 Nov 2026 04:30:31 GMT",
+        "checked_at": "2026-11-03T04:30:30.683789Z"
+      },
+      "visitor-info/wintergreen": {
+        "sha256": "bea2ee6837091b66af8983de802f18067f115dfc5a9b94fe0f7c8c7eb97a0201",
+        "file": "snapshots/d398363ee5996c19545d1bc4fdcf53e4da4af1d4cd83965da480871390df8762.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:32.102130Z"
+      },
+      "visitor-info/wintergreen-dogs": {
+        "sha256": "7b13b5218031de481c02f1eba6b7dacfc0b6c886ad5350825aa657e446f4d184",
+        "file": "snapshots/1e0e57e12461e2dab76e252252496acc635bfca78741fa04ed2587a694758bd2.txt",
+        "etag": "W/\"d7e998f5b60222b3157bec77cef3c8bd\"",
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:32.666638Z"
+      },
+      "visitor-info/rtf-rules": {
+        "sha256": "2aa38dce35626cc71dd9af867f3300c33be1980f6cf8d2cb33c7603daea47fc6",
+        "file": "snapshots/e47af26749bede63ac2f8f35b6aa7ddfa6654d95b62c17768ccb2ec632821265.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:33.279341Z"
+      },
+      "visitor-info/ragged-visit": {
+        "sha256": "1cf2f55ed7817d74d3318adc5a3db03df3a57182dc956e50f05222d484011325",
+        "file": "snapshots/9307d348d1ad837055a315efff6bbc62e64f2f5bd02ae3a4805dd950bf444477.txt",
+        "etag": null,
+        "last_modified": null,
+        "checked_at": "2026-11-03T04:30:33.879291Z"
+      }
+    },
+    "fetch_errors": [
+      {
+        "source_id": "uva-use",
+        "status": 403,
+        "note": "Official Hereford living page reviewed through web search; direct automated fetching is blocked. Requires browser review until an authoritative accessible endpoint is available."
+      }
+    ]
+  }
+}

@@ -86,6 +86,17 @@ class GeometryTests(unittest.TestCase):
 
 
 class MonitorTests(unittest.TestCase):
+    def test_source_scope_keeps_single_park_notices_out_of_other_parks(self):
+        for source_scope, expected in [(None, ['a', 'b']), (['a'], ['a'])]:
+            source = {'id': 'page', 'kind': 'html', 'url': 'https://example.org'}
+            if source_scope is not None: source['system_ids'] = source_scope
+            config = {'id': 'test', 'system_ids': ['a', 'b'], 'sources': [source]}
+            html = ('<p>' + 'park hours ' * 30 + '</p>').encode()
+            with tempfile.TemporaryDirectory() as tmp, patch('maintenance.monitor.configs', return_value=[config]), patch('maintenance.monitor.request', return_value=(html, {}, 200)):
+                report = check(state_dir=tmp)
+                review = read_json(Path(tmp) / report['sources'][0]['review'])
+                self.assertEqual(review['system_ids'], expected)
+
     def test_random_tab_anchors_do_not_trigger_source_changes(self):
         one = b'<a href="#random-one">Trails</a><script>clock=123</script><a href="/map.pdf">Map</a>'
         two = b'<a href="#random-two">Trails</a><script>clock=456</script><a href="/map.pdf">Map</a>'

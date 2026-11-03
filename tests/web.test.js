@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { activeUpdates, visibleUpdates, featureName, safeLink, contextualSystem } from '../assets/data.js';
+import { activeUpdates, visibleUpdates, featureName, safeLink, contextualSystem, systemForFeature, containsLocation } from '../assets/data.js';
+import { readFileSync } from 'node:fs';
 
 test('only approved, active, unexpired notices appear; malformed dates fail closed', () => {
   const now = Date.parse('2026-11-02T12:00:00Z');
@@ -36,4 +37,34 @@ test('a citywide ring needs a nearby rendered trail, and the smaller park wins o
   assert.equal(contextualSystem([ring], view, 15), null);
   assert.equal(contextualSystem([ring], view, 15, ['Ring']), ring);
   assert.equal(contextualSystem([ring, park], view, 15, ['Ring']), park);
+});
+
+test('shared trail layers resolve to the park at the tap, with broad-network fallbacks', () => {
+  const systems = JSON.parse(readFileSync(new URL('../data/systems.json', import.meta.url)));
+  const feature = {sourceLayer: 'City_Trails_2021-10-13', properties: {system_id: 'city'}};
+  assert.equal(systemForFeature(systems, feature, [-78.478, 38.048]).id, 'mcintire-park');
+  assert.equal(systemForFeature(systems, feature, [-78.489, 38.03]).id, 'city');
+  assert.equal(systemForFeature(systems, {sourceLayer:'Albemarle_County_Trails',properties:{}}, [-78.496,38.093]).id, 'ivy-creek-natural-area');
+  // River North extends beyond the old main-loop title bounds.
+  assert.equal(systemForFeature(systems, {sourceLayer:'Rivanna_Trail',properties:{}}, [-78.44,38.12]).id, 'rivanna');
+  assert.equal(systemForFeature(systems, {sourceLayer:'unknown',properties:{}}, [-78.478,38.048]), null);
+});
+
+test('park context respects polygon holes and disconnected areas rather than its bounding rectangle', () => {
+  const park={id:'park',bounds:[0,0,4,4],source_layers:['Shared'],context_mode:'area',boundary:{type:'MultiPolygon',coordinates:[
+    [[[0,0],[2,0],[2,2],[0,2],[0,0]],[[.5,.5],[1.5,.5],[1.5,1.5],[.5,1.5],[.5,.5]]],
+    [[[3,3],[4,3],[4,4],[3,4],[3,3]]]
+  ]}};
+  assert.equal(containsLocation(park,[.2,.2]),true);
+  assert.equal(containsLocation(park,[1,1]),false);
+  assert.equal(containsLocation(park,[2.5,2.5]),false);
+  assert.equal(containsLocation(park,[3.5,3.5]),true);
+  assert.equal(contextualSystem([park],[2.4,2.4,2.6,2.6],17),null);
+});
+
+test('a park view inherits citywide notices without inheriting sibling-park closures', () => {
+  const systems=[{id:'city',bounds:[0,0,5,5]},{id:'a',parent_ids:['city'],bounds:[0,0,1,1]},{id:'b',parent_ids:['city'],bounds:[3,3,4,4]}];
+  const notices=[{system_ids:['city']},{system_ids:['a']},{system_ids:['b']}];
+  assert.deepEqual(visibleUpdates(notices,systems,null,'map','a'),notices.slice(0,2));
+  assert.deepEqual(visibleUpdates(notices,systems,null,'map','city'),notices);
 });

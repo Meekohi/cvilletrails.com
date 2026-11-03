@@ -1,0 +1,224 @@
+{
+  "id": "visitor-info",
+  "system_ids": [
+    "rivanna",
+    "ragged-mountain",
+    "monticello",
+    "ivy-creek-natural-area",
+    "heyward-community-forest",
+    "mcintire-park",
+    "quarry-park",
+    "azalea-park",
+    "pen-park",
+    "washington-park",
+    "jordan-park",
+    "meadow-creek",
+    "uva",
+    "pleasant-grove",
+    "montpelier",
+    "wintergreen"
+  ],
+  "sources": [
+    {
+      "id": "city-rules",
+      "label": "City park rules",
+      "url": "https://www.charlottesville.gov/655/Park-Regulations",
+      "kind": "html",
+      "system_ids": [
+        "heyward-community-forest",
+        "mcintire-park",
+        "quarry-park",
+        "washington-park",
+        "jordan-park",
+        "meadow-creek"
+      ]
+    },
+    {
+      "id": "city-trails",
+      "label": "City trail guide",
+      "url": "https://www.charlottesville.gov/659/Trails",
+      "kind": "html",
+      "system_ids": [
+        "heyward-community-forest",
+        "mcintire-park",
+        "quarry-park",
+        "azalea-park",
+        "pen-park",
+        "washington-park",
+        "jordan-park",
+        "meadow-creek"
+      ]
+    },
+    {
+      "id": "ivy-overview",
+      "label": "Ivy Creek visitor guide",
+      "url": "https://ivycreekfoundation.org/overview",
+      "kind": "html",
+      "system_ids": [
+        "ivy-creek-natural-area"
+      ]
+    },
+    {
+      "id": "ivy-rules",
+      "label": "Ivy Creek rules",
+      "url": "https://ivycreekfoundation.org/rules",
+      "kind": "html",
+      "system_ids": [
+        "ivy-creek-natural-area"
+      ]
+    },
+    {
+      "id": "heyward",
+      "label": "Heyward official park page",
+      "url": "https://www.charlottesville.gov/facilities/facility/details/Heyward-Community-Forest-66",
+      "kind": "html",
+      "system_ids": [
+        "heyward-community-forest"
+      ]
+    },
+    {
+      "id": "mcintire",
+      "label": "McIntire official park page",
+      "url": "https://charlottesville.gov/Facilities/Facility/Details/McIntire-Park-25",
+      "kind": "html",
+      "system_ids": [
+        "mcintire-park"
+      ]
+    },
+    {
+      "id": "quarry",
+      "label": "Quarry official park page",
+      "url": "https://www.charlottesville.gov/facilities/facility/details/Quarry-Park-60",
+      "kind": "html",
+      "system_ids": [
+        "quarry-park"
+      ]
+    },
+    {
+      "id": "azalea",
+      "label": "Azalea official park page",
+      "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Azalea-Park-5",
+      "kind": "html",
+      "system_ids": [
+        "azalea-park"
+      ]
+    },
+    {
+      "id": "pen",
+      "label": "Pen Park official page",
+      "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Pen-Park-26",
+      "kind": "html",
+      "system_ids": [
+        "pen-park"
+      ]
+    },
+    {
+      "id": "washington",
+      "label": "Washington official park page",
+      "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Booker-T-Washington-Park-56",
+      "kind": "html",
+      "system_ids": [
+        "washington-park"
+      ]
+    },
+    {
+      "id": "jordan",
+      "label": "Jordan official park page",
+      "url": "https://www.charlottesville.gov/Facilities/Facility/Details/Jordan-Park-11",
+      "kind": "html",
+      "system_ids": [
+        "jordan-park"
+      ]
+    },
+    {
+      "id": "greenbrier",
+      "label": "Greenbrier official park page",
+      "url": "https://www.charlottesville.gov/facilities/facility/details/greenbrierpark-10",
+      "kind": "html",
+      "system_ids": [
+        "meadow-creek"
+      ]
+    },
+    {
+      "id": "uva-map",
+      "label": "UVA O-Hill trail map",
+      "url": "https://www.fm.virginia.edu/resources/ohill-trails.html",
+      "kind": "html",
+      "system_ids": [
+        "uva"
+      ]
+    },
+    {
+      "id": "uva-use",
+      "label": "UVA’s Observatory Hill guide",
+      "url": "https://hereford.virginia.edu/living",
+      "kind": "html",
+      "system_ids": [
+        "uva"
+      ]
+    },
+    {
+      "id": "pleasant-grove",
+      "label": "Fluvanna County trail guide",
+      "url": "https://www.fluvanna.gov/parksrec/page/trails-pleasant-grove",
+      "kind": "html",
+      "system_ids": [
+        "pleasant-grove"
+      ]
+    },
+    {
+      "id": "pleasant-rules",
+      "label": "Pleasant Grove map and rules (PDF)",
+      "url": "https://www.fluvannacounty.org/sites/default/files/fileattachments/parks_and_recreation/page/2191/the_pleasant_grove_park_trail_guide.pdf",
+      "kind": "pdf",
+      "system_ids": [
+        "pleasant-grove"
+      ]
+    },
+    {
+      "id": "montpelier",
+      "label": "Montpelier trails and visitor rules",
+      "url": "https://www.montpelier.org/visit/trails/",
+      "kind": "html",
+      "system_ids": [
+        "montpelier"
+      ]
+    },
+    {
+      "id": "wintergreen",
+      "label": "Nature Foundation hiking guide",
+      "url": "https://tnfw.org/resources/hiking-and-walking-trails/",
+      "kind": "html",
+      "system_ids": [
+        "wintergreen"
+      ]
+    },
+    {
+      "id": "wintergreen-dogs",
+      "label": "Wintergreen dog guidance",
+      "url": "https://www.wtgpoa.org/news-updates/leashes-on-wintergreen-dogs",
+      "kind": "html",
+      "system_ids": [
+        "wintergreen"
+      ]
+    },
+    {
+      "id": "rtf-rules",
+      "label": "Rivanna Trail rules",
+      "url": "https://www.rivannatrails.org/Rules",
+      "kind": "html",
+      "system_ids": [
+        "rivanna"
+      ]
+    },
+    {
+      "id": "ragged-visit",
+      "label": "Ragged Mountain visitor information",
+      "url": "https://www.charlottesville.gov/671/Visiting-the-Natural-Area",
+      "kind": "html",
+      "system_ids": [
+        "ragged-mountain"
+      ]
+    }
+  ]
+}
