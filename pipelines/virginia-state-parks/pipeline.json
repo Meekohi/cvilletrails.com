@@ -1,0 +1,71 @@
+{
+  "id": "virginia-state-parks",
+  "system_ids": [
+    "lake-anna"
+  ],
+  "sources": [
+    {
+      "id": "trails-gis",
+      "kind": "arcgis",
+      "label": "Virginia DCR statewide park trails",
+      "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0"
+    },
+    {
+      "id": "maps-directory",
+      "kind": "html",
+      "label": "Virginia State Parks official map directory",
+      "url": "https://www.dcr.virginia.gov/state-parks/park-trail-maps"
+    },
+    {
+      "id": "lake-anna-visitor",
+      "kind": "html",
+      "label": "Lake Anna State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/lake-anna",
+      "system_ids": [
+        "lake-anna"
+      ]
+    },
+    {
+      "id": "lake-anna-guide",
+      "kind": "pdf",
+      "label": "Lake Anna official trail guide",
+      "url": "https://www.dcr.virginia.gov/state-parks/document/data/trail-guide-lakeanna.pdf",
+      "system_ids": [
+        "lake-anna"
+      ]
+    },
+    {
+      "id": "lake-anna-geo",
+      "kind": "pdf",
+      "label": "Lake Anna official georeferenced map",
+      "url": "https://www.dcr.virginia.gov/state-parks/document/data/lake-anna-avenza-map.pdf",
+      "system_ids": [
+        "lake-anna"
+      ]
+    },
+    {
+      "id": "pet-policy",
+      "kind": "html",
+      "label": "Virginia State Parks pet policy",
+      "url": "https://www.dcr.virginia.gov/state-parks/pets"
+    }
+  ],
+  "approved_parks": {
+    "Lake Anna State Park": {
+      "system_id": "lake-anna",
+      "palette": {
+        "silver": "#828282",
+        "blue": "#004da8",
+        "orange": "#ffaa00",
+        "white": "#ffffff",
+        "green": "#4d8c00",
+        "tan": "#cdaa66",
+        "purple": "#8400a8",
+        "yellow": "#ffe800",
+        "red": "#ff0000",
+        "none": "#000000"
+      },
+      "palette_evidence": "Reviewed RGB strokes and blaze legend in lake-anna-avenza-map.pdf. The GIS Connector Trail is Blue although its older PDF line is unlabelled/tan; use current explicit GIS blaze name."
+    }
+  }
+}

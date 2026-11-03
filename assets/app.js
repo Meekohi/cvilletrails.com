@@ -192,7 +192,8 @@ function initMap() {
     status('The map could not start. Check your connection and browser support, then reload.', true); return;
   }
   mapboxgl.accessToken = 'pk.eyJ1IjoibWVla29oaSIsImEiOiJjaXhrbDl2eWwwMDIyMnFtb2ZndjM0NW14In0.U639AnCqXT1BNOyQtFYXIQ';
-  map = new mapboxgl.Map({ container: 'map', style: 'mapbox://styles/meekohi/ckkolybrr6tjx17mjqflqw16b', center: [-78.482294, 38.031053], zoom: 12, hash: true });
+  map = new mapboxgl.Map({ container: 'map', style: 'mapbox://styles/meekohi/ckkolybrr6tjx17mjqflqw16b', center: [-78.482294, 38.031053], zoom: 12, hash: true, attributionControl: false });
+  map.addControl(new mapboxgl.AttributionControl({ compact: true, customAttribution: '<a href="https://www.dcr.virginia.gov/state-parks/" target="_blank" rel="noopener">Virginia DCR trails</a>' }), 'bottom-right');
   const locate = new mapboxgl.GeolocateControl({ positionOptions: { enableHighAccuracy: true, timeout: 15000 }, trackUserLocation: true, showUserHeading: true });
   map.addControl(locate, 'top-right');
   map.addControl(new mapboxgl.NavigationControl({ showCompass: true, showZoom: true }), 'top-right');

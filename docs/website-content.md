@@ -88,7 +88,7 @@ Descriptions, facts and notices render as text, with HTTPS source links. Do not 
 
 ## Catalog at the November handoff
 
-There are 27 entries: 25 specific networks and two aggregate groupings. Adding an infobox does not add route geometry or change Mapbox styling. The executable catalog remains authoritative for later additions.
+There are 28 entries: 26 specific networks and two aggregate groupings. Adding an infobox does not add route geometry or change Mapbox styling. The executable catalog remains authoritative for later additions.
 
 | ID | Network | Context | Primary official link |
 | --- | --- | --- | --- |
@@ -119,6 +119,7 @@ There are 27 entries: 25 specific networks and two aggregate groupings. Adding a
 | `biscuit-run` | Biscuit Run Park | area | [Operator information](https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/36/360) |
 | `highland` | James Monroe’s Highland | area | [Operator information](https://highland.org/plan-your-visit/highland-trails/) |
 | `fortunes-cove` | Fortune’s Cove Preserve | area | [Operator information](https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fortunes-cove-preserve/) |
+| `lake-anna` | Lake Anna State Park | area | [Operator information](https://www.dcr.virginia.gov/state-parks/lake-anna) |
 
 Highland was added after the initial session handoff; its [audit](../pipelines/visitor-info/reviews/2026-11-03-highland.json) records visitor rules and context evidence. Fortune’s Cove has a [dedicated GeoPDF pipeline and import audit](../pipelines/fortunes-cove/README.md).
 

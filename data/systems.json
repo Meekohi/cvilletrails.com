@@ -5506,5 +5506,88 @@
       "source_sha256": "6186b952530940ca20b05961b31da13e2c3752de419950acd42fb4293cad41b7",
       "reviewed_on": "2026-11-03"
     }
+  },
+  {
+    "id": "lake-anna",
+    "name": "Lake Anna State Park",
+    "area": "Spotsylvania County",
+    "description": "Woodland and lakeshore trails with easy and moderate routes, historic sites and lake views. The park offers more than 15 miles of trails; consult the official map for each trail’s uses and difficulty.",
+    "bounds": [
+      -77.839591,
+      38.094659,
+      -77.806212,
+      38.140287
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/lake-anna",
+    "source_label": "Virginia State Parks visitor guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_reviewed_on": "2026-11-03",
+    "map_note": "DCR’s alert, checked Nov. 3, 2026, lists a Nov. 2–3 closure for resource management. Check current park alerts before visiting.",
+    "info_sources": [
+      {
+        "id": "lake-anna-page",
+        "label": "DCR Lake Anna visitor information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/lake-anna"
+      },
+      {
+        "id": "lake-anna-map",
+        "label": "Official trail guide (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/trail-guide-lakeanna.pdf"
+      },
+      {
+        "id": "lake-anna-geo",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/lake-anna-avenza-map.pdf"
+      },
+      {
+        "id": "state-park-pets",
+        "label": "Virginia State Parks pet policy",
+        "url": "https://www.dcr.virginia.gov/state-parks/pets"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Normally dawn to dusk for day use; current closures take priority. The park lists a 5 a.m. gate opening.",
+        "sources": [
+          "lake-anna-page"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep pets on a leash no longer than 6 feet or confined; do not leave them unattended.",
+        "sources": [
+          "state-park-pets"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking throughout; bikes and horses only on designated multi-use trails. Hikers yield to horses; cyclists yield to horses and hikers.",
+        "sources": [
+          "lake-anna-map"
+        ]
+      },
+      {
+        "label": "Parking",
+        "value": "Daily parking fees apply. The park may reach capacity on weekends and holidays, so entry is not guaranteed.",
+        "sources": [
+          "lake-anna-page"
+        ]
+      }
+    ],
+    "description_sources": [
+      "lake-anna-page",
+      "lake-anna-map"
+    ],
+    "bounds_source": {
+      "description": "Envelope of the 14 reviewed DCR GIS trails, padded 0.001 degrees. Context extent, not a park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
   }
 ]

@@ -1,0 +1,875 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-03T13:52:23.220299Z",
+  "source_item": {
+    "id": "55d9567f69fe44adaaa9bd0142e7167c",
+    "title": "VSP Trails",
+    "owner": "Peter.lostritto_vdcr",
+    "orgId": "PxUNqSbaWFvFgHnJ",
+    "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer",
+    "modified": 1781185585000,
+    "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset contains the trails for State Parks in Virginia. This data is constantly being edited and updated. Historic easements are held by the Virginia Board of Historic Resources and administered by the Virginia department of Historic Resources. All conservation lands data is released publicly and posted to the download.</span>",
+    "licenseInfo": "The re-distribution of this dataset for profit is prohibited. All rights credited to Virginia Department of Conservation and Recreation. "
+  },
+  "source_hash": "8f67d936788f0046a8a362580dd77285378a2052b4d19fab10361d6e7d9e0b13",
+  "review_hash": "d82c2ad1a6eae0c036971fbad49712454dd88b182b6bf8926d0e97995672dc46",
+  "review_path": ".trail-state/review-state-parks",
+  "source_features": 631,
+  "named_parks": 43,
+  "user_scope": "Publish Lake Anna; queue other parks for review",
+  "parks": [
+    {
+      "name": "(unassigned)",
+      "bounds": [
+        -77.9573400437984,
+        38.9894261588861,
+        -77.9568844450155,
+        38.9899796024012
+      ],
+      "total": 1,
+      "eligible": 0,
+      "held": 1,
+      "status": "needs-review",
+      "sources": {}
+    },
+    {
+      "name": "Bear Creek Lake State Park",
+      "bounds": [
+        -78.3191452830554,
+        37.4913920492214,
+        -78.2108117668663,
+        37.6197559870341
+      ],
+      "total": 11,
+      "eligible": 9,
+      "held": 2,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/bear-creek-lake",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Belle Isle State Park",
+      "bounds": [
+        -76.6176981332908,
+        37.7718013224389,
+        -76.5844284043072,
+        37.7874898096658
+      ],
+      "total": 13,
+      "eligible": 12,
+      "held": 1,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/belle-isle-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Breaks Interstate Park",
+      "bounds": [
+        -82.3140410541498,
+        37.2713899995338,
+        -82.2830205281461,
+        37.3011977290701
+      ],
+      "total": 26,
+      "eligible": 22,
+      "held": 4,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps"
+      }
+    },
+    {
+      "name": "Caledon State Park",
+      "bounds": [
+        -77.1721210302604,
+        38.3235431519284,
+        -77.1377474618825,
+        38.36348506428
+      ],
+      "total": 14,
+      "eligible": 14,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/caledon",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/caledon-geo-map.pdf"
+      }
+    },
+    {
+      "name": "Chippokes State Park",
+      "bounds": [
+        -76.7425054409955,
+        37.1284520287352,
+        -76.7076694187714,
+        37.1473710253172
+      ],
+      "total": 6,
+      "eligible": 6,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/chippokes",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/chippokes-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Claytor Lake State Park",
+      "bounds": [
+        -80.6364621863908,
+        37.0484905987377,
+        -80.6193503803109,
+        37.0663382218341
+      ],
+      "total": 9,
+      "eligible": 9,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/claytor-lake",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/claytor-lake-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Clinch River State Park",
+      "bounds": [
+        -82.3282959533979,
+        36.8875644910981,
+        -82.3167389905475,
+        36.9050719699906
+      ],
+      "total": 6,
+      "eligible": 6,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/clinch-river.php",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/clinch-river-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Culpeper Battlefields",
+      "bounds": [
+        -78.0712666665994,
+        38.4023099999395,
+        -77.8786300005632,
+        38.5095771717252
+      ],
+      "total": 9,
+      "eligible": 0,
+      "held": 9,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/culpeper-battlefields"
+      }
+    },
+    {
+      "name": "Douthat State Park",
+      "bounds": [
+        -79.8366705794835,
+        37.7591939767053,
+        -79.6514712584982,
+        37.9189027183615
+      ],
+      "total": 40,
+      "eligible": 31,
+      "held": 9,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/douthat",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/douthat-trail-map1.pdf"
+      }
+    },
+    {
+      "name": "Fairy Stone State Park",
+      "bounds": [
+        -80.1254473696634,
+        36.7780134525717,
+        -80.0966827528476,
+        36.8035692359387
+      ],
+      "total": 11,
+      "eligible": 11,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/fairy-stone",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/fairy-stone-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "False Cape State Park",
+      "bounds": [
+        -75.9127432131977,
+        36.55038699099,
+        -75.8686504111448,
+        36.630749689626
+      ],
+      "total": 28,
+      "eligible": 23,
+      "held": 5,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/false-cape",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/false-cape-geo-map.pdf"
+      }
+    },
+    {
+      "name": "First Landing State Park",
+      "bounds": [
+        -76.0798845624702,
+        36.8865628251921,
+        -75.992152972196,
+        36.9246848375995
+      ],
+      "total": 16,
+      "eligible": 16,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/first-landing",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/first-landing-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Grayson Highlands State Park",
+      "bounds": [
+        -81.583387630929,
+        36.6110452462518,
+        -81.4702863731548,
+        36.6984307450275
+      ],
+      "total": 21,
+      "eligible": 15,
+      "held": 6,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/grayson-highlands",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/grayson-highlands-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Hayfields State Park",
+      "bounds": [
+        -79.5604046076189,
+        38.2545620001933,
+        -79.5453919999038,
+        38.2654025437508
+      ],
+      "total": 4,
+      "eligible": 0,
+      "held": 4,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/hayfields",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/hayfields-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "High Bridge Trail State Park",
+      "bounds": [
+        -78.6805008994002,
+        37.1988748698252,
+        -78.2271256372719,
+        37.3255451177057
+      ],
+      "total": 12,
+      "eligible": 9,
+      "held": 3,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/high-bridge-trail",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/high-bridge-trail-geo-map.pdf"
+      }
+    },
+    {
+      "name": "Holliday Lake State Park",
+      "bounds": [
+        -78.6788580156195,
+        37.3875533117995,
+        -78.6284286822746,
+        37.4373322860776
+      ],
+      "total": 11,
+      "eligible": 6,
+      "held": 5,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/holliday-lake",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/holliday-lake-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Hungry Mother State Park",
+      "bounds": [
+        -81.5374854884195,
+        36.869132062378,
+        -81.5078965340372,
+        36.8917045906136
+      ],
+      "total": 16,
+      "eligible": 9,
+      "held": 7,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/hungry-mother",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/hungry-mother-geo-map.pdf"
+      }
+    },
+    {
+      "name": "James River State Park",
+      "bounds": [
+        -78.8232438290925,
+        37.6128804573392,
+        -78.7891716517339,
+        37.6390795654277
+      ],
+      "total": 27,
+      "eligible": 24,
+      "held": 3,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/james-river",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/james-river-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Kiptopeke State Park",
+      "bounds": [
+        -75.9876925506031,
+        37.1551757207231,
+        -75.9714176828385,
+        37.1736707265789
+      ],
+      "total": 16,
+      "eligible": 13,
+      "held": 3,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/kiptopeke",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/kiptopeke-state-park-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Lake Anna State Park",
+      "bounds": [
+        -77.838590564909,
+        38.0956589953015,
+        -77.8072124937028,
+        38.139287083091
+      ],
+      "total": 17,
+      "eligible": 14,
+      "held": 3,
+      "status": "pilot",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/lake-anna",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/lake-anna-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Leesylvania State Park",
+      "bounds": [
+        -77.2697145584755,
+        38.5841493713925,
+        -77.2469169519969,
+        38.6030762499532
+      ],
+      "total": 7,
+      "eligible": 6,
+      "held": 1,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/leesylvania",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/leesylvania-geo-map.pdf"
+      }
+    },
+    {
+      "name": "Machicomoco State Park",
+      "bounds": [
+        -76.5536580234851,
+        37.2948002249193,
+        -76.5343081210398,
+        37.3121895025635
+      ],
+      "total": 6,
+      "eligible": 3,
+      "held": 3,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/machicomoco",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/machicomoco-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Mason Neck State Park",
+      "bounds": [
+        -77.2069040364595,
+        38.6327923511801,
+        -77.1611154938151,
+        38.6706511083856
+      ],
+      "total": 10,
+      "eligible": 8,
+      "held": 2,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/mason-neck",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/mason-neck-geo-map.pdf"
+      }
+    },
+    {
+      "name": "Mayo River State Park",
+      "bounds": [
+        -80.008339775669,
+        36.5408223241942,
+        -79.9876902975182,
+        36.5613146816745
+      ],
+      "total": 3,
+      "eligible": 0,
+      "held": 3,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps"
+      }
+    },
+    {
+      "name": "Natural Bridge State Park",
+      "bounds": [
+        -79.5548928610221,
+        37.6218758422958,
+        -79.5304319959627,
+        37.6478360000809
+      ],
+      "total": 5,
+      "eligible": 5,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/natural-bridge",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/natural-bridge-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Natural Tunnel State Park",
+      "bounds": [
+        -82.7499635545509,
+        36.6920744084527,
+        -82.7379676560586,
+        36.7144801927368
+      ],
+      "total": 10,
+      "eligible": 9,
+      "held": 1,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/natural-tunnel",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/natural-tunnel-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "New River Trail State Park",
+      "bounds": [
+        -80.9756711186004,
+        36.6678035138181,
+        -80.7168070081189,
+        37.0465948882916
+      ],
+      "total": 11,
+      "eligible": 9,
+      "held": 2,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/new-river-trail",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/new-river-trail-geo-map.pdf"
+      }
+    },
+    {
+      "name": "Occoneechee State Park",
+      "bounds": [
+        -78.5336987025487,
+        36.5816763838617,
+        -78.4478616668326,
+        36.6340165168355
+      ],
+      "total": 9,
+      "eligible": 8,
+      "held": 1,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/occoneechee",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/occoneechee-geo-map.pdf"
+      }
+    },
+    {
+      "name": "Pocahontas State Park",
+      "bounds": [
+        -77.6010624998645,
+        37.3317399775017,
+        -77.5289258442038,
+        37.4071796001309
+      ],
+      "total": 66,
+      "eligible": 55,
+      "held": 11,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/pocahontas",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/pocahontas-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Powhatan State Park",
+      "bounds": [
+        -77.9477431429234,
+        37.6602755432052,
+        -77.9141206639391,
+        37.691635479825
+      ],
+      "total": 12,
+      "eligible": 12,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/powhatan",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/powhatan-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Sailors Creek Battlefield Historic State Park",
+      "bounds": [
+        -78.2331742401896,
+        37.2953486202157,
+        -78.2212858788703,
+        37.3101077419085
+      ],
+      "total": 7,
+      "eligible": 7,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/sailors-creek",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/sailors-creek-battlefield-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Seven Bends State Park",
+      "bounds": [
+        -78.4954913046229,
+        38.8356926058345,
+        -78.4690238536759,
+        38.8714953050201
+      ],
+      "total": 16,
+      "eligible": 8,
+      "held": 8,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/seven-bends",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/seven-bends-geo-map.pdf"
+      }
+    },
+    {
+      "name": "Shenandoah River State Park",
+      "bounds": [
+        -78.3299520941874,
+        38.8390031274802,
+        -78.2921615598604,
+        38.8696980465718
+      ],
+      "total": 21,
+      "eligible": 20,
+      "held": 1,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/shenandoah-river-geo-map.pdf"
+      }
+    },
+    {
+      "name": "Sky Meadows State Park",
+      "bounds": [
+        -78.053688148857,
+        38.9087836223894,
+        -77.8995331180087,
+        39.0801428651139
+      ],
+      "total": 26,
+      "eligible": 19,
+      "held": 7,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/sky-meadows-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Smith Mountain Lake State Park",
+      "bounds": [
+        -79.617629772139,
+        37.0734203874555,
+        -79.5876868788143,
+        37.1008391537556
+      ],
+      "total": 15,
+      "eligible": 15,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/smith-mountain-lake",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/smith-mountain-lake-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Staunton River Battlefield State Park",
+      "bounds": [
+        -78.710284381535,
+        36.8803140376251,
+        -78.6945377912309,
+        36.9102273838979
+      ],
+      "total": 6,
+      "eligible": 4,
+      "held": 2,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/staunton-river-battlefield-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Staunton River State Park",
+      "bounds": [
+        -78.7012919711829,
+        36.6899286615654,
+        -78.6520536806292,
+        36.7273499853565
+      ],
+      "total": 10,
+      "eligible": 10,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/staunton-river-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Sweet Run State Park",
+      "bounds": [
+        -77.7512890380931,
+        39.2763466015192,
+        -77.7249873335359,
+        39.2944392807788
+      ],
+      "total": 17,
+      "eligible": 16,
+      "held": 1,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/sweet-run",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/sweet-run-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Twin Lakes State Park",
+      "bounds": [
+        -78.2830641017062,
+        37.1665222971815,
+        -78.2677312030595,
+        37.1793426492234
+      ],
+      "total": 9,
+      "eligible": 7,
+      "held": 2,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/twin-lakes",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/twin-lakes-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Westmoreland State Park",
+      "bounds": [
+        -76.8803310064596,
+        38.1467074575489,
+        -76.8542865935538,
+        38.1740030506393
+      ],
+      "total": 15,
+      "eligible": 9,
+      "held": 6,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/westmoreland",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/westmoreland-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Widewater State Park",
+      "bounds": [
+        -77.3282793535599,
+        38.4072000634472,
+        -77.3153501836663,
+        38.4105805675841
+      ],
+      "total": 2,
+      "eligible": 2,
+      "held": 0,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/widewater",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/widewater-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "Wilderness Road State Park",
+      "bounds": [
+        -83.6271752147894,
+        36.6002727638242,
+        -83.4895694561511,
+        36.6356633594567
+      ],
+      "total": 5,
+      "eligible": 3,
+      "held": 2,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/wilderness-road-avenza-map.pdf"
+      }
+    },
+    {
+      "name": "York River State Park",
+      "bounds": [
+        -76.7245916637999,
+        37.375061117126,
+        -76.6867012165372,
+        37.4143451644011
+      ],
+      "total": 29,
+      "eligible": 24,
+      "held": 5,
+      "status": "needs-review",
+      "sources": {
+        "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+        "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+        "visitor_guide": "https://www.dcr.virginia.gov/state-parks/york-river",
+        "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/york-river-avenza-map.pdf"
+      }
+    }
+  ],
+  "unassigned_records": [
+    {
+      "name": "(unassigned)",
+      "bounds": [
+        -77.9573400437984,
+        38.9894261588861,
+        -77.9568844450155,
+        38.9899796024012
+      ],
+      "total": 1,
+      "eligible": 0,
+      "held": 1,
+      "status": "needs-review",
+      "sources": {},
+      "trails": [
+        {
+          "global_id": "23ded6e6-2ff0-4db9-b0c2-1873139099da",
+          "name": "Childrens Discovery Loop",
+          "status": "Open",
+          "uses": null,
+          "blaze": null,
+          "hold_reasons": [
+            "missing park",
+            "staff, water or ambiguous trail use"
+          ]
+        }
+      ]
+    }
+  ]
+}

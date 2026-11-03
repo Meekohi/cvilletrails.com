@@ -17,7 +17,7 @@ Read the [session record and outstanding work](docs/session-2026-11-02.md), then
 | See what runs automatically and what to automate next | [Automation roadmap](docs/automation-roadmap.md) |
 | Recover the reasoning behind today's park choices and exceptions | [November session record](docs/session-2026-11-02.md) |
 
-The current system has six pipelines, 27 public catalog entries (25 specific networks plus the two City/County groupings), reviewed park ownership rules, and separate publication paths for map data and website content. The City dataset reached 225 features; Rivanna reached 72 while preserving all 65 pre-existing geometries. These are **dated publication checkpoints**, not permanent expected counts. Fetch a fresh inventory before the next geometry edit.
+The current system has seven pipelines, 28 public catalog entries (26 specific networks plus the two City/County groupings), reviewed park ownership rules, and separate publication paths for map data and website content. The City dataset reached 225 features; Rivanna reached 72 while preserving all 65 pre-existing geometries. These are **dated publication checkpoints**, not permanent expected counts. Fetch a fresh inventory before the next geometry edit.
 
 The latest County research found a public **1,902-feature trail service** with active, inactive, private, pending and future records. It informed infobox extents, but has **not** been imported as new map geometry. Biscuit Run's infobox explicitly warns that our map coverage is incomplete. See [the County ingestion work still required](docs/source-research.md#albemarle-county-newly-discovered-gis).
 
@@ -311,6 +311,10 @@ These historical browser checks require the corresponding local plans and previe
 ## Extract trails from an official GeoPDF
 
 [Fortune’s Cove](pipelines/fortunes-cove/README.md) is the first repeatable PDF-vector ingest: seven georeferenced trail segments, official yellow/white colors, and an independent entrance-pin alignment check. Its dedicated pipeline monitors the TNC map and visitor page; extraction is bound to the reviewed PDF hash and requires review when that source changes. It reuses the supplemental tileset and preserves all other features. The guide includes extraction, preview, publication and future-update commands.
+
+## Virginia State Parks
+
+The [state-parks pipeline](pipelines/virginia-state-parks/README.md) uses DCR’s official statewide GIS service rather than tracing each park PDF. Its first snapshot contains 631 records across 43 named parks plus one unassigned record. Lake Anna’s 14 reviewed trails and infobox are the first import; the other 42 parks are queued for visual review at `http://localhost:8008/` when the review server is running. Proposed/reroute, closed, staff-only and ambiguous records are held. The guide explains stable IDs, official colors, source attribution and adding the next reviewed park.
 
 ## Publish trail notices
 

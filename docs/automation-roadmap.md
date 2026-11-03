@@ -105,6 +105,10 @@ The user is open to standardized end datasets if the conversion is repeatable. P
 
 Define stable feature identity, provenance, route class, access status and style properties before migrating. Preserve archived originals and reviewed mappings. Generate a style migration alongside any source-layer rename, and verify current account limits before choosing a tileset layout. The 15 tilesets observed in the current composite are not evidence of a particular free-plan quota.
 
+## State-parks follow-up
+
+The [Virginia State Parks pipeline](../pipelines/virginia-state-parks/README.md) now supplies a second structured GIS workflow. Lake Anna is the pilot; 42 other named parks remain queued for review. Its conservative filters, stable GlobalIDs and per-park color policies provide a repeatable path, while actual park closures and ambiguous records still require review. Do not confuse the existence of a statewide candidate with approval to publish every park.
+
 ## Concrete next priorities
 
 1. **Biscuit Run:** improve incomplete route coverage from current official evidence; keep its visible map limitation until the geometry is reviewed and published.

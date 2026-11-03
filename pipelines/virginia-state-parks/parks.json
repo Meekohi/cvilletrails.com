@@ -1,0 +1,253 @@
+{
+  "Bear Creek Lake State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/bear-creek-lake",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf"
+  },
+  "Belle Isle State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/belle-isle-avenza-map.pdf"
+  },
+  "Breaks Interstate Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps"
+  },
+  "Caledon State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/caledon",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/caledon-geo-map.pdf"
+  },
+  "Chippokes State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/chippokes",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/chippokes-avenza-map.pdf"
+  },
+  "Claytor Lake State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/claytor-lake",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/claytor-lake-avenza-map.pdf"
+  },
+  "Clinch River State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/clinch-river.php",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/clinch-river-avenza-map.pdf"
+  },
+  "Culpeper Battlefields": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/culpeper-battlefields"
+  },
+  "Douthat State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/douthat",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/douthat-trail-map1.pdf"
+  },
+  "Fairy Stone State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/fairy-stone",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/fairy-stone-avenza-map.pdf"
+  },
+  "False Cape State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/false-cape",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/false-cape-geo-map.pdf"
+  },
+  "First Landing State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/first-landing",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/first-landing-avenza-map.pdf"
+  },
+  "Grayson Highlands State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/grayson-highlands",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/grayson-highlands-avenza-map.pdf"
+  },
+  "Hayfields State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/hayfields",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/hayfields-avenza-map.pdf"
+  },
+  "High Bridge Trail State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/high-bridge-trail",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/high-bridge-trail-geo-map.pdf"
+  },
+  "Holliday Lake State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/holliday-lake",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/holliday-lake-avenza-map.pdf"
+  },
+  "Hungry Mother State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/hungry-mother",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/hungry-mother-geo-map.pdf"
+  },
+  "James River State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/james-river",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/james-river-avenza-map.pdf"
+  },
+  "Kiptopeke State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/kiptopeke",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/kiptopeke-state-park-avenza-map.pdf"
+  },
+  "Lake Anna State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/lake-anna",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/lake-anna-avenza-map.pdf"
+  },
+  "Leesylvania State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/leesylvania",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/leesylvania-geo-map.pdf"
+  },
+  "Machicomoco State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/machicomoco",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/machicomoco-avenza-map.pdf"
+  },
+  "Mason Neck State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/mason-neck",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/mason-neck-geo-map.pdf"
+  },
+  "Mayo River State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps"
+  },
+  "Natural Bridge State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/natural-bridge",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/natural-bridge-avenza-map.pdf"
+  },
+  "Natural Tunnel State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/natural-tunnel",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/natural-tunnel-avenza-map.pdf"
+  },
+  "New River Trail State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/new-river-trail",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/new-river-trail-geo-map.pdf"
+  },
+  "Occoneechee State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/occoneechee",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/occoneechee-geo-map.pdf"
+  },
+  "Pocahontas State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/pocahontas",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/pocahontas-avenza-map.pdf"
+  },
+  "Powhatan State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/powhatan",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/powhatan-avenza-map.pdf"
+  },
+  "Sailors Creek Battlefield Historic State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/sailors-creek",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/sailors-creek-battlefield-avenza-map.pdf"
+  },
+  "Seven Bends State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/seven-bends",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/seven-bends-geo-map.pdf"
+  },
+  "Shenandoah River State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/shenandoah-river-geo-map.pdf"
+  },
+  "Sky Meadows State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/sky-meadows-avenza-map.pdf"
+  },
+  "Smith Mountain Lake State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/smith-mountain-lake",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/smith-mountain-lake-avenza-map.pdf"
+  },
+  "Staunton River Battlefield State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/staunton-river-battlefield-avenza-map.pdf"
+  },
+  "Staunton River State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/staunton-river-avenza-map.pdf"
+  },
+  "Sweet Run State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/sweet-run",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/sweet-run-avenza-map.pdf"
+  },
+  "Twin Lakes State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/twin-lakes",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/twin-lakes-avenza-map.pdf"
+  },
+  "Westmoreland State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/westmoreland",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/westmoreland-avenza-map.pdf"
+  },
+  "Widewater State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/widewater",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/widewater-avenza-map.pdf"
+  },
+  "Wilderness Road State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/wilderness-road-avenza-map.pdf"
+  },
+  "York River State Park": {
+    "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/york-river",
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/york-river-avenza-map.pdf"
+  }
+}

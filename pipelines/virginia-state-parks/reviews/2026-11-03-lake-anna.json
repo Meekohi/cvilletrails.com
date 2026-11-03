@@ -1,0 +1,1003 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-03T13:52:23.219364Z",
+  "reviewer": "Codex in chat",
+  "status": "published",
+  "added_systems": [
+    "lake-anna"
+  ],
+  "preview_centers": {
+    "lake-anna": [
+      -77.8229015,
+      38.117473000000004
+    ]
+  },
+  "preview_fit_bounds": true,
+  "mobile_system": "lake-anna",
+  "system": {
+    "id": "lake-anna",
+    "name": "Lake Anna State Park",
+    "area": "Spotsylvania County",
+    "description": "Woodland and lakeshore trails with easy and moderate routes, historic sites and lake views. The park offers more than 15 miles of trails; consult the official map for each trail’s uses and difficulty.",
+    "bounds": [
+      -77.839591,
+      38.094659,
+      -77.806212,
+      38.140287
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/lake-anna",
+    "source_label": "Virginia State Parks visitor guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_reviewed_on": "2026-11-03",
+    "map_note": "DCR’s alert, checked Nov. 3, 2026, lists a Nov. 2–3 closure for resource management. Check current park alerts before visiting.",
+    "info_sources": [
+      {
+        "id": "lake-anna-page",
+        "label": "DCR Lake Anna visitor information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/lake-anna"
+      },
+      {
+        "id": "lake-anna-map",
+        "label": "Official trail guide (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/trail-guide-lakeanna.pdf"
+      },
+      {
+        "id": "lake-anna-geo",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/lake-anna-avenza-map.pdf"
+      },
+      {
+        "id": "state-park-pets",
+        "label": "Virginia State Parks pet policy",
+        "url": "https://www.dcr.virginia.gov/state-parks/pets"
+      }
+    ],
+    "visitor_info": [
+      {
+        "label": "Hours",
+        "value": "Normally dawn to dusk for day use; current closures take priority. The park lists a 5 a.m. gate opening.",
+        "sources": [
+          "lake-anna-page"
+        ]
+      },
+      {
+        "label": "Dogs",
+        "value": "Keep pets on a leash no longer than 6 feet or confined; do not leave them unattended.",
+        "sources": [
+          "state-park-pets"
+        ]
+      },
+      {
+        "label": "Trail use",
+        "value": "Hiking throughout; bikes and horses only on designated multi-use trails. Hikers yield to horses; cyclists yield to horses and hikers.",
+        "sources": [
+          "lake-anna-map"
+        ]
+      },
+      {
+        "label": "Parking",
+        "value": "Daily parking fees apply. The park may reach capacity on weekends and holidays, so entry is not guaranteed.",
+        "sources": [
+          "lake-anna-page"
+        ]
+      }
+    ],
+    "description_sources": [
+      "lake-anna-page",
+      "lake-anna-map"
+    ],
+    "bounds_source": {
+      "description": "Envelope of the 14 reviewed DCR GIS trails, padded 0.001 degrees. Context extent, not a park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  "source_item": {
+    "id": "55d9567f69fe44adaaa9bd0142e7167c",
+    "title": "VSP Trails",
+    "owner": "Peter.lostritto_vdcr",
+    "orgId": "PxUNqSbaWFvFgHnJ",
+    "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer",
+    "modified": 1781185585000,
+    "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset contains the trails for State Parks in Virginia. This data is constantly being edited and updated. Historic easements are held by the Virginia Board of Historic Resources and administered by the Virginia department of Historic Resources. All conservation lands data is released publicly and posted to the download.</span>",
+    "licenseInfo": "The re-distribution of this dataset for profit is prohibited. All rights credited to Virginia Department of Conservation and Recreation. "
+  },
+  "source_snapshot_hash": "8f67d936788f0046a8a362580dd77285378a2052b4d19fab10361d6e7d9e0b13",
+  "ingest_report": {
+    "source_features": 631,
+    "included": 14,
+    "held": [
+      {
+        "global_id": "76fe465a-0cd7-4f7c-83a1-c27735893ea0",
+        "name": "Proposed/Reroute Trail",
+        "park": "Lake Anna State Park",
+        "reasons": [
+          "proposed/reroute or staff name",
+          "staff, water or ambiguous trail use"
+        ]
+      },
+      {
+        "global_id": "48c75f19-30ca-4c3d-88e7-9cea05542501",
+        "name": "Proposed/Reroute Trail",
+        "park": "Lake Anna State Park",
+        "reasons": [
+          "proposed/reroute or staff name",
+          "staff, water or ambiguous trail use"
+        ]
+      },
+      {
+        "global_id": "7254ea5b-ad82-4383-9e5a-6852b5212f54",
+        "name": "Proposed/Reroute Trail",
+        "park": "Lake Anna State Park",
+        "reasons": [
+          "proposed/reroute or staff name",
+          "staff, water or ambiguous trail use"
+        ]
+      }
+    ],
+    "unreviewed_parks": {
+      "(unassigned)": 1,
+      "Bear Creek Lake State Park": 11,
+      "Belle Isle State Park": 13,
+      "Breaks Interstate Park": 26,
+      "Caledon State Park": 14,
+      "Chippokes State Park": 6,
+      "Claytor Lake State Park": 9,
+      "Clinch River State Park": 6,
+      "Culpeper Battlefields": 9,
+      "Douthat State Park": 40,
+      "Fairy Stone State Park": 11,
+      "False Cape State Park": 28,
+      "First Landing State Park": 16,
+      "Grayson Highlands State Park": 21,
+      "Hayfields State Park": 4,
+      "High Bridge Trail State Park": 12,
+      "Holliday Lake State Park": 11,
+      "Hungry Mother State Park": 16,
+      "James River State Park": 27,
+      "Kiptopeke State Park": 16,
+      "Leesylvania State Park": 7,
+      "Machicomoco State Park": 6,
+      "Mason Neck State Park": 10,
+      "Mayo River State Park": 3,
+      "Natural Bridge State Park": 5,
+      "Natural Tunnel State Park": 10,
+      "New River Trail State Park": 11,
+      "Occoneechee State Park": 9,
+      "Pocahontas State Park": 66,
+      "Powhatan State Park": 12,
+      "Sailors Creek Battlefield Historic State Park": 7,
+      "Seven Bends State Park": 16,
+      "Shenandoah River State Park": 21,
+      "Sky Meadows State Park": 26,
+      "Smith Mountain Lake State Park": 15,
+      "Staunton River Battlefield State Park": 6,
+      "Staunton River State Park": 10,
+      "Sweet Run State Park": 17,
+      "Twin Lakes State Park": 9,
+      "Westmoreland State Park": 15,
+      "Widewater State Park": 2,
+      "Wilderness Road State Park": 5,
+      "York River State Park": 29
+    },
+    "policy_hash": "cf09cd8753614aab96edb1a5e80de251ad2e63ed7e2d13221f7a389bdbe03c05",
+    "overrides_hash": "84c479ff84f45ef618373fd5edd5004a8617ffe65841cb60b09f993f04b6a85f"
+  },
+  "pdf_comparison": {
+    "crs": "EPSG:2283",
+    "source_unit_to_meters": 0.30480060960121924,
+    "control_residual_m": [
+      0.11278474997301756,
+      0.11278475270320175,
+      0.11278475001352131,
+      0.11278475539288225
+    ],
+    "trails": [
+      {
+        "global_id": "9e08c557-6b76-4e90-99d3-cfbc07e89ed2",
+        "name": "Big Woods Trail",
+        "color": "Silver",
+        "length_m": 1887.98,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.5098, 0.5098, 0.5098)",
+            1.0
+          ],
+          [
+            "(1.0, 0.9098, 0.0)",
+            0.0068
+          ]
+        ]
+      },
+      {
+        "global_id": "8f473791-1eea-4ff2-854b-ff0f695e7cb5",
+        "name": "Old Pond Trail",
+        "color": "Blue",
+        "length_m": 381.1,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.0, 0.302, 0.6588)",
+            1.0
+          ],
+          [
+            "(0.0, 0.0, 0.0)",
+            0.0252
+          ]
+        ]
+      },
+      {
+        "global_id": "1face15d-e1d1-46f8-841a-7c033ffc3bf0",
+        "name": "Fisherman's Trail",
+        "color": "Orange",
+        "length_m": 1563.92,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(1.0, 0.6667, 0.0)",
+            1.0
+          ],
+          [
+            "(1.0, 1.0, 1.0)",
+            0.0262
+          ]
+        ]
+      },
+      {
+        "global_id": "f6ddd3cf-47bc-474c-b95e-6d5f94e530d5",
+        "name": "Ware Creek  Trail",
+        "color": "White",
+        "length_m": 1649.26,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(1.0, 1.0, 1.0)",
+            1.0
+          ],
+          [
+            "(1.0, 0.6667, 0.0)",
+            0.0124
+          ]
+        ]
+      },
+      {
+        "global_id": "1c2ad29a-3098-4726-908d-245d343cdff2",
+        "name": "Glenora Trail",
+        "color": "Green",
+        "length_m": 1962.1,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.302, 0.549, 0.0)",
+            1.0
+          ],
+          [
+            "(0.5098, 0.5098, 0.5098)",
+            0.0721
+          ]
+        ]
+      },
+      {
+        "global_id": "c0e4a22a-3151-4dc8-9469-e5ec75f7b0e2",
+        "name": "Sawtooth Trail",
+        "color": "Tan",
+        "length_m": 4352.81,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.8039, 0.6667, 0.4)",
+            1.0
+          ],
+          [
+            "(0.5177, 0.0, 0.6588)",
+            0.0026
+          ]
+        ]
+      },
+      {
+        "global_id": "69de4ba5-f46a-49ee-93fc-539c7317ea7e",
+        "name": "Pigeon Run Trail",
+        "color": "Purple",
+        "length_m": 2196.11,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.5177, 0.0, 0.6588)",
+            1.0
+          ],
+          [
+            "(0.8039, 0.6667, 0.4)",
+            0.0364
+          ]
+        ]
+      },
+      {
+        "global_id": "cd5b1b33-63e7-48c0-ad62-8993c5f18f3a",
+        "name": "Mill Pond Trail",
+        "color": "Blue",
+        "length_m": 1192.0,
+        "pdf_coverage_10m": 0.9884,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.0, 0.302, 0.6588)",
+            0.9884
+          ],
+          [
+            "(0.8039, 0.6667, 0.4)",
+            0.0172
+          ]
+        ]
+      },
+      {
+        "global_id": "a085ea9a-204d-4299-96a3-0e09b4fc747e",
+        "name": "Turkey Run Trail",
+        "color": "Yellow",
+        "length_m": 1817.6,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(1.0, 0.9098, 0.0)",
+            1.0
+          ],
+          [
+            "(1.0, 1.0, 1.0)",
+            0.0236
+          ]
+        ]
+      },
+      {
+        "global_id": "6968c517-bc52-4d2c-a8ec-690635c3cba4",
+        "name": "Cedar Run Trail",
+        "color": "White",
+        "length_m": 1228.84,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(1.0, 1.0, 1.0)",
+            1.0
+          ],
+          [
+            "(1.0, 0.9098, 0.0)",
+            0.019
+          ]
+        ]
+      },
+      {
+        "global_id": "5cee5eb7-3f72-478f-a2f3-8e62060ccd36",
+        "name": "Connector Trail",
+        "color": "Blue",
+        "length_m": 303.29,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.8039, 0.6667, 0.4)",
+            1.0
+          ],
+          [
+            "(0.5177, 0.0, 0.6588)",
+            0.2061
+          ]
+        ]
+      },
+      {
+        "global_id": "75cd1890-9778-4d7c-8b2a-fbe46f1be160",
+        "name": "Railroad Ford Trail",
+        "color": "Red",
+        "length_m": 2213.44,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(1.0, 0.0, 0.0)",
+            1.0
+          ],
+          [
+            "(0.0, 0.0, 0.0)",
+            0.0101
+          ]
+        ]
+      },
+      {
+        "global_id": "06c108a3-56d9-4027-bca0-7d40cd7992ab",
+        "name": "Campground Walkway Trail",
+        "color": "None",
+        "length_m": 607.86,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.0, 0.0, 0.0)",
+            1.0
+          ],
+          [
+            "(1.0, 0.0, 0.0)",
+            0.052
+          ]
+        ]
+      },
+      {
+        "global_id": "a6e8d3d3-1189-4a9a-9bf6-9969134b2fa6",
+        "name": "Gold Hill Trail",
+        "color": "White",
+        "length_m": 4691.81,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(1.0, 1.0, 1.0)",
+            1.0
+          ],
+          [
+            "(0.5177, 0.0, 0.6588)",
+            0.0019
+          ]
+        ]
+      },
+      {
+        "global_id": "76fe465a-0cd7-4f7c-83a1-c27735893ea0",
+        "name": "Proposed/Reroute Trail",
+        "color": "",
+        "length_m": 25.02,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.8039, 0.6667, 0.4)",
+            1.0
+          ],
+          [
+            "(0.5098, 0.5098, 0.5098)",
+            0.0
+          ]
+        ]
+      },
+      {
+        "global_id": "48c75f19-30ca-4c3d-88e7-9cea05542501",
+        "name": "Proposed/Reroute Trail",
+        "color": "",
+        "length_m": 66.27,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.8039, 0.6667, 0.4)",
+            1.0
+          ],
+          [
+            "(0.5098, 0.5098, 0.5098)",
+            0.0
+          ]
+        ]
+      },
+      {
+        "global_id": "7254ea5b-ad82-4383-9e5a-6852b5212f54",
+        "name": "Proposed/Reroute Trail",
+        "color": "",
+        "length_m": 33.42,
+        "pdf_coverage_10m": 1.0,
+        "pdf_coverage_25m": 1.0,
+        "color_matches": [
+          [
+            "(0.8039, 0.6667, 0.4)",
+            1.0
+          ],
+          [
+            "(0.5098, 0.5098, 0.5098)",
+            0.0
+          ]
+        ]
+      }
+    ]
+  },
+  "decisions": [
+    "Publish Lake Anna only; user selected queue other parks for review.",
+    "14 records accepted; three Proposed/Reroute records held despite Open GIS status.",
+    "Campground Walkway hiking use comes from official paper guide; original null GIS Trail_User retained.",
+    "Connector Trail is included with current GIS Blue blaze; it aligns with an unlabeled tan path on older GeoPDF.",
+    "The current park-page Nov 2–3 closure is surfaced prominently; source GIS Open does not establish current access.",
+    "Retain all 62 existing supplemental features; change only DCR-tagged color styling and add DCR map attribution."
+  ],
+  "source_check": {
+    "checked_at": "2026-11-03T13:52:25.310224Z",
+    "sources": [
+      {
+        "source": "virginia-state-parks/trails-gis",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/trails-gis-cf8ffa5a90885a110707dce51555eac62800fd4a502a0ee00fd911785d8da7dc.json"
+      },
+      {
+        "source": "virginia-state-parks/maps-directory",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/maps-directory-c21764789fdf0219424de60859ced025d26a5278caa1424c7458ea803a05fd27.json"
+      },
+      {
+        "source": "virginia-state-parks/lake-anna-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/lake-anna-visitor-13f3271ffd2839fc4806496dd31ce613f37f36115eb549aead4f7ca88aebeef4.json"
+      },
+      {
+        "source": "virginia-state-parks/lake-anna-guide",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/lake-anna-guide-ab47f4d51ddf50f4f91a17e1fae52cf504469c67323ae644f9506a5b6c87e2d9.json"
+      },
+      {
+        "source": "virginia-state-parks/lake-anna-geo",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/lake-anna-geo-a568720d992838152d4069b6c2c6b78b9dfb7af5939319fdb54ee02ae0ee44fa.json"
+      },
+      {
+        "source": "virginia-state-parks/pet-policy",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/pet-policy-5d27c3f75248a8675ef85d11c9e94737a47d8bdcf1d5285277fb597de7d6cdd6.json"
+      }
+    ],
+    "errors": []
+  },
+  "prepared_plan": {
+    "path": ".trail-state/virginia-state-parks/plan.json",
+    "approval_hash": "08297d6db72d8ab7d69f7f30ad133ea26907d54df33bd5e7429647151a011a70",
+    "before_hash": "ca1c509bbf5224d77d88b8f616ccc12b566ffc74c5d634e5e938ef7d9031a0fc",
+    "after_hash": "f6a09ebd20f6a2a274375d7927dd41c3c6d38acf8ab2f1e92b4db518ecf3f3d1",
+    "before_features": 62,
+    "after_features": 76,
+    "archived_path": ".trail-state/published-plans/lake-anna-2026-11-03.json"
+  },
+  "style_proposal": {
+    "dataset_plan_hash": "08297d6db72d8ab7d69f7f30ad133ea26907d54df33bd5e7429647151a011a70",
+    "before_hash": "ca1c509bbf5224d77d88b8f616ccc12b566ffc74c5d634e5e938ef7d9031a0fc",
+    "after_hash": "f6a09ebd20f6a2a274375d7927dd41c3c6d38acf8ab2f1e92b4db518ecf3f3d1",
+    "style_before_hash": "a1b25e83ba30c2a3d56c8358c3c46b0acda8474742e654467e34ca326a5d90dc",
+    "style_after_hash": "045188f30a621a8ed3d6b6c2b123a13659b69386cb20d76facbc5b1a90c55a75",
+    "policy_hash": "cf09cd8753614aab96edb1a5e80de251ad2e63ed7e2d13221f7a389bdbe03c05",
+    "overrides_hash": "84c479ff84f45ef618373fd5edd5004a8617ffe65841cb60b09f993f04b6a85f",
+    "approved_features_hash": "b67b46162e11de0f2bf50431f02ef667e992250d542baa5fb49d708ee0573183",
+    "proposal_hash": "2f982be9c3302e5eacad0fa2b4706b2e52c6de583f573497523661fc31fb5052"
+  },
+  "publication_authorization": {
+    "instruction": "Publish Lake Anna; queue other parks for review.",
+    "reviewed_at": "2026-11-03T13:55:41.142605Z",
+    "approved_plan_hash": "08297d6db72d8ab7d69f7f30ad133ea26907d54df33bd5e7429647151a011a70",
+    "approved_style_hash": "2f982be9c3302e5eacad0fa2b4706b2e52c6de583f573497523661fc31fb5052",
+    "scope": "14 Lake Anna additions only, DCR-specific colors and attribution, infobox and source monitoring; no publication of other parks."
+  },
+  "verification": {
+    "python_tests": "80 passed with geo dependencies",
+    "javascript_tests": "8 passed",
+    "infobox_browser": "Lake Anna context, links, facts, closure note and mobile layout passed",
+    "review_browser": "44 groups; Lake Anna 14 eligible / 3 held; map, toggle, notes, export and persistence passed",
+    "public_rendering": "Fresh real remote tiles and public style passed at zooms 10/12/13 and each of fourteen trails at zoom 16. Ordinary requests still return a stale style and missing Lake Anna tiles at zoom 13; zooms 10, 12 and all fourteen zoom-16 detail views contain new data. Cache propagation remains pending.",
+    "ordinary_public_tiles": {
+      "checked_at": "2026-11-03T14:01:20.533Z",
+      "mode": "ordinary-public-style-and-tiles",
+      "zooms": [
+        {
+          "zoom": 10,
+          "feature_ids": [
+            "06c108a3-56d9-4027-bca0-7d40cd7992ab",
+            "1c2ad29a-3098-4726-908d-245d343cdff2",
+            "1face15d-e1d1-46f8-841a-7c033ffc3bf0",
+            "5cee5eb7-3f72-478f-a2f3-8e62060ccd36",
+            "6968c517-bc52-4d2c-a8ec-690635c3cba4",
+            "69de4ba5-f46a-49ee-93fc-539c7317ea7e",
+            "75cd1890-9778-4d7c-8b2a-fbe46f1be160",
+            "8f473791-1eea-4ff2-854b-ff0f695e7cb5",
+            "9e08c557-6b76-4e90-99d3-cfbc07e89ed2",
+            "a085ea9a-204d-4299-96a3-0e09b4fc747e",
+            "a6e8d3d3-1189-4a9a-9bf6-9969134b2fa6",
+            "c0e4a22a-3151-4dc8-9469-e5ec75f7b0e2",
+            "cd5b1b33-63e7-48c0-ad62-8993c5f18f3a",
+            "f6ddd3cf-47bc-474c-b95e-6d5f94e530d5"
+          ],
+          "all_present": true
+        },
+        {
+          "zoom": 12,
+          "feature_ids": [
+            "06c108a3-56d9-4027-bca0-7d40cd7992ab",
+            "1c2ad29a-3098-4726-908d-245d343cdff2",
+            "1face15d-e1d1-46f8-841a-7c033ffc3bf0",
+            "5cee5eb7-3f72-478f-a2f3-8e62060ccd36",
+            "6968c517-bc52-4d2c-a8ec-690635c3cba4",
+            "69de4ba5-f46a-49ee-93fc-539c7317ea7e",
+            "75cd1890-9778-4d7c-8b2a-fbe46f1be160",
+            "8f473791-1eea-4ff2-854b-ff0f695e7cb5",
+            "9e08c557-6b76-4e90-99d3-cfbc07e89ed2",
+            "a085ea9a-204d-4299-96a3-0e09b4fc747e",
+            "a6e8d3d3-1189-4a9a-9bf6-9969134b2fa6",
+            "c0e4a22a-3151-4dc8-9469-e5ec75f7b0e2",
+            "cd5b1b33-63e7-48c0-ad62-8993c5f18f3a",
+            "f6ddd3cf-47bc-474c-b95e-6d5f94e530d5"
+          ],
+          "all_present": true
+        },
+        {
+          "zoom": 13,
+          "feature_ids": [],
+          "all_present": false
+        }
+      ],
+      "junctions": [
+        {
+          "feature_id": "va-state-parks:06c108a3-56d9-4027-bca0-7d40cd7992ab",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:1c2ad29a-3098-4726-908d-245d343cdff2",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:1face15d-e1d1-46f8-841a-7c033ffc3bf0",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:5cee5eb7-3f72-478f-a2f3-8e62060ccd36",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:6968c517-bc52-4d2c-a8ec-690635c3cba4",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:69de4ba5-f46a-49ee-93fc-539c7317ea7e",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:75cd1890-9778-4d7c-8b2a-fbe46f1be160",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:8f473791-1eea-4ff2-854b-ff0f695e7cb5",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:9e08c557-6b76-4e90-99d3-cfbc07e89ed2",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:a085ea9a-204d-4299-96a3-0e09b4fc747e",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:a6e8d3d3-1189-4a9a-9bf6-9969134b2fa6",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:c0e4a22a-3151-4dc8-9469-e5ec75f7b0e2",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:cd5b1b33-63e7-48c0-ad62-8993c5f18f3a",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:f6ddd3cf-47bc-474c-b95e-6d5f94e530d5",
+          "zoom": 16,
+          "present": true
+        }
+      ],
+      "line_color": [
+        "case",
+        [
+          "==",
+          [
+            "get",
+            "system_id"
+          ],
+          "fortunes-cove"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "color"
+          ],
+          "yellow",
+          "#ffe14f",
+          "white",
+          "#ffffff",
+          "#ded0c5"
+        ],
+        "hsl(25, 29%, 87%)"
+      ],
+      "style_matches": false,
+      "page_errors": [],
+      "passed": false
+    },
+    "fresh_public_tiles": {
+      "checked_at": "2026-11-03T14:02:42.127Z",
+      "mode": "diagnostic-fresh-tiles-unoptimized-style",
+      "zooms": [
+        {
+          "zoom": 10,
+          "feature_ids": [
+            "06c108a3-56d9-4027-bca0-7d40cd7992ab",
+            "1c2ad29a-3098-4726-908d-245d343cdff2",
+            "1face15d-e1d1-46f8-841a-7c033ffc3bf0",
+            "5cee5eb7-3f72-478f-a2f3-8e62060ccd36",
+            "6968c517-bc52-4d2c-a8ec-690635c3cba4",
+            "69de4ba5-f46a-49ee-93fc-539c7317ea7e",
+            "75cd1890-9778-4d7c-8b2a-fbe46f1be160",
+            "8f473791-1eea-4ff2-854b-ff0f695e7cb5",
+            "9e08c557-6b76-4e90-99d3-cfbc07e89ed2",
+            "a085ea9a-204d-4299-96a3-0e09b4fc747e",
+            "a6e8d3d3-1189-4a9a-9bf6-9969134b2fa6",
+            "c0e4a22a-3151-4dc8-9469-e5ec75f7b0e2",
+            "cd5b1b33-63e7-48c0-ad62-8993c5f18f3a",
+            "f6ddd3cf-47bc-474c-b95e-6d5f94e530d5"
+          ],
+          "all_present": true
+        },
+        {
+          "zoom": 12,
+          "feature_ids": [
+            "06c108a3-56d9-4027-bca0-7d40cd7992ab",
+            "1c2ad29a-3098-4726-908d-245d343cdff2",
+            "1face15d-e1d1-46f8-841a-7c033ffc3bf0",
+            "5cee5eb7-3f72-478f-a2f3-8e62060ccd36",
+            "6968c517-bc52-4d2c-a8ec-690635c3cba4",
+            "69de4ba5-f46a-49ee-93fc-539c7317ea7e",
+            "75cd1890-9778-4d7c-8b2a-fbe46f1be160",
+            "8f473791-1eea-4ff2-854b-ff0f695e7cb5",
+            "9e08c557-6b76-4e90-99d3-cfbc07e89ed2",
+            "a085ea9a-204d-4299-96a3-0e09b4fc747e",
+            "a6e8d3d3-1189-4a9a-9bf6-9969134b2fa6",
+            "c0e4a22a-3151-4dc8-9469-e5ec75f7b0e2",
+            "cd5b1b33-63e7-48c0-ad62-8993c5f18f3a",
+            "f6ddd3cf-47bc-474c-b95e-6d5f94e530d5"
+          ],
+          "all_present": true
+        },
+        {
+          "zoom": 13,
+          "feature_ids": [
+            "06c108a3-56d9-4027-bca0-7d40cd7992ab",
+            "1c2ad29a-3098-4726-908d-245d343cdff2",
+            "1face15d-e1d1-46f8-841a-7c033ffc3bf0",
+            "5cee5eb7-3f72-478f-a2f3-8e62060ccd36",
+            "6968c517-bc52-4d2c-a8ec-690635c3cba4",
+            "69de4ba5-f46a-49ee-93fc-539c7317ea7e",
+            "75cd1890-9778-4d7c-8b2a-fbe46f1be160",
+            "8f473791-1eea-4ff2-854b-ff0f695e7cb5",
+            "9e08c557-6b76-4e90-99d3-cfbc07e89ed2",
+            "a085ea9a-204d-4299-96a3-0e09b4fc747e",
+            "a6e8d3d3-1189-4a9a-9bf6-9969134b2fa6",
+            "c0e4a22a-3151-4dc8-9469-e5ec75f7b0e2",
+            "cd5b1b33-63e7-48c0-ad62-8993c5f18f3a",
+            "f6ddd3cf-47bc-474c-b95e-6d5f94e530d5"
+          ],
+          "all_present": true
+        }
+      ],
+      "junctions": [
+        {
+          "feature_id": "va-state-parks:06c108a3-56d9-4027-bca0-7d40cd7992ab",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:1c2ad29a-3098-4726-908d-245d343cdff2",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:1face15d-e1d1-46f8-841a-7c033ffc3bf0",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:5cee5eb7-3f72-478f-a2f3-8e62060ccd36",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:6968c517-bc52-4d2c-a8ec-690635c3cba4",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:69de4ba5-f46a-49ee-93fc-539c7317ea7e",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:75cd1890-9778-4d7c-8b2a-fbe46f1be160",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:8f473791-1eea-4ff2-854b-ff0f695e7cb5",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:9e08c557-6b76-4e90-99d3-cfbc07e89ed2",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:a085ea9a-204d-4299-96a3-0e09b4fc747e",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:a6e8d3d3-1189-4a9a-9bf6-9969134b2fa6",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:c0e4a22a-3151-4dc8-9469-e5ec75f7b0e2",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:cd5b1b33-63e7-48c0-ad62-8993c5f18f3a",
+          "zoom": 16,
+          "present": true
+        },
+        {
+          "feature_id": "va-state-parks:f6ddd3cf-47bc-474c-b95e-6d5f94e530d5",
+          "zoom": 16,
+          "present": true
+        }
+      ],
+      "line_color": [
+        "case",
+        [
+          "==",
+          [
+            "get",
+            "pipeline_id"
+          ],
+          "virginia-state-parks"
+        ],
+        [
+          "coalesce",
+          [
+            "get",
+            "display_color"
+          ],
+          "#ded0c5"
+        ],
+        [
+          "case",
+          [
+            "==",
+            [
+              "get",
+              "system_id"
+            ],
+            "fortunes-cove"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "color"
+            ],
+            "yellow",
+            "#ffe14f",
+            "white",
+            "#ffffff",
+            "#ded0c5"
+          ],
+          "hsl(25, 29%, 87%)"
+        ]
+      ],
+      "style_matches": true,
+      "page_errors": [],
+      "passed": true
+    }
+  },
+  "dataset_receipt": {
+    "approval_hash": "08297d6db72d8ab7d69f7f30ad133ea26907d54df33bd5e7429647151a011a70",
+    "started_at": "2026-11-03T13:55:43.092419Z",
+    "target": {
+      "id": "strava",
+      "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+      "tileset": "meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg",
+      "source_layer": "Strava_Sidetrails"
+    },
+    "state": "published",
+    "completed": [
+      {
+        "put": "va-state-parks:06c108a3-56d9-4027-bca0-7d40cd7992ab"
+      },
+      {
+        "put": "va-state-parks:1c2ad29a-3098-4726-908d-245d343cdff2"
+      },
+      {
+        "put": "va-state-parks:1face15d-e1d1-46f8-841a-7c033ffc3bf0"
+      },
+      {
+        "put": "va-state-parks:5cee5eb7-3f72-478f-a2f3-8e62060ccd36"
+      },
+      {
+        "put": "va-state-parks:6968c517-bc52-4d2c-a8ec-690635c3cba4"
+      },
+      {
+        "put": "va-state-parks:69de4ba5-f46a-49ee-93fc-539c7317ea7e"
+      },
+      {
+        "put": "va-state-parks:75cd1890-9778-4d7c-8b2a-fbe46f1be160"
+      },
+      {
+        "put": "va-state-parks:8f473791-1eea-4ff2-854b-ff0f695e7cb5"
+      },
+      {
+        "put": "va-state-parks:9e08c557-6b76-4e90-99d3-cfbc07e89ed2"
+      },
+      {
+        "put": "va-state-parks:a085ea9a-204d-4299-96a3-0e09b4fc747e"
+      },
+      {
+        "put": "va-state-parks:a6e8d3d3-1189-4a9a-9bf6-9969134b2fa6"
+      },
+      {
+        "put": "va-state-parks:c0e4a22a-3151-4dc8-9469-e5ec75f7b0e2"
+      },
+      {
+        "put": "va-state-parks:cd5b1b33-63e7-48c0-ad62-8993c5f18f3a"
+      },
+      {
+        "put": "va-state-parks:f6ddd3cf-47bc-474c-b95e-6d5f94e530d5"
+      }
+    ],
+    "verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "f6c473d0129cfc1cb98964c46e00a303e0829ad768224ac7d7bb9dd52ef1acc0"
+    },
+    "upload_id": "cmw0r3xw102bj1nmv50nb1m3r",
+    "finished_at": "2026-11-03T13:56:41.066339Z"
+  },
+  "style_receipt": {
+    "state": "published",
+    "started_at": "2026-11-03T13:58:08.385274Z",
+    "proposal_hash": "2f982be9c3302e5eacad0fa2b4706b2e52c6de583f573497523661fc31fb5052",
+    "dataset_plan_hash": "08297d6db72d8ab7d69f7f30ad133ea26907d54df33bd5e7429647151a011a70",
+    "completed": [
+      {
+        "version": "draft",
+        "response_hash": "144b586bf3f7ec2008a02b323c9e974f4c80ce8d4246c1d15ee102120f5e92e7"
+      },
+      {
+        "version": "published",
+        "response_hash": "dec88b1f333bf8ab8fbed3e4ee864034de32a7265ed09d9bf9aab7ffd36980ad"
+      }
+    ],
+    "dataset_verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "f6c473d0129cfc1cb98964c46e00a303e0829ad768224ac7d7bb9dd52ef1acc0"
+    },
+    "finished_at": "2026-11-03T13:58:09.286512Z"
+  }
+}
