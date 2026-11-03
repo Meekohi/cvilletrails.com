@@ -3,6 +3,10 @@
   const response = await fetch('preview.json');
   if (!response.ok) throw new Error('Could not load the reviewed proposal');
   const data = await response.json();
+  if (data.publication?.proposal_hash === data.manifest.proposal_hash && data.publication?.status === 'published_and_verified') {
+    document.querySelector('#publication-status').textContent = data.publication.cache_pending
+      ? 'Published to Mapbox · caches updating' : 'Approved changes · published to Mapbox';
+  }
   mapboxgl.accessToken = data.public_token;
   const map = new mapboxgl.Map({container:'map',style:data.style,center:[-78.49,38.035],zoom:11.5});
   map.addControl(new mapboxgl.NavigationControl());

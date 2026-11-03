@@ -1,5 +1,5 @@
 {
-  "status": "prepared_not_published",
+  "status": "published_and_verified_cache_propagating",
   "prepared_at": "2026-11-03T03:45:54.388303Z",
   "decisions_path": "pipelines/rivanna/reviews/2026-11-03-decisions.json",
   "manifest": {
@@ -29,7 +29,7 @@
     "proposal_hash": "deaba03ad506c5d1d872283df9ebdd381bc964aeee276520291c5dc1036b0894"
   },
   "mapbox_plan": {
-    "path": ".trail-state/plans/rivanna-reviewed.json",
+    "path": ".trail-state/published-plans/eea5dff270ad36d32e240c691a0dc5667d2569dc8ca04a1625f67a2e7074d73c.json",
     "approval_hash": "eea5dff270ad36d32e240c691a0dc5667d2569dc8ca04a1625f67a2e7074d73c",
     "dataset_modified": "2026-11-02T21:55:38.018Z",
     "before_hash": "83fcc380dd5e7a4859b05f4a9b0302663567116d675cc13b74625e0a8f1a9a81",
@@ -54,9 +54,168 @@
   },
   "preview": "http://localhost:8006/",
   "validation": {
-    "python_tests": 66,
-    "browser": "72 features; rendered closure, active detour and official road walk; route selection; mobile layout",
+    "python_tests": 69,
+    "browser": "Published remote style matches approved expressions; all seven road walks, Fontaine closure status, and active detour render from remote vector tiles. Default style cache propagation pending.",
     "all_existing_feature_ids_and_geometries_retained": true,
-    "mapbox_writes_performed": false
+    "mapbox_writes_performed": true
+  },
+  "publication_approval": {
+    "recorded_at": "2026-11-03T03:53:11.846815Z",
+    "user_instruction": "All looks good on the Rivanna Trail preview.",
+    "proposal_hash": "deaba03ad506c5d1d872283df9ebdd381bc964aeee276520291c5dc1036b0894",
+    "dataset_plan_hash": "eea5dff270ad36d32e240c691a0dc5667d2569dc8ca04a1625f67a2e7074d73c",
+    "scope": "Seven official road walks; red temporary closure on the existing Fontaine route; active detour retained; all existing geometries preserved; matching live and Studio draft closure styling."
+  },
+  "dataset_publication": {
+    "approval_hash": "eea5dff270ad36d32e240c691a0dc5667d2569dc8ca04a1625f67a2e7074d73c",
+    "started_at": "2026-11-03T03:53:50.325620Z",
+    "target": {
+      "id": "rivanna",
+      "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+      "tileset": "meekohi.cjawyutol0r7d2wo1z7eb0wiy-3zlpw",
+      "source_layer": "Rivanna_Trail"
+    },
+    "state": "published",
+    "completed": [
+      {
+        "put": "rtf:roadwalk:ivy-railroad-detour"
+      },
+      {
+        "put": "rtf:roadwalk:melbourne-kenwood"
+      },
+      {
+        "put": "rtf:roadwalk:park-street-jw-parkway"
+      },
+      {
+        "put": "rtf:roadwalk:river-north-section-1"
+      },
+      {
+        "put": "rtf:roadwalk:sunset-avenue"
+      },
+      {
+        "put": "rtf:roadwalk:vfw-megan-court"
+      },
+      {
+        "put": "rtf:roadwalk:woolen-mills-riverview"
+      },
+      {
+        "put": "979e29e234bf508b2d9b8f6808757de0"
+      }
+    ],
+    "verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "4ba781f25967138b8313362c61d59d3c8d0de156fe31945be9887092a7969e13"
+    },
+    "upload_id": "cmw05lomx2mll1oqw9wh6fmkm",
+    "finished_at": "2026-11-03T03:54:36.708299Z"
+  },
+  "style_publication": {
+    "approval_hash": "deaba03ad506c5d1d872283df9ebdd381bc964aeee276520291c5dc1036b0894",
+    "dataset_plan_hash": "eea5dff270ad36d32e240c691a0dc5667d2569dc8ca04a1625f67a2e7074d73c",
+    "started_at": "2026-11-03T03:55:00.534396Z",
+    "state": "published",
+    "completed": [
+      {
+        "version": "draft",
+        "before_hash": "0e134f4f6c4773ae048155e7ac7ce561229546d55cb15100261fa545f759ca4c",
+        "response_hash": "ef2bf3afab63922a2ad2aac7f225881d6f83f9024e6281a9eb4bb68523d29cd2"
+      },
+      {
+        "version": "published",
+        "before_hash": "c15d191f2a4c2470e6c0456b79033e15546f1cfb95707048c46621587efd83ab",
+        "response_hash": "baee46ed752af7cdb2f963876158b8e4ae24d66caf275e77f6e0fbea40dd249a"
+      }
+    ],
+    "dataset_verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "4ba781f25967138b8313362c61d59d3c8d0de156fe31945be9887092a7969e13"
+    },
+    "changed_layers": [
+      "rivanna-trail fringe",
+      "rivanna-trail",
+      "rivanna-trail-label"
+    ],
+    "finished_at": "2026-11-03T03:55:01.390157Z"
+  },
+  "dataset_verification": {
+    "checked_at": "2026-11-03T03:55:27.974607Z",
+    "mode": "mapbox-six-decimal-truncation",
+    "stored_hash": "4ba781f25967138b8313362c61d59d3c8d0de156fe31945be9887092a7969e13",
+    "feature_count": 72,
+    "all_65_existing_geometries_unchanged": true,
+    "other_64_features_exactly_unchanged": true,
+    "city_hash_unchanged": "c81f0cb5adcff58602284baf22fd1bfdf501f1dda10f8bdd8d5356e9388d670b"
+  },
+  "render_verification": {
+    "fresh": {
+      "checked_at": "2026-11-03T03:56:15.712Z",
+      "mode": "fresh-v4-tiles-and-unoptimized-style",
+      "style_matches_proposal": true,
+      "results": [
+        {
+          "feature_id": "8801a8379c2f586c2213fa33dd8963dd",
+          "section": "Section 6A: Detour",
+          "rendered_segments": 1,
+          "status_matches": true
+        },
+        {
+          "feature_id": "979e29e234bf508b2d9b8f6808757de0",
+          "section": "Section 6A: Fontaine Ave to Moore's Creek",
+          "rendered_segments": 1,
+          "status_matches": true
+        },
+        {
+          "feature_id": "rtf:roadwalk:ivy-railroad-detour",
+          "section": "Ivy Railroad Detour (road walk)",
+          "rendered_segments": 1,
+          "status_matches": true
+        },
+        {
+          "feature_id": "rtf:roadwalk:melbourne-kenwood",
+          "section": "Melbourne to Kenwood Ln (road walk)",
+          "rendered_segments": 1,
+          "status_matches": true
+        },
+        {
+          "feature_id": "rtf:roadwalk:park-street-jw-parkway",
+          "section": "Section 2B: Park Street to JW Pkwy (ROAD WALK)",
+          "rendered_segments": 1,
+          "status_matches": true
+        },
+        {
+          "feature_id": "rtf:roadwalk:river-north-section-1",
+          "section": "RTF River North TR #1 (road walk)",
+          "rendered_segments": 1,
+          "status_matches": true
+        },
+        {
+          "feature_id": "rtf:roadwalk:sunset-avenue",
+          "section": "Section 6C: Sunset Ave (road walk)",
+          "rendered_segments": 1,
+          "status_matches": true
+        },
+        {
+          "feature_id": "rtf:roadwalk:vfw-megan-court",
+          "section": "Section 1D: VFW to Megan Crt (road walk)",
+          "rendered_segments": 1,
+          "status_matches": true
+        },
+        {
+          "feature_id": "rtf:roadwalk:woolen-mills-riverview",
+          "section": "Section 1C: Woolen Mills bridge to Riverview Park (ROAD WALK)",
+          "rendered_segments": 1,
+          "status_matches": true
+        }
+      ],
+      "page_errors": []
+    },
+    "standard": {
+      "checked_at": "2026-11-03T03:56:15.963Z",
+      "mode": "standard-public-style-and-tiles",
+      "style_matches_proposal": false,
+      "results": [],
+      "page_errors": []
+    },
+    "cache_note": "Fresh remote style and vector tiles render all seven road walks, the red Fontaine closure, and the active green detour. The default public style URL still returned the previous cached style at the recorded check."
   }
 }

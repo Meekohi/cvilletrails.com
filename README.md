@@ -244,6 +244,15 @@ python3 -m http.server 8006 --bind 127.0.0.1 --directory .trail-state/review-riv
 
 This separate preview leaves the original source review and browser notes intact. It uses the proposed production layers: closed routes are red and labeled temporarily closed, while active routes retain their existing colors and draw order. `candidate.geojson`, `style-proposal.json`, and `manifest.json` are local preparation artifacts; this command makes no Mapbox writes. Dataset publication and the corresponding reviewed live/draft style changes must be coordinated before calling a closure visible on the public map.
 
+After approval of that exact preview, create a normal Rivanna dataset plan and publish it with `maintenance apply --publish`. Then publish its matching closure style:
+
+```sh
+python3 -m maintenance.rivanna_publish .trail-state/plans/rivanna-reviewed.json \
+  .trail-state/review-rivanna-candidate --approve EXACT_PROPOSAL_HASH
+```
+
+The style publisher requires the completed dataset receipt and matching live data, verifies the reviewed style diff, backs up both style versions, and changes only the three Rivanna display layers. It preserves unrelated Studio draft edits. An interrupted or previously attempted style publication requires inspecting its journal rather than blindly replaying it. `node tests/rivanna-publication-browser.mjs` checks the public style and tiles; `--fresh` separately checks fresh vector tiles and the unoptimized public style URL to distinguish CDN propagation from a failed publication. Neither check replaces remote data with local candidate geometry.
+
 ## Publish trail notices
 
 Review each proposed notice's source, affected systems, wording, and dates. Narrow `system_ids` in the review record if its pipeline covers several systems. Missing end dates require an explicit review expiry; expiry means “stop displaying this notice,” not “the trail reopened.” Closures need rechecking before expiry.
