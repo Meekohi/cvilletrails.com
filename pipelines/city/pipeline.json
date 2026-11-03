@@ -5,6 +5,7 @@
     {"id":"city-gis","kind":"arcgis","label":"Charlottesville GIS: City Trails","url":"https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/177"},
     {"id":"trail-guide","kind":"html","label":"Charlottesville Parks & Recreation","url":"https://charlottesville.gov/659/Trails"},
     {"id":"city-map","kind":"pdf","label":"Charlottesville official trail map","url":"https://www.charlottesville.gov/DocumentCenter/View/2238"},
-    {"id":"ragged-map","kind":"pdf","label":"Ragged Mountain official trail map","url":"https://www.charlottesville.gov/DocumentCenter/View/1484/Ragged-Mountain-Trail-Map-and-Guide-PDF"}
+    {"id":"ragged-map","kind":"pdf","label":"Ragged Mountain official trail map","url":"https://www.charlottesville.gov/DocumentCenter/View/1484/Ragged-Mountain-Trail-Map-and-Guide-PDF"},
+    {"id":"heyward-map","kind":"pdf","label":"Heyward Community Forest official trail map","url":"https://www.charlottesville.gov/DocumentCenter/View/4149/Heyward-Community-Forest-Trails-PDF?bidId="}
   ]
 }

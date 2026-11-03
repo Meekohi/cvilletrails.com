@@ -1,0 +1,38 @@
+{
+  "reviewed_at": "2026-11-03T00:33:21.220870Z",
+  "reviewer": "Codex in chat",
+  "publication_status": "not_published",
+  "review_type": "initial_source_audit",
+  "sources": [
+    {
+      "id": "gis-catalog",
+      "kind": "html",
+      "label": "Albemarle GIS data catalog",
+      "url": "https://www.albemarle.org/government/information-technology/geographic-information-system-gis-mapping/gis-data"
+    },
+    {
+      "id": "biscuit-run",
+      "kind": "html",
+      "label": "Biscuit Run Park access and development",
+      "url": "https://www.albemarle.org/government/parks-recreation/biscuit-run-park"
+    },
+    {
+      "id": "biscuit-run-map",
+      "kind": "pdf",
+      "label": "Biscuit Run Park Phase 1-A official map",
+      "url": "https://www.albemarle.org/home/showpublisheddocument/24814/638695933370230000"
+    }
+  ],
+  "findings": {
+    "direct_fetch": "County trail page and Biscuit Run PDF returned HTTP 403",
+    "current_saved_mapbox_features": 350,
+    "biscuit_run_named_features_in_saved_datasets": 0,
+    "notes": [
+      "The official park page indexed by web research describes Biscuit Run public access and ongoing construction. Current route-level closure boundaries require fresh confirmation.",
+      "No Biscuit Run or Foothills Loop names appeared across the 13 saved editable datasets. This name search is not proof that no unnamed or basemap geometry exists.",
+      "The public County_Online ArcGIS service found during research lists no parks or trails layer. No authoritative downloadable replacement trail layer was established in this pass.",
+      "The 2024 Phase 1-A map and newer park project information must be reconciled before preparing a route proposal."
+    ]
+  },
+  "service_examined": "https://services2.arcgis.com/OS21qeuPwRnS7y5V/ArcGIS/rest/services/County_Online/FeatureServer"
+}

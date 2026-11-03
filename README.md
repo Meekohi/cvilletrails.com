@@ -154,6 +154,44 @@ For a completed or failed upload whose internal layer does not match the configu
 
 Tileset publication changes the map used by the existing website after Mapbox cache propagation; it does not require a website deploy. Website code and notice changes use GitHub Pages separately.
 
+## Compare overlapping datasets by park
+
+`compare-overlaps` measures proposed additions and geometry edits against the editable datasets referenced by the saved live style. It distinguishes trail lines from label-only layers, uses UTM zone 17N distances in meters, and reports coverage at 1, 3, 10 and 20 meters. Nearby parallel trails can still match: these are screening results, not proof of public access or superior accuracy. Reverse coverage shows how much existing geometry a replacement could lose. The separate Shenandoah tileset and basemap roads are outside this editable-dataset comparison.
+
+The optional analysis dependencies are pinned in `maintenance/requirements-geo.txt`. A repeatable review preparation looks like:
+
+```sh
+python3 -m maintenance inventory --output .trail-state/overlap-inventory
+python3 -m maintenance fetch-arcgis https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178 --output .trail-state/research/city-park-areas.geojson
+uv run --with-requirements maintenance/requirements-geo.txt python -m maintenance compare-overlaps .trail-state/plans/city-remaining.json --inventory .trail-state/overlap-inventory --output .trail-state/assessments/city-overlaps.json
+uv run --with-requirements maintenance/requirements-geo.txt python -m maintenance review-parks .trail-state/plans/city-remaining.json --inventory .trail-state/overlap-inventory --boundaries .trail-state/research/city-park-areas.geojson --overlaps .trail-state/assessments/city-overlaps.json
+python3 -m http.server 8002 --bind 127.0.0.1 --directory .trail-state/review-parks
+```
+
+Use your current proposal path in place of `city-remaining.json`. The inventory must match that proposal's current baseline; changed Studio edits require a fresh proposal. The park review is separate from the feature review on port 8001, so it does not reset those decisions. Preserve the generated review bundle while reviewing it: rebuilding produces a new review hash and a separate browser decision history.
+
+Choose a preferred geometry dataset per park and export `park-dataset-decisions.json`. A recommendation is not preselected. Park decisions express ownership preferences only; they do not apply or approve cross-dataset deletions. Consolidation still needs a reviewable migration that preserves names, official colors, route identity, access restrictions and cross-boundary geometry. Features outside named park boundaries remain individual corridor decisions. City park assignment requires at least half of a feature's length to fall inside an official park polygon; all displayed park geometry is clipped to that polygon.
+
+The initial comparison and proposed winners are recorded in `pipelines/city/reviews/2026-11-02-park-overlaps.json`. The other pipelines' `reviews/2026-11-02-source-audit.json` files record source discoveries, download failures and remaining checks. Linked official PDFs and the RTF public map export now have separate monitors. The KML remains evidence for manual review until stable feature identities and route-only selection are established.
+
+`config/park-ownership.json` records resolved source choices and exceptions. The **entire Rivanna dataset is protected** from park consolidation, including overlaps, and its trail lines render above the other networks. This preserves all 65 current features; a future authoritative RT update is a separate review. The current live style already has that order. The November 2 decision record preserves the user's original export and subsequent clarification: Quarry uses Rivanna plus City **Quarry Old Road (`city:3710`)**, while retaining existing trails; McIntire keeps City and Rivanna.
+
+Prepare the resolved choices without changing Mapbox:
+
+```sh
+uv run --with-requirements maintenance/requirements-geo.txt python -m maintenance prepare-consolidation .trail-state/plans/city-remaining.json --review .trail-state/review-parks/review.json --decisions .trail-state/decisions/park-user-review.json --inventory .trail-state/overlap-inventory --output .trail-state/consolidation/parks
+python3 -m maintenance review-consolidation .trail-state/consolidation/parks/manifest.json --review .trail-state/review-parks/review.json --inventory .trail-state/overlap-inventory --output .trail-state/review-consolidation
+python3 -m http.server 8003 --bind 127.0.0.1 --directory .trail-state/review-consolidation
+```
+
+Preparation verifies review, decision, dataset and style hashes. It retains geometry outside the chosen parks, existing properties, and the full protected network. New City geometry is limited to the resolved areas and named supplements. Conflicting park polygons require explicit boundary precedence: the current proposal gives Heyward priority in its small overlap with Ragged. Check those boundary joins in the current/proposed preview before publication; coordinates are not automatically snapped. The official Heyward PDF is monitored, but its geometry still needs comparison with the newer GIS trails.
+
+Park rules can also specify `retain_features` exceptions by dataset and feature ID. These keep the complete original geometry and properties, fail if the feature is absent from the reviewed inventory, and appear in the preparation manifest. Heyward now uses an explicit `geometry_replacements` exception for the Strava saddle connector: the user supplied three northern junction points and excluded the descent toward Round Top. Those points are joined to existing endpoints within 5 m, with each adjustment recorded in the policy. The route beyond the third point keeps its original coordinates. Replacements are bound to a source feature hash, preserve properties, and cannot affect protected or retained features. The preview’s “Show Round Top saddle connector” button zooms to this correction.
+
+The manifest lists each dataset change and any style retirement. An emptied display layer is retired by proposing hidden style layers while retaining its original dataset as an archive; do not upload an empty replacement. Here, that affects the four old GPS tracks in the dedicated Ragged dataset, which lie inside Heyward. The preview also provides **Pick coordinates**: click or tap to add numbered, draggable pins, then copy latitude/longitude pairs into the review conversation. Points persist locally in the browser and do not change trail geometry. Nonempty candidates can become ordinary `plan` proposals with the recorded decisions as evidence. Publishing rejects stale ownership policies and any attempt to modify protected Rivanna through park consolidation. Neither preparation nor the preview publishes changes. Browser validation: `node tests/consolidation-browser.mjs` with the preview server running.
+
+After approval, publish each nonempty candidate using its exact plan hash and wait for every upload to complete. Then run `python3 -m maintenance retire-style-layers MANIFEST_PATH --approve MANIFEST_HASH`. This verifies the replacement publications and protected datasets, checks that the style proposal only hides the reviewed obsolete layers, archives the untouched retired dataset, and backs up both live and draft styles. It applies the same visibility changes to the live style and Studio draft while preserving unrelated draft edits. The [Styles API](https://docs.mapbox.com/api/maps/styles/) treats those as separate versions, so updating only the live version would leave the obsolete layers enabled in Studio. Retirement has a durable write journal and refuses blind replay after an attempted update; inspect the saved responses and remote state if interrupted.
+
 ## Publish trail notices
 
 Review each proposed notice's source, affected systems, wording, and dates. Narrow `system_ids` in the review record if its pipeline covers several systems. Missing end dates require an explicit review expiry; expiry means “stop displaying this notice,” not “the trail reopened.” Closures need rechecking before expiry.

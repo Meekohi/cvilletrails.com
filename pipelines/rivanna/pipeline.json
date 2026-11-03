@@ -1,8 +1,44 @@
 {
-  "id":"rivanna","system_id":"rivanna","system_ids":["rivanna"],
-  "fields":{"id":null,"name":"Name","color":"color"},
-  "sources":[
-    {"id":"maps","kind":"html","label":"Rivanna Trails Foundation","url":"https://www.rivannatrails.org/Map"},
-    {"id":"news","kind":"html","label":"Rivanna Trails Foundation news","url":"https://www.rivannatrails.org/News"}
+  "id": "rivanna",
+  "system_id": "rivanna",
+  "system_ids": [
+    "rivanna"
+  ],
+  "fields": {
+    "id": null,
+    "name": "Name",
+    "color": "color"
+  },
+  "sources": [
+    {
+      "id": "maps",
+      "kind": "html",
+      "label": "Rivanna Trails Foundation",
+      "url": "https://www.rivannatrails.org/Map"
+    },
+    {
+      "id": "news",
+      "kind": "html",
+      "label": "Rivanna Trails Foundation news",
+      "url": "https://www.rivannatrails.org/News"
+    },
+    {
+      "id": "official-kml",
+      "kind": "text",
+      "label": "RTF official Google My Maps export",
+      "url": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1"
+    },
+    {
+      "id": "official-map",
+      "kind": "pdf",
+      "label": "RTF primary map linked from its map page (September 2026)",
+      "url": "https://www.rivannatrails.org/resources/Documents/Map%20Primary%20202609.pdf"
+    },
+    {
+      "id": "difficulty-map",
+      "kind": "pdf",
+      "label": "RTF difficulty and accessibility map",
+      "url": "https://www.rivannatrails.org/resources/Documents/RTF%20Difficulty%20Map.pdf"
+    }
   ]
 }

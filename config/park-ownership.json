@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "protected_datasets": [
+    {
+      "id": "rivanna",
+      "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+      "source_layer": "Rivanna_Trail",
+      "retain_entire_dataset": true,
+      "draw_above_other_trail_lines": true,
+      "reason": "User requires the entire RT network, including overlaps, to remain intact."
+    }
+  ],
+  "parks": [
+    {
+      "id": "ivy-creek-natural-area",
+      "geometry_dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+      "mode": "winner"
+    },
+    {
+      "id": "ragged-mountain",
+      "geometry_dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+      "mode": "winner"
+    },
+    {
+      "id": "heyward-community-forest",
+      "geometry_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "mode": "winner",
+      "note": "City selected; compare with official Heyward map and check cross-boundary joins.",
+      "geometry_replacements": [
+        {
+          "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+          "feature_id": "8d36129f3e99bffe6d1807c85f373009",
+          "label": "Round Top saddle connector",
+          "reason": "User supplied three northern junction points and explicitly excluded the leg descending toward Round Top. Join nearby existing endpoints and retain the original continuation northeast of the third point.",
+          "preview_bounds": [
+            [
+              -78.553,
+              38.0319
+            ],
+            [
+              -78.5482,
+              38.0331
+            ]
+          ],
+          "review_note": "Corrected northern connector through your three points, joined to existing trail endpoints within 5 m. The leg toward Round Top is removed; the original route beyond point 3 stays unchanged.",
+          "before_feature_hash": "231e7787274d109eb47ab033a506b1eff0d38d5a3405533696b6a7dbc6dfe298",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -78.55254403375707,
+                38.03246250133536
+              ],
+              [
+                -78.55050829549639,
+                38.032245252464634
+              ],
+              [
+                -78.548648,
+                38.032668
+              ],
+              [
+                -78.548926,
+                38.033203
+              ],
+              [
+                -78.546733,
+                38.03566
+              ],
+              [
+                -78.545992,
+                38.035904
+              ],
+              [
+                -78.546115,
+                38.036682
+              ],
+              [
+                -78.546795,
+                38.036901
+              ],
+              [
+                -78.546671,
+                38.038336
+              ],
+              [
+                -78.547227,
+                38.039212
+              ],
+              [
+                -78.546579,
+                38.039577
+              ],
+              [
+                -78.545621,
+                38.038969
+              ],
+              [
+                -78.544849,
+                38.038701
+              ],
+              [
+                -78.543614,
+                38.039114
+              ],
+              [
+                -78.543181,
+                38.03965
+              ],
+              [
+                -78.543768,
+                38.040063
+              ],
+              [
+                -78.54488,
+                38.041109
+              ],
+              [
+                -78.544417,
+                38.041279
+              ],
+              [
+                -78.543614,
+                38.042058
+              ],
+              [
+                -78.542224,
+                38.041717
+              ],
+              [
+                -78.541761,
+                38.041863
+              ],
+              [
+                -78.54173,
+                38.041279
+              ],
+              [
+                -78.542131,
+                38.040939
+              ]
+            ]
+          },
+          "user_points": [
+            [
+              -78.552536,
+              38.032501
+            ],
+            [
+              -78.550488,
+              38.032269
+            ],
+            [
+              -78.548636,
+              38.032699
+            ]
+          ],
+          "endpoint_adjustments": [
+            {
+              "user_coordinate": [
+                -78.552536,
+                38.032501
+              ],
+              "joined_coordinate": [
+                -78.55254403375707,
+                38.03246250133536
+              ],
+              "distance_m": 4.33,
+              "target": "city:3266 north endpoint"
+            },
+            {
+              "user_coordinate": [
+                -78.550488,
+                38.032269
+              ],
+              "joined_coordinate": [
+                -78.55050829549639,
+                38.032245252464634
+              ],
+              "distance_m": 3.18,
+              "target": "city:3271 north endpoint"
+            },
+            {
+              "user_coordinate": [
+                -78.548636,
+                38.032699
+              ],
+              "joined_coordinate": [
+                -78.548648,
+                38.032668
+              ],
+              "distance_m": 3.6,
+              "target": "existing connector vertex 5"
+            }
+          ],
+          "preserved_tail_from_original_vertex": 5
+        }
+      ]
+    },
+    {
+      "id": "mcintire-park",
+      "geometry_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "mode": "keep-both",
+      "retain_datasets": [
+        "cjawyutol0r7d2wo1z7eb0wiy",
+        "ckuppnp9h534y23pyswjd7n1a"
+      ],
+      "note": "User said keep both.",
+      "clarification": "User note: Keep both. Global clarification preserves the entire Rivanna layer."
+    },
+    {
+      "id": "quarry-park",
+      "geometry_dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+      "mode": "supplement",
+      "supplemental_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "supplemental_features": [
+        "city:3710"
+      ],
+      "retain_existing": true,
+      "note": "Preserve RT and existing trails; user clarified the extra trail is Quarry Old Road.",
+      "clarification": "User clarified Quarry Old Road in chat after exporting these decisions."
+    }
+  ],
+  "boundary_priority": [
+    "heyward-community-forest",
+    "ragged-mountain",
+    "ivy-creek-natural-area"
+  ],
+  "boundary_priority_note": "Preparation assumption for review: the more specific Heyward polygon takes priority over the small overlap with the larger Ragged polygon. No live boundary change is authorized by this preparation."
+}

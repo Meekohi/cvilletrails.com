@@ -41,9 +41,12 @@ def review_rows(plan):
     return rows
 
 
-def build_review(plan_path, state_dir=STATE):
+def build_review(plan_path, state_dir=STATE, overlaps_path=None):
     plan = read_json(plan_path)
     rows = review_rows(plan)
+    overlaps = read_json(overlaps_path) if overlaps_path else None
+    if overlaps and overlaps.get('plan_hash') != plan['approval_hash']:
+        raise ValueError('Overlap comparison belongs to a different review plan')
     target = plan['target']['id']
     if not re.fullmatch(r'[a-z0-9-]+', target): raise ValueError('Invalid target identifier')
     output = state_dir / f'review-{target}'
@@ -56,6 +59,7 @@ def build_review(plan_path, state_dir=STATE):
     write_json(output / 'review.json', {
         'plan': plan, 'rows': rows, 'public_token': token[1],
         'style': f"mapbox://styles/{settings['username']}/{settings['style_id']}",
+        'overlaps': overlaps,
     })
     return output
 

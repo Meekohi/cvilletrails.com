@@ -1,0 +1,1849 @@
+{
+  "reviewed_at": "2026-11-03T00:33:21.263287Z",
+  "publication_status": "not_published",
+  "review_hash": "31714a56fbadb80ef0bdd178de252304e87d5aec0aa1c557a6dacec9e7793cb3",
+  "plan_hash": "006f1e3c5f7345ad34ba4345b91ca62ba728dfa1e84e1d3c5d7a9e39ef0c69fe",
+  "method": {
+    "projection": "EPSG:32617 (meters)",
+    "distance_bands_m": [
+      1,
+      3,
+      10,
+      20
+    ],
+    "interpretation": "Fraction of City line length within a buffer of existing lines. Nearby parallel trails can match; proximity is not proof of identity, access, or superior accuracy. Reverse coverage identifies existing geometry that must be retained."
+  },
+  "summary": {
+    "no-substantial-overlap": 25,
+    "close-match": 34,
+    "partial-overlap": 22,
+    "strong-overlap": 52
+  },
+  "boundary_source": "https://gisweb.charlottesville.org/arcgis/rest/services/Public/OpenData_1_UpdateAll/MapServer/178",
+  "boundary_hash": "f9a15e3c5510bdcfe03fc13ea797e38b90692b5426431ae24a4bace3cf6f0c34",
+  "uncompared_tilesets": [
+    "meekohi.8n5896es"
+  ],
+  "internal_city_overlap_candidates": [
+    {
+      "a": "67dfd074c2cd8074240880da2b72aca3",
+      "b": "f847abdc22d6127c529451f2ee673838",
+      "name_a": null,
+      "name_b": "Riverview 1/2 mile",
+      "a_within_b_3m": 1,
+      "b_within_a_3m": 1
+    },
+    {
+      "a": "cfc1310211ec87a1302f848c6a78b3bc",
+      "b": "city:4118",
+      "name_a": "Avon Yard",
+      "name_b": "Quarry Public Works",
+      "a_within_b_3m": 0.6828,
+      "b_within_a_3m": 0.8107
+    },
+    {
+      "a": "city:3136",
+      "b": "city:3137",
+      "name_a": "Ivy Creek Natural Area",
+      "name_b": "Ivy Creek Natural Area",
+      "a_within_b_3m": 0.9064,
+      "b_within_a_3m": 0.7777
+    }
+  ],
+  "parks": [
+    {
+      "id": "ivy-creek-natural-area",
+      "name": "Ivy Creek Natural Area",
+      "outside_boundaries": false,
+      "bounds": [
+        -78.50224721188575,
+        38.086703889629696,
+        -78.4888652489607,
+        38.10046135669042
+      ],
+      "city_additions": 66,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3134",
+        "city:3135",
+        "city:3136",
+        "city:3137",
+        "city:3138",
+        "city:3139",
+        "city:3140",
+        "city:3141",
+        "city:3142",
+        "city:3143",
+        "city:3144",
+        "city:3145",
+        "city:3146",
+        "city:3147",
+        "city:3148",
+        "city:3149",
+        "city:3150",
+        "city:3151",
+        "city:3152",
+        "city:3153",
+        "city:3154",
+        "city:3155",
+        "city:3156",
+        "city:3157",
+        "city:3158",
+        "city:3159",
+        "city:3160",
+        "city:3161",
+        "city:3162",
+        "city:3163",
+        "city:3164",
+        "city:3165",
+        "city:3166",
+        "city:3167",
+        "city:3168",
+        "city:3169",
+        "city:3170",
+        "city:3171",
+        "city:3172",
+        "city:3173",
+        "city:3174",
+        "city:3175",
+        "city:3176",
+        "city:3177",
+        "city:3178",
+        "city:3179",
+        "city:3180",
+        "city:3181",
+        "city:3182",
+        "city:3183",
+        "city:3184",
+        "city:3185",
+        "city:3186",
+        "city:3187",
+        "city:3188",
+        "city:3189",
+        "city:3190",
+        "city:3191",
+        "city:3192",
+        "city:3193",
+        "city:3194",
+        "city:3195",
+        "city:3196",
+        "city:3197",
+        "city:3198",
+        "city:3199"
+      ],
+      "overlap_counts": {
+        "close-match": 24,
+        "strong-overlap": 40,
+        "partial-overlap": 2
+      },
+      "recommended_dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+      "reason": "Keep the County geometry as the starting point: it retains individual trail names used by the existing color rules. Most City additions closely follow it but use the generic park name. Review the unmatched portions before adopting any City geometry.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan.",
+        "Verify trail names and colors against the Ivy Creek trail manager’s map before any geometry migration."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+          "name": "Albemarle County Trails",
+          "length_m": 10572.1,
+          "feature_count": 74,
+          "names": [
+            "Blue",
+            "Brown",
+            "Green",
+            "Orange",
+            "Paved",
+            "Peninsula",
+            "Purple",
+            "Red",
+            "School",
+            "White",
+            "Yellow"
+          ],
+          "cross_boundary_features": [],
+          "city_coverage": {
+            "10": 0.9705
+          },
+          "covered_by_city": {
+            "10": 0.9669
+          },
+          "outside_city_10m_m": 349.9
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 13047.9,
+          "feature_count": 66,
+          "names": [
+            "Ivy Creek Natural Area"
+          ],
+          "cross_boundary_features": [],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "ragged-mountain",
+      "name": "Ragged Mountain",
+      "outside_boundaries": false,
+      "bounds": [
+        -78.58926940760139,
+        38.010769393750806,
+        -78.55445419974752,
+        38.04265052535543
+      ],
+      "city_additions": 32,
+      "geometry_edits": 1,
+      "review_feature_ids": [
+        "city:3076",
+        "city:3077",
+        "city:3079",
+        "city:3080",
+        "city:3081",
+        "city:3082",
+        "city:3083",
+        "city:3084",
+        "city:3085",
+        "city:3087",
+        "city:3088",
+        "city:3089",
+        "city:3090",
+        "city:3092",
+        "city:3093",
+        "city:3094",
+        "city:3096",
+        "city:3098",
+        "city:3100",
+        "city:3105",
+        "city:3106",
+        "city:3107",
+        "city:3108",
+        "city:3111",
+        "city:3112",
+        "city:3119",
+        "city:3121",
+        "city:3122",
+        "city:3123",
+        "city:3124",
+        "city:3203",
+        "city:3264",
+        "f0d077646a17bb1fbc6658ae42008560"
+      ],
+      "overlap_counts": {
+        "close-match": 9,
+        "partial-overlap": 9,
+        "no-substantial-overlap": 10,
+        "strong-overlap": 4
+      },
+      "recommended_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "reason": "Use the City GIS as the proposed geometry source for this City-managed park. This is a recommendation based on management provenance, not proof of greater positional accuracy. Resolve the differences shown here before retiring other geometry.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan.",
+        "The dedicated Ragged dataset consists of four imported tracks; several have generic ThursdayAfternoonTrack filenames. Its dataset name does not establish park boundaries or current access.",
+        "Maintenance Road remains held for discussion. City also includes an Existing segment named Old bridge link (to be closed); its access status needs confirmation."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+          "name": "Albemarle County Trails",
+          "length_m": 12502.6,
+          "feature_count": 22,
+          "names": [
+            "Entry Trail",
+            "Lake Spur",
+            "Lake View",
+            "Lower Loop",
+            "Old Road Loop",
+            "Old Upper Dam",
+            "Round top"
+          ],
+          "cross_boundary_features": [
+            "169ebea6b5c702dbd4014cbda6acf439",
+            "b74a0f6ea5e1b5d5361db0485ed24d87",
+            "d4c0a371be83e08ccd3f6b8c33c48ce3",
+            "e78817168cfd11d13a106c70149c5a7d",
+            "ebfe8f1380a7732033060adea9ee8e02"
+          ],
+          "city_coverage": {
+            "10": 0.6211
+          },
+          "covered_by_city": {
+            "10": 0.7243
+          },
+          "outside_city_10m_m": 3447.0
+        },
+        {
+          "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+          "name": "Strava Sidetrails",
+          "length_m": 65.5,
+          "feature_count": 1,
+          "names": [
+            "Unnamed trail"
+          ],
+          "cross_boundary_features": [
+            "b0389a66f7266cc338db37ae1033b4d1"
+          ],
+          "city_coverage": {
+            "10": 0.0
+          },
+          "covered_by_city": {
+            "10": 0.0
+          },
+          "outside_city_10m_m": 65.5
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 14887.7,
+          "feature_count": 34,
+          "names": [
+            "Bridge",
+            "Hedgerow",
+            "Lake Front Loop",
+            "Lake View",
+            "Lower Loop",
+            "Lower Water Tower Road",
+            "Maintenance Road",
+            "Old Upper Dam",
+            "Old bridge link (to be closed)",
+            "Roundtop Trail",
+            "Upper Loop"
+          ],
+          "cross_boundary_features": [
+            "city:3076",
+            "city:3077",
+            "city:3094",
+            "city:3132"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "heyward-community-forest",
+      "name": "Heyward Community Forest",
+      "outside_boundaries": false,
+      "bounds": [
+        -78.55892064019727,
+        38.02288087880001,
+        -78.5471947696546,
+        38.03268612123037
+      ],
+      "city_additions": 10,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3132",
+        "city:3266",
+        "city:3270",
+        "city:3271",
+        "city:3272",
+        "city:3273",
+        "city:3274",
+        "city:3275",
+        "city:3306",
+        "city:3307"
+      ],
+      "overlap_counts": {
+        "no-substantial-overlap": 6,
+        "partial-overlap": 4
+      },
+      "recommended_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "reason": "Use the City GIS as the proposed geometry source for this City-managed park. This is a recommendation based on management provenance, not proof of greater positional accuracy. Resolve the differences shown here before retiring other geometry.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan.",
+        "The dedicated Ragged dataset consists of four imported tracks; several have generic ThursdayAfternoonTrack filenames. Its dataset name does not establish park boundaries or current access."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+          "name": "Albemarle County Trails",
+          "length_m": 282.1,
+          "feature_count": 2,
+          "names": [
+            "Entry Trail",
+            "Round top"
+          ],
+          "cross_boundary_features": [
+            "169ebea6b5c702dbd4014cbda6acf439",
+            "ebfe8f1380a7732033060adea9ee8e02"
+          ],
+          "city_coverage": {
+            "10": 0.0583
+          },
+          "covered_by_city": {
+            "10": 1
+          },
+          "outside_city_10m_m": 0.0
+        },
+        {
+          "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+          "name": "Strava Sidetrails",
+          "length_m": 2243.8,
+          "feature_count": 3,
+          "names": [
+            "Unnamed trail"
+          ],
+          "cross_boundary_features": [
+            "8d36129f3e99bffe6d1807c85f373009",
+            "b0389a66f7266cc338db37ae1033b4d1"
+          ],
+          "city_coverage": {
+            "10": 0.1501
+          },
+          "covered_by_city": {
+            "10": 0.3324
+          },
+          "outside_city_10m_m": 1498.0
+        },
+        {
+          "dataset": "ckfh5qbi7380826oij568hhbg",
+          "name": "Ragged Mountain Trails",
+          "length_m": 2111.2,
+          "feature_count": 4,
+          "names": [
+            "RaggedLowerLotTrail.kml",
+            "ThursdayAfternoonTrack.kml",
+            "ThursdayAfternoonTrack_1.kml",
+            "ThursdayAfternoonTrack_2.kml"
+          ],
+          "cross_boundary_features": [],
+          "city_coverage": {
+            "10": 0.163
+          },
+          "covered_by_city": {
+            "10": 0.3908
+          },
+          "outside_city_10m_m": 1286.2
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 5213.2,
+          "feature_count": 12,
+          "names": [
+            "Hedgerow",
+            "Heyward",
+            "Lower Contour",
+            "Roundtop Switchbacks",
+            "Roundtop Trail",
+            "Unnamed trail"
+          ],
+          "cross_boundary_features": [
+            "city:3076",
+            "city:3077",
+            "city:3132",
+            "city:3266",
+            "city:3306"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "quarry-park",
+      "name": "Quarry Park",
+      "outside_boundaries": false,
+      "bounds": [
+        -78.48235479025519,
+        38.01143510583071,
+        -78.4750878093073,
+        38.015346758465064
+      ],
+      "city_additions": 5,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3708",
+        "city:3709",
+        "city:3710",
+        "city:3714",
+        "city:3716"
+      ],
+      "overlap_counts": {
+        "strong-overlap": 2,
+        "partial-overlap": 2,
+        "no-substantial-overlap": 1
+      },
+      "recommended_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "reason": "Use the City GIS as the proposed geometry source for this City-managed park. This is a recommendation based on management provenance, not proof of greater positional accuracy. Resolve the differences shown here before retiring other geometry.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 670.1,
+          "feature_count": 3,
+          "names": [
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "804dedb545d949f36656ce80a10a00ea",
+            "9b30a6bf8f23aca3c3abd14ca97f5947",
+            "9dd0f82f60396a1f8b05e4b99e95cc15"
+          ],
+          "city_coverage": {
+            "10": 0.6029
+          },
+          "covered_by_city": {
+            "10": 0.948
+          },
+          "outside_city_10m_m": 34.8
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 1065.7,
+          "feature_count": 8,
+          "names": [
+            "Quarry Cliffs",
+            "Quarry Creekside",
+            "Quarry Mid Ridge",
+            "Quarry North Beach",
+            "Quarry Old Road",
+            "Quarry Park internal"
+          ],
+          "cross_boundary_features": [
+            "aa2e93d9ee266badaed57ee86e320360",
+            "city:3708",
+            "city:3709",
+            "city:3714",
+            "city:3715",
+            "city:3716"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "mcintire-park",
+      "name": "McIntire Park",
+      "outside_boundaries": false,
+      "bounds": [
+        -78.48200833297818,
+        38.04221549746784,
+        -78.47081846381535,
+        38.054630074370685
+      ],
+      "city_additions": 2,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3282",
+        "city:4120"
+      ],
+      "overlap_counts": {
+        "no-substantial-overlap": 2
+      },
+      "recommended_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "reason": "Use the City GIS as the proposed geometry source for this City-managed park. This is a recommendation based on management provenance, not proof of greater positional accuracy. Resolve the differences shown here before retiring other geometry.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 828.8,
+          "feature_count": 1,
+          "names": [
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "34c764c4ddcd594be0073d5a85f97b7d"
+          ],
+          "city_coverage": {
+            "10": 0.1062
+          },
+          "covered_by_city": {
+            "10": 0.7245
+          },
+          "outside_city_10m_m": 228.3
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 6647.0,
+          "feature_count": 22,
+          "names": [
+            "250 Parallel",
+            "McIntire 250 parallel option",
+            "McIntire East Loop",
+            "McIntire EastWest Bridge",
+            "McIntire Park Nature Trail",
+            "McIntire Sewer Road",
+            "McIntire-CHS coonnector",
+            "Meadowcreek Parkway",
+            "Unnamed trail",
+            "West Mcintire Bike Trail"
+          ],
+          "cross_boundary_features": [
+            "1726c4d580f4977e8f4f5268308afeb4",
+            "235c646aa1db7f4e9925dc57059432bb",
+            "270152205e774cbd002a95f65f492167",
+            "4760b26e2d052ef884bf4dfb337eb18f",
+            "7e27abbd384db7ee6f748877e8ce3cd0",
+            "fbf83f355a3bad16369750f7ae245b3e"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "azalea-park-west",
+      "name": "Azalea Park West",
+      "outside_boundaries": false,
+      "bounds": [
+        -78.5234502115354,
+        38.01018611550859,
+        -78.51734864657436,
+        38.01575717862706
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3267"
+      ],
+      "overlap_counts": {
+        "partial-overlap": 1
+      },
+      "recommended_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "reason": "Use the City GIS as the proposed geometry source for this City-managed park. This is a recommendation based on management provenance, not proof of greater positional accuracy. Resolve the differences shown here before retiring other geometry.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 715.9,
+          "feature_count": 2,
+          "names": [
+            "Rivanna Trail",
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "99d1a9887d005c56baeb7f72fdd3606c",
+            "b4dc1804d1d73e5bcec3447431f4525c"
+          ],
+          "city_coverage": {
+            "10": 0.3684
+          },
+          "covered_by_city": {
+            "10": 0.9078
+          },
+          "outside_city_10m_m": 66.0
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 1812.6,
+          "feature_count": 7,
+          "names": [
+            "Azalea West",
+            "Moores Creek",
+            "Unnamed trail"
+          ],
+          "cross_boundary_features": [],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-hydraulic-road-city-4521",
+      "name": "Corridor: Hydraulic Road (city:4521)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.48903813059822,
+        38.056606149971,
+        -78.4880434558521,
+        38.058014490745855
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:4521"
+      ],
+      "overlap_counts": {
+        "strong-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 249.4,
+          "feature_count": 2,
+          "names": [
+            "Rivanna Trail",
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "34c764c4ddcd594be0073d5a85f97b7d",
+            "69834216380ab02b301212a1de452c8c"
+          ],
+          "city_coverage": {
+            "10": 0.833
+          },
+          "covered_by_city": {
+            "10": 0.6021
+          },
+          "outside_city_10m_m": 99.2
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 246.2,
+          "feature_count": 2,
+          "names": [
+            "250 Parallel",
+            "Hydraulic Road"
+          ],
+          "cross_boundary_features": [
+            "4d64160c8071b6ece2036cec14366288"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-lochlyn-lane-link-city-3291",
+      "name": "Corridor: Lochlyn Lane Link (city:3291)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.45719489113378,
+        38.04720994451473,
+        -78.45605777625475,
+        38.04812440895959
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3291"
+      ],
+      "overlap_counts": {
+        "close-match": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 146.7,
+          "feature_count": 2,
+          "names": [
+            "River North Trail"
+          ],
+          "cross_boundary_features": [
+            "0c6be5ccde92ea34e627f596564cc7ee",
+            "faeb225f490c12b1b09fc82126bcb69e"
+          ],
+          "city_coverage": {
+            "10": 0.9135
+          },
+          "covered_by_city": {
+            "10": 0.9296
+          },
+          "outside_city_10m_m": 10.3
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 168.2,
+          "feature_count": 3,
+          "names": [
+            "Lochlyn Lane Link",
+            "Lower Meadow Creek",
+            "Meadowcreek"
+          ],
+          "cross_boundary_features": [
+            "city:3288",
+            "city:710"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-meadowcreek-city-709",
+      "name": "Corridor: Meadowcreek (city:709)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.46264823293872,
+        38.04424172352936,
+        -78.45830586650916,
+        38.047236029608726
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:709"
+      ],
+      "overlap_counts": {
+        "no-substantial-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 561.1,
+          "feature_count": 3,
+          "names": [
+            "Meadowcreek",
+            "Unnamed trail"
+          ],
+          "cross_boundary_features": [
+            "43267c2eaf93db0547347b06139cb015",
+            "city:710"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-meadowcreek-city-710",
+      "name": "Corridor: Meadowcreek (city:710)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.45897960771232,
+        38.045914774215404,
+        -78.45551869989339,
+        38.04767873374345
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:710"
+      ],
+      "overlap_counts": {
+        "partial-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 362.5,
+          "feature_count": 3,
+          "names": [
+            "Rivanna Trail",
+            "River North Trail"
+          ],
+          "cross_boundary_features": [
+            "0c6be5ccde92ea34e627f596564cc7ee",
+            "50d9d9245e7253b9d4d2eb9147d5d528",
+            "faeb225f490c12b1b09fc82126bcb69e"
+          ],
+          "city_coverage": {
+            "10": 0.5085
+          },
+          "covered_by_city": {
+            "10": 0.8365
+          },
+          "outside_city_10m_m": 59.3
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 697.0,
+          "feature_count": 6,
+          "names": [
+            "Lochlyn Lane Link",
+            "Lower Meadow Creek",
+            "Meadowcreek",
+            "PenParkSouth"
+          ],
+          "cross_boundary_features": [
+            "a602608b88fbc5c9e5533271253baa0a",
+            "city:3288",
+            "city:3291",
+            "city:709",
+            "edc1114867326ef79cde78ba9be9678c"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-quarry-city-3277",
+      "name": "Corridor: Quarry (city:3277)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.48664972341115,
+        38.00904204949993,
+        -78.48402579775222,
+        38.01135901637211
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3277"
+      ],
+      "overlap_counts": {
+        "partial-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 685.6,
+          "feature_count": 2,
+          "names": [
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "886c6dfbc116fd37b8d252c7e4c6b2ad",
+            "d72d56e10bbb6c8c84c903fedcf3fbe8"
+          ],
+          "city_coverage": {
+            "10": 0.6163
+          },
+          "covered_by_city": {
+            "10": 0.5875
+          },
+          "outside_city_10m_m": 282.8
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 705.4,
+          "feature_count": 2,
+          "names": [
+            "Quarry",
+            "Quarry - Public Works"
+          ],
+          "cross_boundary_features": [
+            "city:3276"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-quarry-public-works-city-3276",
+      "name": "Corridor: Quarry - Public Works (city:3276)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.48535082580965,
+        38.00925813314147,
+        -78.48033735924217,
+        38.01182438331455
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3276"
+      ],
+      "overlap_counts": {
+        "partial-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 970.0,
+          "feature_count": 4,
+          "names": [
+            "Rivanna Trail",
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "804dedb545d949f36656ce80a10a00ea",
+            "886c6dfbc116fd37b8d252c7e4c6b2ad",
+            "baf8ed6241c1cf57805ebee10a38aa26",
+            "d72d56e10bbb6c8c84c903fedcf3fbe8"
+          ],
+          "city_coverage": {
+            "10": 0.523
+          },
+          "covered_by_city": {
+            "10": 0.5932
+          },
+          "outside_city_10m_m": 394.6
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 1379.0,
+          "feature_count": 5,
+          "names": [
+            "Avon Yard",
+            "Quarry",
+            "Quarry - Public Works",
+            "Quarry Cliffs",
+            "Quarry Public Works"
+          ],
+          "cross_boundary_features": [
+            "cfc1310211ec87a1302f848c6a78b3bc",
+            "city:3277",
+            "city:3709",
+            "city:4118"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-quarry-mid-ridge-city-3715",
+      "name": "Corridor: Quarry Mid Ridge (city:3715)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.47973400914346,
+        38.01225584342893,
+        -78.47794184863952,
+        38.01370726309069
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3715"
+      ],
+      "overlap_counts": {
+        "no-substantial-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 327.3,
+          "feature_count": 3,
+          "names": [
+            "Rivanna Trail",
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "804dedb545d949f36656ce80a10a00ea",
+            "9dd0f82f60396a1f8b05e4b99e95cc15",
+            "baf8ed6241c1cf57805ebee10a38aa26"
+          ],
+          "city_coverage": {
+            "10": 0.712
+          },
+          "covered_by_city": {
+            "10": 0.9111
+          },
+          "outside_city_10m_m": 29.1
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 717.2,
+          "feature_count": 6,
+          "names": [
+            "Avon Yard",
+            "Quarry Cliffs",
+            "Quarry Creekside",
+            "Quarry Mid Ridge",
+            "Quarry Old Road",
+            "Quarry Public Works"
+          ],
+          "cross_boundary_features": [
+            "cfc1310211ec87a1302f848c6a78b3bc",
+            "city:3709",
+            "city:3710",
+            "city:3714",
+            "city:4118"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-quarry-public-works-city-4118",
+      "name": "Corridor: Quarry Public Works (city:4118)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.48446725569646,
+        38.01063242133176,
+        -78.47510621844619,
+        38.0142833755617
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:4118"
+      ],
+      "overlap_counts": {
+        "strong-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 1654.4,
+          "feature_count": 8,
+          "names": [
+            "Rivanna Trail",
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "0e0bc84fad867711640c2bbd2dd5010c",
+            "804dedb545d949f36656ce80a10a00ea",
+            "886c6dfbc116fd37b8d252c7e4c6b2ad",
+            "9b30a6bf8f23aca3c3abd14ca97f5947",
+            "9dd0f82f60396a1f8b05e4b99e95cc15",
+            "baf8ed6241c1cf57805ebee10a38aa26",
+            "daf5695a1ed2bfa8ae4bcd154ac2b4ac"
+          ],
+          "city_coverage": {
+            "10": 0.9101
+          },
+          "covered_by_city": {
+            "10": 0.9264
+          },
+          "outside_city_10m_m": 121.8
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 2784.0,
+          "feature_count": 10,
+          "names": [
+            "Avon Yard",
+            "Quarry - Public Works",
+            "Quarry Cliffs",
+            "Quarry Creekside",
+            "Quarry Mid Ridge",
+            "Quarry Old Road",
+            "Quarry Park internal",
+            "Quarry Public Works",
+            "Unnamed trail"
+          ],
+          "cross_boundary_features": [
+            "aa2e93d9ee266badaed57ee86e320360",
+            "cfc1310211ec87a1302f848c6a78b3bc",
+            "city:3276",
+            "city:3708",
+            "city:3709",
+            "city:3710",
+            "city:3713",
+            "city:3714"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-rock-creek-city-3711",
+      "name": "Corridor: Rock Creek (city:3711)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.49697684409786,
+        38.01632323768916,
+        -78.49435538415744,
+        38.01812040594783
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3711"
+      ],
+      "overlap_counts": {
+        "strong-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 265.4,
+          "feature_count": 1,
+          "names": [
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "9c3aac02e7f17b29d565917a484f3796"
+          ],
+          "city_coverage": {
+            "10": 1
+          },
+          "covered_by_city": {
+            "10": 1
+          },
+          "outside_city_10m_m": 0.0
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 263.8,
+          "feature_count": 2,
+          "names": [
+            "Rock Creek",
+            "Rock Creek - Brookwood"
+          ],
+          "cross_boundary_features": [
+            "cf0d44e447db6a0ed8a829e69710c85a"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-route-20-interstate-city-4119",
+      "name": "Corridor: Route 20 Interstate (city:4119)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.47548809140925,
+        38.01221975290253,
+        -78.46777536170273,
+        38.01466549025472
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:4119"
+      ],
+      "overlap_counts": {
+        "strong-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 772.8,
+          "feature_count": 1,
+          "names": [
+            "Rivanna Trail"
+          ],
+          "cross_boundary_features": [
+            "daf5695a1ed2bfa8ae4bcd154ac2b4ac"
+          ],
+          "city_coverage": {
+            "10": 0.9778
+          },
+          "covered_by_city": {
+            "10": 0.948
+          },
+          "outside_city_10m_m": 40.2
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 1414.7,
+          "feature_count": 2,
+          "names": [
+            "Moores Creek - Rip Rap section",
+            "Route 20 Interstate"
+          ],
+          "cross_boundary_features": [],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-rugby-avenue-city-2210",
+      "name": "Corridor: Rugby Avenue (city:2210)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.47994972688751,
+        38.044546493786974,
+        -78.4775844182921,
+        38.04674528069688
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:2210"
+      ],
+      "overlap_counts": {
+        "no-substantial-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 265.0,
+          "feature_count": 2,
+          "names": [
+            "McIntire EastWest Bridge",
+            "Rugby Avenue"
+          ],
+          "cross_boundary_features": [
+            "235c646aa1db7f4e9925dc57059432bb"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-unnamed-trail-city-3284",
+      "name": "Corridor: Unnamed trail (city:3284)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.49143955266437,
+        38.04150338317125,
+        -78.48975580468708,
+        38.04231046560863
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3284"
+      ],
+      "overlap_counts": {
+        "no-substantial-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 173.6,
+          "feature_count": 2,
+          "names": [
+            "Unnamed trail",
+            "Washington Park Ramp"
+          ],
+          "cross_boundary_features": [],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-unnamed-trail-city-3713",
+      "name": "Corridor: Unnamed trail (city:3713)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.48600871000703,
+        38.011815910719754,
+        -78.48286162110246,
+        38.015906755414186
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3713"
+      ],
+      "overlap_counts": {
+        "strong-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 624.4,
+          "feature_count": 3,
+          "names": [
+            "Rivanna Trail",
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "0e0bc84fad867711640c2bbd2dd5010c",
+            "1927df28029403b2e07d3c0d5d47dd48",
+            "baf8ed6241c1cf57805ebee10a38aa26"
+          ],
+          "city_coverage": {
+            "10": 0.9595
+          },
+          "covered_by_city": {
+            "10": 0.9055
+          },
+          "outside_city_10m_m": 59.0
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 646.4,
+          "feature_count": 3,
+          "names": [
+            "Avon Yard",
+            "Quarry Public Works",
+            "Unnamed trail"
+          ],
+          "cross_boundary_features": [
+            "cfc1310211ec87a1302f848c6a78b3bc",
+            "city:4118"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "corridor-washington-park-ramp-city-4524",
+      "name": "Corridor: Washington Park Ramp (city:4524)",
+      "outside_boundaries": true,
+      "bounds": [
+        -78.49123228303205,
+        38.041477326505856,
+        -78.48966730500507,
+        38.042229893408354
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:4524"
+      ],
+      "overlap_counts": {
+        "no-substantial-overlap": 1
+      },
+      "recommended_dataset": null,
+      "reason": "These segments are not mostly inside a named official park polygon. Keep them as individual corridor decisions rather than forcing unrelated routes into one park winner.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 173.6,
+          "feature_count": 2,
+          "names": [
+            "Unnamed trail",
+            "Washington Park Ramp"
+          ],
+          "cross_boundary_features": [],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "jordan-park",
+      "name": "Jordan Park",
+      "outside_boundaries": false,
+      "bounds": [
+        -78.48860955222928,
+        38.01650893877255,
+        -78.48676308823096,
+        38.017998735433935
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:4121"
+      ],
+      "overlap_counts": {
+        "partial-overlap": 1
+      },
+      "recommended_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "reason": "Use the City GIS as the proposed geometry source for this City-managed park. This is a recommendation based on management provenance, not proof of greater positional accuracy. Resolve the differences shown here before retiring other geometry.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 233.5,
+          "feature_count": 2,
+          "names": [
+            "Rivanna Trail",
+            "Rivanna Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "9a12a17426ca668142b37264bba818d9"
+          ],
+          "city_coverage": {
+            "10": 0.3538
+          },
+          "covered_by_city": {
+            "10": 0.7038
+          },
+          "outside_city_10m_m": 69.2
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 417.7,
+          "feature_count": 4,
+          "names": [
+            "Jordan Park",
+            "Jordan Park Path",
+            "Pollocks - Jordan Park"
+          ],
+          "cross_boundary_features": [
+            "city:4121"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "pen-park",
+      "name": "Pen Park",
+      "outside_boundaries": false,
+      "bounds": [
+        -78.45892411105292,
+        38.045355308641206,
+        -78.44651322813989,
+        38.058835438905064
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:3288"
+      ],
+      "overlap_counts": {
+        "strong-overlap": 1
+      },
+      "recommended_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "reason": "Use the City GIS as the proposed geometry source for this City-managed park. This is a recommendation based on management provenance, not proof of greater positional accuracy. Resolve the differences shown here before retiring other geometry.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+          "name": "Rivanna Trail",
+          "length_m": 4296.0,
+          "feature_count": 5,
+          "names": [
+            "Rivanna Trail",
+            "River North Trail",
+            "River North Trail Spur"
+          ],
+          "cross_boundary_features": [
+            "0c6be5ccde92ea34e627f596564cc7ee",
+            "4dfc5782983af650b8fd8fac54dc6aaf",
+            "50d9d9245e7253b9d4d2eb9147d5d528",
+            "5b4ceab39bee91d8e55eea5e1ed6f636",
+            "faeb225f490c12b1b09fc82126bcb69e"
+          ],
+          "city_coverage": {
+            "10": 0.5841
+          },
+          "covered_by_city": {
+            "10": 0.8998
+          },
+          "outside_city_10m_m": 430.5
+        },
+        {
+          "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+          "name": "Albemarle County Trails",
+          "length_m": 3.0,
+          "feature_count": 1,
+          "names": [
+            "Unnamed trail"
+          ],
+          "cross_boundary_features": [
+            "94f808416380fef85c93cec628cf0241"
+          ],
+          "city_coverage": {
+            "10": 0.0021
+          },
+          "covered_by_city": {
+            "10": 1
+          },
+          "outside_city_10m_m": 0.0
+        },
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 6847.1,
+          "feature_count": 21,
+          "names": [
+            "Lower Meadow Creek",
+            "Meadowcreek",
+            "Pen Fitness Trail",
+            "Pen Fitness Trail Entry",
+            "Pen Nature Trail",
+            "Pen Nature Trail Spur",
+            "Pen Park - Meadowcreek Connector",
+            "Pen Park Entry Path",
+            "Pen Park Megan Trailhead",
+            "Pen Park Nature Trail",
+            "Pen Park Path",
+            "Pen Park Playground Path",
+            "Pen Park Tennis Path",
+            "PenParkSouth",
+            "Unnamed trail"
+          ],
+          "cross_boundary_features": [
+            "3e8abf3ea1d01e493bc93ecffd95dc54",
+            "4c762a9463e4890d49ca3f68fc1fa7f1",
+            "5c48ec20ffb767d019944244dc570c31",
+            "93c2704bbed63457f96c2a5e7513f067",
+            "a602608b88fbc5c9e5533271253baa0a",
+            "city:3288",
+            "city:710"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    },
+    {
+      "id": "washington-park",
+      "name": "Washington Park",
+      "outside_boundaries": false,
+      "bounds": [
+        -78.49208203861514,
+        38.03937519588232,
+        -78.48913710369598,
+        38.04196385416006
+      ],
+      "city_additions": 1,
+      "geometry_edits": 0,
+      "review_feature_ids": [
+        "city:4117"
+      ],
+      "overlap_counts": {
+        "no-substantial-overlap": 1
+      },
+      "recommended_dataset": "ckuppnp9h534y23pyswjd7n1a",
+      "reason": "Use the City GIS as the proposed geometry source for this City-managed park. This is a recommendation based on management provenance, not proof of greater positional accuracy. Resolve the differences shown here before retiring other geometry.",
+      "cautions": [
+        "A winner applies inside the park only. Existing features crossing its boundary must be split or retained outside; never delete their whole geometry.",
+        "Preserve official trail names, colors, route identity and access information in the winner. One winner does not require losing attributes from other sources.",
+        "Choosing a winner records a source preference, not permission to publish or delete features. The consolidation needs a separate before/after plan."
+      ],
+      "datasets": [
+        {
+          "dataset": "ckuppnp9h534y23pyswjd7n1a",
+          "name": "City_Trails 2021-10-13 (reviewed + proposed)",
+          "length_m": 80.0,
+          "feature_count": 2,
+          "names": [
+            "Washington Bog",
+            "Washington Park Ramp"
+          ],
+          "cross_boundary_features": [
+            "city:4117",
+            "city:4524"
+          ],
+          "city_coverage": {
+            "10": 1.0
+          },
+          "covered_by_city": {
+            "10": 1.0
+          },
+          "outside_city_10m_m": 0
+        }
+      ]
+    }
+  ]
+}

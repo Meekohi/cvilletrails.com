@@ -31,6 +31,12 @@
       "dataset": "ckuppnp9h534y23pyswjd7n1a",
       "tileset": "meekohi.ckuppnp9h534y23pyswjd7n1a-0cyhg",
       "source_layer": "City_Trails_2021-10-13"
+    },
+    {
+      "id": "strava",
+      "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+      "tileset": "meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg",
+      "source_layer": "Strava_Sidetrails"
     }
   ]
 }

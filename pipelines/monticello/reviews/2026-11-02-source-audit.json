@@ -1,0 +1,32 @@
+{
+  "reviewed_at": "2026-11-03T00:33:21.220870Z",
+  "reviewer": "Codex in chat",
+  "publication_status": "not_published",
+  "review_type": "initial_source_audit",
+  "sources": [
+    {
+      "source": "monticello-map",
+      "url": "https://monticello-www.s3.amazonaws.com/files/pdfs/TrailMap.pdf",
+      "path": ".trail-state/research/other-sources/monticello-map.pdf",
+      "bytes": 3014889,
+      "sha256": "a70c0b1bacbfebf28c82a66e8ba529e08286f78b59075f2010c5fd9009fdeee9",
+      "status": 200
+    }
+  ],
+  "web_sources": [
+    "https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail",
+    "https://www.monticello.org/visit/hiking-trails/trail-hours-faqs"
+  ],
+  "findings": {
+    "direct_html_fetch": "HTTP 403; pages were readable through the research browser",
+    "pdf_available": true,
+    "map_title": "Trail_Map_Edits2025",
+    "current_saved_mapbox_features": 26,
+    "notes": [
+      "Named trails in the PDF appear represented among the curated dataset names; this is not a geometry or color validation.",
+      "The current rules permit leashed dogs on boardwalks and prohibit electric bicycles.",
+      "The hours section says sunrise to sunset with holiday and weather exceptions; an FAQ still mentions 5 p.m. Avoid hard-coding a single gate-closing time without clarification.",
+      "Keep the existing color strings; do not redraw geometry from prose."
+    ]
+  }
+}

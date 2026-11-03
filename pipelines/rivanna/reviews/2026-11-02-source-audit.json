@@ -1,0 +1,44 @@
+{
+  "reviewed_at": "2026-11-03T00:33:21.220870Z",
+  "reviewer": "Codex in chat",
+  "publication_status": "not_published",
+  "review_type": "initial_source_audit",
+  "sources": [
+    {
+      "source": "rivanna-kml",
+      "url": "https://www.google.com/maps/d/kml?mid=1No2V69q9UmHLUaqGXqTG5HomnrYibaDL&forcekml=1",
+      "path": ".trail-state/research/other-sources/rivanna-kml.kml",
+      "bytes": 596430,
+      "sha256": "632b6d970e851e17473f3845780055087667f4f0edd4d033949b93fa55c9135f",
+      "status": 200
+    },
+    {
+      "source": "rivanna-map",
+      "url": "https://www.rivannatrails.org/resources/Documents/Map%20Primary%20202609.pdf",
+      "path": ".trail-state/research/other-sources/rivanna-map.pdf",
+      "bytes": 9568982,
+      "sha256": "2efd8e3046961d049e163338fa7bbd4eba99f2daae7409978c0e42072ed9ad4f",
+      "status": 200
+    },
+    {
+      "source": "rivanna-difficulty",
+      "url": "https://www.rivannatrails.org/resources/Documents/RTF%20Difficulty%20Map.pdf",
+      "path": ".trail-state/research/other-sources/rivanna-difficulty.pdf",
+      "bytes": 8464287,
+      "sha256": "5d3ea55158e736a08c426d31763bff5d58e34f30ac6c60bb3ecc8394ae982016",
+      "status": 200
+    }
+  ],
+  "findings": {
+    "official_route_export_available": true,
+    "placemarks": 198,
+    "placemarks_with_stable_id": 0,
+    "current_saved_mapbox_features": 65,
+    "notes": [
+      "The official map page links this Google map and warns the PDF may lag it.",
+      "The export mixes route lines, signs, parking, and a 2026 Loop deVille event layer; not every placemark is a permanent public trail.",
+      "Mapbox uses curated route and category properties. A first import needs an explicit identity crosswalk and preservation of curation. Feature counts cannot establish additions.",
+      "Existing registered HTML snapshots were unchanged on this recheck. No current notice was approved."
+    ]
+  }
+}

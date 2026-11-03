@@ -1,0 +1,650 @@
+{
+  "reviewed_at": "2026-11-03T00:43:02.016068Z",
+  "original_export": {
+    "schema_version": 1,
+    "review_hash": "31714a56fbadb80ef0bdd178de252304e87d5aec0aa1c557a6dacec9e7793cb3",
+    "plan_hash": "006f1e3c5f7345ad34ba4345b91ca62ba728dfa1e84e1d3c5d7a9e39ef0c69fe",
+    "exported_at": "2026-11-03T00:38:53.381Z",
+    "decisions": {
+      "ivy-creek-natural-area": {
+        "decision": "choose",
+        "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+        "note": ""
+      },
+      "ragged-mountain": {
+        "decision": "choose",
+        "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+        "note": ""
+      },
+      "heyward-community-forest": {
+        "decision": "choose",
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "note": "Would be nice to find a more definitive source here."
+      },
+      "quarry-park": {
+        "decision": "discuss",
+        "dataset": null,
+        "note": "This case is tricky -- we need to use the Rivanna Trail as the main source here because it connects the whole \"RT loop\" together, but I want to add in that small blue trail. I'm also wondering if when we update the RT source this will look them same."
+      },
+      "mcintire-park": {
+        "decision": "discuss",
+        "dataset": null,
+        "note": "Keep both"
+      }
+    }
+  },
+  "clarifications": {
+    "rivanna": "Retain entire layer and render above other trail layers.",
+    "quarry_extra": "Quarry Old Road (city:3710)",
+    "mcintire": "Keep both City and Rivanna.",
+    "heyward_saddle_connector": "User supplied three northern junction points and explicitly excluded the leg descending toward Round Top. Join nearby existing endpoints and retain the original continuation northeast of the third point."
+  },
+  "policy_hash": "5d0170242935ef205ae603191ca6a780a56b624be5af4659b8c548429cfd5da8",
+  "publication_status": "publishing",
+  "style_verification": {
+    "checked_at": "2026-11-03T00:40:33.797535Z",
+    "last_trail_line_layers": [
+      "rivanna-trail fringe",
+      "rivanna-trail"
+    ],
+    "rivanna_is_above_other_trail_lines": true
+  },
+  "prepared_changes": {
+    "schema_version": 1,
+    "created_at": "2026-11-03T02:40:10.927182Z",
+    "review_hash": "31714a56fbadb80ef0bdd178de252304e87d5aec0aa1c557a6dacec9e7793cb3",
+    "plan_hash": "006f1e3c5f7345ad34ba4345b91ca62ba728dfa1e84e1d3c5d7a9e39ef0c69fe",
+    "policy_hash": "5d0170242935ef205ae603191ca6a780a56b624be5af4659b8c548429cfd5da8",
+    "status": "prepared_for_review",
+    "edits": [
+      {
+        "dataset": "ckfh5qbi7380826oij568hhbg",
+        "feature_id": "17f4126b0745832d29ff5e2e7a0c33ed",
+        "action": "delete",
+        "parks": [
+          "heyward-community-forest"
+        ],
+        "removed_m": 327.22,
+        "retained_outside_m": 0.0,
+        "properties_preserved": true
+      },
+      {
+        "dataset": "ckfh5qbi7380826oij568hhbg",
+        "feature_id": "2262a229841d8026f067e5ae2cfd8870",
+        "action": "delete",
+        "parks": [
+          "heyward-community-forest"
+        ],
+        "removed_m": 318.35,
+        "retained_outside_m": 0.0,
+        "properties_preserved": true
+      },
+      {
+        "dataset": "ckfh5qbi7380826oij568hhbg",
+        "feature_id": "515526e240854ec2a8b04ee7bdf6c3c1",
+        "action": "delete",
+        "parks": [
+          "heyward-community-forest"
+        ],
+        "removed_m": 1041.92,
+        "retained_outside_m": 0.0,
+        "properties_preserved": true
+      },
+      {
+        "dataset": "ckfh5qbi7380826oij568hhbg",
+        "feature_id": "a9b7d21b1439e560ff0d4414037839db",
+        "action": "delete",
+        "parks": [
+          "heyward-community-forest"
+        ],
+        "removed_m": 423.73,
+        "retained_outside_m": 0.0,
+        "properties_preserved": true
+      },
+      {
+        "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+        "feature_id": "b0389a66f7266cc338db37ae1033b4d1",
+        "action": "delete",
+        "parks": [
+          "ragged-mountain",
+          "heyward-community-forest"
+        ],
+        "removed_m": 792.92,
+        "retained_outside_m": 0.0,
+        "properties_preserved": true
+      },
+      {
+        "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+        "feature_id": "f862e96b0ade8a029911a82dbbeecbbc",
+        "action": "delete",
+        "parks": [
+          "heyward-community-forest"
+        ],
+        "removed_m": 905.83,
+        "retained_outside_m": 0.0,
+        "properties_preserved": true
+      },
+      {
+        "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+        "feature_id": "169ebea6b5c702dbd4014cbda6acf439",
+        "action": "trim",
+        "parks": [
+          "heyward-community-forest"
+        ],
+        "removed_m": 63.74,
+        "retained_outside_m": 117.74,
+        "properties_preserved": true
+      },
+      {
+        "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+        "feature_id": "4539f0c5c2bb0281dc290b07ede74330",
+        "action": "trim",
+        "parks": [
+          "heyward-community-forest"
+        ],
+        "removed_m": 0.07,
+        "retained_outside_m": 210.16,
+        "properties_preserved": true
+      },
+      {
+        "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+        "feature_id": "ebfe8f1380a7732033060adea9ee8e02",
+        "action": "trim",
+        "parks": [
+          "heyward-community-forest"
+        ],
+        "removed_m": 218.31,
+        "retained_outside_m": 25.04,
+        "properties_preserved": true
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3076",
+        "action": "add",
+        "clipped_to_selected_parks": true,
+        "included_m": 217.45,
+        "excluded_outside_m": 570.68
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3077",
+        "action": "add",
+        "clipped_to_selected_parks": true,
+        "included_m": 62.9,
+        "excluded_outside_m": 328.68
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3132",
+        "action": "add",
+        "clipped_to_selected_parks": true,
+        "included_m": 343.31,
+        "excluded_outside_m": 25.82
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3266",
+        "action": "add",
+        "clipped_to_selected_parks": true,
+        "included_m": 708.68,
+        "excluded_outside_m": 17.81
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3270",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 616.92,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3271",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 496.93,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3272",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 1005.56,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3273",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 434.0,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3274",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 185.07,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3275",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 91.13,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3282",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 258.06,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3306",
+        "action": "add",
+        "clipped_to_selected_parks": true,
+        "included_m": 429.02,
+        "excluded_outside_m": 7.1
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3307",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 622.25,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:3710",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 170.6,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "feature_id": "city:4120",
+        "action": "add",
+        "clipped_to_selected_parks": false,
+        "included_m": 118.83,
+        "excluded_outside_m": 0.0
+      },
+      {
+        "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+        "feature_id": "8d36129f3e99bffe6d1807c85f373009",
+        "action": "replace-connector",
+        "parks": [
+          "heyward-community-forest"
+        ],
+        "properties_preserved": true,
+        "reason": "User supplied three northern junction points and explicitly excluded the leg descending toward Round Top. Join nearby existing endpoints and retain the original continuation northeast of the third point."
+      }
+    ],
+    "datasets": [
+      {
+        "target": "albemarle",
+        "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+        "candidate": ".trail-state/consolidation/parks/albemarle.geojson",
+        "publication_method": "reviewed-dataset-update",
+        "before_hash": "7f3f2309fd3809cab5815be3eab244947791d1de38c625a19704ad713ac7dd3f",
+        "after_hash": "dca9796abb7e8aa88f5a2bc4e8d1a9adb389bb3e331f2691eabda47136edc3b1",
+        "changes": {
+          "added": 0,
+          "deleted": 0,
+          "changed": 3,
+          "geometry_changed": 3,
+          "curation_changed": 0
+        }
+      },
+      {
+        "target": "strava",
+        "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+        "candidate": ".trail-state/consolidation/parks/strava.geojson",
+        "publication_method": "reviewed-dataset-update",
+        "before_hash": "172e872a0be822bc7d74f0f2c4d140dcd062cc148fefee6038b646639d03abd8",
+        "after_hash": "b2bcaf3dc5bb615763b2d4f32be1257f6bf16ed1e73c84447f5e6e575143ae67",
+        "changes": {
+          "added": 0,
+          "deleted": 2,
+          "changed": 1,
+          "geometry_changed": 1,
+          "curation_changed": 0
+        }
+      },
+      {
+        "target": "ragged-mountain",
+        "dataset": "ckfh5qbi7380826oij568hhbg",
+        "candidate": ".trail-state/consolidation/parks/ragged-mountain.geojson",
+        "publication_method": "retire-style-layers-keep-dataset",
+        "before_hash": "82c9930c9c2adaf70b1b80b295ccfb9314aa4f491ce987587bf5495b93e6410b",
+        "after_hash": "ad37fe6278e0c7caf3b77c1c5068a56e18a6c87b78ed5a840ee22a0f961ea7a8",
+        "changes": {
+          "added": 0,
+          "deleted": 4,
+          "changed": 0,
+          "geometry_changed": 0,
+          "curation_changed": 0
+        }
+      },
+      {
+        "target": "city",
+        "dataset": "ckuppnp9h534y23pyswjd7n1a",
+        "candidate": ".trail-state/consolidation/parks/city.geojson",
+        "publication_method": "reviewed-dataset-update",
+        "before_hash": "1b74d37efb349af752ee78fd406a4db84a556d44623be3e232565bbde4e8236a",
+        "after_hash": "2ea5c5a0732bc8fd163314fa3a004340c456631752c1a118e56ddbe044e8bfd7",
+        "changes": {
+          "added": 15,
+          "deleted": 0,
+          "changed": 0,
+          "geometry_changed": 0,
+          "curation_changed": 0
+        }
+      }
+    ],
+    "boundary_adjustments": [
+      {
+        "parks": [
+          "ragged-mountain",
+          "heyward-community-forest"
+        ],
+        "overlap_m2": 1273.78,
+        "priority": "heyward-community-forest",
+        "requires_boundary_review": true
+      }
+    ],
+    "retained_features": [],
+    "connector_replacements": [
+      {
+        "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+        "feature_id": "8d36129f3e99bffe6d1807c85f373009",
+        "label": "Round Top saddle connector",
+        "reason": "User supplied three northern junction points and explicitly excluded the leg descending toward Round Top. Join nearby existing endpoints and retain the original continuation northeast of the third point.",
+        "preview_bounds": [
+          [
+            -78.553,
+            38.0319
+          ],
+          [
+            -78.5482,
+            38.0331
+          ]
+        ],
+        "review_note": "Corrected northern connector through your three points, joined to existing trail endpoints within 5 m. The leg toward Round Top is removed; the original route beyond point 3 stays unchanged.",
+        "before_feature_hash": "231e7787274d109eb47ab033a506b1eff0d38d5a3405533696b6a7dbc6dfe298",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -78.55254403375707,
+              38.03246250133536
+            ],
+            [
+              -78.55050829549639,
+              38.032245252464634
+            ],
+            [
+              -78.548648,
+              38.032668
+            ],
+            [
+              -78.548926,
+              38.033203
+            ],
+            [
+              -78.546733,
+              38.03566
+            ],
+            [
+              -78.545992,
+              38.035904
+            ],
+            [
+              -78.546115,
+              38.036682
+            ],
+            [
+              -78.546795,
+              38.036901
+            ],
+            [
+              -78.546671,
+              38.038336
+            ],
+            [
+              -78.547227,
+              38.039212
+            ],
+            [
+              -78.546579,
+              38.039577
+            ],
+            [
+              -78.545621,
+              38.038969
+            ],
+            [
+              -78.544849,
+              38.038701
+            ],
+            [
+              -78.543614,
+              38.039114
+            ],
+            [
+              -78.543181,
+              38.03965
+            ],
+            [
+              -78.543768,
+              38.040063
+            ],
+            [
+              -78.54488,
+              38.041109
+            ],
+            [
+              -78.544417,
+              38.041279
+            ],
+            [
+              -78.543614,
+              38.042058
+            ],
+            [
+              -78.542224,
+              38.041717
+            ],
+            [
+              -78.541761,
+              38.041863
+            ],
+            [
+              -78.54173,
+              38.041279
+            ],
+            [
+              -78.542131,
+              38.040939
+            ]
+          ]
+        },
+        "user_points": [
+          [
+            -78.552536,
+            38.032501
+          ],
+          [
+            -78.550488,
+            38.032269
+          ],
+          [
+            -78.548636,
+            38.032699
+          ]
+        ],
+        "endpoint_adjustments": [
+          {
+            "user_coordinate": [
+              -78.552536,
+              38.032501
+            ],
+            "joined_coordinate": [
+              -78.55254403375707,
+              38.03246250133536
+            ],
+            "distance_m": 4.33,
+            "target": "city:3266 north endpoint"
+          },
+          {
+            "user_coordinate": [
+              -78.550488,
+              38.032269
+            ],
+            "joined_coordinate": [
+              -78.55050829549639,
+              38.032245252464634
+            ],
+            "distance_m": 3.18,
+            "target": "city:3271 north endpoint"
+          },
+          {
+            "user_coordinate": [
+              -78.548636,
+              38.032699
+            ],
+            "joined_coordinate": [
+              -78.548648,
+              38.032668
+            ],
+            "distance_m": 3.6,
+            "target": "existing connector vertex 5"
+          }
+        ],
+        "preserved_tail_from_original_vertex": 5,
+        "park": "heyward-community-forest"
+      }
+    ],
+    "protected_datasets": [
+      {
+        "dataset": "cjawyutol0r7d2wo1z7eb0wiy",
+        "features": 65,
+        "hash": "83fcc380dd5e7a4859b05f4a9b0302663567116d675cc13b74625e0a8f1a9a81",
+        "unchanged": true
+      }
+    ],
+    "limitations": [
+      "Boundary cuts need a visual junction check before publication.",
+      "Connector endpoint adjustments are recorded explicitly; other coordinates are not snapped.",
+      "Other unreviewed additions and metadata edits remain excluded."
+    ],
+    "style_proposal": {
+      "path": ".trail-state/consolidation/parks/style-proposed.json",
+      "before_hash": "d009ee4f71f42031b94812b01996d337df044112b0750911a5e5d8922bdc70fb",
+      "after_hash": "62cc56e38d7528243a1636ad64b3e6a5add335645f82438a26f9cfcff34609cc",
+      "hide_layers": [
+        "ragged-mtn-trail-fringe",
+        "ragged-mtn-trail"
+      ],
+      "rivanna_untouched": true,
+      "requires_review": true
+    }
+  },
+  "heyward_source": {
+    "url": "https://www.charlottesville.gov/DocumentCenter/View/4149/Heyward-Community-Forest-Trails-PDF?bidId=",
+    "checked_at": "2026-11-03T01:57:27.275543Z",
+    "sha256": "29c338a253a7b29e7769170c59b97229746bc6e50ea652c9f3ea63df638c2ae6",
+    "file": ".trail-state/research/other-sources/heyward-official.pdf",
+    "status": "downloaded; geometry comparison pending"
+  },
+  "prepared_plans": [
+    {
+      "target": "city",
+      "path": ".trail-state/consolidation/parks/city-plan.json",
+      "approval_hash": "82acc14970dea4a376434c6237c616b52c9603042bd1fc1e187db839eed4284f"
+    },
+    {
+      "target": "albemarle",
+      "path": ".trail-state/consolidation/parks/albemarle-plan.json",
+      "approval_hash": "d05d8bdda664fc60d1bab46897ee83d4848bdf41ba6e1caa8e2379fa9796c41e"
+    },
+    {
+      "target": "strava",
+      "path": ".trail-state/consolidation/parks/strava-plan.json",
+      "approval_hash": "95e4d1a35da467604f489686b31d48fe6965a8a1bb3d119192a1480cad027b65"
+    }
+  ],
+  "connector_review": {
+    "checked_at": "2026-11-03T02:40:42.730536Z",
+    "status": "corrected_from_user_points_not_published",
+    "user_points": [
+      [
+        -78.552536,
+        38.032501
+      ],
+      [
+        -78.550488,
+        38.032269
+      ],
+      [
+        -78.548636,
+        38.032699
+      ]
+    ],
+    "endpoint_adjustments": [
+      {
+        "user_coordinate": [
+          -78.552536,
+          38.032501
+        ],
+        "joined_coordinate": [
+          -78.55254403375707,
+          38.03246250133536
+        ],
+        "distance_m": 4.33,
+        "target": "city:3266 north endpoint"
+      },
+      {
+        "user_coordinate": [
+          -78.550488,
+          38.032269
+        ],
+        "joined_coordinate": [
+          -78.55050829549639,
+          38.032245252464634
+        ],
+        "distance_m": 3.18,
+        "target": "city:3271 north endpoint"
+      },
+      {
+        "user_coordinate": [
+          -78.548636,
+          38.032699
+        ],
+        "joined_coordinate": [
+          -78.548648,
+          38.032668
+        ],
+        "distance_m": 3.6,
+        "target": "existing connector vertex 5"
+      }
+    ],
+    "supersedes": "Earlier whole-feature retention included an unwanted descent toward Round Top.",
+    "properties_preserved": true,
+    "original_tail_preserved_from_vertex": 5
+  },
+  "approval": {
+    "approved_at": "2026-11-03T02:45:08.597227Z",
+    "user_instruction": "Ok everything in the consolidation looks good. Go ahead and commit to that.",
+    "manifest_hash": "680b63bedc33243e52c1d63d4b8640e515d3277a568d0328b11e3de84ccfe36d",
+    "scope": "Reviewed City/County/Strava consolidation and retirement of superseded Ragged display layers, with full Rivanna retained and the corrected northern connector."
+  }
+}

@@ -1,8 +1,32 @@
 {
-  "id":"monticello","system_id":"monticello","system_ids":["monticello"],
-  "fields":{"id":null,"name":"name","color":"color"},
-  "sources":[
-    {"id":"trail-guide","kind":"html","label":"Monticello trail guide","url":"https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail"},
-    {"id":"trail-rules","kind":"html","label":"Monticello trail hours and rules","url":"https://www.monticello.org/visit/hiking-trails/trail-hours-faqs"}
+  "id": "monticello",
+  "system_id": "monticello",
+  "system_ids": [
+    "monticello"
+  ],
+  "fields": {
+    "id": null,
+    "name": "name",
+    "color": "color"
+  },
+  "sources": [
+    {
+      "id": "trail-guide",
+      "kind": "html",
+      "label": "Monticello trail guide",
+      "url": "https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail"
+    },
+    {
+      "id": "trail-rules",
+      "kind": "html",
+      "label": "Monticello trail hours and rules",
+      "url": "https://www.monticello.org/visit/hiking-trails/trail-hours-faqs"
+    },
+    {
+      "id": "trail-map",
+      "kind": "pdf",
+      "label": "Monticello official trail map",
+      "url": "https://monticello-www.s3.amazonaws.com/files/pdfs/TrailMap.pdf"
+    }
   ]
 }

@@ -88,6 +88,10 @@ def inventory(client, output=STATE / 'mapbox'):
     style = client.style()
     write_json(output / 'style.json', style)
     write_json(output / 'datasets.json', datasets)
+    own_tilesets = {tid for source in style['sources'].values()
+                   for tid in source.get('url', '').removeprefix('mapbox://').split(',')
+                   if tid.startswith(client.username + '.')}
+    write_json(output / 'tilesets.json', {tid: client.tileset(tid) for tid in sorted(own_tilesets)})
     summary = []
     for dataset in datasets:
         features = client.features(dataset['id'])
@@ -125,6 +129,7 @@ def make_plan(client, target, candidate, evidence):
     metadata = client.metadata(target['dataset'])
     before = client.features(target['dataset'])
     review = candidate.get('ingest_report', {})
+    verify_ownership_policy(target, review)
     if review.get('reviewed_before_hash') and (review['reviewed_before_hash'] != fingerprint(before) or review.get('reviewed_target') != target):
         raise ValueError('The dataset or target changed during visual review. Reconcile with the current Studio data before creating a new plan.')
     after = canonical(candidate)
@@ -140,11 +145,22 @@ def make_plan(client, target, candidate, evidence):
     return plan
 
 
+def verify_ownership_policy(target, report):
+    if not report.get('park_consolidation'): return
+    from .consolidation import protected_ids
+    policy = read_json(ROOT / 'config/park-ownership.json')
+    if target['dataset'] in protected_ids(policy):
+        raise ValueError('Park consolidation cannot modify the protected Rivanna network')
+    if report.get('ownership_policy_hash') != digest(policy):
+        raise ValueError('Park ownership policy changed; regenerate the consolidation plan')
+
+
 def validate_plan(plan, approval):
     unsigned = {k: v for k, v in plan.items() if k != 'approval_hash'}
     if approval != plan['approval_hash'] or digest(unsigned) != approval:
         raise ValueError('Approval hash does not match the exact reviewed plan')
     target = plan['target']
+    verify_ownership_policy(target, plan.get('ingest_report', {}))
     if target != target_by_id(target['id']): raise ValueError('Publishing target changed since review')
     if fingerprint(plan['before']) != plan['before_hash'] or fingerprint(plan['after']) != plan['after_hash']:
         raise ValueError('Plan data hashes do not match')

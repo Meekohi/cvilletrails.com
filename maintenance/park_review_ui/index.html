@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Park dataset review · Cville Trails</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.css" rel="stylesheet"><link href="review.css" rel="stylesheet">
+<script defer src="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.js"></script><script defer src="review.js"></script></head>
+<body><header><div><strong>Cville Trails / Park dataset review</strong><p id="summary">Loading comparison…</p></div><button id="export" disabled>Export park decisions</button></header>
+<main><aside><p class="eyebrow">Choose a park source; always retain Rivanna</p><p>The entire Rivanna Trail stays, including overlaps, and draws above other trails. Source choices apply to the other park geometry.</p><p><a href="http://localhost:8003/">Preview the resolved park choices ↗</a></p><div id="parks"></div><p id="progress"></p><a href="http://localhost:8001/" target="_blank" rel="noopener">Open the original City review ↗</a><p class="muted">Your City decisions remain separate and unchanged.</p></aside>
+<section class="workspace"><div class="map-wrap"><div id="map"></div><div id="legend"></div><button id="fit">Fit park</button><p id="map-detail"></p></div>
+<div class="details"><h1 id="name"></h1><p id="reason"></p><p class="muted">Each color is a dataset. Toggle a checkbox to isolate its geometry. Click a line to identify it.</p><div class="table-wrap"><table><thead><tr><th>Show / dataset</th><th>Inside park</th><th>City geometry covered¹</th><th>Existing geometry covered by City¹</th></tr></thead><tbody id="sources"></tbody></table></div>
+<div class="decision"><label for="winner">Preferred geometry source</label><select id="winner"><option value="">Not decided</option></select><button id="recommend">Use recommendation</button><button id="discuss">Needs discussion</button></div>
+<label for="notes">Notes / exceptions to resolve</label><textarea id="notes" rows="2" placeholder="Names or colors to keep, gaps, closed trails, boundary exceptions…"></textarea>
+<details open><summary>Before consolidating</summary><ul id="cautions"></ul></details>
+<details><summary>Compare individual City additions and edits</summary><div class="table-wrap"><table><thead><tr><th>City feature</th><th>Match classification</th><th>Existing line coverage¹</th></tr></thead><tbody id="segments"></tbody></table></div></details>
+<details><summary>Names and properties to preserve</summary><div id="properties"></div></details>
+<p class="muted">¹ Length within 10 m; the segment details also show the stricter 3 m comparison. Nearness alone does not prove a duplicate or that one source is more accurate. Displayed lengths are clipped to the park, not total hiking distances. Shared and crossing trails require care.</p>
+<p class="muted">Selecting a winner saves a review decision only. This page cannot publish data or delete trails. A separate consolidation plan must show the exact replacements and preserved attributes.</p>
+<p id="provenance" class="muted"></p></div></section></main><p id="status" role="status"></p></body></html>
