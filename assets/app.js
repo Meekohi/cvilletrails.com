@@ -7,6 +7,7 @@ let returnFocus;
 let statusTimer;
 let contextSystem = null;
 let displayedContextSystem = null;
+let selectedSystem = null;
 let titleTimer;
 
 function element(tag, text, className) {
@@ -60,7 +61,7 @@ function refreshContext() {
   const center = map.project(map.getCenter());
   const nearby = map.queryRenderedFeatures([[center.x - 60, center.y - 60], [center.x + 60, center.y + 60]])
     .filter(feature => feature.layer.type === 'line').map(feature => feature.sourceLayer);
-  const next = contextualSystem(state.systems, [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()], map.getZoom(), nearby, contextSystem?.id);
+  const next = selectedSystem || contextualSystem(state.systems, [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()], map.getZoom(), nearby, contextSystem?.id);
   if (next?.id === contextSystem?.id) return;
   contextSystem = next;
   clearTimeout(titleTimer);
@@ -93,14 +94,33 @@ function aboutMap(focus = true) {
   state.systemId = null;
   openPanel('about', 'Cville Trails', focus);
   $('panel-content').append(element('p', 'Find your way around Charlottesville and Albemarle’s trail networks.'),
-    element('p', 'Zoom into a trail system, then tap its name at the top of the map for details. You can also tap an individual trail. Use the location button to see where you are.'),
+    element('p', 'Choose a trail system to zoom to it and see its details. You can also tap an individual trail. Use the location button to see where you are.'));
+  const list = element('ul', null, 'system-list');
+  for (const system of state.systems.filter(system => system.context_mode).sort((a, b) => a.name.localeCompare(b.name))) {
+    const item = element('li');
+    const button = element('button', system.name);
+    button.type = 'button';
+    button.onclick = () => zoomTo(system, true);
+    item.append(button);
+    list.append(item);
+  }
+  $('panel-content').append(element('h2', 'Explore trail systems'), list,
     element('p', 'Trail colors follow the curated map. Updates collect reviewed notices from trail managers.', 'hint'));
 }
 
-function zoomTo(system) {
+function zoomTo(system, showDetails = false) {
   if (!map) return;
-  closePanel();
-  map.fitBounds(system.bounds, { padding: { top: 90, bottom: 110, left: 35, right: 60 }, maxZoom: 15, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 700 });
+  map.stop();
+  const padding = { top: 90, bottom: 110, left: 35, right: 60 };
+  if (showDetails) {
+    // Keep the chosen network's overview identifiable even when its full extent
+    // falls below the automatic context zoom or spans several smaller parks.
+    selectedSystem = system;
+    const panel = $('panel').getBoundingClientRect();
+    if (matchMedia('(max-width: 600px)').matches) padding.bottom = innerHeight - panel.top + 16;
+    else padding.left = panel.right + 24;
+  } else closePanel();
+  map.fitBounds(system.bounds, { padding, retainPadding: false, maxZoom: 15, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 700 }, { trailSystemId: system.id });
 }
 
 function details(system, feature = null, focus = true) {
@@ -200,6 +220,9 @@ function initMap() {
   map.addControl(new mapboxgl.ScaleControl({ unit: 'imperial', maxWidth: 90 }), 'bottom-left');
   locate.on('geolocate', event => { state.position = event.coords; });
   locate.on('error', () => status('Unable to find your location. Check location permission and try the locate button again.'));
+  map.on('movestart', event => {
+    if (event.trailSystemId !== selectedSystem?.id) selectedSystem = null;
+  });
   map.on('error', () => status('Some map data could not load. Check your connection if trails are missing.'));
   map.on('moveend', () => { refreshContext(); refreshCount(); if (state.mode === 'updates') renderUpdates(); });
   map.on('idle', refreshContext);
@@ -233,6 +256,7 @@ async function loadData() {
   ]);
   refreshCount();
   refreshContext();
+  if (state.mode === 'about') aboutMap(false);
   if (state.mode === 'updates') renderUpdates();
 }
 
