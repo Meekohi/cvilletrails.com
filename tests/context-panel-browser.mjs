@@ -100,6 +100,44 @@ try {
   assert.equal(await page.locator('#panel-title').textContent(),'Trail updates');
   assert.equal(await page.locator('#update-scope').isVisible(),true);
   assert.equal(await page.locator('#panel.is-changing').count(),0);
+
+  // The overview directory covers each named system and keeps its details open
+  // even for wide networks, polygon centers, and small mobile viewports.
+  const systems=await page.evaluate(async()=>await(await fetch('data/systems.json')).json());
+  const destinations=systems.filter(s=>s.context_mode).sort((a,b)=>a.name.localeCompare(b.name));
+  await page.emulateMedia({reducedMotion:'reduce'});
+  for(const viewport of [{width:1200,height:900},{width:390,height:844}]){
+    await page.setViewportSize(viewport);
+    for(const id of ['ragged-mountain','rivanna','ivy-creek-natural-area','jordan-park','wintergreen','dcr-high-bridge-trail-state-park']){
+      const system=systems.find(s=>s.id===id);
+      await move(overview);await title('Cville Trails');
+      await page.locator('#map-title').click();
+      assert.deepEqual(await page.locator('.system-list button').allTextContents(),destinations.map(s=>s.name));
+      if(id==='ragged-mountain')await page.screenshot({path:`test-results/system-list-${viewport.width}.png`});
+      const button=page.getByRole('button',{name:system.name,exact:true});
+      await button.focus();
+      await page.keyboard.press('Enter');
+      await title(system.context_title||system.name);
+      assert.equal(await page.locator('#panel').isVisible(),true);
+      assert.equal(await page.locator('#panel-title').textContent(),system.name);
+      assert.equal(await page.locator('#close-panel').evaluate(el=>el===document.activeElement),true);
+      const framing=await page.evaluate(bounds=>{
+        const map=window.__testMap,panel=document.querySelector('#panel').getBoundingClientRect();
+        const corners=[map.project([bounds[0],bounds[1]]),map.project([bounds[2],bounds[3]])];
+        return {corners,padding:map.getPadding(),fits:corners.every(p=>p.x>=0&&p.x<=innerWidth&&p.y>=89&&p.y<=innerHeight-100
+          &&(innerWidth<=600?p.y<panel.top:p.x>panel.right))};
+      },system.bounds);
+      assert.ok(framing.fits,`${id} fits in the unobscured map at ${viewport.width}px: ${JSON.stringify(framing)}`);
+      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+      if(id==='ragged-mountain')await page.screenshot({path:`test-results/system-selected-${viewport.width}.png`});
+    }
+  }
+  // Subsequent browsing returns to automatic context selection.
+  await move(monticello);await title('Saunders–Monticello Trails');
+  assert.equal(await page.locator('#panel-title').textContent(),'Saunders–Monticello');
+  await page.locator('#close-panel').click();
+  await move(overview);await title('Cville Trails');
+  assert.equal(await page.locator('#panel').isVisible(),false);
   assert.deepEqual(errors,[]);
-  console.log('Context panel checks passed: synchronized content and fades, rapid context changes, overview, focus, reduced motion, mobile, close during fade, and Updates view.');
+  console.log('Context panel checks passed: synchronized fades, overview directory, selected-system framing and details, keyboard navigation, automatic context reset, mobile, reduced motion, close during fade, and Updates view.');
 }finally{await browser.close();}
