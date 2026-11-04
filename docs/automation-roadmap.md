@@ -107,7 +107,7 @@ Define stable feature identity, provenance, route class, access status and style
 
 ## State-parks follow-up
 
-The [Virginia State Parks pipeline](../pipelines/virginia-state-parks/README.md) now supplies a second structured GIS workflow. Lake Anna is the pilot; 42 other named parks remain queued for review. Its conservative filters, stable GlobalIDs and per-park color policies provide a repeatable path, while actual park closures and ambiguous records still require review. Do not confuse the existence of a statewide candidate with approval to publish every park.
+The [Virginia State Parks pipeline](../pipelines/virginia-state-parks/README.md) now supplies a second structured GIS workflow. Lake Anna was the pilot; the user subsequently accepted 492 more trails in 39 parks. Forty parks are now registered for monitoring, while three named areas and other held records remain excluded. Its conservative filters, stable GlobalIDs and per-park color policies provide a repeatable path, while actual park closures and ambiguous records still require review. Do not confuse the existence of a statewide candidate with approval to publish every park.
 
 ## Concrete next priorities
 

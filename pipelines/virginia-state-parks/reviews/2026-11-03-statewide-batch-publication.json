@@ -1,0 +1,3776 @@
+{
+  "schema_version": 1,
+  "status": "published",
+  "accepted_at": "2026-11-04T03:17:48.733341Z",
+  "instruction": "Looks awesome. Accept the proposed batch.",
+  "accepted_review_hash": "cea11f5c63f69b231d68cbc1c8fbf0bf4e64d02af25741055fb96ee6e6add34d",
+  "accepted_proposal_hash": "c24446a7ea7467fdf787f0fcfe20c97f96d66a18ddf6aedbeff9d89b3f82decf",
+  "publication_plan_hash": "90e2fbeff7c4ab73650dd42f782ff183e8e2fa3516766cddd33f8ad79ef77d83",
+  "target": {
+    "id": "strava",
+    "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+    "tileset": "meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg",
+    "source_layer": "Strava_Sidetrails"
+  },
+  "before_hash": "f6c473d0129cfc1cb98964c46e00a303e0829ad768224ac7d7bb9dd52ef1acc0",
+  "after_hash": "2284009e65b8baab786b65b8330cc14e33f149a5555ee019df256e06b120a54f",
+  "counts": {
+    "added": 492,
+    "changed": 0,
+    "deleted": 0,
+    "preserved": 76,
+    "target_after": 568,
+    "approved_dcr_total": 506,
+    "approved_parks_total": 40,
+    "held_source_records": 125
+  },
+  "source_hash": "8f67d936788f0046a8a362580dd77285378a2052b4d19fab10361d6e7d9e0b13",
+  "prepublish_source_hash": "8f67d936788f0046a8a362580dd77285378a2052b4d19fab10361d6e7d9e0b13",
+  "accepted_features_path": "data/statewide-2026-11-03.geojson",
+  "accepted_features_hash": "a79d61fed01677476e96d623f060e9a81eee0078538499fcf231df2b8a5209e8",
+  "registered_pipeline_hash": "59f0bdfa0183c59b3c11ddf37987cc9fa25c24596f5397b5f41de0e79914826a",
+  "pipeline_reproduction": "Fresh source normalized through the registered pipeline exactly reproduces the 492 accepted additions plus 14 Lake Anna features.",
+  "source_checks": {
+    "checked_at": "2026-11-04T03:21:22.541755Z",
+    "sources": [
+      {
+        "source": "virginia-state-parks/trails-gis",
+        "state": "unchanged",
+        "review": "reviews/virginia-state-parks/trails-gis-cf8ffa5a90885a110707dce51555eac62800fd4a502a0ee00fd911785d8da7dc.json"
+      },
+      {
+        "source": "virginia-state-parks/maps-directory",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/maps-directory-c0f04e1747998f5cb25059287e85577f1049d24acce259510f5aa8a19ebf5814.json"
+      },
+      {
+        "source": "virginia-state-parks/lake-anna-visitor",
+        "state": "unchanged",
+        "review": "reviews/virginia-state-parks/lake-anna-visitor-13f3271ffd2839fc4806496dd31ce613f37f36115eb549aead4f7ca88aebeef4.json"
+      },
+      {
+        "source": "virginia-state-parks/lake-anna-guide",
+        "state": "unchanged",
+        "review": "reviews/virginia-state-parks/lake-anna-guide-ab47f4d51ddf50f4f91a17e1fae52cf504469c67323ae644f9506a5b6c87e2d9.json"
+      },
+      {
+        "source": "virginia-state-parks/lake-anna-geo",
+        "state": "unchanged",
+        "review": "reviews/virginia-state-parks/lake-anna-geo-a568720d992838152d4069b6c2c6b78b9dfb7af5939319fdb54ee02ae0ee44fa.json"
+      },
+      {
+        "source": "virginia-state-parks/pet-policy",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/pet-policy-a1d792490df40cc43c6f83ea55980216a0546f4623a3c9dfe6530ed97248ad07.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-bear-creek-lake-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-bear-creek-lake-state-park-visitor-f1e430f0b79e228bf47b7317d7df14945e3fdb4be1b5908086e06253c34c7ef3.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-belle-isle-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-belle-isle-state-park-visitor-3836da226688fde5db007b60fb9f94f021de90043cd874aa252df6365a60306c.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-breaks-interstate-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-breaks-interstate-park-visitor-b54ab27c970037c6ba5273d5dc4ee5afa6ef0d516c7044577f4fb32520dad6fd.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-caledon-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-caledon-state-park-visitor-379c4f733956f009c6e29358a06965a4d236f805a9a36bf6d7e17cadef6497e3.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-chippokes-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-chippokes-state-park-visitor-acd823594ac32be9585fd1d994919fe188e2c90ceb83833f4a18cb9966f88c96.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-claytor-lake-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-claytor-lake-state-park-visitor-3969548551f60b3f4a30152a53beeebf389ef189d4dcf51243b35189e186176e.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-clinch-river-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-clinch-river-state-park-visitor-98f0664ed050e30e05fa841d891f86c42c9e97d8f4ad2276d7ca470b37997250.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-douthat-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-douthat-state-park-visitor-d952cff279839f0d391f96cde5eda2996ea6ea7672cb4e1dd34985c7b23abe38.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-fairy-stone-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-fairy-stone-state-park-visitor-82c714f957c7ebcd020b5eb0bb7d48380cf746fcde1390d83c4ccd6f77a48ce9.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-false-cape-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-false-cape-state-park-visitor-69d280c3bef1e09127f86a16bce15d09a0537c4b0d6bb2e6f93b380a7c81ac08.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-first-landing-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-first-landing-state-park-visitor-3766319e0cf0143d204147b208395c6c23fcde1036a6e217584945db7cbd0750.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-grayson-highlands-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-grayson-highlands-state-park-visitor-715373b3e3e3bfbb38000d41043d3f7d3f14d2a35e7ad3606315c17052107548.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-high-bridge-trail-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-high-bridge-trail-state-park-visitor-229f2466899c0861882e2f5f5bf60444fd83508facefa960527f8406c4f5ded1.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-holliday-lake-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-holliday-lake-state-park-visitor-9a58f6b9fcc2a90d913d3bcee78775c08a16cc901a9ef557fb902e5cd29b8675.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-hungry-mother-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-hungry-mother-state-park-visitor-0496820f27c5f7824db42edf42fd52085fd29ccf5f3a7e1e913b150aebaaccc4.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-james-river-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-james-river-state-park-visitor-beb366874cc9f28573c8ae7b827b0bc6ade4b3f4306b47b017fce753aacd0586.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-kiptopeke-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-kiptopeke-state-park-visitor-9b384c7ff3626fd9d3aeda427a70b26f0156e93286a937680c8c5b55cf109716.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-leesylvania-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-leesylvania-state-park-visitor-c84a9beddc3e7f7c12300cac40a68aaffd152d292dd27dd5f9a5065fc7e0c29b.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-machicomoco-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-machicomoco-state-park-visitor-e9512f234fa9b68e46fd40e9fee4e15a372cb433a9b57bf2ca24195782e9d2a3.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-mason-neck-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-mason-neck-state-park-visitor-a21dc2c41fc06ce56e6ea55bdae09bac7986620249a70d96253f03c45e3489e4.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-natural-bridge-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-natural-bridge-state-park-visitor-860210a14aa62a3714d500216160b9fa0ada51ff0e3a7623187a9656f8488a37.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-natural-tunnel-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-natural-tunnel-state-park-visitor-daaa470145e0c69e80094137844e02332070c07d7c295a877fd3ad9de825745e.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-new-river-trail-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-new-river-trail-state-park-visitor-ae87f049b673033ff679910d34f18e70ed5c791c061259990641688c14bfef82.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-occoneechee-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-occoneechee-state-park-visitor-fd773d323565d7fa013f73a8f1a58fc3f3ee2123dbe34f0abe8029441fc4630f.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-pocahontas-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-pocahontas-state-park-visitor-bc09d25e0957a0def41117f8e066cc2592288276ecf4f4ecb116152cb037c20c.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-powhatan-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-powhatan-state-park-visitor-83b96c23cdeb1821ace8932a30dd7924e150c63c75450b6718c753121c78dfa2.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-sailors-creek-battlefield-historic-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-sailors-creek-battlefield-historic-state-park-visitor-8509c7f507ae58ae4abcd4ca8c246b52d17ccf650e55c2709ea326d5aa01e80f.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-seven-bends-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-seven-bends-state-park-visitor-60f094c29a7e5dede063a01fc326ee7bba08da9828f9b03e7085c7e8b9ba860e.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-shenandoah-river-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-shenandoah-river-state-park-visitor-f24681f49b6cb852afd23c44ed4e10ecbff534a64166bfa0accc4200bf9b86c4.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-sky-meadows-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-sky-meadows-state-park-visitor-a528dfca90869b2315b95e7904f596ed10fa9a2610e1a83468e5fb9d50739a5c.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-smith-mountain-lake-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-smith-mountain-lake-state-park-visitor-ba97278746a864c454a6692a2d4f1b3fe5137805fc067013e5ff3ed039ea9aff.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-staunton-river-battlefield-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-staunton-river-battlefield-state-park-visitor-bc1cb2a731c19145f3c8237e0e11c7ac9fc7a3e49534a79f26307d419de0e0ba.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-staunton-river-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-staunton-river-state-park-visitor-4de7f7bdc7e576840068b6a92729070f4e500dde51adb9057f8575086bb1a262.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-sweet-run-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-sweet-run-state-park-visitor-649ed3678086fd82cfbab4b04c11e33950d5aadce1b6139e2ab313ec40c433bd.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-twin-lakes-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-twin-lakes-state-park-visitor-9b2111dd15ff10d3e78e85a0212b381e999d08a2eb1e9f680232889efd0b8837.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-westmoreland-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-westmoreland-state-park-visitor-e9d49e80a5a8582e93a852113b0196c5bde192e86056b9d356beac973853729d.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-widewater-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-widewater-state-park-visitor-91081b7e95d0b2e2c7051d5cd1193c8da0bbae8cf092ca70c1ccc17b63c45236.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-wilderness-road-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-wilderness-road-state-park-visitor-dcf42ec8d85be7559255514d00abc62a650e5b271b0c948455b77799fe73ed77.json"
+      },
+      {
+        "source": "virginia-state-parks/dcr-york-river-state-park-visitor",
+        "state": "changed",
+        "review": "reviews/virginia-state-parks/dcr-york-river-state-park-visitor-2267a7ffadf15d05095dfe0f245950ce6e97f5c15dbce2774dc863a31589c32a.json"
+      }
+    ],
+    "errors": []
+  },
+  "official_page_checks": [
+    {
+      "park": "Bear Creek Lake State Park",
+      "system_id": "dcr-bear-creek-lake-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/bear-creek-lake",
+      "checked_at": "2026-11-04T03:19:35.712518Z",
+      "status": 200,
+      "sha256": "df2915a49175beb552b0bb0cc8bb7658332909f42ab93b8c1a3315b10d77aa55",
+      "title": "Bear Creek Lake State Park"
+    },
+    {
+      "park": "Belle Isle State Park",
+      "system_id": "dcr-belle-isle-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/belle-isle",
+      "checked_at": "2026-11-04T03:19:35.713247Z",
+      "status": 200,
+      "sha256": "0a5a4d7e54eb0306ad3e394d8dd473a73608ccd728677b8fa776e70dc42a6dc8",
+      "title": "Belle Isle State Park"
+    },
+    {
+      "park": "Breaks Interstate Park",
+      "system_id": "dcr-breaks-interstate-park",
+      "url": "https://www.breakspark.com/",
+      "checked_at": "2026-11-04T03:19:35.713759Z",
+      "status": 200,
+      "sha256": "d1e1cc44af02f16ecd076b5ed8b6ac7ef55f913a1da667752b3dad5e718181ac",
+      "title": "Breaks Interstate Park | Explore & Experience Today"
+    },
+    {
+      "park": "Caledon State Park",
+      "system_id": "dcr-caledon-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/caledon",
+      "checked_at": "2026-11-04T03:19:35.714300Z",
+      "status": 200,
+      "sha256": "99c50a41062f5998753a0f21e563600c67aef08259f82cd9248f20a05cf10c0a",
+      "title": "Caledon State Park"
+    },
+    {
+      "park": "Chippokes State Park",
+      "system_id": "dcr-chippokes-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/chippokes",
+      "checked_at": "2026-11-04T03:19:35.714788Z",
+      "status": 200,
+      "sha256": "1873b6859a364e05b526df81fc5fcd9fdaf832dfec7edbc5c891729782d6664d",
+      "title": "Chippokes State Park"
+    },
+    {
+      "park": "Claytor Lake State Park",
+      "system_id": "dcr-claytor-lake-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/claytor-lake",
+      "checked_at": "2026-11-04T03:19:35.715272Z",
+      "status": 200,
+      "sha256": "e28828a47fbdef49c7b7f6dba65ca6ff66fc119a75b7d7963890b6d029c5bcf2",
+      "title": "Claytor Lake State Park"
+    },
+    {
+      "park": "Clinch River State Park",
+      "system_id": "dcr-clinch-river-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/clinch-river.php",
+      "checked_at": "2026-11-04T03:19:36.417185Z",
+      "status": 200,
+      "sha256": "6418cd7ab788624577f093c9acabf9f2525304af38d22b9eded51014985ad2c9",
+      "title": "Clinch River State Park"
+    },
+    {
+      "park": "Douthat State Park",
+      "system_id": "dcr-douthat-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/douthat",
+      "checked_at": "2026-11-04T03:19:37.892207Z",
+      "status": 200,
+      "sha256": "bd023c21cc7af4fc82a7f5139f1fafb422571d7b4ac89283f5a86db21d07ad48",
+      "title": "Douthat State Park"
+    },
+    {
+      "park": "Fairy Stone State Park",
+      "system_id": "dcr-fairy-stone-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/fairy-stone",
+      "checked_at": "2026-11-04T03:19:38.191321Z",
+      "status": 200,
+      "sha256": "610f8c0052b276e08fab2154453f96a0b192165af2a55b2e3e1fc8080bb410c8",
+      "title": "Fairy Stone State Park"
+    },
+    {
+      "park": "False Cape State Park",
+      "system_id": "dcr-false-cape-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/false-cape",
+      "checked_at": "2026-11-04T03:19:38.260396Z",
+      "status": 200,
+      "sha256": "ff8f34c299e65e685b5b539c58a0ab4219e749391b042d4c59d56a16805792b2",
+      "title": "False Cape State Park"
+    },
+    {
+      "park": "First Landing State Park",
+      "system_id": "dcr-first-landing-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/first-landing",
+      "checked_at": "2026-11-04T03:19:38.473969Z",
+      "status": 200,
+      "sha256": "492336f7a3df0d9df14c08d35238d4bf4bb153c6eb20fd1fcaeb63a38126c5c0",
+      "title": "First Landing State Park"
+    },
+    {
+      "park": "Grayson Highlands State Park",
+      "system_id": "dcr-grayson-highlands-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/grayson-highlands",
+      "checked_at": "2026-11-04T03:19:38.529091Z",
+      "status": 200,
+      "sha256": "0678bf7ac31f22af6e48e1d60652b515aaa043a919236371d5287212c6391b34",
+      "title": "Grayson Highlands State Park"
+    },
+    {
+      "park": "High Bridge Trail State Park",
+      "system_id": "dcr-high-bridge-trail-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/high-bridge-trail",
+      "checked_at": "2026-11-04T03:19:38.535486Z",
+      "status": 200,
+      "sha256": "a296fa1d23bb2dd81b61eaebce69969064c95a048ff1664b176a9affc47d2b72",
+      "title": "High Bridge Trail State Park"
+    },
+    {
+      "park": "Holliday Lake State Park",
+      "system_id": "dcr-holliday-lake-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/holliday-lake",
+      "checked_at": "2026-11-04T03:19:38.558999Z",
+      "status": 200,
+      "sha256": "838d96ffb073eaf01823f18db888e72caed16e1340ef5aa873c380d89e651599",
+      "title": "Holliday Lake State Park"
+    },
+    {
+      "park": "Hungry Mother State Park",
+      "system_id": "dcr-hungry-mother-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/hungry-mother",
+      "checked_at": "2026-11-04T03:19:38.564487Z",
+      "status": 200,
+      "sha256": "ef999b233605915f2e10258c50d4695ea2655ed0e62d5e38f8c5d38994fba1cc",
+      "title": "Hungry Mother State Park"
+    },
+    {
+      "park": "James River State Park",
+      "system_id": "dcr-james-river-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/james-river",
+      "checked_at": "2026-11-04T03:19:38.570821Z",
+      "status": 200,
+      "sha256": "680bd8921abf00bcd256905967c35612f44c1c9f9b22a8204628bd7990dd978c",
+      "title": "James River State Park"
+    },
+    {
+      "park": "Kiptopeke State Park",
+      "system_id": "dcr-kiptopeke-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/kiptopeke",
+      "checked_at": "2026-11-04T03:19:38.735588Z",
+      "status": 200,
+      "sha256": "e69670d56feaafa0b4c74a83f245fb1cbac9f48e58016f168f483a51ceabec68",
+      "title": "Kiptopeke State Park"
+    },
+    {
+      "park": "Leesylvania State Park",
+      "system_id": "dcr-leesylvania-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/leesylvania",
+      "checked_at": "2026-11-04T03:19:38.783395Z",
+      "status": 200,
+      "sha256": "72c362ac370dd0168ac4a6e90b2dab5fa88c18c95433a032730eba33812b3ebe",
+      "title": "Leesylvania State Park"
+    },
+    {
+      "park": "Machicomoco State Park",
+      "system_id": "dcr-machicomoco-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/machicomoco",
+      "checked_at": "2026-11-04T03:19:38.856593Z",
+      "status": 200,
+      "sha256": "02455d027952daa342684cb347a575cfbbbe5ae86bf688853a0c4dc380753d1e",
+      "title": "Machicomoco State Park"
+    },
+    {
+      "park": "Mason Neck State Park",
+      "system_id": "dcr-mason-neck-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/mason-neck",
+      "checked_at": "2026-11-04T03:19:38.876655Z",
+      "status": 200,
+      "sha256": "2b9703255123de1868aed2613fa61b3edf14c2deaf19ae0238641afb66067f65",
+      "title": "Mason Neck State Park"
+    },
+    {
+      "park": "Natural Bridge State Park",
+      "system_id": "dcr-natural-bridge-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/natural-bridge",
+      "checked_at": "2026-11-04T03:19:38.916759Z",
+      "status": 200,
+      "sha256": "c9cb031c988ba4749207ae498a9f8fdce650350d346f7c1a31fe0bfbea0c47cf",
+      "title": "Natural Bridge State Park"
+    },
+    {
+      "park": "Natural Tunnel State Park",
+      "system_id": "dcr-natural-tunnel-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/natural-tunnel",
+      "checked_at": "2026-11-04T03:19:38.920602Z",
+      "status": 200,
+      "sha256": "45aecb7ec73c128dd74030f0b1dbb601ef548ef0e70ed889739e5b168516e7a2",
+      "title": "Natural Tunnel State Park"
+    },
+    {
+      "park": "New River Trail State Park",
+      "system_id": "dcr-new-river-trail-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/new-river-trail",
+      "checked_at": "2026-11-04T03:19:39.001673Z",
+      "status": 200,
+      "sha256": "da301f76e65d40559520f4057514d1d5307ffefdb0d4cece3da453f1717fc38d",
+      "title": "New River Trail State Park"
+    },
+    {
+      "park": "Occoneechee State Park",
+      "system_id": "dcr-occoneechee-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/occoneechee",
+      "checked_at": "2026-11-04T03:19:39.083854Z",
+      "status": 200,
+      "sha256": "a710443900056cfb503d406ab3e9fbd329bd5fbdc5459b2eda774feacf1cf811",
+      "title": "Occoneechee State Park"
+    },
+    {
+      "park": "Pocahontas State Park",
+      "system_id": "dcr-pocahontas-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/pocahontas",
+      "checked_at": "2026-11-04T03:19:39.118486Z",
+      "status": 200,
+      "sha256": "95e3ec3067b9ac0f4051f1c744555de397b99d73f88c71a992d1c58da4667868",
+      "title": "Pocahontas State Park"
+    },
+    {
+      "park": "Powhatan State Park",
+      "system_id": "dcr-powhatan-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/powhatan",
+      "checked_at": "2026-11-04T03:19:39.169649Z",
+      "status": 200,
+      "sha256": "1c27086df29ae2338007747129bb4f8d9ea64003076d06f950ec435e6912bb47",
+      "title": "Powhatan State Park"
+    },
+    {
+      "park": "Sailors Creek Battlefield Historic State Park",
+      "system_id": "dcr-sailors-creek-battlefield-historic-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/sailors-creek",
+      "checked_at": "2026-11-04T03:19:39.173031Z",
+      "status": 200,
+      "sha256": "b740c8985202ead3037da4e042b64672449a861a5accc494eeb4d4d8c9a1c7db",
+      "title": "Sailor's Creek Battlefield State Park"
+    },
+    {
+      "park": "Seven Bends State Park",
+      "system_id": "dcr-seven-bends-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/seven-bends",
+      "checked_at": "2026-11-04T03:19:39.196708Z",
+      "status": 200,
+      "sha256": "a171aa6ea2ce9c8f295d28815042ba69c3762fe1b972c51db765b1fcaf7f77b5",
+      "title": "Seven Bends State Park"
+    },
+    {
+      "park": "Shenandoah River State Park",
+      "system_id": "dcr-shenandoah-river-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/shenandoah-river",
+      "checked_at": "2026-11-04T03:19:39.270764Z",
+      "status": 200,
+      "sha256": "646aa67439e003709051e8acba0ed74eb3b53c7c23bf27c0a7aeb691ab076f86",
+      "title": "Raymond R. \"Andy\" Guest, Jr. Shenandoah River State Park"
+    },
+    {
+      "park": "Sky Meadows State Park",
+      "system_id": "dcr-sky-meadows-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
+      "checked_at": "2026-11-04T03:19:39.349846Z",
+      "status": 200,
+      "sha256": "f60d3667522c2d7a7b970ba4fff0349e2a320faf09af750db51d1ef657a3b43d",
+      "title": "Sky Meadows State Park"
+    },
+    {
+      "park": "Smith Mountain Lake State Park",
+      "system_id": "dcr-smith-mountain-lake-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/smith-mountain-lake",
+      "checked_at": "2026-11-04T03:19:39.422858Z",
+      "status": 200,
+      "sha256": "754a542a042e0517211afa4926166d9fb81932ad4ce55ff3aa8dd24aeb072540",
+      "title": "Smith Mountain Lake State Park"
+    },
+    {
+      "park": "Staunton River Battlefield State Park",
+      "system_id": "dcr-staunton-river-battlefield-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield",
+      "checked_at": "2026-11-04T03:19:39.450557Z",
+      "status": 200,
+      "sha256": "0941ddd0a2943eb857ef9e5f63ff769b70ad520bab33d89dd7a3cb541d7ee9b2",
+      "title": "Staunton River Battlefield State Park"
+    },
+    {
+      "park": "Staunton River State Park",
+      "system_id": "dcr-staunton-river-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+      "checked_at": "2026-11-04T03:19:39.461570Z",
+      "status": 200,
+      "sha256": "af592d07e44febc267b46c0fac0e9657392d0fc70c70c18c590e946cee6b347d",
+      "title": "Staunton River State Park"
+    },
+    {
+      "park": "Sweet Run State Park",
+      "system_id": "dcr-sweet-run-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/sweet-run",
+      "checked_at": "2026-11-04T03:19:39.545515Z",
+      "status": 200,
+      "sha256": "dd808909a3b63285dc80b1287c89ad17566cc1f1449b02209d7d868e88c7011b",
+      "title": "Sweet Run State Park"
+    },
+    {
+      "park": "Twin Lakes State Park",
+      "system_id": "dcr-twin-lakes-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/twin-lakes",
+      "checked_at": "2026-11-04T03:19:39.633874Z",
+      "status": 200,
+      "sha256": "3443ae247caa4ad2c2f8cda0cc7275eb73592c2d3b25d26e85f78b59bae550b3",
+      "title": "Twin Lakes State Park"
+    },
+    {
+      "park": "Westmoreland State Park",
+      "system_id": "dcr-westmoreland-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/westmoreland",
+      "checked_at": "2026-11-04T03:19:39.709900Z",
+      "status": 200,
+      "sha256": "b3d4d4bacf3ffe66456ab744e9c3f2f06e6841c00ba790b8c84b159bcdc46001",
+      "title": "Westmoreland State Park"
+    },
+    {
+      "park": "Widewater State Park",
+      "system_id": "dcr-widewater-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/widewater",
+      "checked_at": "2026-11-04T03:19:39.712600Z",
+      "status": 200,
+      "sha256": "fa0884cf4f1df06f59b5e8906d6c712da9b22c71a08a8e65c25a91a43158ddd9",
+      "title": "Widewater State Park"
+    },
+    {
+      "park": "Wilderness Road State Park",
+      "system_id": "dcr-wilderness-road-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
+      "checked_at": "2026-11-04T03:19:39.751915Z",
+      "status": 200,
+      "sha256": "439c19126c415088c0a9544e9948104e419496b1fa5f1ceba01abe9170a1db42",
+      "title": "Wilderness Road State Park"
+    },
+    {
+      "park": "York River State Park",
+      "system_id": "dcr-york-river-state-park",
+      "url": "https://www.dcr.virginia.gov/state-parks/york-river",
+      "checked_at": "2026-11-04T03:19:39.822689Z",
+      "status": 200,
+      "sha256": "dbe03c69cd6a3e0060430faf0ed62feb419b2bc12b728a41c9da43cdd7f2b731",
+      "title": "York River State Park"
+    }
+  ],
+  "reviewed_alert_notes": [
+    {
+      "system_id": "dcr-claytor-lake-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/claytor-lake",
+      "reviewed_on": "2026-11-03",
+      "summary": "Beach-area parking resurfacing is planned to begin Nov. 2. Consider the northeast side of the park and expect construction traffic near the cabins."
+    },
+    {
+      "system_id": "dcr-false-cape-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/false-cape",
+      "reviewed_on": "2026-11-03",
+      "summary": "Through March 31, 2027, access is via the beach because Back Bay refuge’s interior trails are seasonally closed. The visitor center is also closed Mondays through Wednesdays during this period."
+    },
+    {
+      "system_id": "dcr-grayson-highlands-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/grayson-highlands",
+      "reviewed_on": "2026-11-03",
+      "summary": "Public access is closed Nov. 2–3 and Nov. 16–17 for resource management."
+    },
+    {
+      "system_id": "dcr-high-bridge-trail-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/high-bridge-trail",
+      "reviewed_on": "2026-11-03",
+      "summary": "Bridge replacement interrupts the route east of Farmville’s Main Street through Osborne Road during November, affecting access from downtown to High Bridge."
+    },
+    {
+      "system_id": "dcr-holliday-lake-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/holliday-lake",
+      "reviewed_on": "2026-11-03",
+      "summary": "Bridge work closes the Holliday Lake Road approach from Highway 24 through Nov. 20. Use Hollywood Road for access."
+    },
+    {
+      "system_id": "dcr-hungry-mother-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/hungry-mother",
+      "reviewed_on": "2026-11-03",
+      "summary": "Old Shawnee and Raider’s Run are now downhill biking routes only. Get the updated trail map from the park office."
+    },
+    {
+      "system_id": "dcr-james-river-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/james-river",
+      "reviewed_on": "2026-11-03",
+      "summary": "The park is scheduled to close Nov. 9–11 and Dec. 7–9 for resource management. Dixon Landing’s boat ramp is also closed Nov. 1–5 for road work."
+    },
+    {
+      "system_id": "dcr-kiptopeke-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/kiptopeke",
+      "reviewed_on": "2026-11-03",
+      "summary": "The park closes at sunset Nov. 3 and is scheduled to reopen at sunrise Nov. 6 for resource-management work."
+    },
+    {
+      "system_id": "dcr-leesylvania-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/leesylvania",
+      "reviewed_on": "2026-11-03",
+      "summary": "The Potomac Heritage Trail is closed for maintenance. Seasonal hunting may occur nearby; follow posted signs and designated routes."
+    },
+    {
+      "system_id": "dcr-machicomoco-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/machicomoco",
+      "reviewed_on": "2026-11-03",
+      "summary": "The park is scheduled to close Nov. 18–19 for resource management, with reopening planned for 9 a.m. Nov. 20."
+    },
+    {
+      "system_id": "dcr-mason-neck-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/mason-neck",
+      "reviewed_on": "2026-11-03",
+      "summary": "Construction closes Marsh View Trail and its parking area. Drinking water and regular restrooms are unavailable; portable toilets are provided at the visitor center and picnic area."
+    },
+    {
+      "system_id": "dcr-pocahontas-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/pocahontas",
+      "reviewed_on": "2026-11-03",
+      "summary": "Managed hunts close areas south of Beach Road Nov. 9–10 and the entire park Dec. 7–8. Permitted weekday archery hunting continues in designated areas through Jan. 1; those areas remain accessible to other visitors."
+    },
+    {
+      "system_id": "dcr-seven-bends-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/seven-bends",
+      "reviewed_on": "2026-11-03",
+      "summary": "Renovation work closes part of western Kestrel Dell Trail. Follow trailhead notices for the affected section."
+    },
+    {
+      "system_id": "dcr-shenandoah-river-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/shenandoah-river",
+      "reviewed_on": "2026-11-03",
+      "summary": "A resource-management closure runs from dusk Nov. 1 until the morning of Nov. 4."
+    },
+    {
+      "system_id": "dcr-sky-meadows-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
+      "reviewed_on": "2026-11-03",
+      "summary": "Main-lot resurfacing is expected Nov. 5–6. Use the overflow lot or other designated parking."
+    },
+    {
+      "system_id": "dcr-smith-mountain-lake-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/smith-mountain-lake",
+      "reviewed_on": "2026-11-03",
+      "summary": "Managed hunts close the park Nov. 2–3 and Nov. 9–10; overnight stays are restricted to hunters during those closures."
+    },
+    {
+      "system_id": "dcr-sweet-run-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/sweet-run",
+      "reviewed_on": "2026-11-03",
+      "summary": "Sections of Legacy Loop are closed without a stated reopening date. Gordon Pond Spur provides an alternate route around the pond; follow local signs."
+    },
+    {
+      "system_id": "dcr-twin-lakes-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/twin-lakes",
+      "reviewed_on": "2026-11-03",
+      "summary": "Maintenance closes Goodwin Lake Trail until Nov. 9."
+    },
+    {
+      "system_id": "dcr-westmoreland-state-park",
+      "source_url": "https://www.dcr.virginia.gov/state-parks/westmoreland",
+      "reviewed_on": "2026-11-03",
+      "summary": "Cabin and shoreline construction may limit parking capacity and beach access. DCR reports Big Meadow Trail, Fossil Beach and the day-use beach remain accessible."
+    }
+  ],
+  "added_systems": [
+    "dcr-bear-creek-lake-state-park",
+    "dcr-belle-isle-state-park",
+    "dcr-breaks-interstate-park",
+    "dcr-caledon-state-park",
+    "dcr-chippokes-state-park",
+    "dcr-claytor-lake-state-park",
+    "dcr-clinch-river-state-park",
+    "dcr-douthat-state-park",
+    "dcr-fairy-stone-state-park",
+    "dcr-false-cape-state-park",
+    "dcr-first-landing-state-park",
+    "dcr-grayson-highlands-state-park",
+    "dcr-high-bridge-trail-state-park",
+    "dcr-holliday-lake-state-park",
+    "dcr-hungry-mother-state-park",
+    "dcr-james-river-state-park",
+    "dcr-kiptopeke-state-park",
+    "dcr-leesylvania-state-park",
+    "dcr-machicomoco-state-park",
+    "dcr-mason-neck-state-park",
+    "dcr-natural-bridge-state-park",
+    "dcr-natural-tunnel-state-park",
+    "dcr-new-river-trail-state-park",
+    "dcr-occoneechee-state-park",
+    "dcr-pocahontas-state-park",
+    "dcr-powhatan-state-park",
+    "dcr-sailors-creek-battlefield-historic-state-park",
+    "dcr-seven-bends-state-park",
+    "dcr-shenandoah-river-state-park",
+    "dcr-sky-meadows-state-park",
+    "dcr-smith-mountain-lake-state-park",
+    "dcr-staunton-river-battlefield-state-park",
+    "dcr-staunton-river-state-park",
+    "dcr-sweet-run-state-park",
+    "dcr-twin-lakes-state-park",
+    "dcr-westmoreland-state-park",
+    "dcr-widewater-state-park",
+    "dcr-wilderness-road-state-park",
+    "dcr-york-river-state-park"
+  ],
+  "preview_centers": {
+    "dcr-bear-creek-lake-state-park": [
+      -78.27093812598346,
+      37.52608066402975
+    ],
+    "dcr-belle-isle-state-park": [
+      -76.60031569518777,
+      37.77676742489479
+    ],
+    "dcr-breaks-interstate-park": [
+      -82.29880720956726,
+      37.292891472693775
+    ],
+    "dcr-caledon-state-park": [
+      -77.15384649099299,
+      38.34201722957781
+    ],
+    "dcr-chippokes-state-park": [
+      -76.72564566441571,
+      37.14013162734005
+    ],
+    "dcr-claytor-lake-state-park": [
+      -80.62819767293499,
+      37.055725520734285
+    ],
+    "dcr-clinch-river-state-park": [
+      -82.3218147468002,
+      36.89723514989207
+    ],
+    "dcr-douthat-state-park": [
+      -79.81094664225161,
+      37.88813633680942
+    ],
+    "dcr-fairy-stone-state-park": [
+      -80.11207714993282,
+      36.79466121431329
+    ],
+    "dcr-false-cape-state-park": [
+      -75.88776068511703,
+      36.59279865469778
+    ],
+    "dcr-first-landing-state-park": [
+      -76.04276125972635,
+      36.906406335287805
+    ],
+    "dcr-grayson-highlands-state-park": [
+      -81.50102578595052,
+      36.63280555907429
+    ],
+    "dcr-high-bridge-trail-state-park": [
+      -78.45821510696138,
+      37.2764035410883
+    ],
+    "dcr-holliday-lake-state-park": [
+      -78.64073360956026,
+      37.39749616767603
+    ],
+    "dcr-hungry-mother-state-park": [
+      -81.52287557235394,
+      36.87915192984289
+    ],
+    "dcr-james-river-state-park": [
+      -78.80986558669396,
+      37.62405847924362
+    ],
+    "dcr-kiptopeke-state-park": [
+      -75.97937551134336,
+      37.16796803094202
+    ],
+    "dcr-leesylvania-state-park": [
+      -77.25801545841453,
+      38.593589233523815
+    ],
+    "dcr-machicomoco-state-park": [
+      -76.54269642814849,
+      37.302623920272055
+    ],
+    "dcr-mason-neck-state-park": [
+      -77.19551747687571,
+      38.6417010122744
+    ],
+    "dcr-natural-bridge-state-park": [
+      -79.54345544830522,
+      37.63297030435958
+    ],
+    "dcr-natural-tunnel-state-park": [
+      -82.74297715554474,
+      36.70256523339305
+    ],
+    "dcr-new-river-trail-state-park": [
+      -80.83047259927282,
+      36.89171379239507
+    ],
+    "dcr-occoneechee-state-park": [
+      -78.49296240490062,
+      36.612355935509676
+    ],
+    "dcr-pocahontas-state-park": [
+      -77.57035611188651,
+      37.360326792160436
+    ],
+    "dcr-powhatan-state-park": [
+      -77.93117479631758,
+      37.67634927296287
+    ],
+    "dcr-sailors-creek-battlefield-historic-state-park": [
+      -78.22792945514924,
+      37.30112901707136
+    ],
+    "dcr-seven-bends-state-park": [
+      -78.4868385923289,
+      38.84485546760527
+    ],
+    "dcr-shenandoah-river-state-park": [
+      -78.307824849879,
+      38.857572111385366
+    ],
+    "dcr-sky-meadows-state-park": [
+      -77.96168529335448,
+      38.99590988441097
+    ],
+    "dcr-smith-mountain-lake-state-park": [
+      -79.6036221320324,
+      37.08619822244153
+    ],
+    "dcr-staunton-river-battlefield-state-park": [
+      -78.70289979292208,
+      36.88672649080118
+    ],
+    "dcr-staunton-river-state-park": [
+      -78.67974108019486,
+      36.70859745797036
+    ],
+    "dcr-sweet-run-state-park": [
+      -77.73833603455398,
+      39.284966004918495
+    ],
+    "dcr-twin-lakes-state-park": [
+      -78.27536970949106,
+      37.17325747829563
+    ],
+    "dcr-westmoreland-state-park": [
+      -76.86724209345975,
+      38.16252990415035
+    ],
+    "dcr-widewater-state-park": [
+      -77.321789482645,
+      38.408958277870425
+    ],
+    "dcr-wilderness-road-state-park": [
+      -83.52457893381374,
+      36.63212905761245
+    ],
+    "dcr-york-river-state-park": [
+      -76.70869744921924,
+      37.400795412586056
+    ]
+  },
+  "mobile_system": "dcr-bear-creek-lake-state-park",
+  "preview_zoom": 15,
+  "infobox_scope": "Basic names, official links, context footprints and dated operator alerts; comprehensive hours/rules/hike descriptions remain future work.",
+  "context_footprints": "300 m buffers of accepted trails in EPSG:32617; convex hull per connected buffer component, 10 m simplification, transformed back to WGS84. Disconnected areas remain separate.",
+  "verification": {
+    "python_tests": "87 passed with geometry dependencies",
+    "javascript_tests": "8 passed",
+    "source_monitor": "45 sources checked; zero errors",
+    "infobox_browser": "All 39 contexts, official links, shared-layer tap, and mobile layout passed.",
+    "public_tiles": "All 492 accepted trail IDs verified in real remote overview tiles across all 39 parks; one zoom-16 detail view per park verified presence, display color and the DCR style expression. Fresh requests passed; an ordinary-request sample also passed for 24 trails across 3 parks.",
+    "alert_infobox_browser": "All 19 dated alert notes, context changes, links and mobile layout passed.",
+    "ci_compatibility": "Standard-library environment: 87 tests completed successfully, including 8 optional geometry skips. With geometry dependencies: all 87 passed.",
+    "batch_repeatability": "Updated batch builder with registered shared palette and explicit holds reproduces the exact accepted target from the same source and baseline.",
+    "style_unchanged_hash": "dec88b1f333bf8ab8fbed3e4ee864034de32a7265ed09d9bf9aab7ffd36980ad",
+    "rivanna_unchanged_hash": "4ba781f25967138b8313362c61d59d3c8d0de156fe31945be9887092a7969e13",
+    "ordinary_public_tile_sample": {
+      "checked_at": "2026-11-04T03:37:51.039Z",
+      "mode": "ordinary-public-tiles",
+      "sample": true,
+      "parks": [
+        {
+          "system_id": "dcr-claytor-lake-state-park",
+          "name": "Claytor Lake State Park",
+          "expected_count": 9,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "01daa17b-67bb-4c59-bc3f-800e85743072",
+              "061d4828-4d1a-412e-8ed8-72ce21e39bb3",
+              "0ac4f79c-20f7-4434-b9c3-09e48ec30a84",
+              "0d155a0a-1f66-4aba-afe2-14686ce7f102",
+              "3613bf4d-a941-4e3d-befb-4e0c3b0b0ad2",
+              "57bc7c21-0d75-449c-a212-f14ac060becf",
+              "b971feda-bfdf-4f3d-be3f-4b2785a6f9f6",
+              "c8dc791d-fb3a-449e-8d66-54289c46dc37",
+              "d12096fa-0880-4d01-aed2-32751643c81e"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:01daa17b-67bb-4c59-bc3f-800e85743072",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-clinch-river-state-park",
+          "name": "Clinch River State Park",
+          "expected_count": 6,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0010a25f-86f9-4252-acfd-24f6c608a1d6",
+              "36e50b8a-1c98-4aba-98f9-aacc81bc5709",
+              "5895914e-04ac-46e2-9a0d-ba93e7428b28",
+              "9167330d-1c61-47db-969c-c33ba0bff5aa",
+              "9a45fc74-ef8c-4c8c-bd11-89d54a9be4cd",
+              "c2319bc5-b9db-4668-b0c9-47058317b6f1"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0010a25f-86f9-4252-acfd-24f6c608a1d6",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-natural-tunnel-state-park",
+          "name": "Natural Tunnel State Park",
+          "expected_count": 9,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0133ae8f-24c4-4f77-9131-9ca020a159c9",
+              "09318f18-270c-4bf9-b1c4-578b6096c32b",
+              "240a5d9b-bdad-4524-89f4-84035c74a3d1",
+              "2d0642f8-ae13-441d-9a29-26a263aa3be6",
+              "5a3a3011-bcd5-4c96-83cd-5dda4fe426fd",
+              "6e7fb18a-730b-4b10-b874-7b4abe0759a4",
+              "a74d4645-c827-4843-8378-a9b015045730",
+              "b1451d9a-7af2-4a2d-9e75-5c88db20f2cd",
+              "bac2a2bc-1ce0-4dd3-b882-7d842a2c8fd0"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0133ae8f-24c4-4f77-9131-9ca020a159c9",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        }
+      ],
+      "page_errors": [],
+      "passed": true
+    },
+    "fresh_public_tiles": {
+      "checked_at": "2026-11-04T03:36:49.405Z",
+      "mode": "diagnostic-fresh-tiles",
+      "sample": false,
+      "parks": [
+        {
+          "system_id": "dcr-bear-creek-lake-state-park",
+          "name": "Bear Creek Lake State Park",
+          "expected_count": 9,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "15e2b196-e478-441c-bfa6-5ba163f978b2",
+              "29bd1254-d126-4c4a-906c-3ce6e0cd2136",
+              "63ae6dcc-3c06-4d9f-b540-0210c0e21e37",
+              "74fd5674-f74d-4c0f-907a-c67e50c4098e",
+              "ba2a12dd-7990-4fa4-acff-df9f0d350f39",
+              "c015c6a8-ef36-4c6e-8963-7d86d0f51b00",
+              "c4b14836-5ef5-4010-91a7-6977ee581a4e",
+              "e0be47c5-9575-408a-b080-9b7d711627b3",
+              "e9155e60-2d1c-4aa3-8f67-f9cf3c3ea608"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:15e2b196-e478-441c-bfa6-5ba163f978b2",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-belle-isle-state-park",
+          "name": "Belle Isle State Park",
+          "expected_count": 12,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0464b029-4070-4916-bda7-d7503c8958e0",
+              "16180aa6-c290-4050-a91c-3dbb5740a71c",
+              "24eca724-0573-4645-81ff-09f9e8364b2b",
+              "5c43a1ac-493a-4215-a9f2-e9c42f68bcbb",
+              "691149a4-7e0f-4752-b969-25a673b8f13f",
+              "6e35f694-aede-416a-8e9d-df7a34763320",
+              "779068bb-cf63-4d3d-a147-16b0644d6c58",
+              "87ad924f-7066-4cac-9524-7b2b708453f6",
+              "97f4583e-3e17-4d79-85fc-901cd7bbed5f",
+              "aeadd97a-220c-4214-9dbb-c829f954fd42",
+              "d0483cbb-c94d-45b3-b0e8-1467c272d535",
+              "e04ad163-33a8-43fa-9243-d3d3e1e15578"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0464b029-4070-4916-bda7-d7503c8958e0",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-breaks-interstate-park",
+          "name": "Breaks Interstate Park",
+          "expected_count": 22,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "038e36bb-ac57-4b42-8a4c-2b16ad218f1b",
+              "1025deb2-73a1-46b4-9e72-a14ed9dcd642",
+              "2781d616-5ac5-4644-89fb-05d27cd77cd6",
+              "2b20224b-180f-41a6-b4dc-5844c3423f47",
+              "2cbf2ab7-ff84-46a4-a558-3938e2d5b77a",
+              "36d73faf-61a9-455a-b2ac-d93d08f5cecd",
+              "39d45577-c8f3-46d0-89f9-8269a729206b",
+              "39f95224-7a7f-473b-885b-65be8c25df20",
+              "3dc23a38-5feb-47c0-8606-228427bab646",
+              "42d84886-ab25-4213-ba8b-e7e431400eb3",
+              "46159cbd-d826-4c06-ab6d-24778ade426d",
+              "46da6acd-22e0-4610-a5f0-15cce67276b0",
+              "4711f3c7-8e68-449c-bc12-1be91c0b1326",
+              "474ba848-1dce-4a45-987d-08b5fa92e9c7",
+              "56d0ec02-8feb-4124-948d-652f0dbed983",
+              "63bd900e-30dc-40c4-979c-683e3192a9e0",
+              "817d8f50-6d26-47fd-9b9f-bbfe1d836a26",
+              "860bbcee-6a28-4a56-b473-6cdcac2a7fce",
+              "877a45bd-3bdd-4900-ad5d-557a214574fa",
+              "958add66-91c0-4b8b-be5e-1cf3eab14e1e",
+              "97ad637b-00ea-4478-b914-a64a0bdbfaa6",
+              "d2c1fdb0-81ac-4c51-960c-24925ba9b7d3"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:038e36bb-ac57-4b42-8a4c-2b16ad218f1b",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-caledon-state-park",
+          "name": "Caledon State Park",
+          "expected_count": 14,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "1a5fd892-cc41-4d19-8155-92f76c8027fb",
+              "1e006c51-5dbf-4ae1-9f31-c16822025a6b",
+              "249f19e1-b68d-4d25-898e-970d2b8cdbd3",
+              "400cee8f-da48-4460-ba3b-6b81fca4237b",
+              "444d84a5-32a9-413b-b3e2-80766ea7290d",
+              "5193327a-7287-4565-a518-b064f8924139",
+              "6131d0e6-fec8-4da1-97cb-ad9f05392b96",
+              "77592fd4-6c28-436e-a343-1c7dadf8c1b3",
+              "908a6156-492e-45d5-9a2d-6360e644618a",
+              "b111742f-7f2b-4c04-9808-4fa8f3420db0",
+              "e6250350-c30b-4fe8-a940-76779ba1ab43",
+              "f0e3c48f-7478-4d61-b2b8-c9929ccdb439",
+              "f123cdc3-142e-4372-b6b7-dee5b969f697",
+              "f2a9360c-477d-4ec7-b199-1f11e56a7801"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:1a5fd892-cc41-4d19-8155-92f76c8027fb",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-chippokes-state-park",
+          "name": "Chippokes State Park",
+          "expected_count": 6,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "59b4aeac-9cc3-4bce-9f04-9ffc082d4aff",
+              "66885d29-5891-48d5-b8af-61cad3b38bc7",
+              "7f43fed0-e2b4-45a5-b4a2-0cc529edc803",
+              "8fc1f31d-8d5a-4149-b237-2cb7efb6627f",
+              "b96d60b7-4a19-42d6-b7b0-71ef4938b2fd",
+              "d6eb51bf-c870-470b-b72d-cc5460a21caf"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:59b4aeac-9cc3-4bce-9f04-9ffc082d4aff",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-claytor-lake-state-park",
+          "name": "Claytor Lake State Park",
+          "expected_count": 9,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "01daa17b-67bb-4c59-bc3f-800e85743072",
+              "061d4828-4d1a-412e-8ed8-72ce21e39bb3",
+              "0ac4f79c-20f7-4434-b9c3-09e48ec30a84",
+              "0d155a0a-1f66-4aba-afe2-14686ce7f102",
+              "3613bf4d-a941-4e3d-befb-4e0c3b0b0ad2",
+              "57bc7c21-0d75-449c-a212-f14ac060becf",
+              "b971feda-bfdf-4f3d-be3f-4b2785a6f9f6",
+              "c8dc791d-fb3a-449e-8d66-54289c46dc37",
+              "d12096fa-0880-4d01-aed2-32751643c81e"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:01daa17b-67bb-4c59-bc3f-800e85743072",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-clinch-river-state-park",
+          "name": "Clinch River State Park",
+          "expected_count": 6,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0010a25f-86f9-4252-acfd-24f6c608a1d6",
+              "36e50b8a-1c98-4aba-98f9-aacc81bc5709",
+              "5895914e-04ac-46e2-9a0d-ba93e7428b28",
+              "9167330d-1c61-47db-969c-c33ba0bff5aa",
+              "9a45fc74-ef8c-4c8c-bd11-89d54a9be4cd",
+              "c2319bc5-b9db-4668-b0c9-47058317b6f1"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0010a25f-86f9-4252-acfd-24f6c608a1d6",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-douthat-state-park",
+          "name": "Douthat State Park",
+          "expected_count": 30,
+          "overview": {
+            "zoom": 11.867699297503508,
+            "ids": [
+              "0bc387d4-31e8-4a5e-a7ad-2cd7bab09faa",
+              "2d26f172-5e16-4e18-87b5-5db13b0cda76",
+              "353a8fa5-8d38-4f99-a390-2670fdd0e115",
+              "36cfe459-4e71-44c2-8138-bb5eec212af8",
+              "39b612c5-976a-443f-a109-21d9da811e32",
+              "3e72892f-4635-47f9-9bce-37023b3f52f8",
+              "451cacca-4c02-4c98-ae05-d61f47d6da56",
+              "486e1f5f-d533-416b-a472-65d06d5fb1a8",
+              "4bedb738-6172-4b32-b65c-e0cafe5ac3b4",
+              "5f78a525-8476-4d70-b90d-5326921b9434",
+              "631b4974-6486-47e4-80fc-5831b7000335",
+              "6b3803cc-3c48-4b12-acc1-7af2f93333c6",
+              "6e745a6c-95fc-4d15-90d1-f3d3763ea7e4",
+              "70948026-c76f-41f9-af48-6d5a1347c11d",
+              "7167e197-c842-4671-b101-73523ec99797",
+              "8224b2d9-fbbc-434e-8f82-afe467d6cb71",
+              "8b1006c8-c3b6-4370-8c4b-27f257f92e65",
+              "8cab4aec-43f8-49c7-aca2-7feb536d5671",
+              "8f84243e-4931-4157-982a-ed9f91decdec",
+              "a3bbed25-e021-4f60-a047-fc6354418816",
+              "a43996aa-e217-44a9-a5fe-82c67863f3e4",
+              "aab5c461-cad7-4eba-84fc-ffcf1d7495fa",
+              "babca3f4-d81a-4ba4-bca3-b819043ccdd7",
+              "d1d2d0bb-41c0-4957-b0c8-f2a6f232acf4",
+              "d2709059-9a77-4404-bf4f-eba2938435a3",
+              "d31a158c-feec-457a-9d04-821f7a1d07ac",
+              "dde9d397-9306-439a-b02c-86df3a7ee552",
+              "e2401968-31b0-4da0-86a8-c62cb4a2526e",
+              "ebf94e6e-2190-45b2-9ed1-94854367809a",
+              "f510ac03-c358-4102-b0df-e33eff1997e8"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0bc387d4-31e8-4a5e-a7ad-2cd7bab09faa",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-fairy-stone-state-park",
+          "name": "Fairy Stone State Park",
+          "expected_count": 11,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "220b6d9d-5d84-4b2f-947f-8bd3b6fd2f28",
+              "2265d304-9227-442b-bf89-8e2b738cd235",
+              "2dc6bf0e-ad5b-4ca1-9dc6-a83b0c270c12",
+              "4ff64587-03d9-48cf-b285-d40765072b7b",
+              "505c427c-8f79-4928-9040-12f658a37ebd",
+              "7983a10d-ae63-4d9a-9ec0-0b25040abd81",
+              "8f0af587-e8f2-4b72-8a23-0ed350b30e12",
+              "be764288-7282-42d6-8472-cd3458a668ab",
+              "c8b64102-859a-4a8d-bc99-9cbc8109935d",
+              "e7fc90f8-608f-402f-85ad-c0cc0a3b3d28",
+              "ecfc1c93-f225-4159-98ef-91b3d9dc2866"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:220b6d9d-5d84-4b2f-947f-8bd3b6fd2f28",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-false-cape-state-park",
+          "name": "False Cape State Park",
+          "expected_count": 23,
+          "overview": {
+            "zoom": 12.657993345764696,
+            "ids": [
+              "17652e9e-9329-406a-b422-0dea879cda21",
+              "1a1d2464-5680-4f1a-92c2-ebd24eb3341d",
+              "1eb383ea-c882-4cec-b3a6-ab9f8d75587e",
+              "2eb1d41b-56f3-44f2-a14c-fe1c827a3a5e",
+              "398a7d38-d4fc-47f9-802e-75a42acb18b2",
+              "4997c2ed-d323-4aef-88ef-4e06f884b9ee",
+              "4c995052-bff4-4cd4-9154-e90cf7c795ed",
+              "4cab0da5-9b87-4ebd-9f93-8889a36be6c7",
+              "560a36e8-d5d4-46d6-a8ce-41f1f857a909",
+              "5753fab4-ec9b-4164-b330-7d796484bc92",
+              "59b57634-9279-473b-b9f3-7bf13c09bddd",
+              "5d43ab66-b0df-462f-b2b0-253fb98e5f5b",
+              "8917d312-86f2-48ce-9b6d-4d21690d2437",
+              "abbac5f7-d771-4e0c-83c0-284226aad382",
+              "baa4c6b6-878c-469d-8a46-7e5a09a60f10",
+              "c0beb7bd-565b-42ee-8a98-605ffa40e820",
+              "c1a6757d-4801-4f7c-be09-08666be2303f",
+              "d5656b98-a292-4273-abab-5153bd4e7599",
+              "d5c520eb-702b-4fb6-b166-67c365818ee0",
+              "d6da5714-ce71-4a60-9585-b1ac2cf54825",
+              "dd0077c3-26a9-4115-bc2f-77a7bcf994b0",
+              "ddd4fe3e-099c-47b8-9843-1be7ea362e04",
+              "e5a2954e-96cb-4d07-b1a4-2278e081a215"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:17652e9e-9329-406a-b422-0dea879cda21",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-first-landing-state-park",
+          "name": "First Landing State Park",
+          "expected_count": 16,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "66e56f81-44f5-46e2-b339-58ee9081e466",
+              "69c2b4c1-0688-4ab7-8220-82e59229392d",
+              "6e559cfe-e102-48c2-ae49-9b04f2bc587d",
+              "802e5804-bcd5-4624-84c6-4bfc1a3f01ee",
+              "907dada4-43f5-455d-8802-2e6975998418",
+              "9318cdb4-f153-4a94-ad4f-ce091fd2535f",
+              "94297ded-3d74-4fee-80cc-ce81b16e622d",
+              "9454e73e-7134-4a09-91d8-71d9de3c5366",
+              "967ffa41-ac52-48d8-87bc-62c28fd56848",
+              "a8db4251-54cf-41cf-9b94-264b4ca5748e",
+              "a9e02f4f-3806-4ce8-9ec8-ba8a4473db94",
+              "bf3a7184-b060-41b8-8b62-e92a758eae5f",
+              "c546d75e-824d-4840-bef9-f39a44606898",
+              "c885cc6e-5975-401a-90ee-9a56adf1b4c2",
+              "ccaff515-c76b-45ca-b715-658a2bbc5112",
+              "ea053d7f-d545-41ad-ac85-9d2f02b9303e"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:66e56f81-44f5-46e2-b339-58ee9081e466",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-grayson-highlands-state-park",
+          "name": "Grayson Highlands State Park",
+          "expected_count": 15,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "1871a697-79d0-4e51-955e-4c78e0cfdadc",
+              "1a1020f8-3795-4d4b-9d1c-7c9b4c1fda2c",
+              "30007248-0005-4bf2-8433-065e9d2df18a",
+              "31a6dd58-e2aa-4088-b151-744696316be1",
+              "35059840-580b-47d7-a555-452ff9b6ff63",
+              "35e55678-176b-4091-85d8-5aeb83208ef9",
+              "54b5dd32-bf9c-4738-a8da-3489950c689d",
+              "5ac2fa48-2d91-4a9e-8fef-62983f733ff4",
+              "6f17ead6-bd38-490c-be74-9055d96355e5",
+              "705b4536-eed3-49dd-a02f-448ad9329873",
+              "81449e78-1061-4a34-bf94-edbecf114572",
+              "ab3dadc9-4df0-419c-88cd-0258e2f92dab",
+              "c267fd4e-29f7-4ebe-9109-dc1fa8af56a0",
+              "cedc300c-1c5d-4043-861f-54cea1f22cac",
+              "e86bd6ac-3d35-4b1c-ad77-3deaa3574c3c"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:1871a697-79d0-4e51-955e-4c78e0cfdadc",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-high-bridge-trail-state-park",
+          "name": "High Bridge Trail State Park",
+          "expected_count": 9,
+          "overview": {
+            "zoom": 10.88574094934746,
+            "ids": [
+              "0b72dd53-4928-40a2-bb54-0f26ce0fa38d",
+              "224fee65-ce73-40f0-b14f-537f2f5adaf5",
+              "2ce25521-e30c-4e10-9113-d9dd0ec55c78",
+              "5f726970-dd6d-420a-8ebb-2b9f601b5802",
+              "66efc372-4a3b-4caa-997e-f27030a76f5d",
+              "8358f62a-26b9-43d7-8b7d-1749a0dde6ae",
+              "a3e5457b-ee6b-45f5-a5f9-64c46b623665",
+              "c530a51c-c339-44ff-9835-96ba0a6d144b",
+              "f79b4586-4556-4ac1-bead-508f98c27c86"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0b72dd53-4928-40a2-bb54-0f26ce0fa38d",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-holliday-lake-state-park",
+          "name": "Holliday Lake State Park",
+          "expected_count": 6,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "022ba0ff-1e7f-4a0a-9c68-9072a96578f2",
+              "36bf5e81-99a0-4454-a671-11f238a47f09",
+              "3f746501-2de6-400f-8022-f3d9bc2ed929",
+              "8c89e57b-1937-4a5c-9e30-3469812268b5",
+              "9b5dd9c3-98a3-4078-a5c2-713fa9a3b38f",
+              "9fc2ced4-30a6-4ab7-b5d7-7cee019413d0"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:022ba0ff-1e7f-4a0a-9c68-9072a96578f2",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-hungry-mother-state-park",
+          "name": "Hungry Mother State Park",
+          "expected_count": 9,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "25f827ad-cc1b-4f8f-8209-219f453f9cbe",
+              "2aaadb3a-22eb-43d0-b5ac-16caa265b65e",
+              "3670ac96-992d-43d9-9fb6-3e7098dac670",
+              "57c64d1b-2288-4427-97ec-15a8dff84b3e",
+              "5caa18e0-81a9-4962-b3df-f5e5b2bc4389",
+              "7e05ae0c-2b73-4112-9b3b-52d72b37617d",
+              "b8d9555f-d1e3-4694-b5eb-236299ba0d4a",
+              "bcf8896f-3636-4327-86a5-32c5c3e85b3f",
+              "bfacdefd-1b0c-4155-8d61-598b579f7e34"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:25f827ad-cc1b-4f8f-8209-219f453f9cbe",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-james-river-state-park",
+          "name": "James River State Park",
+          "expected_count": 24,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "08f31334-1f11-4491-8514-d67f132196d9",
+              "2514f31f-a8f9-466a-ab59-5c86a3abfe29",
+              "26e20c03-656f-4b09-a46a-a14f1d19d1c5",
+              "34942207-533f-4794-9909-39f93678c3bc",
+              "373be513-7475-4d1f-bdbf-e65fe06f1355",
+              "37603c65-530c-436b-bcc4-52da3e9cc21e",
+              "3fff13cd-3989-4a59-8b76-fb8448b652d3",
+              "48f9c7fd-c576-451b-a2a0-c0268c09c7e7",
+              "4bc0a2ff-c013-47aa-8552-dcb9f2e284c7",
+              "5a8ca1b7-bbf2-4de5-92fa-0b4ba87f2ff4",
+              "5c5d487c-94e9-4c15-b799-07ba377e22a9",
+              "6a7745c6-4e3e-414c-a71b-1874d7602db4",
+              "7bfc3196-ba86-41f8-be2c-7b6d02e3c3f9",
+              "7f43ec46-08cb-464d-9773-37beeac9f05e",
+              "9c4f7af7-2bda-43b9-bea8-85ceb44c1ae7",
+              "ae323c44-ed0f-4059-976a-defdb3305e5f",
+              "bbbd7f24-56dc-44ad-9bbf-b209e552ea95",
+              "c89c7915-3151-42fe-92f4-424387e0f9df",
+              "ce6081da-d9c0-400a-b68c-157e8716426d",
+              "d4788e2c-75fc-4675-8161-9b7e993dcbd1",
+              "d719ac0b-94f4-4549-9dba-d18cda0cf88a",
+              "e49c8af3-bc53-4d80-813d-dc58867b4b5e",
+              "f05eddb6-a43e-4ed5-830f-91c8933d27a9",
+              "f36d0965-ff76-4a8e-bcd8-a172384236de"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:08f31334-1f11-4491-8514-d67f132196d9",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-kiptopeke-state-park",
+          "name": "Kiptopeke State Park",
+          "expected_count": 13,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0628d944-5967-4ab1-9b05-e6a5ceedd778",
+              "1246ce33-2785-42ba-8628-49ca129f07c4",
+              "4b2fbd69-5957-4de5-aca4-2b338e09faea",
+              "53ca41c7-a787-44af-a500-c8ab490700dc",
+              "6b57187c-ba62-4da4-99b1-82d8fcc729ec",
+              "6c80402e-dcbb-4d8a-9f2b-b34fb25b302f",
+              "87bbd855-b100-40da-99c2-02948bb1b2e3",
+              "a58b753e-6725-4ac5-b09b-26de5d95be32",
+              "ac094ccb-607b-40ed-92a3-c9bcde9582fc",
+              "b024b3ae-82ee-442a-894e-967fa9f2cae9",
+              "b8521597-853c-4e3f-b819-d7b2aba3258d",
+              "c1c7a6c3-936b-47ca-930a-c4507e88e27d",
+              "fa1ce66b-ed67-4bc4-b877-19f75ea19b36"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0628d944-5967-4ab1-9b05-e6a5ceedd778",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-leesylvania-state-park",
+          "name": "Leesylvania State Park",
+          "expected_count": 5,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0d38a822-95ac-40ac-8a9c-ec4683af2bb1",
+              "1c010a37-2eab-4076-a161-9ceea2c6f78d",
+              "3fc039e1-f3c9-47b5-ae87-88b692da0034",
+              "4346de7a-12d0-49d1-afb7-cd843b2f740b",
+              "fb9cc2f8-f4e7-43d3-b4dd-9e64c547e5ef"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0d38a822-95ac-40ac-8a9c-ec4683af2bb1",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-machicomoco-state-park",
+          "name": "Machicomoco State Park",
+          "expected_count": 3,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "06c08f64-1c0a-4e1f-9a47-3bccbec4f5e4",
+              "70928b46-a18b-4483-b2e0-b4283e02d410",
+              "d05b26de-23ad-4fb9-839f-7e493f5074ac"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:06c08f64-1c0a-4e1f-9a47-3bccbec4f5e4",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-mason-neck-state-park",
+          "name": "Mason Neck State Park",
+          "expected_count": 8,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "041287d3-c8e2-4c65-919c-c89fafab3caa",
+              "15e849db-d9a5-44fe-86e4-beefdd31c8c8",
+              "1aabbb81-1ae5-4ee7-9696-5e3b76d72abe",
+              "1f5f7319-84a2-446d-8737-28da4a21cd60",
+              "4d2fa8e3-41c6-4edc-9068-d0df4343d739",
+              "5085b872-cfcc-48f2-8fb4-2663bc2dc766",
+              "58b74dd9-440f-4269-9f14-c15a0b0fdb0b",
+              "d140fac5-f22a-4c0b-95a1-bfe8b33726e8"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:041287d3-c8e2-4c65-919c-c89fafab3caa",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-natural-bridge-state-park",
+          "name": "Natural Bridge State Park",
+          "expected_count": 5,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "3e695870-31ee-42b6-a330-ada6e5f9dcc7",
+              "5a5b54de-0388-4580-9272-3279ba69bff5",
+              "698e1767-a689-4850-976d-03c002f4d39d",
+              "78bcb36d-c9b6-42eb-9918-d1e5d18c307d",
+              "f98eb59c-18bd-4eab-ad00-79f72acd38ea"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:3e695870-31ee-42b6-a330-ada6e5f9dcc7",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-natural-tunnel-state-park",
+          "name": "Natural Tunnel State Park",
+          "expected_count": 9,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0133ae8f-24c4-4f77-9131-9ca020a159c9",
+              "09318f18-270c-4bf9-b1c4-578b6096c32b",
+              "240a5d9b-bdad-4524-89f4-84035c74a3d1",
+              "2d0642f8-ae13-441d-9a29-26a263aa3be6",
+              "5a3a3011-bcd5-4c96-83cd-5dda4fe426fd",
+              "6e7fb18a-730b-4b10-b874-7b4abe0759a4",
+              "a74d4645-c827-4843-8378-a9b015045730",
+              "b1451d9a-7af2-4a2d-9e75-5c88db20f2cd",
+              "bac2a2bc-1ce0-4dd3-b882-7d842a2c8fd0"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0133ae8f-24c4-4f77-9131-9ca020a159c9",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-new-river-trail-state-park",
+          "name": "New River Trail State Park",
+          "expected_count": 9,
+          "overview": {
+            "zoom": 10.416173840202354,
+            "ids": [
+              "131da42a-4c9c-4cdf-8a90-2e9ac6ec3892",
+              "263c6534-b074-48c0-9a83-a7364366876c",
+              "3de34833-b70c-4b6b-a0d6-6306e4e6101b",
+              "74f57bf8-ba5d-4d8f-bef1-24ce4c8e9c68",
+              "851afe31-06bf-4b4c-8c77-92a26f330f9d",
+              "9461a099-8c50-4cdf-a65d-269a2f369a96",
+              "cd8ba64c-d545-458d-8b30-4191ebdbebd9",
+              "ce10766a-7874-44ea-a07d-402a0592ed11",
+              "ec903cec-f251-4e07-9d34-7ab820ea01a6"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:131da42a-4c9c-4cdf-8a90-2e9ac6ec3892",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-occoneechee-state-park",
+          "name": "Occoneechee State Park",
+          "expected_count": 8,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "032ce905-bed9-446b-a40e-b47135ecc814",
+              "1ebe9d7d-65b6-402c-8a9b-4573f0892e53",
+              "75fbee36-84c9-4ab8-8e58-25ca6844fcf8",
+              "874de1cc-852a-42bd-8635-512b89891299",
+              "96303228-6a2c-463e-953a-ea977b0543ba",
+              "a12b59c2-7fe8-45f7-ae2f-d22f32099ba5",
+              "e7f599af-7646-42f2-b90f-9b7a0e3aea24",
+              "f791b7d7-abdc-4c78-b105-a3632e79212e"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:032ce905-bed9-446b-a40e-b47135ecc814",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-pocahontas-state-park",
+          "name": "Pocahontas State Park",
+          "expected_count": 55,
+          "overview": {
+            "zoom": 12.734428348823302,
+            "ids": [
+              "022b5c58-1c6c-4f44-8959-064afb011006",
+              "037d3635-e39e-4aa7-903f-8560e45d7a6c",
+              "0720da4c-3d03-4c72-babd-7a721b376840",
+              "091b2a01-429d-4a77-b3a4-f6ff0d01575d",
+              "0ea9f5e1-c3ea-4071-a147-89ed3591744f",
+              "11f63548-24a0-41fc-ae04-633d5bdd8e41",
+              "1446ef5a-6eaf-4014-86cb-f09026fb9b21",
+              "16c54e97-19e8-4de4-85f2-3006962e0f28",
+              "16e7c6da-cc09-411c-a0f8-e4560a9a7529",
+              "1a0409e6-c213-4e39-bf08-1e2d8206ecf9",
+              "1b500938-b495-4c92-97d2-dfbba5646103",
+              "1e48050f-c15f-4cfc-934b-8ca106883fad",
+              "236c0d69-8eab-4825-b85b-92f61830b714",
+              "28ded568-fd14-4d83-8a14-4a4fefd6f093",
+              "2b89e733-7736-4d0c-b4f9-c14d7413463c",
+              "2c79ecf0-8d28-4f98-96a4-91a173f4e9bb",
+              "2e4dd0ca-2767-4ade-8fc3-bbe073ecc383",
+              "3c2910f3-adf8-42d3-859f-1188332adadb",
+              "426e36f0-a898-4755-a583-a34151b371b7",
+              "464d0497-b931-43d7-964a-9cccaa04932f",
+              "478105bc-dc04-4cba-8682-1351ff9869e2",
+              "4d162f67-e49d-4fc0-9761-55a08cb8c735",
+              "53d5508f-71e6-4fbc-9ecf-17d4917f56d0",
+              "54eb5e80-8e42-491b-9cc5-2c859c714529",
+              "5b5e6e98-2aa0-44d9-82be-285cd8b48743",
+              "635775d9-cf31-4f8b-84b1-cd94607cb9db",
+              "74144b2c-49ef-4616-b516-779b71b3dbdd",
+              "7465e543-6d99-4604-8254-dce16665a462",
+              "7611b17d-0db6-4e6f-850d-936f5e0c2593",
+              "7ac52e09-3fab-4a03-b715-e09ddcdc7e35",
+              "8581dd1d-5c7d-4667-8250-419b8c5361c1",
+              "92bdd363-da89-4a34-bf81-1e6f1346ed5f",
+              "98f0b94b-6c1a-4abd-9a61-fcbae137bc9b",
+              "9af8317a-af07-4171-86e3-e43903459100",
+              "9b00edf8-ad1c-4e5a-81aa-8913e9629ffb",
+              "9b21c167-99f0-4638-99f7-c1586c4ac0af",
+              "9c9cb3ce-5257-4fb1-8e0a-adf63818bbc4",
+              "9e3009d8-4aa8-481b-8ee8-626ef75aa405",
+              "a39db1e2-9434-44d7-be5a-98fd3ab71174",
+              "b5194d60-850a-46ee-aad2-992309933487",
+              "b624ad50-9952-4e6b-840d-dfc86f99ac5e",
+              "bc523656-0937-447d-aad7-05a88a783edd",
+              "befb5340-ac30-467a-9196-b1d69813f085",
+              "bfe1b1ca-e173-4a14-8f4a-e49b88f70b82",
+              "c0639175-c2fd-4133-ab98-deae3374ff13",
+              "c40b2519-e29e-4767-838a-2b6543bad6d5",
+              "c44a7b34-76d6-42b3-802f-275114fd9d7d",
+              "dacc83c6-7af8-4777-b096-b96b7dfddef0",
+              "dc1c0ecb-8d56-4f62-8574-a0ecef57bc2e",
+              "dcd05573-7861-4549-bc52-e43287680046",
+              "e10376e6-620c-4831-8ee1-6a0c463b3091",
+              "e56ff1c8-d322-4eee-8fe2-5894d4fc08b2",
+              "e70d6067-f03d-43e5-81d9-210949b28f90",
+              "e9aa6e3d-66d3-4e25-b403-935654302208",
+              "f8af7f78-942f-4826-ba2b-9e0275c0d450"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:022b5c58-1c6c-4f44-8959-064afb011006",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-powhatan-state-park",
+          "name": "Powhatan State Park",
+          "expected_count": 12,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0c57070e-760b-4677-a465-d442fac101ee",
+              "3dafb065-0a2f-48dd-9443-4e0ff7a6ea0e",
+              "4cb9a011-e623-4065-9c01-b8ad02c39410",
+              "5072ca04-914c-4bcb-ba66-926bac70d825",
+              "6aa3c92b-5350-45b6-8d3a-a41176a44d61",
+              "8028ae93-8c51-4e8b-8c8a-4a97c1251600",
+              "8a3cb90d-b8a7-4231-b678-d6279d65b5ac",
+              "acb34f8f-d8b0-4b05-8209-d404d45a09a3",
+              "be3da755-a74a-4884-80f1-c49cefa3f7cd",
+              "e2817d9d-ea4f-4c69-8bde-a14a88df52e3",
+              "e8a032a7-0056-4631-9101-6a756d45a923",
+              "f73d7459-731d-4940-be91-91bdc2686118"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0c57070e-760b-4677-a465-d442fac101ee",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-sailors-creek-battlefield-historic-state-park",
+          "name": "Sailors Creek Battlefield Historic State Park",
+          "expected_count": 7,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "06681848-eabb-4956-9192-513d5a0fd58d",
+              "3666094e-1126-4bb1-82b2-3ff44122af6f",
+              "36b465fe-e3df-4488-85aa-3e97b4664e82",
+              "546bd59f-6ec3-4399-9ea0-0ca84c248dfe",
+              "b5c70ad3-081f-4a35-bca0-9e4fed7a1c51",
+              "dcaec699-10e2-4b7e-bed9-9c163c63ca49",
+              "f904e09a-2c5d-441e-a327-76a29cadff75"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:06681848-eabb-4956-9192-513d5a0fd58d",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-seven-bends-state-park",
+          "name": "Seven Bends State Park",
+          "expected_count": 8,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "74641dc7-2c6c-4b95-8dda-062ce63eda8f",
+              "829fe23d-d020-4057-999f-fac210c9f16f",
+              "8b7bde35-8a07-4cd5-9d0b-bd4aebf4ff07",
+              "916a89b9-bb29-45cd-8870-14b4a4be611e",
+              "a091ef6f-0f08-4d38-8e5a-24209d50a16a",
+              "ab26563d-216a-47a5-b1dc-349dcd31ed80",
+              "cc922115-405d-42ed-9acb-29c88c98bcbc",
+              "f9bc875b-86a5-40bb-8c02-4ef386cd8b25"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:74641dc7-2c6c-4b95-8dda-062ce63eda8f",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-shenandoah-river-state-park",
+          "name": "Shenandoah River State Park",
+          "expected_count": 20,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "02157e59-50dc-4d4a-8d87-770264d84c6b",
+              "057cddc5-c992-48ca-a023-0aa5f02e4b72",
+              "111f2a7c-4c87-4d80-8f56-f77a7105f9c9",
+              "4eb0c8a0-f45b-4918-bf84-7a56e3611b65",
+              "511c75f7-7d18-404d-a0b4-5d0e43717c26",
+              "5a7e467e-be7d-40d9-a62a-26f3d0dc5350",
+              "5ac8a879-3238-44b9-a2a9-46fe9b19f19f",
+              "5c684bcf-7f8d-4632-be0d-207ee35b0b20",
+              "64c8c0d7-347c-4850-a02b-f888bdb85a15",
+              "772147b3-cd59-4242-a761-a343bc4fc2b9",
+              "7eea7ea5-340b-4968-a4a0-79d4bd33ceb0",
+              "944e1e3f-5b73-4508-9f77-ddecd75c7832",
+              "9fc47ab3-2dce-4062-8b07-6469bbd51490",
+              "a2985d16-dc7c-4dd5-9081-508d71ed20a2",
+              "a3017fd1-0053-4d89-bb21-bf12e7fcf154",
+              "bfbc7cb4-be0c-4e06-9d08-dd9d6a5f0d26",
+              "c2467a02-529b-43fe-b514-7f7b2d733e5d",
+              "cbcc4a0e-11d7-4e6f-bc7c-b45fd461d5b0",
+              "d3819770-bfb3-4fb2-9faf-a8e64cc84de0",
+              "f46405a5-d5b1-4449-a27a-667b1c2cfd08"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:02157e59-50dc-4d4a-8d87-770264d84c6b",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-sky-meadows-state-park",
+          "name": "Sky Meadows State Park",
+          "expected_count": 19,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0294fb2d-783a-426c-9405-cd7785c360ce",
+              "09d8c705-2971-40c7-9874-8cca6388a3a0",
+              "12aa8709-b41f-4652-8a9a-196c8421a8c5",
+              "15676193-a954-4ade-9533-44a797d500be",
+              "24eb1011-8e2e-4725-b84c-87cfb4621236",
+              "31abf997-0ef5-42f4-8c94-1ef21091f11c",
+              "394902da-90f1-483c-b1ec-44dfac2c6c6b",
+              "4cfafeab-547d-4090-9869-25c936b1001d",
+              "533e8a5f-c5b7-4220-9e46-bfeef54c3373",
+              "58d2e774-bfc8-4c4f-bdf0-1f611daca6d1",
+              "6c9c4e87-ac99-4a4f-8c44-d68e974545be",
+              "7d8a0a37-b4d5-407e-acfa-58265fd1070a",
+              "836eb70a-aa8b-4bbf-a6bb-21a353deb056",
+              "9e6eeeb6-69a5-40f0-ab5f-527dc6122e51",
+              "cb69fedb-15c8-4588-b30b-03c0d0c96b85",
+              "d49863e7-5ed3-41fd-8e93-f584e99aeac8",
+              "d87fd486-bb05-4054-8868-1d2512f42f45",
+              "e0be72a0-107d-43f2-b70d-b1af492ab9e0",
+              "ee6a3b50-7e38-4975-bc78-c39e275b7b8a"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0294fb2d-783a-426c-9405-cd7785c360ce",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-smith-mountain-lake-state-park",
+          "name": "Smith Mountain Lake State Park",
+          "expected_count": 15,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "213a6aa5-2a56-4525-bfd3-d4a765843fa4",
+              "30938c13-5176-4a94-9148-cebded2a16cb",
+              "390b569f-1cc4-4c74-b6b3-7e9a0fbffef4",
+              "5c64ec50-7f19-484c-8d75-cd9a5f7bf754",
+              "72242bff-9ece-4287-8585-21d42e828222",
+              "7c5c659b-2f37-45b8-8703-b6a97612ad20",
+              "8c939dde-5ecb-4fa3-896f-f3429560119a",
+              "9cf87de2-a812-4018-88e7-83c801ab7402",
+              "9dbf3d9e-32f3-440f-aae8-d94cc89c8d8c",
+              "a0721e0d-cc50-4c03-812d-bf1640c82341",
+              "cbf9594c-598f-489e-8523-127a222d2ac6",
+              "cdf53a4c-74cf-43fe-96db-2353ab63f423",
+              "da1469a5-f41a-41ed-aecd-e7d107d2ee5c",
+              "e3985704-69db-45f2-bd3f-7f659945d1d3",
+              "f203291f-3627-4f3f-9c64-ca90159962c4"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:213a6aa5-2a56-4525-bfd3-d4a765843fa4",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-staunton-river-battlefield-state-park",
+          "name": "Staunton River Battlefield State Park",
+          "expected_count": 4,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "1163541e-70c3-4d48-9e30-4360a7071e82",
+              "1704a62b-8060-4977-a0e9-93d9f150be77",
+              "4abf4f98-62f8-4de0-a16c-3be32ce3bc0f",
+              "c51bad93-578c-4981-88b6-30732f96b8da"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:1163541e-70c3-4d48-9e30-4360a7071e82",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-staunton-river-state-park",
+          "name": "Staunton River State Park",
+          "expected_count": 10,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "04be8563-3125-4e13-b5a4-24188f802d7b",
+              "0d847d6f-bd5f-4ba2-a8a0-14ef8a072397",
+              "1aa2bcc5-f3ed-41d7-ac35-96d5009f9003",
+              "704cb1e0-8cd9-4f0f-8da8-abaceeb11333",
+              "74c435c6-a676-4e1e-9351-1d88acbb9ecf",
+              "75d1a421-b024-4444-bb78-4407a0e6b74b",
+              "79b20ba4-0592-45e6-b59f-002cd00ce9b2",
+              "c01c0060-4a3c-41b4-8055-d0cdd6ee4a77",
+              "caabd33b-7c9c-405e-ad78-f820dc89579e",
+              "f42c754e-0d15-42bc-b21c-052214518b31"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:04be8563-3125-4e13-b5a4-24188f802d7b",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-sweet-run-state-park",
+          "name": "Sweet Run State Park",
+          "expected_count": 16,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "0eb3ad6b-f0cd-438c-aad5-3c043163a889",
+              "1493237b-f08c-4fc9-8255-0a00b2ebbe72",
+              "4bed618b-4d86-482e-a230-634662f9b8ad",
+              "4d6ec3d9-f6d8-4a84-a42a-5ed5d84883f8",
+              "59e73dad-5562-4354-aba1-e3b7f3360680",
+              "68a4416e-1e68-41df-8ad0-b77533aea862",
+              "69da2b30-17ec-4db4-8dad-54fb36408bd9",
+              "7f4501c9-dec6-4aa7-a60a-0ef55db1464a",
+              "87c8b145-a7d5-454e-9fa2-6beb5ed2f3de",
+              "900045bc-5b91-451d-911b-d1616f468022",
+              "a5a2e17d-b264-49ef-a3bb-7bea9750776b",
+              "a9cde7e7-2a4b-4b82-bc65-06700b9efb94",
+              "af659372-334f-4412-82e2-31b457545901",
+              "c35baa44-3773-49c8-85ce-866c87f9b3d7",
+              "eccae18c-63af-4c11-bd06-d7c3725e1cc3",
+              "ecda2184-0478-4006-a595-1492a8153fa4"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:0eb3ad6b-f0cd-438c-aad5-3c043163a889",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-twin-lakes-state-park",
+          "name": "Twin Lakes State Park",
+          "expected_count": 7,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "49488a3b-9dd2-450f-bc40-527ae2889986",
+              "51b207b4-0a5c-4679-938d-0b49bfd8aa1f",
+              "675e26e4-cbf7-49ad-a8bc-a7fdd8642919",
+              "675f05fc-fe32-4c26-b4d5-305590135850",
+              "80c45d7e-750f-4dbc-9e6b-0ab15cc9f95d",
+              "b0db684d-b6cb-4362-bfce-e00276f5aabf",
+              "d73e2397-8217-4337-be49-c1285c4f49f5"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:49488a3b-9dd2-450f-bc40-527ae2889986",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-westmoreland-state-park",
+          "name": "Westmoreland State Park",
+          "expected_count": 9,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "2cca0078-e635-45ce-982d-3b1e14e9ab3c",
+              "2d43827b-a5e2-4350-b816-409a9a4719ca",
+              "502f8b5b-5857-41d2-99f6-dfafd8bd2ff0",
+              "53192dd2-e595-4006-9bbc-fd93f9e5eabd",
+              "543ee125-7a5d-45d5-91f6-da69b1b86402",
+              "6d137399-d083-4b33-bbb7-16c428d2de90",
+              "8cf931d9-db90-4a1f-b561-66fcb5f478c7",
+              "c01e70cf-cd14-4ade-8ff0-32a160ba501d",
+              "cf48fa2a-5823-4d6a-94c6-8ac9cfc67a55"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:2cca0078-e635-45ce-982d-3b1e14e9ab3c",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-widewater-state-park",
+          "name": "Widewater State Park",
+          "expected_count": 2,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "5fa2511f-d6a6-4436-aa31-8fefd39795d1",
+              "c3e40c3c-a43d-4979-8198-c592a9831e26"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:5fa2511f-d6a6-4436-aa31-8fefd39795d1",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-wilderness-road-state-park",
+          "name": "Wilderness Road State Park",
+          "expected_count": 3,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "049d5041-d6be-47d4-abb0-70f6a020d9e4",
+              "1d852dbf-34b2-47d4-b7c1-4df092295e6f",
+              "8cbb1617-0ec6-42ff-88ed-27031fd14e47"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:049d5041-d6be-47d4-abb0-70f6a020d9e4",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        },
+        {
+          "system_id": "dcr-york-river-state-park",
+          "name": "York River State Park",
+          "expected_count": 24,
+          "overview": {
+            "zoom": 13,
+            "ids": [
+              "02a40ff8-a910-495c-90c4-22950de0beb1",
+              "1825b84e-fe42-41f0-9766-0a5e1a778aed",
+              "1dd98068-ed18-4f2d-a2be-16d1e1cec7e9",
+              "29be3d11-461f-4f21-8ac9-c3aa25b5f44a",
+              "2e4d4159-08ee-4f3b-bc42-f3c418ff4e66",
+              "3e216b32-150b-4a78-9cbf-3c0874f194d1",
+              "3f2af411-c826-4218-9f57-1d4c99bf12c8",
+              "42634ce2-198d-433e-a8ef-0ce3e9c929df",
+              "458fd1c5-1bc6-4126-86e4-3db3f16cc594",
+              "55072d25-e40c-45e9-8ea3-681af1efeb8a",
+              "5b6ee0e5-7682-4fa7-89cc-64ea1f136d36",
+              "777dca5e-1bad-43bd-9091-61a544270ba2",
+              "896f4443-a7cd-4006-b943-1ce7788dd627",
+              "9696c57f-6cf0-415c-a56b-acd41553b9d7",
+              "9d85649f-25d2-49a7-9fb6-64b8c51e5f53",
+              "a3a572b0-dad7-448c-852d-5893660f596f",
+              "ad91b137-2515-405b-8078-7282b904c15f",
+              "c68d8655-ffaa-48dd-b8d5-463744c68020",
+              "c7f6c3da-fd6a-413b-b2a1-9936bda1af61",
+              "d4785022-93a8-4237-8154-dcce3233f7c5",
+              "d4e514ad-6e68-49a3-bacf-df3484a3d6f4",
+              "d8ef5fec-a481-49f8-9f14-8c4fb8a9dc5c",
+              "f719cae2-5276-4b59-8d26-af54e8c6ff82",
+              "fc85f414-b32e-4888-9279-b04620d839cb"
+            ]
+          },
+          "missing": [],
+          "detail": {
+            "zoom": 16,
+            "feature_id": "va-state-parks:02a40ff8-a910-495c-90c4-22950de0beb1",
+            "present": true,
+            "color_matches": true
+          },
+          "style_matches": true,
+          "passed": true
+        }
+      ],
+      "page_errors": [],
+      "passed": true
+    }
+  },
+  "publication_receipt": {
+    "approval_hash": "90e2fbeff7c4ab73650dd42f782ff183e8e2fa3516766cddd33f8ad79ef77d83",
+    "started_at": "2026-11-04T03:18:06.848431Z",
+    "target": {
+      "id": "strava",
+      "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+      "tileset": "meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg",
+      "source_layer": "Strava_Sidetrails"
+    },
+    "state": "published",
+    "completed": [
+      {
+        "put": "va-state-parks:0010a25f-86f9-4252-acfd-24f6c608a1d6"
+      },
+      {
+        "put": "va-state-parks:0133ae8f-24c4-4f77-9131-9ca020a159c9"
+      },
+      {
+        "put": "va-state-parks:01daa17b-67bb-4c59-bc3f-800e85743072"
+      },
+      {
+        "put": "va-state-parks:02157e59-50dc-4d4a-8d87-770264d84c6b"
+      },
+      {
+        "put": "va-state-parks:022b5c58-1c6c-4f44-8959-064afb011006"
+      },
+      {
+        "put": "va-state-parks:022ba0ff-1e7f-4a0a-9c68-9072a96578f2"
+      },
+      {
+        "put": "va-state-parks:0294fb2d-783a-426c-9405-cd7785c360ce"
+      },
+      {
+        "put": "va-state-parks:02a40ff8-a910-495c-90c4-22950de0beb1"
+      },
+      {
+        "put": "va-state-parks:032ce905-bed9-446b-a40e-b47135ecc814"
+      },
+      {
+        "put": "va-state-parks:037d3635-e39e-4aa7-903f-8560e45d7a6c"
+      },
+      {
+        "put": "va-state-parks:038e36bb-ac57-4b42-8a4c-2b16ad218f1b"
+      },
+      {
+        "put": "va-state-parks:041287d3-c8e2-4c65-919c-c89fafab3caa"
+      },
+      {
+        "put": "va-state-parks:0464b029-4070-4916-bda7-d7503c8958e0"
+      },
+      {
+        "put": "va-state-parks:049d5041-d6be-47d4-abb0-70f6a020d9e4"
+      },
+      {
+        "put": "va-state-parks:04be8563-3125-4e13-b5a4-24188f802d7b"
+      },
+      {
+        "put": "va-state-parks:057cddc5-c992-48ca-a023-0aa5f02e4b72"
+      },
+      {
+        "put": "va-state-parks:061d4828-4d1a-412e-8ed8-72ce21e39bb3"
+      },
+      {
+        "put": "va-state-parks:0628d944-5967-4ab1-9b05-e6a5ceedd778"
+      },
+      {
+        "put": "va-state-parks:06681848-eabb-4956-9192-513d5a0fd58d"
+      },
+      {
+        "put": "va-state-parks:06c08f64-1c0a-4e1f-9a47-3bccbec4f5e4"
+      },
+      {
+        "put": "va-state-parks:0720da4c-3d03-4c72-babd-7a721b376840"
+      },
+      {
+        "put": "va-state-parks:08f31334-1f11-4491-8514-d67f132196d9"
+      },
+      {
+        "put": "va-state-parks:091b2a01-429d-4a77-b3a4-f6ff0d01575d"
+      },
+      {
+        "put": "va-state-parks:09318f18-270c-4bf9-b1c4-578b6096c32b"
+      },
+      {
+        "put": "va-state-parks:09d8c705-2971-40c7-9874-8cca6388a3a0"
+      },
+      {
+        "put": "va-state-parks:0ac4f79c-20f7-4434-b9c3-09e48ec30a84"
+      },
+      {
+        "put": "va-state-parks:0b72dd53-4928-40a2-bb54-0f26ce0fa38d"
+      },
+      {
+        "put": "va-state-parks:0bc387d4-31e8-4a5e-a7ad-2cd7bab09faa"
+      },
+      {
+        "put": "va-state-parks:0c57070e-760b-4677-a465-d442fac101ee"
+      },
+      {
+        "put": "va-state-parks:0d155a0a-1f66-4aba-afe2-14686ce7f102"
+      },
+      {
+        "put": "va-state-parks:0d38a822-95ac-40ac-8a9c-ec4683af2bb1"
+      },
+      {
+        "put": "va-state-parks:0d847d6f-bd5f-4ba2-a8a0-14ef8a072397"
+      },
+      {
+        "put": "va-state-parks:0ea9f5e1-c3ea-4071-a147-89ed3591744f"
+      },
+      {
+        "put": "va-state-parks:0eb3ad6b-f0cd-438c-aad5-3c043163a889"
+      },
+      {
+        "put": "va-state-parks:1025deb2-73a1-46b4-9e72-a14ed9dcd642"
+      },
+      {
+        "put": "va-state-parks:111f2a7c-4c87-4d80-8f56-f77a7105f9c9"
+      },
+      {
+        "put": "va-state-parks:1163541e-70c3-4d48-9e30-4360a7071e82"
+      },
+      {
+        "put": "va-state-parks:11f63548-24a0-41fc-ae04-633d5bdd8e41"
+      },
+      {
+        "put": "va-state-parks:1246ce33-2785-42ba-8628-49ca129f07c4"
+      },
+      {
+        "put": "va-state-parks:12aa8709-b41f-4652-8a9a-196c8421a8c5"
+      },
+      {
+        "put": "va-state-parks:131da42a-4c9c-4cdf-8a90-2e9ac6ec3892"
+      },
+      {
+        "put": "va-state-parks:1446ef5a-6eaf-4014-86cb-f09026fb9b21"
+      },
+      {
+        "put": "va-state-parks:1493237b-f08c-4fc9-8255-0a00b2ebbe72"
+      },
+      {
+        "put": "va-state-parks:15676193-a954-4ade-9533-44a797d500be"
+      },
+      {
+        "put": "va-state-parks:15e2b196-e478-441c-bfa6-5ba163f978b2"
+      },
+      {
+        "put": "va-state-parks:15e849db-d9a5-44fe-86e4-beefdd31c8c8"
+      },
+      {
+        "put": "va-state-parks:16180aa6-c290-4050-a91c-3dbb5740a71c"
+      },
+      {
+        "put": "va-state-parks:16c54e97-19e8-4de4-85f2-3006962e0f28"
+      },
+      {
+        "put": "va-state-parks:16e7c6da-cc09-411c-a0f8-e4560a9a7529"
+      },
+      {
+        "put": "va-state-parks:1704a62b-8060-4977-a0e9-93d9f150be77"
+      },
+      {
+        "put": "va-state-parks:17652e9e-9329-406a-b422-0dea879cda21"
+      },
+      {
+        "put": "va-state-parks:1825b84e-fe42-41f0-9766-0a5e1a778aed"
+      },
+      {
+        "put": "va-state-parks:1871a697-79d0-4e51-955e-4c78e0cfdadc"
+      },
+      {
+        "put": "va-state-parks:1a0409e6-c213-4e39-bf08-1e2d8206ecf9"
+      },
+      {
+        "put": "va-state-parks:1a1020f8-3795-4d4b-9d1c-7c9b4c1fda2c"
+      },
+      {
+        "put": "va-state-parks:1a1d2464-5680-4f1a-92c2-ebd24eb3341d"
+      },
+      {
+        "put": "va-state-parks:1a5fd892-cc41-4d19-8155-92f76c8027fb"
+      },
+      {
+        "put": "va-state-parks:1aa2bcc5-f3ed-41d7-ac35-96d5009f9003"
+      },
+      {
+        "put": "va-state-parks:1aabbb81-1ae5-4ee7-9696-5e3b76d72abe"
+      },
+      {
+        "put": "va-state-parks:1b500938-b495-4c92-97d2-dfbba5646103"
+      },
+      {
+        "put": "va-state-parks:1c010a37-2eab-4076-a161-9ceea2c6f78d"
+      },
+      {
+        "put": "va-state-parks:1d852dbf-34b2-47d4-b7c1-4df092295e6f"
+      },
+      {
+        "put": "va-state-parks:1dd98068-ed18-4f2d-a2be-16d1e1cec7e9"
+      },
+      {
+        "put": "va-state-parks:1e006c51-5dbf-4ae1-9f31-c16822025a6b"
+      },
+      {
+        "put": "va-state-parks:1e48050f-c15f-4cfc-934b-8ca106883fad"
+      },
+      {
+        "put": "va-state-parks:1eb383ea-c882-4cec-b3a6-ab9f8d75587e"
+      },
+      {
+        "put": "va-state-parks:1ebe9d7d-65b6-402c-8a9b-4573f0892e53"
+      },
+      {
+        "put": "va-state-parks:1f5f7319-84a2-446d-8737-28da4a21cd60"
+      },
+      {
+        "put": "va-state-parks:213a6aa5-2a56-4525-bfd3-d4a765843fa4"
+      },
+      {
+        "put": "va-state-parks:220b6d9d-5d84-4b2f-947f-8bd3b6fd2f28"
+      },
+      {
+        "put": "va-state-parks:224fee65-ce73-40f0-b14f-537f2f5adaf5"
+      },
+      {
+        "put": "va-state-parks:2265d304-9227-442b-bf89-8e2b738cd235"
+      },
+      {
+        "put": "va-state-parks:236c0d69-8eab-4825-b85b-92f61830b714"
+      },
+      {
+        "put": "va-state-parks:240a5d9b-bdad-4524-89f4-84035c74a3d1"
+      },
+      {
+        "put": "va-state-parks:249f19e1-b68d-4d25-898e-970d2b8cdbd3"
+      },
+      {
+        "put": "va-state-parks:24eb1011-8e2e-4725-b84c-87cfb4621236"
+      },
+      {
+        "put": "va-state-parks:24eca724-0573-4645-81ff-09f9e8364b2b"
+      },
+      {
+        "put": "va-state-parks:2514f31f-a8f9-466a-ab59-5c86a3abfe29"
+      },
+      {
+        "put": "va-state-parks:25f827ad-cc1b-4f8f-8209-219f453f9cbe"
+      },
+      {
+        "put": "va-state-parks:263c6534-b074-48c0-9a83-a7364366876c"
+      },
+      {
+        "put": "va-state-parks:26e20c03-656f-4b09-a46a-a14f1d19d1c5"
+      },
+      {
+        "put": "va-state-parks:2781d616-5ac5-4644-89fb-05d27cd77cd6"
+      },
+      {
+        "put": "va-state-parks:28ded568-fd14-4d83-8a14-4a4fefd6f093"
+      },
+      {
+        "put": "va-state-parks:29bd1254-d126-4c4a-906c-3ce6e0cd2136"
+      },
+      {
+        "put": "va-state-parks:29be3d11-461f-4f21-8ac9-c3aa25b5f44a"
+      },
+      {
+        "put": "va-state-parks:2aaadb3a-22eb-43d0-b5ac-16caa265b65e"
+      },
+      {
+        "put": "va-state-parks:2b20224b-180f-41a6-b4dc-5844c3423f47"
+      },
+      {
+        "put": "va-state-parks:2b89e733-7736-4d0c-b4f9-c14d7413463c"
+      },
+      {
+        "put": "va-state-parks:2c79ecf0-8d28-4f98-96a4-91a173f4e9bb"
+      },
+      {
+        "put": "va-state-parks:2cbf2ab7-ff84-46a4-a558-3938e2d5b77a"
+      },
+      {
+        "put": "va-state-parks:2cca0078-e635-45ce-982d-3b1e14e9ab3c"
+      },
+      {
+        "put": "va-state-parks:2ce25521-e30c-4e10-9113-d9dd0ec55c78"
+      },
+      {
+        "put": "va-state-parks:2d0642f8-ae13-441d-9a29-26a263aa3be6"
+      },
+      {
+        "put": "va-state-parks:2d26f172-5e16-4e18-87b5-5db13b0cda76"
+      },
+      {
+        "put": "va-state-parks:2d43827b-a5e2-4350-b816-409a9a4719ca"
+      },
+      {
+        "put": "va-state-parks:2dc6bf0e-ad5b-4ca1-9dc6-a83b0c270c12"
+      },
+      {
+        "put": "va-state-parks:2e4d4159-08ee-4f3b-bc42-f3c418ff4e66"
+      },
+      {
+        "put": "va-state-parks:2e4dd0ca-2767-4ade-8fc3-bbe073ecc383"
+      },
+      {
+        "put": "va-state-parks:2eb1d41b-56f3-44f2-a14c-fe1c827a3a5e"
+      },
+      {
+        "put": "va-state-parks:30007248-0005-4bf2-8433-065e9d2df18a"
+      },
+      {
+        "put": "va-state-parks:30938c13-5176-4a94-9148-cebded2a16cb"
+      },
+      {
+        "put": "va-state-parks:31a6dd58-e2aa-4088-b151-744696316be1"
+      },
+      {
+        "put": "va-state-parks:31abf997-0ef5-42f4-8c94-1ef21091f11c"
+      },
+      {
+        "put": "va-state-parks:34942207-533f-4794-9909-39f93678c3bc"
+      },
+      {
+        "put": "va-state-parks:35059840-580b-47d7-a555-452ff9b6ff63"
+      },
+      {
+        "put": "va-state-parks:353a8fa5-8d38-4f99-a390-2670fdd0e115"
+      },
+      {
+        "put": "va-state-parks:35e55678-176b-4091-85d8-5aeb83208ef9"
+      },
+      {
+        "put": "va-state-parks:3613bf4d-a941-4e3d-befb-4e0c3b0b0ad2"
+      },
+      {
+        "put": "va-state-parks:3666094e-1126-4bb1-82b2-3ff44122af6f"
+      },
+      {
+        "put": "va-state-parks:3670ac96-992d-43d9-9fb6-3e7098dac670"
+      },
+      {
+        "put": "va-state-parks:36b465fe-e3df-4488-85aa-3e97b4664e82"
+      },
+      {
+        "put": "va-state-parks:36bf5e81-99a0-4454-a671-11f238a47f09"
+      },
+      {
+        "put": "va-state-parks:36cfe459-4e71-44c2-8138-bb5eec212af8"
+      },
+      {
+        "put": "va-state-parks:36d73faf-61a9-455a-b2ac-d93d08f5cecd"
+      },
+      {
+        "put": "va-state-parks:36e50b8a-1c98-4aba-98f9-aacc81bc5709"
+      },
+      {
+        "put": "va-state-parks:373be513-7475-4d1f-bdbf-e65fe06f1355"
+      },
+      {
+        "put": "va-state-parks:37603c65-530c-436b-bcc4-52da3e9cc21e"
+      },
+      {
+        "put": "va-state-parks:390b569f-1cc4-4c74-b6b3-7e9a0fbffef4"
+      },
+      {
+        "put": "va-state-parks:394902da-90f1-483c-b1ec-44dfac2c6c6b"
+      },
+      {
+        "put": "va-state-parks:398a7d38-d4fc-47f9-802e-75a42acb18b2"
+      },
+      {
+        "put": "va-state-parks:39b612c5-976a-443f-a109-21d9da811e32"
+      },
+      {
+        "put": "va-state-parks:39d45577-c8f3-46d0-89f9-8269a729206b"
+      },
+      {
+        "put": "va-state-parks:39f95224-7a7f-473b-885b-65be8c25df20"
+      },
+      {
+        "put": "va-state-parks:3c2910f3-adf8-42d3-859f-1188332adadb"
+      },
+      {
+        "put": "va-state-parks:3dafb065-0a2f-48dd-9443-4e0ff7a6ea0e"
+      },
+      {
+        "put": "va-state-parks:3dc23a38-5feb-47c0-8606-228427bab646"
+      },
+      {
+        "put": "va-state-parks:3de34833-b70c-4b6b-a0d6-6306e4e6101b"
+      },
+      {
+        "put": "va-state-parks:3e216b32-150b-4a78-9cbf-3c0874f194d1"
+      },
+      {
+        "put": "va-state-parks:3e695870-31ee-42b6-a330-ada6e5f9dcc7"
+      },
+      {
+        "put": "va-state-parks:3e72892f-4635-47f9-9bce-37023b3f52f8"
+      },
+      {
+        "put": "va-state-parks:3f2af411-c826-4218-9f57-1d4c99bf12c8"
+      },
+      {
+        "put": "va-state-parks:3f746501-2de6-400f-8022-f3d9bc2ed929"
+      },
+      {
+        "put": "va-state-parks:3fc039e1-f3c9-47b5-ae87-88b692da0034"
+      },
+      {
+        "put": "va-state-parks:3fff13cd-3989-4a59-8b76-fb8448b652d3"
+      },
+      {
+        "put": "va-state-parks:400cee8f-da48-4460-ba3b-6b81fca4237b"
+      },
+      {
+        "put": "va-state-parks:42634ce2-198d-433e-a8ef-0ce3e9c929df"
+      },
+      {
+        "put": "va-state-parks:426e36f0-a898-4755-a583-a34151b371b7"
+      },
+      {
+        "put": "va-state-parks:42d84886-ab25-4213-ba8b-e7e431400eb3"
+      },
+      {
+        "put": "va-state-parks:4346de7a-12d0-49d1-afb7-cd843b2f740b"
+      },
+      {
+        "put": "va-state-parks:444d84a5-32a9-413b-b3e2-80766ea7290d"
+      },
+      {
+        "put": "va-state-parks:451cacca-4c02-4c98-ae05-d61f47d6da56"
+      },
+      {
+        "put": "va-state-parks:458fd1c5-1bc6-4126-86e4-3db3f16cc594"
+      },
+      {
+        "put": "va-state-parks:46159cbd-d826-4c06-ab6d-24778ade426d"
+      },
+      {
+        "put": "va-state-parks:464d0497-b931-43d7-964a-9cccaa04932f"
+      },
+      {
+        "put": "va-state-parks:46da6acd-22e0-4610-a5f0-15cce67276b0"
+      },
+      {
+        "put": "va-state-parks:4711f3c7-8e68-449c-bc12-1be91c0b1326"
+      },
+      {
+        "put": "va-state-parks:474ba848-1dce-4a45-987d-08b5fa92e9c7"
+      },
+      {
+        "put": "va-state-parks:478105bc-dc04-4cba-8682-1351ff9869e2"
+      },
+      {
+        "put": "va-state-parks:486e1f5f-d533-416b-a472-65d06d5fb1a8"
+      },
+      {
+        "put": "va-state-parks:48f9c7fd-c576-451b-a2a0-c0268c09c7e7"
+      },
+      {
+        "put": "va-state-parks:49488a3b-9dd2-450f-bc40-527ae2889986"
+      },
+      {
+        "put": "va-state-parks:4997c2ed-d323-4aef-88ef-4e06f884b9ee"
+      },
+      {
+        "put": "va-state-parks:4abf4f98-62f8-4de0-a16c-3be32ce3bc0f"
+      },
+      {
+        "put": "va-state-parks:4b2fbd69-5957-4de5-aca4-2b338e09faea"
+      },
+      {
+        "put": "va-state-parks:4bc0a2ff-c013-47aa-8552-dcb9f2e284c7"
+      },
+      {
+        "put": "va-state-parks:4bed618b-4d86-482e-a230-634662f9b8ad"
+      },
+      {
+        "put": "va-state-parks:4bedb738-6172-4b32-b65c-e0cafe5ac3b4"
+      },
+      {
+        "put": "va-state-parks:4c995052-bff4-4cd4-9154-e90cf7c795ed"
+      },
+      {
+        "put": "va-state-parks:4cab0da5-9b87-4ebd-9f93-8889a36be6c7"
+      },
+      {
+        "put": "va-state-parks:4cb9a011-e623-4065-9c01-b8ad02c39410"
+      },
+      {
+        "put": "va-state-parks:4cfafeab-547d-4090-9869-25c936b1001d"
+      },
+      {
+        "put": "va-state-parks:4d162f67-e49d-4fc0-9761-55a08cb8c735"
+      },
+      {
+        "put": "va-state-parks:4d2fa8e3-41c6-4edc-9068-d0df4343d739"
+      },
+      {
+        "put": "va-state-parks:4d6ec3d9-f6d8-4a84-a42a-5ed5d84883f8"
+      },
+      {
+        "put": "va-state-parks:4eb0c8a0-f45b-4918-bf84-7a56e3611b65"
+      },
+      {
+        "put": "va-state-parks:4ff64587-03d9-48cf-b285-d40765072b7b"
+      },
+      {
+        "put": "va-state-parks:502f8b5b-5857-41d2-99f6-dfafd8bd2ff0"
+      },
+      {
+        "put": "va-state-parks:505c427c-8f79-4928-9040-12f658a37ebd"
+      },
+      {
+        "put": "va-state-parks:5072ca04-914c-4bcb-ba66-926bac70d825"
+      },
+      {
+        "put": "va-state-parks:5085b872-cfcc-48f2-8fb4-2663bc2dc766"
+      },
+      {
+        "put": "va-state-parks:511c75f7-7d18-404d-a0b4-5d0e43717c26"
+      },
+      {
+        "put": "va-state-parks:5193327a-7287-4565-a518-b064f8924139"
+      },
+      {
+        "put": "va-state-parks:51b207b4-0a5c-4679-938d-0b49bfd8aa1f"
+      },
+      {
+        "put": "va-state-parks:53192dd2-e595-4006-9bbc-fd93f9e5eabd"
+      },
+      {
+        "put": "va-state-parks:533e8a5f-c5b7-4220-9e46-bfeef54c3373"
+      },
+      {
+        "put": "va-state-parks:53ca41c7-a787-44af-a500-c8ab490700dc"
+      },
+      {
+        "put": "va-state-parks:53d5508f-71e6-4fbc-9ecf-17d4917f56d0"
+      },
+      {
+        "put": "va-state-parks:543ee125-7a5d-45d5-91f6-da69b1b86402"
+      },
+      {
+        "put": "va-state-parks:546bd59f-6ec3-4399-9ea0-0ca84c248dfe"
+      },
+      {
+        "put": "va-state-parks:54b5dd32-bf9c-4738-a8da-3489950c689d"
+      },
+      {
+        "put": "va-state-parks:54eb5e80-8e42-491b-9cc5-2c859c714529"
+      },
+      {
+        "put": "va-state-parks:55072d25-e40c-45e9-8ea3-681af1efeb8a"
+      },
+      {
+        "put": "va-state-parks:560a36e8-d5d4-46d6-a8ce-41f1f857a909"
+      },
+      {
+        "put": "va-state-parks:56d0ec02-8feb-4124-948d-652f0dbed983"
+      },
+      {
+        "put": "va-state-parks:5753fab4-ec9b-4164-b330-7d796484bc92"
+      },
+      {
+        "put": "va-state-parks:57bc7c21-0d75-449c-a212-f14ac060becf"
+      },
+      {
+        "put": "va-state-parks:57c64d1b-2288-4427-97ec-15a8dff84b3e"
+      },
+      {
+        "put": "va-state-parks:5895914e-04ac-46e2-9a0d-ba93e7428b28"
+      },
+      {
+        "put": "va-state-parks:58b74dd9-440f-4269-9f14-c15a0b0fdb0b"
+      },
+      {
+        "put": "va-state-parks:58d2e774-bfc8-4c4f-bdf0-1f611daca6d1"
+      },
+      {
+        "put": "va-state-parks:59b4aeac-9cc3-4bce-9f04-9ffc082d4aff"
+      },
+      {
+        "put": "va-state-parks:59b57634-9279-473b-b9f3-7bf13c09bddd"
+      },
+      {
+        "put": "va-state-parks:59e73dad-5562-4354-aba1-e3b7f3360680"
+      },
+      {
+        "put": "va-state-parks:5a3a3011-bcd5-4c96-83cd-5dda4fe426fd"
+      },
+      {
+        "put": "va-state-parks:5a5b54de-0388-4580-9272-3279ba69bff5"
+      },
+      {
+        "put": "va-state-parks:5a7e467e-be7d-40d9-a62a-26f3d0dc5350"
+      },
+      {
+        "put": "va-state-parks:5a8ca1b7-bbf2-4de5-92fa-0b4ba87f2ff4"
+      },
+      {
+        "put": "va-state-parks:5ac2fa48-2d91-4a9e-8fef-62983f733ff4"
+      },
+      {
+        "put": "va-state-parks:5ac8a879-3238-44b9-a2a9-46fe9b19f19f"
+      },
+      {
+        "put": "va-state-parks:5b5e6e98-2aa0-44d9-82be-285cd8b48743"
+      },
+      {
+        "put": "va-state-parks:5b6ee0e5-7682-4fa7-89cc-64ea1f136d36"
+      },
+      {
+        "put": "va-state-parks:5c43a1ac-493a-4215-a9f2-e9c42f68bcbb"
+      },
+      {
+        "put": "va-state-parks:5c5d487c-94e9-4c15-b799-07ba377e22a9"
+      },
+      {
+        "put": "va-state-parks:5c64ec50-7f19-484c-8d75-cd9a5f7bf754"
+      },
+      {
+        "put": "va-state-parks:5c684bcf-7f8d-4632-be0d-207ee35b0b20"
+      },
+      {
+        "put": "va-state-parks:5caa18e0-81a9-4962-b3df-f5e5b2bc4389"
+      },
+      {
+        "put": "va-state-parks:5d43ab66-b0df-462f-b2b0-253fb98e5f5b"
+      },
+      {
+        "put": "va-state-parks:5f726970-dd6d-420a-8ebb-2b9f601b5802"
+      },
+      {
+        "put": "va-state-parks:5f78a525-8476-4d70-b90d-5326921b9434"
+      },
+      {
+        "put": "va-state-parks:5fa2511f-d6a6-4436-aa31-8fefd39795d1"
+      },
+      {
+        "put": "va-state-parks:6131d0e6-fec8-4da1-97cb-ad9f05392b96"
+      },
+      {
+        "put": "va-state-parks:631b4974-6486-47e4-80fc-5831b7000335"
+      },
+      {
+        "put": "va-state-parks:635775d9-cf31-4f8b-84b1-cd94607cb9db"
+      },
+      {
+        "put": "va-state-parks:63ae6dcc-3c06-4d9f-b540-0210c0e21e37"
+      },
+      {
+        "put": "va-state-parks:63bd900e-30dc-40c4-979c-683e3192a9e0"
+      },
+      {
+        "put": "va-state-parks:64c8c0d7-347c-4850-a02b-f888bdb85a15"
+      },
+      {
+        "put": "va-state-parks:66885d29-5891-48d5-b8af-61cad3b38bc7"
+      },
+      {
+        "put": "va-state-parks:66e56f81-44f5-46e2-b339-58ee9081e466"
+      },
+      {
+        "put": "va-state-parks:66efc372-4a3b-4caa-997e-f27030a76f5d"
+      },
+      {
+        "put": "va-state-parks:675e26e4-cbf7-49ad-a8bc-a7fdd8642919"
+      },
+      {
+        "put": "va-state-parks:675f05fc-fe32-4c26-b4d5-305590135850"
+      },
+      {
+        "put": "va-state-parks:68a4416e-1e68-41df-8ad0-b77533aea862"
+      },
+      {
+        "put": "va-state-parks:691149a4-7e0f-4752-b969-25a673b8f13f"
+      },
+      {
+        "put": "va-state-parks:698e1767-a689-4850-976d-03c002f4d39d"
+      },
+      {
+        "put": "va-state-parks:69c2b4c1-0688-4ab7-8220-82e59229392d"
+      },
+      {
+        "put": "va-state-parks:69da2b30-17ec-4db4-8dad-54fb36408bd9"
+      },
+      {
+        "put": "va-state-parks:6a7745c6-4e3e-414c-a71b-1874d7602db4"
+      },
+      {
+        "put": "va-state-parks:6aa3c92b-5350-45b6-8d3a-a41176a44d61"
+      },
+      {
+        "put": "va-state-parks:6b3803cc-3c48-4b12-acc1-7af2f93333c6"
+      },
+      {
+        "put": "va-state-parks:6b57187c-ba62-4da4-99b1-82d8fcc729ec"
+      },
+      {
+        "put": "va-state-parks:6c80402e-dcbb-4d8a-9f2b-b34fb25b302f"
+      },
+      {
+        "put": "va-state-parks:6c9c4e87-ac99-4a4f-8c44-d68e974545be"
+      },
+      {
+        "put": "va-state-parks:6d137399-d083-4b33-bbb7-16c428d2de90"
+      },
+      {
+        "put": "va-state-parks:6e35f694-aede-416a-8e9d-df7a34763320"
+      },
+      {
+        "put": "va-state-parks:6e559cfe-e102-48c2-ae49-9b04f2bc587d"
+      },
+      {
+        "put": "va-state-parks:6e745a6c-95fc-4d15-90d1-f3d3763ea7e4"
+      },
+      {
+        "put": "va-state-parks:6e7fb18a-730b-4b10-b874-7b4abe0759a4"
+      },
+      {
+        "put": "va-state-parks:6f17ead6-bd38-490c-be74-9055d96355e5"
+      },
+      {
+        "put": "va-state-parks:704cb1e0-8cd9-4f0f-8da8-abaceeb11333"
+      },
+      {
+        "put": "va-state-parks:705b4536-eed3-49dd-a02f-448ad9329873"
+      },
+      {
+        "put": "va-state-parks:70928b46-a18b-4483-b2e0-b4283e02d410"
+      },
+      {
+        "put": "va-state-parks:70948026-c76f-41f9-af48-6d5a1347c11d"
+      },
+      {
+        "put": "va-state-parks:7167e197-c842-4671-b101-73523ec99797"
+      },
+      {
+        "put": "va-state-parks:72242bff-9ece-4287-8585-21d42e828222"
+      },
+      {
+        "put": "va-state-parks:74144b2c-49ef-4616-b516-779b71b3dbdd"
+      },
+      {
+        "put": "va-state-parks:74641dc7-2c6c-4b95-8dda-062ce63eda8f"
+      },
+      {
+        "put": "va-state-parks:7465e543-6d99-4604-8254-dce16665a462"
+      },
+      {
+        "put": "va-state-parks:74c435c6-a676-4e1e-9351-1d88acbb9ecf"
+      },
+      {
+        "put": "va-state-parks:74f57bf8-ba5d-4d8f-bef1-24ce4c8e9c68"
+      },
+      {
+        "put": "va-state-parks:74fd5674-f74d-4c0f-907a-c67e50c4098e"
+      },
+      {
+        "put": "va-state-parks:75d1a421-b024-4444-bb78-4407a0e6b74b"
+      },
+      {
+        "put": "va-state-parks:75fbee36-84c9-4ab8-8e58-25ca6844fcf8"
+      },
+      {
+        "put": "va-state-parks:7611b17d-0db6-4e6f-850d-936f5e0c2593"
+      },
+      {
+        "put": "va-state-parks:772147b3-cd59-4242-a761-a343bc4fc2b9"
+      },
+      {
+        "put": "va-state-parks:77592fd4-6c28-436e-a343-1c7dadf8c1b3"
+      },
+      {
+        "put": "va-state-parks:777dca5e-1bad-43bd-9091-61a544270ba2"
+      },
+      {
+        "put": "va-state-parks:779068bb-cf63-4d3d-a147-16b0644d6c58"
+      },
+      {
+        "put": "va-state-parks:78bcb36d-c9b6-42eb-9918-d1e5d18c307d"
+      },
+      {
+        "put": "va-state-parks:7983a10d-ae63-4d9a-9ec0-0b25040abd81"
+      },
+      {
+        "put": "va-state-parks:79b20ba4-0592-45e6-b59f-002cd00ce9b2"
+      },
+      {
+        "put": "va-state-parks:7ac52e09-3fab-4a03-b715-e09ddcdc7e35"
+      },
+      {
+        "put": "va-state-parks:7bfc3196-ba86-41f8-be2c-7b6d02e3c3f9"
+      },
+      {
+        "put": "va-state-parks:7c5c659b-2f37-45b8-8703-b6a97612ad20"
+      },
+      {
+        "put": "va-state-parks:7d8a0a37-b4d5-407e-acfa-58265fd1070a"
+      },
+      {
+        "put": "va-state-parks:7e05ae0c-2b73-4112-9b3b-52d72b37617d"
+      },
+      {
+        "put": "va-state-parks:7eea7ea5-340b-4968-a4a0-79d4bd33ceb0"
+      },
+      {
+        "put": "va-state-parks:7f43ec46-08cb-464d-9773-37beeac9f05e"
+      },
+      {
+        "put": "va-state-parks:7f43fed0-e2b4-45a5-b4a2-0cc529edc803"
+      },
+      {
+        "put": "va-state-parks:7f4501c9-dec6-4aa7-a60a-0ef55db1464a"
+      },
+      {
+        "put": "va-state-parks:8028ae93-8c51-4e8b-8c8a-4a97c1251600"
+      },
+      {
+        "put": "va-state-parks:802e5804-bcd5-4624-84c6-4bfc1a3f01ee"
+      },
+      {
+        "put": "va-state-parks:80c45d7e-750f-4dbc-9e6b-0ab15cc9f95d"
+      },
+      {
+        "put": "va-state-parks:81449e78-1061-4a34-bf94-edbecf114572"
+      },
+      {
+        "put": "va-state-parks:817d8f50-6d26-47fd-9b9f-bbfe1d836a26"
+      },
+      {
+        "put": "va-state-parks:8224b2d9-fbbc-434e-8f82-afe467d6cb71"
+      },
+      {
+        "put": "va-state-parks:829fe23d-d020-4057-999f-fac210c9f16f"
+      },
+      {
+        "put": "va-state-parks:8358f62a-26b9-43d7-8b7d-1749a0dde6ae"
+      },
+      {
+        "put": "va-state-parks:836eb70a-aa8b-4bbf-a6bb-21a353deb056"
+      },
+      {
+        "put": "va-state-parks:851afe31-06bf-4b4c-8c77-92a26f330f9d"
+      },
+      {
+        "put": "va-state-parks:8581dd1d-5c7d-4667-8250-419b8c5361c1"
+      },
+      {
+        "put": "va-state-parks:860bbcee-6a28-4a56-b473-6cdcac2a7fce"
+      },
+      {
+        "put": "va-state-parks:874de1cc-852a-42bd-8635-512b89891299"
+      },
+      {
+        "put": "va-state-parks:877a45bd-3bdd-4900-ad5d-557a214574fa"
+      },
+      {
+        "put": "va-state-parks:87ad924f-7066-4cac-9524-7b2b708453f6"
+      },
+      {
+        "put": "va-state-parks:87bbd855-b100-40da-99c2-02948bb1b2e3"
+      },
+      {
+        "put": "va-state-parks:87c8b145-a7d5-454e-9fa2-6beb5ed2f3de"
+      },
+      {
+        "put": "va-state-parks:8917d312-86f2-48ce-9b6d-4d21690d2437"
+      },
+      {
+        "put": "va-state-parks:896f4443-a7cd-4006-b943-1ce7788dd627"
+      },
+      {
+        "put": "va-state-parks:8a3cb90d-b8a7-4231-b678-d6279d65b5ac"
+      },
+      {
+        "put": "va-state-parks:8b1006c8-c3b6-4370-8c4b-27f257f92e65"
+      },
+      {
+        "put": "va-state-parks:8b7bde35-8a07-4cd5-9d0b-bd4aebf4ff07"
+      },
+      {
+        "put": "va-state-parks:8c89e57b-1937-4a5c-9e30-3469812268b5"
+      },
+      {
+        "put": "va-state-parks:8c939dde-5ecb-4fa3-896f-f3429560119a"
+      },
+      {
+        "put": "va-state-parks:8cab4aec-43f8-49c7-aca2-7feb536d5671"
+      },
+      {
+        "put": "va-state-parks:8cbb1617-0ec6-42ff-88ed-27031fd14e47"
+      },
+      {
+        "put": "va-state-parks:8cf931d9-db90-4a1f-b561-66fcb5f478c7"
+      },
+      {
+        "put": "va-state-parks:8f0af587-e8f2-4b72-8a23-0ed350b30e12"
+      },
+      {
+        "put": "va-state-parks:8f84243e-4931-4157-982a-ed9f91decdec"
+      },
+      {
+        "put": "va-state-parks:8fc1f31d-8d5a-4149-b237-2cb7efb6627f"
+      },
+      {
+        "put": "va-state-parks:900045bc-5b91-451d-911b-d1616f468022"
+      },
+      {
+        "put": "va-state-parks:907dada4-43f5-455d-8802-2e6975998418"
+      },
+      {
+        "put": "va-state-parks:908a6156-492e-45d5-9a2d-6360e644618a"
+      },
+      {
+        "put": "va-state-parks:9167330d-1c61-47db-969c-c33ba0bff5aa"
+      },
+      {
+        "put": "va-state-parks:916a89b9-bb29-45cd-8870-14b4a4be611e"
+      },
+      {
+        "put": "va-state-parks:92bdd363-da89-4a34-bf81-1e6f1346ed5f"
+      },
+      {
+        "put": "va-state-parks:9318cdb4-f153-4a94-ad4f-ce091fd2535f"
+      },
+      {
+        "put": "va-state-parks:94297ded-3d74-4fee-80cc-ce81b16e622d"
+      },
+      {
+        "put": "va-state-parks:944e1e3f-5b73-4508-9f77-ddecd75c7832"
+      },
+      {
+        "put": "va-state-parks:9454e73e-7134-4a09-91d8-71d9de3c5366"
+      },
+      {
+        "put": "va-state-parks:9461a099-8c50-4cdf-a65d-269a2f369a96"
+      },
+      {
+        "put": "va-state-parks:958add66-91c0-4b8b-be5e-1cf3eab14e1e"
+      },
+      {
+        "put": "va-state-parks:96303228-6a2c-463e-953a-ea977b0543ba"
+      },
+      {
+        "put": "va-state-parks:967ffa41-ac52-48d8-87bc-62c28fd56848"
+      },
+      {
+        "put": "va-state-parks:9696c57f-6cf0-415c-a56b-acd41553b9d7"
+      },
+      {
+        "put": "va-state-parks:97ad637b-00ea-4478-b914-a64a0bdbfaa6"
+      },
+      {
+        "put": "va-state-parks:97f4583e-3e17-4d79-85fc-901cd7bbed5f"
+      },
+      {
+        "put": "va-state-parks:98f0b94b-6c1a-4abd-9a61-fcbae137bc9b"
+      },
+      {
+        "put": "va-state-parks:9a45fc74-ef8c-4c8c-bd11-89d54a9be4cd"
+      },
+      {
+        "put": "va-state-parks:9af8317a-af07-4171-86e3-e43903459100"
+      },
+      {
+        "put": "va-state-parks:9b00edf8-ad1c-4e5a-81aa-8913e9629ffb"
+      },
+      {
+        "put": "va-state-parks:9b21c167-99f0-4638-99f7-c1586c4ac0af"
+      },
+      {
+        "put": "va-state-parks:9b5dd9c3-98a3-4078-a5c2-713fa9a3b38f"
+      },
+      {
+        "put": "va-state-parks:9c4f7af7-2bda-43b9-bea8-85ceb44c1ae7"
+      },
+      {
+        "put": "va-state-parks:9c9cb3ce-5257-4fb1-8e0a-adf63818bbc4"
+      },
+      {
+        "put": "va-state-parks:9cf87de2-a812-4018-88e7-83c801ab7402"
+      },
+      {
+        "put": "va-state-parks:9d85649f-25d2-49a7-9fb6-64b8c51e5f53"
+      },
+      {
+        "put": "va-state-parks:9dbf3d9e-32f3-440f-aae8-d94cc89c8d8c"
+      },
+      {
+        "put": "va-state-parks:9e3009d8-4aa8-481b-8ee8-626ef75aa405"
+      },
+      {
+        "put": "va-state-parks:9e6eeeb6-69a5-40f0-ab5f-527dc6122e51"
+      },
+      {
+        "put": "va-state-parks:9fc2ced4-30a6-4ab7-b5d7-7cee019413d0"
+      },
+      {
+        "put": "va-state-parks:9fc47ab3-2dce-4062-8b07-6469bbd51490"
+      },
+      {
+        "put": "va-state-parks:a0721e0d-cc50-4c03-812d-bf1640c82341"
+      },
+      {
+        "put": "va-state-parks:a091ef6f-0f08-4d38-8e5a-24209d50a16a"
+      },
+      {
+        "put": "va-state-parks:a12b59c2-7fe8-45f7-ae2f-d22f32099ba5"
+      },
+      {
+        "put": "va-state-parks:a2985d16-dc7c-4dd5-9081-508d71ed20a2"
+      },
+      {
+        "put": "va-state-parks:a3017fd1-0053-4d89-bb21-bf12e7fcf154"
+      },
+      {
+        "put": "va-state-parks:a39db1e2-9434-44d7-be5a-98fd3ab71174"
+      },
+      {
+        "put": "va-state-parks:a3a572b0-dad7-448c-852d-5893660f596f"
+      },
+      {
+        "put": "va-state-parks:a3bbed25-e021-4f60-a047-fc6354418816"
+      },
+      {
+        "put": "va-state-parks:a3e5457b-ee6b-45f5-a5f9-64c46b623665"
+      },
+      {
+        "put": "va-state-parks:a43996aa-e217-44a9-a5fe-82c67863f3e4"
+      },
+      {
+        "put": "va-state-parks:a58b753e-6725-4ac5-b09b-26de5d95be32"
+      },
+      {
+        "put": "va-state-parks:a5a2e17d-b264-49ef-a3bb-7bea9750776b"
+      },
+      {
+        "put": "va-state-parks:a74d4645-c827-4843-8378-a9b015045730"
+      },
+      {
+        "put": "va-state-parks:a8db4251-54cf-41cf-9b94-264b4ca5748e"
+      },
+      {
+        "put": "va-state-parks:a9cde7e7-2a4b-4b82-bc65-06700b9efb94"
+      },
+      {
+        "put": "va-state-parks:a9e02f4f-3806-4ce8-9ec8-ba8a4473db94"
+      },
+      {
+        "put": "va-state-parks:aab5c461-cad7-4eba-84fc-ffcf1d7495fa"
+      },
+      {
+        "put": "va-state-parks:ab26563d-216a-47a5-b1dc-349dcd31ed80"
+      },
+      {
+        "put": "va-state-parks:ab3dadc9-4df0-419c-88cd-0258e2f92dab"
+      },
+      {
+        "put": "va-state-parks:abbac5f7-d771-4e0c-83c0-284226aad382"
+      },
+      {
+        "put": "va-state-parks:ac094ccb-607b-40ed-92a3-c9bcde9582fc"
+      },
+      {
+        "put": "va-state-parks:acb34f8f-d8b0-4b05-8209-d404d45a09a3"
+      },
+      {
+        "put": "va-state-parks:ad91b137-2515-405b-8078-7282b904c15f"
+      },
+      {
+        "put": "va-state-parks:ae323c44-ed0f-4059-976a-defdb3305e5f"
+      },
+      {
+        "put": "va-state-parks:aeadd97a-220c-4214-9dbb-c829f954fd42"
+      },
+      {
+        "put": "va-state-parks:af659372-334f-4412-82e2-31b457545901"
+      },
+      {
+        "put": "va-state-parks:b024b3ae-82ee-442a-894e-967fa9f2cae9"
+      },
+      {
+        "put": "va-state-parks:b0db684d-b6cb-4362-bfce-e00276f5aabf"
+      },
+      {
+        "put": "va-state-parks:b111742f-7f2b-4c04-9808-4fa8f3420db0"
+      },
+      {
+        "put": "va-state-parks:b1451d9a-7af2-4a2d-9e75-5c88db20f2cd"
+      },
+      {
+        "put": "va-state-parks:b5194d60-850a-46ee-aad2-992309933487"
+      },
+      {
+        "put": "va-state-parks:b5c70ad3-081f-4a35-bca0-9e4fed7a1c51"
+      },
+      {
+        "put": "va-state-parks:b624ad50-9952-4e6b-840d-dfc86f99ac5e"
+      },
+      {
+        "put": "va-state-parks:b8521597-853c-4e3f-b819-d7b2aba3258d"
+      },
+      {
+        "put": "va-state-parks:b8d9555f-d1e3-4694-b5eb-236299ba0d4a"
+      },
+      {
+        "put": "va-state-parks:b96d60b7-4a19-42d6-b7b0-71ef4938b2fd"
+      },
+      {
+        "put": "va-state-parks:b971feda-bfdf-4f3d-be3f-4b2785a6f9f6"
+      },
+      {
+        "put": "va-state-parks:ba2a12dd-7990-4fa4-acff-df9f0d350f39"
+      },
+      {
+        "put": "va-state-parks:baa4c6b6-878c-469d-8a46-7e5a09a60f10"
+      },
+      {
+        "put": "va-state-parks:babca3f4-d81a-4ba4-bca3-b819043ccdd7"
+      },
+      {
+        "put": "va-state-parks:bac2a2bc-1ce0-4dd3-b882-7d842a2c8fd0"
+      },
+      {
+        "put": "va-state-parks:bbbd7f24-56dc-44ad-9bbf-b209e552ea95"
+      },
+      {
+        "put": "va-state-parks:bc523656-0937-447d-aad7-05a88a783edd"
+      },
+      {
+        "put": "va-state-parks:bcf8896f-3636-4327-86a5-32c5c3e85b3f"
+      },
+      {
+        "put": "va-state-parks:be3da755-a74a-4884-80f1-c49cefa3f7cd"
+      },
+      {
+        "put": "va-state-parks:be764288-7282-42d6-8472-cd3458a668ab"
+      },
+      {
+        "put": "va-state-parks:befb5340-ac30-467a-9196-b1d69813f085"
+      },
+      {
+        "put": "va-state-parks:bf3a7184-b060-41b8-8b62-e92a758eae5f"
+      },
+      {
+        "put": "va-state-parks:bfacdefd-1b0c-4155-8d61-598b579f7e34"
+      },
+      {
+        "put": "va-state-parks:bfbc7cb4-be0c-4e06-9d08-dd9d6a5f0d26"
+      },
+      {
+        "put": "va-state-parks:bfe1b1ca-e173-4a14-8f4a-e49b88f70b82"
+      },
+      {
+        "put": "va-state-parks:c015c6a8-ef36-4c6e-8963-7d86d0f51b00"
+      },
+      {
+        "put": "va-state-parks:c01c0060-4a3c-41b4-8055-d0cdd6ee4a77"
+      },
+      {
+        "put": "va-state-parks:c01e70cf-cd14-4ade-8ff0-32a160ba501d"
+      },
+      {
+        "put": "va-state-parks:c0639175-c2fd-4133-ab98-deae3374ff13"
+      },
+      {
+        "put": "va-state-parks:c0beb7bd-565b-42ee-8a98-605ffa40e820"
+      },
+      {
+        "put": "va-state-parks:c1a6757d-4801-4f7c-be09-08666be2303f"
+      },
+      {
+        "put": "va-state-parks:c1c7a6c3-936b-47ca-930a-c4507e88e27d"
+      },
+      {
+        "put": "va-state-parks:c2319bc5-b9db-4668-b0c9-47058317b6f1"
+      },
+      {
+        "put": "va-state-parks:c2467a02-529b-43fe-b514-7f7b2d733e5d"
+      },
+      {
+        "put": "va-state-parks:c267fd4e-29f7-4ebe-9109-dc1fa8af56a0"
+      },
+      {
+        "put": "va-state-parks:c35baa44-3773-49c8-85ce-866c87f9b3d7"
+      },
+      {
+        "put": "va-state-parks:c3e40c3c-a43d-4979-8198-c592a9831e26"
+      },
+      {
+        "put": "va-state-parks:c40b2519-e29e-4767-838a-2b6543bad6d5"
+      },
+      {
+        "put": "va-state-parks:c44a7b34-76d6-42b3-802f-275114fd9d7d"
+      },
+      {
+        "put": "va-state-parks:c4b14836-5ef5-4010-91a7-6977ee581a4e"
+      },
+      {
+        "put": "va-state-parks:c51bad93-578c-4981-88b6-30732f96b8da"
+      },
+      {
+        "put": "va-state-parks:c530a51c-c339-44ff-9835-96ba0a6d144b"
+      },
+      {
+        "put": "va-state-parks:c546d75e-824d-4840-bef9-f39a44606898"
+      },
+      {
+        "put": "va-state-parks:c68d8655-ffaa-48dd-b8d5-463744c68020"
+      },
+      {
+        "put": "va-state-parks:c7f6c3da-fd6a-413b-b2a1-9936bda1af61"
+      },
+      {
+        "put": "va-state-parks:c885cc6e-5975-401a-90ee-9a56adf1b4c2"
+      },
+      {
+        "put": "va-state-parks:c89c7915-3151-42fe-92f4-424387e0f9df"
+      },
+      {
+        "put": "va-state-parks:c8b64102-859a-4a8d-bc99-9cbc8109935d"
+      },
+      {
+        "put": "va-state-parks:c8dc791d-fb3a-449e-8d66-54289c46dc37"
+      },
+      {
+        "put": "va-state-parks:caabd33b-7c9c-405e-ad78-f820dc89579e"
+      },
+      {
+        "put": "va-state-parks:cb69fedb-15c8-4588-b30b-03c0d0c96b85"
+      },
+      {
+        "put": "va-state-parks:cbcc4a0e-11d7-4e6f-bc7c-b45fd461d5b0"
+      },
+      {
+        "put": "va-state-parks:cbf9594c-598f-489e-8523-127a222d2ac6"
+      },
+      {
+        "put": "va-state-parks:cc922115-405d-42ed-9acb-29c88c98bcbc"
+      },
+      {
+        "put": "va-state-parks:ccaff515-c76b-45ca-b715-658a2bbc5112"
+      },
+      {
+        "put": "va-state-parks:cd8ba64c-d545-458d-8b30-4191ebdbebd9"
+      },
+      {
+        "put": "va-state-parks:cdf53a4c-74cf-43fe-96db-2353ab63f423"
+      },
+      {
+        "put": "va-state-parks:ce10766a-7874-44ea-a07d-402a0592ed11"
+      },
+      {
+        "put": "va-state-parks:ce6081da-d9c0-400a-b68c-157e8716426d"
+      },
+      {
+        "put": "va-state-parks:cedc300c-1c5d-4043-861f-54cea1f22cac"
+      },
+      {
+        "put": "va-state-parks:cf48fa2a-5823-4d6a-94c6-8ac9cfc67a55"
+      },
+      {
+        "put": "va-state-parks:d0483cbb-c94d-45b3-b0e8-1467c272d535"
+      },
+      {
+        "put": "va-state-parks:d05b26de-23ad-4fb9-839f-7e493f5074ac"
+      },
+      {
+        "put": "va-state-parks:d12096fa-0880-4d01-aed2-32751643c81e"
+      },
+      {
+        "put": "va-state-parks:d140fac5-f22a-4c0b-95a1-bfe8b33726e8"
+      },
+      {
+        "put": "va-state-parks:d1d2d0bb-41c0-4957-b0c8-f2a6f232acf4"
+      },
+      {
+        "put": "va-state-parks:d2709059-9a77-4404-bf4f-eba2938435a3"
+      },
+      {
+        "put": "va-state-parks:d2c1fdb0-81ac-4c51-960c-24925ba9b7d3"
+      },
+      {
+        "put": "va-state-parks:d31a158c-feec-457a-9d04-821f7a1d07ac"
+      },
+      {
+        "put": "va-state-parks:d3819770-bfb3-4fb2-9faf-a8e64cc84de0"
+      },
+      {
+        "put": "va-state-parks:d4785022-93a8-4237-8154-dcce3233f7c5"
+      },
+      {
+        "put": "va-state-parks:d4788e2c-75fc-4675-8161-9b7e993dcbd1"
+      },
+      {
+        "put": "va-state-parks:d49863e7-5ed3-41fd-8e93-f584e99aeac8"
+      },
+      {
+        "put": "va-state-parks:d4e514ad-6e68-49a3-bacf-df3484a3d6f4"
+      },
+      {
+        "put": "va-state-parks:d5656b98-a292-4273-abab-5153bd4e7599"
+      },
+      {
+        "put": "va-state-parks:d5c520eb-702b-4fb6-b166-67c365818ee0"
+      },
+      {
+        "put": "va-state-parks:d6da5714-ce71-4a60-9585-b1ac2cf54825"
+      },
+      {
+        "put": "va-state-parks:d6eb51bf-c870-470b-b72d-cc5460a21caf"
+      },
+      {
+        "put": "va-state-parks:d719ac0b-94f4-4549-9dba-d18cda0cf88a"
+      },
+      {
+        "put": "va-state-parks:d73e2397-8217-4337-be49-c1285c4f49f5"
+      },
+      {
+        "put": "va-state-parks:d87fd486-bb05-4054-8868-1d2512f42f45"
+      },
+      {
+        "put": "va-state-parks:d8ef5fec-a481-49f8-9f14-8c4fb8a9dc5c"
+      },
+      {
+        "put": "va-state-parks:da1469a5-f41a-41ed-aecd-e7d107d2ee5c"
+      },
+      {
+        "put": "va-state-parks:dacc83c6-7af8-4777-b096-b96b7dfddef0"
+      },
+      {
+        "put": "va-state-parks:dc1c0ecb-8d56-4f62-8574-a0ecef57bc2e"
+      },
+      {
+        "put": "va-state-parks:dcaec699-10e2-4b7e-bed9-9c163c63ca49"
+      },
+      {
+        "put": "va-state-parks:dcd05573-7861-4549-bc52-e43287680046"
+      },
+      {
+        "put": "va-state-parks:dd0077c3-26a9-4115-bc2f-77a7bcf994b0"
+      },
+      {
+        "put": "va-state-parks:ddd4fe3e-099c-47b8-9843-1be7ea362e04"
+      },
+      {
+        "put": "va-state-parks:dde9d397-9306-439a-b02c-86df3a7ee552"
+      },
+      {
+        "put": "va-state-parks:e04ad163-33a8-43fa-9243-d3d3e1e15578"
+      },
+      {
+        "put": "va-state-parks:e0be47c5-9575-408a-b080-9b7d711627b3"
+      },
+      {
+        "put": "va-state-parks:e0be72a0-107d-43f2-b70d-b1af492ab9e0"
+      },
+      {
+        "put": "va-state-parks:e10376e6-620c-4831-8ee1-6a0c463b3091"
+      },
+      {
+        "put": "va-state-parks:e2401968-31b0-4da0-86a8-c62cb4a2526e"
+      },
+      {
+        "put": "va-state-parks:e2817d9d-ea4f-4c69-8bde-a14a88df52e3"
+      },
+      {
+        "put": "va-state-parks:e3985704-69db-45f2-bd3f-7f659945d1d3"
+      },
+      {
+        "put": "va-state-parks:e49c8af3-bc53-4d80-813d-dc58867b4b5e"
+      },
+      {
+        "put": "va-state-parks:e56ff1c8-d322-4eee-8fe2-5894d4fc08b2"
+      },
+      {
+        "put": "va-state-parks:e5a2954e-96cb-4d07-b1a4-2278e081a215"
+      },
+      {
+        "put": "va-state-parks:e6250350-c30b-4fe8-a940-76779ba1ab43"
+      },
+      {
+        "put": "va-state-parks:e70d6067-f03d-43e5-81d9-210949b28f90"
+      },
+      {
+        "put": "va-state-parks:e7f599af-7646-42f2-b90f-9b7a0e3aea24"
+      },
+      {
+        "put": "va-state-parks:e7fc90f8-608f-402f-85ad-c0cc0a3b3d28"
+      },
+      {
+        "put": "va-state-parks:e86bd6ac-3d35-4b1c-ad77-3deaa3574c3c"
+      },
+      {
+        "put": "va-state-parks:e8a032a7-0056-4631-9101-6a756d45a923"
+      },
+      {
+        "put": "va-state-parks:e9155e60-2d1c-4aa3-8f67-f9cf3c3ea608"
+      },
+      {
+        "put": "va-state-parks:e9aa6e3d-66d3-4e25-b403-935654302208"
+      },
+      {
+        "put": "va-state-parks:ea053d7f-d545-41ad-ac85-9d2f02b9303e"
+      },
+      {
+        "put": "va-state-parks:ebf94e6e-2190-45b2-9ed1-94854367809a"
+      },
+      {
+        "put": "va-state-parks:ec903cec-f251-4e07-9d34-7ab820ea01a6"
+      },
+      {
+        "put": "va-state-parks:eccae18c-63af-4c11-bd06-d7c3725e1cc3"
+      },
+      {
+        "put": "va-state-parks:ecda2184-0478-4006-a595-1492a8153fa4"
+      },
+      {
+        "put": "va-state-parks:ecfc1c93-f225-4159-98ef-91b3d9dc2866"
+      },
+      {
+        "put": "va-state-parks:ee6a3b50-7e38-4975-bc78-c39e275b7b8a"
+      },
+      {
+        "put": "va-state-parks:f05eddb6-a43e-4ed5-830f-91c8933d27a9"
+      },
+      {
+        "put": "va-state-parks:f0e3c48f-7478-4d61-b2b8-c9929ccdb439"
+      },
+      {
+        "put": "va-state-parks:f123cdc3-142e-4372-b6b7-dee5b969f697"
+      },
+      {
+        "put": "va-state-parks:f203291f-3627-4f3f-9c64-ca90159962c4"
+      },
+      {
+        "put": "va-state-parks:f2a9360c-477d-4ec7-b199-1f11e56a7801"
+      },
+      {
+        "put": "va-state-parks:f36d0965-ff76-4a8e-bcd8-a172384236de"
+      },
+      {
+        "put": "va-state-parks:f42c754e-0d15-42bc-b21c-052214518b31"
+      },
+      {
+        "put": "va-state-parks:f46405a5-d5b1-4449-a27a-667b1c2cfd08"
+      },
+      {
+        "put": "va-state-parks:f510ac03-c358-4102-b0df-e33eff1997e8"
+      },
+      {
+        "put": "va-state-parks:f719cae2-5276-4b59-8d26-af54e8c6ff82"
+      },
+      {
+        "put": "va-state-parks:f73d7459-731d-4940-be91-91bdc2686118"
+      },
+      {
+        "put": "va-state-parks:f791b7d7-abdc-4c78-b105-a3632e79212e"
+      },
+      {
+        "put": "va-state-parks:f79b4586-4556-4ac1-bead-508f98c27c86"
+      },
+      {
+        "put": "va-state-parks:f8af7f78-942f-4826-ba2b-9e0275c0d450"
+      },
+      {
+        "put": "va-state-parks:f904e09a-2c5d-441e-a327-76a29cadff75"
+      },
+      {
+        "put": "va-state-parks:f98eb59c-18bd-4eab-ad00-79f72acd38ea"
+      },
+      {
+        "put": "va-state-parks:f9bc875b-86a5-40bb-8c02-4ef386cd8b25"
+      },
+      {
+        "put": "va-state-parks:fa1ce66b-ed67-4bc4-b877-19f75ea19b36"
+      },
+      {
+        "put": "va-state-parks:fb9cc2f8-f4e7-43d3-b4dd-9e64c547e5ef"
+      },
+      {
+        "put": "va-state-parks:fc85f414-b32e-4888-9279-b04620d839cb"
+      }
+    ],
+    "verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "f91b5bb15330417956ac0b117157cdbd6fd11fe3727a758a8b77b6e2dc991b1c"
+    },
+    "upload_id": "cmw1ke1rc05oi1mn7padeltbg",
+    "finished_at": "2026-11-04T03:36:21.632602Z"
+  },
+  "archived_plan": ".trail-state/published-plans/state-parks-statewide-2026-11-03.json"
+}

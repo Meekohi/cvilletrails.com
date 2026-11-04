@@ -8,11 +8,14 @@
   "Belle Isle State Park": {
     "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
     "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
-    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/belle-isle-avenza-map.pdf"
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/belle-isle-avenza-map.pdf",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/belle-isle"
   },
   "Breaks Interstate Park": {
     "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
-    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps"
+    "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+    "visitor_guide": "https://www.breakspark.com/",
+    "official_map_page": "https://www.breakspark.com/parkmap"
   },
   "Caledon State Park": {
     "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
@@ -188,7 +191,8 @@
   "Shenandoah River State Park": {
     "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
     "maps_directory": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
-    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/shenandoah-river-geo-map.pdf"
+    "georeferenced_pdf": "https://www.dcr.virginia.gov/state-parks/document/data/shenandoah-river-geo-map.pdf",
+    "visitor_guide": "https://www.dcr.virginia.gov/state-parks/shenandoah-river"
   },
   "Sky Meadows State Park": {
     "gis": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",

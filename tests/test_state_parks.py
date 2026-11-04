@@ -12,7 +12,7 @@ class StateParkTests(unittest.TestCase):
         return {'type':'Feature','id':1,'properties':{'GlobalID':'06c108a3-56d9-4027-bca0-7d40cd7992ab','LABEL':'Lake Anna State Park','Trail_Name':'  Campground  Walkway Trail ','Trail_User':'H','BlazeColor':'None','Status':'Open','outside_park':'No','Restrictions':'No',**props},'geometry':{'type':'LineString','coordinates':[[-77.8,38.1],[-77.81,38.11]]}}
 
     def test_open_is_not_enough_for_proposed_staff_water_or_offsite(self):
-        for fields in [{'Trail_Name':'Proposed/Reroute Trail'},{'Trail_User':'Staff'},{'Trail_User':None},{'Status':None},{'Status':'Not Open'},{'Surfacing':'Water'},{'outside_park':'Yes'},{'Restrictions':None}]:
+        for fields in [{'Trail_Name':'Proposed/Reroute Trail'},{'Trail_Name':'Potomac Heritage Trail - closed section'},{'Trail_User':'Staff'},{'Trail_User':None},{'Status':None},{'Status':'Not Open'},{'Surfacing':'Water'},{'outside_park':'Yes'},{'Restrictions':None}]:
             self.assertTrue(hold_reasons(self.feature(**fields)),fields)
         self.assertFalse(hold_reasons(self.feature()))
 
@@ -41,6 +41,21 @@ class StateParkTests(unittest.TestCase):
         old=['case',['==',['get','system_id'],'fortunes-cove'],'yellow','tan']
         before={'layers':[{'id':'strava-trail','source-layer':'Strava_Sidetrails','paint':{'line-color':old,'line-width':4}},{'id':'rivanna-trail','paint':{'line-color':'green'}}]}
         after=color_style(before);self.assertEqual(after['layers'][0]['paint']['line-color'][-1],old);self.assertEqual(after['layers'][1],before['layers'][1]);self.assertEqual(color_style(after),after);self.assertEqual(before['layers'][0]['paint']['line-color'],old)
+
+    def test_shared_palette_and_explicit_hold_keep_mixed_blaze_out(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            d=Path(tmp);write_json(d/'overrides.json',{})
+            gid='76fe465a-0cd7-4f7c-83a1-c27735893ea0'
+            config={'_directory':d,'system_ids':['lake-anna'],'palette':{'none':'#000000'},
+                    'approved_parks':{'Lake Anna State Park':{'system_id':'lake-anna'}},
+                    'held_features':{gid:'Mixed blaze needs review'},'sources':[{'id':'trails-gis','url':'https://example.com/official'}]}
+            source={'type':'FeatureCollection','features':[self.feature(),self.feature(GlobalID=gid,BlazeColor='Orange, White')]}
+            result=normalize_trails(source,config,'trails-gis')
+            self.assertEqual(len(result['features']),1)
+            self.assertEqual(result['features'][0]['properties']['display_color'],'#000000')
+            self.assertIn('Mixed blaze needs review',result['ingest_report']['held'][0]['reasons'])
+            source['features'].pop()
+            with self.assertRaisesRegex(ValueError,'held DCR feature disappeared'):normalize_trails(source,config,'trails-gis')
 
 
 if __name__=='__main__':unittest.main()

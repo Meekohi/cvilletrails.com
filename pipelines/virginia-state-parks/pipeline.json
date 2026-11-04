@@ -1,7 +1,46 @@
 {
   "id": "virginia-state-parks",
   "system_ids": [
-    "lake-anna"
+    "lake-anna",
+    "dcr-bear-creek-lake-state-park",
+    "dcr-belle-isle-state-park",
+    "dcr-breaks-interstate-park",
+    "dcr-caledon-state-park",
+    "dcr-chippokes-state-park",
+    "dcr-claytor-lake-state-park",
+    "dcr-clinch-river-state-park",
+    "dcr-douthat-state-park",
+    "dcr-fairy-stone-state-park",
+    "dcr-false-cape-state-park",
+    "dcr-first-landing-state-park",
+    "dcr-grayson-highlands-state-park",
+    "dcr-high-bridge-trail-state-park",
+    "dcr-holliday-lake-state-park",
+    "dcr-hungry-mother-state-park",
+    "dcr-james-river-state-park",
+    "dcr-kiptopeke-state-park",
+    "dcr-leesylvania-state-park",
+    "dcr-machicomoco-state-park",
+    "dcr-mason-neck-state-park",
+    "dcr-natural-bridge-state-park",
+    "dcr-natural-tunnel-state-park",
+    "dcr-new-river-trail-state-park",
+    "dcr-occoneechee-state-park",
+    "dcr-pocahontas-state-park",
+    "dcr-powhatan-state-park",
+    "dcr-sailors-creek-battlefield-historic-state-park",
+    "dcr-seven-bends-state-park",
+    "dcr-shenandoah-river-state-park",
+    "dcr-sky-meadows-state-park",
+    "dcr-smith-mountain-lake-state-park",
+    "dcr-staunton-river-battlefield-state-park",
+    "dcr-staunton-river-state-park",
+    "dcr-sweet-run-state-park",
+    "dcr-twin-lakes-state-park",
+    "dcr-westmoreland-state-park",
+    "dcr-widewater-state-park",
+    "dcr-wilderness-road-state-park",
+    "dcr-york-river-state-park"
   ],
   "sources": [
     {
@@ -14,7 +53,48 @@
       "id": "maps-directory",
       "kind": "html",
       "label": "Virginia State Parks official map directory",
-      "url": "https://www.dcr.virginia.gov/state-parks/park-trail-maps"
+      "url": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+      "system_ids": [
+        "lake-anna",
+        "dcr-bear-creek-lake-state-park",
+        "dcr-belle-isle-state-park",
+        "dcr-caledon-state-park",
+        "dcr-chippokes-state-park",
+        "dcr-claytor-lake-state-park",
+        "dcr-clinch-river-state-park",
+        "dcr-douthat-state-park",
+        "dcr-fairy-stone-state-park",
+        "dcr-false-cape-state-park",
+        "dcr-first-landing-state-park",
+        "dcr-grayson-highlands-state-park",
+        "dcr-high-bridge-trail-state-park",
+        "dcr-holliday-lake-state-park",
+        "dcr-hungry-mother-state-park",
+        "dcr-james-river-state-park",
+        "dcr-kiptopeke-state-park",
+        "dcr-leesylvania-state-park",
+        "dcr-machicomoco-state-park",
+        "dcr-mason-neck-state-park",
+        "dcr-natural-bridge-state-park",
+        "dcr-natural-tunnel-state-park",
+        "dcr-new-river-trail-state-park",
+        "dcr-occoneechee-state-park",
+        "dcr-pocahontas-state-park",
+        "dcr-powhatan-state-park",
+        "dcr-sailors-creek-battlefield-historic-state-park",
+        "dcr-seven-bends-state-park",
+        "dcr-shenandoah-river-state-park",
+        "dcr-sky-meadows-state-park",
+        "dcr-smith-mountain-lake-state-park",
+        "dcr-staunton-river-battlefield-state-park",
+        "dcr-staunton-river-state-park",
+        "dcr-sweet-run-state-park",
+        "dcr-twin-lakes-state-park",
+        "dcr-westmoreland-state-park",
+        "dcr-widewater-state-park",
+        "dcr-wilderness-road-state-park",
+        "dcr-york-river-state-park"
+      ]
     },
     {
       "id": "lake-anna-visitor",
@@ -47,7 +127,399 @@
       "id": "pet-policy",
       "kind": "html",
       "label": "Virginia State Parks pet policy",
-      "url": "https://www.dcr.virginia.gov/state-parks/pets"
+      "url": "https://www.dcr.virginia.gov/state-parks/pets",
+      "system_ids": [
+        "lake-anna",
+        "dcr-bear-creek-lake-state-park",
+        "dcr-belle-isle-state-park",
+        "dcr-caledon-state-park",
+        "dcr-chippokes-state-park",
+        "dcr-claytor-lake-state-park",
+        "dcr-clinch-river-state-park",
+        "dcr-douthat-state-park",
+        "dcr-fairy-stone-state-park",
+        "dcr-false-cape-state-park",
+        "dcr-first-landing-state-park",
+        "dcr-grayson-highlands-state-park",
+        "dcr-high-bridge-trail-state-park",
+        "dcr-holliday-lake-state-park",
+        "dcr-hungry-mother-state-park",
+        "dcr-james-river-state-park",
+        "dcr-kiptopeke-state-park",
+        "dcr-leesylvania-state-park",
+        "dcr-machicomoco-state-park",
+        "dcr-mason-neck-state-park",
+        "dcr-natural-bridge-state-park",
+        "dcr-natural-tunnel-state-park",
+        "dcr-new-river-trail-state-park",
+        "dcr-occoneechee-state-park",
+        "dcr-pocahontas-state-park",
+        "dcr-powhatan-state-park",
+        "dcr-sailors-creek-battlefield-historic-state-park",
+        "dcr-seven-bends-state-park",
+        "dcr-shenandoah-river-state-park",
+        "dcr-sky-meadows-state-park",
+        "dcr-smith-mountain-lake-state-park",
+        "dcr-staunton-river-battlefield-state-park",
+        "dcr-staunton-river-state-park",
+        "dcr-sweet-run-state-park",
+        "dcr-twin-lakes-state-park",
+        "dcr-westmoreland-state-park",
+        "dcr-widewater-state-park",
+        "dcr-wilderness-road-state-park",
+        "dcr-york-river-state-park"
+      ]
+    },
+    {
+      "id": "dcr-bear-creek-lake-state-park-visitor",
+      "kind": "html",
+      "label": "Bear Creek Lake State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/bear-creek-lake",
+      "system_ids": [
+        "dcr-bear-creek-lake-state-park"
+      ]
+    },
+    {
+      "id": "dcr-belle-isle-state-park-visitor",
+      "kind": "html",
+      "label": "Belle Isle State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/belle-isle",
+      "system_ids": [
+        "dcr-belle-isle-state-park"
+      ]
+    },
+    {
+      "id": "dcr-breaks-interstate-park-visitor",
+      "kind": "html",
+      "label": "Breaks Interstate Park visitor information",
+      "url": "https://www.breakspark.com/",
+      "system_ids": [
+        "dcr-breaks-interstate-park"
+      ]
+    },
+    {
+      "id": "dcr-caledon-state-park-visitor",
+      "kind": "html",
+      "label": "Caledon State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/caledon",
+      "system_ids": [
+        "dcr-caledon-state-park"
+      ]
+    },
+    {
+      "id": "dcr-chippokes-state-park-visitor",
+      "kind": "html",
+      "label": "Chippokes State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/chippokes",
+      "system_ids": [
+        "dcr-chippokes-state-park"
+      ]
+    },
+    {
+      "id": "dcr-claytor-lake-state-park-visitor",
+      "kind": "html",
+      "label": "Claytor Lake State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/claytor-lake",
+      "system_ids": [
+        "dcr-claytor-lake-state-park"
+      ]
+    },
+    {
+      "id": "dcr-clinch-river-state-park-visitor",
+      "kind": "html",
+      "label": "Clinch River State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/clinch-river.php",
+      "system_ids": [
+        "dcr-clinch-river-state-park"
+      ]
+    },
+    {
+      "id": "dcr-douthat-state-park-visitor",
+      "kind": "html",
+      "label": "Douthat State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/douthat",
+      "system_ids": [
+        "dcr-douthat-state-park"
+      ]
+    },
+    {
+      "id": "dcr-fairy-stone-state-park-visitor",
+      "kind": "html",
+      "label": "Fairy Stone State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/fairy-stone",
+      "system_ids": [
+        "dcr-fairy-stone-state-park"
+      ]
+    },
+    {
+      "id": "dcr-false-cape-state-park-visitor",
+      "kind": "html",
+      "label": "False Cape State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/false-cape",
+      "system_ids": [
+        "dcr-false-cape-state-park"
+      ]
+    },
+    {
+      "id": "dcr-first-landing-state-park-visitor",
+      "kind": "html",
+      "label": "First Landing State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/first-landing",
+      "system_ids": [
+        "dcr-first-landing-state-park"
+      ]
+    },
+    {
+      "id": "dcr-grayson-highlands-state-park-visitor",
+      "kind": "html",
+      "label": "Grayson Highlands State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/grayson-highlands",
+      "system_ids": [
+        "dcr-grayson-highlands-state-park"
+      ]
+    },
+    {
+      "id": "dcr-high-bridge-trail-state-park-visitor",
+      "kind": "html",
+      "label": "High Bridge Trail State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/high-bridge-trail",
+      "system_ids": [
+        "dcr-high-bridge-trail-state-park"
+      ]
+    },
+    {
+      "id": "dcr-holliday-lake-state-park-visitor",
+      "kind": "html",
+      "label": "Holliday Lake State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/holliday-lake",
+      "system_ids": [
+        "dcr-holliday-lake-state-park"
+      ]
+    },
+    {
+      "id": "dcr-hungry-mother-state-park-visitor",
+      "kind": "html",
+      "label": "Hungry Mother State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/hungry-mother",
+      "system_ids": [
+        "dcr-hungry-mother-state-park"
+      ]
+    },
+    {
+      "id": "dcr-james-river-state-park-visitor",
+      "kind": "html",
+      "label": "James River State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/james-river",
+      "system_ids": [
+        "dcr-james-river-state-park"
+      ]
+    },
+    {
+      "id": "dcr-kiptopeke-state-park-visitor",
+      "kind": "html",
+      "label": "Kiptopeke State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/kiptopeke",
+      "system_ids": [
+        "dcr-kiptopeke-state-park"
+      ]
+    },
+    {
+      "id": "dcr-leesylvania-state-park-visitor",
+      "kind": "html",
+      "label": "Leesylvania State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/leesylvania",
+      "system_ids": [
+        "dcr-leesylvania-state-park"
+      ]
+    },
+    {
+      "id": "dcr-machicomoco-state-park-visitor",
+      "kind": "html",
+      "label": "Machicomoco State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/machicomoco",
+      "system_ids": [
+        "dcr-machicomoco-state-park"
+      ]
+    },
+    {
+      "id": "dcr-mason-neck-state-park-visitor",
+      "kind": "html",
+      "label": "Mason Neck State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/mason-neck",
+      "system_ids": [
+        "dcr-mason-neck-state-park"
+      ]
+    },
+    {
+      "id": "dcr-natural-bridge-state-park-visitor",
+      "kind": "html",
+      "label": "Natural Bridge State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/natural-bridge",
+      "system_ids": [
+        "dcr-natural-bridge-state-park"
+      ]
+    },
+    {
+      "id": "dcr-natural-tunnel-state-park-visitor",
+      "kind": "html",
+      "label": "Natural Tunnel State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/natural-tunnel",
+      "system_ids": [
+        "dcr-natural-tunnel-state-park"
+      ]
+    },
+    {
+      "id": "dcr-new-river-trail-state-park-visitor",
+      "kind": "html",
+      "label": "New River Trail State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/new-river-trail",
+      "system_ids": [
+        "dcr-new-river-trail-state-park"
+      ]
+    },
+    {
+      "id": "dcr-occoneechee-state-park-visitor",
+      "kind": "html",
+      "label": "Occoneechee State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/occoneechee",
+      "system_ids": [
+        "dcr-occoneechee-state-park"
+      ]
+    },
+    {
+      "id": "dcr-pocahontas-state-park-visitor",
+      "kind": "html",
+      "label": "Pocahontas State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/pocahontas",
+      "system_ids": [
+        "dcr-pocahontas-state-park"
+      ]
+    },
+    {
+      "id": "dcr-powhatan-state-park-visitor",
+      "kind": "html",
+      "label": "Powhatan State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/powhatan",
+      "system_ids": [
+        "dcr-powhatan-state-park"
+      ]
+    },
+    {
+      "id": "dcr-sailors-creek-battlefield-historic-state-park-visitor",
+      "kind": "html",
+      "label": "Sailors Creek Battlefield Historic State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/sailors-creek",
+      "system_ids": [
+        "dcr-sailors-creek-battlefield-historic-state-park"
+      ]
+    },
+    {
+      "id": "dcr-seven-bends-state-park-visitor",
+      "kind": "html",
+      "label": "Seven Bends State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/seven-bends",
+      "system_ids": [
+        "dcr-seven-bends-state-park"
+      ]
+    },
+    {
+      "id": "dcr-shenandoah-river-state-park-visitor",
+      "kind": "html",
+      "label": "Shenandoah River State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/shenandoah-river",
+      "system_ids": [
+        "dcr-shenandoah-river-state-park"
+      ]
+    },
+    {
+      "id": "dcr-sky-meadows-state-park-visitor",
+      "kind": "html",
+      "label": "Sky Meadows State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
+      "system_ids": [
+        "dcr-sky-meadows-state-park"
+      ]
+    },
+    {
+      "id": "dcr-smith-mountain-lake-state-park-visitor",
+      "kind": "html",
+      "label": "Smith Mountain Lake State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/smith-mountain-lake",
+      "system_ids": [
+        "dcr-smith-mountain-lake-state-park"
+      ]
+    },
+    {
+      "id": "dcr-staunton-river-battlefield-state-park-visitor",
+      "kind": "html",
+      "label": "Staunton River Battlefield State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield",
+      "system_ids": [
+        "dcr-staunton-river-battlefield-state-park"
+      ]
+    },
+    {
+      "id": "dcr-staunton-river-state-park-visitor",
+      "kind": "html",
+      "label": "Staunton River State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+      "system_ids": [
+        "dcr-staunton-river-state-park"
+      ]
+    },
+    {
+      "id": "dcr-sweet-run-state-park-visitor",
+      "kind": "html",
+      "label": "Sweet Run State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/sweet-run",
+      "system_ids": [
+        "dcr-sweet-run-state-park"
+      ]
+    },
+    {
+      "id": "dcr-twin-lakes-state-park-visitor",
+      "kind": "html",
+      "label": "Twin Lakes State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/twin-lakes",
+      "system_ids": [
+        "dcr-twin-lakes-state-park"
+      ]
+    },
+    {
+      "id": "dcr-westmoreland-state-park-visitor",
+      "kind": "html",
+      "label": "Westmoreland State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/westmoreland",
+      "system_ids": [
+        "dcr-westmoreland-state-park"
+      ]
+    },
+    {
+      "id": "dcr-widewater-state-park-visitor",
+      "kind": "html",
+      "label": "Widewater State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/widewater",
+      "system_ids": [
+        "dcr-widewater-state-park"
+      ]
+    },
+    {
+      "id": "dcr-wilderness-road-state-park-visitor",
+      "kind": "html",
+      "label": "Wilderness Road State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
+      "system_ids": [
+        "dcr-wilderness-road-state-park"
+      ]
+    },
+    {
+      "id": "dcr-york-river-state-park-visitor",
+      "kind": "html",
+      "label": "York River State Park visitor information",
+      "url": "https://www.dcr.virginia.gov/state-parks/york-river",
+      "system_ids": [
+        "dcr-york-river-state-park"
+      ]
     }
   ],
   "approved_parks": {
@@ -66,6 +538,219 @@
         "none": "#000000"
       },
       "palette_evidence": "Reviewed RGB strokes and blaze legend in lake-anna-avenza-map.pdf. The GIS Connector Trail is Blue although its older PDF line is unlabelled/tan; use current explicit GIS blaze name."
+    },
+    "Bear Creek Lake State Park": {
+      "system_id": "dcr-bear-creek-lake-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Belle Isle State Park": {
+      "system_id": "dcr-belle-isle-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Breaks Interstate Park": {
+      "system_id": "dcr-breaks-interstate-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Caledon State Park": {
+      "system_id": "dcr-caledon-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Chippokes State Park": {
+      "system_id": "dcr-chippokes-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Claytor Lake State Park": {
+      "system_id": "dcr-claytor-lake-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Clinch River State Park": {
+      "system_id": "dcr-clinch-river-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Douthat State Park": {
+      "system_id": "dcr-douthat-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Fairy Stone State Park": {
+      "system_id": "dcr-fairy-stone-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "False Cape State Park": {
+      "system_id": "dcr-false-cape-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "First Landing State Park": {
+      "system_id": "dcr-first-landing-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Grayson Highlands State Park": {
+      "system_id": "dcr-grayson-highlands-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "High Bridge Trail State Park": {
+      "system_id": "dcr-high-bridge-trail-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Holliday Lake State Park": {
+      "system_id": "dcr-holliday-lake-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Hungry Mother State Park": {
+      "system_id": "dcr-hungry-mother-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "James River State Park": {
+      "system_id": "dcr-james-river-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Kiptopeke State Park": {
+      "system_id": "dcr-kiptopeke-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Leesylvania State Park": {
+      "system_id": "dcr-leesylvania-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Machicomoco State Park": {
+      "system_id": "dcr-machicomoco-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Mason Neck State Park": {
+      "system_id": "dcr-mason-neck-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Natural Bridge State Park": {
+      "system_id": "dcr-natural-bridge-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Natural Tunnel State Park": {
+      "system_id": "dcr-natural-tunnel-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "New River Trail State Park": {
+      "system_id": "dcr-new-river-trail-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Occoneechee State Park": {
+      "system_id": "dcr-occoneechee-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Pocahontas State Park": {
+      "system_id": "dcr-pocahontas-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Powhatan State Park": {
+      "system_id": "dcr-powhatan-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Sailors Creek Battlefield Historic State Park": {
+      "system_id": "dcr-sailors-creek-battlefield-historic-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Seven Bends State Park": {
+      "system_id": "dcr-seven-bends-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Shenandoah River State Park": {
+      "system_id": "dcr-shenandoah-river-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Sky Meadows State Park": {
+      "system_id": "dcr-sky-meadows-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Smith Mountain Lake State Park": {
+      "system_id": "dcr-smith-mountain-lake-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Staunton River Battlefield State Park": {
+      "system_id": "dcr-staunton-river-battlefield-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Staunton River State Park": {
+      "system_id": "dcr-staunton-river-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Sweet Run State Park": {
+      "system_id": "dcr-sweet-run-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Twin Lakes State Park": {
+      "system_id": "dcr-twin-lakes-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Westmoreland State Park": {
+      "system_id": "dcr-westmoreland-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Widewater State Park": {
+      "system_id": "dcr-widewater-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "Wilderness Road State Park": {
+      "system_id": "dcr-wilderness-road-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
+    },
+    "York River State Park": {
+      "system_id": "dcr-york-river-state-park",
+      "approval_evidence": "reviews/2026-11-03-statewide-batch-publication.json"
     }
+  },
+  "palette": {
+    "silver": "#828282",
+    "blue": "#004da8",
+    "orange": "#ffaa00",
+    "white": "#ffffff",
+    "green": "#4d8c00",
+    "tan": "#cdaa66",
+    "purple": "#8400a8",
+    "yellow": "#ffe800",
+    "red": "#ff0000",
+    "none": "#000000",
+    "black": "#222222",
+    "pink": "#ef9bce",
+    "lime green": "#99cc33",
+    "cobalt blue": "#0047ab",
+    "gold": "#d4a017",
+    "dark green": "#236334",
+    "light blue": "#73b8eb",
+    "intense blue": "#005bea",
+    "burgundy": "#800020",
+    "ruby red": "#b22246",
+    "teal": "#008080",
+    "brown": "#895129",
+    "dark blue": "#003380",
+    "gray": "#828282",
+    "beige": "#d4c5a5",
+    "magenta": "#d500a3",
+    "sky blue": "#66c5e8",
+    "forest green": "#228b22",
+    "light green": "#83c96e",
+    "lavender": "#b19cd9",
+    "tomato red": "#e74630",
+    "olympic blue": "#0085c7",
+    "lime": "#99cc33",
+    "navy blue": "#000080",
+    "violet": "#883cc4",
+    "bold red": "#e02020",
+    "bright green": "#58c838",
+    "baby blue": "#89cff0",
+    "double white": "#ffffff",
+    "bright red": "#ff2020",
+    "dark gray": "#595959",
+    "maroon": "#800000",
+    "light yellow": "#fff28a",
+    "light brown": "#bd936b",
+    "lemon yellow": "#fff44f",
+    "burgandy": "#800020",
+    "violet purple": "#883cc4",
+    "sunflower yellow": "#ffcf00",
+    "dark brown": "#624027",
+    "grey": "#828282",
+    "blue flags": "#004da8"
+  },
+  "palette_evidence": "Colors follow the source blaze names using a shared display palette. Lake Anna retains its reviewed PDF palette. Other shades are proposed approximations, not RGB values sampled from each park map; original blaze text is retained. Mixed orange/white is held for review.",
+  "held_features": {
+    "5e84b59a-3a9f-4aa1-a4b2-3a54c5602057": "Mixed Orange, White blaze remains held under the accepted batch policy."
   }
 }

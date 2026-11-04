@@ -30,6 +30,7 @@ def hold_reasons(feature, override=None):
     if not clean(p.get('LABEL')): reasons.append('missing park')
     if not name: reasons.append('missing trail name')
     if re.search(r'propos|rerout|future|staff|maintenance',name,re.I): reasons.append('proposed/reroute or staff name')
+    if re.search(r'\b(closed|abandoned|decommissioned)\b|under construction',name,re.I): reasons.append('closed or abandoned trail name')
     if clean(p.get('Status')).lower()!='open': reasons.append('not explicitly open in GIS')
     use=clean(override.get('trail_use',p.get('Trail_User')))
     if use not in USE_CODES: reasons.append('staff, water or ambiguous trail use')
@@ -54,20 +55,23 @@ def normalize_trails(collection,config,source_id):
         if policy['system_id'] not in config['system_ids']:raise ValueError('Approved park has no registered system audience')
         override=overrides.get(gid,{}).get('properties',{})
         reasons=hold_reasons(original,override)
+        if gid in config.get('held_features',{}): reasons.append(config['held_features'][gid])
         if reasons:
             held.append({'global_id':gid,'name':clean(p.get('Trail_Name')),'park':park,'reasons':reasons});continue
         if gid in overrides:used_overrides.add(gid)
         color=clean(p.get('BlazeColor')).lower()
         if color in UNKNOWN_COLORS:color='none'
-        if color not in policy['palette']:raise ValueError(f'Unreviewed blaze color for {park}: {color}')
+        palette=policy.get('palette',config.get('palette',{}))
+        if color not in palette:raise ValueError(f'Unreviewed blaze color for {park}: {color}')
         f=copy.deepcopy(original);f['id']='va-state-parks:'+gid
-        f['properties'].update({'name':clean(p['Trail_Name']),'color':color,'display_color':policy['palette'][color],
+        f['properties'].update({'name':clean(p['Trail_Name']),'color':color,'display_color':palette[color],
             'system_id':policy['system_id'],'pipeline_id':'virginia-state-parks','source_id':source_id,
             'source_feature_id':gid,'source_url':source['url'],'trail_use':clean(p.get('Trail_User')),
             'difficulty':clean(p.get('Difficulty')),'attribution':'Virginia Department of Conservation and Recreation'})
         f['properties'].update(override)
         included.append(f)
     if set(overrides)-used_overrides:raise ValueError('Reviewed DCR override disappeared or is no longer eligible; investigate before importing')
+    if set(config.get('held_features',{}))-seen:raise ValueError('Explicitly held DCR feature disappeared; review the source change')
     result=canonical({'type':'FeatureCollection','features':included})
     result['ingest_report']={'source_features':len(collection['features']),'included':len(included),'held':held,
         'unreviewed_parks':dict(sorted(unreviewed.items())),'policy_hash':digest({k:v for k,v in config.items() if k!='_directory'}),'overrides_hash':digest(overrides)}
@@ -96,6 +100,7 @@ def queue(collection, registry, config):
         policy=config['approved_parks'].get(name);rows=[]
         for original in group:
             gid=global_id(original);reasons=hold_reasons(original,overrides.get(gid,{}).get('properties',{}));p=original['properties']
+            if gid in config.get('held_features',{}): reasons.append(config['held_features'][gid])
             rows.append({'global_id':gid,'name':clean(p.get('Trail_Name')),'status':p.get('Status'),'uses':p.get('Trail_User'),'blaze':p.get('BlazeColor'),'hold_reasons':reasons})
             if (original.get('geometry') or {}).get('type') in {'LineString','MultiLineString'}:
                 f=copy.deepcopy(original);f['id']='va-state-parks:'+gid

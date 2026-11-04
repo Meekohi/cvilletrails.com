@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>State parks · statewide sanity check</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.11.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.11.1/mapbox-gl.js"></script>
+<style>
+*{box-sizing:border-box}body{margin:0;font:14px system-ui;color:#183e32}#map{position:absolute;inset:0}
+aside{position:absolute;top:12px;left:12px;bottom:28px;width:360px;overflow:auto;background:#fffef9;border-radius:14px;padding:18px;box-shadow:0 3px 18px #0003}
+h1{font-size:21px;margin:0 0 8px}h2{font-size:16px;margin:18px 0 8px}p{line-height:1.5}small,.muted{color:#64766e;font-size:12px}button,select,textarea{font:inherit}button{cursor:pointer;padding:9px 10px;border:1px solid #b6c5bc;border-radius:6px;background:#fffef9;color:#183e32;margin:3px 2px 3px 0}button.primary{background:#245a45;color:white;border-color:#245a45}button:disabled{opacity:.5;cursor:default}select,textarea{width:100%;padding:8px;border:1px solid #b6c5bc;border-radius:6px}textarea{margin:8px 0}label{display:block;margin:7px 0}a{color:#245a45}#state{padding:9px;background:#edf3ec;border-radius:6px}#rows{padding:0;list-style:none}#rows li{padding:10px 0;border-bottom:1px solid #dde4dc}#rows button.trail{display:block;text-align:left;border:0;background:none;padding:0;font-weight:600;width:100%}.held{color:#a33028}.attention{color:#985a00}.swatch{display:inline-block;width:12px;height:12px;border:1px solid #555;border-radius:50%;margin-right:5px}.row-meta{display:block;margin-top:4px;line-height:1.4}.badge{border-radius:4px;padding:2px 5px;background:#eceee5;font-size:11px}.popup{max-width:260px}.popup strong{display:block}details p{font-size:12px}#loading{position:absolute;right:70px;top:15px;background:white;padding:8px;border-radius:6px}
+@media(max-width:680px){aside{width:calc(100% - 76px);max-height:43vh;bottom:auto;padding:12px}h1{font-size:18px}}
+</style>
+<div id="map"></div><div id="loading">Loading statewide preview…</div>
+<aside>
+<h1>Virginia State Parks</h1><p id="summary"></p>
+<p class="muted">One combined proposal. Browse any parks you like, note exceptions, then accept the batch. Held records stay excluded.</p>
+<select id="parks" aria-label="Park"><option value="">All parks</option></select>
+<div><button id="overview">Statewide view</button><button id="next">Next park</button></div>
+<label><input id="candidate" type="checkbox" checked> Show proposed additions</label>
+<label><input id="held" type="checkbox"> Show held records <span class="held">— red dashed</span></label>
+<label><input id="references" type="checkbox"> Highlight existing overlapping trails <span style="color:#00a8ca">— cyan</span></label>
+<label><input id="exceptions" type="checkbox"> List exceptions only</label>
+<p id="park-summary"></p><p id="sources"></p>
+<button id="skip-park" disabled>Exclude this park</button>
+<h2>Batch decision</h2><p id="state"></p>
+<button class="primary" id="accept">Looks good — accept proposed batch</button><button id="discuss">Needs discussion</button>
+<textarea id="notes" rows="3" aria-label="Batch notes" placeholder="Anything you want changed before publishing…"></textarea>
+<button id="export">Export review decisions</button>
+<details><summary>What was checked</summary><p id="method"></p><p id="colors"></p><p>Acceptance applies to the proposed additions, less any park or trail exclusions you select. It does not include held records, source changes to already published trails, or changes to existing datasets. Exporting saves your review; it does not publish.</p><a href="additions.geojson" download>Download proposed additions</a></details>
+<h2 id="list-title">Trails</h2><ul id="rows"></ul>
+</aside>
+<script>
+(async()=>{
+ const $=id=>document.getElementById(id);
+ try{
+ const [report,config,geo]=await Promise.all(['review.json','preview.json','trails.geojson'].map(async u=>{const r=await fetch(u);if(!r.ok)throw Error('Could not load '+u);return r.json()}));
+ window.__batchReport=report;
+ const key='state-parks-batch-'+report.review_hash;
+ let saved={decision:'pending',notes:'',excluded_parks:[],excluded_features:[]};
+ try{const v=JSON.parse(localStorage.getItem(key));if(v&&typeof v==='object')saved={...saved,...v}}catch{}
+ const allRows=report.parks.flatMap(p=>p.rows),byId=new Map(allRows.map(r=>[r.id,r])),features=new Map(geo.features.map(f=>[f.id,f]));
+ for(const park of report.parks){const o=document.createElement('option');o.value=park.name;o.textContent=`${park.name} (${park.counts.candidate||0} new${park.attention?', '+park.attention+' overlap checks':''})`;$('parks').append(o)}
+ $('summary').textContent=`${report.counts.candidate||0} new trails in ${report.candidate_park_count} parks. ${report.counts.held||0} records held; ${report.counts.existing||0} already published.`;
+ $('colors').textContent=report.color_note;
+ $('method').textContent=`Stable IDs, line geometry, status, uses, restrictions, boundary flags and blaze colors checked. ${report.attention_count} proposed/existing records flagged for overlap or source-change inspection. Existing editable custom trail datasets were compared geometrically; ${report.overlap_scope.uncompared_tilesets.length} custom tileset(s) lacked an editable source for that comparison. All live layers remain visible beneath the proposal.`;
+ $('notes').value=saved.notes;
+ mapboxgl.accessToken=config.public_token;
+ const map=window.__batchMap=new mapboxgl.Map({container:'map',style:config.style,center:[-79.3,37.65],zoom:6.6});
+ map.addControl(new mapboxgl.NavigationControl());
+ let loaded=false,popup;
+ function persist(){try{localStorage.setItem(key,JSON.stringify(saved))}catch{$('state').textContent='Browser storage unavailable; export to save your review.'}}
+ function excluded(r){return saved.excluded_parks.includes(r.park)||saved.excluded_features.includes(r.id)}
+ function updateState(){const count=allRows.filter(r=>r.category==='candidate'&&!excluded(r)).length;$('state').textContent=`${saved.decision==='accept'?'Accepted':saved.decision==='discuss'?'Needs discussion':'Not yet reviewed'} · ${count} proposed additions included`;return count}
+ function toggle(list,value){const i=list.indexOf(value);if(i<0)list.push(value);else list.splice(i,1);persist();show(false)}
+ function scope(){return $('parks').value?report.parks.filter(p=>p.name===$('parks').value):report.parks}
+ function fit(items){const boxes=items.map(p=>$('held').checked?p.bounds:(p.candidate_bounds||p.bounds)).filter(Boolean);if(!boxes.length)return;map.fitBounds([Math.min(...boxes.map(b=>b[0])),Math.min(...boxes.map(b=>b[1])),Math.max(...boxes.map(b=>b[2])),Math.max(...boxes.map(b=>b[3]))],{padding:innerWidth>680?{left:410,right:70,top:60,bottom:55}:{left:35,right:60,top:innerHeight*.48,bottom:40},maxZoom:15,duration:0})}
+ function focus(row){const f=features.get(row.id);if(!f)return;map.getSource('selection').setData({type:'FeatureCollection',features:[f]});const pts=f.geometry.type==='LineString'?f.geometry.coordinates:f.geometry.coordinates.flat();fit([{bounds:[Math.min(...pts.map(p=>p[0])),Math.min(...pts.map(p=>p[1])),Math.max(...pts.map(p=>p[0])),Math.max(...pts.map(p=>p[1]))]}]);const box=document.createElement('div');box.className='popup';const title=document.createElement('strong');title.textContent=row.name;box.append(title,document.createTextNode(`${row.park} · ${row.category}. ${row.reasons.join('; ')}`));popup?.remove();popup=new mapboxgl.Popup().setLngLat(pts[Math.floor(pts.length/2)]).setDOMContent(box).addTo(map)}
+ function show(move=true){if(!loaded)return;const parks=scope(),name=$('parks').value,rows=parks.flatMap(p=>p.rows);$('park-summary').textContent=name?`${rows.filter(r=>r.category==='candidate').length} additions · ${rows.filter(r=>r.category==='held').length} held · ${parks[0].attention} overlap/change checks`:'';
+ $('sources').replaceChildren();if(name){for(const [k,label]of [['visitor_guide','Official park page'],['georeferenced_pdf','Official map'],['maps_directory','Map directory']]){const u=parks[0].sources[k];if(u&&u.startsWith('https://')){const a=document.createElement('a');a.href=u;a.target='_blank';a.rel='noopener';a.textContent=label;$('sources').append(a,document.createElement('br'))}}}
+ $('skip-park').disabled=!name||!rows.some(r=>r.category==='candidate');$('skip-park').textContent=saved.excluded_parks.includes(name)?'Include this park':'Exclude this park';
+ const parkFilter=name?['==',['get','review_park'],name]:true;
+ const excludeFilter=['all',['!', ['in',['get','review_park'],['literal',saved.excluded_parks]]],['!', ['in',['get','review_id'],['literal',saved.excluded_features]]]];
+ for(const id of ['candidate-fringe','candidate-lines'])map.setFilter(id,['all',parkFilter,['==',['get','review_category'],'candidate'],excludeFilter]);
+ map.setFilter('held-lines',['all',parkFilter,['in',['get','review_category'],['literal',['held','existing-change']]]]);
+ map.getSource('selection').setData({type:'FeatureCollection',features:[]});
+ const selected=rows.filter(r=>$('exceptions').checked?(r.category==='held'||r.category==='existing-change'||r.overlaps?.length||r.source_overlaps?.length):r.category!=='existing');
+ $('rows').replaceChildren();$('list-title').textContent=`${$('exceptions').checked?'Exceptions':'Trails'} (${selected.length})`;
+ for(const row of selected){const li=document.createElement('li'),b=document.createElement('button');b.className='trail';b.textContent=row.name||'Unnamed';b.onclick=()=>focus(row);li.append(b);const meta=document.createElement('small');meta.className='row-meta'+(row.category==='held'?' held':'');meta.textContent=`${name?'':row.park+' · '}${row.category} · ${row.blaze||'unmarked'} · ${row.uses||'uses unspecified'}${row.reasons.length?' · '+row.reasons.join('; '):''}`;li.append(meta);
+ if(row.overlaps?.length||row.source_overlaps?.length){const detail=document.createElement('div');detail.className='row-meta attention';detail.textContent=[...(row.overlaps||[]).map(m=>`Existing ${m.dataset_name}: ${m.name} (${Math.round(m.city_coverage['10']*100)}% within 10 m)`),...(row.source_overlaps||[]).map(p=>`Shared source section: ${byId.get(p.a===row.id?p.b:p.a)?.name||'other trail'} (~${p.shared_m_approx} m)`)].join('; ');li.append(detail)}
+ if(row.category==='candidate'){const button=document.createElement('button');button.textContent=excluded(row)?'Excluded'+(saved.excluded_parks.includes(row.park)?' with park':' — include trail'):'Exclude trail';button.disabled=saved.excluded_parks.includes(row.park);button.onclick=()=>toggle(saved.excluded_features,row.id);li.append(button)}$('rows').append(li)}
+ for(const id of ['park-dots','park-names'])map.setLayoutProperty(id,'visibility',name?'none':'visible');updateState();if(move)fit(parks)}
+ map.on('load',()=>{map.addSource('batch',{type:'geojson',data:geo});map.addSource('selection',{type:'geojson',data:{type:'FeatureCollection',features:[]}});map.addSource('references',{type:'geojson',data:'existing-overlaps.geojson'});
+ map.addLayer({id:'existing-references',type:'line',source:'references',layout:{visibility:'none'},paint:{'line-color':'#00bfd4','line-width':9,'line-opacity':.7}});
+ map.addLayer({id:'candidate-fringe',type:'line',source:'batch',paint:{'line-color':'#634d36','line-width':['interpolate',['linear'],['zoom'],6,2,13,6]}});
+ map.addLayer({id:'candidate-lines',type:'line',source:'batch',paint:{'line-color':['get','display_color'],'line-width':['interpolate',['linear'],['zoom'],6,1,13,3.5]}});
+ map.addLayer({id:'held-lines',type:'line',source:'batch',layout:{visibility:'none'},paint:{'line-color':'#d13030','line-width':4,'line-dasharray':[2,2]}});
+ map.addLayer({id:'selected-line',type:'line',source:'selection',paint:{'line-color':'#00d8ff','line-width':10,'line-opacity':.65}});
+ map.addSource('park-centers',{type:'geojson',data:{type:'FeatureCollection',features:report.parks.filter(p=>p.counts.candidate&&p.candidate_bounds).map(p=>({type:'Feature',properties:{name:p.name,label:p.name.replace(' State Park',''),count:p.counts.candidate},geometry:{type:'Point',coordinates:[(p.candidate_bounds[0]+p.candidate_bounds[2])/2,(p.candidate_bounds[1]+p.candidate_bounds[3])/2]}}))}});
+ map.addLayer({id:'park-dots',type:'circle',source:'park-centers',maxzoom:10,paint:{'circle-radius':6,'circle-color':'#245a45','circle-stroke-color':'#ffffff','circle-stroke-width':2}});
+ map.addLayer({id:'park-names',type:'symbol',source:'park-centers',maxzoom:10,layout:{'text-field':['get','label'],'text-size':11,'text-offset':[0,1.2],'text-anchor':'top'},paint:{'text-color':'#183e32','text-halo-color':'#fffef9','text-halo-width':2}});
+ map.on('click','park-dots',e=>{$('parks').value=e.features[0].properties.name;show()});map.on('mouseenter','park-dots',()=>{map.getCanvas().style.cursor='pointer'});map.on('mouseleave','park-dots',()=>{map.getCanvas().style.cursor=''});
+ loaded=true;$('loading').remove();show();for(const id of ['candidate-lines','held-lines'])map.on('click',id,e=>{const r=byId.get(e.features[0].properties.review_id);if(r)focus(r)})});
+ $('parks').onchange=()=>show();$('overview').onclick=()=>{$('parks').value='';show()};$('next').onclick=()=>{const names=report.parks.filter(p=>p.counts.candidate).map(p=>p.name);$('parks').value=names[(names.indexOf($('parks').value)+1)%names.length];show()};$('exceptions').onchange=()=>show(false);
+ $('candidate').onchange=()=>{for(const id of ['candidate-lines','candidate-fringe'])map.setLayoutProperty(id,'visibility',$('candidate').checked?'visible':'none')};$('held').onchange=()=>{map.setLayoutProperty('held-lines','visibility',$('held').checked?'visible':'none');fit(scope())};$('references').onchange=()=>map.setLayoutProperty('existing-references','visibility',$('references').checked?'visible':'none');
+ $('skip-park').onclick=()=>toggle(saved.excluded_parks,$('parks').value);for(const [id,decision]of [['accept','accept'],['discuss','discuss']])$(id).onclick=()=>{saved.decision=decision;persist();updateState()};$('notes').oninput=()=>{saved.notes=$('notes').value;persist()};
+ $('export').onclick=()=>{const result={kind:report.kind,review_hash:report.review_hash,source_hash:report.source_hash,plan_hash:report.plan_hash,exported_at:new Date().toISOString(),...saved,included_count:updateState(),included_feature_ids:allRows.filter(r=>r.category==='candidate'&&!excluded(r)).map(r=>r.id).sort()};const blob=new Blob([JSON.stringify(result,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='virginia-state-parks-batch-decisions.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+ }catch(e){$('loading').textContent=e.message;console.error(e)}
+})();
+</script>
+</html>

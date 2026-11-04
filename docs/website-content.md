@@ -88,7 +88,7 @@ Descriptions, facts and notices render as text, with HTTPS source links. Do not 
 
 ## Catalog at the November handoff
 
-There are 28 entries: 26 specific networks and two aggregate groupings. Adding an infobox does not add route geometry or change Mapbox styling. The executable catalog remains authoritative for later additions.
+There are 67 entries: 65 specific networks and two aggregate groupings. Adding an infobox does not add route geometry or change Mapbox styling. The executable catalog remains authoritative for later additions.
 
 | ID | Network | Context | Primary official link |
 | --- | --- | --- | --- |
@@ -124,3 +124,5 @@ There are 28 entries: 26 specific networks and two aggregate groupings. Adding a
 Highland was added after the initial session handoff; its [audit](../pipelines/visitor-info/reviews/2026-11-03-highland.json) records visitor rules and context evidence. Fortune’s Cove has a [dedicated GeoPDF pipeline and import audit](../pipelines/fortunes-cove/README.md).
 
 Priority for the next expansion: substantial standalone trail destinations and the Crozet greenway network after an access review. Smaller City parks along Rivanna remain useful local contexts, but should not displace this regional coverage work.
+
+The statewide DCR publication adds 39 basic park entries alongside Lake Anna. These provide automatic titles, official park/map links, and dated operator alerts where relevant. Detailed hours, permitted activities and recommended hikes remain future research. Context footprints are derived from accepted trails, using a 300 m buffer and a convex hull for each connected group, rather than treating a long or disconnected trail network’s whole bounding rectangle as park land. These footprints are not legal boundaries. The [publication audit](../pipelines/virginia-state-parks/reviews/2026-11-03-statewide-batch-publication.json) lists all 39 systems and source checks. Dated alert notes do not expire automatically; revisit them when official pages change.

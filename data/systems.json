@@ -5589,5 +5589,6213 @@
       "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
       "reviewed_on": "2026-11-03"
     }
+  },
+  {
+    "id": "dcr-bear-creek-lake-state-park",
+    "name": "Bear Creek Lake State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.2819531493907,
+      37.51876281171386,
+      -78.25549629296992,
+      37.538626905545655
+    ],
+    "boundary": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -78.26751479604663,
+              37.51876281171386
+            ],
+            [
+              -78.27913278986483,
+              37.522474403158846
+            ],
+            [
+              -78.28015745063955,
+              37.52314191612791
+            ],
+            [
+              -78.28078340874377,
+              37.524070927494236
+            ],
+            [
+              -78.2819531493907,
+              37.528571865938666
+            ],
+            [
+              -78.2819447430017,
+              37.52945351730206
+            ],
+            [
+              -78.28160973017293,
+              37.53032393776697
+            ],
+            [
+              -78.28066285822467,
+              37.531546891215555
+            ],
+            [
+              -78.2768595565319,
+              37.53479172304164
+            ],
+            [
+              -78.27495910960371,
+              37.53618767986028
+            ],
+            [
+              -78.27376245104955,
+              37.53669084456571
+            ],
+            [
+              -78.27275372352611,
+              37.53679953670248
+            ],
+            [
+              -78.26887708666159,
+              37.536702954150584
+            ],
+            [
+              -78.26753679656574,
+              37.53648535892673
+            ],
+            [
+              -78.26298487771484,
+              37.53396819397682
+            ],
+            [
+              -78.2620045222184,
+              37.5330850863436
+            ],
+            [
+              -78.2614546037862,
+              37.53218763381578
+            ],
+            [
+              -78.259947665841,
+              37.52207938431606
+            ],
+            [
+              -78.26013206341922,
+              37.520677942504264
+            ],
+            [
+              -78.26087766053213,
+              37.51971396898616
+            ],
+            [
+              -78.26225798025949,
+              37.51899594878321
+            ],
+            [
+              -78.26323638985596,
+              37.51884942142349
+            ],
+            [
+              -78.26751479604663,
+              37.51876281171386
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -78.25945548661649,
+              37.53277439621652
+            ],
+            [
+              -78.26071294843962,
+              37.5331042353874
+            ],
+            [
+              -78.26171620886683,
+              37.533792176274
+            ],
+            [
+              -78.2623125326183,
+              37.53473349415028
+            ],
+            [
+              -78.26241112191231,
+              37.535784887867194
+            ],
+            [
+              -78.26185927091404,
+              37.53719465832925
+            ],
+            [
+              -78.26103922335135,
+              37.53802240341504
+            ],
+            [
+              -78.2598837930239,
+              37.53853723164837
+            ],
+            [
+              -78.25823861311656,
+              37.538626905545655
+            ],
+            [
+              -78.25700586301744,
+              37.53824225094259
+            ],
+            [
+              -78.25605182344549,
+              37.53751120895144
+            ],
+            [
+              -78.25552173805174,
+              37.53654508212324
+            ],
+            [
+              -78.25549629296992,
+              37.53549095984117
+            ],
+            [
+              -78.25600149882538,
+              37.53425027549632
+            ],
+            [
+              -78.25695319757916,
+              37.533327705602716
+            ],
+            [
+              -78.2581352448013,
+              37.532852868381745
+            ],
+            [
+              -78.25945548661649,
+              37.53277439621652
+            ]
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/bear-creek-lake",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/bear-creek-lake"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-belle-isle-state-park",
+    "name": "Belle Isle State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -76.62107753035487,
+      37.770026544062766,
+      -76.58315425425734,
+      37.7901694529257
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -76.59760427217475,
+            37.770026544062766
+          ],
+          [
+            -76.60070337751705,
+            37.77035902748887
+          ],
+          [
+            -76.60198147101359,
+            37.77062755863376
+          ],
+          [
+            -76.60286450741283,
+            37.7709963477806
+          ],
+          [
+            -76.61922126658524,
+            37.78147046023307
+          ],
+          [
+            -76.62067457726921,
+            37.78333529512775
+          ],
+          [
+            -76.62107753035487,
+            37.78433866746063
+          ],
+          [
+            -76.62096600481466,
+            37.78538804699596
+          ],
+          [
+            -76.62013631805507,
+            37.786522401679996
+          ],
+          [
+            -76.61904342867012,
+            37.78711968468262
+          ],
+          [
+            -76.61807879701976,
+            37.787322874540756
+          ],
+          [
+            -76.5890822043554,
+            37.7901694529257
+          ],
+          [
+            -76.58717261658357,
+            37.789973909814975
+          ],
+          [
+            -76.5859372501452,
+            37.78947144185732
+          ],
+          [
+            -76.58512693665249,
+            37.788929884458106
+          ],
+          [
+            -76.5833971941538,
+            37.786881350134145
+          ],
+          [
+            -76.58315425425734,
+            37.786076943425925
+          ],
+          [
+            -76.58327634392168,
+            37.784998449514006
+          ],
+          [
+            -76.59018576256608,
+            37.772390773240424
+          ],
+          [
+            -76.59080592377722,
+            37.77177029611375
+          ],
+          [
+            -76.59193239293703,
+            37.77121403604807
+          ],
+          [
+            -76.59651937042858,
+            37.77012925178691
+          ],
+          [
+            -76.59760427217475,
+            37.770026544062766
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/belle-isle",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/belle-isle"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/belle-isle-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-breaks-interstate-park",
+    "name": "Breaks Interstate Park",
+    "area": "Virginia / Kentucky",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -82.31738373144722,
+      37.26870349198789,
+      -82.27967316811214,
+      37.30388746543138
+    ],
+    "boundary": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -82.29524164548462,
+              37.26870349198789
+            ],
+            [
+              -82.29620100487516,
+              37.2689077055028
+            ],
+            [
+              -82.29704488863881,
+              37.269325686086404
+            ],
+            [
+              -82.29870303903841,
+              37.27115205424369
+            ],
+            [
+              -82.29939746507226,
+              37.2722948334175
+            ],
+            [
+              -82.3004877989034,
+              37.27520021197292
+            ],
+            [
+              -82.30050399740537,
+              37.27627447294191
+            ],
+            [
+              -82.29990324472786,
+              37.27748211207137
+            ],
+            [
+              -82.29896975762894,
+              37.278228090953625
+            ],
+            [
+              -82.2977500699844,
+              37.27863181111879
+            ],
+            [
+              -82.29610779040415,
+              37.278567328928965
+            ],
+            [
+              -82.29521020054754,
+              37.27822807017802
+            ],
+            [
+              -82.29447451165137,
+              37.277695204453906
+            ],
+            [
+              -82.29290276430609,
+              37.27573341770705
+            ],
+            [
+              -82.29155088662623,
+              37.271995467563876
+            ],
+            [
+              -82.29155200811849,
+              37.2708230877135
+            ],
+            [
+              -82.29227701925673,
+              37.26964382023646
+            ],
+            [
+              -82.29361198183125,
+              37.26887692358675
+            ],
+            [
+              -82.29524164548462,
+              37.26870349198789
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -82.30374779716009,
+              37.280978325764735
+            ],
+            [
+              -82.30493522312226,
+              37.281086144346
+            ],
+            [
+              -82.30635737494265,
+              37.28145461346464
+            ],
+            [
+              -82.30805405125267,
+              37.282255453329775
+            ],
+            [
+              -82.31439648439743,
+              37.28821570002305
+            ],
+            [
+              -82.31507757704158,
+              37.28925826832936
+            ],
+            [
+              -82.31733176238856,
+              37.29537363548044
+            ],
+            [
+              -82.31738373144722,
+              37.296427764923735
+            ],
+            [
+              -82.31692680067863,
+              37.297417541238495
+            ],
+            [
+              -82.31269929034643,
+              37.30292055406651
+            ],
+            [
+              -82.31137463276876,
+              37.303699413690346
+            ],
+            [
+              -82.30974676260134,
+              37.30388746543138
+            ],
+            [
+              -82.28498531403754,
+              37.30213815262522
+            ],
+            [
+              -82.28398915884665,
+              37.3019209215747
+            ],
+            [
+              -82.28315641354799,
+              37.301507884040895
+            ],
+            [
+              -82.2822675807957,
+              37.30069836735518
+            ],
+            [
+              -82.28011426095996,
+              37.298005044015675
+            ],
+            [
+              -82.27967316811214,
+              37.296893682422805
+            ],
+            [
+              -82.27975187391498,
+              37.295694418383114
+            ],
+            [
+              -82.2801908666632,
+              37.29467299259473
+            ],
+            [
+              -82.2823469263746,
+              37.291492310372576
+            ],
+            [
+              -82.28868529647488,
+              37.28326870185577
+            ],
+            [
+              -82.28941650940892,
+              37.28273187279845
+            ],
+            [
+              -82.29063280383268,
+              37.28232153755225
+            ],
+            [
+              -82.30374779716009,
+              37.280978325764735
+            ]
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.breakspark.com/",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.breakspark.com/"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official trail maps",
+        "url": "https://www.breakspark.com/parkmap"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-caledon-state-park",
+    "name": "Caledon State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -77.17554636992395,
+      38.32084826951731,
+      -77.13434721356208,
+      38.36617844178775
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -77.1711156706643,
+            38.32084826951731
+          ],
+          [
+            -77.17243907445342,
+            38.321128770079035
+          ],
+          [
+            -77.1735367830165,
+            38.3217914834244
+          ],
+          [
+            -77.17517140842891,
+            38.323543537726344
+          ],
+          [
+            -77.17554636992395,
+            38.32491980733445
+          ],
+          [
+            -77.17336103093976,
+            38.33976384868955
+          ],
+          [
+            -77.1715627671509,
+            38.34549054864289
+          ],
+          [
+            -77.17076033372095,
+            38.34633344513589
+          ],
+          [
+            -77.1445000453503,
+            38.36557556136354
+          ],
+          [
+            -77.14362821894467,
+            38.36597037393382
+          ],
+          [
+            -77.14248983005402,
+            38.36617844178775
+          ],
+          [
+            -77.14143302102241,
+            38.366107010670916
+          ],
+          [
+            -77.14065018095867,
+            38.36588349117473
+          ],
+          [
+            -77.13802636764592,
+            38.36466633253975
+          ],
+          [
+            -77.135554778482,
+            38.36319434146459
+          ],
+          [
+            -77.1349334734863,
+            38.36222911746793
+          ],
+          [
+            -77.13434721356208,
+            38.36015025148279
+          ],
+          [
+            -77.13549512177798,
+            38.33581517280848
+          ],
+          [
+            -77.13594239965089,
+            38.33452119403214
+          ],
+          [
+            -77.14454959611287,
+            38.32721656460371
+          ],
+          [
+            -77.14539819675976,
+            38.32673450861677
+          ],
+          [
+            -77.15232566408451,
+            38.32408765551278
+          ],
+          [
+            -77.15881580004053,
+            38.322369887473634
+          ],
+          [
+            -77.1711156706643,
+            38.32084826951731
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/caledon",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/caledon"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/caledon-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-chippokes-state-park",
+    "name": "Chippokes State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -76.74584317959085,
+      37.125754189663766,
+      -76.70431033981387,
+      37.15007035800414
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -76.73491418647264,
+            37.125754189663766
+          ],
+          [
+            -76.73620763019221,
+            37.12600048524393
+          ],
+          [
+            -76.73921357056761,
+            37.12752052716984
+          ],
+          [
+            -76.74028300534073,
+            37.128514320949954
+          ],
+          [
+            -76.7409009264058,
+            37.12950361078027
+          ],
+          [
+            -76.74579407816387,
+            37.14471399834532
+          ],
+          [
+            -76.74584317959085,
+            37.14596683122017
+          ],
+          [
+            -76.74560372733836,
+            37.14705865876162
+          ],
+          [
+            -76.7446697321762,
+            37.14860493371208
+          ],
+          [
+            -76.74336956180449,
+            37.14959588741787
+          ],
+          [
+            -76.74182337530942,
+            37.14999621406261
+          ],
+          [
+            -76.71708727289034,
+            37.15007035800414
+          ],
+          [
+            -76.71610705530112,
+            37.14996127157345
+          ],
+          [
+            -76.71520861232285,
+            37.14962910825923
+          ],
+          [
+            -76.71426977233139,
+            37.14889114306029
+          ],
+          [
+            -76.70887025525494,
+            37.14266467895381
+          ],
+          [
+            -76.70463611669807,
+            37.13623045948329
+          ],
+          [
+            -76.7043387020407,
+            37.13540823097391
+          ],
+          [
+            -76.70431033981387,
+            37.134744140341155
+          ],
+          [
+            -76.70488906695824,
+            37.133441041856834
+          ],
+          [
+            -76.70589450353486,
+            37.13262174942974
+          ],
+          [
+            -76.70977284413584,
+            37.13076765655247
+          ],
+          [
+            -76.72033422289914,
+            37.12823031649449
+          ],
+          [
+            -76.73491418647264,
+            37.125754189663766
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/chippokes",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/chippokes"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/chippokes-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-claytor-lake-state-park",
+    "name": "Claytor Lake State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -80.63979621596741,
+      37.04578810111148,
+      -80.61601020670916,
+      37.06903613067083
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -80.62936896289719,
+            37.04578810111148
+          ],
+          [
+            -80.63098888851215,
+            37.045926284365365
+          ],
+          [
+            -80.63270473529987,
+            37.04643988479717
+          ],
+          [
+            -80.63377751874032,
+            37.0470381327255
+          ],
+          [
+            -80.63502900055316,
+            37.048396297115225
+          ],
+          [
+            -80.63725989368959,
+            37.05376484111141
+          ],
+          [
+            -80.63974150070611,
+            37.060830703150735
+          ],
+          [
+            -80.63979621596741,
+            37.06188494414102
+          ],
+          [
+            -80.63915730321304,
+            37.063095258686296
+          ],
+          [
+            -80.6376742354194,
+            37.06457898071321
+          ],
+          [
+            -80.63694556494083,
+            37.065057446936414
+          ],
+          [
+            -80.62791959884757,
+            37.06881936456315
+          ],
+          [
+            -80.62625772431775,
+            37.06903613067083
+          ],
+          [
+            -80.62511764994254,
+            37.068828985384535
+          ],
+          [
+            -80.6242388884346,
+            37.0684324127874
+          ],
+          [
+            -80.61732366855713,
+            37.06328341685751
+          ],
+          [
+            -80.61672558799202,
+            37.06261835348601
+          ],
+          [
+            -80.61617888313963,
+            37.061488412225025
+          ],
+          [
+            -80.61601020670916,
+            37.06018121907933
+          ],
+          [
+            -80.61651472688403,
+            37.05833752577035
+          ],
+          [
+            -80.61685588911419,
+            37.057678165822935
+          ],
+          [
+            -80.6210703850373,
+            37.05238809585207
+          ],
+          [
+            -80.6248389153607,
+            37.04825926931795
+          ],
+          [
+            -80.62753049690534,
+            37.046289862670704
+          ],
+          [
+            -80.628403715883,
+            37.04593065032846
+          ],
+          [
+            -80.62936896289719,
+            37.04578810111148
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/claytor-lake",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/claytor-lake"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/claytor-lake-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Beach-area parking resurfacing is planned to begin Nov. 2. Consider the northeast side of the park and expect construction traffic near the cabins. Check the official park page for current conditions."
+  },
+  {
+    "id": "dcr-clinch-river-state-park",
+    "name": "Clinch River State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -82.33165970788463,
+      36.88486061431383,
+      -82.31340289552968,
+      36.90777421496318
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -82.31950467383392,
+            36.88486061431383
+          ],
+          [
+            -82.32044377094559,
+            36.88490163818078
+          ],
+          [
+            -82.32158438198125,
+            36.88519213407095
+          ],
+          [
+            -82.32285479791621,
+            36.88593991638496
+          ],
+          [
+            -82.32370065522615,
+            36.886778859233374
+          ],
+          [
+            -82.33145768404742,
+            36.89928712793135
+          ],
+          [
+            -82.33165970788463,
+            36.90032958841063
+          ],
+          [
+            -82.33109509659505,
+            36.90475483113377
+          ],
+          [
+            -82.32993433465329,
+            36.906237792052316
+          ],
+          [
+            -82.32934192424624,
+            36.906631021621685
+          ],
+          [
+            -82.32822250061503,
+            36.90705813228424
+          ],
+          [
+            -82.32529927657079,
+            36.9076042989557
+          ],
+          [
+            -82.3226529897013,
+            36.90777421496318
+          ],
+          [
+            -82.32093431870626,
+            36.90753818448937
+          ],
+          [
+            -82.31970059149856,
+            36.90700780852379
+          ],
+          [
+            -82.31880649752846,
+            36.906181580695126
+          ],
+          [
+            -82.31360122198272,
+            36.898317301819674
+          ],
+          [
+            -82.31340289552968,
+            36.89633739682931
+          ],
+          [
+            -82.31506585773207,
+            36.88772638995299
+          ],
+          [
+            -82.31570689530152,
+            36.8866499910621
+          ],
+          [
+            -82.3168413369921,
+            36.88563232191003
+          ],
+          [
+            -82.3180228579966,
+            36.88510849448355
+          ],
+          [
+            -82.31950467383392,
+            36.88486061431383
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/clinch-river.php",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/clinch-river.php"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/clinch-river-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-douthat-state-park",
+    "name": "Douthat State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -79.84006828662434,
+      37.77953070953263,
+      -79.69416187786315,
+      37.92152563177804
+    ],
+    "boundary": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -79.70672149864775,
+              37.77953070953263
+            ],
+            [
+              -79.70916557709603,
+              37.7802330533608
+            ],
+            [
+              -79.71017091610476,
+              37.780884323600354
+            ],
+            [
+              -79.71088137986968,
+              37.78203679517442
+            ],
+            [
+              -79.71110653860191,
+              37.78395833178198
+            ],
+            [
+              -79.71048512335763,
+              37.79222723320711
+            ],
+            [
+              -79.71027711233889,
+              37.79300383158708
+            ],
+            [
+              -79.70951486697356,
+              37.79462727396453
+            ],
+            [
+              -79.70844716683156,
+              37.79581133518224
+            ],
+            [
+              -79.70706701624978,
+              37.79646053138626
+            ],
+            [
+              -79.7056795408043,
+              37.796576970303995
+            ],
+            [
+              -79.70461884568361,
+              37.79636494194863
+            ],
+            [
+              -79.70286407110761,
+              37.79562661282659
+            ],
+            [
+              -79.69534212603412,
+              37.790450450744046
+            ],
+            [
+              -79.69448985965543,
+              37.78932411155501
+            ],
+            [
+              -79.69416187786315,
+              37.786971775206595
+            ],
+            [
+              -79.69463192840314,
+              37.78560402845833
+            ],
+            [
+              -79.69732553066382,
+              37.782472508898174
+            ],
+            [
+              -79.69806472533593,
+              37.78186226027956
+            ],
+            [
+              -79.69886459427661,
+              37.781493549548884
+            ],
+            [
+              -79.70533199123291,
+              37.7796626523429
+            ],
+            [
+              -79.70672149864775,
+              37.77953070953263
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -79.81401879588195,
+              37.85480055968437
+            ],
+            [
+              -79.8155715388814,
+              37.855259290456935
+            ],
+            [
+              -79.8166682329421,
+              37.856244200184925
+            ],
+            [
+              -79.83823657869674,
+              37.890243753981714
+            ],
+            [
+              -79.8387497016739,
+              37.89155293117042
+            ],
+            [
+              -79.84006828662434,
+              37.898667843110864
+            ],
+            [
+              -79.84000370084733,
+              37.900413867287426
+            ],
+            [
+              -79.83966092288662,
+              37.90123881893644
+            ],
+            [
+              -79.83481287538471,
+              37.908902785843274
+            ],
+            [
+              -79.83372409064945,
+              37.91028715850098
+            ],
+            [
+              -79.83242412851138,
+              37.91157609789415
+            ],
+            [
+              -79.8220443267757,
+              37.92050120437368
+            ],
+            [
+              -79.82126614993018,
+              37.92099579064781
+            ],
+            [
+              -79.82056561804649,
+              37.92127476828156
+            ],
+            [
+              -79.81958523725976,
+              37.921437001061506
+            ],
+            [
+              -79.79717279291036,
+              37.92152563177804
+            ],
+            [
+              -79.79551993277555,
+              37.921073564207674
+            ],
+            [
+              -79.7815572302368,
+              37.91545483002307
+            ],
+            [
+              -79.78078851366996,
+              37.91497533008259
+            ],
+            [
+              -79.77906048614308,
+              37.91358155997606
+            ],
+            [
+              -79.77838078783206,
+              37.91262355532359
+            ],
+            [
+              -79.77639701532767,
+              37.9073825984652
+            ],
+            [
+              -79.77628358116739,
+              37.905626379636956
+            ],
+            [
+              -79.78276238612443,
+              37.89183831020446
+            ],
+            [
+              -79.7857792249755,
+              37.88604451400609
+            ],
+            [
+              -79.78935309977243,
+              37.88154959317452
+            ],
+            [
+              -79.81083007730278,
+              37.85595611123101
+            ],
+            [
+              -79.812072326611,
+              37.855086619450745
+            ],
+            [
+              -79.81301880445568,
+              37.85482912831015
+            ],
+            [
+              -79.81401879588195,
+              37.85480055968437
+            ]
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/douthat",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/douthat"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/douthat-trail-map1.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-fairy-stone-state-park",
+    "name": "Fairy Stone State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -80.12880921925698,
+      36.77531120013883,
+      -80.09335866273382,
+      36.80625552101328
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -80.1012830206199,
+            36.77531120013883
+          ],
+          [
+            -80.10671549107903,
+            36.77584284304707
+          ],
+          [
+            -80.12534434424836,
+            36.779292725381694
+          ],
+          [
+            -80.12654696941448,
+            36.77979546399704
+          ],
+          [
+            -80.12794023465794,
+            36.78108247067089
+          ],
+          [
+            -80.12865826532963,
+            36.78233052074086
+          ],
+          [
+            -80.12880921925698,
+            36.783114761359414
+          ],
+          [
+            -80.12840420089616,
+            36.80059518004286
+          ],
+          [
+            -80.12803435661746,
+            36.80167746365816
+          ],
+          [
+            -80.12690584390187,
+            36.803345453656505
+          ],
+          [
+            -80.1256594973096,
+            36.80483654870358
+          ],
+          [
+            -80.12454118988167,
+            36.80564378603806
+          ],
+          [
+            -80.12246328549209,
+            36.80625552101328
+          ],
+          [
+            -80.11922885634755,
+            36.80597604814002
+          ],
+          [
+            -80.09930120976088,
+            36.802305416381515
+          ],
+          [
+            -80.09811755496465,
+            36.801850158858244
+          ],
+          [
+            -80.09724066340908,
+            36.80106528762722
+          ],
+          [
+            -80.09680403146129,
+            36.80007029993325
+          ],
+          [
+            -80.09442713411366,
+            36.789004041658
+          ],
+          [
+            -80.09335866273382,
+            36.78224653655871
+          ],
+          [
+            -80.09360829242519,
+            36.777986191187296
+          ],
+          [
+            -80.09385723581008,
+            36.77721829311215
+          ],
+          [
+            -80.09437255381609,
+            36.77654159021224
+          ],
+          [
+            -80.09569400752973,
+            36.775768983336
+          ],
+          [
+            -80.09665320072067,
+            36.77558358960356
+          ],
+          [
+            -80.1012830206199,
+            36.77531120013883
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/fairy-stone",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/fairy-stone"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/fairy-stone-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-false-cape-state-park",
+    "name": "False Cape State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -75.91606469973208,
+      36.54770040934559,
+      -75.86531547687281,
+      36.633447232296575
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -75.87931662394746,
+            36.54770040934559
+          ],
+          [
+            -75.88088701209011,
+            36.54809869403661
+          ],
+          [
+            -75.88209764410276,
+            36.54896080078756
+          ],
+          [
+            -75.88274203112078,
+            36.549929914242114
+          ],
+          [
+            -75.8846370351412,
+            36.55375630149917
+          ],
+          [
+            -75.91596933501225,
+            36.62723558677327
+          ],
+          [
+            -75.91606469973208,
+            36.628285335999436
+          ],
+          [
+            -75.91580222526609,
+            36.62904819142301
+          ],
+          [
+            -75.91527629887945,
+            36.62971678492122
+          ],
+          [
+            -75.91453221009499,
+            36.630233534301034
+          ],
+          [
+            -75.90476897245615,
+            36.63331628457912
+          ],
+          [
+            -75.89956599878826,
+            36.633447232296575
+          ],
+          [
+            -75.89798628003989,
+            36.633134971137345
+          ],
+          [
+            -75.88670936622225,
+            36.62678453938836
+          ],
+          [
+            -75.88603142550441,
+            36.62621176262667
+          ],
+          [
+            -75.88558896682129,
+            36.62550502559894
+          ],
+          [
+            -75.87626393182892,
+            36.600656037972556
+          ],
+          [
+            -75.87171894326742,
+            36.583755320806134
+          ],
+          [
+            -75.86531547687281,
+            36.55121618560959
+          ],
+          [
+            -75.86561470079751,
+            36.55016533302434
+          ],
+          [
+            -75.86612418507278,
+            36.549491087828834
+          ],
+          [
+            -75.86685382909465,
+            36.54896476979794
+          ],
+          [
+            -75.86774110565516,
+            36.54863147999851
+          ],
+          [
+            -75.87568833045752,
+            36.54770150027695
+          ],
+          [
+            -75.87931662394746,
+            36.54770040934559
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/false-cape",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/false-cape"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/false-cape-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Through March 31, 2027, access is via the beach because Back Bay refuge’s interior trails are seasonally closed. The visitor center is also closed Mondays through Wednesdays during this period. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-first-landing-state-park",
+    "name": "First Landing State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -76.08324059306015,
+      36.883868144509,
+      -75.98880797308463,
+      36.92736623941594
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -76.0075728189417,
+            36.883868144509
+          ],
+          [
+            -76.01114098741006,
+            36.884700141337326
+          ],
+          [
+            -76.08131403275442,
+            36.90604128295592
+          ],
+          [
+            -76.0823687195205,
+            36.9066664244384
+          ],
+          [
+            -76.08304524132913,
+            36.90756810156661
+          ],
+          [
+            -76.08324059306015,
+            36.90860904843946
+          ],
+          [
+            -76.08292501480656,
+            36.90963079126479
+          ],
+          [
+            -76.08237913890378,
+            36.91029012402688
+          ],
+          [
+            -76.08161841677595,
+            36.91079381422446
+          ],
+          [
+            -76.0487865386351,
+            36.92704816413831
+          ],
+          [
+            -76.04753665593098,
+            36.92736623941594
+          ],
+          [
+            -76.04589941759191,
+            36.927193277724975
+          ],
+          [
+            -76.0177574866595,
+            36.91741171463702
+          ],
+          [
+            -76.0138329701298,
+            36.915913503088596
+          ],
+          [
+            -76.01271013286582,
+            36.915114612976225
+          ],
+          [
+            -75.9893560575524,
+            36.89158141442283
+          ],
+          [
+            -75.98880797308463,
+            36.89009764234134
+          ],
+          [
+            -75.98906067107094,
+            36.88880245446688
+          ],
+          [
+            -75.99061329685692,
+            36.886815753786315
+          ],
+          [
+            -75.99298971561636,
+            36.88543946695517
+          ],
+          [
+            -75.99958254403904,
+            36.88422521163167
+          ],
+          [
+            -76.0075728189417,
+            36.883868144509
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/first-landing",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/first-landing"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/first-landing-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-grayson-highlands-state-park",
+    "name": "Grayson Highlands State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -81.52411015516476,
+      36.60834553765861,
+      -81.46695738588436,
+      36.65048639785813
+    ],
+    "boundary": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -81.48302023919918,
+              36.60834553765861
+            ],
+            [
+              -81.4844874623275,
+              36.608663239464605
+            ],
+            [
+              -81.48725479259974,
+              36.60974398996833
+            ],
+            [
+              -81.48808276564783,
+              36.61020018579084
+            ],
+            [
+              -81.48870648280878,
+              36.610833305888306
+            ],
+            [
+              -81.48907019772213,
+              36.61158676898108
+            ],
+            [
+              -81.48901440468514,
+              36.612997540105354
+            ],
+            [
+              -81.48768845233602,
+              36.61519030543915
+            ],
+            [
+              -81.48641634446533,
+              36.6160815472779
+            ],
+            [
+              -81.4850165996997,
+              36.616374914063655
+            ],
+            [
+              -81.48134549484666,
+              36.61653143183968
+            ],
+            [
+              -81.4803880541968,
+              36.616447108614295
+            ],
+            [
+              -81.47916553521048,
+              36.61597793390284
+            ],
+            [
+              -81.47813798045907,
+              36.61495759702299
+            ],
+            [
+              -81.4774221381269,
+              36.61296156886402
+            ],
+            [
+              -81.47745464163111,
+              36.611303281207725
+            ],
+            [
+              -81.4779784438932,
+              36.610358127819566
+            ],
+            [
+              -81.4791436792104,
+              36.60945163945728
+            ],
+            [
+              -81.4808802523766,
+              36.608666217864204
+            ],
+            [
+              -81.48302023919918,
+              36.60834553765861
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -81.4718286257265,
+              36.62176825807737
+            ],
+            [
+              -81.48072082105948,
+              36.62432711754378
+            ],
+            [
+              -81.48223733722538,
+              36.62506291101449
+            ],
+            [
+              -81.48306581927648,
+              36.62619486271951
+            ],
+            [
+              -81.48318506184471,
+              36.62724569544717
+            ],
+            [
+              -81.48274822570228,
+              36.62922855033118
+            ],
+            [
+              -81.48182636933876,
+              36.630312611599436
+            ],
+            [
+              -81.48100121983451,
+              36.63074571034539
+            ],
+            [
+              -81.47972754489632,
+              36.630989984562156
+            ],
+            [
+              -81.47608102760272,
+              36.63050621291322
+            ],
+            [
+              -81.47428221947047,
+              36.630051934000406
+            ],
+            [
+              -81.46906314610928,
+              36.628320621033915
+            ],
+            [
+              -81.4680014661916,
+              36.627722581248534
+            ],
+            [
+              -81.46727881957582,
+              36.62685389307146
+            ],
+            [
+              -81.46695738588436,
+              36.62596474993131
+            ],
+            [
+              -81.46696649594612,
+              36.625203057952326
+            ],
+            [
+              -81.4675627760948,
+              36.623484554917056
+            ],
+            [
+              -81.46824853957254,
+              36.62272897731535
+            ],
+            [
+              -81.46918459919183,
+              36.62216127631835
+            ],
+            [
+              -81.47044560938588,
+              36.621809024423285
+            ],
+            [
+              -81.4718286257265,
+              36.62176825807737
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -81.50838589004077,
+              36.61569057047431
+            ],
+            [
+              -81.50959856431517,
+              36.616096995245385
+            ],
+            [
+              -81.51052478983947,
+              36.61684755959564
+            ],
+            [
+              -81.52164049675754,
+              36.631264624820794
+            ],
+            [
+              -81.52394095185454,
+              36.63616990807026
+            ],
+            [
+              -81.52411015516476,
+              36.63715039954583
+            ],
+            [
+              -81.52383442986344,
+              36.638177945555476
+            ],
+            [
+              -81.52331718896556,
+              36.63884982173527
+            ],
+            [
+              -81.5170648260901,
+              36.64458636589527
+            ],
+            [
+              -81.51600346594215,
+              36.64520440633493
+            ],
+            [
+              -81.49403150606439,
+              36.65048639785813
+            ],
+            [
+              -81.49266807762454,
+              36.65046854000735
+            ],
+            [
+              -81.49057877626655,
+              36.649997469139684
+            ],
+            [
+              -81.48434947272463,
+              36.64672245133687
+            ],
+            [
+              -81.48062161534014,
+              36.6442552969886
+            ],
+            [
+              -81.48010610741787,
+              36.64356252110726
+            ],
+            [
+              -81.47666172796558,
+              36.637248293935095
+            ],
+            [
+              -81.47650441052073,
+              36.63620072256695
+            ],
+            [
+              -81.47672235877158,
+              36.635426759895445
+            ],
+            [
+              -81.47766435530198,
+              36.63435397275331
+            ],
+            [
+              -81.50011269108312,
+              36.61848384348302
+            ],
+            [
+              -81.50580947571498,
+              36.61589748353927
+            ],
+            [
+              -81.50739931793902,
+              36.615651364363266
+            ],
+            [
+              -81.50838589004077,
+              36.61569057047431
+            ]
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/grayson-highlands",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/grayson-highlands"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/grayson-highlands-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Public access is closed Nov. 2–3 and Nov. 16–17 for resource management. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-high-bridge-trail-state-park",
+    "name": "High Bridge Trail State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.68387465079407,
+      37.19617839412098,
+      -78.22379265930307,
+      37.32823769528407
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.22734580603242,
+            37.19617839412098
+          ],
+          [
+            -78.67458018120516,
+            37.25648874475927
+          ],
+          [
+            -78.67755566188474,
+            37.25718995233007
+          ],
+          [
+            -78.67957620572669,
+            37.25804758490411
+          ],
+          [
+            -78.68101438016512,
+            37.258890685152444
+          ],
+          [
+            -78.68296289071391,
+            37.26042681088271
+          ],
+          [
+            -78.68352978822973,
+            37.2610778122713
+          ],
+          [
+            -78.68387465079407,
+            37.26209573414657
+          ],
+          [
+            -78.68379617213827,
+            37.262886417383456
+          ],
+          [
+            -78.68304918678076,
+            37.26405633851336
+          ],
+          [
+            -78.68200450102628,
+            37.26470052690619
+          ],
+          [
+            -78.60165845170754,
+            37.29569757206289
+          ],
+          [
+            -78.56320479045584,
+            37.30555256566215
+          ],
+          [
+            -78.34648400141944,
+            37.32816124234328
+          ],
+          [
+            -78.34388258143534,
+            37.32823769528407
+          ],
+          [
+            -78.3416441635888,
+            37.32804141848706
+          ],
+          [
+            -78.33853021548474,
+            37.32733492795711
+          ],
+          [
+            -78.33591540432114,
+            37.32629177530081
+          ],
+          [
+            -78.30699671663051,
+            37.312540232085105
+          ],
+          [
+            -78.30580448834807,
+            37.31163597663479
+          ],
+          [
+            -78.23418565428929,
+            37.22124488774165
+          ],
+          [
+            -78.22383603163385,
+            37.199489020195614
+          ],
+          [
+            -78.22379265930307,
+            37.19843523879884
+          ],
+          [
+            -78.22444529297952,
+            37.19723031198366
+          ],
+          [
+            -78.22573087145979,
+            37.19641375651473
+          ],
+          [
+            -78.22734580603242,
+            37.19617839412098
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/high-bridge-trail",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/high-bridge-trail"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/high-bridge-trail-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Bridge replacement interrupts the route east of Farmville’s Main Street through Osborne Road during November, affecting access from downtown to High Bridge. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-holliday-lake-state-park",
+    "name": "Holliday Lake State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.64843462829651,
+      37.39262632339154,
+      -78.63319019424445,
+      37.402885425881024
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.639437193141,
+            37.39262632339154
+          ],
+          [
+            -78.64072663274492,
+            37.392857861361215
+          ],
+          [
+            -78.64424205702659,
+            37.394437310493565
+          ],
+          [
+            -78.64741934809041,
+            37.397373744536345
+          ],
+          [
+            -78.64788362360643,
+            37.39802099684965
+          ],
+          [
+            -78.64827642338825,
+            37.398757328778956
+          ],
+          [
+            -78.64843462829651,
+            37.39954762666837
+          ],
+          [
+            -78.64804317685915,
+            37.40083543294944
+          ],
+          [
+            -78.64720067118805,
+            37.40166029002375
+          ],
+          [
+            -78.64520665164882,
+            37.40258447261674
+          ],
+          [
+            -78.64345022024432,
+            37.402885425881024
+          ],
+          [
+            -78.63588769825024,
+            37.40237772212564
+          ],
+          [
+            -78.63440249743921,
+            37.40181102581038
+          ],
+          [
+            -78.6334275515403,
+            37.400752700470136
+          ],
+          [
+            -78.63319019424445,
+            37.39998250498076
+          ],
+          [
+            -78.63320402866681,
+            37.39880469585561
+          ],
+          [
+            -78.63366773022692,
+            37.397610600523144
+          ],
+          [
+            -78.63678851643157,
+            37.39356183186532
+          ],
+          [
+            -78.63813485173856,
+            37.39280610320319
+          ],
+          [
+            -78.639437193141,
+            37.39262632339154
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/holliday-lake",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/holliday-lake"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/holliday-lake-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Bridge work closes the Holliday Lake Road approach from Highway 24 through Nov. 20. Use Hollywood Road for access. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-hungry-mother-state-park",
+    "name": "Hungry Mother State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -81.5408517467981,
+      36.86642854617552,
+      -81.5045308793341,
+      36.8922770123391
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -81.5199259623577,
+            36.86642854617552
+          ],
+          [
+            -81.52434939242953,
+            36.866587209716506
+          ],
+          [
+            -81.52964308325926,
+            36.86834576418156
+          ],
+          [
+            -81.53068615604784,
+            36.868811163348745
+          ],
+          [
+            -81.53133920489327,
+            36.869303206437955
+          ],
+          [
+            -81.54018679560886,
+            36.87868736847025
+          ],
+          [
+            -81.54067785885827,
+            36.879459402339
+          ],
+          [
+            -81.5408517467981,
+            36.8803152239384
+          ],
+          [
+            -81.54066818678764,
+            36.8812306414294
+          ],
+          [
+            -81.53870543181085,
+            36.88480309116738
+          ],
+          [
+            -81.53530517816712,
+            36.88769079830837
+          ],
+          [
+            -81.52179563035239,
+            36.8921111917687
+          ],
+          [
+            -81.52056797533643,
+            36.8922770123391
+          ],
+          [
+            -81.51901956033959,
+            36.89196750125372
+          ],
+          [
+            -81.5067838663387,
+            36.8866421890112
+          ],
+          [
+            -81.50594571963975,
+            36.885974237493336
+          ],
+          [
+            -81.50492432875603,
+            36.88459570034978
+          ],
+          [
+            -81.5045308793341,
+            36.8832620025561
+          ],
+          [
+            -81.50471981335055,
+            36.88129089535956
+          ],
+          [
+            -81.50721826718261,
+            36.87268434717888
+          ],
+          [
+            -81.50779068678428,
+            36.87167376691156
+          ],
+          [
+            -81.5091739786905,
+            36.87036457653433
+          ],
+          [
+            -81.51012079556722,
+            36.869850706860134
+          ],
+          [
+            -81.51854968746844,
+            36.86669111719578
+          ],
+          [
+            -81.5199259623577,
+            36.86642854617552
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/hungry-mother",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/hungry-mother"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/hungry-mother-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Old Shawnee and Raider’s Run are now downhill biking routes only. Get the updated trail map from the park office. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-james-river-state-park",
+    "name": "James River State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.82658479925422,
+      37.610177666925914,
+      -78.78578976212617,
+      37.64165306148594
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.80876641297388,
+            37.610177666925914
+          ],
+          [
+            -78.81033929679981,
+            37.610470230957084
+          ],
+          [
+            -78.81694484135531,
+            37.613354351044535
+          ],
+          [
+            -78.82288535523566,
+            37.616655943544
+          ],
+          [
+            -78.82408352963499,
+            37.61758945922797
+          ],
+          [
+            -78.82528291126121,
+            37.61917507835067
+          ],
+          [
+            -78.82624256594818,
+            37.62096788205229
+          ],
+          [
+            -78.8264599359906,
+            37.62221281315189
+          ],
+          [
+            -78.82658479925422,
+            37.62652041667873
+          ],
+          [
+            -78.82613643477039,
+            37.6286942560466
+          ],
+          [
+            -78.8255880174261,
+            37.63010560737867
+          ],
+          [
+            -78.82436981094557,
+            37.631898194234616
+          ],
+          [
+            -78.82274215705871,
+            37.63321850755587
+          ],
+          [
+            -78.80573541139185,
+            37.641323865313076
+          ],
+          [
+            -78.80447549570108,
+            37.64165306148594
+          ],
+          [
+            -78.80347839027458,
+            37.64163231639403
+          ],
+          [
+            -78.79974168045564,
+            37.641028355200255
+          ],
+          [
+            -78.79208656458025,
+            37.63765022075722
+          ],
+          [
+            -78.78678428155304,
+            37.634566126537294
+          ],
+          [
+            -78.78600212492348,
+            37.63345341205782
+          ],
+          [
+            -78.78578976212617,
+            37.63216377849334
+          ],
+          [
+            -78.78602078688479,
+            37.63141743186671
+          ],
+          [
+            -78.78655202599353,
+            37.630698791464255
+          ],
+          [
+            -78.80510207608522,
+            37.61132584875683
+          ],
+          [
+            -78.80642946363946,
+            37.6105746939943
+          ],
+          [
+            -78.80876641297388,
+            37.610177666925914
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/james-river",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/james-river"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/james-river-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: The park is scheduled to close Nov. 9–11 and Dec. 7–9 for resource management. Dixon Landing’s boat ramp is also closed Nov. 1–5 for road work. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-kiptopeke-state-park",
+    "name": "Kiptopeke State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -75.99105302232633,
+      37.1524841006878,
+      -75.96805054667774,
+      37.17635703160964
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -75.97214274782672,
+            37.1524841006878
+          ],
+          [
+            -75.97783955580503,
+            37.153726810860775
+          ],
+          [
+            -75.97899757008274,
+            37.15422555225081
+          ],
+          [
+            -75.98855322908852,
+            37.16425335029256
+          ],
+          [
+            -75.98898520843962,
+            37.16496553231716
+          ],
+          [
+            -75.99105302232633,
+            37.17187376218725
+          ],
+          [
+            -75.9907822786254,
+            37.17316669558849
+          ],
+          [
+            -75.99020081542798,
+            37.1739421779778
+          ],
+          [
+            -75.98945946616391,
+            37.17446940682134
+          ],
+          [
+            -75.98821699410628,
+            37.17487161432132
+          ],
+          [
+            -75.97507237370232,
+            37.17635703160964
+          ],
+          [
+            -75.97227563596226,
+            37.176244827169015
+          ],
+          [
+            -75.97134188050063,
+            37.175907230484334
+          ],
+          [
+            -75.97038349045516,
+            37.17515641530926
+          ],
+          [
+            -75.96986680217823,
+            37.17416600515033
+          ],
+          [
+            -75.96805054667774,
+            37.16351968363008
+          ],
+          [
+            -75.9683636642899,
+            37.15512857294327
+          ],
+          [
+            -75.9687535368188,
+            37.15398354626618
+          ],
+          [
+            -75.96967552228631,
+            37.15308606741869
+          ],
+          [
+            -75.97090855100147,
+            37.152583862563475
+          ],
+          [
+            -75.97214274782672,
+            37.1524841006878
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/kiptopeke",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/kiptopeke"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/kiptopeke-state-park-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: The park closes at sunset Nov. 3 and is scheduled to reopen at sunrise Nov. 6 for resource-management work. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-leesylvania-state-park",
+    "name": "Leesylvania State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -77.27313193705366,
+      38.58145631717776,
+      -77.2434896047906,
+      38.60575430037778
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -77.25871296094316,
+            38.58145631717776
+          ],
+          [
+            -77.26521314513813,
+            38.582637557499126
+          ],
+          [
+            -77.26980540318621,
+            38.584306107599495
+          ],
+          [
+            -77.27194174084518,
+            38.58539648313884
+          ],
+          [
+            -77.27291469343257,
+            38.58646349921104
+          ],
+          [
+            -77.27313193705366,
+            38.58776451112509
+          ],
+          [
+            -77.27147240915576,
+            38.60331097243635
+          ],
+          [
+            -77.27123465589482,
+            38.604021823328964
+          ],
+          [
+            -77.27079476801427,
+            38.60464217204017
+          ],
+          [
+            -77.27009477554635,
+            38.6052132653062
+          ],
+          [
+            -77.2692136451484,
+            38.60560031566066
+          ],
+          [
+            -77.26755300376699,
+            38.60575430037778
+          ],
+          [
+            -77.26544614990082,
+            38.60511248787178
+          ],
+          [
+            -77.24496924183076,
+            38.59507227772823
+          ],
+          [
+            -77.24426119155194,
+            38.59455789715597
+          ],
+          [
+            -77.24365086942605,
+            38.59367208839103
+          ],
+          [
+            -77.2434896047906,
+            38.59257955136363
+          ],
+          [
+            -77.2442606973681,
+            38.58999926772111
+          ],
+          [
+            -77.24460401725635,
+            38.589259862284706
+          ],
+          [
+            -77.24534261195967,
+            38.588484978791186
+          ],
+          [
+            -77.25644940653626,
+            38.58196148674469
+          ],
+          [
+            -77.25769055505047,
+            38.58151866060533
+          ],
+          [
+            -77.25871296094316,
+            38.58145631717776
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/leesylvania",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/leesylvania"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/leesylvania-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: The Potomac Heritage Trail is closed for maintenance. Seasonal hunting may occur nearby; follow posted signs and designated routes. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-machicomoco-state-park",
+    "name": "Machicomoco State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -76.55700723762516,
+      37.29210795172892,
+      -76.53092942947598,
+      37.314870025462305
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -76.53518902904042,
+            37.29210795172892
+          ],
+          [
+            -76.53674942889657,
+            37.29251548687524
+          ],
+          [
+            -76.55097723356612,
+            37.3002710207159
+          ],
+          [
+            -76.55328190982519,
+            37.30181273951905
+          ],
+          [
+            -76.55525541959354,
+            37.30430739142313
+          ],
+          [
+            -76.55616021868275,
+            37.30590677691478
+          ],
+          [
+            -76.55699507442391,
+            37.30810198183048
+          ],
+          [
+            -76.55700723762516,
+            37.308886127148014
+          ],
+          [
+            -76.55676309377394,
+            37.309593264578155
+          ],
+          [
+            -76.55545055129595,
+            37.31101842316235
+          ],
+          [
+            -76.55418915939384,
+            37.311609835267554
+          ],
+          [
+            -76.54274689139179,
+            37.314706598086005
+          ],
+          [
+            -76.54173071329919,
+            37.314870025462305
+          ],
+          [
+            -76.54035345563152,
+            37.31482550964921
+          ],
+          [
+            -76.5391344340608,
+            37.314517953259376
+          ],
+          [
+            -76.53648247802467,
+            37.3133884812339
+          ],
+          [
+            -76.53521264908268,
+            37.312472713152005
+          ],
+          [
+            -76.53433150711892,
+            37.31145679368918
+          ],
+          [
+            -76.53138107989722,
+            37.30648714308252
+          ],
+          [
+            -76.53104994587336,
+            37.305766742513406
+          ],
+          [
+            -76.53092942947598,
+            37.30496712131183
+          ],
+          [
+            -76.53169233810715,
+            37.294088417417235
+          ],
+          [
+            -76.53209129440685,
+            37.29336333941856
+          ],
+          [
+            -76.53299723233593,
+            37.29259840726047
+          ],
+          [
+            -76.53388135618191,
+            37.29224010737146
+          ],
+          [
+            -76.53518902904042,
+            37.29210795172892
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/machicomoco",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/machicomoco"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/machicomoco-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: The park is scheduled to close Nov. 18–19 for resource management, with reopening planned for 9 a.m. Nov. 20. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-mason-neck-state-park",
+    "name": "Mason Neck State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -77.2103367459542,
+      38.63010412480211,
+      -77.17032649298127,
+      38.6523240058394
+    ],
+    "boundary": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -77.20169374210549,
+              38.63010412480211
+            ],
+            [
+              -77.20296492770109,
+              38.630398329403334
+            ],
+            [
+              -77.20859789137474,
+              38.63282648665527
+            ],
+            [
+              -77.20961571599837,
+              38.63351382338176
+            ],
+            [
+              -77.21011446591352,
+              38.63420284490411
+            ],
+            [
+              -77.2103367459542,
+              38.634975756748574
+            ],
+            [
+              -77.21017361937047,
+              38.636021428536864
+            ],
+            [
+              -77.2069452122323,
+              38.64068585578772
+            ],
+            [
+              -77.2010224212493,
+              38.64745620230967
+            ],
+            [
+              -77.2003146707408,
+              38.64802164484582
+            ],
+            [
+              -77.18914211947005,
+              38.65216029546954
+            ],
+            [
+              -77.18781502822357,
+              38.6523240058394
+            ],
+            [
+              -77.18620969986536,
+              38.65195414936929
+            ],
+            [
+              -77.18247436198551,
+              38.64918624224353
+            ],
+            [
+              -77.18190944298865,
+              38.64853043308539
+            ],
+            [
+              -77.18161129162112,
+              38.6477743418669
+            ],
+            [
+              -77.18145844326995,
+              38.645699865172915
+            ],
+            [
+              -77.18160175018843,
+              38.644927473436596
+            ],
+            [
+              -77.18194980958482,
+              38.6442985153993
+            ],
+            [
+              -77.18358527806015,
+              38.64269856063417
+            ],
+            [
+              -77.19834258833741,
+              38.63102665658001
+            ],
+            [
+              -77.19920511561192,
+              38.63055459708975
+            ],
+            [
+              -77.20037507513928,
+              38.63020847778695
+            ],
+            [
+              -77.20169374210549,
+              38.63010412480211
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -77.17567612879012,
+              38.64348295528397
+            ],
+            [
+              -77.17729703560059,
+              38.6440027872022
+            ],
+            [
+              -77.17840581514214,
+              38.64507619105474
+            ],
+            [
+              -77.17873371301843,
+              38.646323543308945
+            ],
+            [
+              -77.17845757596086,
+              38.6479252669172
+            ],
+            [
+              -77.17720374374902,
+              38.65027773377428
+            ],
+            [
+              -77.17615749000753,
+              38.651302589195865
+            ],
+            [
+              -77.1753538355273,
+              38.6517223740439
+            ],
+            [
+              -77.17450226484745,
+              38.65195655773409
+            ],
+            [
+              -77.17282954682999,
+              38.6519263273014
+            ],
+            [
+              -77.17162870563375,
+              38.65145408696971
+            ],
+            [
+              -77.17074975158266,
+              38.650657429026374
+            ],
+            [
+              -77.17032649298127,
+              38.64965764552547
+            ],
+            [
+              -77.17042334904541,
+              38.64860694855217
+            ],
+            [
+              -77.1720826905975,
+              38.64503368850948
+            ],
+            [
+              -77.17263372106967,
+              38.64436960509026
+            ],
+            [
+              -77.17401333813925,
+              38.6436274574105
+            ],
+            [
+              -77.17567612879012,
+              38.64348295528397
+            ]
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/mason-neck",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/mason-neck"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/mason-neck-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Construction closes Marsh View Trail and its parking area. Drinking water and regular restrooms are unavailable; portable toilets are provided at the visitor center and picnic area. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-natural-bridge-state-park",
+    "name": "Natural Bridge State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -79.55829151181075,
+      37.61917238244228,
+      -79.5270327378746,
+      37.65053363967448
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -79.55375627439889,
+            37.61917238244228
+          ],
+          [
+            -79.55553261628516,
+            37.61952599042898
+          ],
+          [
+            -79.55631339742156,
+            37.619971146271766
+          ],
+          [
+            -79.55690641233524,
+            37.6205722911767
+          ],
+          [
+            -79.55729381748158,
+            37.621297423734745
+          ],
+          [
+            -79.55829151181075,
+            37.62528077000972
+          ],
+          [
+            -79.55818692684447,
+            37.637153197935255
+          ],
+          [
+            -79.55741679013624,
+            37.641079084272796
+          ],
+          [
+            -79.55538121420291,
+            37.647286884231804
+          ],
+          [
+            -79.55447092140716,
+            37.64832909697021
+          ],
+          [
+            -79.55195706273234,
+            37.64987777787892
+          ],
+          [
+            -79.55081251199766,
+            37.65036716119107
+          ],
+          [
+            -79.54984149532869,
+            37.65053363967448
+          ],
+          [
+            -79.54885140262631,
+            37.650469877223244
+          ],
+          [
+            -79.53686657866294,
+            37.648362050908865
+          ],
+          [
+            -79.53605864738061,
+            37.64797098867861
+          ],
+          [
+            -79.535417477459,
+            37.64741808326315
+          ],
+          [
+            -79.52740960133615,
+            37.637635637444234
+          ],
+          [
+            -79.5270327378746,
+            37.63635183378052
+          ],
+          [
+            -79.52760345683642,
+            37.63458682612151
+          ],
+          [
+            -79.52977417545694,
+            37.630987263085274
+          ],
+          [
+            -79.53147785961254,
+            37.62954962700202
+          ],
+          [
+            -79.55055666430054,
+            37.61958231570608
+          ],
+          [
+            -79.55188935588964,
+            37.619213547874594
+          ],
+          [
+            -79.55375627439889,
+            37.61917238244228
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/natural-bridge",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/natural-bridge"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/natural-bridge-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-natural-tunnel-state-park",
+    "name": "Natural Tunnel State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -82.75326775976728,
+      36.68937095077542,
+      -82.73463048396768,
+      36.71712225605696
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -82.74562051973784,
+            36.68937095077542
+          ],
+          [
+            -82.7469156012527,
+            36.68959409789245
+          ],
+          [
+            -82.74785130843489,
+            36.69006825831507
+          ],
+          [
+            -82.74864179848971,
+            36.69085447822162
+          ],
+          [
+            -82.7490238293113,
+            36.691720006188454
+          ],
+          [
+            -82.75326775976728,
+            36.71338359302307
+          ],
+          [
+            -82.75324106148862,
+            36.71446578124759
+          ],
+          [
+            -82.75293191908288,
+            36.715294630450664
+          ],
+          [
+            -82.75219053749264,
+            36.71622448606858
+          ],
+          [
+            -82.75143371863453,
+            36.71670536978674
+          ],
+          [
+            -82.75053837158819,
+            36.71699331497762
+          ],
+          [
+            -82.73878126214942,
+            36.71712225605696
+          ],
+          [
+            -82.73729601848365,
+            36.71657467674447
+          ],
+          [
+            -82.73587294353412,
+            36.71514843172782
+          ],
+          [
+            -82.73517595653851,
+            36.7137593599567
+          ],
+          [
+            -82.73463048396768,
+            36.71125516482071
+          ],
+          [
+            -82.73502871278089,
+            36.6941133669435
+          ],
+          [
+            -82.73592642256737,
+            36.69276745690727
+          ],
+          [
+            -82.73850906603855,
+            36.69075305019392
+          ],
+          [
+            -82.74423665426231,
+            36.68945242124855
+          ],
+          [
+            -82.74562051973784,
+            36.68937095077542
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/natural-tunnel",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/natural-tunnel"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/natural-tunnel-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-new-river-trail-state-park",
+    "name": "New River Trail State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -80.97899900397148,
+      36.66510057909761,
+      -80.71344070088824,
+      37.04929145778135
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -80.92453543181384,
+            36.66510057909761
+          ],
+          [
+            -80.9315374513203,
+            36.6657394759277
+          ],
+          [
+            -80.93313916296938,
+            36.66634173339252
+          ],
+          [
+            -80.93409761852851,
+            36.667002335390634
+          ],
+          [
+            -80.97284736101074,
+            36.70727047655483
+          ],
+          [
+            -80.97839037255099,
+            36.71332328719564
+          ],
+          [
+            -80.97899900397148,
+            36.7145427826417
+          ],
+          [
+            -80.97898852841772,
+            36.715336390878164
+          ],
+          [
+            -80.95694748022704,
+            36.839541517219395
+          ],
+          [
+            -80.95606157598021,
+            36.84200070147291
+          ],
+          [
+            -80.95544450545282,
+            36.84311459100895
+          ],
+          [
+            -80.95439919384842,
+            36.84436813443251
+          ],
+          [
+            -80.75337165172695,
+            37.04826278221522
+          ],
+          [
+            -80.75237320487712,
+            37.04895044245175
+          ],
+          [
+            -80.75144876749539,
+            37.04923461981822
+          ],
+          [
+            -80.75046121665609,
+            37.04929145778135
+          ],
+          [
+            -80.74949560821045,
+            37.04911606103291
+          ],
+          [
+            -80.73888714228717,
+            37.04469219419639
+          ],
+          [
+            -80.73660224508058,
+            37.04333063024858
+          ],
+          [
+            -80.72984676183295,
+            37.0381956456251
+          ],
+          [
+            -80.72203462035381,
+            37.0293648311813
+          ],
+          [
+            -80.72133669070391,
+            37.028035077120585
+          ],
+          [
+            -80.71344070088824,
+            36.961403357222096
+          ],
+          [
+            -80.71378098343926,
+            36.95753141935373
+          ],
+          [
+            -80.71760876372169,
+            36.938956475359454
+          ],
+          [
+            -80.92151646985462,
+            36.66644871871935
+          ],
+          [
+            -80.9226523045212,
+            36.66550531511166
+          ],
+          [
+            -80.92355660917231,
+            36.665190432266606
+          ],
+          [
+            -80.92453543181384,
+            36.66510057909761
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/new-river-trail",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/new-river-trail"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/new-river-trail-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-occoneechee-state-park",
+    "name": "Occoneechee State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.5370382781299,
+      36.57897695145246,
+      -78.44454582575294,
+      36.636718635466096
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.47783362774817,
+            36.57897695145246
+          ],
+          [
+            -78.47910169492062,
+            36.57923422186896
+          ],
+          [
+            -78.48015118125262,
+            36.579863280040186
+          ],
+          [
+            -78.53524571151473,
+            36.62588857143207
+          ],
+          [
+            -78.53680595020799,
+            36.62840026755388
+          ],
+          [
+            -78.5370382781299,
+            36.62917103727512
+          ],
+          [
+            -78.53687009249097,
+            36.632459229839256
+          ],
+          [
+            -78.53638200997668,
+            36.633435568379426
+          ],
+          [
+            -78.53572857109174,
+            36.63402869696472
+          ],
+          [
+            -78.53079034636342,
+            36.63589503736164
+          ],
+          [
+            -78.52714572626674,
+            36.63661586097654
+          ],
+          [
+            -78.52505376758968,
+            36.636718635466096
+          ],
+          [
+            -78.52407709795015,
+            36.63662070214046
+          ],
+          [
+            -78.52165841851031,
+            36.636061463711464
+          ],
+          [
+            -78.4865768998287,
+            36.62414909143538
+          ],
+          [
+            -78.44586600285085,
+            36.599427502730364
+          ],
+          [
+            -78.44517015716823,
+            36.598866877753416
+          ],
+          [
+            -78.44461050613961,
+            36.59791373466217
+          ],
+          [
+            -78.44454582575294,
+            36.59686045589305
+          ],
+          [
+            -78.4449859435911,
+            36.59586739360156
+          ],
+          [
+            -78.44586384127656,
+            36.59508572702948
+          ],
+          [
+            -78.4759458508811,
+            36.57935667813905
+          ],
+          [
+            -78.47685482178969,
+            36.57905389504977
+          ],
+          [
+            -78.47783362774817,
+            36.57897695145246
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/occoneechee",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/occoneechee"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/occoneechee-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-pocahontas-state-park",
+    "name": "Pocahontas State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -77.60437578882583,
+      37.329042235121904,
+      -77.52555341591115,
+      37.409875630934366
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -77.56261719677939,
+            37.329042235121904
+          ],
+          [
+            -77.56857286482,
+            37.33001696754194
+          ],
+          [
+            -77.57427833248961,
+            37.33113418914664
+          ],
+          [
+            -77.57609697532641,
+            37.331756137148346
+          ],
+          [
+            -77.59075239421178,
+            37.34416135044159
+          ],
+          [
+            -77.59139816903384,
+            37.345309759312705
+          ],
+          [
+            -77.60394879847489,
+            37.376923197682835
+          ],
+          [
+            -77.60437578882583,
+            37.38655007291023
+          ],
+          [
+            -77.60403174761855,
+            37.38729369848585
+          ],
+          [
+            -77.598363222057,
+            37.39547638399903
+          ],
+          [
+            -77.58758801186502,
+            37.4036952616622
+          ],
+          [
+            -77.58627615819486,
+            37.40444502164959
+          ],
+          [
+            -77.56807327431194,
+            37.409711672540546
+          ],
+          [
+            -77.567101070315,
+            37.409875630934366
+          ],
+          [
+            -77.56579194221348,
+            37.409733500138685
+          ],
+          [
+            -77.53129592832474,
+            37.3991862918387
+          ],
+          [
+            -77.52960225091151,
+            37.39840666673467
+          ],
+          [
+            -77.52783939086117,
+            37.397077097703736
+          ],
+          [
+            -77.52679938306461,
+            37.39579639388964
+          ],
+          [
+            -77.5257675689174,
+            37.39376010197608
+          ],
+          [
+            -77.52555341591115,
+            37.39294893667298
+          ],
+          [
+            -77.52571017523523,
+            37.391869805901266
+          ],
+          [
+            -77.53043858326063,
+            37.382402235767806
+          ],
+          [
+            -77.55896413190447,
+            37.330608952519434
+          ],
+          [
+            -77.55951331509006,
+            37.32994865576
+          ],
+          [
+            -77.56057117825485,
+            37.32931848266651
+          ],
+          [
+            -77.5615202505284,
+            37.329086261177636
+          ],
+          [
+            -77.56261719677939,
+            37.329042235121904
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/pocahontas",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/pocahontas"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/pocahontas-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Managed hunts close areas south of Beach Road Nov. 9–10 and the entire park Dec. 7–8. Permitted weekday archery hunting continues in designated areas through Jan. 1; those areas remain accessible to other visitors. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-powhatan-state-park",
+    "name": "Powhatan State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -77.95114103346702,
+      37.65757415706655,
+      -77.91072998699366,
+      37.694312057261975
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -77.92287893188134,
+            37.65757415706655
+          ],
+          [
+            -77.92417620076387,
+            37.65779196931779
+          ],
+          [
+            -77.92502545288053,
+            37.658207530160894
+          ],
+          [
+            -77.94996691684997,
+            37.67436159839564
+          ],
+          [
+            -77.95091612253736,
+            37.67543604408204
+          ],
+          [
+            -77.95114103346702,
+            37.67647489217744
+          ],
+          [
+            -77.95096912867562,
+            37.67725584755142
+          ],
+          [
+            -77.95025799423372,
+            37.67843973862553
+          ],
+          [
+            -77.94786871865347,
+            37.68149637240178
+          ],
+          [
+            -77.94651184176844,
+            37.6826979846803
+          ],
+          [
+            -77.94347250934658,
+            37.68455529140829
+          ],
+          [
+            -77.92867815128763,
+            37.691547011611426
+          ],
+          [
+            -77.92248107363257,
+            37.69402182783182
+          ],
+          [
+            -77.92116781799537,
+            37.69428980941954
+          ],
+          [
+            -77.91983519064155,
+            37.694312057261975
+          ],
+          [
+            -77.91882503778633,
+            37.69413381202565
+          ],
+          [
+            -77.91793741355049,
+            37.693738373659436
+          ],
+          [
+            -77.91723683543204,
+            37.69315190567234
+          ],
+          [
+            -77.91664269623378,
+            37.692327607532675
+          ],
+          [
+            -77.91366196895758,
+            37.68611586668783
+          ],
+          [
+            -77.91085923211938,
+            37.67844307498675
+          ],
+          [
+            -77.91072998699366,
+            37.67742444997598
+          ],
+          [
+            -77.9110124722328,
+            37.676387319319666
+          ],
+          [
+            -77.91971489718638,
+            37.65921229666085
+          ],
+          [
+            -77.92023765221806,
+            37.65853715073544
+          ],
+          [
+            -77.92098440658106,
+            37.658011712244125
+          ],
+          [
+            -77.92189085187587,
+            37.65768122813801
+          ],
+          [
+            -77.92287893188134,
+            37.65757415706655
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/powhatan",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/powhatan"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/powhatan-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-sailors-creek-battlefield-historic-state-park",
+    "name": "Sailors Creek Battlefield Historic State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.23655245986569,
+      37.29264668376864,
+      -78.21792521354034,
+      37.312780434652744
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.23290649153509,
+            37.29264668376864
+          ],
+          [
+            -78.23441148067167,
+            37.292909984188036
+          ],
+          [
+            -78.23546924250773,
+            37.29349639681219
+          ],
+          [
+            -78.23630763421505,
+            37.294519412417436
+          ],
+          [
+            -78.23655245986569,
+            37.295486581836386
+          ],
+          [
+            -78.23642461601695,
+            37.2964111301736
+          ],
+          [
+            -78.23381995631794,
+            37.30573046555682
+          ],
+          [
+            -78.2334756022008,
+            37.306441531078086
+          ],
+          [
+            -78.23260190027531,
+            37.30736701905372
+          ],
+          [
+            -78.23127927447338,
+            37.308378619863205
+          ],
+          [
+            -78.22764187108453,
+            37.310973106501784
+          ],
+          [
+            -78.22664616192984,
+            37.31148995071714
+          ],
+          [
+            -78.22402967148881,
+            37.31254980057162
+          ],
+          [
+            -78.22307978743693,
+            37.312780434652744
+          ],
+          [
+            -78.22176132662321,
+            37.3127293041095
+          ],
+          [
+            -78.21964926445366,
+            37.312139099943494
+          ],
+          [
+            -78.21886026803797,
+            37.31165778674918
+          ],
+          [
+            -78.21828017878522,
+            37.31101425783237
+          ],
+          [
+            -78.2179589503649,
+            37.31026393666567
+          ],
+          [
+            -78.21792521354034,
+            37.30924222648527
+          ],
+          [
+            -78.22233603602675,
+            37.296534261909095
+          ],
+          [
+            -78.22316864431374,
+            37.29571623673889
+          ],
+          [
+            -78.22401768801627,
+            37.29530548828435
+          ],
+          [
+            -78.23146638387614,
+            37.292864932552156
+          ],
+          [
+            -78.23290649153509,
+            37.29264668376864
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/sailors-creek",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/sailors-creek"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/sailors-creek-battlefield-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-seven-bends-state-park",
+    "name": "Seven Bends State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.4989282301717,
+      38.83299111349465,
+      -78.46965114845668,
+      38.87368474019782
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.49373809260149,
+            38.83299111349465
+          ],
+          [
+            -78.49506445470007,
+            38.83317858931226
+          ],
+          [
+            -78.4961981446808,
+            38.833748790042954
+          ],
+          [
+            -78.49681626341076,
+            38.834377251659326
+          ],
+          [
+            -78.49723016543813,
+            38.835380550356845
+          ],
+          [
+            -78.4989282301717,
+            38.86999001166605
+          ],
+          [
+            -78.49886456214482,
+            38.87135104400029
+          ],
+          [
+            -78.49856079330715,
+            38.87208011315668
+          ],
+          [
+            -78.49802144417525,
+            38.87273688833528
+          ],
+          [
+            -78.49666945537115,
+            38.87348121866699
+          ],
+          [
+            -78.49514355217373,
+            38.87368474019782
+          ],
+          [
+            -78.49217111864351,
+            38.8734899088178
+          ],
+          [
+            -78.49065565135632,
+            38.87308818922444
+          ],
+          [
+            -78.4745070969368,
+            38.86639153478467
+          ],
+          [
+            -78.47349655178098,
+            38.86584701604008
+          ],
+          [
+            -78.4728684949806,
+            38.86521286200226
+          ],
+          [
+            -78.47251249172733,
+            38.86452119158186
+          ],
+          [
+            -78.46991461507686,
+            38.856721101962634
+          ],
+          [
+            -78.46965114845668,
+            38.85479143591524
+          ],
+          [
+            -78.4700535874688,
+            38.853509309841264
+          ],
+          [
+            -78.48188668001126,
+            38.835732315931494
+          ],
+          [
+            -78.48265282630541,
+            38.83521307188429
+          ],
+          [
+            -78.48357868780545,
+            38.83489012655413
+          ],
+          [
+            -78.49164427862786,
+            38.83311204400243
+          ],
+          [
+            -78.49373809260149,
+            38.83299111349465
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/seven-bends",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/seven-bends"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/seven-bends-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Renovation work closes part of western Kestrel Dell Trail. Follow trailhead notices for the affected section. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-shenandoah-river-state-park",
+    "name": "Shenandoah River State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.33340382112002,
+      38.83632938700541,
+      -78.28873605899379,
+      38.87238967280465
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.3299617179747,
+            38.83632938700541
+          ],
+          [
+            -78.33095097634715,
+            38.836502450322534
+          ],
+          [
+            -78.33209029148516,
+            38.83706566010801
+          ],
+          [
+            -78.33271464982738,
+            38.837690275229264
+          ],
+          [
+            -78.3331385491663,
+            38.83869093434691
+          ],
+          [
+            -78.33340382112002,
+            38.851186318176715
+          ],
+          [
+            -78.33305289563809,
+            38.852665982860906
+          ],
+          [
+            -78.33229326660314,
+            38.85395902257214
+          ],
+          [
+            -78.33150781273957,
+            38.85454267966868
+          ],
+          [
+            -78.31290434787715,
+            38.86527479962677
+          ],
+          [
+            -78.30060633640639,
+            38.871984275529904
+          ],
+          [
+            -78.29911325359755,
+            38.87237925426507
+          ],
+          [
+            -78.29737975288417,
+            38.87238967280465
+          ],
+          [
+            -78.29638032772017,
+            38.87225485230445
+          ],
+          [
+            -78.29547400964834,
+            38.87189903712453
+          ],
+          [
+            -78.29476504468668,
+            38.87141771608822
+          ],
+          [
+            -78.29412538624044,
+            38.87070198296808
+          ],
+          [
+            -78.2890180673059,
+            38.86226870677731
+          ],
+          [
+            -78.28873605899379,
+            38.86150178694536
+          ],
+          [
+            -78.28875291028858,
+            38.860703910624096
+          ],
+          [
+            -78.29258311485884,
+            38.8506229523838
+          ],
+          [
+            -78.30133049390186,
+            38.84063388389636
+          ],
+          [
+            -78.30234187188594,
+            38.83980947665346
+          ],
+          [
+            -78.30627806123485,
+            38.8379288189151
+          ],
+          [
+            -78.31272859002623,
+            38.83635189255346
+          ],
+          [
+            -78.3299617179747,
+            38.83632938700541
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/shenandoah-river",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/shenandoah-river"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/shenandoah-river-geo-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: A resource-management closure runs from dusk Nov. 1 until the morning of Nov. 4. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-sky-meadows-state-park",
+    "name": "Sky Meadows State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -77.99838095504634,
+      38.980061275732865,
+      -77.92327268357174,
+      39.012661882811564
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -77.97110981580778,
+            38.980061275732865
+          ],
+          [
+            -77.97213030160516,
+            38.98018618940231
+          ],
+          [
+            -77.97796014384022,
+            38.981936610292635
+          ],
+          [
+            -77.98141518069005,
+            38.98314086819808
+          ],
+          [
+            -77.98380275231712,
+            38.98441777838299
+          ],
+          [
+            -77.99545986041767,
+            38.995387670009656
+          ],
+          [
+            -77.99793479647849,
+            38.998463678189545
+          ],
+          [
+            -77.99834713732518,
+            38.99921062159033
+          ],
+          [
+            -77.99838095504634,
+            39.00050654249795
+          ],
+          [
+            -77.99790487945549,
+            39.001525697926546
+          ],
+          [
+            -77.99126070886425,
+            39.00774542806632
+          ],
+          [
+            -77.99046291074173,
+            39.00821019958195
+          ],
+          [
+            -77.98097069804759,
+            39.01220159965359
+          ],
+          [
+            -77.98004606814239,
+            39.01246088559796
+          ],
+          [
+            -77.97732654345597,
+            39.012661882811564
+          ],
+          [
+            -77.97622621819795,
+            39.01254600831597
+          ],
+          [
+            -77.92945912424769,
+            38.99858289544771
+          ],
+          [
+            -77.92847019056508,
+            38.9978944441241
+          ],
+          [
+            -77.92748283751808,
+            38.99641100435777
+          ],
+          [
+            -77.92338865736248,
+            38.98834207514577
+          ],
+          [
+            -77.92327268357174,
+            38.987122344373056
+          ],
+          [
+            -77.92385207617704,
+            38.98572364411744
+          ],
+          [
+            -77.92477297886063,
+            38.9848147711491
+          ],
+          [
+            -77.92632077729806,
+            38.984136640499266
+          ],
+          [
+            -77.9335800209654,
+            38.98299238172674
+          ],
+          [
+            -77.93775246831795,
+            38.98257738554861
+          ],
+          [
+            -77.97110981580778,
+            38.980061275732865
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/sky-meadows"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/sky-meadows-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Main-lot resurfacing is expected Nov. 5–6. Use the overflow lot or other designated parking. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-smith-mountain-lake-state-park",
+    "name": "Smith Mountain Lake State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -79.62097833249484,
+      37.07071744730891,
+      -79.58431806099604,
+      37.103531118658694
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -79.60922859261574,
+            37.07071744730891
+          ],
+          [
+            -79.61017994398244,
+            37.07084713808924
+          ],
+          [
+            -79.61104658095941,
+            37.071187304927236
+          ],
+          [
+            -79.61854319078454,
+            37.0759958021823
+          ],
+          [
+            -79.62028753809403,
+            37.07809783285638
+          ],
+          [
+            -79.62097833249484,
+            37.08024246138832
+          ],
+          [
+            -79.62088365507387,
+            37.081294697724914
+          ],
+          [
+            -79.61616813419393,
+            37.094142358830666
+          ],
+          [
+            -79.6147687982158,
+            37.097130915869535
+          ],
+          [
+            -79.61188866782389,
+            37.09994852148458
+          ],
+          [
+            -79.61110042745175,
+            37.1004410165866
+          ],
+          [
+            -79.61016666212356,
+            37.100726978895395
+          ],
+          [
+            -79.59512620714577,
+            37.103531118658694
+          ],
+          [
+            -79.59287916846311,
+            37.103383956558055
+          ],
+          [
+            -79.5881045339835,
+            37.10239586875988
+          ],
+          [
+            -79.58614889409247,
+            37.10145507225523
+          ],
+          [
+            -79.58507979267392,
+            37.10049735058157
+          ],
+          [
+            -79.58450653489778,
+            37.09910511738814
+          ],
+          [
+            -79.58431806099604,
+            37.09734385706446
+          ],
+          [
+            -79.58591364704652,
+            37.09018486163015
+          ],
+          [
+            -79.59053904114874,
+            37.081846921922455
+          ],
+          [
+            -79.59261051860113,
+            37.07998811060835
+          ],
+          [
+            -79.60663232363767,
+            37.07149532379068
+          ],
+          [
+            -79.6078109210605,
+            37.07093320670631
+          ],
+          [
+            -79.60922859261574,
+            37.07071744730891
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/smith-mountain-lake",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/smith-mountain-lake"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/smith-mountain-lake-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Managed hunts close the park Nov. 2–3 and Nov. 9–10; overnight stays are restricted to hunters during those closures. Check the official park page for current conditions."
+  },
+  {
+    "id": "dcr-staunton-river-battlefield-state-park",
+    "name": "Staunton River Battlefield State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.7136490910759,
+      36.877624911105805,
+      -78.69124852507935,
+      36.912927519760814
+    ],
+    "boundary": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -78.69658074419311,
+              36.877624911105805
+            ],
+            [
+              -78.70346303413793,
+              36.87841977926937
+            ],
+            [
+              -78.70459867233973,
+              36.87872936676373
+            ],
+            [
+              -78.71093628002126,
+              36.88168094140923
+            ],
+            [
+              -78.71294397544725,
+              36.88341823717527
+            ],
+            [
+              -78.71348175624074,
+              36.88438842009158
+            ],
+            [
+              -78.7136490910759,
+              36.88522287963657
+            ],
+            [
+              -78.71335150879561,
+              36.886400604269824
+            ],
+            [
+              -78.71237945586083,
+              36.88743702864572
+            ],
+            [
+              -78.69944813623086,
+              36.89578791067198
+            ],
+            [
+              -78.69857818455142,
+              36.89618068629495
+            ],
+            [
+              -78.69761649386615,
+              36.89636121174616
+            ],
+            [
+              -78.69663096740359,
+              36.896309739317836
+            ],
+            [
+              -78.6957064865742,
+              36.89603070252177
+            ],
+            [
+              -78.69451229834958,
+              36.89513325132044
+            ],
+            [
+              -78.69402913038427,
+              36.894152599468356
+            ],
+            [
+              -78.6930858876984,
+              36.89012390473765
+            ],
+            [
+              -78.69273064451174,
+              36.881715082072816
+            ],
+            [
+              -78.69296858413274,
+              36.87968388720542
+            ],
+            [
+              -78.69349908198228,
+              36.878746940499404
+            ],
+            [
+              -78.69442710913124,
+              36.87803724621338
+            ],
+            [
+              -78.69530470730989,
+              36.877717713905284
+            ],
+            [
+              -78.69658074419311,
+              36.877624911105805
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -78.69578274402383,
+              36.90444725871962
+            ],
+            [
+              -78.69920040595183,
+              36.904952507678566
+            ],
+            [
+              -78.70014444672071,
+              36.905255113618495
+            ],
+            [
+              -78.70145936913846,
+              36.90625812059532
+            ],
+            [
+              -78.70198188307161,
+              36.90722570052827
+            ],
+            [
+              -78.70200354371082,
+              36.908280205484694
+            ],
+            [
+              -78.7010758915539,
+              36.91119728114554
+            ],
+            [
+              -78.6999448346218,
+              36.912256062872075
+            ],
+            [
+              -78.69846009807777,
+              36.912838662518965
+            ],
+            [
+              -78.69743677619128,
+              36.912927519760814
+            ],
+            [
+              -78.69583134728579,
+              36.912807154098644
+            ],
+            [
+              -78.69441849000226,
+              36.91225498866459
+            ],
+            [
+              -78.69187115678073,
+              36.90949958516504
+            ],
+            [
+              -78.69124852507935,
+              36.90838099197986
+            ],
+            [
+              -78.69132332681855,
+              36.907005985326485
+            ],
+            [
+              -78.69233086021661,
+              36.90566495105581
+            ],
+            [
+              -78.69399364272593,
+              36.9046672725628
+            ],
+            [
+              -78.69578274402383,
+              36.90444725871962
+            ]
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/staunton-river-battlefield-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-staunton-river-state-park",
+    "name": "Staunton River State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.70463404674106,
+      36.68722606736977,
+      -78.64870850845703,
+      36.73005077184428
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.6860678857429,
+            36.68722606736977
+          ],
+          [
+            -78.68727823535816,
+            36.687383895948074
+          ],
+          [
+            -78.68840880513085,
+            36.687919514066074
+          ],
+          [
+            -78.69013844442257,
+            36.68970987550227
+          ],
+          [
+            -78.69058602678267,
+            36.69037177223359
+          ],
+          [
+            -78.70368863327593,
+            36.7135907966504
+          ],
+          [
+            -78.70456910573843,
+            36.716020593856
+          ],
+          [
+            -78.70463404674106,
+            36.71711227785724
+          ],
+          [
+            -78.70425647757041,
+            36.718122203597304
+          ],
+          [
+            -78.70278770295377,
+            36.71980749184564
+          ],
+          [
+            -78.68794735969486,
+            36.72925041418563
+          ],
+          [
+            -78.68708578871458,
+            36.72965567847486
+          ],
+          [
+            -78.68622861402415,
+            36.72985608668399
+          ],
+          [
+            -78.6833408227718,
+            36.73005077184428
+          ],
+          [
+            -78.68198159007213,
+            36.72976998344795
+          ],
+          [
+            -78.68073878831825,
+            36.72901661742248
+          ],
+          [
+            -78.65341600857397,
+            36.70355247316268
+          ],
+          [
+            -78.65210459632011,
+            36.70182218748122
+          ],
+          [
+            -78.64897335841529,
+            36.69703202602084
+          ],
+          [
+            -78.64870850845703,
+            36.695735907122334
+          ],
+          [
+            -78.64893269109069,
+            36.69496350025859
+          ],
+          [
+            -78.64942564067091,
+            36.69427675736285
+          ],
+          [
+            -78.65014490076369,
+            36.693734817165726
+          ],
+          [
+            -78.65102853012081,
+            36.693384347812184
+          ],
+          [
+            -78.67960455971566,
+            36.68775416589726
+          ],
+          [
+            -78.6860678857429,
+            36.68722606736977
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/staunton-river"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/staunton-river-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-sweet-run-state-park",
+    "name": "Sweet Run State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -77.75475488442319,
+      39.27365279546183,
+      -77.72154600795231,
+      39.29713315889805
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -77.74031268589765,
+            39.27367592820182
+          ],
+          [
+            -77.74229604617572,
+            39.27397725945142
+          ],
+          [
+            -77.75342374335914,
+            39.27860718181796
+          ],
+          [
+            -77.7541277602714,
+            39.279180536180576
+          ],
+          [
+            -77.75467866451764,
+            39.28014337978828
+          ],
+          [
+            -77.75475488442319,
+            39.28093370399689
+          ],
+          [
+            -77.75439479559492,
+            39.2819496125333
+          ],
+          [
+            -77.74386860156889,
+            39.295444328429674
+          ],
+          [
+            -77.7430372511066,
+            39.29630762212441
+          ],
+          [
+            -77.74222727688901,
+            39.29679023172232
+          ],
+          [
+            -77.74059308699043,
+            39.29713315889805
+          ],
+          [
+            -77.72912030026647,
+            39.297011047888354
+          ],
+          [
+            -77.7281363328597,
+            39.29684360694426
+          ],
+          [
+            -77.72448965571219,
+            39.29550734806484
+          ],
+          [
+            -77.72344138537089,
+            39.294838848353855
+          ],
+          [
+            -77.72280216609063,
+            39.29390952627716
+          ],
+          [
+            -77.72154600795231,
+            39.28980963264027
+          ],
+          [
+            -77.72159192334114,
+            39.28883535198485
+          ],
+          [
+            -77.7219656349256,
+            39.28797137095885
+          ],
+          [
+            -77.73315705209265,
+            39.27516846520088
+          ],
+          [
+            -77.73407971494458,
+            39.27465148008364
+          ],
+          [
+            -77.73687706071381,
+            39.273769886549054
+          ],
+          [
+            -77.7378291918326,
+            39.27365279546183
+          ],
+          [
+            -77.74031268589765,
+            39.27367592820182
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/sweet-run",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/sweet-run"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/sweet-run-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Sections of Legacy Loop are closed without a stated reopening date. Gordon Pond Spur provides an alternate route around the pond; follow local signs. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-twin-lakes-state-park",
+    "name": "Twin Lakes State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -78.28639582542844,
+      37.16382463697235,
+      -78.26437795465469,
+      37.182014770848035
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -78.27548574824816,
+            37.16382463697235
+          ],
+          [
+            -78.27643455165939,
+            37.163971863821736
+          ],
+          [
+            -78.27725624411922,
+            37.16430282732345
+          ],
+          [
+            -78.28477395723003,
+            37.168929651481534
+          ],
+          [
+            -78.28565065723215,
+            37.17002588571906
+          ],
+          [
+            -78.28639582542844,
+            37.17291134221614
+          ],
+          [
+            -78.28628448276159,
+            37.17433216369646
+          ],
+          [
+            -78.28507640006406,
+            37.176714297829854
+          ],
+          [
+            -78.2814029633889,
+            37.181008181559385
+          ],
+          [
+            -78.28039779149204,
+            37.181686529919986
+          ],
+          [
+            -78.27923828097094,
+            37.18200507248777
+          ],
+          [
+            -78.27796831440179,
+            37.182014770848035
+          ],
+          [
+            -78.27603671388249,
+            37.181544326245444
+          ],
+          [
+            -78.26687759544768,
+            37.17697902304039
+          ],
+          [
+            -78.26613436820251,
+            37.17639936131427
+          ],
+          [
+            -78.26565086599352,
+            37.17577084172011
+          ],
+          [
+            -78.26440327083617,
+            37.173410080941565
+          ],
+          [
+            -78.26437795465469,
+            37.1725985880459
+          ],
+          [
+            -78.26497231338121,
+            37.16840298033672
+          ],
+          [
+            -78.26529219140397,
+            37.16764174754443
+          ],
+          [
+            -78.26608458575915,
+            37.16672056974877
+          ],
+          [
+            -78.26744872527532,
+            37.165769415025295
+          ],
+          [
+            -78.26994078112241,
+            37.164871726842776
+          ],
+          [
+            -78.27459124026655,
+            37.16387813155391
+          ],
+          [
+            -78.27548574824816,
+            37.16382463697235
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/twin-lakes",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/twin-lakes"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/twin-lakes-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Maintenance closes Goodwin Lake Trail until Nov. 9. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-westmoreland-state-park",
+    "name": "Westmoreland State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -76.88374413327404,
+      38.144014101743046,
+      -76.85087991733342,
+      38.17669564456132
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -76.87717017980259,
+            38.144014101743046
+          ],
+          [
+            -76.87831827304893,
+            38.14423700720875
+          ],
+          [
+            -76.87917569976554,
+            38.144664459327615
+          ],
+          [
+            -76.87990381354395,
+            38.14536192517227
+          ],
+          [
+            -76.88031483347608,
+            38.14626714010139
+          ],
+          [
+            -76.88374413327404,
+            38.16971047926005
+          ],
+          [
+            -76.88357587648959,
+            38.173629992140505
+          ],
+          [
+            -76.88314774336176,
+            38.175051281079696
+          ],
+          [
+            -76.88210166278179,
+            38.176125210629735
+          ],
+          [
+            -76.88119653555444,
+            38.17652437408941
+          ],
+          [
+            -76.88020713146149,
+            38.17669564456132
+          ],
+          [
+            -76.87883997641809,
+            38.17655665662157
+          ],
+          [
+            -76.86185161501321,
+            38.172046770367075
+          ],
+          [
+            -76.8529384008702,
+            38.169510322611
+          ],
+          [
+            -76.8520843093248,
+            38.16909452750627
+          ],
+          [
+            -76.8514198928563,
+            38.16850090133396
+          ],
+          [
+            -76.85087991733342,
+            38.1672603014115
+          ],
+          [
+            -76.85254207022152,
+            38.15670247912409
+          ],
+          [
+            -76.85288233077974,
+            38.15581390154723
+          ],
+          [
+            -76.85344699861777,
+            38.15515912389454
+          ],
+          [
+            -76.85422805635686,
+            38.1546619647178
+          ],
+          [
+            -76.87522917927988,
+            38.14437062977209
+          ],
+          [
+            -76.87617028955393,
+            38.14407740925
+          ],
+          [
+            -76.87717017980259,
+            38.144014101743046
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/westmoreland",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/westmoreland"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/westmoreland-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "DCR alert checked Nov. 3, 2026: Cabin and shoreline construction may limit parking capacity and beach access. DCR reports Big Meadow Trail, Fossil Beach and the day-use beach remain accessible. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-widewater-state-park",
+    "name": "Widewater State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -77.33167089826254,
+      38.40450009743614,
+      -77.31193149974132,
+      38.41324302521521
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -77.32717127263984,
+            38.4047198822106
+          ],
+          [
+            -77.32843999864403,
+            38.40499508760887
+          ],
+          [
+            -77.33023357859645,
+            38.40589885584727
+          ],
+          [
+            -77.33123945652544,
+            38.406851692424375
+          ],
+          [
+            -77.33167089826254,
+            38.40783035880436
+          ],
+          [
+            -77.33166336180328,
+            38.408785536726455
+          ],
+          [
+            -77.33131219486408,
+            38.410491599518906
+          ],
+          [
+            -77.3309775254597,
+            38.41126052941261
+          ],
+          [
+            -77.32985299655051,
+            38.41248090589389
+          ],
+          [
+            -77.32846602909972,
+            38.41315104205606
+          ],
+          [
+            -77.32684261519668,
+            38.41324302521521
+          ],
+          [
+            -77.3162846233762,
+            38.41149898271839
+          ],
+          [
+            -77.31527860822592,
+            38.41120860732933
+          ],
+          [
+            -77.31333544119438,
+            38.410304901109996
+          ],
+          [
+            -77.3125823622696,
+            38.409710845623756
+          ],
+          [
+            -77.31209740606818,
+            38.40896358043834
+          ],
+          [
+            -77.31193149974132,
+            38.408337787006
+          ],
+          [
+            -77.31198618166428,
+            38.407410400154646
+          ],
+          [
+            -77.31261812396959,
+            38.4060642558991
+          ],
+          [
+            -77.31345849086459,
+            38.40524403734411
+          ],
+          [
+            -77.31463377066697,
+            38.40473929789527
+          ],
+          [
+            -77.31965860687154,
+            38.40450009743614
+          ],
+          [
+            -77.32717127263984,
+            38.4047198822106
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/widewater",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/widewater"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/widewater-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    }
+  },
+  {
+    "id": "dcr-wilderness-road-state-park",
+    "name": "Wilderness Road State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -83.53484603426051,
+      36.62674289998916,
+      -83.51419453799544,
+      36.638359186139986
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -83.51758855529982,
+            36.62674289998916
+          ],
+          [
+            -83.53187206759411,
+            36.62764261034548
+          ],
+          [
+            -83.5331075546996,
+            36.6279897136813
+          ],
+          [
+            -83.53408421232908,
+            36.628691468102694
+          ],
+          [
+            -83.53455523628433,
+            36.62938787085934
+          ],
+          [
+            -83.53484603426051,
+            36.631435744159255
+          ],
+          [
+            -83.53462281960111,
+            36.63239084329645
+          ],
+          [
+            -83.53313488530526,
+            36.63484853208488
+          ],
+          [
+            -83.53232152512513,
+            36.63554108989018
+          ],
+          [
+            -83.52952372227729,
+            36.637204414300676
+          ],
+          [
+            -83.52815852329734,
+            36.637869950881644
+          ],
+          [
+            -83.52723001849836,
+            36.638128411739466
+          ],
+          [
+            -83.5183190295908,
+            36.638359186139986
+          ],
+          [
+            -83.5166962583544,
+            36.63792333395679
+          ],
+          [
+            -83.5156991976151,
+            36.63711552266838
+          ],
+          [
+            -83.51468012619152,
+            36.635539632825285
+          ],
+          [
+            -83.51419453799544,
+            36.62949641710736
+          ],
+          [
+            -83.5144935873156,
+            36.62840748882422
+          ],
+          [
+            -83.51526158862217,
+            36.62752120825618
+          ],
+          [
+            -83.51627981183024,
+            36.62697307154478
+          ],
+          [
+            -83.51758855529982,
+            36.62674289998916
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/wilderness-road"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/wilderness-road-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "dcr-york-river-state-park",
+    "name": "York River State Park",
+    "area": "Virginia State Parks",
+    "description": "Official park information, trail maps and current visitor updates.",
+    "bounds": [
+      -76.72796210158988,
+      37.38527221796008,
+      -76.6840884225629,
+      37.41703577756681
+    ],
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -76.7072864651319,
+            37.38527221796008
+          ],
+          [
+            -76.70862877773281,
+            37.385461658782404
+          ],
+          [
+            -76.71701877031128,
+            37.38810892346683
+          ],
+          [
+            -76.72424261164261,
+            37.392877274077385
+          ],
+          [
+            -76.72552626326897,
+            37.39407647721232
+          ],
+          [
+            -76.72602882808381,
+            37.39487491699348
+          ],
+          [
+            -76.72796210158988,
+            37.40789463514715
+          ],
+          [
+            -76.7279138070715,
+            37.408664320556966
+          ],
+          [
+            -76.72743278649385,
+            37.409617177233926
+          ],
+          [
+            -76.7223638546791,
+            37.41552080092805
+          ],
+          [
+            -76.7216397248232,
+            37.41606293899872
+          ],
+          [
+            -76.72074946307272,
+            37.41641406252851
+          ],
+          [
+            -76.71327130247252,
+            37.41703577756681
+          ],
+          [
+            -76.71216814045673,
+            37.41696857519122
+          ],
+          [
+            -76.70950156403548,
+            37.4161193485081
+          ],
+          [
+            -76.70517831392306,
+            37.413887598077864
+          ],
+          [
+            -76.70312455953842,
+            37.41261212741615
+          ],
+          [
+            -76.69618111974947,
+            37.406778655370054
+          ],
+          [
+            -76.6846326716157,
+            37.39351770835798
+          ],
+          [
+            -76.68421209264324,
+            37.392800159815934
+          ],
+          [
+            -76.6840884225629,
+            37.39175158108666
+          ],
+          [
+            -76.68433383629119,
+            37.39098402775897
+          ],
+          [
+            -76.6850719402177,
+            37.390110862564065
+          ],
+          [
+            -76.68617262609446,
+            37.3895295268807
+          ],
+          [
+            -76.6971519747275,
+            37.38647810514133
+          ],
+          [
+            -76.7072864651319,
+            37.38527221796008
+          ]
+        ]
+      ]
+    },
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.dcr.virginia.gov/state-parks/york-river",
+    "source_label": "Official park guide",
+    "context_mode": "area",
+    "context_min_zoom": 13,
+    "context_max_view_ratio": 6,
+    "info_sources": [
+      {
+        "id": "park-page",
+        "label": "Official park information and alerts",
+        "url": "https://www.dcr.virginia.gov/state-parks/york-river"
+      },
+      {
+        "id": "trail-map",
+        "label": "Official georeferenced trail map (PDF)",
+        "url": "https://www.dcr.virginia.gov/state-parks/document/data/york-river-avenza-map.pdf"
+      }
+    ],
+    "visitor_info": [],
+    "bounds_source": {
+      "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
+      "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "reviewed_on": "2026-11-03"
+    },
+    "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
   }
 ]
