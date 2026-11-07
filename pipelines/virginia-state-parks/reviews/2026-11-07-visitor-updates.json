@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "kind": "approved-visitor-information-update",
+  "reviewed_at": "2026-11-07T14:38:02.979864Z",
+  "authorization": "GO ahad with the recommended actions",
+  "source_run": "https://github.com/Meekohi/cvilletrails.com/actions/runs/42337217583",
+  "review_round": ".trail-state/source-review-2026-11-07",
+  "source_review_hash": "ac0d2979db8da5c68c5af5299a84055547d1a2d5ff58b6eb454aa592e8d2280c",
+  "source_verification": [
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/natural-bridge",
+      "status": 200,
+      "checked_at": "2026-11-07T14:34:37.593476Z",
+      "sha256": "7c0edbd447a9c0231fdf7c4683f29284ba6dceacadcc6dfc270e8edab8c6e552"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/powhatan",
+      "status": 200,
+      "checked_at": "2026-11-07T14:34:37.560662Z",
+      "sha256": "8537d76a84f08d6a021a145968af086926a2ca51ea77b60a05fe5824d31c5c11"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/fairy-stone",
+      "status": 200,
+      "checked_at": "2026-11-07T14:34:37.588169Z",
+      "sha256": "2dd96b77e3592350af905fe6e111f1efbe0f90a620ced539808122e00d32d378"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/kiptopeke",
+      "status": 200,
+      "checked_at": "2026-11-07T14:34:37.580365Z",
+      "sha256": "fc58be9e0d871bcecf7ce913596ba289a89b4a557d95b06c83100f4f7d3ba44d"
+    }
+  ],
+  "changes": [
+    {
+      "system": "dcr-kiptopeke-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: The park closes at sunset Nov. 3 and is scheduled to reopen at sunrise Nov. 6 for resource-management work. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-natural-bridge-state-park",
+      "before": {
+        "description_sources": null,
+        "info_reviewed_on": null,
+        "visitor_info": []
+      },
+      "after": {
+        "description_sources": [
+          "park-page"
+        ],
+        "info_reviewed_on": "2026-11-07",
+        "visitor_info": [
+          {
+            "label": "Park hours",
+            "value": "Daily, 8 a.m. to dusk, weather permitting.",
+            "sources": [
+              "park-page"
+            ]
+          },
+          {
+            "label": "Visitor center",
+            "value": "Daily, 9 a.m.–5 p.m.",
+            "sources": [
+              "park-page"
+            ]
+          },
+          {
+            "label": "Base Camp exhibits",
+            "value": "Open Nov. 27–29, 2026, then closed for winter.",
+            "sources": [
+              "park-page"
+            ]
+          },
+          {
+            "label": "Food service",
+            "value": "Closed for winter.",
+            "sources": [
+              "park-page"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "notice": {
+    "id": "7d81c3561be1657babda3f63",
+    "title": "Powhatan office opens late November 9–10",
+    "body": "The park office opens at 11 a.m. on November 9 and 10. Park hours remain dawn to dusk.",
+    "kind": "information",
+    "evidence": "The park office will open at 11 a.m. on Nov. 9 and 10.",
+    "system_ids": [
+      "dcr-powhatan-state-park"
+    ],
+    "source_url": "https://www.dcr.virginia.gov/state-parks/powhatan",
+    "source_label": "Powhatan State Park visitor information",
+    "status": "approved",
+    "reviewer": "Codex; approved by site owner in chat",
+    "reviewed_at": "2026-11-07T14:38:02.976568Z",
+    "starts_at": "2026-11-07T14:38:02.976179Z",
+    "expires_at": "2026-11-11T00:00:00-05:00",
+    "snapshot_sha256": "9b3cfb6453954e6a23ebd73d892c0ae553a93cc9bf0f42728a51cc26186a2e85"
+  },
+  "notice_visibility": "Visible immediately for advance planning; expires at midnight Eastern after November 10. The office-hours change applies only November 9 and 10.",
+  "geometry_changes": false,
+  "kiptopeke_interpretation": "Remove the expired dated closure; retain coverage and official-source guidance without claiming reopening.",
+  "validation": {
+    "content_and_pipeline_configuration": "passed",
+    "web_tests": 8,
+    "javascript_syntax": "passed",
+    "site_build": "passed",
+    "browser": {
+      "site": "http://127.0.0.1:8000/",
+      "checked_at": "2026-11-07T14:39:05.655Z",
+      "passed": true,
+      "viewports": [
+        1200,
+        390
+      ],
+      "notice_expiry_verified": true,
+      "errors": []
+    }
+  }
+}

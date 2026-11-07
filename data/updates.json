@@ -1,1 +1,23 @@
-{"schema_version": 1, "updates": []}
+{
+  "schema_version": 1,
+  "updates": [
+    {
+      "id": "7d81c3561be1657babda3f63",
+      "title": "Powhatan office opens late November 9–10",
+      "body": "The park office opens at 11 a.m. on November 9 and 10. Park hours remain dawn to dusk.",
+      "kind": "information",
+      "evidence": "The park office will open at 11 a.m. on Nov. 9 and 10.",
+      "system_ids": [
+        "dcr-powhatan-state-park"
+      ],
+      "source_url": "https://www.dcr.virginia.gov/state-parks/powhatan",
+      "source_label": "Powhatan State Park visitor information",
+      "status": "approved",
+      "reviewer": "Codex; approved by site owner in chat",
+      "reviewed_at": "2026-11-07T14:38:02.976568Z",
+      "starts_at": "2026-11-07T14:38:02.976179Z",
+      "expires_at": "2026-11-11T00:00:00-05:00",
+      "snapshot_sha256": "9b3cfb6453954e6a23ebd73d892c0ae553a93cc9bf0f42728a51cc26186a2e85"
+    }
+  ]
+}

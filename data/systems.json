@@ -8441,7 +8441,7 @@
       "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
       "reviewed_on": "2026-11-03"
     },
-    "map_note": "DCR alert checked Nov. 3, 2026: The park closes at sunset Nov. 3 and is scheduled to reopen at sunrise Nov. 6 for resource-management work. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+    "map_note": "Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
   },
   {
     "id": "dcr-leesylvania-state-park",
@@ -9089,12 +9089,45 @@
         "url": "https://www.dcr.virginia.gov/state-parks/document/data/natural-bridge-avenza-map.pdf"
       }
     ],
-    "visitor_info": [],
+    "visitor_info": [
+      {
+        "label": "Park hours",
+        "value": "Daily, 8 a.m. to dusk, weather permitting.",
+        "sources": [
+          "park-page"
+        ]
+      },
+      {
+        "label": "Visitor center",
+        "value": "Daily, 9 a.m.–5 p.m.",
+        "sources": [
+          "park-page"
+        ]
+      },
+      {
+        "label": "Base Camp exhibits",
+        "value": "Open Nov. 27–29, 2026, then closed for winter.",
+        "sources": [
+          "park-page"
+        ]
+      },
+      {
+        "label": "Food service",
+        "value": "Closed for winter.",
+        "sources": [
+          "park-page"
+        ]
+      }
+    ],
     "bounds_source": {
       "description": "Context footprint from accepted trail geometry: 300 m buffers, convex hull per connected group, 10 m simplification. Not a legal park boundary.",
       "source_url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
       "reviewed_on": "2026-11-03"
-    }
+    },
+    "info_reviewed_on": "2026-11-07",
+    "description_sources": [
+      "park-page"
+    ]
   },
   {
     "id": "dcr-natural-tunnel-state-park",
