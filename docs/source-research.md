@@ -17,7 +17,7 @@ Record source date/version, URL, fetch/review time, evidence hash and the reason
 | Pipeline | Current input and behavior | Remaining interpretation |
 | --- | --- | --- |
 | `city` | Complete ArcGIS fetch; filters `Existing`; City-specific normalization and reviewed connection rules | New access permissions, substantive geometry, source overlap and manual exceptions |
-| `albemarle` | Official pages/PDFs monitored; generic reviewed-GeoJSON normalization | Newly discovered County service needs a dedicated adapter, filtering, stable-ID strategy and review |
+| `albemarle` | Operational GIS screened by GlobalID, location, status, public ownership and explicit access; [validation preview](../pipelines/albemarle/README.md) compares both directions against preserved current geometry | Crosswalk suggestions, splits/merges, colors, coverage gaps and source duplicates need review before any full replacement candidate |
 | `rivanna` | RTF pages, maps and KML monitored; separate KML comparison/candidate tools | KML identity crosswalk, route/event classification, closure wording and semantic additions |
 | `monticello` | Operator pages and PDF monitored; generic reviewed-GeoJSON normalization | Map geometry, changed rules, current-vs-old PDF differences |
 | `fortunes-cove` | Official TNC GeoPDF vectors with embedded UTM georeferencing; hash-bound extraction | Review changed PDF path identities, joins and current access; [pipeline guide](../pipelines/fortunes-cove/README.md) |
@@ -77,9 +77,9 @@ Important schema differences:
 | `Hiking`, `Biking`, `Equestrian` | May be `Yes`, `No` or null; null is not permission or a ban |
 | `CREATED`, `UPDATED`, `CreationDate`, `EditDate` | Investigate which edits these represent before using them for change detection |
 
-A dedicated adapter should select reviewed park/location aliases, exclude nonpublic and nonactive records from automatic proposals, retain excluded records in an ingest report, and preserve the existing map until correspondence is established. `Active` in GIS is not sufficient evidence to override a current construction closure. Do not pass this service straight to the current generic County adapter and publish it.
+A dedicated adapter now selects configured park/location aliases and holds nonpublic, nonactive, closed/conditional/unknown-access and non-hiking records. Every excluded record appears in its report. The new `Property_Info` check is essential: 46 Active/public records in the November 4 snapshot were explicitly Closed. `Active` in GIS is not sufficient evidence to override a current construction closure. The normalized subset is marked review-only and rejected by the publication workflow.
 
-The next concrete implementation is an ID crosswalk and comparison against the current `Albemarle_County_Trails` dataset, starting with a single isolated park. Check reverse coverage, colors, trail names, line direction, endpoint joins, private crossings, splits and merges. Retain unmatched curated features until reviewed. The `GlobalID` field's existence alone does not establish long-term stability.
+The [November 4 validation implementation](../pipelines/albemarle/README.md) compares the captured source against all 350 original `Albemarle_County_Trails` features and other visible editable datasets. It checks reverse coverage, name-based colors and ID relationships before replacement. The [completed November 6 feedback](../pipelines/albemarle/reviews/2026-11-06-complete-feedback-import.json) accepts 330 source geometries, resolves all 27 color questions, and adds 46 exact southern Biscuit geometries with a user-directed local open-access correction; original GIS Closed values remain as provenance. The [authorized publication](../pipelines/albemarle/reviews/2026-11-06-publication.json) reconciles these against fresh inventory, preserves unmatched County routes and the entire Rivanna network, and replaces superseded rough Biscuit GPS tracks. Later source changes still require review; the `GlobalID` field's existence alone does not establish long-term stability.
 
 ## Rivanna Trails Foundation
 

@@ -1,1 +1,164 @@
-{}
+{
+  "1a1fc338-f8bd-4922-bc9f-bb966b82e463": {
+    "properties": {
+      "TrailName": "The Blue Wheel",
+      "color": "hsl(220, 70%, 50%)"
+    }
+  },
+  "26cbd84c-6577-4f3b-85e3-e5d36670b907": {
+    "properties": {
+      "TrailName": "The Blue Wheel",
+      "color": "hsl(220, 70%, 50%)"
+    }
+  },
+  "76847dad-dbe7-4173-81a7-a170598c6588": {
+    "properties": {
+      "TrailName": "The Blue Wheel",
+      "color": "hsl(220, 70%, 50%)"
+    }
+  },
+  "883f37b3-53cb-49da-9e7b-1e8f0a39396b": {
+    "properties": {
+      "TrailName": "The Blue Wheel",
+      "color": "hsl(220, 70%, 50%)"
+    }
+  },
+  "82c3e436-526b-4e54-b783-874b0a5d8afb": {
+    "properties": {
+      "TrailName": "Fifth Pillar Trail",
+      "color": "hsl(37, 97%, 59%)"
+    }
+  },
+  "b8fc2ff9-b645-4a9e-b0df-83072e06cc9d": {
+    "properties": {
+      "TrailName": "Connector",
+      "color": "hsl(25, 29%, 87%)"
+    }
+  },
+  "d2eb9eff-2ce6-41ac-8d80-3206868c1454": {
+    "properties": {
+      "TrailName": "Connector",
+      "color": "hsl(25, 29%, 87%)"
+    }
+  },
+  "e49d82d7-e398-4818-a2df-96584af8022d": {
+    "properties": {
+      "TrailName": "Connector",
+      "color": "hsl(25, 29%, 87%)"
+    }
+  },
+  "3539d6fa-a220-4be1-83ee-c3997937f0e2": {
+    "properties": {
+      "TrailName": "Luke's Loop",
+      "color": "hsl(102, 71%, 38%)"
+    }
+  },
+  "602abf09-49fd-4f7e-9aa9-fde15713374e": {
+    "properties": {
+      "TrailName": "Luke's Loop",
+      "color": "hsl(102, 71%, 38%)"
+    }
+  },
+  "ce083c75-71bb-48eb-b65e-76c2bbe540e4": {
+    "properties": {
+      "TrailName": "Entrance/Jungle Trail",
+      "color": "hsl(59, 100%, 61%)"
+    }
+  },
+  "3d9922a5-1d0e-4b7c-8e92-8aaeebdd6763": {
+    "properties": {
+      "TrailName": "Wilkins Way",
+      "color": "hsl(359, 82%, 56%)"
+    }
+  },
+  "d0e584d1-83d9-4663-8e91-fd6f663685b3": {
+    "properties": {
+      "TrailName": "Wilkins Way",
+      "color": "hsl(359, 82%, 56%)"
+    }
+  },
+  "febdc8f4-e6d6-4aa7-b0ac-181f04c8d476": {
+    "properties": {
+      "TrailName": "Wilkins Way",
+      "color": "hsl(359, 82%, 56%)"
+    }
+  },
+  "54941d33-f795-4e39-8dbd-8612ab61c441": {
+    "properties": {
+      "TrailName": "Blue",
+      "color": "hsl(220, 70%, 50%)"
+    }
+  },
+  "03eb1fee-abbd-4940-8ef2-2c598b9e737d": {
+    "properties": {
+      "TrailName": "Brown",
+      "color": "hsl(6, 53%, 30%)"
+    }
+  },
+  "9763206e-e05b-46a1-b279-1b76c068fae2": {
+    "properties": {
+      "TrailName": "Brown",
+      "color": "hsl(6, 53%, 30%)"
+    }
+  },
+  "cbe7486b-a789-4d2f-85c1-aff78863830f": {
+    "properties": {
+      "TrailName": "Connector",
+      "color": "hsl(25, 29%, 87%)"
+    }
+  },
+  "2a9e255b-0699-4210-b650-99243839b4e7": {
+    "properties": {
+      "TrailName": "Purple",
+      "color": "hsl(285, 83%, 72%)"
+    }
+  },
+  "b2527da4-f70a-418b-8168-0191cd7db37d": {
+    "properties": {
+      "TrailName": "Purple",
+      "color": "hsl(285, 83%, 72%)"
+    }
+  },
+  "d2531742-dbc8-4314-a154-7ec839e7a88b": {
+    "properties": {
+      "TrailName": "Purple",
+      "color": "hsl(285, 83%, 72%)"
+    }
+  },
+  "c946c7c5-85ca-4765-a145-ad4d8ad0e1f5": {
+    "properties": {
+      "TrailName": "Orange",
+      "color": "hsl(36, 91%, 60%)"
+    }
+  },
+  "fb87cac9-b78a-41c8-b204-071f4d5ec59c": {
+    "properties": {
+      "TrailName": "Orange Loop",
+      "color": "hsl(25, 29%, 87%)"
+    }
+  },
+  "c6f8f477-fa1d-403c-a465-8a4b0adabd96": {
+    "properties": {
+      "TrailName": "Peninsula",
+      "color": "hsl(282, 59%, 40%)"
+    }
+  },
+  "9ff137c4-5210-42d5-8651-c7788b3e3cdc": {
+    "properties": {
+      "TrailName": "Peninsula",
+      "color": "hsl(282, 59%, 40%)"
+    }
+  },
+  "5fc9a8be-e7eb-46b7-b169-e834b6d0913e": {
+    "properties": {
+      "TrailName": "School",
+      "color": "hsl(321, 85%, 87%)"
+    }
+  },
+  "eae94f92-0c32-4490-a629-606c33ab8ea3": {
+    "properties": {
+      "TrailName": "Yellow",
+      "color": "hsl(59, 97%, 64%)"
+    }
+  }
+}

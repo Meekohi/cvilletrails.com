@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "kind": "albemarle-color-and-south-review",
+  "review_hash": "94d808c952b4347c367f6428addc8df959b1e0702dc80733103a948a076d1e63",
+  "parent_review_hash": "d0eb0403a9704e586eba64d24dd95f167dccb5227b3c24ee18a7f7b09f00eebe",
+  "source_hash": "0ad9ba2c18e7c7b2debbc3a3e098ac5b6448ae17d9f7f53a7057037d668fce94",
+  "baseline_hash": "5b6dd79ce80d0aa357a75ac4f746dcf3fa30af4af9abd6015a33312746210f7f",
+  "geometry_feedback_hash": "6426e1c1b9b6618349c96cb2676ff32941ca6e439343b7613a9f13b335506fba",
+  "publication_authorized": false,
+  "exported_at": "2026-11-07T03:03:59.925Z",
+  "questions": {
+    "albemarle:1a1fc338-f8bd-4922-bc9f-bb966b82e463": {
+      "decision": "preserve-current",
+      "notes": ""
+    },
+    "albemarle:26cbd84c-6577-4f3b-85e3-e5d36670b907": {
+      "decision": "preserve-current",
+      "notes": ""
+    },
+    "albemarle:76847dad-dbe7-4173-81a7-a170598c6588": {
+      "decision": "preserve-current",
+      "notes": ""
+    },
+    "albemarle:883f37b3-53cb-49da-9e7b-1e8f0a39396b": {
+      "decision": "preserve-current",
+      "notes": ""
+    },
+    "albemarle:82c3e436-526b-4e54-b783-874b0a5d8afb": {
+      "decision": "preserve-current",
+      "notes": ""
+    },
+    "albemarle:b8fc2ff9-b645-4a9e-b0df-83072e06cc9d": {
+      "decision": "gis-name-color",
+      "notes": ""
+    },
+    "albemarle:d2eb9eff-2ce6-41ac-8d80-3206868c1454": {
+      "decision": "gis-name-color",
+      "notes": ""
+    },
+    "albemarle:e49d82d7-e398-4818-a2df-96584af8022d": {
+      "decision": "gis-name-color",
+      "notes": ""
+    },
+    "albemarle:3539d6fa-a220-4be1-83ee-c3997937f0e2": {
+      "decision": "preserve-current",
+      "notes": ""
+    },
+    "albemarle:602abf09-49fd-4f7e-9aa9-fde15713374e": {
+      "decision": "preserve-current",
+      "notes": ""
+    },
+    "albemarle:ce083c75-71bb-48eb-b65e-76c2bbe540e4": {
+      "decision": "preserve-current",
+      "notes": ""
+    },
+    "albemarle:3d9922a5-1d0e-4b7c-8e92-8aaeebdd6763": {
+      "decision": "gis-name-color",
+      "notes": ""
+    },
+    "albemarle:d0e584d1-83d9-4663-8e91-fd6f663685b3": {
+      "decision": "gis-name-color",
+      "notes": ""
+    },
+    "albemarle:febdc8f4-e6d6-4aa7-b0ac-181f04c8d476": {
+      "decision": "gis-name-color",
+      "notes": ""
+    }
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "kind": "albemarle-gis-validation",
+  "recorded_at": "2026-11-04T14:29:14.395159Z",
+  "status": "adapter implemented; automated validation passed; user validation pending",
+  "authorization": "Implement Albemarle GIS adapter and perform a validation round before committing to replacement. No publication authorized.",
+  "publication_authorized": false,
+  "remote_writes": false,
+  "git_commit_created": false,
+  "source_url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+  "source_item": "https://www.arcgis.com/home/item.html?id=68ea9d11952a431c9eef119ec5caf79a",
+  "source_data_last_edit": "2026-10-29T18:28:42.989000+00:00",
+  "inventory_captured_at": "2026-11-04T14:14:21.178795Z",
+  "target": {
+    "id": "albemarle",
+    "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+    "tileset": "meekohi.cjcm3ne8w0os033rw0ceoi0ye-0bygj",
+    "source_layer": "Albemarle_County_Trails"
+  },
+  "hashes": {
+    "source_hash": "0ad9ba2c18e7c7b2debbc3a3e098ac5b6448ae17d9f7f53a7057037d668fce94",
+    "baseline_hash": "5b6dd79ce80d0aa357a75ac4f746dcf3fa30af4af9abd6015a33312746210f7f",
+    "style_hash": "dec88b1f333bf8ab8fbed3e4ee864034de32a7265ed09d9bf9aab7ffd36980ad",
+    "policy_hash": "85018b631bca6dd2f28d40903aa64220495cdf7535d77a73a0533595361844f5",
+    "overrides_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "ownership_policy_hash": "5d0170242935ef205ae603191ca6a780a56b624be5af4659b8c548429cfd5da8",
+    "code_hash": "06545968ddcc3d3751076ff2ee2fd250107be4b34aa6e6c35a642eefa949219d",
+    "review_hash": "d0eb0403a9704e586eba64d24dd95f167dccb5227b3c24ee18a7f7b09f00eebe"
+  },
+  "counts": {
+    "source": 1902,
+    "eligible": 330,
+    "held": 1572,
+    "existing_preserved": 350,
+    "crosswalk_suggestions": 14,
+    "existing_coverage_gaps": 125,
+    "source_duplicate_pairs": 1,
+    "color_conflicts": 27,
+    "other_dataset_overlaps": 36
+  },
+  "park_summaries": [
+    {
+      "id": "biscuit-run",
+      "name": "Biscuit Run Park",
+      "bounds": [
+        -78.5381902549223,
+        37.9644992063097,
+        -78.5028421982086,
+        38.0070735632835
+      ],
+      "source_counts": {
+        "held": 142,
+        "eligible": 58
+      },
+      "comparison_counts": {
+        "held": 142,
+        "new-coverage": 58
+      },
+      "existing_count": 0,
+      "coverage_gaps": 0,
+      "color_conflicts": 0,
+      "other_overlaps": 35
+    },
+    {
+      "id": "byrom",
+      "name": "Byrom Park",
+      "bounds": [
+        -78.6701574820531,
+        38.2163366098182,
+        -78.6498390703784,
+        38.2273229871039
+      ],
+      "source_counts": {
+        "eligible": 15,
+        "held": 14
+      },
+      "comparison_counts": {
+        "overlap-needs-review": 13,
+        "new-coverage": 1,
+        "one-to-one-suggestion": 1,
+        "held": 14
+      },
+      "existing_count": 17,
+      "coverage_gaps": 3,
+      "color_conflicts": 0,
+      "other_overlaps": 0
+    },
+    {
+      "id": "chris-greene",
+      "name": "Chris Greene Lake Park",
+      "bounds": [
+        -78.4474001869377,
+        38.159041,
+        -78.436584,
+        38.1682649771457
+      ],
+      "source_counts": {
+        "eligible": 16,
+        "held": 23
+      },
+      "comparison_counts": {
+        "overlap-needs-review": 12,
+        "held": 23,
+        "new-coverage": 2,
+        "one-to-one-suggestion": 2
+      },
+      "existing_count": 23,
+      "coverage_gaps": 6,
+      "color_conflicts": 0,
+      "other_overlaps": 0
+    },
+    {
+      "id": "darden-towe",
+      "name": "Darden Towe Park",
+      "bounds": [
+        -78.4545887512115,
+        38.03723,
+        -78.4452219771962,
+        38.0485583685962
+      ],
+      "source_counts": {
+        "eligible": 13,
+        "held": 22
+      },
+      "comparison_counts": {
+        "overlap-needs-review": 6,
+        "new-coverage": 7,
+        "held": 22
+      },
+      "existing_count": 20,
+      "coverage_gaps": 10,
+      "color_conflicts": 0,
+      "other_overlaps": 0
+    },
+    {
+      "id": "humphris",
+      "name": "Charlotte Humphris Park",
+      "bounds": [
+        -78.4950047702694,
+        38.0743159694753,
+        -78.490021,
+        38.0797479745042
+      ],
+      "source_counts": {
+        "held": 3,
+        "eligible": 14
+      },
+      "comparison_counts": {
+        "held": 3,
+        "overlap-needs-review": 4,
+        "new-coverage": 10
+      },
+      "existing_count": 8,
+      "coverage_gaps": 0,
+      "color_conflicts": 0,
+      "other_overlaps": 0
+    },
+    {
+      "id": "ivy-creek-natural-area",
+      "name": "Ivy Creek Natural Area",
+      "bounds": [
+        -78.5003878051006,
+        38.087416,
+        -78.4897430165761,
+        38.0995556835045
+      ],
+      "source_counts": {
+        "held": 91,
+        "eligible": 45
+      },
+      "comparison_counts": {
+        "held": 91,
+        "overlap-needs-review": 42,
+        "new-coverage": 2,
+        "one-to-one-suggestion": 1
+      },
+      "existing_count": 74,
+      "coverage_gaps": 3,
+      "color_conflicts": 13,
+      "other_overlaps": 0
+    },
+    {
+      "id": "mint-springs",
+      "name": "Mint Springs Park",
+      "bounds": [
+        -78.7450477237525,
+        38.077642,
+        -78.724807,
+        38.0875270491636
+      ],
+      "source_counts": {
+        "held": 35,
+        "eligible": 27
+      },
+      "comparison_counts": {
+        "held": 35,
+        "overlap-needs-review": 23,
+        "new-coverage": 4
+      },
+      "existing_count": 32,
+      "coverage_gaps": 19,
+      "color_conflicts": 0,
+      "other_overlaps": 0
+    },
+    {
+      "id": "old-mills",
+      "name": "Old Mills Trail",
+      "bounds": [
+        -78.460333,
+        38.0014681004952,
+        -78.3965893286015,
+        38.0457421101942
+      ],
+      "source_counts": {
+        "held": 3,
+        "eligible": 3
+      },
+      "comparison_counts": {
+        "held": 3,
+        "overlap-needs-review": 3
+      },
+      "existing_count": 24,
+      "coverage_gaps": 7,
+      "color_conflicts": 0,
+      "other_overlaps": 1
+    },
+    {
+      "id": "outside-scope",
+      "name": "Other / unassigned locations",
+      "bounds": [
+        -78.7863692657165,
+        37.7299980610179,
+        -78.3627219593537,
+        38.2383170816539
+      ],
+      "source_counts": {
+        "held": 1028
+      },
+      "comparison_counts": {
+        "held": 1028
+      },
+      "existing_count": 1,
+      "coverage_gaps": 1,
+      "color_conflicts": 0,
+      "other_overlaps": 0
+    },
+    {
+      "id": "preddy-creek",
+      "name": "Preddy Creek Park",
+      "bounds": [
+        -78.380294865448,
+        38.1733076991888,
+        -78.355242906076,
+        38.1875187015964
+      ],
+      "source_counts": {
+        "eligible": 87,
+        "held": 104
+      },
+      "comparison_counts": {
+        "overlap-needs-review": 61,
+        "held": 104,
+        "one-to-one-suggestion": 10,
+        "new-coverage": 16
+      },
+      "existing_count": 73,
+      "coverage_gaps": 17,
+      "color_conflicts": 0,
+      "other_overlaps": 0
+    },
+    {
+      "id": "ragged-mountain",
+      "name": "Ragged Mountain Natural Area",
+      "bounds": [
+        -78.5772353571876,
+        38.023136,
+        -78.5548800549149,
+        38.0424248061088
+      ],
+      "source_counts": {
+        "held": 40
+      },
+      "comparison_counts": {
+        "held": 40
+      },
+      "existing_count": 22,
+      "coverage_gaps": 22,
+      "color_conflicts": 0,
+      "other_overlaps": 0
+    },
+    {
+      "id": "totier-creek",
+      "name": "Totier Creek Park",
+      "bounds": [
+        -78.5154948746319,
+        37.777026421329,
+        -78.509617,
+        37.7845143993695
+      ],
+      "source_counts": {
+        "held": 8,
+        "eligible": 7
+      },
+      "comparison_counts": {
+        "held": 8,
+        "overlap-needs-review": 7
+      },
+      "existing_count": 8,
+      "coverage_gaps": 2,
+      "color_conflicts": 0,
+      "other_overlaps": 0
+    },
+    {
+      "id": "walnut-creek",
+      "name": "Walnut Creek Park",
+      "bounds": [
+        -78.6000966520605,
+        37.9159026029814,
+        -78.583106,
+        37.9371214581025
+      ],
+      "source_counts": {
+        "held": 59,
+        "eligible": 45
+      },
+      "comparison_counts": {
+        "held": 59,
+        "overlap-needs-review": 43,
+        "new-coverage": 2
+      },
+      "existing_count": 48,
+      "coverage_gaps": 35,
+      "color_conflicts": 14,
+      "other_overlaps": 0
+    }
+  ],
+  "held_reasons": {
+    "status is not Active": 1159,
+    "access is closed, conditional or unknown": 1249,
+    "ownership is not explicitly public": 485,
+    "trail name needs access review": 149,
+    "location outside configured adapter scope": 1028,
+    "missing trail name": 297,
+    "hiking permission is not explicit": 422,
+    "invalid or empty line geometry": 14
+  },
+  "source_status_counts": {
+    "Inactive": 729,
+    "Active": 743,
+    "Future": 174,
+    "None": 29,
+    "Pending": 210,
+    "<Null>": 17
+  },
+  "active_public_closed": 46,
+  "source_duplicate_pairs": [
+    [
+      {
+        "id": "albemarle:2dd53e2e-bd20-471c-b81e-e575fd352e18",
+        "name": "Mid-Way Connector",
+        "location": "Biscuit Run Park"
+      },
+      {
+        "id": "albemarle:f718cae1-e1cf-4d71-849a-905c4d8f3cc6",
+        "name": "Mid-Way Trail",
+        "location": "Biscuit Run Park"
+      }
+    ]
+  ],
+  "preservation": {
+    "all_350_county_features_identical": true,
+    "rivanna_and_other_datasets": "read-only reference snapshots; no writes",
+    "full_replacement_plan_created": false,
+    "screened_subset_blocked_from_publication": true
+  },
+  "unresolved": [
+    "Review geometric identity suggestions, split/merge candidates and current coverage gaps park by park.",
+    "Ragged Mountain: all 40 source records held (37 Inactive, 3 Future); preserve all 22 current County records.",
+    "Ivy Creek and Walnut Creek: review 27 potential color conflicts before mapping new names to legacy TrailName.",
+    "Biscuit Run: hold 46 Active/public records marked Closed; inspect near-duplicate Mid-Way records.",
+    "GlobalID persistence through County service republishing is not established.",
+    "Current operator alerts and official map legends still require review before a replacement proposal."
+  ],
+  "checks": {
+    "python_unittest": {
+      "passed": 100,
+      "skipped": 0
+    },
+    "web_unit_tests": {
+      "passed": 8
+    },
+    "configuration_validation": "passed",
+    "javascript_syntax": "passed",
+    "site_build": "passed",
+    "preserved_baseline_and_review_hashes": "passed",
+    "browser": "passed on final hash-bound bundle: rendered overlays, held toggles, color conflicts, reverse coverage, feedback export, persistence and mobile layout"
+  },
+  "artifacts": {
+    "round": ".trail-state/albemarle-gis-2026-11-04",
+    "review_directory": ".trail-state/review-albemarle-gis",
+    "review_url": "http://localhost:8010/",
+    "feedback_filename": "albemarle-validation-feedback.json",
+    "screenshots": [
+      "test-results/albemarle-overview.png",
+      "test-results/albemarle-ivy-color-conflict.png",
+      "test-results/albemarle-ragged-held.png",
+      "test-results/albemarle-mobile.png"
+    ]
+  },
+  "next_step": "User reviews the saved preview and exports validation feedback. Then prepare an explicit crosswalk and complete preserved candidate against a fresh inventory for separate review."
+}

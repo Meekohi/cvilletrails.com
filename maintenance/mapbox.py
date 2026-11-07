@@ -125,6 +125,8 @@ def verify_style_target(client, target):
 
 def make_plan(client, target, candidate, evidence):
     if not evidence.strip(): raise ValueError('An evidence reference is required')
+    if candidate.get('ingest_report', {}).get('review_only'):
+        raise ValueError('Review-only source screening cannot become a publication plan; reconcile the reviewed full dataset first')
     verify_target(client, target)
     metadata = client.metadata(target['dataset'])
     before = client.features(target['dataset'])
@@ -160,6 +162,8 @@ def validate_plan(plan, approval):
     if approval != plan['approval_hash'] or digest(unsigned) != approval:
         raise ValueError('Approval hash does not match the exact reviewed plan')
     target = plan['target']
+    if plan.get('ingest_report', {}).get('review_only'):
+        raise ValueError('Review-only source screening cannot be published')
     verify_ownership_policy(target, plan.get('ingest_report', {}))
     if target != target_by_id(target['id']): raise ValueError('Publishing target changed since review')
     if fingerprint(plan['before']) != plan['before_hash'] or fingerprint(plan['after']) != plan['after_hash']:

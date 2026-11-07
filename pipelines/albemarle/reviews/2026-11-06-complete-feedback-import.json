@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "kind": "albemarle-color-feedback-import",
+  "recorded_at": "2026-11-07T03:09:42.566414Z",
+  "review_hash": "94d808c952b4347c367f6428addc8df959b1e0702dc80733103a948a076d1e63",
+  "parent_review_hash": "d0eb0403a9704e586eba64d24dd95f167dccb5227b3c24ee18a7f7b09f00eebe",
+  "source_hash": "0ad9ba2c18e7c7b2debbc3a3e098ac5b6448ae17d9f7f53a7057037d668fce94",
+  "baseline_hash": "5b6dd79ce80d0aa357a75ac4f746dcf3fa30af4af9abd6015a33312746210f7f",
+  "style_hash": "dec88b1f333bf8ab8fbed3e4ee864034de32a7265ed09d9bf9aab7ffd36980ad",
+  "geometry_feedback_hash": "6426e1c1b9b6618349c96cb2676ff32941ca6e439343b7613a9f13b335506fba",
+  "feedback_hash": "1fffc68a55df390b45ce9c7bb02015dd339d55c195f8ebdae04e54fc30f7eeff",
+  "original_file_hash": "aa8fe09c335e0221ee7c5edda6ac31ef4a0ee26e219a9efb4e680a6f837ab6b0",
+  "publication_authorized": false,
+  "remote_writes": false,
+  "overrides_before_hash": "dd154cc71d3fff913abd662c0265668012587357e3327da58c974f43be1e789a",
+  "overrides_after_hash": "d3ffd7b62bb794d4722ba834c8698baf2c2005a84350e24c438f75bb5d6676f7",
+  "candidate_hash": "247b42e48d8fcc067659ecc28eb9fde255a2c48ffc18ce6b78fc5498e53dbebc",
+  "geometry_accepted_count": 330,
+  "normalized_features": 376,
+  "southern_open_features": 46,
+  "access_decisions_before_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "access_decisions_hash": "501250e69a192b913ae0155359b509ea7b39adfdf46826ba946d7be71a0ccf07",
+  "southern_access_interpretation": "The explicit user note supersedes the Closed label in the dropdown for these exact southern records. Treat them as open hiking trails in the local candidate; retain raw GIS access fields. Other use permissions remain unchanged.",
+  "decision_counts": {
+    "preserve-current": 10,
+    "gis-name-color": 14,
+    "suggested-alias": 3
+  },
+  "resolved": [
+    {
+      "id": "albemarle:1a1fc338-f8bd-4922-bc9f-bb966b82e463",
+      "park_id": "walnut-creek",
+      "source_name": "Blue Wheel",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "The Blue Wheel",
+        "color": "hsl(220, 70%, 50%)"
+      },
+      "current_feature_ids": [
+        "c9390fde8c57ed01e2449deaf25f0a3e",
+        "e4a42ef5d85c4d62a02ee369ec09b82d"
+      ]
+    },
+    {
+      "id": "albemarle:26cbd84c-6577-4f3b-85e3-e5d36670b907",
+      "park_id": "walnut-creek",
+      "source_name": "Blue Wheel",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "The Blue Wheel",
+        "color": "hsl(220, 70%, 50%)"
+      },
+      "current_feature_ids": [
+        "6778ec8b99cf336cd290a4eef645e838"
+      ]
+    },
+    {
+      "id": "albemarle:76847dad-dbe7-4173-81a7-a170598c6588",
+      "park_id": "walnut-creek",
+      "source_name": "Blue Wheel",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "The Blue Wheel",
+        "color": "hsl(220, 70%, 50%)"
+      },
+      "current_feature_ids": [
+        "6778ec8b99cf336cd290a4eef645e838"
+      ]
+    },
+    {
+      "id": "albemarle:883f37b3-53cb-49da-9e7b-1e8f0a39396b",
+      "park_id": "walnut-creek",
+      "source_name": "Blue Wheel",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "The Blue Wheel",
+        "color": "hsl(220, 70%, 50%)"
+      },
+      "current_feature_ids": [
+        "da0e25d88cce10455261995e64770881"
+      ]
+    },
+    {
+      "id": "albemarle:54941d33-f795-4e39-8dbd-8612ab61c441",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Blue",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Blue",
+        "color": "hsl(220, 70%, 50%)"
+      },
+      "current_feature_ids": [
+        "30723579e01515155e6aeb5c14ee9d95",
+        "40878398a9a2c503986f0d60d40444ce",
+        "e2727882e94368b40da016cb49b125b1",
+        "6622a30a790c08647d81a1cafe9c30f2",
+        "69a3d18d74fbd2e7f9bdfc496da97a02"
+      ]
+    },
+    {
+      "id": "albemarle:03eb1fee-abbd-4940-8ef2-2c598b9e737d",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Brown",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Brown",
+        "color": "hsl(6, 53%, 30%)"
+      },
+      "current_feature_ids": [
+        "45b3d247e2627340e97e88fe6378e2d5"
+      ]
+    },
+    {
+      "id": "albemarle:9763206e-e05b-46a1-b279-1b76c068fae2",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Brown Connector",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "Brown",
+        "color": "hsl(6, 53%, 30%)"
+      },
+      "current_feature_ids": [
+        "5f967f0d122fed3cdce1a5fd03666f75"
+      ]
+    },
+    {
+      "id": "albemarle:cbe7486b-a789-4d2f-85c1-aff78863830f",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Connector",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Connector",
+        "color": "hsl(25, 29%, 87%)"
+      },
+      "current_feature_ids": [
+        "45b3d247e2627340e97e88fe6378e2d5",
+        "1fd73ca1dd2b59baa9a2102689de889f",
+        "e19d3ddddeb6debba2079ddf1a48fa6b",
+        "000e46d7953e7bc323bd288c812002f8",
+        "52be55c52d7bfd7cdcc725906b6a8dfd",
+        "4adbf3b354d70778045f298764f1d3a8"
+      ]
+    },
+    {
+      "id": "albemarle:2a9e255b-0699-4210-b650-99243839b4e7",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Field",
+      "decision": "suggested-alias",
+      "notes": "",
+      "properties": {
+        "TrailName": "Purple",
+        "color": "hsl(285, 83%, 72%)"
+      },
+      "current_feature_ids": [
+        "ea89e43a7a7fbb51102f8a193c8a12b5",
+        "96b067bbeeb8ae928ab3933561f1c97a",
+        "d8466e09694cd83b9c08dc3ba2b57017"
+      ]
+    },
+    {
+      "id": "albemarle:b2527da4-f70a-418b-8168-0191cd7db37d",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Field",
+      "decision": "suggested-alias",
+      "notes": "",
+      "properties": {
+        "TrailName": "Purple",
+        "color": "hsl(285, 83%, 72%)"
+      },
+      "current_feature_ids": [
+        "47cdd452342207043b65c7c62a753740"
+      ]
+    },
+    {
+      "id": "albemarle:d2531742-dbc8-4314-a154-7ec839e7a88b",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Field",
+      "decision": "suggested-alias",
+      "notes": "",
+      "properties": {
+        "TrailName": "Purple",
+        "color": "hsl(285, 83%, 72%)"
+      },
+      "current_feature_ids": [
+        "6354ddd3275c782676a7cadbaa9ebd31",
+        "c7e85a046766ab6d17150556f1f033d0",
+        "f8e5b2da743fe88bb1685857f1898403",
+        "c01611999c61e84601343ceebd1c0939",
+        "6c8d1ed28fb1b5b164e2c393b8133353",
+        "f1fe7813430b1cce7be9afb605959c83",
+        "20c2b61edfc533a2cfb7bfaa00d11b5d",
+        "d8466e09694cd83b9c08dc3ba2b57017"
+      ]
+    },
+    {
+      "id": "albemarle:c946c7c5-85ca-4765-a145-ad4d8ad0e1f5",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Orange",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Orange",
+        "color": "hsl(36, 91%, 60%)"
+      },
+      "current_feature_ids": [
+        "45b3d247e2627340e97e88fe6378e2d5"
+      ]
+    },
+    {
+      "id": "albemarle:fb87cac9-b78a-41c8-b204-071f4d5ec59c",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Orange Loop",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Orange Loop",
+        "color": "hsl(25, 29%, 87%)"
+      },
+      "current_feature_ids": [
+        "382c76a32503d7ccfce2b9550e999377",
+        "ed626f8c8919be68f62251ce568beebf"
+      ]
+    },
+    {
+      "id": "albemarle:c6f8f477-fa1d-403c-a465-8a4b0adabd96",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Peninsula",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Peninsula",
+        "color": "hsl(282, 59%, 40%)"
+      },
+      "current_feature_ids": [
+        "45b3d247e2627340e97e88fe6378e2d5"
+      ]
+    },
+    {
+      "id": "albemarle:9ff137c4-5210-42d5-8651-c7788b3e3cdc",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Peninsula Spur",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "Peninsula",
+        "color": "hsl(282, 59%, 40%)"
+      },
+      "current_feature_ids": [
+        "be29a50db36e9e33e9f1c7fb5a0db4b7"
+      ]
+    },
+    {
+      "id": "albemarle:5fc9a8be-e7eb-46b7-b169-e834b6d0913e",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "School",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "School",
+        "color": "hsl(321, 85%, 87%)"
+      },
+      "current_feature_ids": [
+        "814361320a7118c53c3a19b6ff67f30a"
+      ]
+    },
+    {
+      "id": "albemarle:eae94f92-0c32-4490-a629-606c33ab8ea3",
+      "park_id": "ivy-creek-natural-area",
+      "source_name": "Yellow",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Yellow",
+        "color": "hsl(59, 97%, 64%)"
+      },
+      "current_feature_ids": [
+        "814361320a7118c53c3a19b6ff67f30a",
+        "5d2f6b1032157d4b073af8fac446c0e8"
+      ]
+    },
+    {
+      "id": "albemarle:82c3e436-526b-4e54-b783-874b0a5d8afb",
+      "park_id": "walnut-creek",
+      "source_name": "Connector",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "Fifth Pillar Trail",
+        "color": "hsl(37, 97%, 59%)"
+      },
+      "current_feature_ids": [
+        "6eba2c980b352e235aec59a5c8d32441"
+      ]
+    },
+    {
+      "id": "albemarle:b8fc2ff9-b645-4a9e-b0df-83072e06cc9d",
+      "park_id": "walnut-creek",
+      "source_name": "Connector",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Connector",
+        "color": "hsl(25, 29%, 87%)"
+      },
+      "current_feature_ids": [
+        "b3599820c0111b8ac80a444afc10f74a"
+      ]
+    },
+    {
+      "id": "albemarle:d2eb9eff-2ce6-41ac-8d80-3206868c1454",
+      "park_id": "walnut-creek",
+      "source_name": "Connector",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Connector",
+        "color": "hsl(25, 29%, 87%)"
+      },
+      "current_feature_ids": [
+        "ba49d2efffc6774fd5a6095ade1fdd11",
+        "72c82bc48ceb12778e2d2f641a4d017b"
+      ]
+    },
+    {
+      "id": "albemarle:e49d82d7-e398-4818-a2df-96584af8022d",
+      "park_id": "walnut-creek",
+      "source_name": "Connector",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Connector",
+        "color": "hsl(25, 29%, 87%)"
+      },
+      "current_feature_ids": [
+        "b927c2d01bac6522d7856898657f97f7"
+      ]
+    },
+    {
+      "id": "albemarle:3539d6fa-a220-4be1-83ee-c3997937f0e2",
+      "park_id": "walnut-creek",
+      "source_name": "Luke's Connector",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "Luke's Loop",
+        "color": "hsl(102, 71%, 38%)"
+      },
+      "current_feature_ids": [
+        "8527564e44fcc3819943feb8388a78a6"
+      ]
+    },
+    {
+      "id": "albemarle:602abf09-49fd-4f7e-9aa9-fde15713374e",
+      "park_id": "walnut-creek",
+      "source_name": "Luke's Connector",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "Luke's Loop",
+        "color": "hsl(102, 71%, 38%)"
+      },
+      "current_feature_ids": [
+        "cc32fc2c9b2029d117cf602d9bc8b846"
+      ]
+    },
+    {
+      "id": "albemarle:ce083c75-71bb-48eb-b65e-76c2bbe540e4",
+      "park_id": "walnut-creek",
+      "source_name": "Paved Trail",
+      "decision": "preserve-current",
+      "notes": "",
+      "properties": {
+        "TrailName": "Entrance/Jungle Trail",
+        "color": "hsl(59, 100%, 61%)"
+      },
+      "current_feature_ids": [
+        "33be6e108f016c919018224c9ccc2f6c"
+      ]
+    },
+    {
+      "id": "albemarle:3d9922a5-1d0e-4b7c-8e92-8aaeebdd6763",
+      "park_id": "walnut-creek",
+      "source_name": "Wilkins Way",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Wilkins Way",
+        "color": "hsl(359, 82%, 56%)"
+      },
+      "current_feature_ids": [
+        "b9cdc71e899cec85595c7e2a930c9986",
+        "ba49d2efffc6774fd5a6095ade1fdd11"
+      ]
+    },
+    {
+      "id": "albemarle:d0e584d1-83d9-4663-8e91-fd6f663685b3",
+      "park_id": "walnut-creek",
+      "source_name": "Wilkins Way",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Wilkins Way",
+        "color": "hsl(359, 82%, 56%)"
+      },
+      "current_feature_ids": [
+        "83ee88e2c593017cf028914290d21e10"
+      ]
+    },
+    {
+      "id": "albemarle:febdc8f4-e6d6-4aa7-b0ac-181f04c8d476",
+      "park_id": "walnut-creek",
+      "source_name": "Wilkins Way",
+      "decision": "gis-name-color",
+      "notes": "",
+      "properties": {
+        "TrailName": "Wilkins Way",
+        "color": "hsl(359, 82%, 56%)"
+      },
+      "current_feature_ids": [
+        "90827621b6dc304ba006d0a1634347db"
+      ]
+    }
+  ],
+  "pending_color_cases": [],
+  "southern_feedback": {
+    "decision": "closed-geometry",
+    "notes": "Just mark it as open -- this section is open in practice even if the GIS hasn't been updated yet."
+  },
+  "note": "Explicit color decisions are applied to local per-feature overrides. Raw GIS names and accepted geometry are retained. Reviewed access corrections are separately recorded with raw source access preserved. Missing decisions remain pending. This screened subset is not a full replacement dataset.",
+  "validation": {
+    "python_tests_passed": 113,
+    "configuration": "passed",
+    "colors_verified": 27,
+    "exact_reviewed_geometries": 376,
+    "southern_effective_open": 46,
+    "southern_raw_closed_preserved": 46,
+    "other_held_excluded": 1526,
+    "original_review_unchanged": true,
+    "review_only_preserved": true
+  },
+  "original_export": "pipelines/albemarle/reviews/2026-11-06-complete-feedback.json",
+  "local_round": ".trail-state/albemarle-feedback-complete-2026-11-06",
+  "remaining": "Prepare a complete replacement crosswalk and dataset against fresh inventory; no publication plan is authorized by this export."
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Albemarle · colors and southern Biscuit Run</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.11.1/mapbox-gl.css" rel="stylesheet">
+  <link href="compare.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.11.1/mapbox-gl.js"></script>
+</head>
+<body>
+  <aside>
+    <h1>Colors & southern Biscuit Run</h1>
+    <p id="status">Loading saved comparison…</p>
+    <label for="park">Compare</label>
+    <select id="park"><option value="walnut-creek">Walnut Creek colors</option><option value="ivy-creek-natural-area">Ivy Creek colors</option><option value="biscuit-run">Southern Biscuit Run geometry</option></select>
+    <section id="color-controls">
+      <label for="case">Color question</label><select id="case"></select>
+      <button id="previous">Previous</button><button id="next">Next</button>
+      <label><input type="checkbox" id="suggestions"> Preview suggested color aliases</label>
+      <label><input type="checkbox" id="context" checked> Show surrounding trails</label>
+    </section>
+    <section id="south-controls" hidden>
+      <label><input type="checkbox" id="south" checked> Southern 400 acres · dashed amber</label>
+      <label><input type="checkbox" id="other-held"> Other held records · dashed gray</label>
+      <button id="south-extent">Focus southern trails</button>
+    </section>
+    <button id="whole-park">Whole park</button>
+    <h2 id="title"></h2><p id="kind" class="badge"></p>
+    <div id="swatches"></div>
+    <p id="explanation"></p><p id="recommendation"></p><p id="vintage" class="muted"></p>
+    <div id="source-links"></div>
+    <details id="maps"><summary>Compare the official Ivy Creek maps</summary>
+      <p>The historic map is January 2017; the currently linked map says updated May 2024. Open either image for the full map.</p>
+      <div class="documents"><a href="evidence/ivy-2017.png" target="_blank" rel="noopener"><img src="evidence/ivy-2017.png" alt="Ivy Creek January 2017 official trail map">January 2017</a><a href="evidence/ivy-current.png" target="_blank" rel="noopener"><img src="evidence/ivy-current.png" alt="Ivy Creek May 2024 official trail map">May 2024</a></div>
+    </details>
+    <details><summary>Raw records and overlap measurements</summary><pre id="raw"></pre></details>
+    <label for="decision">Your feedback</label><select id="decision"></select>
+    <label for="notes">Notes for this question</label><textarea id="notes" rows="3"></textarea>
+    <button id="export">Export color / southern geometry feedback</button>
+    <p id="saved" class="muted"></p>
+    <p class="muted">This review preserves your geometry approval. It changes no public map data. Maps move together; drag or zoom either side.</p>
+    <a href="../">Original validation preview</a>
+  </aside>
+  <main>
+    <section class="pane"><h2 id="left-title">Current site · saved geometry & colors</h2><div id="left" class="map"></div></section>
+    <section class="pane"><h2 id="right-title">New GIS · existing color lookup</h2><div id="right" class="map"></div></section>
+  </main>
+  <script src="compare.js"></script>
+</body>
+</html>

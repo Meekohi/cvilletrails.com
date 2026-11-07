@@ -1,0 +1,12 @@
+{
+  "original_plan_hash": "23f7fe37a95650794f0a247260b5f8ac541092b5b0e3809f2d31baa67abeabc8",
+  "repair_plan_hash": "90372e7bb9f17d616577a804c137ba053fd738437f70b8ac9c870f3a2450aaf9",
+  "reason": "Remove sub-micrometre projection round-trip noise from two retained legacy tails; all other written features preserved exactly.",
+  "changed_ids": [
+    "33be6e108f016c919018224c9ccc2f6c",
+    "ec6865dfa1e8d1ae292ffb632d2b92df"
+  ],
+  "strava_plan_hash": "646d6ccf20d55079acb66b0e5bbe81deb8146b59584d3334e31cff979f33019b",
+  "observed_difference": "Seven retained-tail latitude values straddled six-decimal storage boundaries after projection round trips. IDs, properties, all other vertices, and the 376 imported source geometries passed verification.",
+  "resolution": "Stabilize only derived trimmed coordinates at 12 decimals, repair the two County records against fresh stored data, preserve strict publisher verification, and stabilize the two unattempted Strava trims before writing."
+}

@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #243b35; background: #f8f7f1; font: 14px system-ui, sans-serif; display: grid; grid-template-columns: 340px 1fr; height: 100dvh; }
+aside { padding: 18px; overflow: auto; border-right: 1px solid #c9d2c9; }
+h1 { font-size: 21px; line-height: 1.2; margin: 0 0 12px; }
+h2 { font-size: 16px; margin: 15px 0 8px; }
+p { line-height: 1.45; }
+label { display: block; margin: 10px 0 5px; }
+button, select, input, textarea { font: inherit; }
+select, textarea { width: 100%; border: 1px solid #aab9af; border-radius: 5px; padding: 8px; background: white; color: #243b35; }
+button { padding: 8px 10px; margin: 6px 5px 0 0; background: white; border: 1px solid #aab9af; border-radius: 5px; color: #243b35; cursor: pointer; }
+button:focus-visible, select:focus-visible, a:focus-visible, textarea:focus-visible { outline: 3px solid #2675ab; }
+a { color: #22644b; }
+#status { background: #e4eee1; padding: 10px; border-radius: 5px; }
+.muted { font-size: 12px; color: #586b62; }
+.badge { font-size: 12px; font-weight: 600; color: #6a461a; background: #efe8d4; padding: 7px; border-radius: 4px; }
+.swatch { display: inline-block; width: 22px; height: 6px; margin-right: 7px; border: 1px solid #655c4a; vertical-align: middle; }
+#swatches p { font-size: 13px; margin: 8px 0; }
+#source-links a { display: block; margin: 8px 0; font-size: 12px; }
+details { margin: 14px 0; }
+summary { cursor: pointer; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; font: 12px system-ui; }
+.documents { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.documents img { width: 100%; }
+#export { width: 100%; color: white; background: #245b46; }
+main { display: grid; grid-template-columns: 1fr 1fr; min-width: 0; }
+.pane { position: relative; min-width: 0; border-right: 1px solid #b7c1b7; }
+.pane h2 { position: absolute; z-index: 2; top: 10px; left: 10px; right: 50px; margin: 0; padding: 9px; background: #fffffff0; border-radius: 5px; font-size: 14px; box-shadow: 0 1px 5px #0002; }
+.map { height: 100%; width: 100%; }
+[hidden] { display: none !important; }
+@media (max-width: 760px) {
+  body { grid-template-columns: 1fr; grid-template-rows: 34dvh 66dvh; }
+  aside { border-right: 0; border-bottom: 1px solid #b7c1b7; padding: 12px; }
+  main { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+  .pane h2 { font-size: 12px; padding: 6px; }
+}

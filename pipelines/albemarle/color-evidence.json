@@ -1,0 +1,96 @@
+{
+  "reviewed_at": "2026-11-05",
+  "sources": {
+    "ivy-current": {
+      "title": "Ivy Creek currently linked kiosk map — revised May 2024",
+      "url": "https://ivycreekfoundation.org/docs/ICNA_Kiosk_Trail_Map_Reduced.pdf",
+      "page_url": "https://ivycreekfoundation.org/trail-map",
+      "file": "ivy-current.pdf",
+      "image": "ivy-current.png",
+      "finding": "Visually inspected. The map says updated May 2024. It shows Field in light purple, Peninsula in purple, and Brown and Orange routes in their named colors."
+    },
+    "ivy-2017": {
+      "title": "Ivy Creek historical map — January 2017",
+      "url": "https://ivycreekfoundation.org/docs/IvyCreekNA_TOPO_PageSize.pdf",
+      "file": "ivy-2017.pdf",
+      "image": "ivy-2017.png",
+      "finding": "Visually inspected. Field was already the official name in 2017. Blue was listed as 0.4 miles and Red as 1.7 miles; the May 2024 map lists 0.6 and 1.6 respectively. These map revisions do not establish when each GIS segment changed."
+    },
+    "walnut": {
+      "title": "Walnut Creek official park page and map link",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/60/360?widgetId=139",
+      "finding": "The indexed official page links a trail PDF. Direct page requests, including a browser request to the County trail directory, returned HTTP 403. A current Walnut Creek PDF could not be inspected, so no claim of a verified map or blaze change is made."
+    },
+    "biscuit": {
+      "title": "Biscuit Run operator page",
+      "url": "https://www.albemarle.org/government/parks-recreation/biscuit-run-park",
+      "finding": "Indexed official content describes continuing construction and temporary trail closures. Direct fetch returned HTTP 403. It does not establish that the southern 400-acre trails have reopened."
+    },
+    "county-gis": {
+      "title": "County operational trail GIS — reviewed November 4 snapshot",
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+      "finding": "This service supplies trail names, geometry and access attributes, but no blaze-color field. Map colors here come from the captured site's TrailName lookup. GIS edit timestamps may describe metadata edits or republication, not a field reroute or repaint."
+    }
+  },
+  "notes": {
+    "ivy-creek-natural-area/Brown Connector": {
+      "kind": "Missing color alias",
+      "explanation": "The curated segment is Brown; the GIS calls it Brown Connector. The style only recognizes Brown, so the longer name becomes the default pale tan. The official map depicts the brown route; it does not label this connector as a new blaze color.",
+      "suggested_alias": "Brown",
+      "recommendation": "Keep the GIS name and geometry; preserve the established brown display color through a scoped alias.",
+      "sources": ["ivy-current"]
+    },
+    "ivy-creek-natural-area/Peninsula Spur": {
+      "kind": "Missing color alias",
+      "explanation": "The same short segment is Peninsula in the curated data and Peninsula Spur in GIS. The style recognizes only Peninsula. The official map uses purple for the peninsula route; there is no separate spur color in its legend.",
+      "suggested_alias": "Peninsula",
+      "recommendation": "Preserve the established purple display color while retaining the more specific GIS name.",
+      "sources": ["ivy-current"]
+    },
+    "ivy-creek-natural-area/Orange Loop": {
+      "kind": "Missing color alias",
+      "explanation": "GIS groups former Orange segments as Orange Loop. That exact name is missing from the color lookup. The official map continues to show an orange route.",
+      "suggested_alias": "Orange",
+      "recommendation": "Preserve orange through a scoped alias; do not treat the longer name as a new blaze color.",
+      "sources": ["ivy-current"]
+    },
+    "ivy-creek-natural-area/Field": {
+      "kind": "Older curated name differs from official name",
+      "explanation": "The curated data calls these light-purple segments Purple; GIS calls them Field. Both the 2017 and currently linked maps already call this Field. This is not evidence of a recent trail rename. Field is missing from our color lookup.",
+      "suggested_alias": "Purple",
+      "recommendation": "Use the official Field name and preserve the established light-purple display color.",
+      "sources": ["ivy-current", "ivy-2017"]
+    },
+    "ivy-creek-natural-area/Blue": {
+      "kind": "Route attribution differs; map also revised",
+      "explanation": "A substantial GIS Blue segment follows several curated Red segments. Both names have explicit style colors, so this is not a fallback problem. The newer official map shows revised Red/Blue routes and mileages; that supports reviewing a route-attribution change, but does not prove the date or history of each segment.",
+      "recommendation": "Compare the selected route with the 2017 and May 2024 maps. Retain the GIS Blue name as the proposed interpretation; confirm the affected segment before adopting its blue color.",
+      "sources": ["ivy-current", "ivy-2017"]
+    },
+    "walnut-creek/Blue Wheel": {
+      "kind": "Missing color alias",
+      "explanation": "The new GIS drops The from The Blue Wheel. The existing style matches the full old name exactly, so Blue Wheel falls back to pale tan. This explains the rendered change without implying that the trail's blazes changed.",
+      "suggested_alias": "The Blue Wheel",
+      "recommendation": "Preserve the established blue display color through a scoped alias. Current official PDF/blaze confirmation remains unavailable.",
+      "sources": ["walnut"]
+    },
+    "walnut-creek/Luke's Connector": {
+      "kind": "New GIS name; map confirmation unresolved",
+      "explanation": "GIS calls these segments Luke's Connector where the curated data says Luke's Loop. The existing lookup colors Luke's Loop green but has no entry for Luke's Connector. The 2026 GIS records establish a name difference, not a verified change in blazes.",
+      "recommendation": "Review the two segments and obtain the current official map or sign evidence before changing their established green color. No automatic color correction is proposed here.",
+      "sources": ["walnut"]
+    },
+    "walnut-creek/Wilkins Way": {
+      "kind": "Route attribution differs; map confirmation unresolved",
+      "explanation": "Some GIS Wilkins Way segments overlap curated Luke's Loop geometry. Both names already have explicit colors (red versus green). This can represent route reassignment, changed segmentation or imperfect matching; the blocked official map prevents confirming which explanation applies.",
+      "recommendation": "Inspect each selected segment. Preserve the uncertainty instead of assuming a new blaze color from the GIS edit year.",
+      "sources": ["walnut"]
+    },
+    "walnut-creek/Paved Trail": {
+      "kind": "Generic GIS name replaces a named subsegment",
+      "explanation": "A short GIS Paved Trail follows part of curated Entrance/Jungle Trail. The old name has a yellow style rule; the generic new name has none. The current official map could not be checked.",
+      "recommendation": "Confirm whether this is still part of Jungle Trail before assigning a new display color.",
+      "sources": ["walnut"]
+    }
+  }
+}

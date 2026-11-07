@@ -1,0 +1,637 @@
+{
+  "schema_version": 1,
+  "kind": "albemarle-publication",
+  "status": "published; stored datasets and ordinary public tiles verified",
+  "authorization": "ship it",
+  "preparation": {
+    "kind": "albemarle-publication-preparation",
+    "created_at": "2026-11-07T03:26:09.551882Z",
+    "manifest_hash": "51ecb3508fd166448e1f058823908d2c79fae3ef8ca95c1af6000f80e116a8af",
+    "raw_source_hash": "0ad9ba2c18e7c7b2debbc3a3e098ac5b6448ae17d9f7f53a7057037d668fce94",
+    "county_trims": {
+      "33be6e108f016c919018224c9ccc2f6c": {
+        "retained_length_m": 538.3247633379207,
+        "original_length_m": 637.0005159353584,
+        "joins": [
+          {
+            "before": [
+              -78.58891540357781,
+              37.923591582048175
+            ],
+            "after": [
+              -78.58901607202363,
+              37.92354968397586
+            ],
+            "distance_m": 9.999999999988203
+          },
+          {
+            "before": [
+              -78.58838903906182,
+              37.922727561013026
+            ],
+            "after": [
+              -78.5883634416407,
+              37.92281527323279
+            ],
+            "distance_m": 9.993913425270422
+          }
+        ]
+      },
+      "ec6865dfa1e8d1ae292ffb632d2b92df": {
+        "retained_length_m": 98.65977081019498,
+        "original_length_m": 418.8985015865847,
+        "joins": [
+          {
+            "before": [
+              -78.43737000000027,
+              38.16509003819619
+            ],
+            "after": [
+              -78.4373365736395,
+              38.1651761420419
+            ],
+            "distance_m": 9.998536784809703
+          }
+        ]
+      }
+    },
+    "strava_trims": {
+      "4b6f9a0226a7effd7cac0e35c8dbfdcd": {
+        "retained_length_m": 1049.2457639825102,
+        "original_length_m": 3394.6935795946765,
+        "joins": [
+          {
+            "before": [
+              -78.51465534137195,
+              37.99677947742434
+            ],
+            "after": [
+              -78.51529064350488,
+              37.99658112536411
+            ],
+            "distance_m": 60.00000000003718
+          },
+          {
+            "before": [
+              -78.5207372695189,
+              37.98418332584933
+            ],
+            "after": [
+              -78.52127208223368,
+              37.984519361413284
+            ],
+            "distance_m": 60.0000000003433
+          },
+          {
+            "before": [
+              -78.5207865101718,
+              37.98336994397064
+            ],
+            "after": [
+              -78.520585218396,
+              37.982853869179394
+            ],
+            "distance_m": 59.96090947957794
+          },
+          {
+            "before": [
+              -78.5203370771713,
+              37.982329289649165
+            ],
+            "after": [
+              -78.52045834827172,
+              37.9828605173479
+            ],
+            "distance_m": 59.930053728750266
+          }
+        ]
+      },
+      "c4f56134e1fd84eaba3eebb4ec50919c": {
+        "retained_length_m": 217.57121237395242,
+        "original_length_m": 2096.770949807805,
+        "joins": [
+          {
+            "before": [
+              -78.526012792382,
+              37.98010523541588
+            ],
+            "after": [
+              -78.5259501600404,
+              37.979567451753
+            ],
+            "distance_m": 59.95586210199664
+          }
+        ]
+      }
+    },
+    "county_dispositions": {
+      "replace": 316,
+      "retain": 32,
+      "trim": 2
+    },
+    "legacy_ids_reused": 175,
+    "accepted_source_features": 376,
+    "plans": {
+      "albemarle": {
+        "approval_hash": "23f7fe37a95650794f0a247260b5f8ac541092b5b0e3809f2d31baa67abeabc8",
+        "before_hash": "5b6dd79ce80d0aa357a75ac4f746dcf3fa30af4af9abd6015a33312746210f7f",
+        "after_hash": "b82629790f2c9d68fad86c06f5591a2f10bd986163f799e958f4aa5185efef01",
+        "changes": {
+          "added": 201,
+          "deleted": 141,
+          "changed": 177,
+          "geometry_changed": 177,
+          "curation_changed": 38
+        },
+        "before_features": 350,
+        "after_features": 410
+      },
+      "strava": {
+        "approval_hash": "e68fd667f0025661e1d41c5a6dcd4cd12338ac060d6d37a52cc9306098d6763f",
+        "before_hash": "e92f4066cc48e6445b1802303545cfef14f729714413d4e5c0780cd4d958c72c",
+        "after_hash": "5ea13cef0dbcfd99c249926c71957f670ccbfb4abd41b3fe833d483b4d4a08c5",
+        "changes": {
+          "added": 0,
+          "deleted": 9,
+          "changed": 2,
+          "geometry_changed": 2,
+          "curation_changed": 0
+        },
+        "before_features": 568,
+        "after_features": 559
+      }
+    }
+  },
+  "preflight": {
+    "checked_at": "2026-11-07T03:26:38.289961Z",
+    "all_source_geometries_exact": 376,
+    "reviewed_colors_match": 27,
+    "continuity_aliases": 2,
+    "southern_open_count": 46,
+    "county_unchanged_retained": 32,
+    "strava_changed_scope": 11,
+    "protected_hashes": {
+      "cjawyutol0r7d2wo1z7eb0wiy": "4ba781f25967138b8313362c61d59d3c8d0de156fe31945be9887092a7969e13"
+    },
+    "live_style_hash": "dec88b1f333bf8ab8fbed3e4ee864034de32a7265ed09d9bf9aab7ffd36980ad",
+    "draft_style_hash": "144b586bf3f7ec2008a02b323c9e974f4c80ce8d4246c1d15ee102120f5e92e7",
+    "tiles_built": true,
+    "plans": {
+      "albemarle": "23f7fe37a95650794f0a247260b5f8ac541092b5b0e3809f2d31baa67abeabc8",
+      "strava": "e68fd667f0025661e1d41c5a6dcd4cd12338ac060d6d37a52cc9306098d6763f"
+    }
+  },
+  "manifest_hash": "51ecb3508fd166448e1f058823908d2c79fae3ef8ca95c1af6000f80e116a8af",
+  "local_round": ".trail-state/albemarle-publish-2026-11-06",
+  "validation": {
+    "python_tests": 117,
+    "web_tests": 8,
+    "syntax": "passed",
+    "site_build": "passed",
+    "biscuit_context_browser": "passed; desktop and mobile",
+    "public_map_browser": "passed; ordinary public tiles across all 11 parks, sampled zooms 10/12/14/16, unchanged palette and Ragged visible",
+    "strava_public_tile_geometry": "passed; 40 fragments across the superseded GPS extents at zooms 14 and 16"
+  },
+  "style_changes": false,
+  "protected_rivanna": true,
+  "website_changes": {
+    "biscuit_context_bounds": [
+      -78.533988,
+      37.964006,
+      -78.507019,
+      37.998402
+    ],
+    "obsolete_coverage_note_removed": true,
+    "browser_checks": "Southern automatic context and complete park framing passed at 1200px and 390px."
+  },
+  "recovery_inputs_archive": ".trail-state/albemarle-publish-2026-11-06/recovery-inputs.tar.gz",
+  "coordinate_repair": {
+    "original_plan_hash": "23f7fe37a95650794f0a247260b5f8ac541092b5b0e3809f2d31baa67abeabc8",
+    "repair_plan_hash": "90372e7bb9f17d616577a804c137ba053fd738437f70b8ac9c870f3a2450aaf9",
+    "reason": "Remove sub-micrometre projection round-trip noise from two retained legacy tails; all other written features preserved exactly.",
+    "changed_ids": [
+      "33be6e108f016c919018224c9ccc2f6c",
+      "ec6865dfa1e8d1ae292ffb632d2b92df"
+    ],
+    "strava_plan_hash": "646d6ccf20d55079acb66b0e5bbe81deb8146b59584d3334e31cff979f33019b",
+    "observed_difference": "Seven retained-tail latitude values straddled six-decimal storage boundaries after projection round trips. IDs, properties, all other vertices, and the 376 imported source geometries passed verification.",
+    "resolution": "Stabilize only derived trimmed coordinates at 12 decimals, repair the two County records against fresh stored data, preserve strict publisher verification, and stabilize the two unattempted Strava trims before writing."
+  },
+  "publication_receipts": {
+    "albemarle": {
+      "approval_hash": "90372e7bb9f17d616577a804c137ba053fd738437f70b8ac9c870f3a2450aaf9",
+      "started_at": "2026-11-07T03:48:09.968037Z",
+      "target": {
+        "id": "albemarle",
+        "dataset": "cjcm3ne8w0os033rw0ceoi0ye",
+        "tileset": "meekohi.cjcm3ne8w0os033rw0ceoi0ye-0bygj",
+        "source_layer": "Albemarle_County_Trails"
+      },
+      "state": "published",
+      "completed": [
+        {
+          "put": "33be6e108f016c919018224c9ccc2f6c"
+        },
+        {
+          "put": "ec6865dfa1e8d1ae292ffb632d2b92df"
+        }
+      ],
+      "verification": {
+        "mode": "mapbox-six-decimal-truncation",
+        "stored_hash": "002d5a581c35156bac6b5bacee90874893c909a999685706ade15cf4372e371b"
+      },
+      "upload_id": "cmw5v5k6z0ojk1onsh5slj213",
+      "finished_at": "2026-11-07T03:48:45.563920Z"
+    },
+    "strava": {
+      "approval_hash": "646d6ccf20d55079acb66b0e5bbe81deb8146b59584d3334e31cff979f33019b",
+      "started_at": "2026-11-07T03:48:50.533668Z",
+      "target": {
+        "id": "strava",
+        "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+        "tileset": "meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg",
+        "source_layer": "Strava_Sidetrails"
+      },
+      "state": "published",
+      "completed": [
+        {
+          "put": "4b6f9a0226a7effd7cac0e35c8dbfdcd"
+        },
+        {
+          "put": "c4f56134e1fd84eaba3eebb4ec50919c"
+        },
+        {
+          "delete": "22f29746f5f865c82056d2025e70ca3e"
+        },
+        {
+          "delete": "28e10475061d47346be0a439ab087d53"
+        },
+        {
+          "delete": "3f57fab96c7ea2058fac34b85af08191"
+        },
+        {
+          "delete": "4265694cbf1a3b9413215759b2a56f72"
+        },
+        {
+          "delete": "5c4567c24805a41676d7595b1e23e584"
+        },
+        {
+          "delete": "7798adcb50b7acc4b686e922858d293a"
+        },
+        {
+          "delete": "836fc3ef35fef1ed1f68ea9fb715f6e9"
+        },
+        {
+          "delete": "875d3f6d0d45242772f650dc8254475b"
+        },
+        {
+          "delete": "f963cbd47ea320b5b15c476873517680"
+        }
+      ],
+      "verification": {
+        "mode": "mapbox-six-decimal-truncation",
+        "stored_hash": "798efe0fa40b7397d246f7f4e80adf89a5c26a3032fd03aa63aa603a6e4ed062"
+      },
+      "upload_id": "cmw5v6x2u0oup1mns2r5hgdnj",
+      "finished_at": "2026-11-07T03:49:54.669516Z"
+    }
+  },
+  "post_publication_verification": {
+    "checked_at": "2026-11-07T03:51:43.897474Z",
+    "changed_datasets": [
+      "cjcm3ne8w0os033rw0ceoi0ye",
+      "cjd3c6ua70tt52wqjqzmjg4ls"
+    ],
+    "unchanged_datasets": [
+      "ck3yw9drj03ad2nrurh0ehyef",
+      "ck578grpj01232ipbxr2ampjj",
+      "cjawpwbc10plf2wo9wzo2o97d",
+      "ckfh5qbi7380826oij568hhbg",
+      "ckuzk86a07v6o23pymu3yppl6",
+      "ckuppnp9h534y23pyswjd7n1a",
+      "cjawyutol0r7d2wo1z7eb0wiy",
+      "cjcwe24s41blz2wnuwiu5nyxn",
+      "ck3nfaqiq4khu2nl9w4bwsldx",
+      "ck51rmxqm6i332ip8gurz7h4l",
+      "ck0qtqwbv0hng2uphyjmayhis"
+    ],
+    "live_style_unchanged": true,
+    "draft_style_unchanged": true,
+    "protected_rivanna_unchanged": true,
+    "reproducible_from_archived_inputs": {
+      "albemarle": {
+        "mode": "mapbox-six-decimal-truncation",
+        "stored_hash": "002d5a581c35156bac6b5bacee90874893c909a999685706ade15cf4372e371b"
+      },
+      "strava": {
+        "mode": "mapbox-six-decimal-truncation",
+        "stored_hash": "798efe0fa40b7397d246f7f4e80adf89a5c26a3032fd03aa63aa603a6e4ed062"
+      }
+    }
+  },
+  "public_tile_verification": {
+    "checked_at": "2026-11-07T03:50:14.848Z",
+    "mode": "ordinary-public-tiles",
+    "plan_hash": "23f7fe37a95650794f0a247260b5f8ac541092b5b0e3809f2d31baa67abeabc8",
+    "parks": [
+      {
+        "park": "ivy-creek-natural-area",
+        "zoom": 12,
+        "expected": 45,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "preddy-creek",
+        "zoom": 12,
+        "expected": 87,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "chris-greene",
+        "zoom": 12,
+        "expected": 16,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "walnut-creek",
+        "zoom": 12,
+        "expected": 45,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "mint-springs",
+        "zoom": 12,
+        "expected": 27,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "byrom",
+        "zoom": 12,
+        "expected": 15,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "totier-creek",
+        "zoom": 12,
+        "expected": 7,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "darden-towe",
+        "zoom": 12,
+        "expected": 13,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "old-mills",
+        "zoom": 12,
+        "expected": 3,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "humphris",
+        "zoom": 12,
+        "expected": 14,
+        "missing": [],
+        "mismatched": []
+      },
+      {
+        "park": "biscuit-run",
+        "zoom": 12,
+        "expected": 104,
+        "missing": [],
+        "mismatched": []
+      }
+    ],
+    "details": [
+      {
+        "park": "ivy-creek-natural-area",
+        "source_id": "albemarle:03eb1fee-abbd-4940-8ef2-2c598b9e737d",
+        "zoom": 10,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "ivy-creek-natural-area",
+        "source_id": "albemarle:03eb1fee-abbd-4940-8ef2-2c598b9e737d",
+        "zoom": 14,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "ivy-creek-natural-area",
+        "source_id": "albemarle:03eb1fee-abbd-4940-8ef2-2c598b9e737d",
+        "zoom": 16,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "walnut-creek",
+        "source_id": "albemarle:663e248b-e33e-4d13-bcf6-075f2f6745df",
+        "zoom": 10,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "walnut-creek",
+        "source_id": "albemarle:663e248b-e33e-4d13-bcf6-075f2f6745df",
+        "zoom": 14,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "walnut-creek",
+        "source_id": "albemarle:663e248b-e33e-4d13-bcf6-075f2f6745df",
+        "zoom": 16,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "preddy-creek",
+        "source_id": "albemarle:f338f350-3f6b-482d-b7cd-d065c4ce33a4",
+        "zoom": 10,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "preddy-creek",
+        "source_id": "albemarle:f338f350-3f6b-482d-b7cd-d065c4ce33a4",
+        "zoom": 14,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "preddy-creek",
+        "source_id": "albemarle:f338f350-3f6b-482d-b7cd-d065c4ce33a4",
+        "zoom": 16,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "biscuit-run",
+        "source_id": "albemarle:02b8ae76-0166-4cde-a985-e28f8619fe65",
+        "zoom": 10,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "biscuit-run",
+        "source_id": "albemarle:02b8ae76-0166-4cde-a985-e28f8619fe65",
+        "zoom": 14,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      },
+      {
+        "park": "biscuit-run",
+        "source_id": "albemarle:02b8ae76-0166-4cde-a985-e28f8619fe65",
+        "zoom": 16,
+        "present": true,
+        "color_key_correct": true,
+        "access_correct": true
+      }
+    ],
+    "palette_unchanged": true,
+    "cleanup_views": [
+      {
+        "old_feature_id": "22f29746f5f865c82056d2025e70ca3e",
+        "zoom": 14,
+        "loaded_fragments": 14
+      },
+      {
+        "old_feature_id": "22f29746f5f865c82056d2025e70ca3e",
+        "zoom": 16,
+        "loaded_fragments": 0
+      },
+      {
+        "old_feature_id": "28e10475061d47346be0a439ab087d53",
+        "zoom": 14,
+        "loaded_fragments": 36
+      },
+      {
+        "old_feature_id": "28e10475061d47346be0a439ab087d53",
+        "zoom": 16,
+        "loaded_fragments": 22
+      },
+      {
+        "old_feature_id": "3f57fab96c7ea2058fac34b85af08191",
+        "zoom": 14,
+        "loaded_fragments": 14
+      },
+      {
+        "old_feature_id": "3f57fab96c7ea2058fac34b85af08191",
+        "zoom": 16,
+        "loaded_fragments": 0
+      },
+      {
+        "old_feature_id": "4265694cbf1a3b9413215759b2a56f72",
+        "zoom": 14,
+        "loaded_fragments": 14
+      },
+      {
+        "old_feature_id": "4265694cbf1a3b9413215759b2a56f72",
+        "zoom": 16,
+        "loaded_fragments": 10
+      },
+      {
+        "old_feature_id": "5c4567c24805a41676d7595b1e23e584",
+        "zoom": 14,
+        "loaded_fragments": 36
+      },
+      {
+        "old_feature_id": "5c4567c24805a41676d7595b1e23e584",
+        "zoom": 16,
+        "loaded_fragments": 12
+      },
+      {
+        "old_feature_id": "7798adcb50b7acc4b686e922858d293a",
+        "zoom": 14,
+        "loaded_fragments": 30
+      },
+      {
+        "old_feature_id": "7798adcb50b7acc4b686e922858d293a",
+        "zoom": 16,
+        "loaded_fragments": 18
+      },
+      {
+        "old_feature_id": "836fc3ef35fef1ed1f68ea9fb715f6e9",
+        "zoom": 14,
+        "loaded_fragments": 36
+      },
+      {
+        "old_feature_id": "836fc3ef35fef1ed1f68ea9fb715f6e9",
+        "zoom": 16,
+        "loaded_fragments": 18
+      },
+      {
+        "old_feature_id": "875d3f6d0d45242772f650dc8254475b",
+        "zoom": 14,
+        "loaded_fragments": 14
+      },
+      {
+        "old_feature_id": "875d3f6d0d45242772f650dc8254475b",
+        "zoom": 16,
+        "loaded_fragments": 0
+      },
+      {
+        "old_feature_id": "f963cbd47ea320b5b15c476873517680",
+        "zoom": 14,
+        "loaded_fragments": 36
+      },
+      {
+        "old_feature_id": "f963cbd47ea320b5b15c476873517680",
+        "zoom": 16,
+        "loaded_fragments": 26
+      }
+    ],
+    "ragged_visible": true,
+    "page_errors": [],
+    "passed": true,
+    "completed_at": "2026-11-07T03:56:07.367296+00:00",
+    "cleanup_geometry": {
+      "sampled_fragments": 40,
+      "tolerance_m": 3,
+      "unmatched_threshold_m": 5,
+      "failures": [],
+      "passed": true
+    },
+    "direct_tile_check": [
+      {
+        "fresh": false,
+        "zoom": 14,
+        "county_features": 45,
+        "reviewed_features": 45,
+        "age": "38",
+        "cache": "Hit from cloudfront"
+      },
+      {
+        "fresh": true,
+        "zoom": 14,
+        "county_features": 45,
+        "reviewed_features": 45,
+        "age": null,
+        "cache": "Miss from cloudfront"
+      }
+    ]
+  },
+  "final_recovery_archive": ".trail-state/albemarle-publish-2026-11-06/publication-recovery.tar.gz"
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "kind": "albemarle-color-and-south-validation",
+  "recorded_at": "2026-11-05T13:57:05.183378Z",
+  "status": "330 eligible geometries accepted; side-by-side color and southern Closed geometry review ready",
+  "publication_authorized": false,
+  "remote_writes": false,
+  "git_commit_created": false,
+  "hashes": {
+    "review_hash": "94d808c952b4347c367f6428addc8df959b1e0702dc80733103a948a076d1e63",
+    "parent_review_hash": "d0eb0403a9704e586eba64d24dd95f167dccb5227b3c24ee18a7f7b09f00eebe",
+    "source_hash": "0ad9ba2c18e7c7b2debbc3a3e098ac5b6448ae17d9f7f53a7057037d668fce94",
+    "baseline_hash": "5b6dd79ce80d0aa357a75ac4f746dcf3fa30af4af9abd6015a33312746210f7f",
+    "style_hash": "dec88b1f333bf8ab8fbed3e4ee864034de32a7265ed09d9bf9aab7ffd36980ad",
+    "feedback_hash": "6426e1c1b9b6618349c96cb2676ff32941ca6e439343b7613a9f13b335506fba",
+    "code_hash": "7a658cfc16caea34e4b6f3ae1302b2083dc62ca0533b27830c026d778cff6723"
+  },
+  "artifact_hashes": {
+    "current": "d27ff779316857cee11a0df05f08243493adcc7d8031bc6dbafe90cdd5de9621",
+    "incoming": "5dbba3aea83d9c7d59b00b93c0985fe7d62f456b4ad02df4e925c79c47497bca"
+  },
+  "geometry_accepted_count": 330,
+  "color_cases": 27,
+  "classification_counts": {
+    "Missing color alias": 7,
+    "Route attribution differs; map also revised": 1,
+    "Junction proximity flag": 6,
+    "Connector attribution unresolved": 5,
+    "Older curated name differs from official name": 3,
+    "New GIS name; map confirmation unresolved": 2,
+    "Generic GIS name replaces a named subsegment": 1,
+    "Route attribution differs; map confirmation unresolved": 2
+  },
+  "southern_geometry": {
+    "count": 46,
+    "ids": [
+      "albemarle:02b8ae76-0166-4cde-a985-e28f8619fe65",
+      "albemarle:03f4425b-691d-484e-9e36-38851da867e9",
+      "albemarle:09f0616c-e2b4-4cbf-86dd-7744efc4e97b",
+      "albemarle:0e034b42-d392-41d7-82af-f24b82ab9e5a",
+      "albemarle:11cb5046-2ae7-422b-b4ce-8d5cd51e492d",
+      "albemarle:19ae8474-e7c7-4809-b153-09de6d956383",
+      "albemarle:1cf4250b-62ca-4b7c-bba9-24530bacc7be",
+      "albemarle:292e1028-d5d7-49d6-b50e-59c74e71af2e",
+      "albemarle:35a34b64-18bf-43db-a526-39a2480e3b05",
+      "albemarle:39bee12e-72d8-484a-bed1-3ea73e987374",
+      "albemarle:3ef91701-0f13-4266-80e2-ac2134bdbb2a",
+      "albemarle:41c2e3c6-621f-4f51-9a52-4340d5410995",
+      "albemarle:44686a5b-fefc-4261-80fe-6dec89aacd41",
+      "albemarle:46326edf-31dc-4fd9-b49b-3ba10b57606d",
+      "albemarle:4a7bd2c3-aacf-47fe-8544-56958c65caac",
+      "albemarle:5c6f8e9d-9584-4396-b449-42d32978eb75",
+      "albemarle:5c813d1e-dd81-435a-a5d0-b789625ee089",
+      "albemarle:638821a2-cdfc-41db-981d-5ad7f175c25f",
+      "albemarle:643f08ea-04cb-4d46-b8ec-f1e804b25456",
+      "albemarle:666bb404-9ba3-4789-bc27-111cce35f24a",
+      "albemarle:6bfdcd3b-de6b-4ed2-83fa-f2b1d1ce54c1",
+      "albemarle:75b91d3f-ad87-4511-829f-c8df84aa3ea7",
+      "albemarle:813f618d-4c8a-4641-a3ec-5a5289832572",
+      "albemarle:831beec5-bec4-43b0-b8c8-73c2026f5f83",
+      "albemarle:8619b67f-1e5a-4855-82c7-4088d7b19373",
+      "albemarle:87464c45-e41a-450e-967c-09f3ce31ab53",
+      "albemarle:88e5cbf6-6db1-40cc-a874-717cf7b4a07e",
+      "albemarle:88fca606-2deb-4c4d-bd9e-fa8c52d8fa94",
+      "albemarle:8cd3947f-c4bd-4c77-af73-8d6c08855593",
+      "albemarle:9499ba41-c5cd-41a2-ae0c-de309db88eaa",
+      "albemarle:a2912680-5d91-4e5e-a9ce-f61affd70e5f",
+      "albemarle:a42fa55a-e1a6-4836-8a6f-1b2cec9cda69",
+      "albemarle:a505b368-2038-4651-a98e-f61d97a42b15",
+      "albemarle:a8ca74cc-12a2-4d17-91ce-8f76f9a95ebc",
+      "albemarle:b29d73d0-38be-468f-80dd-9a39aa2e7864",
+      "albemarle:b933682f-1a19-4773-8914-475fbfb28ced",
+      "albemarle:c3e3eb2d-4daf-4f31-b24b-d05606c7ae9c",
+      "albemarle:c89d9c6a-7838-4ba5-b65c-bba7232b2ea9",
+      "albemarle:cac7e295-bbc2-438c-97a1-ecf3b5bc539e",
+      "albemarle:ce246724-0b08-4821-a68b-660a8b3ec3bb",
+      "albemarle:ce91e246-ef0b-41cb-9298-26f048ccc7e4",
+      "albemarle:e200d22f-7f46-46d3-882d-458edb2d7555",
+      "albemarle:ebc28aba-a9db-4eee-a9d9-f0c76b8ebb59",
+      "albemarle:ed86b8a8-9c08-45da-b668-6817c9a750f7",
+      "albemarle:efbdb65a-9e36-4a04-84bc-3e5cfe17aaf3",
+      "albemarle:f2da47d5-4011-4267-a436-037e78cc2784"
+    ],
+    "bounds": [
+      -78.5333881462118,
+      37.9645060015215,
+      -78.517065396703,
+      37.9798765666809
+    ],
+    "current_rough_features": 16,
+    "status_counts": {
+      "Active": 46
+    },
+    "access_counts": {
+      "Closed": 46
+    },
+    "map_method_counts": {
+      "Submeter": 46
+    },
+    "hiking_counts": {
+      "None": 46
+    },
+    "note": "46 southern 400-acre GIS records are mapped as Active but explicitly Closed. The submeter mapping label is a source claim, not independent accuracy verification. Compare their geometry separately from access. Other held records include inactive and future lines; they are not interchangeable.",
+    "proposed_use": "Prepare a better southern geometry reference with explicit Closed status. Do not silently promote these records to open trails or include every held line."
+  },
+  "source_evidence": {
+    "ivy-current": {
+      "title": "Ivy Creek currently linked kiosk map — revised May 2024",
+      "url": "https://ivycreekfoundation.org/docs/ICNA_Kiosk_Trail_Map_Reduced.pdf",
+      "page_url": "https://ivycreekfoundation.org/trail-map",
+      "file": "ivy-current.pdf",
+      "image": "ivy-current.png",
+      "finding": "Visually inspected. The map says updated May 2024. It shows Field in light purple, Peninsula in purple, and Brown and Orange routes in their named colors.",
+      "file_hash": "48b31b7581216fdec87135a3ad2638e4d676cd2bced550e2f7801cba92e389b4",
+      "image_hash": "00ebd0112e940fe1f04fc4ae2d389b053698a9d1f3b7eda6e3e3206b09ad5a6a"
+    },
+    "ivy-2017": {
+      "title": "Ivy Creek historical map — January 2017",
+      "url": "https://ivycreekfoundation.org/docs/IvyCreekNA_TOPO_PageSize.pdf",
+      "file": "ivy-2017.pdf",
+      "image": "ivy-2017.png",
+      "finding": "Visually inspected. Field was already the official name in 2017. Blue was listed as 0.4 miles and Red as 1.7 miles; the May 2024 map lists 0.6 and 1.6 respectively. These map revisions do not establish when each GIS segment changed.",
+      "file_hash": "deb8e3ee1425479bf3ab48be22b94e4554ec5d37ea680a300fafe806383bafd4",
+      "image_hash": "a369de196da46c9b3882e98422baeca4945e84b0dd91d93e3672593ed9852bd8"
+    },
+    "walnut": {
+      "title": "Walnut Creek official park page and map link",
+      "url": "https://www.albemarle.org/Home/Components/FacilityDirectory/FacilityDirectory/60/360?widgetId=139",
+      "finding": "The indexed official page links a trail PDF. Direct page requests, including a browser request to the County trail directory, returned HTTP 403. A current Walnut Creek PDF could not be inspected, so no claim of a verified map or blaze change is made."
+    },
+    "biscuit": {
+      "title": "Biscuit Run operator page",
+      "url": "https://www.albemarle.org/government/parks-recreation/biscuit-run-park",
+      "finding": "Indexed official content describes continuing construction and temporary trail closures. Direct fetch returned HTTP 403. It does not establish that the southern 400-acre trails have reopened."
+    },
+    "county-gis": {
+      "title": "County operational trail GIS — reviewed November 4 snapshot",
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
+      "finding": "This service supplies trail names, geometry and access attributes, but no blaze-color field. Map colors here come from the captured site's TrailName lookup. GIS edit timestamps may describe metadata edits or republication, not a field reroute or repaint."
+    }
+  },
+  "validation": {
+    "python_tests": 105,
+    "web_tests": 8,
+    "configuration": "passed",
+    "javascript_syntax": "passed",
+    "browser": "passed",
+    "browser_checks": [
+      "separate current and GIS color panes",
+      "suggested aliases",
+      "bidirectional camera synchronization",
+      "official map images",
+      "46 Closed southern records rendered",
+      "held overlays separate",
+      "hash-bound export",
+      "feedback persistence",
+      "mobile layout"
+    ],
+    "visual_inspection": [
+      "desktop current/raw color comparison",
+      "desktop southern geometry comparison",
+      "mobile southern geometry comparison"
+    ],
+    "original_review_hash_unchanged": true
+  },
+  "preview_url": "http://localhost:8010/followup/",
+  "remaining": [
+    "Resolve individual color and route assignments from the comparison.",
+    "Retain southern Closed status unless newer operator evidence establishes access.",
+    "Prepare an explicit replacement crosswalk preserving unmatched geometry, official colors, and the Rivanna network before any publication plan."
+  ]
+}

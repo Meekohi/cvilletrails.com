@@ -3,14 +3,28 @@
   "system_id": "albemarle",
   "system_ids": [
     "albemarle",
-    "biscuit-run"
+    "biscuit-run",
+    "ivy-creek-natural-area",
+    "ragged-mountain",
+    "preddy-creek",
+    "walnut-creek",
+    "mint-springs",
+    "byrom",
+    "chris-greene",
+    "totier-creek"
   ],
   "fields": {
-    "id": null,
-    "name": "TrailName",
+    "id": "GlobalID",
+    "name": "Trail_Name",
     "color": "color"
   },
   "sources": [
+    {
+      "id": "county-gis",
+      "kind": "arcgis",
+      "label": "Albemarle County operational park trails (public view)",
+      "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7"
+    },
     {
       "id": "trail-directory",
       "kind": "html",
@@ -25,17 +39,115 @@
     },
     {
       "id": "biscuit-run",
-      "system_ids": ["biscuit-run"],
+      "system_ids": [
+        "biscuit-run"
+      ],
       "kind": "html",
       "label": "Biscuit Run Park access and development",
       "url": "https://www.albemarle.org/government/parks-recreation/biscuit-run-park"
     },
     {
       "id": "biscuit-run-map",
-      "system_ids": ["biscuit-run"],
+      "system_ids": [
+        "biscuit-run"
+      ],
       "kind": "pdf",
       "label": "Biscuit Run Park Phase 1-A official map",
       "url": "https://www.albemarle.org/home/showpublisheddocument/24814/638695933370230000"
     }
-  ]
+  ],
+  "locations": {
+    "ivy-creek-natural-area": {
+      "system_id": "ivy-creek-natural-area",
+      "legacy_location": "Ivy Creek Natural Area",
+      "aliases": [
+        "Ivy Creek Natural Area",
+        "Ivy Creek Natural Area & Historic River View Farm"
+      ]
+    },
+    "ragged-mountain": {
+      "system_id": "ragged-mountain",
+      "legacy_location": "Ragged Mountain Natural Area",
+      "aliases": [
+        "Ragged Mountain Natural Area",
+        "Ragged Mountain Reservoir"
+      ]
+    },
+    "preddy-creek": {
+      "system_id": "preddy-creek",
+      "legacy_location": "Preddy Creek Park",
+      "aliases": [
+        "Preddy Creek Park",
+        "Preddy Creek Trails Park"
+      ]
+    },
+    "walnut-creek": {
+      "system_id": "walnut-creek",
+      "legacy_location": "Walnut Creek Park",
+      "aliases": [
+        "Walnut Creek Park"
+      ]
+    },
+    "mint-springs": {
+      "system_id": "mint-springs",
+      "legacy_location": "Mint Springs Park",
+      "aliases": [
+        "Mint Springs Park",
+        "Mint Springs Valley Park"
+      ]
+    },
+    "byrom": {
+      "system_id": "byrom",
+      "legacy_location": "Byrom Park",
+      "aliases": [
+        "Byrom Park",
+        "Patricia Ann Byrom Forest Preserve Park"
+      ]
+    },
+    "chris-greene": {
+      "system_id": "chris-greene",
+      "legacy_location": "Chris Greene Lake Park",
+      "aliases": [
+        "Chris Greene Lake Park"
+      ]
+    },
+    "totier-creek": {
+      "system_id": "totier-creek",
+      "legacy_location": "Totier Creek Park",
+      "aliases": [
+        "Totier Creek Park"
+      ]
+    },
+    "darden-towe": {
+      "system_id": "albemarle",
+      "legacy_location": "Darden Towe Park",
+      "aliases": [
+        "Darden Towe Park"
+      ]
+    },
+    "humphris": {
+      "system_id": "albemarle",
+      "legacy_location": "Charlotte Humphris Park",
+      "aliases": [
+        "Charlotte Humphris Park",
+        "Charlotte Yancey Humphris Park"
+      ]
+    },
+    "old-mills": {
+      "system_id": "albemarle",
+      "legacy_location": "Old Mills Trail",
+      "aliases": [
+        "Old Mills Trail",
+        "Rivanna River Greenway – Old Mills Trail"
+      ]
+    },
+    "biscuit-run": {
+      "system_id": "biscuit-run",
+      "legacy_location": "Biscuit Run Park",
+      "aliases": [
+        "Biscuit Run Park",
+        "Biscuit Run Park-400 Acres"
+      ]
+    }
+  }
 }

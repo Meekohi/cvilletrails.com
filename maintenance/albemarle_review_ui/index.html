@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Albemarle GIS validation</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.11.1/mapbox-gl.css" rel="stylesheet">
+  <link href="review.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.11.1/mapbox-gl.js"></script>
+</head>
+<body>
+  <div id="map"></div>
+  <aside>
+    <h1>Albemarle GIS validation</h1>
+    <p id="summary">Loading saved comparison…</p>
+    <p class="muted">Validation round only. Current trails remain intact. Export saves feedback for the next proposal; it does not approve publication.</p>
+    <label for="parks">Park</label><select id="parks"><option value="">All parks</option></select>
+    <button id="overview">Overview</button><button id="next">Next park</button>
+    <div class="toggles">
+      <label><input type="checkbox" id="existing" checked> Current County trails · cyan</label>
+      <label><input type="checkbox" id="eligible" checked> Screened County GIS · magenta</label>
+      <label><input type="checkbox" id="held"> Held GIS records · dashed red</label>
+      <label><input type="checkbox" id="references" checked> Other datasets · gray / Rivanna green</label>
+      <label><input type="checkbox" id="colors"> Compare name-based map colors</label>
+    </div>
+    <p id="park-summary"></p>
+    <label for="park-decision">Park feedback</label>
+    <select id="park-decision" disabled>
+      <option value="">Not reviewed</option><option value="discuss">Needs discussion</option>
+      <option value="keep-existing">Keep current trails</option><option value="next-proposal">Ready for a detailed replacement proposal</option>
+    </select>
+    <label for="park-notes">Park notes</label><textarea id="park-notes" rows="2" disabled></textarea>
+    <label for="filter">Show records</label>
+    <select id="filter"><option value="attention">Conflicts and coverage gaps</option><option value="eligible">All eligible source records</option><option value="held">Held source records</option><option value="existing">All current County records</option></select>
+    <label for="search">Find trail, location or ID</label><input id="search" type="search">
+    <p id="row-count" class="muted"></p>
+    <div id="detail" hidden></div>
+    <ul id="rows"></ul>
+    <label for="notes">Overall notes</label><textarea id="notes" rows="3"></textarea>
+    <button id="export">Export validation feedback</button><p id="save-status" class="muted"></p>
+    <details><summary>Comparison method and limitations</summary><p id="method"></p></details>
+  </aside>
+  <script src="review.js"></script>
+</body>
+</html>

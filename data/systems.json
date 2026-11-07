@@ -5250,9 +5250,9 @@
     ],
     "description": "Albemarle’s largest county park, with 1,190 acres of forest and signed multi-use trails. The eastern entrance is at 2020 Scottsville Road.",
     "bounds": [
-      -78.524545,
-      37.977248,
-      -78.507119,
+      -78.533988,
+      37.964006,
+      -78.507019,
       37.998402
     ],
     "context_mode": "area",
@@ -5319,12 +5319,12 @@
       "url": "https://services2.arcgis.com/khVz7mitcPJHUnlM/arcgis/rest/services/County_Park_Trails_Public/FeatureServer/7",
       "location_names": [
         "Biscuit Run Park",
+        "Biscuit Run Park-400 Acres",
         "Biscuits & Gravity"
       ],
-      "snapshot_sha256": "57fb73c54e1abdfe07219ac049398bc4fdbae4846e1995d949d5a3930e843568",
-      "note": "Interface context envelope from existing curated trails, current active public County trails and available County park geometry, padded about 45–55 m. Not a property or access boundary."
-    },
-    "map_note": "Trail coverage here is incomplete and may be outdated. Use the County’s current trail map and posted signs for navigation."
+      "snapshot_sha256": "0ad9ba2c18e7c7b2debbc3a3e098ac5b6448ae17d9f7f53a7057037d668fce94",
+      "note": "Interface context envelope includes the reviewed County trails and southern 400-acre geometry, with about 50 m padding. Southern access follows the user-reviewed local correction. Not a property boundary."
+    }
   },
   {
     "id": "highland",
