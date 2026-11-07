@@ -2,9 +2,10 @@ import base64
 import difflib
 import json
 import os
+import time
 from html.parser import HTMLParser
 from pathlib import Path
-from .common import STATE, configs, digest, now, read_json, request, write_json
+from .common import STATE, RequestError, configs, digest, now, read_json, request, write_json
 from .ingest import fetch_arcgis, run_adapter
 
 
@@ -100,11 +101,40 @@ def llm_review(record, config, source, state_dir):
     return {'model': model, 'response_id': response['id'], 'result': review}
 
 
+class SourceFetcher:
+    """Retry source GETs only: three attempts, with a shared two-minute retry budget."""
+    def __init__(self, report):
+        self.report = report
+        self.remaining = 120.0
+        self.source = None
+
+    def __call__(self, url, **kwargs):
+        for attempt in range(1, 4):
+            started = time.monotonic()
+            try:
+                return request(url, timeout=20 if attempt == 1 else min(20, self.remaining), **kwargs)
+            except RequestError as error:
+                if not error.retryable or attempt == 3:
+                    raise
+                retry_error = str(error)
+                error_status = error.status
+            finally:
+                if attempt > 1:
+                    self.remaining = max(0, self.remaining - (time.monotonic() - started))
+            delay = 2 ** attempt
+            if self.remaining <= delay + 1:
+                raise RequestError(retry_error, error_status)
+            self.report['retries'].append({'source': self.source, 'attempt': attempt + 1, 'error': retry_error})
+            time.sleep(delay)
+            self.remaining -= delay
+
+
 def check(pipeline=None, use_llm=False, state_dir=STATE, source_id=None):
     state_dir = Path(state_dir)
     manifest_path = state_dir / 'manifest.json'
     manifest = read_json(manifest_path) if manifest_path.exists() else {}
-    report = {'checked_at': now(), 'sources': [], 'errors': []}
+    report = {'checked_at': now(), 'sources': [], 'errors': [], 'manual_review': [], 'retries': []}
+    fetch = SourceFetcher(report)
     selected = configs(pipeline)
     if source_id and not any(source['id'] == source_id for config in selected for source in config['sources']):
         raise ValueError('No matching source in the selected pipelines')
@@ -113,6 +143,7 @@ def check(pipeline=None, use_llm=False, state_dir=STATE, source_id=None):
             if source_id and source['id'] != source_id: continue
             if not source.get('monitor', True): continue
             sid = f"{config['id']}/{source['id']}"
+            fetch.source = sid
             old = manifest.get(sid)
             try:
                 headers = {}
@@ -120,9 +151,9 @@ def check(pipeline=None, use_llm=False, state_dir=STATE, source_id=None):
                     if old.get('etag'): headers['If-None-Match'] = old['etag']
                     if old.get('last_modified'): headers['If-Modified-Since'] = old['last_modified']
                 if source['kind'] == 'arcgis':
-                    data, raw_headers, code = fetch_arcgis(source['url']), {}, 200
+                    data, raw_headers, code = fetch_arcgis(source['url'], request_fn=fetch), {}, 200
                 else:
-                    data, raw_headers, code = request(source['url'], headers=headers)
+                    data, raw_headers, code = fetch(source['url'], headers=headers)
                 response_headers = {k.lower(): v for k, v in raw_headers.items()}
                 if code == 304:
                     if not old: raise ValueError('Unexpected 304 without baseline')
@@ -171,9 +202,18 @@ def check(pipeline=None, use_llm=False, state_dir=STATE, source_id=None):
                         report['errors'].append({'source': sid, 'error': str(error)})
                     write_json(record_path, record)
                 manifest[sid] = {**snap, 'checked_at': now()}
-                report['sources'].append({'source': sid, 'state': 'changed' if changed else 'unchanged', 'review': str(record_path.relative_to(state_dir)) if record else None})
+                report['sources'].append({'source': sid, 'url': source['url'],
+                    'state': 'baseline' if not old else 'changed' if changed else 'unchanged',
+                    'review': str(record_path.relative_to(state_dir)) if record else None})
             except (RuntimeError, ValueError, OSError) as error:
-                report['errors'].append({'source': sid, 'error': str(error)})
+                failure = {'source': sid, 'url': source['url'], 'error': str(error),
+                    'last_success': old.get('checked_at') if old else None}
+                manual = source.get('manual_review_on_403')
+                if isinstance(error, RequestError) and error.status == 403 and manual:
+                    report['manual_review'].append({**failure, **manual})
+                else:
+                    report['errors'].append(failure)
+    report['status'] = 'failed' if report['errors'] else 'manual-review-required' if report['manual_review'] else 'complete'
     write_json(manifest_path, manifest)
     write_json(state_dir / 'report.json', report)
     return report

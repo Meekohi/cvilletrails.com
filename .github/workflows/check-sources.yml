@@ -37,10 +37,15 @@ jobs:
           PIPELINE: ${{ inputs.pipeline }}
           USE_LLM: ${{ inputs.llm || false }}
         run: |
+          # Never summarize a cached report if this run crashes before writing one.
+          rm -f .trail-state/report.json
           args=()
           if [ -n "$PIPELINE" ]; then args+=(--pipeline "$PIPELINE"); fi
           if [ "$USE_LLM" = "true" ] && [ -n "$OPENAI_API_KEY" ]; then args+=(--llm); fi
           python3 -m maintenance check "${args[@]}"
+      - name: Summarize source coverage
+        if: always()
+        run: python3 -m maintenance.source_summary --report .trail-state/report.json --output "$GITHUB_STEP_SUMMARY"
       - uses: actions/cache/save@v4
         if: always()
         with:
@@ -53,6 +58,3 @@ jobs:
           path: .trail-state/
           include-hidden-files: true
           retention-days: 90
-      - name: Review location
-        if: always()
-        run: echo 'Download the trail-source-reviews artifact to inspect report.json, source snapshots, candidate GeoJSON, and pending reviews. This job does not publish data.' >> "$GITHUB_STEP_SUMMARY"

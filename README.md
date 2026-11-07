@@ -345,10 +345,14 @@ The regional-network expansion adds Preddy Creek, Walnut Creek, Mint Springs, By
 ## Automation and deployment
 
 - **Validate:** tests and an allowlisted website build on pushes and pull requests. Uploads a website preview artifact.
-- **Check authoritative trail sources:** daily snapshots and review artifacts, with no OpenAI API calls by default. Manual runs can opt into the API reviewer. The workflow has read-only repository permissions and no Mapbox editing token. It never publishes or messages anyone.
+- **Check authoritative trail sources:** daily snapshots and review artifacts, with no OpenAI API calls by default. The Actions summary lists each source, new baselines, changes, errors and manual-review gaps. Manual runs can opt into the API reviewer. The workflow has read-only repository permissions and no Mapbox editing token. It never publishes or messages anyone.
 - **Deploy website:** pushes to `master` deploy the validated `dist/` artifact to GitHub Pages; manual dispatch is also available. Pages uses **GitHub Actions** as its source. Work on other branches does not replace the public website until merged to `master` or explicitly deployed.
 
 The source-check workflow retains snapshots/reviews in an Actions cache and a 90-day artifact. Cache eviction creates a fresh baseline, not a deletion. Archive important evidence and accepted review decisions outside that retention window. An optional future API reviewer requires a repository `OPENAI_API_KEY` secret; local `.env.local` is never uploaded. There is no scheduled Mapbox writer in this first version.
+
+Source GETs retry temporary network failures and HTTP 408/429/500/502/503/504 up to three attempts, with 20-second request timeouts, 2/4-second backoff, and a shared 120-second budget for retry waits and requests. ArcGIS retries individual requests while retaining its completeness checks. Publication writes and optional AI calls do not gain automatic retries.
+
+Nineteen County, Monticello and UVA sources repeatedly blocked automated access in the November 3–6 runs. Their exact source entries carry `manual_review_on_403` with a reason, date and evidence. Only a fresh HTTP 403 from those registered sources becomes `manual-review-required`, with an Actions warning and official URLs in the summary. This is incomplete coverage, not a successful content check or an approval. Last good snapshots are preserved; these sources are probed every run and automatically resume normal checks if accessible. New 403s, other HTTP errors, exhausted transient failures, malformed documents and adapter failures still fail the job. Review blocked official sources in a browser and record evidence before changing visitor information; GIS geometry is not a substitute for current operator rules.
 
 ## Verify
 

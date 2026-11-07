@@ -116,6 +116,10 @@ The City and RTF sources generally fetched during the session. Some Monticello a
 
 Save errors, keep the last good snapshot and distinguish three outcomes: changed, unchanged, and unavailable. Do not replace a blocked operator page with an unofficial source without recording the authority tradeoff. An alternative official ArcGIS endpoint can support geometry research while an operator page remains necessary for current access rules. Newer map links or altered document IDs require discovery beyond simple snapshots.
 
+The November 6 automation investigation inspected all four November 3–6 run artifacts. Sixteen County URLs, two Monticello pages and UVA Hereford returned HTTP 403 throughout; none established a successful baseline. Fresh probes identified Akamai access-denied responses for the County and Cloudflare challenges for Monticello/UVA. The November 6 run also had 15 City timeouts; a subsequent local check of the City GIS, trail page and three PDFs succeeded. The new County operational GIS endpoint also passed. [Run evidence](https://github.com/Meekohi/cvilletrails.com/actions/runs/42267410834) remains in the retained artifact; local investigation copies are under `.trail-state/cron-investigation/`.
+
+Those 19 exact source configurations now mark known 403 responses as requiring manual review. Each run still probes them and lists unresolved coverage gaps prominently; no blocked source is silently disabled or treated as unchanged. Unknown failures remain errors. The workflow reports per-source outcomes and retries temporary fetch failures within a bounded shared budget. See [automation behavior](../README.md#automation-and-deployment).
+
 ## Add or evolve a pipeline
 
 Use a separate folder when a source has substantially different ingestion/review requirements; do not create a Mapbox dataset per folder or per infobox. The current style already composites 15 tilesets, so reuse the configured publishing targets. Fifteen is an observed style count, not a verified free-plan quota.

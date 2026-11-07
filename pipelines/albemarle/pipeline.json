@@ -29,13 +29,23 @@
       "id": "trail-directory",
       "kind": "html",
       "label": "Albemarle Parks & Recreation",
-      "url": "https://www.albemarle.org/government/parks-recreation/trails"
+      "url": "https://www.albemarle.org/government/parks-recreation/trails",
+      "manual_review_on_403": {
+        "reason": "Akamai denies automated requests; review the official page or document in a browser.",
+        "since": "2026-11-06",
+        "evidence": "https://github.com/Meekohi/cvilletrails.com/actions/runs/42267410834"
+      }
     },
     {
       "id": "gis-catalog",
       "kind": "html",
       "label": "Albemarle GIS data catalog",
-      "url": "https://www.albemarle.org/government/information-technology/geographic-information-system-gis-mapping/gis-data"
+      "url": "https://www.albemarle.org/government/information-technology/geographic-information-system-gis-mapping/gis-data",
+      "manual_review_on_403": {
+        "reason": "Akamai denies automated requests; review the official page or document in a browser.",
+        "since": "2026-11-06",
+        "evidence": "https://github.com/Meekohi/cvilletrails.com/actions/runs/42267410834"
+      }
     },
     {
       "id": "biscuit-run",
@@ -44,7 +54,12 @@
       ],
       "kind": "html",
       "label": "Biscuit Run Park access and development",
-      "url": "https://www.albemarle.org/government/parks-recreation/biscuit-run-park"
+      "url": "https://www.albemarle.org/government/parks-recreation/biscuit-run-park",
+      "manual_review_on_403": {
+        "reason": "Akamai denies automated requests; review the official page or document in a browser.",
+        "since": "2026-11-06",
+        "evidence": "https://github.com/Meekohi/cvilletrails.com/actions/runs/42267410834"
+      }
     },
     {
       "id": "biscuit-run-map",
@@ -53,7 +68,12 @@
       ],
       "kind": "pdf",
       "label": "Biscuit Run Park Phase 1-A official map",
-      "url": "https://www.albemarle.org/home/showpublisheddocument/24814/638695933370230000"
+      "url": "https://www.albemarle.org/home/showpublisheddocument/24814/638695933370230000",
+      "manual_review_on_403": {
+        "reason": "Akamai denies automated requests; review the official page or document in a browser.",
+        "since": "2026-11-06",
+        "evidence": "https://github.com/Meekohi/cvilletrails.com/actions/runs/42267410834"
+      }
     }
   ],
   "locations": {
@@ -138,7 +158,7 @@
       "legacy_location": "Old Mills Trail",
       "aliases": [
         "Old Mills Trail",
-        "Rivanna River Greenway – Old Mills Trail"
+        "Rivanna River Greenway \u2013 Old Mills Trail"
       ]
     },
     "biscuit-run": {

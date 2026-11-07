@@ -14,13 +14,23 @@
       "id": "trail-guide",
       "kind": "html",
       "label": "Monticello trail guide",
-      "url": "https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail"
+      "url": "https://www.monticello.org/visit/hiking-trails/saunders-monticello-trail",
+      "manual_review_on_403": {
+        "reason": "Cloudflare browser challenge blocks automated requests; review the official page in a browser.",
+        "since": "2026-11-06",
+        "evidence": "https://github.com/Meekohi/cvilletrails.com/actions/runs/42267410834"
+      }
     },
     {
       "id": "trail-rules",
       "kind": "html",
       "label": "Monticello trail hours and rules",
-      "url": "https://www.monticello.org/visit/hiking-trails/trail-hours-faqs"
+      "url": "https://www.monticello.org/visit/hiking-trails/trail-hours-faqs",
+      "manual_review_on_403": {
+        "reason": "Cloudflare browser challenge blocks automated requests; review the official page in a browser.",
+        "since": "2026-11-06",
+        "evidence": "https://github.com/Meekohi/cvilletrails.com/actions/runs/42267410834"
+      }
     },
     {
       "id": "trail-map",

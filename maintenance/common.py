@@ -42,6 +42,14 @@ def write_json(path, value):
     temp.replace(path)
 
 
+class RequestError(RuntimeError):
+    """Sanitized remote failure with enough metadata for read-only retry policy."""
+    def __init__(self, message, status=None):
+        super().__init__(message)
+        self.status = status
+        self.retryable = status is None or status in {408, 429, 500, 502, 503, 504}
+
+
 def request(url, method='GET', body=None, headers=None, limit=20_000_000, timeout=45):
     headers = {'User-Agent': 'CvilleTrails/1.0 (+https://cvilletrails.com)', **(headers or {})}
     if body is not None:
@@ -62,9 +70,9 @@ def request(url, method='GET', body=None, headers=None, limit=20_000_000, timeou
             code = json.loads(error.read(4096)).get('error', {}).get('code')
             if isinstance(code, str) and re.fullmatch(r'[a-z_]{1,80}', code): detail = f' ({code})'
         except (ValueError, AttributeError): pass
-        raise RuntimeError(f'HTTP {error.code} from remote service{detail}') from None
+        raise RequestError(f'HTTP {error.code} from remote service{detail}', error.code) from None
     except (URLError, TimeoutError):
-        raise RuntimeError('Network request failed or timed out') from None
+        raise RequestError('Network request failed or timed out') from None
 
 
 def configs(pipeline=None):
@@ -83,6 +91,12 @@ def configs(pipeline=None):
                     raise ValueError('Source systems must be a nonempty subset of pipeline systems')
                 if not source['url'].startswith('https://') or source['kind'] not in {'html', 'pdf', 'geojson', 'arcgis', 'text'}:
                     raise ValueError('Sources require HTTPS and a supported format')
+                manual = source.get('manual_review_on_403')
+                if manual is not None:
+                    if not isinstance(manual, dict) or any(not isinstance(manual.get(k), str) or not manual[k].strip()
+                            for k in ('reason', 'since', 'evidence')):
+                        raise ValueError('Manual-review exception needs a reason, since date and evidence')
+                    datetime.strptime(manual['since'], '%Y-%m-%d')
             for filename in ('ingest.py', 'overrides.json', 'review.txt'):
                 if not (path.parent / filename).is_file(): raise ValueError(f'Pipeline missing {filename}')
             config['_directory'] = path.parent

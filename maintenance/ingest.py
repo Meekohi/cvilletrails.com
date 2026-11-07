@@ -17,9 +17,10 @@ def run_adapter(collection, config, source_id):
     return normalized
 
 
-def fetch_arcgis(url):
+def fetch_arcgis(url, request_fn=None):
+    request_fn = request_fn or request
     def query(params):
-        data, _, _ = request(url.rstrip('/') + '/query?' + urlencode(params))
+        data, _, _ = request_fn(url.rstrip('/') + '/query?' + urlencode(params))
         value = json.loads(data)
         if 'error' in value: raise ValueError('ArcGIS returned an error')
         return value
