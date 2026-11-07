@@ -8,7 +8,8 @@ class ReleaseStyleTests(unittest.TestCase):
     def test_preserves_other_layers_and_existing_color_expression(self):
         import copy
         old_color=['case',['==',['get','pipeline_id'],'virginia-state-parks'],'red','brown']
-        style={'layers':[
+        at='meekohi.ck578grpj01232ipbxr2ampjj-7v6dv'
+        style={'sources':{'composite':{'type':'vector','url':'mapbox://other,another,'+at}},'layers':[
             {'id':'strava-trail','source-layer':'Strava_Sidetrails','paint':{'line-color':old_color}},
             {'id':'shenandoah-np fringe','source-layer':'shen-08a9vs','filter':['==',['get','visible'],True]},
             {'id':'shenandoah-np-trail','source-layer':'shen-08a9vs'},
@@ -17,6 +18,7 @@ class ReleaseStyleTests(unittest.TestCase):
         original=copy.deepcopy(style);result=transform(style)
         self.assertEqual(style,original)
         self.assertEqual(result['layers'][3:],style['layers'][3:])
+        self.assertEqual(result['sources']['composite']['url'],'mapbox://'+at+',other,another')
         self.assertEqual(result['layers'][0]['paint']['line-color'][-1],old_color)
         self.assertEqual(result['layers'][1]['filter'][1],style['layers'][1]['filter'])
         self.assertIn('12/21/2019',str(result['layers'][2]['filter']))

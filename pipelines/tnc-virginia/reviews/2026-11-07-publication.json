@@ -1,0 +1,30 @@
+{
+  "state": "published",
+  "published_at": "2026-11-07T17:26:45.333831Z",
+  "dataset": {
+    "target": {
+      "id": "strava",
+      "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+      "tileset": "meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg",
+      "source_layer": "Strava_Sidetrails"
+    },
+    "plan_hash": "4a678dd89429aa69e87e3264a809100739d51a0b77745a75bb60c106d2064386",
+    "before_count": 559,
+    "after_count": 1721,
+    "before_hash": "798efe0fa40b7397d246f7f4e80adf89a5c26a3032fd03aa63aa603a6e4ed062",
+    "proposed_hash": "6df542e9115a501da737210b147896f1f85fe978d7605bd27db9d64454f6823a",
+    "storage_verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "3cceb341029c4ea4edc181555c085acb226ada69c2531bf875952b3d23de9795"
+    },
+    "upload_id": "cmw6o5pnn3rug1pnmc2kvhxqp",
+    "finished_at": "2026-11-07T17:21:13.985822Z",
+    "changes": {
+      "added": 1162,
+      "changed": 0,
+      "deleted": 0
+    }
+  },
+  "full_audit": "pipelines/usfs-gwj/reviews/2026-11-07-publication.json",
+  "full_audit_hash": "fa71c28c112efb77775aa86a219b1450a5a0a1f6aef240bbb04b21d518c22203"
+}

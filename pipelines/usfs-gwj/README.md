@@ -38,3 +38,9 @@ python3 -m maintenance.trail_release_style .trail-state/tnc-usfs-publish
 python3 -m maintenance.trail_release_style .trail-state/tnc-usfs-publish --publish
 node tests/trail-release-publication-browser.mjs
 ```
+
+The style release also moves the uniquely named AT tileset to the front of the composite URL, preserving all members and every other member’s relative order. Mapbox confirmed the same layer names and a distinct vector-tile cache path. This creates one stable cache transition so legacy Tuscarora filtering does not expose cached tiles without its replacement; it adds no per-request cache-busting parameter. Do not fetch the new composite vector tiles before both uploads finish.
+
+## Publication completed — November 7
+
+The approved release is published to Mapbox, including live and Studio draft styles. The [publication receipt](reviews/2026-11-07-publication.json) records exact plans, upload IDs and stored-data verification. Ordinary public tiles passed all 22 checks, including zooms 10, 12, 14 and 16 for Bear Loop, Tuscarora, a useful short connector, retained PATC geometry and the NPS/ATC centerline. DCR and Rivanna also passed preservation checks. Earlier review receipts marked unpublished remain historical evidence; this publication receipt supersedes their publication status.

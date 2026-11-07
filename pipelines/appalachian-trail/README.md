@@ -15,3 +15,7 @@ node tests/at-review-browser.mjs
 The [side-by-side comparison](http://localhost:8011/at/) shows 627 old records and 791 official records within existing coverage. Fifteen old records have less than 95% of their length within 100 m of the official reference. Select each difference or the entire coverage; orange on the right is an optional overlay of the old alignment. Geometry length changes from 547.9 to 560.2 miles, which is not evidence of new trail construction. Exact geometry hashes, clipping IDs and coverage measures are in `comparison.json`.
 
 Existing destination: dataset `ck578grpj01232ipbxr2ampjj`, tileset `meekohi.ck578grpj01232ipbxr2ampjj-7v6dv`, source layer `Appalachian_Trail`. Publication requires a fresh inventory and exact bounded plan under the maintenance workflow. This pipeline does not publish automatically.
+
+## Publication completed — November 7
+
+The approved release is published to Mapbox, including live and Studio draft styles. The [publication receipt](reviews/2026-11-07-publication.json) records exact plans, upload IDs and stored-data verification. Ordinary public tiles passed all 22 checks, including zooms 10, 12, 14 and 16 for Bear Loop, Tuscarora, a useful short connector, retained PATC geometry and the NPS/ATC centerline. DCR and Rivanna also passed preservation checks. Earlier review receipts marked unpublished remain historical evidence; this publication receipt supersedes their publication status.

@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "published_at": "2026-11-07T17:26:45.333831Z",
+  "authorization": "User: Go ahead and publish.",
+  "state": "published",
+  "datasets": {
+    "at": {
+      "target": {
+        "id": "appalachian-trail",
+        "dataset": "ck578grpj01232ipbxr2ampjj",
+        "tileset": "meekohi.ck578grpj01232ipbxr2ampjj-7v6dv",
+        "source_layer": "Appalachian_Trail"
+      },
+      "plan_hash": "9064fb70a8e27660eb271685d8c2435976868f25c5250c16ef57b8e2c632d7b6",
+      "before_count": 627,
+      "after_count": 791,
+      "before_hash": "33c7deae8cd63a48b586f4ebd18a6ce03dc2bb3c4b915016192f1ac6c694e727",
+      "proposed_hash": "15211e68bb33b7b659e71941df229c256bfd2bd0fc5fea540618ec7668c790e8",
+      "storage_verification": {
+        "mode": "mapbox-six-decimal-truncation",
+        "stored_hash": "2ef54a028a118cc6d12b580f05eec53d0c76fc9364eafa2afdfd94f43fc8346c"
+      },
+      "upload_id": "cmw6o3lh84vqo1mqw294j9sor",
+      "finished_at": "2026-11-07T17:19:08.051507Z",
+      "changes": {
+        "added": 791,
+        "changed": 0,
+        "deleted": 627
+      }
+    },
+    "supplemental": {
+      "target": {
+        "id": "strava",
+        "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
+        "tileset": "meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg",
+        "source_layer": "Strava_Sidetrails"
+      },
+      "plan_hash": "4a678dd89429aa69e87e3264a809100739d51a0b77745a75bb60c106d2064386",
+      "before_count": 559,
+      "after_count": 1721,
+      "before_hash": "798efe0fa40b7397d246f7f4e80adf89a5c26a3032fd03aa63aa603a6e4ed062",
+      "proposed_hash": "6df542e9115a501da737210b147896f1f85fe978d7605bd27db9d64454f6823a",
+      "storage_verification": {
+        "mode": "mapbox-six-decimal-truncation",
+        "stored_hash": "3cceb341029c4ea4edc181555c085acb226ada69c2531bf875952b3d23de9795"
+      },
+      "upload_id": "cmw6o5pnn3rug1pnmc2kvhxqp",
+      "finished_at": "2026-11-07T17:21:13.985822Z",
+      "changes": {
+        "added": 1162,
+        "changed": 0,
+        "deleted": 0
+      }
+    }
+  },
+  "style": {
+    "proposal_hash": "0419e9297ee5cb09129770f433ce490d51831708a208161d8698ae86fb2cbaa0",
+    "completed": [
+      {
+        "version": "draft",
+        "response_hash": "75d78c7041ad6169b8a658526774a9393723eba3e0bf07a5602a6b1cb6e8ea5f"
+      },
+      {
+        "version": "published",
+        "response_hash": "be28dd6f1c4fe71591c3c05e340d507bf8b96554b3551966f87b5f6237bb5d2d"
+      }
+    ],
+    "changed_layers": [
+      "strava-trail",
+      "shenandoah-np fringe",
+      "shenandoah-np-trail"
+    ],
+    "changed_sources": [
+      "composite"
+    ],
+    "cache_transition": {
+      "old_source_url": "mapbox://meekohi.ckuppnp9h534y23pyswjd7n1a-0cyhg,meekohi.cjawpwbc10plf2wo9wzo2o97d-84wj2,meekohi.cjcwe24s41blz2wnuwiu5nyxn-669zn,meekohi.ck51rmxqm6i332ip8gurz7h4l-6oz6h,mapbox.mapbox-streets-v8,meekohi.ck3yw9drj03ad2nrurh0ehyef-51271,meekohi.ckfh5qbi7380826oij568hhbg-3t3kp,meekohi.ckuzk86a07v6o23pymu3yppl6-1dqql,meekohi.8n5896es,meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg,meekohi.ck3nfaqiq4khu2nl9w4bwsldx-9hh36,meekohi.cjawyutol0r7d2wo1z7eb0wiy-3zlpw,mapbox.mapbox-terrain-v2,meekohi.cjcm3ne8w0os033rw0ceoi0ye-0bygj,meekohi.ck578grpj01232ipbxr2ampjj-7v6dv",
+      "new_source_url": "mapbox://meekohi.ck578grpj01232ipbxr2ampjj-7v6dv,meekohi.ckuppnp9h534y23pyswjd7n1a-0cyhg,meekohi.cjawpwbc10plf2wo9wzo2o97d-84wj2,meekohi.cjcwe24s41blz2wnuwiu5nyxn-669zn,meekohi.ck51rmxqm6i332ip8gurz7h4l-6oz6h,mapbox.mapbox-streets-v8,meekohi.ck3yw9drj03ad2nrurh0ehyef-51271,meekohi.ckfh5qbi7380826oij568hhbg-3t3kp,meekohi.ckuzk86a07v6o23pymu3yppl6-1dqql,meekohi.8n5896es,meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg,meekohi.ck3nfaqiq4khu2nl9w4bwsldx-9hh36,meekohi.cjawyutol0r7d2wo1z7eb0wiy-3zlpw,mapbox.mapbox-terrain-v2,meekohi.cjcm3ne8w0os033rw0ceoi0ye-0bygj",
+      "same_source_members": true,
+      "same_layer_names": true,
+      "distinct_vector_tile_cache_paths": true,
+      "reason": "Move the unique AT tileset to the front while preserving every other source’s relative order. One stable new composite cache key prevents newly applied filters from hiding legacy Tuscarora before the replacement tiles appear. No per-request cache-busting parameter."
+    }
+  },
+  "accepted_additions": 1104,
+  "tnc_additions": 16,
+  "usfs_additions": 1088,
+  "preserved_supplemental_features": 559,
+  "supplemental_new_records": 1162,
+  "tuscarora_replacement_records": 15,
+  "retained_patc_miles": 186.57313937309266,
+  "fully_shared_records_represented_by_retained_geometry": [
+    "usfs-gwj:17822a57-964d-4f2b-9a05-7bde124fab9d",
+    "usfs-gwj:12034985-c364-483b-b277-0352ba037728",
+    "usfs-gwj:d6e78737-67b9-4076-913c-0d863a38601c",
+    "usfs-gwj:0e9141d2-6fdc-40b3-832c-d85d4c09bf6c",
+    "usfs-gwj:c03436ff-b520-47e3-8f99-8e7d38348a44",
+    "usfs-gwj:2ef0d8ea-3911-490f-9575-5204de0c14dd"
+  ],
+  "source_preference_hash": "db494fae49b6074e84d7afc673b63144f40d678b4147c3fe6aa6caacf50d75fe",
+  "access_decision_hash": "46d3f7d14ddfe0ab2ce37690b60c0ba08c74949128bf1309af85b2c8f754b868",
+  "merge_evidence_hash": "835243dea3ff58d420a7cbdb40db9805ffc915e3a4034e17337fc1d4f0bd2790",
+  "legacy_capture": {
+    "tileset": "meekohi.8n5896es",
+    "metadata_hash": "829a035885715f3c91b6a4458c2ffabc6d67a71986f1eabf742c97338b8741de",
+    "zoom": 16,
+    "tile_count": 1281,
+    "geometry_hash": "05c8aa0c1431af1e2f28fcba210d975ae967bcdf487b6d6209ffb44863c01474",
+    "filter": {
+      "TRAIL_NAME": "Tuscarora Trail",
+      "Loc_Name": "Tuscarora Trail (outside park boundary)",
+      "GPSDate": "12/21/2019"
+    },
+    "method": "Locate entire route at z12; capture z16 corridor with 1/4 tile margin; clip tile buffers in global integer coordinates, union and merge. Other source features remain in original tileset unchanged."
+  },
+  "access_counts": {
+    "approved": 139,
+    "rejected": 17,
+    "held": 12
+  },
+  "protected_rivanna_hash": "4ba781f25967138b8313362c61d59d3c8d0de156fe31945be9887092a7969e13",
+  "validation": {
+    "python_tests": 162,
+    "javascript_tests": 8,
+    "browser_checks": [
+      "main website interactions",
+      "confirmed exception review",
+      "AT source comparison",
+      "exact merged release preview"
+    ],
+    "tile_preflight": {
+      "tiles": 15777,
+      "largest_compressed_tile_bytes": 172053
+    }
+  },
+  "recovery": "Full candidates, plans, original source snapshots, captured tiles, backups, journals and previews are archived privately outside Git. Private Mapbox credentials are redacted from captured TileJSON URLs; original hashes are retained in the archive manifest.",
+  "public_render_checks": {
+    "standard": {
+      "checked_at": "2026-11-07T17:26:01.990Z",
+      "mode": "ordinary-public-style-and-tiles",
+      "results": [
+        {
+          "name": "Bear Loop",
+          "zoom": 10,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Bear Loop",
+          "zoom": 12,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Bear Loop",
+          "zoom": 14,
+          "rendered": 3,
+          "colors": [
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            },
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            },
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Bear Loop",
+          "zoom": 16,
+          "rendered": 6,
+          "colors": [
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            },
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            },
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            },
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            },
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            },
+            {
+              "r": 0.9333333333333333,
+              "g": 0.20784313725490197,
+              "b": 0.1411764705882353,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Tuscarora",
+          "zoom": 10,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Tuscarora",
+          "zoom": 12,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Tuscarora",
+          "zoom": 14,
+          "rendered": 3,
+          "colors": [
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Tuscarora",
+          "zoom": 16,
+          "rendered": 4,
+          "colors": [
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Cascades connector",
+          "zoom": 10,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 0.5411764705882353,
+              "g": 0.3843137254901961,
+              "b": 0.3137254901960784,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Cascades connector",
+          "zoom": 12,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 0.5411764705882353,
+              "g": 0.3843137254901961,
+              "b": 0.3137254901960784,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Cascades connector",
+          "zoom": 14,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 0.5411764705882353,
+              "g": 0.3843137254901961,
+              "b": 0.3137254901960784,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Cascades connector",
+          "zoom": 16,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 0.5411764705882353,
+              "g": 0.3843137254901961,
+              "b": 0.3137254901960784,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Retained PATC",
+          "zoom": 10,
+          "rendered": 4,
+          "colors": [
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Retained PATC",
+          "zoom": 12,
+          "rendered": 5,
+          "colors": [
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Retained PATC",
+          "zoom": 14,
+          "rendered": 5,
+          "colors": [
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "Retained PATC",
+          "zoom": 16,
+          "rendered": 5,
+          "colors": [
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            },
+            {
+              "r": 0.6352941176470588,
+              "g": 0.7647058823529411,
+              "b": 0.9058823529411765,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "zoom": 10,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "zoom": 12,
+          "rendered": 1,
+          "colors": [
+            {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "zoom": 14,
+          "rendered": 2,
+          "colors": [
+            {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "zoom": 16,
+          "rendered": 3,
+          "colors": [
+            {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          ]
+        },
+        {
+          "name": "DCR",
+          "zoom": 14,
+          "rendered": 57
+        },
+        {
+          "name": "Rivanna",
+          "zoom": 14,
+          "rendered": 25
+        }
+      ],
+      "page_errors": []
+    }
+  },
+  "audit_hash": "fa71c28c112efb77775aa86a219b1450a5a0a1f6aef240bbb04b21d518c22203"
+}

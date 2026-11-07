@@ -19,6 +19,7 @@ try{
   await page.goto(process.env.PUBLIC_SITE_URL||'https://cvilletrails.com/',{waitUntil:'networkidle'});
   await page.waitForFunction(()=>window.__testMap?.isStyleLoaded());
   const style=await page.evaluate(()=>window.__testMap.getStyle());
+  assert.equal(style.sources.composite.url,proposal.sources.composite.url);
   for(const id of ['strava-trail','shenandoah-np fringe','shenandoah-np-trail']){
     const actual=style.layers.find(l=>l.id===id),expected=proposal.layers.find(l=>l.id===id);
     assert.deepEqual(actual.paint,expected.paint);assert.deepEqual(actual.filter,expected.filter);
@@ -27,6 +28,7 @@ try{
     ['Bear Loop',plan.after.features.find(f=>f.properties.source_id==='bear-loop'),'strava-trail'],
     ['Tuscarora',plan.after.features.find(f=>f.properties.name==='TUSCARORA - BEAR WALLOW'),'strava-trail'],
     ['Cascades connector',plan.after.features.find(f=>f.properties.name==='CASCADES NORTH CONNECTOR'),'strava-trail'],
+    ['Retained PATC',plan.after.features.find(f=>f.properties.pipeline_id==='legacy-patc'),'strava-trail'],
     ['AT',at.after.features.find(f=>f.geometry.type==='LineString'&&f.geometry.coordinates.length>30),'appalachian-trail']
   ];
   const results=[];
@@ -42,6 +44,10 @@ try{
         return {rendered:matches.length,colors:matches.map(f=>f.layer.paint['line-color'])};
       },{feature,layer});
       results.push({name,zoom,...result});
+      if(name==='Tuscarora'||name==='Retained PATC'){
+        const duplicate=await page.evaluate(()=>window.__testMap.queryRenderedFeatures({layers:['shenandoah-np-trail']}).some(f=>f.properties.Loc_Name==='Tuscarora Trail (outside park boundary)'&&f.properties.GPSDate==='12/21/2019'));
+        assert.equal(duplicate,false,'Retired PATC route still renders over its replacement');
+      }
       if(zoom===14){await mkdir('test-results',{recursive:true});await page.screenshot({path:`test-results/published-${name.replaceAll(' ','-')}-${fresh?'fresh':'standard'}.png`});}
     }
   }

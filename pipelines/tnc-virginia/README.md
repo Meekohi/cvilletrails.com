@@ -79,3 +79,7 @@ All 137 source preferences are now confirmed, including NPS/ATC for all AT and U
 The [exceptions page](http://localhost:8011/exceptions/) opens on the 12 remaining holds and offers approved/rejected filters. Source choices are locked to the recorded instructions. Exports bind both confirmation receipts and cannot overwrite them. No further export is needed to confirm these decisions. Rebuilding the original review would invalidate the accepted hashes; refresh UI assets without rebuilding frozen evidence. Exact source replacements and publication remain separate from source/access acceptance.
 
 The bounded [AT source comparison](http://localhost:8011/at/) now shows the current and NPS/ATC geometry side by side, including 15 old segments with substantial alignment differences. See the [AT adapter guide](../appalachian-trail/README.md) for scope and provenance.
+
+## Publication completed — November 7
+
+The approved release is published to Mapbox, including live and Studio draft styles. The [publication receipt](reviews/2026-11-07-publication.json) records exact plans, upload IDs and stored-data verification. Ordinary public tiles passed all 22 checks, including zooms 10, 12, 14 and 16 for Bear Loop, Tuscarora, a useful short connector, retained PATC geometry and the NPS/ATC centerline. DCR and Rivanna also passed preservation checks. Earlier review receipts marked unpublished remain historical evidence; this publication receipt supersedes their publication status.

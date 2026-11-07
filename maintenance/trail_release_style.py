@@ -5,6 +5,15 @@ from .common import digest,read_json
 
 def transform(style):
     result=copy.deepcopy(style)
+    from .mapbox import target_by_id
+    at=target_by_id('appalachian-trail')['tileset']
+    source=result['sources']['composite']
+    if not source['url'].startswith('mapbox://'):raise ValueError('Unexpected composite source')
+    members=source['url'].removeprefix('mapbox://').split(',')
+    if members.count(at)!=1:raise ValueError('Expected one official AT tileset in the composite')
+    # A stable, one-time cache transition: AT has a unique source-layer name;
+    # every other member keeps its relative order and all members are retained.
+    source['url']='mapbox://'+','.join([at]+[tid for tid in members if tid!=at])
     layer=next(l for l in result['layers'] if l['id']=='strava-trail')
     if layer.get('source-layer')!='Strava_Sidetrails':raise ValueError('Supplemental style target changed')
     if 'legacy-patc' in str(layer['paint']['line-color']):raise ValueError('Release style already applied')
@@ -26,6 +35,7 @@ def prepare(plan,style):
     manifest={'kind':'tnc-usfs-release-style','dataset_plan_hash':plan['approval_hash'],
               'before_style_hash':digest(style),'after_style_hash':digest(proposed),
               'changed_layers':['strava-trail','shenandoah-np fringe','shenandoah-np-trail'],
+              'changed_sources':['composite'],
               'reason':'Show approved TNC map colors, neutral USFS lines, verified Tuscarora blue; replace only the captured outside-park PATC route while retaining its full unaffected remainder.'}
     manifest['proposal_hash']=digest(manifest)
     return manifest,proposed

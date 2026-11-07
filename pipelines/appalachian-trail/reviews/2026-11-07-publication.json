@@ -1,0 +1,30 @@
+{
+  "state": "published",
+  "published_at": "2026-11-07T17:26:45.333831Z",
+  "dataset": {
+    "target": {
+      "id": "appalachian-trail",
+      "dataset": "ck578grpj01232ipbxr2ampjj",
+      "tileset": "meekohi.ck578grpj01232ipbxr2ampjj-7v6dv",
+      "source_layer": "Appalachian_Trail"
+    },
+    "plan_hash": "9064fb70a8e27660eb271685d8c2435976868f25c5250c16ef57b8e2c632d7b6",
+    "before_count": 627,
+    "after_count": 791,
+    "before_hash": "33c7deae8cd63a48b586f4ebd18a6ce03dc2bb3c4b915016192f1ac6c694e727",
+    "proposed_hash": "15211e68bb33b7b659e71941df229c256bfd2bd0fc5fea540618ec7668c790e8",
+    "storage_verification": {
+      "mode": "mapbox-six-decimal-truncation",
+      "stored_hash": "2ef54a028a118cc6d12b580f05eec53d0c76fc9364eafa2afdfd94f43fc8346c"
+    },
+    "upload_id": "cmw6o3lh84vqo1mqw294j9sor",
+    "finished_at": "2026-11-07T17:19:08.051507Z",
+    "changes": {
+      "added": 791,
+      "changed": 0,
+      "deleted": 627
+    }
+  },
+  "full_audit": "pipelines/usfs-gwj/reviews/2026-11-07-publication.json",
+  "full_audit_hash": "fa71c28c112efb77775aa86a219b1450a5a0a1f6aef240bbb04b21d518c22203"
+}
