@@ -1,0 +1,28 @@
+{
+  "id": "appalachian-trail",
+  "system_id": "appalachian-trail",
+  "system_ids": [
+    "appalachian-trail"
+  ],
+  "sources": [
+    {
+      "id": "official-centerline",
+      "kind": "arcgis",
+      "label": "NPS / ATC APPA Official Centerline",
+      "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANST_Centerline/FeatureServer/0",
+      "where": "Status = 'Official A.T. Route'",
+      "bbox": [
+        -81.830394,
+        36.605246,
+        -77.67158099999999,
+        39.339849
+      ]
+    },
+    {
+      "id": "atc-map",
+      "kind": "html",
+      "label": "ATC official interactive map and source guidance",
+      "url": "https://appalachiantrail.org/experience/interactive-map/"
+    }
+  ]
+}

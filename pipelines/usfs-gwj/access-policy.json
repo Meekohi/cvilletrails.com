@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "approved_on": "2026-11-07",
+  "user_statement": "Tuscarora - suggested USFS data looks good. All your other suggestions look good. For the Access holds -- let's assume trails are open unless we have evidence to the contrary, so approve the vast majority of these. Exceptions: High Knob Loop looks like it's redundant with a road, reject that one. Cascades Overlook is too short to be interesting -- reject trails that are shorter than 0.1 miles if they don't connect any other useful geometry.",
+  "assume_open_unless_contrary": true,
+  "reject_names": {
+    "HIGH KNOB LOOP": "User rejected as redundant with a road",
+    "CASCADES OVERLOOK": "User rejected as an uninteresting short spur"
+  },
+  "minimum_standalone_miles": 0.1,
+  "connection_tolerance_m": 10,
+  "short_rule_scope": "Access-hold batch; preserve useful connectors and previously accepted geometry",
+  "retain_explicit_restrictions": true
+}

@@ -1,0 +1,308 @@
+{
+  "checked_at": "2026-11-07",
+  "scope": "Physical Virginia locations in TNC preserve finder; map links are discovery evidence only",
+  "preserves": [
+    {
+      "id": "blackwater-river",
+      "name": "Blackwater River",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/blackwater-river/",
+      "access": "Open to the Public",
+      "latitude": 36.8194295,
+      "longitude": -76.8533575,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "bottom-creek-gorge",
+      "name": "Bottom Creek Gorge",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/bottom-creek-gorge/",
+      "access": "Open to the Public",
+      "latitude": 37.130829,
+      "longitude": -80.180562,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/BottomCreekGorge_Map_June2020.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/VA_BottomCreekGorge_Handbook.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "brownsville-preserve",
+      "name": "Brownsville Preserve",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/brownsville-preserve/",
+      "access": "Open to the Public",
+      "latitude": 37.46972,
+      "longitude": -75.835,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/BV-Audio-Tour_Directions-Guidelines_ENG.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/BV_Audio-Tour_Directions_Guidelines_SPAN.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/VVCR_Birding-Wildlife-Trail-Brochure_2017_SPAN.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/brownsville-preserve-trail-map-2012-revision.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/photos/b/r/Brownsville-Birding-Wildlife-Trail-Brochure-2017.pdf"
+      ]
+    },
+    {
+      "id": "castle-hill",
+      "name": "Castle Hill and Walnut Mountain",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/castle-hill/",
+      "access": "Closed to the Public",
+      "latitude": 38.089444,
+      "longitude": -78.303611,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "cleveland-natural-area",
+      "name": "Cleveland Natural Area",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/cleveland-natural-area/",
+      "access": "Closed to the Public",
+      "latitude": 36.935556,
+      "longitude": -82.155,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "dragon-flats",
+      "name": "Dragon Flats",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/dragon-flats/",
+      "access": "Closed to the Public",
+      "latitude": 37.638693509469135,
+      "longitude": -76.68852642044307,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "falls-ridge-preserve",
+      "name": "Falls Ridge Preserve",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/falls-ridge-preserve/",
+      "access": "Closed to the Public",
+      "latitude": 37.1932,
+      "longitude": -80.3217,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/VA_FallsRidge_Handbook.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "fernbrook-natural-area",
+      "name": "Fernbrook Natural Area",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fernbrook-natural-area/",
+      "access": "Limited Access",
+      "latitude": 38.112286,
+      "longitude": -78.39714,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/VA_Fernbrook_Handbook.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "fortunes-cove-preserve",
+      "name": "Fortune's Cove Preserve",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fortunes-cove-preserve/",
+      "access": "Open to the Public",
+      "latitude": 37.780264,
+      "longitude": -78.891696,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/FortunesCove_TrailMap_June2020.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/VA_FortunesCove_Handbook.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "fraser-preserve",
+      "name": "Fraser Preserve",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/fraser-preserve/",
+      "access": "Open to the Public",
+      "latitude": 39.0354636,
+      "longitude": -77.3097819,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/VA_Fraser_Handbook.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "great-falls-park",
+      "name": "Great Falls Park",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/great-falls-park/",
+      "access": "Open to the Public",
+      "latitude": 38.9890683,
+      "longitude": -77.2514515,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/great-falls-audio-tour-map.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "kyles-ford",
+      "name": "Kyles Ford",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/kyles-ford/",
+      "access": "Closed to the Public",
+      "latitude": 36.570833,
+      "longitude": -83.043333,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "new-point-comfort",
+      "name": "New Point Comfort",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/new-point-comfort/",
+      "access": "Open to the Public",
+      "latitude": 37.3173537,
+      "longitude": -76.2773395,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "north-landing-river",
+      "name": "North Landing River",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/north-landing-river/",
+      "access": "Closed to the Public",
+      "latitude": 36.6387,
+      "longitude": -76.0796,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "pendleton-island",
+      "name": "Pendleton Island",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/pendleton-island/",
+      "access": "Closed to the Public",
+      "latitude": 36.759167,
+      "longitude": -82.595278,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "piney-grove-preserve",
+      "name": "Piney Grove Preserve",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/piney-grove-preserve/",
+      "access": "Open to the Public",
+      "latitude": 36.9838062,
+      "longitude": -77.0538397,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/dardentrail-4-16-b-lo.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "potts-creek-shale-barren",
+      "name": "Potts Creek Shale Barren",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/potts-creek-shale-barren/",
+      "access": "Closed to the Public",
+      "latitude": 37.78,
+      "longitude": -80.01,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "the-narrows",
+      "name": "The Narrows",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/the-narrows/",
+      "access": "Closed to the Public",
+      "latitude": 37.331944,
+      "longitude": -80.808611,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "unthanks-cave",
+      "name": "Unthanks Cave",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/unthanks-cave/",
+      "access": "Closed to the Public",
+      "latitude": 36.61433,
+      "longitude": -83.22672,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "vandell-preserve-at-cumberland-marsh",
+      "name": "Vandell Preserve At Cumberland Marsh",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/vandell-preserve-at-cumberland-marsh/",
+      "access": "Open to the Public",
+      "latitude": 37.519802,
+      "longitude": -76.972017,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/CumberlandMarsh_Nov21.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/VA_CumberlandMarsh_Handbook.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "vcr-barrier-islands",
+      "name": "VVCR Barrier Islands",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/vcr-barrier-islands/",
+      "access": "Open to the Public",
+      "latitude": 37.45822,
+      "longitude": -75.66477,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/Explore-Our-Seaside_May2020.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/vvcr-barrier-island-visitation-policies_SPAN.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/photos/2/0/2012-virginia-barrier-island-beach-nesting-bird-brochure.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/photos/2/0/2017-vcr-barrier-island-visitation-policies.pdf"
+      ]
+    },
+    {
+      "id": "voorhees-nature-preserve",
+      "name": "Voorhees Nature Preserve",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/voorhees-nature-preserve/",
+      "access": "Open to the Public",
+      "latitude": 38.172669,
+      "longitude": -77.050236,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/photos/v/o/Voorhees_Preserve_TrailMap_Nov20.pdf"
+      ]
+    },
+    {
+      "id": "walnut-hill-preserve",
+      "name": "Walnut Hill Preserve",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/walnut-hill-preserve/",
+      "access": "Closed to the Public",
+      "latitude": 37.171403,
+      "longitude": -80.450656,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    },
+    {
+      "id": "warm-springs-mountain",
+      "name": "Warm Springs Mountain",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/warm-springs-mountain/",
+      "access": "Open to the Public",
+      "latitude": 38.051,
+      "longitude": -79.7663,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/VA_WarmSprings_Handbook.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/WSM_BearLoop_Map_June2020.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/WSM_IngallsOverlook_Map_June2020.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/WSM_SandyGap_Map_June2020.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/documents/warm-springs-vicinity-map.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf",
+        "https://www.nature.org/content/dam/tnc/nature/en/photos/w/a/warm-springs-mountain-preserve-trail-guide.pdf"
+      ]
+    },
+    {
+      "id": "wildcat-mountain-natural-area",
+      "name": "Wildcat Mountain Natural Area",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/wildcat-mountain-natural-area/",
+      "access": "Closed to the Public",
+      "latitude": 38.79208,
+      "longitude": -77.865043,
+      "linked_pdfs": [
+        "https://www.nature.org/content/dam/tnc/nature/en/nature-news-emails/VA_August_NN.pdf"
+      ]
+    }
+  ]
+}

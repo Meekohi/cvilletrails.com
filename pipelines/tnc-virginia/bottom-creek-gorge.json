@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "id": "bottom-creek-gorge",
+  "system_id": "bottom-creek-gorge",
+  "filename": "BottomCreekGorge_Map_June2020.pdf",
+  "url": "https://www.nature.org/content/dam/tnc/nature/en/documents/BottomCreekGorge_Map_June2020.pdf",
+  "pdf_sha256": "2879f77536f48811a2162d36c48af895264276d90bdde7c643eb1be024214006",
+  "page": 0,
+  "viewport_name": "Main Map",
+  "vector_layer": "BottomCreekGorge",
+  "expected_crs_epsg": 26917,
+  "max_control_residual_m": 1,
+  "expected_bounds": [
+    -80.19238855989299,
+    37.117262355063126,
+    -80.1774709457655,
+    37.13341202989965
+  ],
+  "map_date": "2020-06",
+  "palette": {
+    "black": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "yellow": [
+      1.0,
+      0.8823500275611877,
+      0.30979999899864197
+    ],
+    "red": [
+      0.9333299994468689,
+      0.2078399956226349,
+      0.14117999374866486
+    ],
+    "blue": [
+      0.1058799996972084,
+      0.4588199853897095,
+      0.7372599840164185
+    ]
+  },
+  "paths": [
+    {
+      "drawing": 242,
+      "id": "entrance-north",
+      "name": "Entrance Road (walking route)",
+      "color": "black",
+      "segments": 11,
+      "width": 2.5201799869537354
+    },
+    {
+      "drawing": 243,
+      "id": "entrance-south",
+      "name": "Entrance Road (walking route)",
+      "color": "black",
+      "segments": 23,
+      "width": 2.5201799869537354
+    },
+    {
+      "drawing": 246,
+      "id": "knight-junction",
+      "name": "Knight Trail",
+      "color": "yellow",
+      "segments": 2,
+      "width": 1.0800800323486328
+    },
+    {
+      "drawing": 247,
+      "id": "knight-north",
+      "name": "Knight Trail",
+      "color": "yellow",
+      "segments": 15,
+      "width": 1.0800800323486328
+    },
+    {
+      "drawing": 248,
+      "id": "knight-east",
+      "name": "Knight Trail",
+      "color": "yellow",
+      "segments": 68,
+      "width": 1.0800800323486328
+    },
+    {
+      "drawing": 249,
+      "id": "johnston-junction",
+      "name": "Johnston Trail",
+      "color": "red",
+      "segments": 10,
+      "width": 1.0800800323486328
+    },
+    {
+      "drawing": 250,
+      "id": "johnston-overlook",
+      "name": "Johnston Trail",
+      "color": "red",
+      "segments": 5,
+      "width": 1.0800800323486328
+    },
+    {
+      "drawing": 251,
+      "id": "johnston-main",
+      "name": "Johnston Trail",
+      "color": "red",
+      "segments": 40,
+      "width": 1.0800800323486328
+    },
+    {
+      "drawing": 253,
+      "id": "duval",
+      "name": "DuVal Trail",
+      "color": "blue",
+      "segments": 70,
+      "width": 1.4400999546051025
+    }
+  ],
+  "notes": "Selectors apply only to this PDF hash. Stable segment IDs must be reviewed against topology before any future reassignment. Colors are official map symbols, not independently verified blaze colors.",
+  "excluded_casings": [
+    238,
+    239,
+    240,
+    241,
+    244,
+    245
+  ]
+}

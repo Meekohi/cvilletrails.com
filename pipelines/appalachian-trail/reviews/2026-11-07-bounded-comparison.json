@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "status": "source-approved-replacement-prepared",
+  "published": false,
+  "source_selection": "5e8967e399977aff967f2c28a928fb310473503de8478d0d9391b9badf66eaf6",
+  "before_hash": "33c7deae8cd63a48b586f4ebd18a6ce03dc2bb3c4b915016192f1ac6c694e727",
+  "after_hash": "15211e68bb33b7b659e71941df229c256bfd2bd0fc5fea540618ec7668c790e8",
+  "source_hash": "9a499c789f5e46bf767c19931026ea2b57d0f511edfab15e65e1965eea32e59c",
+  "scope": {
+    "schema_version": 1,
+    "dataset": "ck578grpj01232ipbxr2ampjj",
+    "source_layer": "Appalachian_Trail",
+    "bounds": [
+      -81.820394,
+      36.615246,
+      -77.681581,
+      39.329849
+    ],
+    "baseline_hash": "33c7deae8cd63a48b586f4ebd18a6ce03dc2bb3c4b915016192f1ac6c694e727",
+    "method": "Clip official centerline to actual existing geometry bounds, not stale Mapbox metadata. Flag all clipped endpoint records and substantive alignment differences for the replacement comparison.",
+    "allow_geographic_expansion": false
+  },
+  "before_count": 627,
+  "after_count": 791,
+  "before_miles": 547.910135707372,
+  "after_miles": 560.2258191169497,
+  "old_coverage_within_100m": 0.9918754728993493,
+  "clipped_ids": [
+    "nps-atc:737d118d-5a48-4931-b9fd-5210774e396f",
+    "nps-atc:73f29557-c27e-48f2-a8ce-5644b49f42ed",
+    "nps-atc:a97ea595-f7ca-46c1-a4f1-bee051c89853",
+    "nps-atc:ba0164be-b39b-41bd-ac41-a2b2478c7902"
+  ],
+  "out_of_scope_ids": [
+    "nps-atc:19885b26-5baf-475f-aaed-1c6b2478a886",
+    "nps-atc:4a5d9cd9-4cb6-4249-aee4-716e8f11ecf2",
+    "nps-atc:90633c2c-be7c-47e1-8a6d-9ef6056bdb21"
+  ],
+  "limitations": [
+    "Clipping uses the actual old geometry extent, not stale dataset metadata.",
+    "Clipped terminal records are explicit; no straight-line extensions or GPS traces were invented.",
+    "Differences can be old survey error or realignment; the reference does not prove when a physical trail moved.",
+    "The existing white AT layer styling is retained; no other datasets are changed."
+  ],
+  "comparison_hash": "47ffd024d62ef34bda3ed742de6529242eb1735fe3d7527c60131e9496188376"
+}

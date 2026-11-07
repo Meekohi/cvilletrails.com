@@ -1,0 +1,17 @@
+[
+  {
+    "prefer": [
+      "tnc-virginia:sandy-gap:east",
+      "tnc-virginia:sandy-gap:west"
+    ],
+    "hold": [
+      "usfs-gwj:4ed9a77a-95c3-41d5-a151-9b669ea61696"
+    ],
+    "feature_hashes": {
+      "tnc-virginia:sandy-gap:east": "18cfd02630b95d593c14a58bae3ce7a6eb4240bd8028f4399d1e68ae2f535e33",
+      "tnc-virginia:sandy-gap:west": "31989e0882dfb960f7665e550240b9dc750b6dd47961a3685f398dd47a13946b",
+      "usfs-gwj:4ed9a77a-95c3-41d5-a151-9b669ea61696": "db009b5ef14ce3296fa634e5e2493484249046431eb83cf0cdab70fb737b6b61"
+    },
+    "reason": "Use the two connected TNC Sandy Gap map segments, including the western approach and official blue map symbol. Hold the alternate USFS alignment rather than draw the trail twice. The sources disagree by tens of meters; this is a source choice, not a claim of surveyed accuracy. Check FSR 125 D approach closure."
+  }
+]

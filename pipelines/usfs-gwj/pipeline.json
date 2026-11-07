@@ -1,0 +1,66 @@
+{
+  "id": "usfs-gwj",
+  "system_id": "usfs-gwj",
+  "system_ids": [
+    "usfs-gwj"
+  ],
+  "sources": [
+    {
+      "id": "trails",
+      "kind": "arcgis",
+      "label": "USFS George Washington and Jefferson National Forest trail segments",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0",
+      "where": "admin_org LIKE '0808%'"
+    },
+    {
+      "id": "forest-alerts",
+      "kind": "html",
+      "label": "GW/Jefferson current alerts and forest orders",
+      "url": "https://www.fs.usda.gov/r08/gwj/alerts"
+    }
+  ],
+  "preferred_route_sources": {
+    "APPALACHIAN TRAIL": {
+      "pipeline_id": "appalachian-trail",
+      "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANST_Centerline/FeatureServer/0",
+      "decision": "pipelines/appalachian-trail/reviews/2026-11-07-source-selection.json"
+    },
+    "APPALACHIAN NATIONAL SCENIC TRAIL": {
+      "pipeline_id": "appalachian-trail",
+      "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANST_Centerline/FeatureServer/0",
+      "decision": "pipelines/appalachian-trail/reviews/2026-11-07-source-selection.json"
+    }
+  },
+  "access_policy": "assume-open-unless-contrary",
+  "excluded_trail_names": {
+    "HIGH KNOB LOOP": "User rejected as redundant with a road",
+    "CASCADES OVERLOOK": "User rejected as an uninteresting short spur"
+  },
+  "short_trail_review": {
+    "minimum_standalone_miles": 0.1,
+    "preserve_useful_connectors": true,
+    "requires_contextual_connectivity_review": true
+  },
+  "feature_exclusions": {
+    "2ea485b1-7a4b-4f07-9873-e57c10fe3ca3": {
+      "geometry_hash": "3b073b798e98c25a0ee5f820b3e2bdff4117d16e269290fedc7e010e501e8530",
+      "reason": "Under 0.1 mile; its short-segment component does not connect two useful trail records or form a substantial shortcut",
+      "evidence": "pipelines/usfs-gwj/reviews/2026-11-07-access-acceptance.json"
+    },
+    "8ef4a174-85c8-4692-995f-78443a805b01": {
+      "geometry_hash": "bcc56c526b3e81dbc938f2169a40bc1c4b35c8873052a7355cde9c35b1bd29c7",
+      "reason": "Under 0.1 mile; its short-segment component does not connect two useful trail records or form a substantial shortcut",
+      "evidence": "pipelines/usfs-gwj/reviews/2026-11-07-access-acceptance.json"
+    },
+    "a3cc4933-be30-478c-ab93-a97c09eaf2c0": {
+      "geometry_hash": "210ad0a93e867ba707d559cefbd2638d74743ccb037c1a3705b52039ab121e07",
+      "reason": "Under 0.1 mile; its short-segment component does not connect two useful trail records or form a substantial shortcut",
+      "evidence": "pipelines/usfs-gwj/reviews/2026-11-07-access-acceptance.json"
+    },
+    "e8495d78-1b54-4d25-bc2b-00994b267659": {
+      "geometry_hash": "261de65e87eb9c302879798b4e5fc41fbac6431eee22ccd3a56b5098990cc20c",
+      "reason": "Under 0.1 mile; its short-segment component does not connect two useful trail records or form a substantial shortcut",
+      "evidence": "pipelines/usfs-gwj/reviews/2026-11-07-access-acceptance.json"
+    }
+  }
+}

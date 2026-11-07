@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "cumberland-marsh",
+  "system_id": "cumberland-marsh",
+  "filename": "CumberlandMarsh_Nov21.pdf",
+  "url": "https://www.nature.org/content/dam/tnc/nature/en/documents/CumberlandMarsh_Nov21.pdf",
+  "pdf_sha256": "cd82b4605adea37eb5b247782a41e98534570a0280c5171826fbfa6b46043ab1",
+  "page": 0,
+  "viewport_name": "Layers",
+  "vector_layer": "Hiking Trail",
+  "expected_crs_epsg": 26918,
+  "max_control_residual_m": 1,
+  "expected_bounds": [
+    -76.99472969223703,
+    37.5338642713957,
+    -76.98219504053165,
+    37.54833954560183
+  ],
+  "map_date": "2021-11",
+  "palette": {
+    "red": [
+      0.9333299994468689,
+      0.2078399956226349,
+      0.14117999374866486
+    ]
+  },
+  "paths": [
+    {
+      "drawing": 517,
+      "id": "main",
+      "name": "Cumberland Marsh Hiking Trail",
+      "color": "red",
+      "segments": 63,
+      "width": 1.4399000406265259
+    },
+    {
+      "drawing": 519,
+      "id": "viewing-area",
+      "name": "Cumberland Marsh Hiking Trail",
+      "color": "red",
+      "segments": 32,
+      "width": 1.4399000406265259
+    }
+  ],
+  "notes": "Selectors apply only to this PDF hash. Stable segment IDs must be reviewed against topology before any future reassignment. Colors are official map symbols, not independently verified blaze colors."
+}

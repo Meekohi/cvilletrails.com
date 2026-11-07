@@ -1,0 +1,190 @@
+{
+  "status": "additions-accepted",
+  "published": false,
+  "review_hash": "9dffb17fa75941dd753015cb41a46338fa34a3280b3bc9f0c6db62eafc53622b",
+  "pipeline": "tnc-virginia",
+  "feature_count": 16,
+  "geometry_hash": "659fa796a5b604dc80ad921458867f2e644e048f7da6f1a8b77a9dc7975274d9",
+  "maps": {
+    "bear-loop": {
+      "pdf_sha256": "f8fadf80d26ab6b3fba01fda0d77417c4212332b7ffa06f7ec8687fabde228c2",
+      "manifest_hash": "83064d4262543f5f42e7bf42f572bda7fde1867a38198b23a4621920849a5436",
+      "crs": "EPSG:26917",
+      "control_residual_m": [
+        0.06246195199548564,
+        0.062461951224381626,
+        0.06246195181569875,
+        0.062461950247513054
+      ],
+      "bounds": [
+        -79.83444475,
+        37.95454569,
+        -79.82201425,
+        37.97105241
+      ],
+      "lengths_m": {
+        "loop-and-approach": 4635.24
+      },
+      "feature_count": 1,
+      "geometry_hash": "b8bffb3a1b4835eeeadd525a951b2161976c88174d9e87fa7c0bc881488aec5a",
+      "limitations": [
+        "Cartographic linework; control residual is transform fit, not surveyed accuracy.",
+        "Only manifest-selected trails; Bottom Creek includes its designated walking entrance road.",
+        "Parking-area gaps in colored paths are retained; no private-road access inferred."
+      ]
+    },
+    "ingalls-overlook": {
+      "pdf_sha256": "e7de5e7aae283ee3c7fc4914262eaf8aa61fc42a6879f0568670cc46bb553c6f",
+      "manifest_hash": "352b6570a8cd6ed798893743091130ddf98cbe887f7c63463089611626df3eae",
+      "crs": "EPSG:26917",
+      "control_residual_m": [
+        0.12795934075902313,
+        0.12795934116440263,
+        0.12795934097174183,
+        0.12795934162995592
+      ],
+      "bounds": [
+        -79.76681803,
+        38.05103832,
+        -79.75933617,
+        38.06613921
+      ],
+      "lengths_m": {
+        "main": 1884.04,
+        "overlook-spur": 267.66
+      },
+      "feature_count": 2,
+      "geometry_hash": "165c3a5bec8f84328e89c7169c3080d41930ec75c2f72d88f701311381feda50",
+      "limitations": [
+        "Cartographic linework; control residual is transform fit, not surveyed accuracy.",
+        "Only manifest-selected trails; Bottom Creek includes its designated walking entrance road.",
+        "Parking-area gaps in colored paths are retained; no private-road access inferred."
+      ]
+    },
+    "sandy-gap": {
+      "pdf_sha256": "5a31d141c7c762e85887b9de367a30e1eb7e204e9448a87e38eb048f915115a5",
+      "manifest_hash": "a084a54f209142753979f6bb5e9839ab6048264a91ec1ec6513541cfb5f2d85d",
+      "crs": "EPSG:26917",
+      "control_residual_m": [
+        0.13424817809601794,
+        0.13424817775109157,
+        0.13424817791093716,
+        0.1342481781717237
+      ],
+      "bounds": [
+        -79.85883819,
+        37.90534685,
+        -79.83296824,
+        37.91970125
+      ],
+      "lengths_m": {
+        "west": 569.96,
+        "east": 4356.2
+      },
+      "feature_count": 2,
+      "geometry_hash": "280c86148e88cf3a7b29bc1efe784b2b310614aa46e848c487e520b7bfd6ff18",
+      "limitations": [
+        "Cartographic linework; control residual is transform fit, not surveyed accuracy.",
+        "Only manifest-selected trails; Bottom Creek includes its designated walking entrance road.",
+        "Parking-area gaps in colored paths are retained; no private-road access inferred."
+      ]
+    },
+    "bottom-creek-gorge": {
+      "pdf_sha256": "2879f77536f48811a2162d36c48af895264276d90bdde7c643eb1be024214006",
+      "manifest_hash": "bc7b509ef3f4c088872f4a3e324c92ead588b0b13f43881caea45d5fe1dc5458",
+      "crs": "EPSG:26917",
+      "control_residual_m": [
+        0.2653415914126028,
+        0.26534159034480165,
+        0.265341591134256,
+        0.26534158999807617
+      ],
+      "bounds": [
+        -80.19238856,
+        37.11726236,
+        -80.17747095,
+        37.13341203
+      ],
+      "lengths_m": {
+        "entrance-north": 495.05,
+        "entrance-south": 874.48,
+        "knight-junction": 68.54,
+        "knight-north": 489.34,
+        "knight-east": 1613.92,
+        "johnston-junction": 366.15,
+        "johnston-overlook": 155.5,
+        "johnston-main": 624.99,
+        "duval": 2153.41
+      },
+      "feature_count": 9,
+      "geometry_hash": "0f1b14c7d3da08751df3f345960cdb0d0aa23b53c9450b66d65efb4346f3a0eb",
+      "limitations": [
+        "Cartographic linework; control residual is transform fit, not surveyed accuracy.",
+        "Only manifest-selected trails; Bottom Creek includes its designated walking entrance road.",
+        "Parking-area gaps in colored paths are retained; no private-road access inferred."
+      ]
+    },
+    "cumberland-marsh": {
+      "pdf_sha256": "cd82b4605adea37eb5b247782a41e98534570a0280c5171826fbfa6b46043ab1",
+      "manifest_hash": "4c75b042d77173e414e120785f6907f89567d4290f2bdd60b08f9e7907ed1e5c",
+      "crs": "EPSG:26918",
+      "control_residual_m": [
+        0.027677496661168453,
+        0.027677498617315145,
+        0.02767749539588187,
+        0.02767750013373918
+      ],
+      "bounds": [
+        -76.99472969,
+        37.53386427,
+        -76.98219504,
+        37.54833955
+      ],
+      "lengths_m": {
+        "main": 3075.45,
+        "viewing-area": 1603.94
+      },
+      "feature_count": 2,
+      "geometry_hash": "26f27b1accf0b72d112b34d5ec407e3a2ff15aae5d6b58fc9b8c31b92e2ab535",
+      "limitations": [
+        "Cartographic linework; control residual is transform fit, not surveyed accuracy.",
+        "Only manifest-selected trails; Bottom Creek includes its designated walking entrance road.",
+        "Parking-area gaps in colored paths are retained; no private-road access inferred."
+      ]
+    }
+  },
+  "resolutions": [
+    {
+      "prefer": [
+        "tnc-virginia:sandy-gap:east",
+        "tnc-virginia:sandy-gap:west"
+      ],
+      "hold": [
+        "usfs-gwj:4ed9a77a-95c3-41d5-a151-9b669ea61696"
+      ],
+      "feature_hashes": {
+        "tnc-virginia:sandy-gap:east": "18cfd02630b95d593c14a58bae3ce7a6eb4240bd8028f4399d1e68ae2f535e33",
+        "tnc-virginia:sandy-gap:west": "31989e0882dfb960f7665e550240b9dc750b6dd47961a3685f398dd47a13946b",
+        "usfs-gwj:4ed9a77a-95c3-41d5-a151-9b669ea61696": "db009b5ef14ce3296fa634e5e2493484249046431eb83cf0cdab70fb737b6b61"
+      },
+      "reason": "Use the two connected TNC Sandy Gap map segments, including the western approach and official blue map symbol. Hold the alternate USFS alignment rather than draw the trail twice. The sources disagree by tens of meters; this is a source choice, not a claim of surveyed accuracy. Check FSR 125 D approach closure."
+    }
+  ],
+  "validation": [
+    "141 Python tests including the five exact official PDF regressions",
+    "8 JavaScript unit tests",
+    "JavaScript syntax checks",
+    "Static-site build and maintenance configuration validation",
+    "11 new live source checks completed without errors",
+    "Playwright comparison maps, actual rendered lines, filters, feedback export, held guard, persistence and mobile layout"
+  ],
+  "review_url": "http://localhost:8011/",
+  "evidence_directory": ".trail-state/tnc-usfs-review",
+  "notes": [
+    "All 16 TNC segments proposed; no existing geometry or colors replaced.",
+    "Sandy Gap USFS alternative held; source discrepancy and road-access notice are visible in review.",
+    "Fortunes Cove remains exclusively in its existing pipeline."
+  ],
+  "accepted_count": 16,
+  "acceptance_record": "pipelines/tnc-virginia/reviews/2026-11-07-acceptance.json"
+}

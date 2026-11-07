@@ -1,0 +1,3109 @@
+{
+  "schema_version": 1,
+  "kind": "tnc-usfs-access-decisions",
+  "recorded_at": "2026-11-07T16:16:40.480631Z",
+  "review_hash": "2a0b1477abf629d8bc99192b6312f1d945c4baef635d3c74b4d4da9de5915c82",
+  "acceptance_hash": "90518b6cc80293db973fe0613f1814001051e13ef1dfb1937e9e6e034e897ce1",
+  "incoming_hash": "473a1c22ae1c72722bcc2bdf944c57caed4bb4e36f70e0121075d5aa7bcb7b0b",
+  "policy_hash": "7264ecf7e2521b36f36992bdbc0ac64375c4ca8a51d277ff992547d3136658c7",
+  "method": "explicit-user-policy-in-chat-with-connectivity-analysis",
+  "user_statement": "Tuscarora - suggested USFS data looks good. All your other suggestions look good. For the Access holds -- let's assume trails are open unless we have evidence to the contrary, so approve the vast majority of these. Exceptions: High Knob Loop looks like it's redundant with a road, reject that one. Cascades Overlook is too short to be interesting -- reject trails that are shorter than 0.1 miles if they don't connect any other useful geometry.",
+  "scope": "The 168 access-hold records in this exception round; previous 967 accepted additions remain unchanged.",
+  "counts": {
+    "approve": 139,
+    "reject": 17,
+    "hold": 12
+  },
+  "addition_count": 137,
+  "source_replacement_count": 2,
+  "rows": [
+    {
+      "id": "usfs-gwj:000c3746-60d1-4974-af30-2c7b0d7badae",
+      "name": "KELLY",
+      "length_m": 1201.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:00741d47-cf56-4550-b7e0-04475185f323",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 1420.2,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:00cccdff-b728-4132-a46c-b4ada3105d92",
+      "name": "SEVEN SISTERS",
+      "length_m": 2414.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:01b486a1-14e6-43c8-9a6e-6850493b45fb",
+      "name": "FLAT RUN",
+      "length_m": 3754.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:0235f0dc-4f08-4722-a362-6ab3a31fe923",
+      "name": "BIG SCHLOSS CUTOFF",
+      "length_m": 2907.5,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:0331dc90-ad6c-43f8-a31a-9c66d68f9dbf",
+      "name": "WOLF RIDGE",
+      "length_m": 1002.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:03911afb-7e72-4a70-8a89-0b530d98c782",
+      "name": "SOUTH PEDLAR",
+      "length_m": 1865.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:03b00156-4970-4588-bb75-8e5263d6b521",
+      "name": "STRAIGHT MOUNTAIN",
+      "length_m": 3427.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:06ff0eaf-13b2-4e23-a2ac-19c03fd1317f",
+      "name": "PETERS MILL RUN",
+      "length_m": 8626.2,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:098b2c72-6638-4091-b99d-5419c3ee7de5",
+      "name": "PINEY RIDGE",
+      "length_m": 3218.2,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:09ef4f45-292f-4fb3-a70d-97b4398bb604",
+      "name": "CASCADES OVERLOOK",
+      "length_m": 53.8,
+      "action": "reject",
+      "reason": "User rejected as an uninteresting short spur",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:0e45db36-536c-45bd-bad6-6934fc3476f2",
+      "name": "PINEY RIDGE",
+      "length_m": 2119.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:0f2dcab6-cbeb-46fb-a4ed-5ddae097a49e",
+      "name": "KENNEDY PEAK",
+      "length_m": 383.5,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:0f7ccc14-d73d-4c88-beef-62aa72fe24d2",
+      "name": "WHEELS UP",
+      "length_m": 1688.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:1006283a-e8e3-4463-8b76-98feb36a3a13",
+      "name": "BALCONY FALLS",
+      "length_m": 6003.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0.001,
+        "10": 0.003,
+        "20": 0.0123,
+        "30": 0.0216
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:13abc462-fa8a-4f36-8a08-956c3953087c",
+      "name": "VIRGINIA CREEPER",
+      "length_m": 2352.3,
+      "action": "hold",
+      "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:13c5a829-83c5-4fe1-b010-5b3df6b08d48",
+      "name": "WAGON ROAD",
+      "length_m": 1072.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:154d4612-84f1-466d-82c1-9eef831de75c",
+      "name": "MORRIS HILL",
+      "length_m": 408.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:170bb914-f186-4385-a430-54fa5ab78c16",
+      "name": "PINEY",
+      "length_m": 921.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:1c150927-98c5-49b0-82a2-c3a88413ee56",
+      "name": "TASKERS RUN",
+      "length_m": 478.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:21ad3415-fc35-4b21-b142-35e5a674e6c2",
+      "name": "CORKSCREW",
+      "length_m": 6095.2,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:2264dd30-0bca-40f8-8a9a-7a6841146370",
+      "name": "CASCADES CREEKSIDE",
+      "length_m": 2939.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": [
+        "usfs-gwj:a6021a85-2fb0-4dc4-bc1d-cd08ed98b424"
+      ]
+    },
+    {
+      "id": "usfs-gwj:22c65dc1-e6e0-4163-a0f0-20772a847d94",
+      "name": "SEVEN SISTERS",
+      "length_m": 1609.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:23d9f0f7-df6f-4ac7-8dd9-f5833c3ff565",
+      "name": "MEADOW LOOP",
+      "length_m": 4276.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:2576d1cc-b39b-44ac-bc3f-ad9c1f704d99",
+      "name": "CHIMNEY ROCK",
+      "length_m": 1333.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:276a94c6-f4ec-4ce2-96c4-cd90bd008401",
+      "name": "LONE MOUNTAIN",
+      "length_m": 2902.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:27875eaa-537a-436c-9d68-a49c21de324d",
+      "name": "GUEST RIVER GORGE",
+      "length_m": 8126.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:27e36df4-219e-45c2-a357-b5620ba618d1",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 1518.5,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:2b6799f4-2f37-4ecb-b016-b6ec954b6f38",
+      "name": "LUM",
+      "length_m": 924.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:2bb6c478-6d1a-4f07-b064-97445860aa60",
+      "name": "CASCADES OLD BRIDGE SPUR (DECO",
+      "length_m": 39.2,
+      "action": "hold",
+      "reason": "Source name indicates decommissioning, closure or abandonment",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:2bce218e-cbc3-4d11-8c37-e4a61026d059",
+      "name": "MORRIS HILL",
+      "length_m": 402.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:2d53d24c-71bb-4714-9ee6-a84dee063250",
+      "name": "LOCATION",
+      "length_m": 110.6,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:2d53d24c-71bb-4714-9ee6-a84dee063250"
+        ],
+        "useful_connection": true,
+        "reference_count": 3,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:2d53d24c-71bb-4714-9ee6-a84dee063250",
+            "reference_id": "usfs-gwj:98d41d54-da8c-41a3-a1f9-bcbd2a3c75cd",
+            "reference_name": "CHESTNUT",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:2d53d24c-71bb-4714-9ee6-a84dee063250",
+            "reference_id": "usfs-gwj:61dbe971-da7e-4055-aa4d-4fbe36ea6efe",
+            "reference_name": "TASKERS GAP",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:2d53d24c-71bb-4714-9ee6-a84dee063250",
+            "reference_id": "usfs-gwj:348415df-2757-4ca5-a20d-d832b2c1974c",
+            "reference_name": "MERTINS ROCK",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+      "name": "DEETS",
+      "length_m": 1.0,
+      "action": "reject",
+      "reason": "Under 0.1 mile; its short-segment component does not connect two useful trail records or form a substantial shortcut",
+      "geometry_use": null,
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+          "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+          "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659"
+        ],
+        "useful_connection": false,
+        "reference_count": 1,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 0.55
+          },
+          {
+            "short_id": "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 1.58
+          },
+          {
+            "short_id": "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 0.55
+          },
+          {
+            "short_id": "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 1.58
+          },
+          {
+            "short_id": "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 2.79
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": [
+        "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+        "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659"
+      ]
+    },
+    {
+      "id": "usfs-gwj:2f840cb7-a6f6-49d0-abca-bf3c1bfebfe3",
+      "name": "VEACH GAP",
+      "length_m": 224.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:348415df-2757-4ca5-a20d-d832b2c1974c",
+      "name": "MERTINS ROCK",
+      "length_m": 2634.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:37820d27-cafc-44ab-8b95-c0d1c61de347",
+      "name": "LOST HUNTER",
+      "length_m": 2291.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:37dd39bd-93f4-4dd9-a7d2-15f9e3754347",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 1728.0,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:3c4596f8-1dbb-4252-9f8c-2ac1adb6ce4b",
+      "name": "COMERS CREEK",
+      "length_m": 1328.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:3c6ea799-1210-4f1a-b372-a18d72f70f4e",
+      "name": "ROCKY RUN",
+      "length_m": 8260.6,
+      "action": "hold",
+      "reason": "Source explicitly discourages hiking",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:40a2cae1-e1e4-49fb-b5c2-3036f2bee9c8",
+      "name": "BOWMAN",
+      "length_m": 1384.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:42cee8c3-74df-483a-9036-8c1b45514de0",
+      "name": "DEER",
+      "length_m": 2099.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:434c2ecc-4f21-4857-bb39-9160fd31526f",
+      "name": "EDINBURG GAP",
+      "length_m": 844.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:4818807e-a955-4151-9d2d-c5a10cdbf99a",
+      "name": "SOUTH FORK",
+      "length_m": 9804.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:48cd48b3-df1f-410a-a400-f93f99537747",
+      "name": "SEVEN SISTERS",
+      "length_m": 3763.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:4a0462e0-3347-4a8a-b313-12583050701f",
+      "name": "HORSE NETTLE",
+      "length_m": 2301.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:4c3bd95c-4769-411a-9767-ca53d9109589",
+      "name": "LAW BREAKER",
+      "length_m": 2740.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:4c58a01d-68eb-4252-b8aa-a08c1009b515",
+      "name": "BOTTS",
+      "length_m": 1450.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0.0146,
+        "10": 0.0195,
+        "20": 0.0264,
+        "30": 0.0333
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:4e145075-803f-4437-89b7-8018029693ae",
+      "name": "SHAW GAP",
+      "length_m": 1620.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:4e289a58-c2b9-4cea-ba0d-ae643a98e399",
+      "name": "JACKSON RIVER FISHING",
+      "length_m": 1541.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:4e8d9913-df16-4b6b-812c-a2cfffce5069",
+      "name": "WIDE GAP",
+      "length_m": 426.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": [
+        "usfs-gwj:a5aad83d-03c2-4e5b-9285-04aa60418591"
+      ]
+    },
+    {
+      "id": "usfs-gwj:4f3aeb3b-7376-4432-b03e-d64d75d3e994",
+      "name": "NO WET FEET",
+      "length_m": 752.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:4f6fdf22-1eb7-4da9-9561-ff0c1208e614",
+      "name": "LA-DEE-DAH",
+      "length_m": 13.6,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:4f6fdf22-1eb7-4da9-9561-ff0c1208e614"
+        ],
+        "useful_connection": true,
+        "reference_count": 2,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:4f6fdf22-1eb7-4da9-9561-ff0c1208e614",
+            "reference_id": "usfs-gwj:fa8b53ad-ec2e-4f0c-9df7-b86c881e81b5",
+            "reference_name": "LA-DEE-DAH",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:4f6fdf22-1eb7-4da9-9561-ff0c1208e614",
+            "reference_id": "usfs-gwj:61dbe971-da7e-4055-aa4d-4fbe36ea6efe",
+            "reference_name": "TASKERS GAP",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:50e85e48-037a-4c3a-94a5-bac2e4d40811",
+      "name": "GREEN MOUNTAIN",
+      "length_m": 5802.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:54f20ecd-a87d-4911-be49-17491ee7a605",
+      "name": "INDIAN PIPE",
+      "length_m": 724.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:5680bd52-0764-4a34-afd1-4cde381f4039",
+      "name": "LADY SLIPPER",
+      "length_m": 523.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:57732c04-8594-4213-94db-ebff67dd0ede",
+      "name": "GENESIS LOOP",
+      "length_m": 5777.5,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:58513020-8075-496c-8e5e-548b08be8040",
+      "name": "VEACH GAP",
+      "length_m": 836.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:58f6ddce-4317-444e-8fd6-b992fe1d6240",
+      "name": "VIRGINIA CREEPER",
+      "length_m": 2944.5,
+      "action": "hold",
+      "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:5a314bbb-098e-4c39-9f69-3b5a4a5c65c8",
+      "name": "FERRIER",
+      "length_m": 1448.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:5c5e12f7-b482-4fdf-a461-776bb92a9f60",
+      "name": "LITTLE MARE MOUNTAIN SPUR",
+      "length_m": 1126.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:5cb5c73a-3482-4da5-808f-62e4f5130791",
+      "name": "GROUSE",
+      "length_m": 3088.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:5f89e5ea-2e49-443e-9b5e-e497e7abc47d",
+      "name": "TUSCARORA - DOLL RIDGE",
+      "length_m": 2221.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "source-replacement",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0.1887,
+        "10": 0.6623,
+        "20": 0.9571,
+        "30": 1
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:61dbe971-da7e-4055-aa4d-4fbe36ea6efe",
+      "name": "TASKERS GAP",
+      "length_m": 5099.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:64343779-e29e-4995-acf0-c7cc89299ad7",
+      "name": "ROYALE",
+      "length_m": 1225.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:658047fe-8885-4f3a-8961-b5e810a096f5",
+      "name": "WHETSTONE RIDGE",
+      "length_m": 7652.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:65cfacc1-5371-430a-a8aa-2bd3b7626d2c",
+      "name": "VIRGINIA CREEPER",
+      "length_m": 1560.7,
+      "action": "hold",
+      "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:687679e6-cd25-4a29-ab9c-f6f4f9cd716e",
+      "name": "TAYLORS VALLEY",
+      "length_m": 5595.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0.0011,
+        "10": 0.0052,
+        "20": 0.0071,
+        "30": 0.0095
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:688e3af4-7c13-4623-873e-8176fff64ecb",
+      "name": "DUMP BED",
+      "length_m": 2018.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:6a3dc057-8c45-49a0-bab8-117c34145623",
+      "name": "WAGON ROAD",
+      "length_m": 193.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": [
+        "usfs-gwj:463d939e-eadb-4021-b14b-533fa6960152"
+      ]
+    },
+    {
+      "id": "usfs-gwj:6bfb8431-87f5-44e3-909c-5543f2674ab5",
+      "name": "TURKEY",
+      "length_m": 1287.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:6e0b6689-a737-49c5-bec5-18057503005a",
+      "name": "SALAMANDER",
+      "length_m": 1830.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:6e75694a-09ae-44e3-9107-ce1ac42e1849",
+      "name": "WOLF RIDGE",
+      "length_m": 3378.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:70564742-34cd-403e-89c4-f5688abdc20c",
+      "name": "RATTLESNAKE",
+      "length_m": 952.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:75d2b0b4-d138-4063-bf2c-42ab71fee7dc",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 6183.9,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:75ec7e55-d886-4d96-8b6f-b61a9bd19fa9",
+      "name": "HUCKLEBERRY",
+      "length_m": 360.2,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:79bb44f6-afd3-4788-b9d9-fbcb798bf0d4",
+      "name": "WALTERS GAP",
+      "length_m": 1416.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:7c67bc30-e04e-43a0-a811-9ee099a0658b",
+      "name": "ROCKY RUN",
+      "length_m": 1865.3,
+      "action": "hold",
+      "reason": "Source explicitly discourages hiking",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:7d1cbad3-a3b8-4239-a506-1b5ac615b576",
+      "name": "BALCONY FALLS",
+      "length_m": 2735.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:7eae45cc-77df-41bf-a08b-615c0c1c16b8",
+      "name": "BEARTREE GAP",
+      "length_m": 4011.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:7ef530db-8ba4-406e-8760-a169a393b020",
+      "name": "LARK SPUR",
+      "length_m": 435.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:80d599f9-5381-4370-9742-80436853e21c",
+      "name": "BEAUTY",
+      "length_m": 717.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:8229b14f-6d4b-4014-b215-30d8ad8d3154",
+      "name": "SULPHUR SPRING",
+      "length_m": 8194.5,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0.0013,
+        "10": 0.0037,
+        "20": 0.0142,
+        "30": 0.0885
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:824c3f6b-6e34-44a5-8254-88aae28b6404",
+      "name": "LOOP",
+      "length_m": 358.2,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:8762747a-e523-4299-9749-5f9ae9ed93fa",
+      "name": "GREEN MOUNTAIN",
+      "length_m": 321.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:88a2c42f-8043-4a72-8554-8bbefb64cdb2",
+      "name": "TROUT POND",
+      "length_m": 4037.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:8c7c7a04-7f36-4026-9e22-56e411f65261",
+      "name": "CHIMNEY LOOP",
+      "length_m": 5410.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:8ef4a174-85c8-4692-995f-78443a805b01",
+      "name": "ROUND MOUNTAIN",
+      "length_m": 2.3,
+      "action": "reject",
+      "reason": "Under 0.1 mile; its short-segment component does not connect two useful trail records or form a substantial shortcut",
+      "geometry_use": null,
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:8ef4a174-85c8-4692-995f-78443a805b01"
+        ],
+        "useful_connection": false,
+        "reference_count": 0,
+        "contacts": [],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:8fe532b4-a612-41c8-add8-089e5650331e",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 1677.6,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:91bc833a-b5b5-4056-aeeb-940b8d9c4166",
+      "name": "FERRIER",
+      "length_m": 6055.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:944ff90d-fb0a-48dc-b3db-a4db72179270",
+      "name": "PETERS MILL RUN",
+      "length_m": 4718.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:964258b6-e705-4eb6-a9e9-d8228e9eac91",
+      "name": "STONY FORK",
+      "length_m": 586.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:98d41d54-da8c-41a3-a1f9-bcbd2a3c75cd",
+      "name": "CHESTNUT",
+      "length_m": 2204.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:9b1e7922-28d9-43d1-9c95-96f070efcc0d",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 966.0,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:a082d674-3bb2-419f-b195-7c6dd70b7a5f",
+      "name": "TUCKER",
+      "length_m": 756.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:a0dd1fcd-8aaf-4f8d-951d-955c9ab13bce",
+      "name": "GLENWOOD HORSE ALTERNATE LOOP",
+      "length_m": 177.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:a24c3185-8707-409c-ac55-567d70156c39",
+      "name": "HORSE NETTLE",
+      "length_m": 792.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:a3b32251-1965-4cd2-9cf1-663bb65032ff",
+      "name": "MORRIS HILL",
+      "length_m": 402.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+      "name": "DEETS",
+      "length_m": 0.5,
+      "action": "reject",
+      "reason": "Under 0.1 mile; its short-segment component does not connect two useful trail records or form a substantial shortcut",
+      "geometry_use": null,
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+          "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+          "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659"
+        ],
+        "useful_connection": false,
+        "reference_count": 1,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 0.55
+          },
+          {
+            "short_id": "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 1.58
+          },
+          {
+            "short_id": "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 0.55
+          },
+          {
+            "short_id": "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 1.58
+          },
+          {
+            "short_id": "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 2.79
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:a40c25fe-2883-4457-a2c3-eba8fa6aef6b",
+      "name": "SMALL",
+      "length_m": 159.7,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:a40c25fe-2883-4457-a2c3-eba8fa6aef6b"
+        ],
+        "useful_connection": true,
+        "reference_count": 2,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:a40c25fe-2883-4457-a2c3-eba8fa6aef6b",
+            "reference_id": "usfs-gwj:348415df-2757-4ca5-a20d-d832b2c1974c",
+            "reference_name": "MERTINS ROCK",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:a40c25fe-2883-4457-a2c3-eba8fa6aef6b",
+            "reference_id": "usfs-gwj:61dbe971-da7e-4055-aa4d-4fbe36ea6efe",
+            "reference_name": "TASKERS GAP",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:a5aad83d-03c2-4e5b-9285-04aa60418591",
+      "name": "DYNAMITE",
+      "length_m": 10296.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:a6021a85-2fb0-4dc4-bc1d-cd08ed98b424",
+      "name": "CASCADES NORTH CONNECTOR",
+      "length_m": 107.7,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:a6021a85-2fb0-4dc4-bc1d-cd08ed98b424"
+        ],
+        "useful_connection": true,
+        "reference_count": 2,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:a6021a85-2fb0-4dc4-bc1d-cd08ed98b424",
+            "reference_id": "usfs-gwj:8825d120-78bc-49b1-a97d-c899445a8d57",
+            "reference_name": "CASCADES",
+            "distance_m": 0.47
+          },
+          {
+            "short_id": "usfs-gwj:a6021a85-2fb0-4dc4-bc1d-cd08ed98b424",
+            "reference_id": "usfs-gwj:2264dd30-0bca-40f8-8a9a-7a6841146370",
+            "reference_name": "CASCADES CREEKSIDE",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": [
+        "usfs-gwj:2264dd30-0bca-40f8-8a9a-7a6841146370"
+      ]
+    },
+    {
+      "id": "usfs-gwj:a7da6584-f249-47d7-80d8-ea231940e515",
+      "name": "POVERTY CREEK",
+      "length_m": 11423.2,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:a87be335-8cc4-475b-8636-50313b264608",
+      "name": "VIRGINIA CREEPER",
+      "length_m": 2495.4,
+      "action": "hold",
+      "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0.0286,
+        "10": 0.2862,
+        "20": 0.3089,
+        "30": 0.3306
+      },
+      "incoming_match_ids": [
+        "usfs-gwj:4d2e8cf8-15d5-4f82-a26f-ee68104e0df2"
+      ]
+    },
+    {
+      "id": "usfs-gwj:aa18ef72-3e1a-424e-8e40-5db997b1a285",
+      "name": "WOLF CREEK",
+      "length_m": 2921.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:aa4006d1-79b3-4a06-9587-2e29a4e36377",
+      "name": "SHORT",
+      "length_m": 1245.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:ab976655-55ce-4d07-a9b9-97cb067ad6ad",
+      "name": "LUM",
+      "length_m": 730.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:ad787014-c91f-45cd-b1eb-3f1f59c44d6c",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 1572.6,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:ad947696-4a34-4df7-b030-d7fd00cb6249",
+      "name": "STONY FORK",
+      "length_m": 1042.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:ae6c9bb1-fba2-4b35-8eb7-215f65ccda9b",
+      "name": "GLENWOOD HORSE ALTERNATE LOOP",
+      "length_m": 4506.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:aec0d59c-4a2d-4979-8145-8365b2361e30",
+      "name": "BUSHWACKER",
+      "length_m": 1941.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:af4841b5-16c0-4a0f-90ff-46a4eda85880",
+      "name": "GLENWOOD HORSE ALTERNATE LOOP",
+      "length_m": 3025.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0.0021,
+        "10": 0.0069,
+        "20": 0.0139,
+        "30": 0.021
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:b423426c-197b-430d-8b41-92fb81589b61",
+      "name": "TUSCARORA - DOLL RIDGE",
+      "length_m": 3292.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "source-replacement",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0.1982,
+        "10": 0.7584,
+        "20": 0.999,
+        "30": 1
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:b52c8f1e-3666-4fc0-838c-7a0960bca5c0",
+      "name": "LOST HUNTER",
+      "length_m": 2245.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:b5459a4c-0dd3-4a55-95ed-e355efdc393d",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 5245.5,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:b588aa4f-0d61-4d85-8a5a-f9bacf7c54c3",
+      "name": "TAILINGS LOOP",
+      "length_m": 4074.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:b73146e5-844f-41eb-9d15-4bdb1bd327e7",
+      "name": "POWERLINE",
+      "length_m": 1589.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:b73cde9f-1e61-460e-bede-29b2ab479b2c",
+      "name": "PINEY",
+      "length_m": 482.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:be2f45b2-1eca-46d9-9989-d59e50eda6c2",
+      "name": "OLD POND",
+      "length_m": 364.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:c032da6f-8522-4203-b744-52748c8a2170",
+      "name": "VIRGINIA CREEPER",
+      "length_m": 690.4,
+      "action": "hold",
+      "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:c0a7b512-1379-4494-9de0-20038c53cebd",
+      "name": "GUEST RIVER GORGE",
+      "length_m": 643.2,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:c1658975-4b76-402c-9637-ed1a3c71078b",
+      "name": "STRAIGHT BRANCH",
+      "length_m": 2009.5,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:c25664c4-b3e0-474b-b292-baa091986ab2",
+      "name": "BOWMAN",
+      "length_m": 1264.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:c2d2bf0f-2938-4823-9c67-890c7f1ee7bf",
+      "name": "SOUTH PEDLAR",
+      "length_m": 14886.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:c88649f8-00d8-4250-988c-8ef264a5fca5",
+      "name": "FEATHERCAMP RIDGE",
+      "length_m": 923.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:c898c264-aad0-4cec-86f7-cbc9d23e47a7",
+      "name": "APE",
+      "length_m": 128.3,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:c898c264-aad0-4cec-86f7-cbc9d23e47a7"
+        ],
+        "useful_connection": true,
+        "reference_count": 2,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:c898c264-aad0-4cec-86f7-cbc9d23e47a7",
+            "reference_id": "usfs-gwj:348415df-2757-4ca5-a20d-d832b2c1974c",
+            "reference_name": "MERTINS ROCK",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:c898c264-aad0-4cec-86f7-cbc9d23e47a7",
+            "reference_id": "usfs-gwj:61dbe971-da7e-4055-aa4d-4fbe36ea6efe",
+            "reference_name": "TASKERS GAP",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:c8d6930b-f657-49cf-b7ef-9e6c0a9a7d53",
+      "name": "LASSO",
+      "length_m": 4202.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:cce938ec-746f-4210-83c9-5f4c9a37fe3c",
+      "name": "VIRGINIA CREEPER",
+      "length_m": 10040.0,
+      "action": "hold",
+      "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d0323928-9cb9-40fe-97e9-26556675d55f",
+      "name": "DOUBLE DITCH",
+      "length_m": 977.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d0bfd0b9-960d-4aa2-b64e-62c796e50b87",
+      "name": "HELMS",
+      "length_m": 1594.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d1fa8437-e98c-42d7-849d-56dcded4875e",
+      "name": "MAY APPLE",
+      "length_m": 1280.5,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d24f9cca-1bd6-4a3c-b2d9-ab62c8d0f5f2",
+      "name": "OTTER",
+      "length_m": 1659.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d32c1296-a0cc-4d0e-a9db-65f7ba4657a0",
+      "name": "GLENWOOD HORSE ALTERNATE LOOP",
+      "length_m": 8276.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d63ea374-119a-4a8f-9a0d-3f973e817268",
+      "name": "LOST HUNTER",
+      "length_m": 613.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d6af5ba6-aa3b-4eb9-8f76-0b2117d95102",
+      "name": "HORSE NETTLE",
+      "length_m": 1689.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d6e36931-308d-417c-a88a-05aeda8c54c8",
+      "name": "TUCKER",
+      "length_m": 627.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d6fa9030-59b4-4d07-abce-753f2732ded0",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 925.8,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d791f2d1-7828-441f-887b-4dd2f42b0d96",
+      "name": "TASKERS GAP",
+      "length_m": 1613.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d8a12266-16d5-4ae2-84be-95d2108178e7",
+      "name": "WOLF RIDGE",
+      "length_m": 5355.3,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:d9a024bb-eb28-4da3-bd8e-e4d3f857d63e",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 952.2,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:db9f500e-f768-479e-adf8-ac41141e06aa",
+      "name": "SAUNDERS",
+      "length_m": 2876.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0.0,
+        "10": 0.011,
+        "20": 0.0339,
+        "30": 0.0778
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:dc137b6b-46dc-4379-946d-9c9ca356c711",
+      "name": "HELMS",
+      "length_m": 965.8,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:dcb7b6eb-6f60-4fd9-beeb-1c50d1b3a12b",
+      "name": "WHETSTONE RIDGE",
+      "length_m": 10620.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:dcdd4278-246e-4531-907a-921eeec9694e",
+      "name": "ARBUTUS LOOP",
+      "length_m": 6416.2,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:de3135fb-cf04-4b9d-9b35-4b7bf014f15d",
+      "name": "GLENWOOD HORSE ALTERNATE LOOP",
+      "length_m": 2768.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:df6684d9-af84-46f4-97b8-f76689a6fb8b",
+      "name": "ROCKY RUN",
+      "length_m": 6893.4,
+      "action": "hold",
+      "reason": "Source explicitly discourages hiking",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:e217c79c-c56d-4909-874a-34ad9f3e530e",
+      "name": "PRICKLY PEAR",
+      "length_m": 1412.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:e25c0c21-e3bd-4591-8006-1df5541b2f05",
+      "name": "SULPHUR SPRING",
+      "length_m": 79.3,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:e25c0c21-e3bd-4591-8006-1df5541b2f05"
+        ],
+        "useful_connection": true,
+        "reference_count": 4,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:e25c0c21-e3bd-4591-8006-1df5541b2f05",
+            "reference_id": "ck578grpj01232ipbxr2ampjj/ca1928823648da4599e70bc57b902cf2",
+            "reference_name": "Existing trail",
+            "distance_m": 2.4
+          },
+          {
+            "short_id": "usfs-gwj:e25c0c21-e3bd-4591-8006-1df5541b2f05",
+            "reference_id": "usfs-gwj:57b71201-b35d-4b7a-b53a-7fe064a05e0e",
+            "reference_name": "APPALACHIAN TRAIL",
+            "distance_m": 3.85
+          },
+          {
+            "short_id": "usfs-gwj:e25c0c21-e3bd-4591-8006-1df5541b2f05",
+            "reference_id": "usfs-gwj:1006283a-e8e3-4463-8b76-98feb36a3a13",
+            "reference_name": "BALCONY FALLS",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:e25c0c21-e3bd-4591-8006-1df5541b2f05",
+            "reference_id": "usfs-gwj:8229b14f-6d4b-4014-b215-30d8ad8d3154",
+            "reference_name": "SULPHUR SPRING",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0.0298,
+        "10": 0.2062,
+        "20": 0.7381,
+        "30": 1
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:e387af6d-c661-43d1-8873-ee36ac7cdfc7",
+      "name": "GLENWOOD HORSE ALTERNATE LOOP",
+      "length_m": 273.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:e5a5c8d0-9825-4f4c-bf4f-f846efcbb163",
+      "name": "GLENWOOD HORSE ALTERNATE LOOP",
+      "length_m": 2848.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:e7209671-7b0c-447f-b24b-e050063579f3",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 553.5,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:e727bfc7-0554-4f22-ae25-0fa9d323597f",
+      "name": "TERRAPIN",
+      "length_m": 861.1,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:e74e49c8-27ea-45e4-90f9-f93746e1cd80",
+      "name": "LAW",
+      "length_m": 105.4,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:e74e49c8-27ea-45e4-90f9-f93746e1cd80"
+        ],
+        "useful_connection": true,
+        "reference_count": 2,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:e74e49c8-27ea-45e4-90f9-f93746e1cd80",
+            "reference_id": "usfs-gwj:348415df-2757-4ca5-a20d-d832b2c1974c",
+            "reference_name": "MERTINS ROCK",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:e74e49c8-27ea-45e4-90f9-f93746e1cd80",
+            "reference_id": "usfs-gwj:61dbe971-da7e-4055-aa4d-4fbe36ea6efe",
+            "reference_name": "TASKERS GAP",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:e77f10c0-fb57-4e37-968d-c07a50124d9f",
+      "name": "VEACH GAP",
+      "length_m": 770.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659",
+      "name": "DEETS",
+      "length_m": 1.2,
+      "action": "reject",
+      "reason": "Under 0.1 mile; its short-segment component does not connect two useful trail records or form a substantial shortcut",
+      "geometry_use": null,
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+          "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+          "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659"
+        ],
+        "useful_connection": false,
+        "reference_count": 1,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 0.55
+          },
+          {
+            "short_id": "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 1.58
+          },
+          {
+            "short_id": "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 0.55
+          },
+          {
+            "short_id": "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 1.58
+          },
+          {
+            "short_id": "usfs-gwj:e8495d78-1b54-4d25-bc2b-00994b267659",
+            "reference_id": "usfs-gwj:c664819c-4e13-4ba2-a3e0-1b8002698abb",
+            "reference_name": "LITTLE HORSE GAP",
+            "distance_m": 2.79
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": [
+        "usfs-gwj:2ea485b1-7a4b-4f07-9873-e57c10fe3ca3",
+        "usfs-gwj:a3cc4933-be30-478c-ab93-a97c09eaf2c0"
+      ]
+    },
+    {
+      "id": "usfs-gwj:ea41146e-63d0-4658-a9ef-6fe265572233",
+      "name": "YANCY",
+      "length_m": 447.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:eb2435ae-9a30-4cb6-87c7-ceea1c0ea7b7",
+      "name": "STRAIGHT BRANCH",
+      "length_m": 439.0,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:ed093fd8-fc7f-4703-9b7f-1d590ccb5637",
+      "name": "VIRGINIA CREEPER",
+      "length_m": 2751.5,
+      "action": "hold",
+      "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:f142cd07-2a9b-4e66-b4e7-48784dbd14c4",
+      "name": "VIRGINIA CREEPER",
+      "length_m": 4617.8,
+      "action": "hold",
+      "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:f17008bd-a60e-4b9b-8880-02669ef3a1c3",
+      "name": "LOOP",
+      "length_m": 10.6,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:f17008bd-a60e-4b9b-8880-02669ef3a1c3"
+        ],
+        "useful_connection": true,
+        "reference_count": 2,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:f17008bd-a60e-4b9b-8880-02669ef3a1c3",
+            "reference_id": "usfs-gwj:824c3f6b-6e34-44a5-8254-88aae28b6404",
+            "reference_name": "LOOP",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:f17008bd-a60e-4b9b-8880-02669ef3a1c3",
+            "reference_id": "usfs-gwj:98d41d54-da8c-41a3-a1f9-bcbd2a3c75cd",
+            "reference_name": "CHESTNUT",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:f2d12f60-2885-4ec9-b4c3-41a29991f8ec",
+      "name": "TURTLE",
+      "length_m": 59.2,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:f2d12f60-2885-4ec9-b4c3-41a29991f8ec"
+        ],
+        "useful_connection": true,
+        "reference_count": 2,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:f2d12f60-2885-4ec9-b4c3-41a29991f8ec",
+            "reference_id": "usfs-gwj:61dbe971-da7e-4055-aa4d-4fbe36ea6efe",
+            "reference_name": "TASKERS GAP",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:f2d12f60-2885-4ec9-b4c3-41a29991f8ec",
+            "reference_id": "usfs-gwj:98d41d54-da8c-41a3-a1f9-bcbd2a3c75cd",
+            "reference_name": "CHESTNUT",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:f3289371-75e4-450e-87a2-69f135475dd6",
+      "name": "CAP",
+      "length_m": 437.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:f5065d19-f2ea-4724-9a74-5e074a1edff0",
+      "name": "MINES RUN",
+      "length_m": 3331.6,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:f841d4da-ba65-4fcc-9051-68dad79d584e",
+      "name": "MORRIS HILL",
+      "length_m": 429.9,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:fa899a34-5856-417a-a417-6e5b734ef7e6",
+      "name": "LITTLE",
+      "length_m": 146.8,
+      "action": "approve",
+      "reason": "Under 0.1 mile but connects useful trail geometry; preserve the connector",
+      "geometry_use": "addition",
+      "connectivity": {
+        "component_ids": [
+          "usfs-gwj:fa899a34-5856-417a-a417-6e5b734ef7e6"
+        ],
+        "useful_connection": true,
+        "reference_count": 2,
+        "contacts": [
+          {
+            "short_id": "usfs-gwj:fa899a34-5856-417a-a417-6e5b734ef7e6",
+            "reference_id": "usfs-gwj:61dbe971-da7e-4055-aa4d-4fbe36ea6efe",
+            "reference_name": "TASKERS GAP",
+            "distance_m": 0.0
+          },
+          {
+            "short_id": "usfs-gwj:fa899a34-5856-417a-a417-6e5b734ef7e6",
+            "reference_id": "usfs-gwj:348415df-2757-4ca5-a20d-d832b2c1974c",
+            "reference_name": "MERTINS ROCK",
+            "distance_m": 0.0
+          }
+        ],
+        "tolerance_m": 10
+      },
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:fa8b53ad-ec2e-4f0c-9df7-b86c881e81b5",
+      "name": "LA-DEE-DAH",
+      "length_m": 659.5,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:fd9a0b0b-9666-4fa9-9a3a-09ae8f31ed41",
+      "name": "KELLY",
+      "length_m": 873.7,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:ff0be9ff-7929-404e-801a-f017299351b8",
+      "name": "TURKEY",
+      "length_m": 1515.4,
+      "action": "approve",
+      "reason": "No contrary access evidence; approved under the user’s open-unless-contrary policy",
+      "geometry_use": "addition",
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    },
+    {
+      "id": "usfs-gwj:ffede8ab-2f14-4b30-b090-7662a62880f0",
+      "name": "HIGH KNOB LOOP",
+      "length_m": 3507.4,
+      "action": "reject",
+      "reason": "User rejected as redundant with a road",
+      "geometry_use": null,
+      "connectivity": null,
+      "existing_coverage": {
+        "3": 0,
+        "10": 0,
+        "20": 0,
+        "30": 0
+      },
+      "incoming_match_ids": []
+    }
+  ],
+  "published": false,
+  "limitations": [
+    "Connections use a 10 m tolerance, not a guarantee of trail conditions.",
+    "Access approval is separate from source replacement; Tuscarora overlaps must not be appended over existing lines.",
+    "Source geometry, explicit restrictions and current forest orders still require review on future changes."
+  ],
+  "decision_hash": "46d3f7d14ddfe0ab2ce37690b60c0ba08c74949128bf1309af85b2c8f754b868"
+}

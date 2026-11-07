@@ -1,0 +1,79 @@
+{
+  "status": "recommendations-awaiting-exception-review",
+  "reviewed_on": "2026-11-07",
+  "principles": [
+    "Prefer the responsible land manager or route steward with an accessible maintained source.",
+    "Distinguish authoritative ownership, update delivery, per-feature survey dates, and geometric agreement. A recent service timestamp alone proves none of the latter.",
+    "Keep official colors and route identities when changing geometry sources.",
+    "Treat crossings and shared tread separately from duplicates. Preserve cross-boundary continuations and the entire Rivanna network.",
+    "Source preferences require a concrete bounded replacement plan before any existing geometry is changed."
+  ],
+  "sources": [
+    {
+      "id": "usfs",
+      "name": "USFS National Forest System Trails",
+      "authority": "Official Forest Service enterprise publication for National Forest system trails",
+      "updates": "EDW documentation says daily refresh from forest databases; individual geometry may originate from older surveys. This pipeline monitors the service.",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0",
+      "evidence_url": "https://apps.fs.usda.gov/ArcX/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer",
+      "limitations": "No blaze colors or per-feature survey/update date in the reviewed feed; some hiking management is ambiguous."
+    },
+    {
+      "id": "nps-atc",
+      "name": "APPA Official Centerline — NPS / ATC",
+      "authority": "NPS-owned service used directly by the live ATC interactive map, built cooperatively with NPS. Verified owner jlfoster@nps.gov_nps, NPS organization fBc8EJBxQRMcHlei.",
+      "updates": "Active centralized route source; layer data edit timestamp 2026-10-28T16:24:29.645000+00:00. This is not a survey date. Regional records mostly cite 2001–2003 and 2015–2017 GPS surveys.",
+      "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANST_Centerline/FeatureServer/0",
+      "evidence_url": "https://appalachiantrail.org/experience/interactive-map/",
+      "webmap_item": "f0759fe58dcb4c5f9e0f9682a41678cc",
+      "service_item": "71975f7fc14347c7a6c1059fdb593f91",
+      "limitations": "New official reference for this exception round only, not an approved replacement. Preserve the existing route extent and verify changes before migration."
+    },
+    {
+      "id": "existing-at",
+      "name": "Existing Appalachian Trail import",
+      "authority": "Original upstream provenance was not retained in feature attributes; local features have only empty Name/description.",
+      "updates": "Mapbox dataset last modified 2020-01-09. That dates the local import, not necessarily its survey. No current upstream adapter.",
+      "url": "https://appalachiantrail.org/experience/interactive-map/",
+      "limitations": "Do not assume the existing geometry is wrong; compare it with the steward-maintained reference."
+    },
+    {
+      "id": "dcr",
+      "name": "Virginia DCR State Parks GIS",
+      "authority": "Official park operator GIS, already ingested with stable GlobalIDs and source URLs.",
+      "updates": "Existing monitored DCR pipeline; no fixed upstream update cadence asserted.",
+      "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Trails/FeatureServer/0",
+      "limitations": "Retain park-specific names/blazes and use USFS only for separately reviewed continuations outside the shared park tread."
+    },
+    {
+      "id": "patc-legacy",
+      "name": "Existing Tuscarora line in Shenandoah upload",
+      "authority": "Attributes identify PATC maintainer and Jim Tomlin (PATC), differential GPS, claimed horizontal accuracy >1m to <5m, blue blaze.",
+      "updates": "Source/GPS date 2019-12-21; local tileset uploaded in March 2020. No current refresh source is configured.",
+      "url": "https://www.patc.net/",
+      "limitations": "This is documented survey data, not an unverified crowd trace. USFS is easier to maintain, but its geometry is not automatically more accurate. Uploaded tiles have no editable source dataset; retain all unaffected NPS/PATC geometry when planning any replacement."
+    },
+    {
+      "id": "tnc",
+      "name": "TNC official georeferenced maps",
+      "authority": "Official preserve operator maps, exact vector extraction.",
+      "updates": "Maps dated 2020/2021; source URLs monitored and changed PDFs require revalidation.",
+      "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/warm-springs-mountain/",
+      "limitations": "Sandy Gap TNC east and west already explicitly accepted. USFS alternate is resolved for this round."
+    }
+  ],
+  "official_at_provenance_chain": {
+    "atc_page": "https://appalachiantrail.org/experience/interactive-map/",
+    "embedded_experience": "c218db84e3ec430db52249797f4cff43",
+    "webmap": "f0759fe58dcb4c5f9e0f9682a41678cc",
+    "service_item": "71975f7fc14347c7a6c1059fdb593f91",
+    "regional_query_envelope": [
+      -84,
+      36.4,
+      -77.4,
+      39.7
+    ],
+    "raw_sha256": "7faf8d2719a13f2970fea61d48db2fa36d2282158f825c26a08280913e13feb0",
+    "feature_count": 892
+  }
+}

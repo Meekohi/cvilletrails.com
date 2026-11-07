@@ -1,0 +1,33 @@
+{
+  "status": "awaiting-user-source-preferences",
+  "created_at": "2026-11-07T16:01:38.054790Z",
+  "review_hash": "2a0b1477abf629d8bc99192b6312f1d945c4baef635d3c74b4d4da9de5915c82",
+  "accepted_review_hash": "9dffb17fa75941dd753015cb41a46338fa34a3280b3bc9f0c6db62eafc53622b",
+  "acceptance_hash": "90518b6cc80293db973fe0613f1814001051e13ef1dfb1937e9e6e034e897ce1",
+  "accepted_count": 967,
+  "unresolved_count": 305,
+  "groups": {
+    "access": 168,
+    "at-junctions": 13,
+    "same-source": 25,
+    "appalachian": 73,
+    "patc": 20,
+    "state-parks": 6,
+    "resolved": 1
+  },
+  "official_at_reference_count": 892,
+  "at_conflict_count": 73,
+  "at_conflicts_at_least_80_percent_covered_within_20m": 73,
+  "source_preferences_hash": "3f12199d86837923000f91e6538e0ac48a0212f599819bf1956eb52246699060",
+  "official_at_hash": "0fe6c25e0764996353d4823cf57c6f1c92210a7c0ec5f9f68dcd76289d3930eb",
+  "preview_url": "http://localhost:8011/exceptions/",
+  "published": false,
+  "evidence_directory": ".trail-state/tnc-usfs-review/exceptions",
+  "research_directory": ".trail-state/tnc-usfs-exceptions-research",
+  "validation": [
+    "148 Python tests including exact GeoPDF extraction, immutable acceptance, source authority recommendations, and guarded preference import",
+    "Playwright actual geometry rendering, NPS/ATC reference, source evidence, group recommendations, access guards, resolved Sandy Gap, export, persistence, mobile",
+    "Browser-generated test export successfully imported as source preferences only",
+    "Configuration validation, JavaScript syntax check and git whitespace checks"
+  ]
+}

@@ -31,6 +31,9 @@ class TextExtractor(HTMLParser):
 
 def extract(data, kind):
     if kind == 'pdf': return ''
+    if kind == 'tnc-catalog':
+        from .tnc import catalog
+        return json.dumps(catalog(data), sort_keys=True, indent=2)
     text = data.decode('utf-8', errors='replace')
     if kind == 'html':
         parser = TextExtractor()
@@ -151,7 +154,8 @@ def check(pipeline=None, use_llm=False, state_dir=STATE, source_id=None):
                     if old.get('etag'): headers['If-None-Match'] = old['etag']
                     if old.get('last_modified'): headers['If-Modified-Since'] = old['last_modified']
                 if source['kind'] == 'arcgis':
-                    data, raw_headers, code = fetch_arcgis(source['url'], request_fn=fetch), {}, 200
+                    data, raw_headers, code = fetch_arcgis(source['url'], request_fn=fetch, where=source.get('where', '1=1'),
+                        **({'bbox':source['bbox']} if 'bbox' in source else {})), {}, 200
                 else:
                     data, raw_headers, code = fetch(source['url'], headers=headers)
                 response_headers = {k.lower(): v for k, v in raw_headers.items()}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "dataset": "ck578grpj01232ipbxr2ampjj",
+  "source_layer": "Appalachian_Trail",
+  "bounds": [
+    -81.820394,
+    36.615246,
+    -77.681581,
+    39.329849
+  ],
+  "baseline_hash": "33c7deae8cd63a48b586f4ebd18a6ce03dc2bb3c4b915016192f1ac6c694e727",
+  "method": "Clip official centerline to actual existing geometry bounds, not stale Mapbox metadata. Flag all clipped endpoint records and substantive alignment differences for the replacement comparison.",
+  "allow_geographic_expansion": false
+}

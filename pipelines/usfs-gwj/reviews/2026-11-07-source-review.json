@@ -1,0 +1,162 @@
+{
+  "status": "proposed-subset-accepted-exceptions-pending",
+  "published": false,
+  "review_hash": "9dffb17fa75941dd753015cb41a46338fa34a3280b3bc9f0c6db62eafc53622b",
+  "pipeline": "usfs-gwj",
+  "source_count": 1294,
+  "valid_geometry_count": 1257,
+  "initial_access_holds": 160,
+  "rejected_count": 37,
+  "source_snapshot_hash": "2f1fd0a7ac719c2c23483f0fb854807fc55ae148486d1973ca0f8277a4b51eb7",
+  "review_counts": {
+    "proposed": 951,
+    "access-hold": 168,
+    "overlap-hold": 20,
+    "incoming-overlap": 25,
+    "duplicate": 92,
+    "alternate-source": 1
+  },
+  "inventory_sources": [
+    {
+      "id": "cjawpwbc10plf2wo9wzo2o97d",
+      "name": "City_Trails",
+      "hash": "5801bde5b3e00edaaf12478b44c90617fee7eaee5a7bea272577eb97cfbf900e",
+      "features": 264
+    },
+    {
+      "id": "cjawyutol0r7d2wo1z7eb0wiy",
+      "name": "Rivanna Trail",
+      "hash": "4ba781f25967138b8313362c61d59d3c8d0de156fe31945be9887092a7969e13",
+      "features": 72
+    },
+    {
+      "id": "cjcm3ne8w0os033rw0ceoi0ye",
+      "name": "Albemarle County Trails",
+      "hash": "002d5a581c35156bac6b5bacee90874893c909a999685706ade15cf4372e371b",
+      "features": 410
+    },
+    {
+      "id": "cjcwe24s41blz2wnuwiu5nyxn",
+      "name": "UVA Trails",
+      "hash": "5c65942798553d78b8f92ba13cf1fae174d7cc71b9c06966195dd9dd2e2803e1",
+      "features": 18
+    },
+    {
+      "id": "cjd3c6ua70tt52wqjqzmjg4ls",
+      "name": "Strava Sidetrails",
+      "hash": "798efe0fa40b7397d246f7f4e80adf89a5c26a3032fd03aa63aa603a6e4ed062",
+      "features": 559
+    },
+    {
+      "id": "ck0qtqwbv0hng2uphyjmayhis",
+      "name": "CTom Demo",
+      "hash": "2d4971fa1182d449e813057ae745925e41d84c3d9496e98bbb74a4a04b6fc550",
+      "features": 4
+    },
+    {
+      "id": "ck3nfaqiq4khu2nl9w4bwsldx",
+      "name": "Monticello Trail",
+      "hash": "83c7e9e4b74c6679664a2e1bf883b7d03580998c55befd10ece37d42abde761f",
+      "features": 26
+    },
+    {
+      "id": "ck3yw9drj03ad2nrurh0ehyef",
+      "name": "Montpelier Trails",
+      "hash": "770a1beed1ba3e605ce220b7bd4c20f22a6d68f2cf5c4212ee42bd9c6d7cbe4a",
+      "features": 6
+    },
+    {
+      "id": "ck51rmxqm6i332ip8gurz7h4l",
+      "name": "Wintergreen Trails",
+      "hash": "38ee7cf537dc86316710993a737410ca2cb82c209a3abcd07cda263fadce89d2",
+      "features": 78
+    },
+    {
+      "id": "ck578grpj01232ipbxr2ampjj",
+      "name": "Appalachian Trail",
+      "hash": "33c7deae8cd63a48b586f4ebd18a6ce03dc2bb3c4b915016192f1ac6c694e727",
+      "features": 627
+    },
+    {
+      "id": "ckfh5qbi7380826oij568hhbg",
+      "name": "Ragged Mountain Trails",
+      "hash": "82c9930c9c2adaf70b1b80b295ccfb9314aa4f491ce987587bf5495b93e6410b",
+      "features": 4
+    },
+    {
+      "id": "ckuppnp9h534y23pyswjd7n1a",
+      "name": "City_Trails 2021-10-13",
+      "hash": "c81f0cb5adcff58602284baf22fd1bfdf501f1dda10f8bdd8d5356e9388d670b",
+      "features": 225
+    },
+    {
+      "id": "ckuzk86a07v6o23pymu3yppl6",
+      "name": "Pleasant Grove Park",
+      "hash": "88e0f21a40533c5f3c6e622cd99ddc023144e6d790b935c8ab473808eb506aa4",
+      "features": 38
+    }
+  ],
+  "tile_references": [
+    {
+      "tileset": "meekohi.8n5896es",
+      "zoom": 12,
+      "tiles": 37,
+      "layers": [
+        "shen-08a9vs"
+      ],
+      "metadata_hash": "829a035885715f3c91b6a4458c2ffabc6d67a71986f1eabf742c97338b8741de"
+    }
+  ],
+  "method": "All 13 editable datasets plus z12 custom Shenandoah tile fragments near candidate lines. Length coverage at 3/10/20/30 m. Crossings under 30 m excluded. No existing geometry, colors or Rivanna records changed. Parallel nearby trails can trigger conservative holds.",
+  "current_access_rules": {
+    "reviewed_on": "2026-11-07",
+    "holds": [
+      {
+        "name_pattern": "VIRGINIA CREEPER",
+        "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled"
+      },
+      {
+        "name_pattern": "GLEN ALTON",
+        "reason": "Glen Alton construction closure through mid-November; hold pending access review"
+      },
+      {
+        "name_pattern": "GRINDSTONE",
+        "reason": "Grindstone campground and parking closed for 2026; hold pending trailhead/access review"
+      }
+    ],
+    "notices": [
+      {
+        "title": "Virginia Creeper closure",
+        "body": "The Damascus–Whitetop section remains closed for reconstruction. All incoming Virginia Creeper records are held.",
+        "url": "https://www.fs.usda.gov/r08/gwj/alerts/virginia-creeper-trail-reconstruction-closures"
+      },
+      {
+        "title": "Warm Springs access",
+        "body": "FSR 125 D (Skyline Drive) is closed for repairs through approximately December 2026. This is a road closure, not evidence that Bear Loop is closed. Check the approach for Sandy Gap with the district.",
+        "url": "https://www.fs.usda.gov/r08/gwj/alerts/forest-service-road-125-skyline-drive-closure-through-december-james-river-and-warm"
+      },
+      {
+        "title": "Forest alerts",
+        "body": "Current alerts also include road work, Grindstone parking and Glen Alton construction closures. Managed hiking dates do not override forest orders.",
+        "url": "https://www.fs.usda.gov/r08/gwj/alerts"
+      }
+    ]
+  },
+  "validation": [
+    "141 Python tests including the five exact official PDF regressions",
+    "8 JavaScript unit tests",
+    "JavaScript syntax checks",
+    "Static-site build and maintenance configuration validation",
+    "11 new live source checks completed without errors",
+    "Playwright comparison maps, actual rendered lines, filters, feedback export, held guard, persistence and mobile layout"
+  ],
+  "evidence_directory": ".trail-state/tnc-usfs-review",
+  "limitations": [
+    "PDF control residual measures transform fit, not ground accuracy.",
+    "USFS has no blaze colors: neutral brown is a display choice.",
+    "Access records are not current opening guarantees; forest orders override them.",
+    "Basemap paths are background context, not editable custom trail records."
+  ],
+  "accepted_count": 951,
+  "acceptance_record": "pipelines/tnc-virginia/reviews/2026-11-07-acceptance.json"
+}

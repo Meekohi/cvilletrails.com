@@ -1,0 +1,6 @@
+pymupdf==2.1
+pypdf==7.0.0
+numpy==2.5.4
+pyproj==3.8.0
+shapely==2.2.0
+mapbox-vector-tile==2.2.0

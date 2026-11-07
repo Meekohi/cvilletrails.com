@@ -1,0 +1,34 @@
+{
+  "reviewed_on": "2026-11-07",
+  "holds": [
+    {
+      "name_pattern": "VIRGINIA CREEPER",
+      "reason": "Current Virginia Creeper reconstruction closure; hold all source segments until closure extent is reconciled"
+    },
+    {
+      "name_pattern": "GLEN ALTON",
+      "reason": "Glen Alton construction closure through mid-November; hold pending access review"
+    },
+    {
+      "name_pattern": "GRINDSTONE",
+      "reason": "Grindstone campground and parking closed for 2026; hold pending trailhead/access review"
+    }
+  ],
+  "notices": [
+    {
+      "title": "Virginia Creeper closure",
+      "body": "The Damascus–Whitetop section remains closed for reconstruction. All incoming Virginia Creeper records are held.",
+      "url": "https://www.fs.usda.gov/r08/gwj/alerts/virginia-creeper-trail-reconstruction-closures"
+    },
+    {
+      "title": "Warm Springs access",
+      "body": "FSR 125 D (Skyline Drive) is closed for repairs through approximately December 2026. This is a road closure, not evidence that Bear Loop is closed. Check the approach for Sandy Gap with the district.",
+      "url": "https://www.fs.usda.gov/r08/gwj/alerts/forest-service-road-125-skyline-drive-closure-through-december-james-river-and-warm"
+    },
+    {
+      "title": "Forest alerts",
+      "body": "Current alerts also include road work, Grindstone parking and Glen Alton construction closures. Managed hiking dates do not override forest orders.",
+      "url": "https://www.fs.usda.gov/r08/gwj/alerts"
+    }
+  ]
+}

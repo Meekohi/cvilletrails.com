@@ -11830,5 +11830,186 @@
       "reviewed_on": "2026-11-03"
     },
     "map_note": "Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+  },
+  {
+    "id": "warm-springs-mountain",
+    "name": "Warm Springs Mountain Preserve",
+    "area": "Bath County",
+    "description": "Bear Loop near Ingalls Field, Ingalls Overlook off Route 39, and Sandy Gap are mapped from official TNC trail maps. Check approach-road conditions before visiting.",
+    "bounds": [
+      -79.85883819,
+      37.90534685,
+      -79.75933617,
+      38.06613921
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/warm-springs-mountain/",
+    "source_label": "The Nature Conservancy",
+    "context_mode": "trail",
+    "context_min_zoom": 14,
+    "info_reviewed_on": "2026-11-07",
+    "info_sources": [
+      {
+        "id": "visitor-guide",
+        "label": "Official visitor guidance",
+        "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/warm-springs-mountain/"
+      }
+    ],
+    "description_sources": [
+      "visitor-guide"
+    ]
+  },
+  {
+    "id": "bottom-creek-gorge",
+    "name": "Bottom Creek Gorge Preserve",
+    "area": "Montgomery County",
+    "description": "TNC walking trails reach the gorge overlook. Open dawn to dusk; dogs and fishing are not permitted.",
+    "bounds": [
+      -80.19238856,
+      37.11726236,
+      -80.17747095,
+      37.13341203
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/bottom-creek-gorge/",
+    "source_label": "The Nature Conservancy",
+    "context_mode": "trail",
+    "context_min_zoom": 14,
+    "info_reviewed_on": "2026-11-07",
+    "info_sources": [
+      {
+        "id": "visitor-guide",
+        "label": "Official visitor guidance",
+        "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/bottom-creek-gorge/"
+      }
+    ],
+    "description_sources": [
+      "visitor-guide"
+    ]
+  },
+  {
+    "id": "cumberland-marsh",
+    "name": "Vandell Preserve at Cumberland Marsh",
+    "area": "New Kent County",
+    "description": "TNC hiking trails and marsh viewing areas. Open dawn to dusk; dogs are not permitted.",
+    "bounds": [
+      -76.99472969,
+      37.53386427,
+      -76.98219504,
+      37.54833955
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/vandell-preserve-at-cumberland-marsh/",
+    "source_label": "The Nature Conservancy",
+    "context_mode": "trail",
+    "context_min_zoom": 14,
+    "info_reviewed_on": "2026-11-07",
+    "info_sources": [
+      {
+        "id": "visitor-guide",
+        "label": "Official visitor guidance",
+        "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/vandell-preserve-at-cumberland-marsh/"
+      }
+    ],
+    "description_sources": [
+      "visitor-guide"
+    ]
+  },
+  {
+    "id": "usfs-gwj",
+    "name": "George Washington and Jefferson National Forests",
+    "area": "Virginia and neighboring forest lands",
+    "description": "Official Forest Service trails across George Washington and Jefferson National Forests. Check current forest alerts and orders for closures and access conditions.",
+    "bounds": [
+      -82.9347788353189,
+      36.61145728035843,
+      -78.28834711274328,
+      39.13383606772756
+    ],
+    "source_layers": [
+      "Strava_Sidetrails"
+    ],
+    "url": "https://www.fs.usda.gov/r08/gwj/alerts",
+    "source_label": "US Forest Service",
+    "context_mode": "trail",
+    "context_min_zoom": 14,
+    "info_reviewed_on": "2026-11-07",
+    "info_sources": [
+      {
+        "id": "visitor-guide",
+        "label": "Official visitor guidance",
+        "url": "https://www.fs.usda.gov/r08/gwj/alerts"
+      }
+    ],
+    "description_sources": [
+      "visitor-guide"
+    ]
+  },
+  {
+    "id": "tuscarora-trail",
+    "name": "Tuscarora Trail",
+    "area": "Regional trail",
+    "description": "The Tuscarora Trail crosses Virginia, West Virginia, Maryland and Pennsylvania. Consult PATC’s route guidance and current notices before heading out.",
+    "bounds": [
+      -78.62399518489838,
+      38.818373868021375,
+      -77.08922445774078,
+      40.30051699216619
+    ],
+    "source_layers": [
+      "Strava_Sidetrails",
+      "shen-08a9vs"
+    ],
+    "url": "https://www.patc.net/tuscarora-trail",
+    "source_label": "Potomac Appalachian Trail Club",
+    "context_mode": "trail",
+    "context_min_zoom": 14,
+    "info_reviewed_on": "2026-11-07",
+    "info_sources": [
+      {
+        "id": "visitor-guide",
+        "label": "Official trail guidance",
+        "url": "https://www.patc.net/tuscarora-trail"
+      }
+    ],
+    "description_sources": [
+      "visitor-guide"
+    ]
+  },
+  {
+    "id": "appalachian-trail",
+    "name": "Appalachian Trail",
+    "area": "Regional trail",
+    "description": "Explore the Appalachian Trail using the official NPS/ATC centerline. Check the Appalachian Trail Conservancy’s current guidance when planning a hike.",
+    "bounds": [
+      -81.820394,
+      36.615246,
+      -77.681581,
+      39.329849
+    ],
+    "source_layers": [
+      "Appalachian_Trail"
+    ],
+    "url": "https://appalachiantrail.org/experience/interactive-map/",
+    "source_label": "Appalachian Trail Conservancy",
+    "context_mode": "trail",
+    "context_min_zoom": 14,
+    "info_reviewed_on": "2026-11-07",
+    "info_sources": [
+      {
+        "id": "visitor-guide",
+        "label": "Official trail guidance",
+        "url": "https://appalachiantrail.org/experience/interactive-map/"
+      }
+    ],
+    "description_sources": [
+      "visitor-guide"
+    ]
   }
 ]

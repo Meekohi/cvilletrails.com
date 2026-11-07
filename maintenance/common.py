@@ -89,7 +89,7 @@ def configs(pipeline=None):
                 ids.add(source['id'])
                 if 'system_ids' in source and (not source['system_ids'] or not set(source['system_ids']).issubset(config['system_ids'])):
                     raise ValueError('Source systems must be a nonempty subset of pipeline systems')
-                if not source['url'].startswith('https://') or source['kind'] not in {'html', 'pdf', 'geojson', 'arcgis', 'text'}:
+                if not source['url'].startswith('https://') or source['kind'] not in {'html', 'pdf', 'geojson', 'arcgis', 'text', 'tnc-catalog'}:
                     raise ValueError('Sources require HTTPS and a supported format')
                 manual = source.get('manual_review_on_403')
                 if manual is not None:

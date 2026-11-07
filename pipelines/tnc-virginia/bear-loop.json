@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "bear-loop",
+  "system_id": "warm-springs-mountain",
+  "filename": "WSM_BearLoop_Map_June2020.pdf",
+  "url": "https://www.nature.org/content/dam/tnc/nature/en/documents/WSM_BearLoop_Map_June2020.pdf",
+  "pdf_sha256": "f8fadf80d26ab6b3fba01fda0d77417c4212332b7ffa06f7ec8687fabde228c2",
+  "page": 0,
+  "viewport_name": "Layers",
+  "vector_layer": "Bear Loop Trail (2.9 miles)",
+  "expected_crs_epsg": 26917,
+  "max_control_residual_m": 1,
+  "expected_bounds": [
+    -79.83444474758707,
+    37.954545693962054,
+    -79.82201425257409,
+    37.971052408873256
+  ],
+  "map_date": "2020-06",
+  "palette": {
+    "red": [
+      0.9333299994468689,
+      0.2078399956226349,
+      0.14117999374866486
+    ]
+  },
+  "paths": [
+    {
+      "drawing": 161,
+      "id": "loop-and-approach",
+      "name": "Bear Loop",
+      "color": "red",
+      "segments": 128,
+      "width": 1.4400999546051025
+    }
+  ],
+  "notes": "Selectors apply only to this PDF hash. Stable segment IDs must be reviewed against topology before any future reassignment. Colors are official map symbols, not independently verified blaze colors."
+}

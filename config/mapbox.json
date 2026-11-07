@@ -37,6 +37,12 @@
       "dataset": "cjd3c6ua70tt52wqjqzmjg4ls",
       "tileset": "meekohi.cjd3c6ua70tt52wqjqzmjg4ls-9g1hg",
       "source_layer": "Strava_Sidetrails"
+    },
+    {
+      "id": "appalachian-trail",
+      "dataset": "ck578grpj01232ipbxr2ampjj",
+      "tileset": "meekohi.ck578grpj01232ipbxr2ampjj-7v6dv",
+      "source_layer": "Appalachian_Trail"
     }
   ]
 }

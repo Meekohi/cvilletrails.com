@@ -118,7 +118,8 @@ class CoverageTests(unittest.TestCase):
 
     def test_arcgis_pages_use_the_same_read_only_retry_policy(self):
         config = {**self.config, 'sources': [{**self.source, 'kind': 'arcgis'}]}
-        def arcgis(url, request_fn):
+        def arcgis(url, request_fn, where="1=1"):
+            self.assertEqual(where, "1=1")
             request_fn(url + '/query')
             return b'{"type":"FeatureCollection","features":[]}'
         with tempfile.TemporaryDirectory() as tmp, patch('maintenance.monitor.configs', return_value=[config]), patch('maintenance.monitor.fetch_arcgis', side_effect=arcgis), patch('maintenance.monitor.request', side_effect=[RequestError('timeout'), (b'{}', {}, 200)]), patch('maintenance.monitor.time.sleep'), patch('maintenance.monitor.run_adapter', return_value={'type':'FeatureCollection','features':[]}):

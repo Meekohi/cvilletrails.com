@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-07",
+  "published": false,
+  "original_accepted_count": 967,
+  "confirmed_source_preferences": 137,
+  "source_decision_hash": "db494fae49b6074e84d7afc673b63144f40d678b4147c3fe6aa6caacf50d75fe",
+  "access_decision_hash": "46d3f7d14ddfe0ab2ce37690b60c0ba08c74949128bf1309af85b2c8f754b868",
+  "access_counts": {
+    "approve": 139,
+    "reject": 17,
+    "hold": 12
+  },
+  "new_additions": 137,
+  "source_replacements": 2,
+  "combined_additions": 1104,
+  "combined_geometry_hash": "a961cedce352233e16cf1366869262e162ab2f8f7b7ae8ff15c52e72bb170c37",
+  "useful_short_connectors_kept": 10,
+  "validation": {
+    "python_suite": "158 tests passed; 5 AT/access tests rerun after boundary-touch fix",
+    "web_unit_tests": "8 passed",
+    "browser_reviews": [
+      "exceptions: confirmed choices locked, access filters, receipt-bound export, rendered geometry and mobile",
+      "AT: rendered before/after lines, old overlay, bounded coverage and mobile"
+    ],
+    "configuration": "maintenance validate passed",
+    "site": "npm check and build passed",
+    "immutable_acceptance": "Original 967 and supporting proposal hashes verified",
+    "current_usfs_normalization": {
+      "features": 1167,
+      "excluded": 90,
+      "invalid_geometry": 37,
+      "attribute_holds": 4,
+      "closure_holds_added_in_review": 8
+    }
+  },
+  "remaining_work": [
+    "Prepare exact Tuscarora/shared-tread/DCR-continuation merge plans from the confirmed source preferences, preserving verified colors and unrelated geometry.",
+    "Prepare publication plans against a fresh inventory; no remote writes have occurred."
+  ],
+  "audit_hash": "8742f8d62dfac399d57fdf651b17a3871883327502cf1f3b0693b0012d17b237"
+}
