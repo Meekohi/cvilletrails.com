@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "kind": "approved-visitor-information-update",
+  "reviewed_at": "2026-11-14T14:23:32.159820Z",
+  "authorization": "GO ahead make the updates, and push it to meekohi.com",
+  "source_run": "https://github.com/Meekohi/cvilletrails.com/actions/runs/43484027877",
+  "source_verification": [
+    {
+      "url": "https://highland.org/plan-your-visit/highland-trails/",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "0ede428c6189cef39d000f8c1a3f89f52b7deca1c0924be312e10f227a63fbf4"
+    }
+  ],
+  "notices": [
+    {
+      "id": "e607e23c7f97c822c8a99dad",
+      "title": "Highland’s last admission is 1:30 p.m. on November 14",
+      "body": "A private afternoon event moves Highland’s last admission to 1:30 p.m. on Saturday, November 14.",
+      "kind": "information",
+      "evidence": "Due to a private afternoon event, Highland’s last admission on Saturday, November 14 will be at 1:30 PM.",
+      "system_ids": [
+        "highland"
+      ],
+      "source_url": "https://highland.org/plan-your-visit/highland-trails/",
+      "source_label": "Highland trails",
+      "status": "approved",
+      "reviewer": "Claude; approved by site owner in chat",
+      "reviewed_at": "2026-11-14T14:23:32.159820Z",
+      "starts_at": "2026-11-14T14:23:32.159820Z",
+      "expires_at": "2026-11-15T00:00:00-05:00",
+      "snapshot_sha256": "0ede428c6189cef39d000f8c1a3f89f52b7deca1c0924be312e10f227a63fbf4"
+    }
+  ]
+}

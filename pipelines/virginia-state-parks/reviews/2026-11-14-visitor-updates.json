@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "kind": "approved-visitor-information-update",
+  "reviewed_at": "2026-11-14T14:23:32.159820Z",
+  "authorization": "GO ahead make the updates, and push it to meekohi.com",
+  "source_run": "https://github.com/Meekohi/cvilletrails.com/actions/runs/43484027877",
+  "method": "Live DCR park pages fetched 2026-11-14; each map_note re-checked against the page #alert block. Expired alerts removed, unchanged alerts re-dated, new dated closures added.",
+  "source_verification": [
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/claytor-lake",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "07cda042cc433462b3ba0d921267c8b499e48d94f8840aaa4145ef6b7d6eb7c6"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/false-cape",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "3756b3a9d20e67e30616931037eba92796ce458c603db80ecd0e04f46c41e7a5"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/grayson-highlands",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "b64b0140bf8b597586b99b82abb2a68c64a64d6981da39f4e8d7798578501c90"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/high-bridge-trail",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "4863e852be8be4253852b6261d65f536894f9b9ffd66cabbda8266c068815f6f"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/holliday-lake",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "eb693dba1d90187262906ab0e305749a1ec139e3c50cf849d07cff2f5fca6a61"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/hungry-mother",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "d840da72eb176efdcb5f692959f3ad1bb34e1e96af2023f85d70213b46efef9b"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/james-river",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "7c8f149f3c833b62395701f15b01b07221dfb2f7bb20fe7a315f65734d1c40c4"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/leesylvania",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "36aa0ae10dd73515f1191f2cc1f75bd000a4ed2371cf0b2d678ff7000809256e"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/machicomoco",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "007faf8f0371cabb119f3a916280d7089dfa90657b1d88a0d512e8b3c1fc5a06"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/mason-neck",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "fbfeaa4148ace343540c3035b0b40bd38538c60c2adf0aa942232b311253332f"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/pocahontas",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "d88b908d146e898f988698ef4232d303a43ee94c4347e5e4a9232c4c4b3a45f7"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/seven-bends",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "f4209eb44a79825590696db881b5678da6c2233b9ff0623556a8578aa54dc5e3"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/shenandoah-river",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "67ea5af01a63f957d416f09f818b3ef341d322b63f0add8fdc2b52bb878a002f"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "adbd60b23f120d1956aef2f2e557538404a44fd449d35e90ad1a18120e069055"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/smith-mountain-lake",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "25a95af671bb72daee3507b02d93cba2a38c7240cb53ec89ea5b628eae6189e1"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/sweet-run",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "03d7db766f3fbe557c84ed6e357aad0b390d0b6f873a7595b5710ddff4c837cd"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/twin-lakes",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "634177504a6c61fb8d202e5feeca6555663d90d1f4b1203120c72046e5c6d4af"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/westmoreland",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "7fff866b1a0fcb65adeb10d99a7c52114fe828dee42a8e2fe51e405949454914"
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
+      "status": 200,
+      "checked_at": "2026-11-14T14:23:32.159820Z",
+      "sha256": "6f3ca40a8bb9dd341985c199261e9a73bb977bb8691ea746158ca63a95a07574"
+    }
+  ],
+  "changes": [
+    {
+      "system": "dcr-claytor-lake-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Beach-area parking resurfacing is planned to begin Nov. 2. Consider the northeast side of the park and expect construction traffic near the cabins. Check the official park page for current conditions."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: The park is closed Dec. 12 and Jan. 8–9, 2027 for natural resource management. Check the official park page for current conditions."
+      }
+    },
+    {
+      "system": "dcr-false-cape-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Through March 31, 2027, access is via the beach because Back Bay refuge’s interior trails are seasonally closed. The visitor center is also closed Mondays through Wednesdays during this period. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Through March 31, 2027, access is via the beach because Back Bay refuge’s interior trails are seasonally closed. The visitor center is also closed Mondays through Wednesdays during this period. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-grayson-highlands-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Public access is closed Nov. 2–3 and Nov. 16–17 for resource management. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Public access is closed Nov. 16–17 for resource management. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-high-bridge-trail-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Bridge replacement interrupts the route east of Farmville’s Main Street through Osborne Road during November, affecting access from downtown to High Bridge. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Bridge replacement interrupts the route east of Farmville’s Main Street through Osborne Road during November, affecting access from downtown to High Bridge. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-holliday-lake-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Bridge work closes the Holliday Lake Road approach from Highway 24 through Nov. 20. Use Hollywood Road for access. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Bridge work closes the Holliday Lake Road approach from Highway 24 through Nov. 20. Use Hollywood Road for access. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-hungry-mother-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Old Shawnee and Raider’s Run are now downhill biking routes only. Get the updated trail map from the park office. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Old Shawnee and Raider’s Run are now downhill biking routes only. Get the updated trail map from the park office. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-james-river-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: The park is scheduled to close Nov. 9–11 and Dec. 7–9 for resource management. Dixon Landing’s boat ramp is also closed Nov. 1–5 for road work. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: The park is scheduled to close Dec. 7–9 for natural resource management. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-leesylvania-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: The Potomac Heritage Trail is closed for maintenance. Seasonal hunting may occur nearby; follow posted signs and designated routes. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Migratory waterfowl and game-bird hunting may occur around the park during posted seasons; stay on designated trails. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-machicomoco-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: The park is scheduled to close Nov. 18–19 for resource management, with reopening planned for 9 a.m. Nov. 20. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: The park is scheduled to close Nov. 18–19 for resource management, with reopening planned for 9 a.m. Nov. 20. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-mason-neck-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Construction closes Marsh View Trail and its parking area. Drinking water and regular restrooms are unavailable; portable toilets are provided at the visitor center and picnic area. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Construction closes Marsh View Trail and its parking area. Drinking water and regular restrooms are unavailable; portable toilets are provided at the visitor center and picnic area. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-pocahontas-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Managed hunts close areas south of Beach Road Nov. 9–10 and the entire park Dec. 7–8. Permitted weekday archery hunting continues in designated areas through Jan. 1; those areas remain accessible to other visitors. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Managed deer hunts close the entire park Dec. 7–8. Permitted weekday archery hunting continues in designated areas through Jan. 1; those areas remain open to other visitors. The boat ramp is closed until about 4 p.m. Dec. 12 for the Polar Plunge. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-seven-bends-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Renovation work closes part of western Kestrel Dell Trail. Follow trailhead notices for the affected section. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Renovation work closes part of western Kestrel Dell Trail. Follow trailhead notices for the affected section. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-shenandoah-river-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: A resource-management closure runs from dusk Nov. 1 until the morning of Nov. 4. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-sky-meadows-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Main-lot resurfacing is expected Nov. 5–6. Use the overflow lot or other designated parking. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-smith-mountain-lake-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Managed hunts close the park Nov. 2–3 and Nov. 9–10; overnight stays are restricted to hunters during those closures. Check the official park page for current conditions."
+      },
+      "after": {
+        "map_note": "Check the official park page for current conditions."
+      }
+    },
+    {
+      "system": "dcr-sweet-run-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Sections of Legacy Loop are closed without a stated reopening date. Gordon Pond Spur provides an alternate route around the pond; follow local signs. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: The park is closed Nov. 16 and 23 for resource management. Sections of Legacy Loop remain closed until further notice; Gordon Pond Spur provides an alternate route around the pond. Follow trail signs. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-twin-lakes-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Maintenance closes Goodwin Lake Trail until Nov. 9. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    },
+    {
+      "system": "dcr-westmoreland-state-park",
+      "before": {
+        "map_note": "DCR alert checked Nov. 3, 2026: Cabin and shoreline construction may limit parking capacity and beach access. DCR reports Big Meadow Trail, Fossil Beach and the day-use beach remain accessible. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      },
+      "after": {
+        "map_note": "DCR alert checked Nov. 14, 2026: Cabin and shoreline construction may limit parking capacity and beach access. DCR reports Big Meadow Trail, Fossil Beach and the day-use beach remain accessible. Check the official park page for current conditions. Trail coverage is incomplete. Check the official trail map and current park alerts when planning your route."
+      }
+    }
+  ],
+  "notices": [
+    {
+      "id": "6455c77fa1d3fda578d50b86",
+      "title": "Martin’s Station and Pioneer Trail closed through November 15",
+      "body": "Martin’s Station and the Pioneer Trail are closed to park guests Nov. 12–15 for volunteer training and the Forting Up program.",
+      "kind": "closure",
+      "evidence": "Due to volunteer training and the \"Forting Up\" program, Martin's Station and Pioneer Trail will be closed to park guest Nov 12-15.",
+      "system_ids": [
+        "dcr-wilderness-road-state-park"
+      ],
+      "source_url": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
+      "source_label": "Wilderness Road State Park visitor information",
+      "status": "approved",
+      "reviewer": "Claude; approved by site owner in chat",
+      "reviewed_at": "2026-11-14T14:23:32.159820Z",
+      "starts_at": "2026-11-14T14:23:32.159820Z",
+      "expires_at": "2026-11-16T00:00:00-05:00",
+      "snapshot_sha256": "6f3ca40a8bb9dd341985c199261e9a73bb977bb8691ea746158ca63a95a07574"
+    }
+  ]
+}

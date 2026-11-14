@@ -18,6 +18,42 @@
       "starts_at": "2026-11-07T14:38:02.976179Z",
       "expires_at": "2026-11-11T00:00:00-05:00",
       "snapshot_sha256": "9b3cfb6453954e6a23ebd73d892c0ae553a93cc9bf0f42728a51cc26186a2e85"
+    },
+    {
+      "id": "6455c77fa1d3fda578d50b86",
+      "title": "Martin’s Station and Pioneer Trail closed through November 15",
+      "body": "Martin’s Station and the Pioneer Trail are closed to park guests Nov. 12–15 for volunteer training and the Forting Up program.",
+      "kind": "closure",
+      "evidence": "Due to volunteer training and the \"Forting Up\" program, Martin's Station and Pioneer Trail will be closed to park guest Nov 12-15.",
+      "system_ids": [
+        "dcr-wilderness-road-state-park"
+      ],
+      "source_url": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
+      "source_label": "Wilderness Road State Park visitor information",
+      "status": "approved",
+      "reviewer": "Claude; approved by site owner in chat",
+      "reviewed_at": "2026-11-14T14:23:32.159820Z",
+      "starts_at": "2026-11-14T14:23:32.159820Z",
+      "expires_at": "2026-11-16T00:00:00-05:00",
+      "snapshot_sha256": "6f3ca40a8bb9dd341985c199261e9a73bb977bb8691ea746158ca63a95a07574"
+    },
+    {
+      "id": "e607e23c7f97c822c8a99dad",
+      "title": "Highland’s last admission is 1:30 p.m. on November 14",
+      "body": "A private afternoon event moves Highland’s last admission to 1:30 p.m. on Saturday, November 14.",
+      "kind": "information",
+      "evidence": "Due to a private afternoon event, Highland’s last admission on Saturday, November 14 will be at 1:30 PM.",
+      "system_ids": [
+        "highland"
+      ],
+      "source_url": "https://highland.org/plan-your-visit/highland-trails/",
+      "source_label": "Highland trails",
+      "status": "approved",
+      "reviewer": "Claude; approved by site owner in chat",
+      "reviewed_at": "2026-11-14T14:23:32.159820Z",
+      "starts_at": "2026-11-14T14:23:32.159820Z",
+      "expires_at": "2026-11-15T00:00:00-05:00",
+      "snapshot_sha256": "0ede428c6189cef39d000f8c1a3f89f52b7deca1c0924be312e10f227a63fbf4"
     }
   ]
 }
